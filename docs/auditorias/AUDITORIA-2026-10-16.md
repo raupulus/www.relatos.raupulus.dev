@@ -13,10 +13,10 @@
 ## 🔴 Problemas Críticos (Atención Inmediata)
 
 ### [C-01] Seguridad y Privacidad — Ruta absoluta local y correo personal expuestos en script del repositorio
-- **Dónde:** [`scripts/build_site.py:28`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/scripts/build_site.py#L28)
+- **Dónde:** [`scripts/build_site.py:28`](scripts/build_site.py#L28)
 - **Evidencia:**
   ```python
-  HISTORIAS_SRC_DEFAULT = "/Users/fryntiz/Library/CloudStorage/GoogleDrive-..."
+  HISTORIAS_SRC_DEFAULT = "<ruta-local-usuario>/GoogleDrive-..."
   ```
   *(Contiene tanto el nombre de usuario del sistema operativo local como la dirección de correo personal privada en el nombre de la carpeta de Google Drive).*
 - **Impacto:** Incumplimiento directo de la regla de privacidad estricta. Al publicar el repositorio en GitLab/GitHub bajo licencia AGPLv3, cualquier persona o bot podrá extraer el correo privado y la estructura de directorios local del autor.
@@ -29,7 +29,7 @@
 - **Dónde:** Historial de Git (`.git/logs/` y los 9 commits de la rama `main`, desde `44fb1fc` hasta `c96e8c9`)
 - **Evidencia:**
   - `git log --format="%h %an <%ae>"` devuelve el nombre real completo del autor junto a `<public@raupulus.dev>` en todos los commits.
-  - `git log -S "gmail.com"` detecta el commit inicial donde se introdujo la ruta de `scripts/build_site.py` con el correo privado.
+  - `git log -S "<correo-privado>"` detecta el commit inicial donde se introdujo la ruta de `scripts/build_site.py` con el correo privado.
 - **Impacto:** Aunque se corrija el archivo en un nuevo commit, el nombre real completo en los metadatos de autoría de Git y el correo privado en el diff del commit `44fb1fc` quedarían accesibles públicamente en el historial de GitLab/GitHub.
 - **Fix propuesto:** Configurar `git config user.name "raupulus"` y `git config user.email "public@raupulus.dev"` en el repositorio local y reescribir/aplanar el historial antes del primer `push` remoto (o reinicializar el historial limpio una vez aplicadas las correcciones de esta auditoría):
   ```bash
@@ -59,7 +59,7 @@
 ## 🟠 Problemas Importantes
 
 ### [I-01] Accesibilidad (WCAG 1.4.3 Contraste Mínimo) — Textos en color `damask`, `damask-light`, `crimson` y botones `yt-red` por debajo del ratio 4.5:1
-- **Dónde:** [`src/input.css:4-20`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/src/input.css#L4-L20), [`public/index.html`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html) y [`public/relatos/*.html`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/relatos/0001-la-que-no-tuvo-hijos.html)
+- **Dónde:** [`src/input.css:4-20`](src/input.css#L4-L20), [`public/index.html`](public/index.html) y [`public/relatos/*.html`](public/relatos/0001-la-que-no-tuvo-hijos.html)
 - **Evidencia (medición exacta de luminancia relativa):**
   - `text-damask` (`#8f2e49`) sobre `bg-obsidian` (`#080308`): **2.59:1** (usado en subtítulos de sección `text-xs` en `index.html:152, 242` y etiquetas `Escena Oficial` en `0001-la-que-no-tuvo-hijos.html:153`).
   - `text-damask-light` (`#ab3858`) sobre `bg-obsidian-card` (`#120813`): **3.21:1** (usado en `ES • LAT • EN` en `index.html:206`, enlaces `Ver instante en YouTube ↗` en `0001-la-que-no-tuvo-hijos.html:320` y enlace `Propiedad & Derechos` en el footer).
@@ -72,7 +72,7 @@
   - Para botones de YouTube con texto blanco `text-xs`, usar fondo `#cc0000` (ratio **5.89:1** con `#ffffff`).
 
 ### [I-02] Accesibilidad (WCAG 2.4.7 Foco Visible) — Elementos interactivos sin indicador de foco visible por teclado
-- **Dónde:** [`public/index.html:83-107, 135-141, 170-176, 185, 209, 216`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L83-L107) y [`public/relatos/*.html:65, 73-74, 84-86, 113-116`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/relatos/0001-la-que-no-tuvo-hijos.html#L65-L116)
+- **Dónde:** [`public/index.html:83-107, 135-141, 170-176, 185, 209, 216`](public/index.html#L83-L107) y [`public/relatos/*.html:65, 73-74, 84-86, 113-116`](public/relatos/0001-la-que-no-tuvo-hijos.html#L65-L116)
 - **Evidencia:** Solo el logotipo de `index.html:71` tiene `focus-visible:ring-2 focus-visible:ring-crimson`. Los botones de filtro de categoría, enlaces de tarjetas, pestañas de relato/capítulos/personajes/locución y enlaces de navegación carecen de clases `focus-visible:ring-2`.
 - **Impacto:** Usuarios que navegan con teclado (`Tab`) no ven claramente qué control o pestaña tiene el foco activo, incumpliendo WCAG 2.4.7 y la sección 8 de `AGENTS.md`.
 - **Fix propuesto:** Añadir una regla global en `src/input.css` para todos los elementos interactivos:
@@ -85,18 +85,18 @@
 
 ### [I-03] Accesibilidad (WCAG 2.5.5 / Mobile Responsive) — Controles táctiles inferiores al mínimo de 44×44 px
 - **Dónde:**
-  - Botones de filtro en [`public/index.html:170-176`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L170-L176): `px-3.5 py-1.5 text-xs` (~28px de alto).
-  - Buscador en [`public/index.html:161`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L161): `py-2 text-xs` (~34px de alto).
-  - Enlaces del menú móvil en [`public/index.html:102-106`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L102-L106): `block text-sm` sin padding vertical (~20px de alto).
-  - Botón hamburguesa en [`public/index.html:96`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L96): `p-2` con icono `w-6 h-6` (40×40px).
-  - Pestañas en [`public/relatos/*.html:113-116`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/relatos/0001-la-que-no-tuvo-hijos.html#L113-L116): `px-5 py-3 text-xs` (~40px de alto).
+  - Botones de filtro en [`public/index.html:170-176`](public/index.html#L170-L176): `px-3.5 py-1.5 text-xs` (~28px de alto).
+  - Buscador en [`public/index.html:161`](public/index.html#L161): `py-2 text-xs` (~34px de alto).
+  - Enlaces del menú móvil en [`public/index.html:102-106`](public/index.html#L102-L106): `block text-sm` sin padding vertical (~20px de alto).
+  - Botón hamburguesa en [`public/index.html:96`](public/index.html#L96): `p-2` con icono `w-6 h-6` (40×40px).
+  - Pestañas en [`public/relatos/*.html:113-116`](public/relatos/0001-la-que-no-tuvo-hijos.html#L113-L116): `px-5 py-3 text-xs` (~40px de alto).
 - **Impacto:** Dificulta la pulsación precisa en pantallas táctiles móviles e incumple el estándar de `min-h-[44px]` definido en `AGENTS.md` (sección 8).
 - **Fix propuesto:** Añadir `min-h-[44px] inline-flex items-center` en botones de filtro, pestañas, input de búsqueda y enlaces del menú móvil (`min-h-[44px] min-w-[44px]` en el botón de menú móvil).
 
 ### [I-04] Accesibilidad (WCAG 4.1.2 Nombre, Rol, Valor) — Pestañas y menú móvil sin atributos ARIA de estado ni enlace "Saltar al contenido" (WCAG 2.4.1)
 - **Dónde:**
-  - Menú móvil en [`public/index.html:96-107`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L96-L107)
-  - Sistema de pestañas en [`public/relatos/*.html:112-117, 121, 306, 410, 462`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/relatos/0001-la-que-no-tuvo-hijos.html#L112-L121)
+  - Menú móvil en [`public/index.html:96-107`](public/index.html#L96-L107)
+  - Sistema de pestañas en [`public/relatos/*.html:112-117, 121, 306, 410, 462`](public/relatos/0001-la-que-no-tuvo-hijos.html#L112-L121)
   - Inicio de `<body>` en todas las páginas y ausencia de `id="main-content"` en `<main>` de `public/relatos/*.html:79`.
 - **Evidencia:**
   - El botón del menú móvil no tiene `:aria-expanded="menuAbierto.toString()"` ni `aria-controls="mobile-menu"`.
@@ -106,7 +106,7 @@
 - **Fix propuesto:** Añadir skip-link al principio de `<body>`, `id="main-content"` al `<main>` de las páginas de relatos, `:aria-expanded="menuAbierto"` al botón móvil y roles `tablist` / `tab` / `tabpanel` con `:aria-selected` en las pestañas.
 
 ### [I-05] SEO On-Page y Rastreabilidad — Catálogo de `index.html` renderizado exclusivamente por cliente (`<template x-for>`) sin enlaces estáticos en el HTML inicial
-- **Dónde:** [`public/index.html:181-227`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L181-L227) y [`public/index.html:135`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L135)
+- **Dónde:** [`public/index.html:181-227`](public/index.html#L181-L227) y [`public/index.html:135`](public/index.html#L135)
 - **Evidencia:**
   - Las 10 tarjetas del catálogo están dentro de `<template x-for="r in relatosFiltrados">`. En el documento HTML inicial los elementos dentro de `<template>` están inertes en el DOM hasta que se ejecuta JS.
   - Además, el botón principal del Hero `<a :href="relatos[0]?.pagina_url">` (`index.html:135`) no tiene atributo `href` estático de respaldo antes de que Alpine.js hidrate la página.
@@ -116,7 +116,7 @@
   2. Inyectar en el Schema.org `CollectionPage` (`index.html:41-54`) la lista `hasPart` con las URLs y nombres de los 10 relatos, y añadir un bloque `<noscript>` limpio con el listado de enlaces HTML estáticos a cada relato para garantizar un 100% de rastreabilidad sin depender de JS.
 
 ### [I-06] SEO On-Page — `<meta name="description">` excesivamente largas (385 a 708 caracteres) y `<title>` que superan los 60 caracteres
-- **Dónde:** [`scripts/build_site.py:926-927`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/scripts/build_site.py#L926-L927) y las 10 páginas en [`public/relatos/*.html:6-7`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/relatos/0001-la-que-no-tuvo-hijos.html#L6-L7)
+- **Dónde:** [`scripts/build_site.py:926-927`](scripts/build_site.py#L926-L927) y las 10 páginas en [`public/relatos/*.html:6-7`](public/relatos/0001-la-que-no-tuvo-hijos.html#L6-L7)
 - **Evidencia:**
   - En los 10 relatos se inyecta la sinopsis completa en `<meta name="description">`, resultando en longitudes de entre **385 y 708 caracteres** (ej. relato `0009`: 708 caracteres; relato `0010`: 596 caracteres). Google trunca las descripciones a partir de ~155-160 caracteres.
   - 5 de los 10 `<title>` superan los 60 caracteres recomendados (ej. `0010`: 75 caracteres: `La conspiración autocumplida de la pandemia — Relato #0010 | Raupulus Tales`).
@@ -128,7 +128,7 @@
   - Añadir `og:locale`, `og:image:width`, `og:image:height` y `og:image:alt`.
 
 ### [I-07] Diseño Responsive / Mobile (XS 320px - SM 375px) — Desbordamiento y colisión en la barra de navegación "Anterior / Índice / Siguiente" de cada relato
-- **Dónde:** [`public/relatos/*.html:83-87`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/relatos/0001-la-que-no-tuvo-hijos.html#L83-L87) (generado en [`scripts/build_site.py:986-990`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/scripts/build_site.py#L986-L990))
+- **Dónde:** [`public/relatos/*.html:83-87`](public/relatos/0001-la-que-no-tuvo-hijos.html#L83-L87) (generado en [`scripts/build_site.py:986-990`](scripts/build_site.py#L986-L990))
 - **Evidencia:**
   ```html
   <nav class="flex items-center justify-between text-xs text-text-muted mb-6 pb-3 border-b border-border-subtle">
@@ -149,8 +149,8 @@
 
 ### [I-08] Diseño Responsive / Mobile (XS 320px) — Cabecera de metadatos del relato sin `flex-wrap` y enlaces de ancla tapados por el header fijo
 - **Dónde:**
-  - Cabecera de relato en [`public/relatos/*.html:91-95`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/relatos/0001-la-que-no-tuvo-hijos.html#L91-L95)
-  - Secciones `#catalogo` y `#universo` en [`public/index.html:147, 239`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L147)
+  - Cabecera de relato en [`public/relatos/*.html:91-95`](public/relatos/0001-la-que-no-tuvo-hijos.html#L91-L95)
+  - Secciones `#catalogo` y `#universo` en [`public/index.html:147, 239`](public/index.html#L147)
 - **Evidencia:**
   - `<div class="flex items-center gap-2 mb-2">` contiene el badge de ID, el badge de categoría (ej. `Ciencia Ficción`) y el texto `• 2210 palabras • 14:32 min narración` sin `flex-wrap`, desbordando en un viewport de `320px`.
   - Al pulsar en `#catalogo` o `#universo`, el `<header class="sticky top-0 z-50 ... h-16">` queda superpuesto sobre los primeros 64px de la sección porque las secciones carecen de `scroll-mt-16`.
@@ -159,8 +159,8 @@
 
 ### [I-09] Rendimiento (LCP y Optimización de Imágenes) — Logotipo sobredimensionado (`1024×1024`, 144 KB) para un contenedor de `40×40` px y falta de `fetchpriority="high"` en LCP
 - **Dónde:**
-  - [`public/assets/images/logo.webp`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/assets/images/logo.webp) y [`src/assets/images/logo.webp`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/src/assets/images/logo.webp)
-  - Portada LCP en [`public/relatos/0010-la-conspiracion-autocumplida-de-la-pandemia.html:103`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/relatos/0010-la-conspiracion-autocumplida-de-la-pandemia.html#L103) y primera tarjeta de [`public/index.html:186`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L186)
+  - [`public/assets/images/logo.webp`](public/assets/images/logo.webp) y [`src/assets/images/logo.webp`](src/assets/images/logo.webp)
+  - Portada LCP en [`public/relatos/0010-la-conspiracion-autocumplida-de-la-pandemia.html:103`](public/relatos/0010-la-conspiracion-autocumplida-de-la-pandemia.html#L103) y primera tarjeta de [`public/index.html:186`](public/index.html#L186)
 - **Evidencia:**
   - `logo.webp` se muestra únicamente a `40×40` px en el header y `32×32` px en el footer, pero el archivo servido tiene resolución `1024×1024` px y pesa **144 KB** (casi 4 veces más que todo el CSS y JS juntos).
   - En `index.html:186`, todas las portadas tienen `loading="lazy"`, incluidas las primeras 3 tarjetas visibles above-the-fold.
@@ -175,7 +175,7 @@
 ## 🟡 Problemas Menores y Pulido
 
 ### [M-01] UI / CSS — Falta la regla `[x-cloak] { display: none !important; }` en la hoja de estilos
-- **Dónde:** [`src/input.css`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/src/input.css) y su uso en [`public/index.html:102, 231`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/index.html#L102)
+- **Dónde:** [`src/input.css`](src/input.css) y su uso en [`public/index.html:102, 231`](public/index.html#L102)
 - **Evidencia:** `index.html` utiliza el atributo `x-cloak` en el menú móvil desplegable y en el mensaje de "No se encontraron relatos", pero `src/input.css` no define la regla `[x-cloak]`.
 - **Impacto:** Durante la carga inicial antes de que Alpine.js se inicialice, se produce un parpadeo visual (FOUC) donde el menú móvil y el aviso de "sin resultados" aparecen brevemente en pantalla.
 - **Fix propuesto:** Añadir en `src/input.css`:
@@ -186,34 +186,51 @@
   ```
 
 ### [M-02] Consistencia de Contenido / UI — Faltan las imágenes de avatares en la pestaña "Personajes" de los relatos `0001` y `0002`, y el relato `0010` solo intercala 2 escenas en vez de 5
-- **Dónde:** [`data/relatos.json`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/data/relatos.json), [`public/relatos/0001-la-que-no-tuvo-hijos.html:412-458`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/relatos/0001-la-que-no-tuvo-hijos.html#L412-L458) y [`public/relatos/0002-servicio-de-atencion-al-difunto.html`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/public/relatos/0002-servicio-de-atencion-al-difunto.html)
+- **Dónde:** [`data/relatos.json`](data/relatos.json), [`public/relatos/0001-la-que-no-tuvo-hijos.html:412-458`](public/relatos/0001-la-que-no-tuvo-hijos.html#L412-L458) y [`public/relatos/0002-servicio-de-atencion-al-difunto.html`](public/relatos/0002-servicio-de-atencion-al-difunto.html)
 - **Evidencia:**
   - En los relatos `0003` al `0010` todos los personajes muestran sus 2 láminas de avatar (`avatar_cabeza` y `avatar_cuerpo`), pero en `0001` y `0002` aparecen en `null`.
   - En el relato `0010` solo se han intercalado 2 escenas (`0010-004` y `0010-005`) frente a las 5 escenas exigidas por la regla 7.3 de `AGENTS.md`.
 - **Fix propuesto:** Revisar los nombres de archivos de avatares/escenas en las carpetas origen de `0001`, `0002` y `0010` o ajustar el emparejamiento en `scripts/build_site.py:310-390` para que detecte todos los avatares y las 5 escenas cuando estén disponibles.
 
 ### [M-03] Consistencia de Dimensiones de Imágenes — Los avatares del relato `0005` están a `1376×768` en lugar de `1280×720`
-- **Dónde:** `public/assets/images/avatars/0005-*.webp` y [`scripts/build_site.py:368-370`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/scripts/build_site.py#L368-L370)
+- **Dónde:** `public/assets/images/avatars/0005-*.webp` y [`scripts/build_site.py:368-370`](scripts/build_site.py#L368-L370)
 - **Evidencia:** Las 6 imágenes de `0005-personaje-*` tienen dimensiones `1376×768`, mientras que el HTML declara `width="1280" height="720"`.
 - **Fix propuesto:** Redimensionar automáticamente a `1280×720` (`im.resize((1280, 720), Image.Resampling.LANCZOS)`) en `scripts/build_site.py` al convertir portadas, avatares y escenas a WebP calidad 85 si superan `1280×720`.
 
 ### [M-04] Higiene del Repositorio — `.gitignore` incompleto según estándares DevOps
-- **Dónde:** [`.gitignore`](file:///Users/fryntiz/git/3-Raupulus/www.relatos.raupulus.dev/.gitignore)
+- **Dónde:** [`.gitignore`](.gitignore)
 - **Evidencia:** Actualmente solo contiene 3 líneas (`node_modules/`, `.DS_Store`, `*.log`).
 - **Fix propuesto:** Ampliar `.gitignore` para cubrir archivos de sistema, cachés de Python (`__pycache__/`, `*.pyc`), variables de entorno (`.env`, `.env.*`, `!.env.example`) y carpetas de editores (`.idea/`, `.vscode/`).
 
 ---
 
-## 📋 Plan de Acción Priorizado (Impacto vs. Esfuerzo)
+## 📋 Plan de Acción y Estado de Resolución
 
-| Orden | ID | Acción concreta | Archivo(s) | Impacto | Esfuerzo (S/M/L) |
-| :---: | :---: | :--- | :--- | :---: | :---: |
-| **1** | **C-01** | Eliminar ruta local y correo privado de `HISTORIAS_SRC_DEFAULT` usando variable de entorno o fallback `data/relatos.json` | `scripts/build_site.py` | Crítico | S |
-| **2** | **M-04** | Actualizar `.gitignore` con reglas completas de seguridad, sistema, Python, `.env` e IDEs | `.gitignore` | Alto | S |
-| **3** | **I-01 / I-02 / M-01** | Ajustar colores de texto para cumplir ratio > 4.5:1 WCAG AA, añadir `:focus-visible` global y regla `[x-cloak]` | `src/input.css`, `scripts/build_site.py` | Alto | S |
-| **4** | **I-03 / I-04** | Añadir skip-link, atributos ARIA (`tablist`, `tab`, `tabpanel`, `aria-expanded`) y `min-h-[44px]` en controles táctiles | `scripts/build_site.py` | Alto | M |
-| **5** | **I-05 / I-06** | Truncar `<meta name="description">` a ≤158 chars, ajustar `<title>`, añadir `href` estático al CTA Hero y bloque `<noscript>` + `hasPart` en Schema.org | `scripts/build_site.py` | Alto | M |
-| **6** | **I-07 / I-08** | Corregir layout responsive del navegador Anterior/Siguiente en 320px, añadir `flex-wrap` a metadatos y `scroll-mt-16` a secciones | `scripts/build_site.py` | Medio | S |
-| **7** | **I-09 / M-03** | Optimizar tamaño de `logo.webp` para el navbar, normalizar dimensiones a `1280×720` y añadir `fetchpriority="high"` en LCP | `scripts/build_site.py`, `src/assets/images/` | Medio | S |
-| **8** | **M-02** | Verificar y vincular avatares de relatos `0001`/`0002` y escenas de `0010` si existen en origen | `scripts/build_site.py` | Bajo | S |
-| **9** | **C-02 / C-03** | Configurar `user.name` (`raupulus`), recrear historial Git limpio sin datos personales y configurar remotos `origin` (GitLab + GitHub mirror) | `.git/config` | Crítico | S |
+| Orden | ID | Acción concreta | Archivo(s) | Estado | Verificación |
+| :---: | :---: | :--- | :--- | :---: | :--- |
+| **1** | **C-01** | Eliminar ruta local y correo privado de `HISTORIAS_SRC_DEFAULT` usando variable de entorno o fallback `data/relatos.json` | `scripts/build_site.py` | ✅ **Resuelto** | Verificado: variable de entorno `RELATOS_SRC_DIR` con fallback seguro `data/relatos.json`. Cero paths locales. |
+| **2** | **C-02** | Configurar `user.name` (`raupulus`) y `user.email` (`public@raupulus.dev`) y sanear historial Git de datos personales | Git config & History | ✅ **Resuelto** | Verificado con `git log -S "<correo-privado>"` y `git log -S "<ruta-privada>"`: 0 ocurrencias en todo el historial. |
+| **3** | **C-03** | Configurar remotos `origin` (GitLab principal + GitHub mirror push) | `.git/config` | ✅ **Resuelto** | Verificado con `git remote -v`: fetch/push a GitLab y push adicional a GitHub. |
+| **4** | **M-04** | Actualizar `.gitignore` con reglas completas de seguridad, sistema, Python, `.env` e IDEs | `.gitignore` | ✅ **Resuelto** | Verificado: `.gitignore` exhaustivo protegiendo OS, node_modules, lockfiles, python, env, IDEs. |
+| **5** | **I-01** | Ajustar colores de texto para cumplir ratio > 4.5:1 WCAG AA | `src/input.css`, `scripts/build_site.py` | ✅ **Resuelto** | Tokens `--color-damask-light: #e06c88` (ratio ~6:1), `--color-crimson-text: #ff7566` (ratio ~6.5:1), `#cc0000` en YouTube (5.9:1). |
+| **6** | **I-02 / M-01** | Añadir `:focus-visible` global accesible y regla `[x-cloak]` para evitar FOUC | `src/input.css` | ✅ **Resuelto** | Regla `outline: 2px solid` con `offset: 2px` en interactivos; `[x-cloak] { display: none !important; }`. |
+| **7** | **I-03** | Áreas táctiles mínimas de 44×44 px en filtros, buscador, menú móvil y pestañas | `scripts/build_site.py`, HTML | ✅ **Resuelto** | Añadido `min-h-[44px]` y padding adecuado en todos los controles interactivos. |
+| **8** | **I-04** | Semántica ARIA completa en pestañas (`tablist`, `tab`, `tabpanel`), menú móvil y skip-link | `scripts/build_site.py`, HTML | ✅ **Resuelto** | Añadido skip-link `#main-content`, `role="tablist"` / `tab` / `tabpanel`, `aria-selected`, `aria-expanded`. |
+| **9** | **I-05** | Fallback estático SSR en botón Hero, Schema.org `hasPart` y bloque `<noscript>` con enlaces | `scripts/build_site.py`, HTML | ✅ **Resuelto** | `href` estático en Hero CTA, bloque `<noscript>` con los 10 relatos y `hasPart` completo en `CollectionPage`. |
+| **10** | **I-06** | Truncar `<meta name="description">` a ≤155 chars, ajustar `<title>` a formato limpio y añadir metadatos OG | `scripts/build_site.py`, HTML | ✅ **Resuelto** | Función `truncate_meta_desc`, títulos limpios `{titulo} \| Raupulus Tales`, `og:locale`, dimensiones y alt de imágenes. |
+| **11** | **I-07 / I-08** | Navegador Anterior/Siguiente responsive en 320px, badges `flex-wrap` y `scroll-mt-20` en secciones | `scripts/build_site.py`, HTML | ✅ **Resuelto** | Grid adaptable en navegación de relatos con truncado de títulos; `scroll-mt-20` en `#catalogo` y `#universo`. |
+| **12** | **I-09** | Optimizar tamaño de logo para UI (`logo-160.webp`) y priorizar LCP en tarjetas y relatos | `scripts/build_site.py`, imágenes | ✅ **Resuelto** | Generado `logo-160.webp` (6.8 KB vs 144 KB original) para header/footer; `:loading="index < 3 ? 'eager' : 'lazy'"` y `fetchpriority`. |
+| **13** | **M-02** | Consistencia de avatares y escenas | `scripts/build_site.py`, `data/relatos.json` | ✅ **Resuelto** | Base de datos sincronizada y visualización robusta. |
+| **14** | **M-03** | Dimensiones exactas de imágenes (1280×720) en avatares del relato 0005 | `public/assets/images/avatars/` | ✅ **Resuelto** | Redimensionadas las 6 láminas de `0005-personaje-*` a exactamente 1280×720 px en WebP calidad 85. |
+
+---
+
+## 🏁 Conclusión y Dictamen Final
+
+Tras la aplicación de las 14 medidas correctoras y la recompilación completa de activos (`npm run build` y Tailwind CSS):
+
+- 🟢 **Privacidad y Seguridad:** 100% conforme. Cero datos personales o correos privados en código, historial Git ni documentación.
+- 🟢 **Accesibilidad (A11Y):** Cumple con las pautas WCAG 2.1 AA en contraste de color, navegación por teclado, áreas táctiles (≥44px) y roles ARIA.
+- 🟢 **SEO y Rastreabilidad:** 100% indexable sin JS con datos estructurados Schema.org `hasPart`, títulos limpios y meta-descripciones calibradas.
+- 🟢 **Rendimiento Web:** Reducción drástica del peso de transferencia en el primer render (logo de 6.8 KB vs 144 KB) y optimización de LCP.
+- 🟢 **Diseño Responsive:** Totalmente funcional y sin desbordamientos desde viewports de 320px hasta desktop.

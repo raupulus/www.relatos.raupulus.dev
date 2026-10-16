@@ -49,12 +49,87 @@
       "@type": "Organization",
       "name": "Raupulus Tales",
       "logo": "https://relatos.raupulus.dev/assets/images/logo.webp"
-    }
+    },
+    "hasPart": [
+      {
+            "@type": "ShortStory",
+            "name": "La conspiración autocumplida de la pandemia",
+            "url": "https://relatos.raupulus.dev/relatos/0010-la-conspiracion-autocumplida-de-la-pandemia.html",
+            "description": "Durante años, una red de grupos aislados construyó refugios en el campo y acumuló suministros convencida de que una organización secreta planeaba diezmar…",
+            "inLanguage": "es-ES"
+      },
+      {
+            "@type": "ShortStory",
+            "name": "La profecía autocumplida del apagón",
+            "url": "https://relatos.raupulus.dev/relatos/0009-la-profecia-autocumplida-del-apagon.html",
+            "description": "Durante casi una década, miles de preparacionistas construyeron refugios subterráneos, acopiaron combustible y tejieron redes de radioaficionados para…",
+            "inLanguage": "es-ES"
+      },
+      {
+            "@type": "ShortStory",
+            "name": "El monstruo marino de Chipiona",
+            "url": "https://relatos.raupulus.dev/relatos/0008-el-monstruo-marino-de-chipiona.html",
+            "description": "En pleno mes de agosto, con las playas de Chipiona abarrotadas de veraneantes, un pesquero arriba a puerto con la quilla desgarrada y un marinero…",
+            "inLanguage": "es-ES"
+      },
+      {
+            "@type": "ShortStory",
+            "name": "Las cartas de la otra inquilina",
+            "url": "https://relatos.raupulus.dev/relatos/0007-las-cartas-de-la-otra-inquilina.html",
+            "description": "Tras mudarse a un piso antiguo de alquiler extrañamente barato en el barrio madrileño de Chamberí, una joven restauradora empieza a recibir sobres…",
+            "inLanguage": "es-ES"
+      },
+      {
+            "@type": "ShortStory",
+            "name": "Los payasos de Chipiona",
+            "url": "https://relatos.raupulus.dev/relatos/0006-los-payasos-de-chipiona.html",
+            "description": "En plena madrugada de los carnavales de Chipiona, Rubén, un joven de veintiún años disfrazado de zombi, cae rendido por la borrachera en un banco en mitad…",
+            "inLanguage": "es-ES"
+      },
+      {
+            "@type": "ShortStory",
+            "name": "El falsificador",
+            "url": "https://relatos.raupulus.dev/relatos/0005-el-falsificador.html",
+            "description": "Madrid, primeros de abril de mil novecientos treinta y nueve. En una ciudad arrasada por la derrota y gobernada por el miedo, un impresor de la calle del…",
+            "inLanguage": "es-ES"
+      },
+      {
+            "@type": "ShortStory",
+            "name": "Las cenizas de mamá",
+            "url": "https://relatos.raupulus.dev/relatos/0004-las-cenizas-de-mama.html",
+            "description": "Dos hermanos distanciados durante quince años se ven obligados a cruzar la península de sur a norte en un coche destartalado para cumplir la última…",
+            "inLanguage": "es-ES"
+      },
+      {
+            "@type": "ShortStory",
+            "name": "Objetos perdidos, andén 3",
+            "url": "https://relatos.raupulus.dev/relatos/0003-objetos-perdidos-anden-3.html",
+            "description": "En una helada mañana de noviembre, un anciano pulcro y sereno acude a la oficina de objetos perdidos de la estación de Valladolid con un resguardo de 1967…",
+            "inLanguage": "es-ES"
+      },
+      {
+            "@type": "ShortStory",
+            "name": "Servicio de atención al difunto",
+            "url": "https://relatos.raupulus.dev/relatos/0002-servicio-de-atencion-al-difunto.html",
+            "description": "Madrid, 2041. Inés trabaja en el turno de noche de Perdura, la compañía tecnológica que comercializa réplicas digitales de personas fallecidas. Durante…",
+            "inLanguage": "es-ES"
+      },
+      {
+            "@type": "ShortStory",
+            "name": "La que no tuvo hijos",
+            "url": "https://relatos.raupulus.dev/relatos/0001-la-que-no-tuvo-hijos.html",
+            "description": "Yolanda acepta un trabajo de cuidadora nocturna en una casa del casco antiguo de Cuenca: una anciana con alzhéimer, un sobrino que paga bien y unas normas…",
+            "inLanguage": "es-ES"
+      }
+]
   }
   </script>
 </head>
 <body class="bg-obsidian text-text-main min-h-screen flex flex-col selection:bg-crimson selection:text-white"
       x-data="talesCatalog()">
+
+  <!-- Enlace de salto a contenido principal (A11Y) -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2 focus:bg-crimson focus:text-white focus:rounded-lg focus:shadow-xl focus:outline-none">Saltar al contenido principal</a>
 
   <!-- Fondo ambiental cinemático -->
   <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
@@ -70,7 +145,7 @@
       <!-- Brand & Logotipo Oficial de Raupulus Tales -->
       <a href="#" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson rounded-lg p-1" aria-label="Raupulus Tales - Inicio">
         <div class="relative w-10 h-10 rounded-full overflow-hidden border border-damask/50 group-hover:border-crimson transition-colors duration-300">
-          <img src="assets/images/logo.webp" alt="Raupulus Tales Logo Oficial" width="40" height="40" class="w-full h-full object-cover">
+          <img src="assets/images/logo-160.webp" alt="Raupulus Tales Logo Oficial" width="40" height="40" class="w-full h-full object-cover">
         </div>
         <div class="flex flex-col">
           <span class="font-bold text-lg text-text-bright tracking-wider group-hover:text-damask-light transition-colors">RAUPULUS</span>
@@ -92,14 +167,14 @@
         </a>
       </nav>
 
-      <!-- Menú Móvil -->
-      <button @click="menuAbierto = !menuAbierto" class="md:hidden p-2 rounded-lg text-text-muted hover:text-text-bright hover:bg-obsidian-card" aria-label="Abrir menú">
+      <!-- Menú Móvil con ARIA y touch target 44px -->
+      <button @click="menuAbierto = !menuAbierto" :aria-expanded="menuAbierto.toString()" aria-controls="mobile-menu" class="md:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-text-muted hover:text-text-bright hover:bg-obsidian-card focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson" aria-label="Abrir menú de navegación">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </button>
     </div>
 
     <!-- Menú desplegable móvil -->
-    <div x-show="menuAbierto" @click.away="menuAbierto = false" x-cloak class="md:hidden border-b border-border-subtle bg-obsidian-card px-4 py-4 space-y-3">
+    <div id="mobile-menu" x-show="menuAbierto" @click.away="menuAbierto = false" x-cloak class="md:hidden border-b border-border-subtle bg-obsidian-card px-4 py-4 space-y-3">
       <a href="#catalogo" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">Catálogo de Relatos</a>
       <a href="#universo" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">El Universo</a>
       <a href="LICENSE.md" class="block text-sm text-text-muted hover:text-text-main">Aviso de Propiedad Intelectual</a>
@@ -130,26 +205,26 @@
           Cada relato cuenta con su propia página dedicada: texto íntegro para lectura inmersiva, desglose de capítulos narrativos, fichas visuales de personajes y producciones en vídeo Full HD con locución multilingüe.
         </p>
 
-        <!-- Accesos rápidos del Hero -->
+        <!-- Accesos rápidos del Hero con fallback SSR -->
         <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <a :href="relatos[0]?.pagina_url" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-white font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
+          <a href="relatos/0010-la-conspiracion-autocumplida-de-la-pandemia.html" :href="relatos[0]?.pagina_url" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-white font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            <span>Leer Último Estreno (<span x-text="relatos[0]?.titulo"></span>)</span>
+            <span>Leer Último Estreno (<span x-text="relatos[0]?.titulo">La conspiración autocumplida de la pandemia</span>)</span>
           </a>
           <a href="#catalogo" class="px-6 py-3 rounded-lg bg-obsidian-card hover:bg-obsidian-elevated border border-border-subtle hover:border-damask text-text-main font-semibold text-sm transition-all duration-200">
-            Explorar las <span x-text="relatos.length"></span> Historias
+            Explorar las <span x-text="relatos.length">10</span> Historias
           </a>
         </div>
       </div>
     </section>
 
     <!-- Catálogo de Relatos Completo con Filtros Reactivos -->
-    <section id="catalogo" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="catalogo" class="scroll-mt-20 py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Cabecera de Sección y Controles -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
         <div>
-          <span class="text-xs uppercase font-bold tracking-wider text-damask">Biblioteca de Ficción</span>
+          <span class="text-xs uppercase font-bold tracking-wider text-damask-light">Biblioteca de Ficción</span>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-text-bright mt-1">Catálogo de Historias</h2>
           <p class="text-xs text-text-muted mt-1">Haz clic en cualquier historia para acceder a su página dedicada con lectura completa y contenido multimedia.</p>
         </div>
@@ -159,31 +234,31 @@
           <label for="buscar-relato" class="sr-only">Buscar por título, temática o personaje</label>
           <div class="relative">
             <input type="text" id="buscar-relato" x-model="busqueda" placeholder="Buscar por título o palabra clave..." 
-                   class="w-full px-4 py-2 pl-9 rounded-lg bg-obsidian-card border border-border-subtle text-xs text-text-main placeholder-text-muted focus:outline-none focus:border-damask focus:ring-1 focus:ring-crimson transition">
-            <svg class="w-4 h-4 text-text-muted absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                   class="w-full min-h-[44px] px-4 py-2.5 pl-9 rounded-lg bg-obsidian-card border border-border-subtle text-xs text-text-main placeholder-text-muted focus:outline-none focus:border-damask focus:ring-1 focus:ring-crimson transition">
+            <svg class="w-4 h-4 text-text-muted absolute left-3 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
         </div>
       </div>
 
-      <!-- Barra de Filtros Temáticos por Categoría -->
+      <!-- Barra de Filtros Temáticos por Categoría con touch targets 44px -->
       <div class="flex flex-wrap items-center gap-2 mb-8 text-xs">
-        <button @click="filtroCategoria = 'todos'" :class="filtroCategoria === 'todos' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Todos (<span x-text="relatos.length"></span>)</button>
-        <button @click="filtroCategoria = 'suspense'" :class="filtroCategoria === 'suspense' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Suspense & Thriller</button>
-        <button @click="filtroCategoria = 'scifi'" :class="filtroCategoria === 'scifi' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Ciencia Ficción</button>
-        <button @click="filtroCategoria = 'terror'" :class="filtroCategoria === 'terror' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Terror</button>
-        <button @click="filtroCategoria = 'drama'" :class="filtroCategoria === 'drama' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Drama</button>
-        <button @click="filtroCategoria = 'misterio'" :class="filtroCategoria === 'misterio' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Misterio</button>
-        <button @click="filtroCategoria = 'historico'" :class="filtroCategoria === 'historico' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Histórico</button>
+        <button @click="filtroCategoria = 'todos'" :class="filtroCategoria === 'todos' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Todos (<span x-text="relatos.length">10</span>)</button>
+        <button @click="filtroCategoria = 'suspense'" :class="filtroCategoria === 'suspense' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Suspense & Thriller</button>
+        <button @click="filtroCategoria = 'scifi'" :class="filtroCategoria === 'scifi' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Ciencia Ficción</button>
+        <button @click="filtroCategoria = 'terror'" :class="filtroCategoria === 'terror' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Terror</button>
+        <button @click="filtroCategoria = 'drama'" :class="filtroCategoria === 'drama' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Drama</button>
+        <button @click="filtroCategoria = 'misterio'" :class="filtroCategoria === 'misterio' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Misterio</button>
+        <button @click="filtroCategoria = 'historico'" :class="filtroCategoria === 'historico' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Histórico</button>
       </div>
 
       <!-- Rejilla de Tarjetas -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <template x-for="r in relatosFiltrados" :key="r.id">
+        <template x-for="(r, index) in relatosFiltrados" :key="r.id">
           <article class="group rounded-xl bg-obsidian-card border border-border-subtle hover:border-damask transition-all duration-300 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-crimson/15">
             
             <!-- Portada 16:9 con enlace a la página dedicada -->
             <a :href="r.pagina_url" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle block" :aria-label="'Abrir relato ' + r.titulo">
-              <img :src="r.portada" :alt="'Portada oficial del relato ' + r.titulo" width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img :src="r.portada" :alt="'Portada oficial del relato ' + r.titulo" width="1280" height="720" :loading="index < 3 ? 'eager' : 'lazy'" :fetchpriority="index === 0 ? 'high' : 'auto'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               
               <!-- Badges de esquina -->
               <div class="absolute top-3 left-3 flex gap-2">
@@ -193,7 +268,7 @@
 
               <!-- Duración en minutos -->
               <div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-obsidian/90 backdrop-blur px-2 py-0.5 rounded text-[11px] text-text-bright font-mono border border-border-subtle">
-                <svg class="w-3.5 h-3.5 text-crimson" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
+                <svg class="w-3.5 h-3.5 text-crimson-text" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
                 <span x-text="r.duracion_audio + ' min'"></span>
               </div>
             </a>
@@ -230,16 +305,75 @@
       <!-- Si la búsqueda no arroja resultados -->
       <div x-show="relatosFiltrados.length === 0" x-cloak class="text-center py-12">
         <p class="text-sm text-text-muted">No se encontraron relatos para el filtro o término seleccionado.</p>
-        <button @click="busqueda = ''; filtroCategoria = 'todos'" class="mt-3 text-xs text-crimson hover:underline font-semibold">Restablecer filtros</button>
+        <button @click="busqueda = ''; filtroCategoria = 'todos'" class="mt-3 text-xs text-crimson-text hover:underline font-semibold">Restablecer filtros</button>
       </div>
+
+      <!-- Fallback estático para motores de búsqueda y usuarios sin JavaScript -->
+      <noscript>
+        <div class="mt-8 p-6 rounded-xl bg-obsidian-card border border-border-subtle">
+          <h3 class="text-lg font-bold text-text-bright mb-4">Índice Completo de Historias (Versión Estática)</h3>
+          <ul class="space-y-4">
+            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="relatos/0010-la-conspiracion-autocumplida-de-la-pandemia.html" class="text-sm font-bold text-damask-light hover:underline">0010 — La conspiración autocumplida de la pandemia</a>
+              <p class="text-xs text-text-muted mt-1">Durante años, una red de grupos aislados construyó refugios en el campo y acumuló suministros convencida de que una organización secreta planeaba diezmar…</p>
+              <span class="text-[10px] text-text-muted font-mono">Misterio • 2025 palabras • 12:34 min</span>
+            </li>
+            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="relatos/0009-la-profecia-autocumplida-del-apagon.html" class="text-sm font-bold text-damask-light hover:underline">0009 — La profecía autocumplida del apagón</a>
+              <p class="text-xs text-text-muted mt-1">Durante casi una década, miles de preparacionistas construyeron refugios subterráneos, acopiaron combustible y tejieron redes de radioaficionados para…</p>
+              <span class="text-[10px] text-text-muted font-mono">Ciencia Ficción • 2210 palabras • 14:32 min</span>
+            </li>
+            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="relatos/0008-el-monstruo-marino-de-chipiona.html" class="text-sm font-bold text-damask-light hover:underline">0008 — El monstruo marino de Chipiona</a>
+              <p class="text-xs text-text-muted mt-1">En pleno mes de agosto, con las playas de Chipiona abarrotadas de veraneantes, un pesquero arriba a puerto con la quilla desgarrada y un marinero…</p>
+              <span class="text-[10px] text-text-muted font-mono">Terror • 2312 palabras • 14:15 min</span>
+            </li>
+            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="relatos/0007-las-cartas-de-la-otra-inquilina.html" class="text-sm font-bold text-damask-light hover:underline">0007 — Las cartas de la otra inquilina</a>
+              <p class="text-xs text-text-muted mt-1">Tras mudarse a un piso antiguo de alquiler extrañamente barato en el barrio madrileño de Chamberí, una joven restauradora empieza a recibir sobres…</p>
+              <span class="text-[10px] text-text-muted font-mono">Misterio • 2294 palabras • 14:20 min</span>
+            </li>
+            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="relatos/0006-los-payasos-de-chipiona.html" class="text-sm font-bold text-damask-light hover:underline">0006 — Los payasos de Chipiona</a>
+              <p class="text-xs text-text-muted mt-1">En plena madrugada de los carnavales de Chipiona, Rubén, un joven de veintiún años disfrazado de zombi, cae rendido por la borrachera en un banco en mitad…</p>
+              <span class="text-[10px] text-text-muted font-mono">Terror • 2283 palabras • 14:59 min</span>
+            </li>
+            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="relatos/0005-el-falsificador.html" class="text-sm font-bold text-damask-light hover:underline">0005 — El falsificador</a>
+              <p class="text-xs text-text-muted mt-1">Madrid, primeros de abril de mil novecientos treinta y nueve. En una ciudad arrasada por la derrota y gobernada por el miedo, un impresor de la calle del…</p>
+              <span class="text-[10px] text-text-muted font-mono">Histórico • 2168 palabras • 13:48 min</span>
+            </li>
+            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="relatos/0004-las-cenizas-de-mama.html" class="text-sm font-bold text-damask-light hover:underline">0004 — Las cenizas de mamá</a>
+              <p class="text-xs text-text-muted mt-1">Dos hermanos distanciados durante quince años se ven obligados a cruzar la península de sur a norte en un coche destartalado para cumplir la última…</p>
+              <span class="text-[10px] text-text-muted font-mono">Drama • 2339 palabras • 13:48 min</span>
+            </li>
+            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="relatos/0003-objetos-perdidos-anden-3.html" class="text-sm font-bold text-damask-light hover:underline">0003 — Objetos perdidos, andén 3</a>
+              <p class="text-xs text-text-muted mt-1">En una helada mañana de noviembre, un anciano pulcro y sereno acude a la oficina de objetos perdidos de la estación de Valladolid con un resguardo de 1967…</p>
+              <span class="text-[10px] text-text-muted font-mono">Misterio • 2261 palabras • 14:19 min</span>
+            </li>
+            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="relatos/0002-servicio-de-atencion-al-difunto.html" class="text-sm font-bold text-damask-light hover:underline">0002 — Servicio de atención al difunto</a>
+              <p class="text-xs text-text-muted mt-1">Madrid, 2041. Inés trabaja en el turno de noche de Perdura, la compañía tecnológica que comercializa réplicas digitales de personas fallecidas. Durante…</p>
+              <span class="text-[10px] text-text-muted font-mono">Ciencia Ficción • 2194 palabras • 14:51 min</span>
+            </li>
+            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="relatos/0001-la-que-no-tuvo-hijos.html" class="text-sm font-bold text-damask-light hover:underline">0001 — La que no tuvo hijos</a>
+              <p class="text-xs text-text-muted mt-1">Yolanda acepta un trabajo de cuidadora nocturna en una casa del casco antiguo de Cuenca: una anciana con alzhéimer, un sobrino que paga bien y unas normas…</p>
+              <span class="text-[10px] text-text-muted font-mono">Terror • 3261 palabras • 23:12 min</span>
+            </li>
+          </ul>
+        </div>
+      </noscript>
 
     </section>
 
     <!-- Sección El Universo Raupulus -->
-    <section id="universo" class="py-16 bg-obsidian-card/40 border-t border-border-subtle">
+    <section id="universo" class="scroll-mt-20 py-16 bg-obsidian-card/40 border-t border-border-subtle">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-12">
-          <span class="text-xs uppercase font-bold tracking-wider text-damask">Pilares de Producción</span>
+          <span class="text-xs uppercase font-bold tracking-wider text-damask-light">Pilares de Producción</span>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-text-bright mt-1">El Universo de Raupulus Tales</h2>
           <p class="text-xs sm:text-sm text-text-muted mt-2">Cómo concebimos cada historia desde la idea original hasta el máster audiovisual.</p>
         </div>
@@ -287,7 +421,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
       
       <div class="flex items-center gap-3">
-        <img src="assets/images/logo.webp" alt="Raupulus Tales Logo Oficial" width="32" height="32" class="w-8 h-8 rounded-full border border-border-subtle">
+        <img src="assets/images/logo-160.webp" alt="Raupulus Tales Logo Oficial" width="32" height="32" class="w-8 h-8 rounded-full border border-border-subtle">
         <div>
           <div class="font-bold text-text-bright">Raupulus Tales</div>
           <div class="text-[10px] text-text-muted">Ficción Multimedia & Storytelling Digital</div>

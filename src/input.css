@@ -4,11 +4,13 @@
   --color-crimson: #941300;
   --color-crimson-glow: #b81d05;
   --color-crimson-dark: #630d00;
+  --color-crimson-text: #ff7566;
   --color-plum: #371632;
   --color-plum-light: #52234b;
   --color-plum-dark: #220d1f;
   --color-damask: #8f2e49;
-  --color-damask-light: #ab3858;
+  --color-damask-light: #e06c88;
+  --color-damask-border: #ab3858;
   --color-obsidian: #080308;
   --color-obsidian-card: #120813;
   --color-obsidian-elevated: #1a0e1c;
@@ -17,12 +19,17 @@
   --color-text-main: #eedfe3;
   --color-text-muted: #a5919b;
   --color-text-bright: #ffffff;
-  --color-yt-red: #ff0000;
+  --color-yt-red: #cc0000;
+  --color-yt-red-bright: #ff0000;
 }
 
 /* Reglas base */
 :root {
   color-scheme: dark;
+}
+
+[x-cloak] {
+  display: none !important;
 }
 
 body {
@@ -31,6 +38,15 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Foco visible estandarizado para teclado (WCAG 2.4.7) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+iframe:focus-visible {
+  outline: 2px solid var(--color-crimson-glow, #b81d05);
+  outline-offset: 2px;
 }
 
 /* Efectos de brillo ambiental */

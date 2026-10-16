@@ -50,7 +50,7 @@ def clean_narrative_text(txt, story_id=None, inline_images=None):
         if not p:
             continue
         if p == "* * *":
-            html_paragraphs.append('<div class="scene-divider my-10 text-center text-damask font-serif tracking-widest text-xl font-bold select-none">* * *</div>')
+            html_paragraphs.append('<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>')
         elif p.startswith("—") or p.startswith("- "):
             clean_p = p.lstrip("- ")
             html_paragraphs.append(f'<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif">{clean_p}</p>')
@@ -81,7 +81,7 @@ def clean_narrative_text(txt, story_id=None, inline_images=None):
               </div>
               <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
                 <span>{caption}</span>
-                <span class="text-[10px] text-damask font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
               </figcaption>
             </figure>
             """
@@ -96,6 +96,18 @@ def clean_chapter_title(title):
     t = re.sub(r'\s*\(video\d+\.mp4\)', '', t, flags=re.I)
     t = re.sub(r'\s*\(Planos[^\)]*\)', '', t, flags=re.I)
     return t.strip()
+
+
+def truncate_meta_desc(text, max_len=155):
+    """Trunca el texto para meta description en una palabra limpia antes del límite."""
+    clean_t = re.sub(r'\s+', ' ', text).strip()
+    if len(clean_t) <= max_len:
+        return clean_t
+    cut = clean_t[:max_len]
+    last_space = cut.rfind(' ')
+    if last_space > 0:
+        cut = cut[:last_space]
+    return cut.rstrip('.,;:!?') + '…'
 
 
 def get_category_info(genres):
@@ -486,6 +498,29 @@ def generate_index_html(relatos):
             "youtube_id": r["youtube_id"]
         })
 
+    # Schema.org hasPart estructurado
+    has_part = [
+        {
+            "@type": "ShortStory",
+            "name": r["titulo"],
+            "url": f"{SITE_URL}/{r['pagina_url']}",
+            "description": truncate_meta_desc(r["sinopsis"], 155),
+            "inLanguage": "es-ES"
+        }
+        for r in relatos
+    ]
+    has_part_json = json.dumps(has_part, ensure_ascii=False, indent=6)
+
+    # Elementos noscript para indexación SEO sin JavaScript
+    noscript_items = "\n".join([
+        f'''            <li class="border-b border-border-subtle/50 pb-3 last:border-b-0">
+              <a href="{r['pagina_url']}" class="text-sm font-bold text-damask-light hover:underline">{r['id']} — {r['titulo']}</a>
+              <p class="text-xs text-text-muted mt-1">{truncate_meta_desc(r['sinopsis'], 155)}</p>
+              <span class="text-[10px] text-text-muted font-mono">{r['categoria_nombre']} • {r['palabras']} palabras • {r['duracion_audio']} min</span>
+            </li>'''
+        for r in relatos
+    ])
+
     html = f"""<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -537,12 +572,16 @@ def generate_index_html(relatos):
       "@type": "Organization",
       "name": "Raupulus Tales",
       "logo": "{SITE_URL}/assets/images/logo.webp"
-    }}
+    }},
+    "hasPart": {has_part_json}
   }}
   </script>
 </head>
 <body class="bg-obsidian text-text-main min-h-screen flex flex-col selection:bg-crimson selection:text-white"
       x-data="talesCatalog()">
+
+  <!-- Enlace de salto a contenido principal (A11Y) -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2 focus:bg-crimson focus:text-white focus:rounded-lg focus:shadow-xl focus:outline-none">Saltar al contenido principal</a>
 
   <!-- Fondo ambiental cinemático -->
   <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
@@ -558,7 +597,7 @@ def generate_index_html(relatos):
       <!-- Brand & Logotipo Oficial de Raupulus Tales -->
       <a href="#" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson rounded-lg p-1" aria-label="Raupulus Tales - Inicio">
         <div class="relative w-10 h-10 rounded-full overflow-hidden border border-damask/50 group-hover:border-crimson transition-colors duration-300">
-          <img src="assets/images/logo.webp" alt="Raupulus Tales Logo Oficial" width="40" height="40" class="w-full h-full object-cover">
+          <img src="assets/images/logo-160.webp" alt="Raupulus Tales Logo Oficial" width="40" height="40" class="w-full h-full object-cover">
         </div>
         <div class="flex flex-col">
           <span class="font-bold text-lg text-text-bright tracking-wider group-hover:text-damask-light transition-colors">RAUPULUS</span>
@@ -580,14 +619,14 @@ def generate_index_html(relatos):
         </a>
       </nav>
 
-      <!-- Menú Móvil -->
-      <button @click="menuAbierto = !menuAbierto" class="md:hidden p-2 rounded-lg text-text-muted hover:text-text-bright hover:bg-obsidian-card" aria-label="Abrir menú">
+      <!-- Menú Móvil con ARIA y touch target 44px -->
+      <button @click="menuAbierto = !menuAbierto" :aria-expanded="menuAbierto.toString()" aria-controls="mobile-menu" class="md:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg text-text-muted hover:text-text-bright hover:bg-obsidian-card focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson" aria-label="Abrir menú de navegación">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </button>
     </div>
 
     <!-- Menú desplegable móvil -->
-    <div x-show="menuAbierto" @click.away="menuAbierto = false" x-cloak class="md:hidden border-b border-border-subtle bg-obsidian-card px-4 py-4 space-y-3">
+    <div id="mobile-menu" x-show="menuAbierto" @click.away="menuAbierto = false" x-cloak class="md:hidden border-b border-border-subtle bg-obsidian-card px-4 py-4 space-y-3">
       <a href="#catalogo" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">Catálogo de Relatos</a>
       <a href="#universo" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">El Universo</a>
       <a href="LICENSE.md" class="block text-sm text-text-muted hover:text-text-main">Aviso de Propiedad Intelectual</a>
@@ -618,26 +657,26 @@ def generate_index_html(relatos):
           Cada relato cuenta con su propia página dedicada: texto íntegro para lectura inmersiva, desglose de capítulos narrativos, fichas visuales de personajes y producciones en vídeo Full HD con locución multilingüe.
         </p>
 
-        <!-- Accesos rápidos del Hero -->
+        <!-- Accesos rápidos del Hero con fallback SSR -->
         <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <a :href="relatos[0]?.pagina_url" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-white font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
+          <a href="{relatos[0]['pagina_url']}" :href="relatos[0]?.pagina_url" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-white font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            <span>Leer Último Estreno (<span x-text="relatos[0]?.titulo"></span>)</span>
+            <span>Leer Último Estreno (<span x-text="relatos[0]?.titulo">{relatos[0]['titulo']}</span>)</span>
           </a>
           <a href="#catalogo" class="px-6 py-3 rounded-lg bg-obsidian-card hover:bg-obsidian-elevated border border-border-subtle hover:border-damask text-text-main font-semibold text-sm transition-all duration-200">
-            Explorar las <span x-text="relatos.length"></span> Historias
+            Explorar las <span x-text="relatos.length">{len(relatos)}</span> Historias
           </a>
         </div>
       </div>
     </section>
 
     <!-- Catálogo de Relatos Completo con Filtros Reactivos -->
-    <section id="catalogo" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="catalogo" class="scroll-mt-20 py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Cabecera de Sección y Controles -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
         <div>
-          <span class="text-xs uppercase font-bold tracking-wider text-damask">Biblioteca de Ficción</span>
+          <span class="text-xs uppercase font-bold tracking-wider text-damask-light">Biblioteca de Ficción</span>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-text-bright mt-1">Catálogo de Historias</h2>
           <p class="text-xs text-text-muted mt-1">Haz clic en cualquier historia para acceder a su página dedicada con lectura completa y contenido multimedia.</p>
         </div>
@@ -647,31 +686,31 @@ def generate_index_html(relatos):
           <label for="buscar-relato" class="sr-only">Buscar por título, temática o personaje</label>
           <div class="relative">
             <input type="text" id="buscar-relato" x-model="busqueda" placeholder="Buscar por título o palabra clave..." 
-                   class="w-full px-4 py-2 pl-9 rounded-lg bg-obsidian-card border border-border-subtle text-xs text-text-main placeholder-text-muted focus:outline-none focus:border-damask focus:ring-1 focus:ring-crimson transition">
-            <svg class="w-4 h-4 text-text-muted absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                   class="w-full min-h-[44px] px-4 py-2.5 pl-9 rounded-lg bg-obsidian-card border border-border-subtle text-xs text-text-main placeholder-text-muted focus:outline-none focus:border-damask focus:ring-1 focus:ring-crimson transition">
+            <svg class="w-4 h-4 text-text-muted absolute left-3 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
         </div>
       </div>
 
-      <!-- Barra de Filtros Temáticos por Categoría -->
+      <!-- Barra de Filtros Temáticos por Categoría con touch targets 44px -->
       <div class="flex flex-wrap items-center gap-2 mb-8 text-xs">
-        <button @click="filtroCategoria = 'todos'" :class="filtroCategoria === 'todos' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Todos (<span x-text="relatos.length"></span>)</button>
-        <button @click="filtroCategoria = 'suspense'" :class="filtroCategoria === 'suspense' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Suspense & Thriller</button>
-        <button @click="filtroCategoria = 'scifi'" :class="filtroCategoria === 'scifi' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Ciencia Ficción</button>
-        <button @click="filtroCategoria = 'terror'" :class="filtroCategoria === 'terror' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Terror</button>
-        <button @click="filtroCategoria = 'drama'" :class="filtroCategoria === 'drama' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Drama</button>
-        <button @click="filtroCategoria = 'misterio'" :class="filtroCategoria === 'misterio' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Misterio</button>
-        <button @click="filtroCategoria = 'historico'" :class="filtroCategoria === 'historico' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="px-3.5 py-1.5 rounded-full border transition font-medium">Histórico</button>
+        <button @click="filtroCategoria = 'todos'" :class="filtroCategoria === 'todos' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Todos (<span x-text="relatos.length">{len(relatos)}</span>)</button>
+        <button @click="filtroCategoria = 'suspense'" :class="filtroCategoria === 'suspense' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Suspense & Thriller</button>
+        <button @click="filtroCategoria = 'scifi'" :class="filtroCategoria === 'scifi' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Ciencia Ficción</button>
+        <button @click="filtroCategoria = 'terror'" :class="filtroCategoria === 'terror' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Terror</button>
+        <button @click="filtroCategoria = 'drama'" :class="filtroCategoria === 'drama' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Drama</button>
+        <button @click="filtroCategoria = 'misterio'" :class="filtroCategoria === 'misterio' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Misterio</button>
+        <button @click="filtroCategoria = 'historico'" :class="filtroCategoria === 'historico' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Histórico</button>
       </div>
 
       <!-- Rejilla de Tarjetas -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <template x-for="r in relatosFiltrados" :key="r.id">
+        <template x-for="(r, index) in relatosFiltrados" :key="r.id">
           <article class="group rounded-xl bg-obsidian-card border border-border-subtle hover:border-damask transition-all duration-300 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-crimson/15">
             
             <!-- Portada 16:9 con enlace a la página dedicada -->
             <a :href="r.pagina_url" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle block" :aria-label="'Abrir relato ' + r.titulo">
-              <img :src="r.portada" :alt="'Portada oficial del relato ' + r.titulo" width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img :src="r.portada" :alt="'Portada oficial del relato ' + r.titulo" width="1280" height="720" :loading="index < 3 ? 'eager' : 'lazy'" :fetchpriority="index === 0 ? 'high' : 'auto'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               
               <!-- Badges de esquina -->
               <div class="absolute top-3 left-3 flex gap-2">
@@ -681,7 +720,7 @@ def generate_index_html(relatos):
 
               <!-- Duración en minutos -->
               <div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-obsidian/90 backdrop-blur px-2 py-0.5 rounded text-[11px] text-text-bright font-mono border border-border-subtle">
-                <svg class="w-3.5 h-3.5 text-crimson" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
+                <svg class="w-3.5 h-3.5 text-crimson-text" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
                 <span x-text="r.duracion_audio + ' min'"></span>
               </div>
             </a>
@@ -718,16 +757,26 @@ def generate_index_html(relatos):
       <!-- Si la búsqueda no arroja resultados -->
       <div x-show="relatosFiltrados.length === 0" x-cloak class="text-center py-12">
         <p class="text-sm text-text-muted">No se encontraron relatos para el filtro o término seleccionado.</p>
-        <button @click="busqueda = ''; filtroCategoria = 'todos'" class="mt-3 text-xs text-crimson hover:underline font-semibold">Restablecer filtros</button>
+        <button @click="busqueda = ''; filtroCategoria = 'todos'" class="mt-3 text-xs text-crimson-text hover:underline font-semibold">Restablecer filtros</button>
       </div>
+
+      <!-- Fallback estático para motores de búsqueda y usuarios sin JavaScript -->
+      <noscript>
+        <div class="mt-8 p-6 rounded-xl bg-obsidian-card border border-border-subtle">
+          <h3 class="text-lg font-bold text-text-bright mb-4">Índice Completo de Historias (Versión Estática)</h3>
+          <ul class="space-y-4">
+{noscript_items}
+          </ul>
+        </div>
+      </noscript>
 
     </section>
 
     <!-- Sección El Universo Raupulus -->
-    <section id="universo" class="py-16 bg-obsidian-card/40 border-t border-border-subtle">
+    <section id="universo" class="scroll-mt-20 py-16 bg-obsidian-card/40 border-t border-border-subtle">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-2xl mx-auto mb-12">
-          <span class="text-xs uppercase font-bold tracking-wider text-damask">Pilares de Producción</span>
+          <span class="text-xs uppercase font-bold tracking-wider text-damask-light">Pilares de Producción</span>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-text-bright mt-1">El Universo de Raupulus Tales</h2>
           <p class="text-xs sm:text-sm text-text-muted mt-2">Cómo concebimos cada historia desde la idea original hasta el máster audiovisual.</p>
         </div>
@@ -775,7 +824,7 @@ def generate_index_html(relatos):
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
       
       <div class="flex items-center gap-3">
-        <img src="assets/images/logo.webp" alt="Raupulus Tales Logo Oficial" width="32" height="32" class="w-8 h-8 rounded-full border border-border-subtle">
+        <img src="assets/images/logo-160.webp" alt="Raupulus Tales Logo Oficial" width="32" height="32" class="w-8 h-8 rounded-full border border-border-subtle">
         <div>
           <div class="font-bold text-text-bright">Raupulus Tales</div>
           <div class="text-[10px] text-text-muted">Ficción Multimedia & Storytelling Digital</div>
@@ -843,6 +892,7 @@ def generate_story_pages(relatos):
         prev_r = relatos[idx - 1] if idx > 0 else relatos[-1]
         next_r = relatos[idx + 1] if idx < len(relatos) - 1 else relatos[0]
         page_file = os.path.join(RELATOS_DIR, f"{r['id']}-{r['slug']}.html")
+        truncated_sinopsis = truncate_meta_desc(r['sinopsis'], 155)
 
         # Capítulos HTML
         caps_html = []
@@ -851,7 +901,7 @@ def generate_story_pages(relatos):
             caps_html.append(f"""
             <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle flex flex-col sm:flex-row sm:items-start justify-between gap-3">
               <div class="flex items-start gap-3">
-                <span class="font-mono text-xs font-bold text-crimson px-2.5 py-1 rounded bg-obsidian border border-border-subtle">{c['tiempo']}</span>
+                <span class="font-mono text-xs font-bold text-crimson-text px-2.5 py-1 rounded bg-obsidian border border-border-subtle">{c['tiempo']}</span>
                 <div>
                   <h4 class="text-sm font-bold text-text-bright">{c['titulo']}</h4>
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">{c['resumen']}</p>
@@ -917,8 +967,8 @@ def generate_story_pages(relatos):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{r['titulo']} — Relato #{r['id']} | Raupulus Tales</title>
-  <meta name="description" content="{r['sinopsis']}">
+  <title>{r['titulo']} | Raupulus Tales</title>
+  <meta name="description" content="{truncated_sinopsis}">
   <meta name="keywords" content="{r['titulo']}, Raupulus Tales, Relatos, {', '.join(r['generos'])}">
   <meta name="author" content="Raupulus Tales">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -930,16 +980,21 @@ def generate_story_pages(relatos):
 
   <!-- Open Graph / Redes Sociales -->
   <meta property="og:site_name" content="Raupulus Tales">
+  <meta property="og:locale" content="es_ES">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{SITE_URL}/{r['pagina_url']}">
   <meta property="og:title" content="{r['titulo']} — Raupulus Tales">
-  <meta property="og:description" content="{r['sinopsis']}">
+  <meta property="og:description" content="{truncated_sinopsis}">
   <meta property="og:image" content="{SITE_URL}/{r['portada']}">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta property="og:image:alt" content="Portada oficial del relato {r['titulo']}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@RaupulusTales">
   <meta name="twitter:title" content="{r['titulo']} — Raupulus Tales">
-  <meta name="twitter:description" content="{r['sinopsis']}">
+  <meta name="twitter:description" content="{truncated_sinopsis}">
   <meta name="twitter:image" content="{SITE_URL}/{r['portada']}">
+  <meta name="twitter:image:alt" content="Portada oficial del relato {r['titulo']}">
 
   <!-- Iconos locales oficiales de Raupulus Tales -->
   <link rel="icon" type="image/webp" href="../assets/images/favicon.webp">
@@ -953,7 +1008,7 @@ def generate_story_pages(relatos):
     "@context": "https://schema.org",
     "@type": "ShortStory",
     "name": "{r['titulo']}",
-    "description": "{r['sinopsis']}",
+    "description": "{truncated_sinopsis}",
     "inLanguage": "es-ES",
     "genre": "{r['categoria_nombre']}",
     "wordCount": {r['palabras']},
@@ -974,10 +1029,13 @@ def generate_story_pages(relatos):
 <body class="bg-obsidian text-text-main min-h-screen flex flex-col selection:bg-crimson selection:text-white"
       x-data="{{ vistaPestana: 'relato' }}">
 
+  <!-- Enlace de salto a contenido principal (A11Y) -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2 focus:bg-crimson focus:text-white focus:rounded-lg focus:shadow-xl focus:outline-none">Saltar al contenido principal</a>
+
   <header class="sticky top-0 z-50 backdrop-blur-md bg-obsidian/90 border-b border-border-subtle">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="../index.html" class="flex items-center gap-3 group">
-        <img src="../assets/images/logo.webp" alt="Raupulus Tales Logo Oficial" width="36" height="36" class="w-9 h-9 rounded-full border border-damask/50">
+      <a href="../index.html" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson rounded-lg p-1" aria-label="Raupulus Tales - Portada">
+        <img src="../assets/images/logo-160.webp" alt="Raupulus Tales Logo Oficial" width="36" height="36" class="w-9 h-9 rounded-full border border-damask/50">
         <div>
           <span class="font-bold text-base text-text-bright tracking-wider">RAUPULUS</span>
           <span class="text-[9px] tracking-widest text-text-muted uppercase block -mt-1 font-semibold">TALES • RELATOS</span>
@@ -985,24 +1043,32 @@ def generate_story_pages(relatos):
       </a>
       <div class="flex items-center gap-4 text-xs">
         <a href="../index.html#catalogo" class="text-text-muted hover:text-white transition">← Catálogo Completo</a>
-        <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-yt-red text-white font-semibold">YouTube</a>
+        <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-yt-red text-white font-semibold shadow-sm hover:bg-red-700 transition">YouTube</a>
       </div>
     </div>
   </header>
 
-  <main class="flex-1 py-10">
+  <main class="flex-1 py-10" id="main-content">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       
-      <!-- Navegación entre historias -->
-      <nav class="flex items-center justify-between text-xs text-text-muted mb-6 pb-3 border-b border-border-subtle" aria-label="Navegación entre relatos">
-        <a href="{prev_r['id']}-{prev_r['slug']}.html" class="hover:text-white transition flex items-center gap-1">← Anterior: {prev_r['titulo']}</a>
-        <a href="../index.html#catalogo" class="hover:text-white transition font-medium">Índice</a>
-        <a href="{next_r['id']}-{next_r['slug']}.html" class="hover:text-white transition flex items-center gap-1">Siguiente: {next_r['titulo']} →</a>
+      <!-- Navegación entre historias (Responsive 320px+) -->
+      <nav class="grid grid-cols-1 sm:grid-cols-3 gap-2 items-center text-xs text-text-muted mb-6 pb-3 border-b border-border-subtle" aria-label="Navegación entre relatos">
+        <a href="{prev_r['id']}-{prev_r['slug']}.html" class="hover:text-white transition flex items-center gap-1 truncate" title="{prev_r['titulo']}">
+          <span class="shrink-0 text-damask-light">←</span>
+          <span class="shrink-0 text-text-muted">Anterior:</span>
+          <span class="truncate">{prev_r['titulo']}</span>
+        </a>
+        <a href="../index.html#catalogo" class="hover:text-white transition font-medium text-center order-first sm:order-none py-1">Índice del Catálogo</a>
+        <a href="{next_r['id']}-{next_r['slug']}.html" class="hover:text-white transition flex items-center justify-start sm:justify-end gap-1 truncate" title="{next_r['titulo']}">
+          <span class="shrink-0 text-text-muted">Siguiente:</span>
+          <span class="truncate">{next_r['titulo']}</span>
+          <span class="shrink-0 text-damask-light">→</span>
+        </a>
       </nav>
 
       <!-- Cabecera de la Historia -->
       <header class="mb-6">
-        <div class="flex items-center gap-2 mb-2">
+        <div class="flex flex-wrap items-center gap-2 mb-2">
           <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-crimson text-white">{r['id']}</span>
           <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-plum/60 border border-damask/40 text-text-bright">{r['categoria_nombre']}</span>
           <span class="text-xs text-text-muted">• {r['palabras']} palabras • {r['duracion_audio']} min narración</span>
@@ -1014,17 +1080,17 @@ def generate_story_pages(relatos):
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
         {video_block}
 
-        <!-- Pestañas Interactivas -->
-        <div class="flex border-b border-border-subtle bg-obsidian-elevated px-4 text-xs font-semibold overflow-x-auto">
-          <button @click="vistaPestana = 'relato'" :class="vistaPestana === 'relato' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap">📖 Relato Literario</button>
-          <button @click="vistaPestana = 'capitulos'" :class="vistaPestana === 'capitulos' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap">🎬 Capítulos ({len(r.get('capitulos', []))})</button>
-          <button @click="vistaPestana = 'personajes'" :class="vistaPestana === 'personajes' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap">👤 Personajes ({len(r.get('personajes', []))})</button>
-          <button @click="vistaPestana = 'locucion'" :class="vistaPestana === 'locucion' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap">🎙️ Locución</button>
+        <!-- Pestañas Interactivas con Accesibilidad ARIA y touch targets 44px -->
+        <div role="tablist" aria-label="Secciones del relato" class="flex border-b border-border-subtle bg-obsidian-elevated px-4 text-xs font-semibold overflow-x-auto">
+          <button role="tab" id="tab-relato" aria-controls="panel-relato" :aria-selected="(vistaPestana === 'relato').toString()" :tabindex="vistaPestana === 'relato' ? '0' : '-1'" @click="vistaPestana = 'relato'" :class="vistaPestana === 'relato' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] inline-flex items-center px-5 py-2.5 border-b-2 transition whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson">📖 Relato Literario</button>
+          <button role="tab" id="tab-capitulos" aria-controls="panel-capitulos" :aria-selected="(vistaPestana === 'capitulos').toString()" :tabindex="vistaPestana === 'capitulos' ? '0' : '-1'" @click="vistaPestana = 'capitulos'" :class="vistaPestana === 'capitulos' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] inline-flex items-center px-5 py-2.5 border-b-2 transition whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson">🎬 Capítulos ({len(r.get('capitulos', []))})</button>
+          <button role="tab" id="tab-personajes" aria-controls="panel-personajes" :aria-selected="(vistaPestana === 'personajes').toString()" :tabindex="vistaPestana === 'personajes' ? '0' : '-1'" @click="vistaPestana = 'personajes'" :class="vistaPestana === 'personajes' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] inline-flex items-center px-5 py-2.5 border-b-2 transition whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson">👤 Personajes ({len(r.get('personajes', []))})</button>
+          <button role="tab" id="tab-locucion" aria-controls="panel-locucion" :aria-selected="(vistaPestana === 'locucion').toString()" :tabindex="vistaPestana === 'locucion' ? '0' : '-1'" @click="vistaPestana = 'locucion'" :class="vistaPestana === 'locucion' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] inline-flex items-center px-5 py-2.5 border-b-2 transition whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson">🎙️ Locución</button>
         </div>
 
         <div class="p-6 md:p-10">
           <!-- Panel Relato Literario -->
-          <article x-show="vistaPestana === 'relato'" class="max-w-prose mx-auto">
+          <article role="tabpanel" id="panel-relato" aria-labelledby="tab-relato" tabindex="0" x-show="vistaPestana === 'relato'" class="max-w-prose mx-auto focus:outline-none">
             <div class="p-4 rounded-xl bg-obsidian-card border border-border-subtle mb-8 text-xs sm:text-sm text-text-muted italic leading-relaxed">
               <strong class="text-damask-light not-italic block mb-1">Sinopsis Oficial:</strong>
               {r['sinopsis']}
@@ -1041,7 +1107,7 @@ def generate_story_pages(relatos):
           </article>
 
           <!-- Panel Capítulos (Sin archivos técnicos) -->
-          <div x-show="vistaPestana === 'capitulos'" class="space-y-3">
+          <div role="tabpanel" id="panel-capitulos" aria-labelledby="tab-capitulos" tabindex="0" x-show="vistaPestana === 'capitulos'" class="space-y-3 focus:outline-none">
             <div class="flex items-center justify-between border-b border-border-subtle pb-3 mb-4">
               <h3 class="font-bold text-sm text-text-bright">Estructura Dramática de la Historia</h3>
               <span class="text-xs font-mono text-damask-light font-bold">{r['duracion_audio']}</span>
@@ -1050,12 +1116,12 @@ def generate_story_pages(relatos):
           </div>
 
           <!-- Panel Personajes -->
-          <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div role="tabpanel" id="panel-personajes" aria-labelledby="tab-personajes" tabindex="0" x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4 focus:outline-none">
             {chars_rendered}
           </div>
 
           <!-- Panel Locución -->
-          <div x-show="vistaPestana === 'locucion'" class="space-y-4">
+          <div role="tabpanel" id="panel-locucion" aria-labelledby="tab-locucion" tabindex="0" x-show="vistaPestana === 'locucion'" class="space-y-4 focus:outline-none">
             <div class="border-b border-border-subtle pb-3 mb-4">
               <h3 class="font-bold text-sm text-text-bright">Locuciones Oficiales de Estudio</h3>
               <p class="text-xs text-text-muted">Masterizadas a 192 kbps (48 kHz) y calibradas con la duración del máster en vídeo.</p>
