@@ -67,7 +67,7 @@ La identidad visual toma de referencia los tonos extraídos directamente del log
    * Contenedor de vídeo responsive 16:9 preparado para embeber vídeos de YouTube sin desajustes de maquetación.
    * Pestañas reactivas con Alpine.js:
      * **Relato Literario:** Texto maestro completo dividido por escenas (`* * *`) con tipografía editorial.
-     * **Storyboard & Marcas:** Desglose técnico de escenas, marcas de tiempo y notas de apertura.
+     * **Capítulos & Storyboard:** Desglose narrativo limpio de capítulos con marcas de tiempo (`MM:SS`) y resumen dramático de acontecimientos. **PROHIBIDO estricta y terminantemente incluir nombres de archivos de producción audiovisual (`video1.mp4`, `video2.mp4`, `escena-XX.png`, `.wav`) o jerga técnica de software/renderizado.**
      * **Avatares & Biblia Visual:** Fichas de consistencia de personajes (edad fija, rasgos anatómicos y láminas de avatar).
      * **Locución & Audios:** Acceso a las tres pistas de locución calibradas.
 4. **Footer:**
@@ -89,7 +89,37 @@ La identidad visual toma de referencia los tonos extraídos directamente del log
 
 ---
 
-## 7. ESTÁNDARES OBLIGATORIOS DE ACCESIBILIDAD (A11Y), W3C Y RESPONSIVE
+## 7. PROTOCOLO OBLIGATORIO DE INSERCIÓN Y AGRUPACIÓN DE NUEVOS RELATOS
+
+> [!IMPORTANT]
+> Cada vez que se desarrolle, sincronice o publique un nuevo relato en el universo Raupulus Tales (`Historias/NNNN-slug/`), se debe incorporar a la web siguiendo rigurosamente este patrón:
+
+1. **Agrupación y Clasificación Obligatoria por Tipo de Relato (`categoria`):**
+   * Todo relato debe clasificarse en una de las categorías estándar para asegurar el correcto funcionamiento de los filtros reactivos en Alpine.js:
+     * `suspense`: Suspense, intriga y thriller psicológico.
+     * `scifi`: Ciencia ficción, distopías y futuros especulativos.
+     * `terror`: Terror cósmico, criaturas y horror psicológico.
+     * `drama`: Drama humano, relaciones familiares y comedia negra existencial.
+     * `misterio`: Enigmas del pasado, cartas secretas y objetos perdidos.
+     * `historico`: Ficción histórica y sucesos de época.
+     * `fantasia`: Fantasía oscura y mitología.
+   * Además, se deben registrar etiquetas secundarias libres en el array `generos` para potenciar el buscador en tiempo real.
+
+2. **Regla Inmutable de la Pestaña Storyboard / Capítulos:**
+   * **PROHIBICIÓN ESTRICTA:** Queda terminantemente prohibido escribir `video1.mp4`, `video2.mp4`, `escena-XX.png`, `.wav`, tiempos en fotogramas, o referencias a archivos locales de producción. Los visitantes de la web acceden al vídeo directamente a través de YouTube.
+   * La pestaña debe mostrar únicamente el listado de capítulos con su marca de tiempo (`MM:SS`), título descriptivo y un breve resumen narrativo de lo que sucede en la trama.
+
+3. **Compilación y Actualización Automática de la Web:**
+   * Tras finalizar el relato en `Historias/NNNN-slug/`, ejecutar desde la raíz del proyecto web:
+     ```bash
+     npm run build
+     # Ejecuta scripts/build_site.py y recompila Tailwind CSS
+     ```
+   * El script actualiza `data/relatos.json`, genera las portadas y avatares WebP en `assets/images/`, actualiza `index.html`, crea la página independiente `relatos/NNNN-slug.html`, refresca `sitemap.xml` y recompila `assets/css/tailwind.css`.
+
+---
+
+## 8. ESTÁNDARES OBLIGATORIOS DE ACCESIBILIDAD (A11Y), W3C Y RESPONSIVE
 
 * **Contraste de color WCAG AA/AAA:** Texto principal `#eedfe3` sobre fondos oscuros `#080308` (ratio > 11:1). Texto secundario `#a5919b` con ratio de contraste superior a 4.5:1.
 * **Navegación por teclado y foco visible:** Todo elemento interactivo debe contar con indicador visible de foco (`focus-visible:ring-2 focus-visible:ring-crimson`).
@@ -100,7 +130,7 @@ La identidad visual toma de referencia los tonos extraídos directamente del log
 
 ---
 
-## 8. BUENAS PRÁCTICAS DE GIT Y CONTROL DE VERSIONES
+## 9. BUENAS PRÁCTICAS DE GIT Y CONTROL DE VERSIONES
 
 * Commits atómicos, semánticos y descriptivos en español o inglés (`feat:`, `fix:`, `style:`, `docs:`, `refactor:`).
 * No commitear `node_modules/`, archivos temporales de sistema (`.DS_Store`) ni registros de compilación.
