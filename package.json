@@ -1,0 +1,13 @@
+{
+  "name": "www.relatos.raupulus.dev",
+  "version": "1.0.0",
+  "description": "Portal oficial para Raupulus Tales — Relatos y Ficción Multimedia",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i src/input.css -o assets/css/tailwind.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i src/input.css -o assets/css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

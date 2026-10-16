@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raupulus Tales — Historias y Relatos Multimedia</title>
+  <meta name="description" content="Relatos de ficción multimedia generados con IA, audiolibros multilingües y producciones cinematográficas en vídeo 1080p.">
+  
+  <!-- Favicon local -->
+  <link rel="icon" type="image/webp" href="assets/images/logo.webp">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  
+  <!-- CSS local pretranspilado (Sin CDNs ni dependencias externas) -->
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  
+  <!-- Alpine.js local -->
+  <script defer src="assets/js/alpine.min.js"></script>
+</head>
+<body class="bg-obsidian text-text-main min-h-screen flex flex-col selection:bg-crimson selection:text-text-bright"
+      x-data="{
+        filtroActivo: 'todos',
+        idiomaActivo: 'es-ES',
+        vistaActiva: 'relato',
+        menuAbierto: false
+      }">
+
+  <!-- Fondo ambiental con gradientes sutiles basados en la paleta del logo -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gradient-to-b from-crimson/15 via-plum/10 to-transparent blur-3xl opacity-70"></div>
+    <div class="absolute top-1/3 -right-40 w-[600px] h-[600px] bg-damask/10 blur-3xl rounded-full"></div>
+    <div class="absolute bottom-10 -left-40 w-[500px] h-[500px] bg-plum/15 blur-3xl rounded-full"></div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-obsidian/85 border-b border-border-subtle">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Brand & Logotipo -->
+      <a href="#" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson rounded-lg p-1">
+        <div class="relative w-10 h-10 rounded-full overflow-hidden border border-damask/50 group-hover:border-crimson transition-colors duration-300">
+          <img src="assets/images/logo.webp" alt="Raupulus Logo" class="w-full h-full object-cover">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-lg text-text-bright tracking-wider group-hover:text-damask-light transition-colors">RAUPULUS</span>
+          <span class="text-[10px] tracking-widest text-text-muted uppercase -mt-1 font-semibold">TALES • RELATOS</span>
+        </div>
+      </a>
+
+      <!-- Navegación y Enlaces -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#catalogo" class="text-text-main hover:text-text-bright hover:underline underline-offset-4 decoration-crimson transition-all">Catálogo</a>
+        <a href="#maqueta-visor" class="text-text-main hover:text-text-bright hover:underline underline-offset-4 decoration-crimson transition-all">Visor de Relato</a>
+        <a href="#universo" class="text-text-main hover:text-text-bright hover:underline underline-offset-4 decoration-crimson transition-all">El Universo</a>
+        
+        <!-- Selector simulado de idioma -->
+        <div class="flex items-center gap-1 bg-obsidian-card border border-border-subtle rounded-md p-1 text-xs">
+          <button @click="idiomaActivo = 'es-ES'" :class="idiomaActivo === 'es-ES' ? 'bg-crimson text-text-bright font-bold' : 'text-text-muted hover:text-text-main'" class="px-2 py-0.5 rounded transition">ES</button>
+          <button @click="idiomaActivo = 'es-LAT'" :class="idiomaActivo === 'es-LAT' ? 'bg-crimson text-text-bright font-bold' : 'text-text-muted hover:text-text-main'" class="px-2 py-0.5 rounded transition">LAT</button>
+          <button @click="idiomaActivo = 'en-US'" :class="idiomaActivo === 'en-US' ? 'bg-crimson text-text-bright font-bold' : 'text-text-muted hover:text-text-main'" class="px-2 py-0.5 rounded transition">EN</button>
+        </div>
+
+        <!-- Botón Canal YouTube -->
+        <a href="https://www.youtube.com/@raupulus" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-yt-red/90 hover:bg-yt-red text-white text-xs font-semibold tracking-wide transition shadow-sm hover:shadow-crimson/50">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube
+        </a>
+      </nav>
+
+      <!-- Botón móvil -->
+      <button @click="menuAbierto = !menuAbierto" class="md:hidden p-2 rounded-lg text-text-muted hover:text-text-bright hover:bg-obsidian-card">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+
+    <!-- Menú desplegable móvil -->
+    <div x-show="menuAbierto" @click.away="menuAbierto = false" x-cloak class="md:hidden border-b border-border-subtle bg-obsidian-card px-4 py-4 space-y-3">
+      <a href="#catalogo" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">Catálogo de Relatos</a>
+      <a href="#maqueta-visor" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">Estructura del Visor</a>
+      <a href="#universo" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">El Universo</a>
+      <div class="pt-2 border-t border-border-subtle flex items-center justify-between">
+        <span class="text-xs text-text-muted">Idioma:</span>
+        <div class="flex gap-1">
+          <button @click="idiomaActivo = 'es-ES'" :class="idiomaActivo === 'es-ES' ? 'bg-crimson text-white' : 'text-text-muted'" class="px-2 py-1 text-xs rounded">ES</button>
+          <button @click="idiomaActivo = 'es-LAT'" :class="idiomaActivo === 'es-LAT' ? 'bg-crimson text-white' : 'text-text-muted'" class="px-2 py-1 text-xs rounded">LAT</button>
+          <button @click="idiomaActivo = 'en-US'" :class="idiomaActivo === 'en-US' ? 'bg-crimson text-white' : 'text-text-muted'" class="px-2 py-1 text-xs rounded">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1">
+
+    <!-- Hero Section -->
+    <section class="relative py-16 md:py-24 border-b border-border-subtle overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        
+        <!-- Badge temático con colores del logo -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/40 border border-damask/40 text-xs font-semibold text-text-bright mb-6">
+          <span class="w-2 h-2 rounded-full bg-crimson animate-pulse"></span>
+          Ficción Multimedia • Audiolibros Multilingües • Escenas 1080p
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-bright tracking-tight max-w-4xl mx-auto">
+          Relatos que se leen, se escuchan y <span class="text-transparent bg-clip-text bg-gradient-to-r from-crimson via-damask to-damask-light">cobran vida</span>
+        </h1>
+        
+        <p class="mt-6 text-lg sm:text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
+          Historias generadas y producidas con visión cinematográfica: narrativa literaria, consistencia visual de personajes y narración oral en español e inglés.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <a href="#catalogo" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-text-bright font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
+            Explorar Historias
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </a>
+          <a href="#maqueta-visor" class="px-6 py-3 rounded-lg bg-obsidian-card hover:bg-obsidian-elevated border border-border-subtle hover:border-damask text-text-main font-semibold text-sm transition-all duration-200">
+            Ver Diseño del Visor
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Muestra de Paleta de Color (Para validación del diseño) -->
+    <section class="py-10 bg-obsidian-card/40 border-b border-border-subtle">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-xs uppercase tracking-widest font-bold text-text-muted mb-4 text-center">Combinación cromática extraída del Logotipo Oficial</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 text-center">
+          
+          <div class="p-3 rounded-lg bg-obsidian-card border border-border-subtle">
+            <div class="w-full h-10 rounded bg-crimson mb-2 flex items-center justify-center font-mono text-xs text-white">#941300</div>
+            <div class="text-xs font-semibold text-text-bright">Crimson Red</div>
+            <div class="text-[10px] text-text-muted">Acento dominante</div>
+          </div>
+
+          <div class="p-3 rounded-lg bg-obsidian-card border border-border-subtle">
+            <div class="w-full h-10 rounded bg-plum mb-2 flex items-center justify-center font-mono text-xs text-white">#371632</div>
+            <div class="text-xs font-semibold text-text-bright">Velvet Plum</div>
+            <div class="text-[10px] text-text-muted">Secundario atmósfera</div>
+          </div>
+
+          <div class="p-3 rounded-lg bg-obsidian-card border border-border-subtle">
+            <div class="w-full h-10 rounded bg-damask mb-2 flex items-center justify-center font-mono text-xs text-white">#8f2e49</div>
+            <div class="text-xs font-semibold text-text-bright">Rose Damask</div>
+            <div class="text-[10px] text-text-muted">Terciario & Bordes</div>
+          </div>
+
+          <div class="p-3 rounded-lg bg-obsidian-card border border-border-subtle">
+            <div class="w-full h-10 rounded bg-obsidian border border-border-subtle mb-2 flex items-center justify-center font-mono text-xs text-text-muted">#080308</div>
+            <div class="text-xs font-semibold text-text-bright">Obsidian Void</div>
+            <div class="text-[10px] text-text-muted">Fondo cinematográfico</div>
+          </div>
+
+          <div class="p-3 rounded-lg bg-obsidian-card border border-border-subtle">
+            <div class="w-full h-10 rounded bg-obsidian-elevated border border-border-subtle mb-2 flex items-center justify-center font-mono text-xs text-text-muted">#1a0e1c</div>
+            <div class="text-xs font-semibold text-text-bright">Plum Surface</div>
+            <div class="text-[10px] text-text-muted">Tarjetas & Elevación</div>
+          </div>
+
+          <div class="p-3 rounded-lg bg-obsidian-card border border-border-subtle">
+            <div class="w-full h-10 rounded bg-[#eedfe3] mb-2 flex items-center justify-center font-mono text-xs text-black">#eedfe3</div>
+            <div class="text-xs font-semibold text-text-bright">Warm Mist</div>
+            <div class="text-[10px] text-text-muted">Lectura / Texto principal</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo de Relatos (Estructura de Tarjetas) -->
+    <section id="catalogo" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabecera de sección y Filtros con Alpine -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-wider text-damask">Biblioteca de Historias</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-text-bright mt-1">Relatos Producidos</h2>
+        </div>
+
+        <!-- Filtros reactivos con Alpine -->
+        <div class="flex flex-wrap gap-2 text-xs">
+          <button @click="filtroActivo = 'todos'" :class="filtroActivo === 'todos' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-text-bright'" class="px-3 py-1.5 rounded-full border transition font-medium">Todos</button>
+          <button @click="filtroActivo = 'scifi'" :class="filtroActivo === 'scifi' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-text-bright'" class="px-3 py-1.5 rounded-full border transition font-medium">Ciencia Ficción</button>
+          <button @click="filtroActivo = 'fantasia'" :class="filtroActivo === 'fantasia' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-text-bright'" class="px-3 py-1.5 rounded-full border transition font-medium">Fantasía Oscura</button>
+          <button @click="filtroActivo = 'suspense'" :class="filtroActivo === 'suspense' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-text-bright'" class="px-3 py-1.5 rounded-full border transition font-medium">Suspense & Misterio</button>
+        </div>
+      </div>
+
+      <!-- Grid de Historias de Muestra para Maquetación -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Tarjeta Relato 1 (Ejemplo Maqueta) -->
+        <article class="group rounded-xl bg-obsidian-card border border-border-subtle hover:border-damask transition-all duration-300 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-crimson/10">
+          <!-- Thumbnail simulado (16:9) -->
+          <div class="relative aspect-video bg-gradient-to-tr from-plum to-obsidian-elevated overflow-hidden border-b border-border-subtle flex items-center justify-center">
+            <span class="text-xs font-mono tracking-wider text-text-muted group-hover:text-text-bright transition-colors">PORTADA 16:9 • 1280x720</span>
+            
+            <!-- Badges superiores -->
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-crimson text-white">0001</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-obsidian/80 text-text-bright backdrop-blur">Sci-Fi</span>
+            </div>
+
+            <!-- Duraciones -->
+            <div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-obsidian/85 backdrop-blur px-2 py-0.5 rounded text-[11px] text-text-bright">
+              <svg class="w-3.5 h-3.5 text-crimson" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
+              <span>12:45 min</span>
+            </div>
+          </div>
+
+          <!-- Contenido -->
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+                <span>≈ 2.050 palabras</span>
+                <span class="text-damask-light font-medium">ES • LAT • EN</span>
+              </div>
+              <h3 class="text-lg font-bold text-text-bright group-hover:text-damask-light transition-colors leading-snug">
+                El Último Faro de la Nebulosa
+              </h3>
+              <p class="mt-2 text-xs text-text-muted line-clamp-3 leading-relaxed">
+                Una estación de balizamiento solitaria en el confín exterior pierde el pulso cuántico. Solo un operador veterano y una IA con ecos del pasado permanecen de guardia.
+              </p>
+            </div>
+
+            <!-- Footer de la tarjeta -->
+            <div class="mt-4 pt-4 border-t border-border-subtle flex items-center justify-between">
+              <a href="#maqueta-visor" class="text-xs font-semibold text-crimson-glow group-hover:text-white flex items-center gap-1">
+                Abrir Relato
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </a>
+              <span class="text-[11px] text-text-muted">1080p Ken Burns</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta Relato 2 (Ejemplo Maqueta) -->
+        <article class="group rounded-xl bg-obsidian-card border border-border-subtle hover:border-damask transition-all duration-300 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-crimson/10">
+          <div class="relative aspect-video bg-gradient-to-tr from-damask/40 to-obsidian-elevated overflow-hidden border-b border-border-subtle flex items-center justify-center">
+            <span class="text-xs font-mono tracking-wider text-text-muted group-hover:text-text-bright transition-colors">PORTADA 16:9 • 1280x720</span>
+            
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-crimson text-white">0002</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-obsidian/80 text-text-bright backdrop-blur">Misterio</span>
+            </div>
+
+            <div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-obsidian/85 backdrop-blur px-2 py-0.5 rounded text-[11px] text-text-bright">
+              <svg class="w-3.5 h-3.5 text-crimson" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
+              <span>11:20 min</span>
+            </div>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+                <span>≈ 1.820 palabras</span>
+                <span class="text-damask-light font-medium">ES • LAT • EN</span>
+              </div>
+              <h3 class="text-lg font-bold text-text-bright group-hover:text-damask-light transition-colors leading-snug">
+                La Llave del Relojero Ciego
+              </h3>
+              <p class="mt-2 text-xs text-text-muted line-clamp-3 leading-relaxed">
+                En una villa neblinosa de la cornisa cantábrica, un anciano artesano custodia un mecanismo capaz de medir instantes que nunca llegaron a suceder.
+              </p>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-border-subtle flex items-center justify-between">
+              <a href="#maqueta-visor" class="text-xs font-semibold text-crimson-glow group-hover:text-white flex items-center gap-1">
+                Abrir Relato
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </a>
+              <span class="text-[11px] text-text-muted">1080p Ken Burns</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta Relato 3 (Ejemplo Maqueta) -->
+        <article class="group rounded-xl bg-obsidian-card border border-border-subtle hover:border-damask transition-all duration-300 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-crimson/10">
+          <div class="relative aspect-video bg-gradient-to-tr from-plum-dark via-damask/30 to-obsidian-elevated overflow-hidden border-b border-border-subtle flex items-center justify-center">
+            <span class="text-xs font-mono tracking-wider text-text-muted group-hover:text-text-bright transition-colors">PORTADA 16:9 • 1280x720</span>
+            
+            <div class="absolute top-3 left-3 flex gap-2">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-crimson text-white">0003</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-obsidian/80 text-text-bright backdrop-blur">Fantasía</span>
+            </div>
+
+            <div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-obsidian/85 backdrop-blur px-2 py-0.5 rounded text-[11px] text-text-bright">
+              <svg class="w-3.5 h-3.5 text-crimson" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
+              <span>14:10 min</span>
+            </div>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+                <span>≈ 2.290 palabras</span>
+                <span class="text-damask-light font-medium">ES • LAT • EN</span>
+              </div>
+              <h3 class="text-lg font-bold text-text-bright group-hover:text-damask-light transition-colors leading-snug">
+                El Aliento de las Piedras Negras
+              </h3>
+              <p class="mt-2 text-xs text-text-muted line-clamp-3 leading-relaxed">
+                Bajo los acantilados de basalto, los pescadores nunca cantan al anochecer. Una guardiana de faro descubre qué ocurre cuando se apagan los fuegos del templo.
+              </p>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-border-subtle flex items-center justify-between">
+              <a href="#maqueta-visor" class="text-xs font-semibold text-crimson-glow group-hover:text-white flex items-center gap-1">
+                Abrir Relato
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </a>
+              <span class="text-[11px] text-text-muted">1080p Ken Burns</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Maqueta del Visor de Relato y Reproductor (Estructura de Presentación) -->
+    <section id="maqueta-visor" class="py-16 bg-obsidian-card/60 border-t border-border-subtle">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs uppercase font-bold tracking-wider text-damask">Diseño del Reproductor & Lectura</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-text-bright mt-1">Visor Integrado de la Historia</h2>
+          <p class="text-xs text-text-muted mt-2">Maqueta estructural preparada para alternar entre el texto literario, la locución multilingüe y las escenas del storyboard.</p>
+        </div>
+
+        <!-- Contenedor del Visor -->
+        <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl">
+          
+          <!-- Área de Vídeo / Placeholder Cinemático (16:9) -->
+          <div class="relative aspect-video bg-gradient-to-b from-plum-dark/60 via-obsidian-elevated to-obsidian flex flex-col items-center justify-center border-b border-border-subtle text-center p-6">
+            <div class="w-16 h-16 rounded-full bg-crimson/90 hover:bg-crimson text-white flex items-center justify-center cursor-pointer transition glow-crimson mb-3">
+              <svg class="w-7 h-7 translate-x-0.5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <div class="text-sm font-semibold text-text-bright">Espacio para Vídeo Cinematográfico Embebido de YouTube</div>
+            <div class="text-xs text-text-muted mt-1 max-w-md">Resolución Full HD 1080p • Narración en Voz Máster Álvaro (es-ES) / Alonso (es-LAT) / Christopher (en-US)</div>
+          </div>
+
+          <!-- Selector de Pestañas con Alpine.js -->
+          <div class="flex border-b border-border-subtle bg-obsidian-elevated/80 px-4 text-xs font-semibold">
+            <button @click="vistaActiva = 'relato'" :class="vistaActiva === 'relato' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-text-main border-transparent'" class="px-5 py-3 border-b-2 transition flex items-center gap-2">
+              📖 Relato Literario
+            </button>
+            <button @click="vistaActiva = 'storyboard'" :class="vistaActiva === 'storyboard' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-text-main border-transparent'" class="px-5 py-3 border-b-2 transition flex items-center gap-2">
+              🎬 Storyboard & Marcas
+            </button>
+            <button @click="vistaActiva = 'personajes'" :class="vistaActiva === 'personajes' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-text-main border-transparent'" class="px-5 py-3 border-b-2 transition flex items-center gap-2">
+              👤 Avatares & Biblia Visual
+            </button>
+          </div>
+
+          <!-- Paneles de Contenido -->
+          <div class="p-6 md:p-10">
+
+            <!-- Panel 1: Relato Literario -->
+            <div x-show="vistaActiva === 'relato'" x-cloak class="max-w-prose mx-auto space-y-4">
+              <div class="border-b border-border-subtle pb-4 mb-6">
+                <span class="text-xs uppercase tracking-wider text-damask font-bold">Relato Maestro</span>
+                <h3 class="text-2xl font-bold text-text-bright mt-1">0001 — El Último Faro de la Nebulosa</h3>
+                <p class="text-xs text-text-muted mt-1">Duración estimada: ≈ 9 min de lectura silenciosa • ≈ 12.5 min de locución</p>
+              </div>
+
+              <p class="text-text-main leading-relaxed text-sm sm:text-base">
+                El zumbido del compensador gravitatorio cesó a las tres y diez de la madrugada. No fue un apagón violento, sino un suspiro sordo que dejó la estancia en una penumbra ámbar. Martín no levantó la vista del cuaderno de registro hasta que la vibración de las vigas metálicas se diluyó por completo.
+              </p>
+
+              <p class="text-text-main leading-relaxed text-sm sm:text-base">
+                —Segunda derivación térmica en menos de cuarenta y ocho horas —dijo hacia el conducto del intercomunicador—. Si la bobina principal pierde coherencia antes del amanecer, la baliza entrará en deriva ciega.
+              </p>
+
+              <div class="py-4 text-center text-damask font-serif tracking-widest text-lg">* * *</div>
+
+              <p class="text-text-main leading-relaxed text-sm sm:text-base">
+                La voz sintética de la consola no respondió de inmediato. Hubo un crujido estático, el chasquido metálico de un solenoide antiguo y luego una cadencia suave, casi humana, resonó en la mampara:
+              </p>
+
+              <blockquote class="pl-4 border-l-2 border-crimson italic text-text-muted text-sm my-4">
+                «Los informes del sector exterior tardarán doce minutos en llegar a la central. Hasta entonces, la única luz que define la ruta de los cargueros es la que sostienes con tus manos.»
+              </blockquote>
+            </div>
+
+            <!-- Panel 2: Storyboard & Marcas -->
+            <div x-show="vistaActiva === 'storyboard'" x-cloak class="space-y-4 text-xs">
+              <div class="flex items-center justify-between border-b border-border-subtle pb-3">
+                <span class="font-bold text-text-bright uppercase tracking-wide">Desglose de Escenas & Sincronización</span>
+                <span class="text-damask-light">Total: 8 escenas • Vídeo apertura: 00:00–00:10</span>
+              </div>
+
+              <div class="space-y-2">
+                <div class="flex items-center justify-between p-3 rounded-lg bg-obsidian-elevated border border-border-subtle">
+                  <div class="flex items-center gap-3">
+                    <span class="font-mono text-crimson font-bold">00:00 - 00:10</span>
+                    <span class="text-text-bright font-medium">Apertura: Vídeo cinematográfico 1 (video1.mp4)</span>
+                  </div>
+                  <span class="text-text-muted">Cámara orbital hacia la estación</span>
+                </div>
+
+                <div class="flex items-center justify-between p-3 rounded-lg bg-obsidian-elevated border border-border-subtle">
+                  <div class="flex items-center gap-3">
+                    <span class="font-mono text-crimson font-bold">00:10 - 01:45</span>
+                    <span class="text-text-bright font-medium">Escena 01: El panel de control y el cese del motor</span>
+                  </div>
+                  <span class="text-text-muted">Plano medio de Martín</span>
+                </div>
+
+                <div class="flex items-center justify-between p-3 rounded-lg bg-obsidian-elevated border border-border-subtle">
+                  <div class="flex items-center gap-3">
+                    <span class="font-mono text-crimson font-bold">01:45 - 03:20</span>
+                    <span class="text-text-bright font-medium">Escena 02: La grieta exterior en el cristal blindado</span>
+                  </div>
+                  <span class="text-text-muted">Detalle escarcha cósmica</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 3: Personajes & Biblia Visual -->
+            <div x-show="vistaActiva === 'personajes'" x-cloak class="space-y-4">
+              <div class="border-b border-border-subtle pb-3">
+                <span class="text-xs uppercase tracking-wide text-damask font-bold">Consistencia de Personajes</span>
+                <h4 class="text-sm font-bold text-text-bright mt-0.5">Avatares de Referencia Visual (Cabeza y Cuerpo en 3 Posiciones)</h4>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle">
+                  <div class="aspect-video rounded bg-obsidian border border-border-subtle flex items-center justify-center text-xs text-text-muted mb-3 font-mono">
+                    AVATAR CABEZA (Frontal / Perfil / Trasera)
+                  </div>
+                  <div class="font-bold text-sm text-text-bright">Martín — 58 años</div>
+                  <div class="text-xs text-text-muted mt-1 leading-relaxed">Facciones marcadas por la gravedad reducida, cabello canoso recortado, barba de tres días y ojos grises. Inmutable en todas las escenas.</div>
+                </div>
+
+                <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle">
+                  <div class="aspect-video rounded bg-obsidian border border-border-subtle flex items-center justify-center text-xs text-text-muted mb-3 font-mono">
+                    AVATAR CUERPO COMPLETO (3 Vistas)
+                  </div>
+                  <div class="font-bold text-sm text-text-bright">Vestuario Oficial Invariable</div>
+                  <div class="text-xs text-text-muted mt-1 leading-relaxed">Mono térmico de balizamiento color carbón con arnés magnético y botas industriales desgastadas.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sobre el Proyecto / Universo -->
+    <section id="universo" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-border-subtle">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="p-6 rounded-xl bg-obsidian-card border border-border-subtle">
+          <div class="w-10 h-10 rounded-lg bg-crimson/20 border border-crimson/50 text-crimson-glow flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          </div>
+          <h3 class="text-base font-bold text-text-bright mb-2">Narrativa Literaria Cuidada</h3>
+          <p class="text-xs text-text-muted leading-relaxed">
+            Relatos extensos de entre 1.600 y 2.400 palabras, estructurados para conmover tanto en lectura sosegada como en locución oral fluida.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-obsidian-card border border-border-subtle">
+          <div class="w-10 h-10 rounded-lg bg-plum/50 border border-damask/50 text-damask-light flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+          </div>
+          <h3 class="text-base font-bold text-text-bright mb-2">Trinidad de Voces Oficiales</h3>
+          <p class="text-xs text-text-muted leading-relaxed">
+            Locución en tres pistas independientes a 192 kbps: Álvaro (España), Alonso (Latinoamérica) y Christopher (Inglés) rigurosamente calibradas en duración.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-obsidian-card border border-border-subtle">
+          <div class="w-10 h-10 rounded-lg bg-damask/20 border border-damask/50 text-text-bright flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-base font-bold text-text-bright mb-2">Cinematografía y Consistencia</h3>
+          <p class="text-xs text-text-muted leading-relaxed">
+            Storyboards técnicos, avatares de referencia con edad fija y escenas renderizadas a 1080p con movimiento Ken Burns y clips de apertura.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Oficial -->
+  <footer class="bg-obsidian-card border-t border-border-subtle py-12 text-xs text-text-muted">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.webp" alt="Raupulus Logo" class="w-8 h-8 rounded-full border border-border-subtle">
+        <div>
+          <div class="font-bold text-text-bright">Raupulus Tales</div>
+          <div class="text-[10px] text-text-muted">Ficción Multimedia & Storytelling Digital</div>
+        </div>
+      </div>
+
+      <!-- Enlaces del Ecosistema -->
+      <div class="flex flex-wrap items-center justify-center gap-6">
+        <a href="https://raupulus.dev" target="_blank" rel="noopener noreferrer" class="hover:text-text-bright transition">raupulus.dev</a>
+        <a href="https://music.raupulus.dev" target="_blank" rel="noopener noreferrer" class="hover:text-text-bright transition">music.raupulus.dev</a>
+        <a href="https://www.youtube.com/@raupulus" target="_blank" rel="noopener noreferrer" class="hover:text-text-bright transition">YouTube Oficial</a>
+        <a href="mailto:public@raupulus.dev" class="hover:text-text-bright transition">public@raupulus.dev</a>
+      </div>
+
+      <div class="text-center md:text-right text-[11px]">
+        <span>© 2026 Raupulus. Todos los derechos reservados.</span>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
