@@ -114,13 +114,20 @@ La identidad visual toma de referencia los tonos extraídos directamente del log
    * **PROHIBICIÓN ESTRICTA:** Queda terminantemente prohibido escribir `video1.mp4`, `video2.mp4`, `escena-XX.png`, `.wav`, tiempos en fotogramas, o referencias a archivos locales de producción. Los visitantes de la web acceden al vídeo directamente a través de YouTube.
    * La pestaña debe mostrar únicamente el listado de capítulos con su marca de tiempo (`MM:SS`), título descriptivo y un breve resumen narrativo de lo que sucede en la trama.
 
-3. **Compilación y Actualización Automática de la Web:**
+3. **Ilustraciones Cinematográficas Intercaladas en el Relato Literario:**
+   * Al ser historias largas (1.600 a 2.400+ palabras), la lectura en la pestaña *Relato Literario* debe enriquecerse visualmente intercalando **5 imágenes clave** del storyboard (`assets/images/escenas/NNNN-*.webp`) distribuidas proporcionalmente entre los párrafos.
+   * Estas ilustraciones se extraen del lote de escenas de producción (`escenas/*.png`), se optimizan en formato WebP con relación de aspecto 16:9 y se insertan con sus respectivos pies de foto narrativos elegantes (`<figure>` y `<figcaption>`), mejorando la inmersión del lector sin interrumpir el ritmo dramático.
+
+4. **Visibilidad y Ordenación del Catálogo:**
+   * En el catálogo de la portada (`index.html`) y en la base de datos `data/relatos.json`, los relatos deben ordenarse **siempre con los últimos subidos arriba** (orden descendente por ID: `0010`, `0009`... `0001`) para dar máxima visibilidad inmediata a los nuevos estrenos y publicaciones recientes.
+
+5. **Compilación y Actualización Automática de la Web:**
    * Tras finalizar el relato en `Historias/NNNN-slug/`, ejecutar desde la raíz del proyecto web:
      ```bash
      npm run build
      # Ejecuta scripts/build_site.py y recompila Tailwind CSS
      ```
-   * El script actualiza `data/relatos.json`, genera las portadas y avatares WebP en `assets/images/`, actualiza `index.html`, crea la página independiente `relatos/NNNN-slug.html`, refresca `sitemap.xml` y recompila `assets/css/tailwind.css`.
+   * El script actualiza `data/relatos.json`, genera las portadas, avatares y las 5 escenas WebP en `assets/images/`, actualiza `index.html` con orden descendente, crea la página independiente `relatos/NNNN-slug.html`, refresca `sitemap.xml` y recompila `assets/css/tailwind.css`.
 
 ---
 

@@ -31,27 +31,61 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 RELATOS_DIR = os.path.join(BASE_DIR, "relatos")
 PORTADAS_DIR = os.path.join(BASE_DIR, "assets", "images", "portadas")
 AVATARS_DIR = os.path.join(BASE_DIR, "assets", "images", "avatars")
+ESCENAS_DIR = os.path.join(BASE_DIR, "assets", "images", "escenas")
 DATA_FILE = os.path.join(DATA_DIR, "relatos.json")
 
 
-def clean_narrative_text(txt):
-    """Limpia y formatea el relato en párrafos legibles con tipografía editorial."""
+def clean_narrative_text(txt, story_id=None, inline_images=None):
+    """
+    Limpia y formatea el relato en párrafos legibles con tipografía editorial.
+    Si se proporciona una lista de inline_images (ej. 5 escenas clave del storyboard),
+    las distribuye equitativamente a lo largo del texto entre los párrafos de forma armoniosa.
+    """
     paragraphs = txt.strip().split("\n\n")
-    html_out = []
+    html_paragraphs = []
     for p in paragraphs:
         p = p.strip()
         if not p:
             continue
         if p == "* * *":
-            html_out.append('<div class="scene-divider my-10 text-center text-damask font-serif tracking-widest text-xl font-bold select-none">* * *</div>')
+            html_paragraphs.append('<div class="scene-divider my-10 text-center text-damask font-serif tracking-widest text-xl font-bold select-none">* * *</div>')
         elif p.startswith("—") or p.startswith("- "):
             clean_p = p.lstrip("- ")
-            html_out.append(f'<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif">{clean_p}</p>')
+            html_paragraphs.append(f'<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif">{clean_p}</p>')
         elif p.startswith("«") and p.endswith("»"):
-            html_out.append(f'<blockquote class="my-6 pl-4 border-l-2 border-crimson italic text-text-muted text-base sm:text-lg font-serif">{p}</blockquote>')
+            html_paragraphs.append(f'<blockquote class="my-6 pl-4 border-l-2 border-crimson italic text-text-muted text-base sm:text-lg font-serif">{p}</blockquote>')
         else:
-            html_out.append(f'<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">{p}</p>')
-    return "\n".join(html_out)
+            html_paragraphs.append(f'<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">{p}</p>')
+
+    # Intercalar imágenes si existen para la historia
+    if inline_images and len(html_paragraphs) > 6:
+        num_imgs = len(inline_images)
+        # Calcular posiciones distribuidas sin tocar los primeros 2 ni los últimos 2 párrafos
+        step = max(3, len(html_paragraphs) // (num_imgs + 1))
+        positions = [step * (i + 1) for i in range(num_imgs)]
+        
+        # Insertar de atrás hacia adelante para mantener los índices
+        for pos, img_data in reversed(list(zip(positions, inline_images))):
+            target_idx = min(pos, len(html_paragraphs) - 2)
+            caption = img_data.get('caption', '')
+            img_src = img_data.get('src', '')
+            alt_text = img_data.get('alt', 'Escena cinematográfica del relato')
+            
+            fig_html = f"""
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../{img_src}" alt="{alt_text}" width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              </div>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>{caption}</span>
+                <span class="text-[10px] text-damask font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            """
+            html_paragraphs.insert(target_idx, fig_html)
+
+    return "\n".join(html_paragraphs)
 
 
 def clean_chapter_title(title):
@@ -173,6 +207,7 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
     os.makedirs(DATA_DIR, exist_ok=True)
     os.makedirs(PORTADAS_DIR, exist_ok=True)
     os.makedirs(AVATARS_DIR, exist_ok=True)
+    os.makedirs(ESCENAS_DIR, exist_ok=True)
     os.makedirs(RELATOS_DIR, exist_ok=True)
 
     if not os.path.exists(src_dir):
@@ -301,6 +336,36 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                     with Image.open(af) as im:
                         im.save(dest_av, 'WEBP', quality=85)
 
+        # Escenas WebP para intercalar en el relato literario (5 escenas clave distribuidas a lo largo del texto)
+        escenas_src_dir = os.path.join(sp, 'escenas')
+        inline_images = []
+        if os.path.exists(escenas_src_dir):
+            all_esc_pngs = sorted([f for f in glob.glob(os.path.join(escenas_src_dir, '*.png')) if not os.path.basename(f).startswith('video')])
+            if len(all_esc_pngs) >= 5:
+                # Seleccionar 5 escenas representativas a lo largo de la narración
+                indices = [0, len(all_esc_pngs) // 4, len(all_esc_pngs) // 2, (len(all_esc_pngs) * 3) // 4, -1]
+                chosen_pngs = [all_esc_pngs[i] for i in indices]
+            elif all_esc_pngs:
+                chosen_pngs = all_esc_pngs
+            else:
+                chosen_pngs = []
+
+            for c_png in chosen_pngs:
+                bname = os.path.splitext(os.path.basename(c_png))[0]
+                dest_esc = os.path.join(ESCENAS_DIR, f"{num_id}-{bname}.webp")
+                rel_web_path = f"assets/images/escenas/{num_id}-{bname}.webp"
+                if not os.path.exists(dest_esc) or os.path.getmtime(c_png) > os.path.getmtime(dest_esc):
+                    with Image.open(c_png) as im:
+                        im.save(dest_esc, 'WEBP', quality=85)
+                
+                # Obtener descripción/caption legible a partir del nombre
+                clean_name = re.sub(r'^\d+[a-z]?-', '', bname).replace('-', ' ').capitalize()
+                inline_images.append({
+                    "src": rel_web_path,
+                    "caption": f"Ilustración de escena: {clean_name}",
+                    "alt": f"Escena oficial de {titulo} — {clean_name}"
+                })
+
         # Capítulos
         mt_json = os.path.join(sp, 'storyboard', 'marcas_tiempo.json')
         chapters = []
@@ -342,8 +407,9 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
             "portada": portada_webp,
             "personajes": characters,
             "capitulos": chapters,
+            "escenas_ilustraciones": inline_images,
             "relato_raw": relato_raw,
-            "relato_html": clean_narrative_text(relato_raw),
+            "relato_html": clean_narrative_text(relato_raw, story_id=num_id, inline_images=inline_images),
             "locucion": {
                 "es_ES": {"voz": "Álvaro (es-ES-AlvaroNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Voz máster y vídeo"},
                 "es_LAT": {"voz": "Alonso (es-US-AlonsoNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Voz neutra latinoamericana"},
@@ -351,6 +417,9 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
             }
         }
         relatos.append(relato_entry)
+
+    # Ordenar el catálogo con los últimos relatos arriba (orden descendente por ID)
+    relatos = sorted(relatos, key=lambda x: x["id"], reverse=True)
 
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(relatos, f, ensure_ascii=False, indent=2)
@@ -499,8 +568,11 @@ def generate_index_html(relatos):
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         
         <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-plum/40 border border-damask/40 text-xs font-semibold text-text-bright mb-6">
-          <span class="w-2 h-2 rounded-full bg-crimson animate-pulse"></span>
-          Ficción Multimedia • Audiolibros Calibrados • Escenas Full HD 1080p
+          <svg class="w-4 h-4 text-crimson-glow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+            <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+          </svg>
+          <span>Ficción Multimedia • Audiolibros Calibrados • Escenas Full HD 1080p</span>
         </div>
 
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-bright tracking-tight max-w-4xl mx-auto leading-tight">
@@ -598,7 +670,10 @@ def generate_index_html(relatos):
                   <span>Leer Relato Dedicado</span>
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                 </a>
-                <span class="text-[11px] text-text-muted">1080p Ken Burns</span>
+                <span class="inline-flex items-center gap-1 text-[11px] text-text-muted font-medium">
+                  <svg class="w-3 h-3 text-damask-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                  Audio & Vídeo HD
+                </span>
               </div>
             </div>
           </article>
