@@ -4,8 +4,8 @@
   "description": "Portal oficial para Raupulus Tales — Relatos y Ficción Multimedia",
   "scripts": {
     "build": "python3 scripts/build_site.py",
-    "build:css": "npx @tailwindcss/cli -i src/input.css -o assets/css/tailwind.css --minify",
-    "watch:css": "npx @tailwindcss/cli -i src/input.css -o assets/css/tailwind.css --watch",
+    "build:css": "npx @tailwindcss/cli -i src/input.css -o public/assets/css/tailwind.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i src/input.css -o public/assets/css/tailwind.css --watch",
     "sync": "python3 scripts/build_site.py"
   },
   "devDependencies": {

@@ -27,11 +27,13 @@ PUBLIC_EMAIL = "public@raupulus.dev"
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HISTORIAS_SRC_DEFAULT = os.environ.get("RELATOS_SRC_DIR", "")
 
+PUBLIC_DIR = os.path.join(BASE_DIR, "public")
 DATA_DIR = os.path.join(BASE_DIR, "data")
-RELATOS_DIR = os.path.join(BASE_DIR, "relatos")
-PORTADAS_DIR = os.path.join(BASE_DIR, "assets", "images", "portadas")
-AVATARS_DIR = os.path.join(BASE_DIR, "assets", "images", "avatars")
-ESCENAS_DIR = os.path.join(BASE_DIR, "assets", "images", "escenas")
+RELATOS_DIR = os.path.join(PUBLIC_DIR, "relatos")
+PORTADAS_DIR = os.path.join(PUBLIC_DIR, "assets", "images", "portadas")
+AVATARS_DIR = os.path.join(PUBLIC_DIR, "assets", "images", "avatars")
+ESCENAS_DIR = os.path.join(PUBLIC_DIR, "assets", "images", "escenas")
+SRC_ASSETS_DIR = os.path.join(BASE_DIR, "src", "assets")
 DATA_FILE = os.path.join(DATA_DIR, "relatos.json")
 
 
@@ -209,6 +211,37 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
     os.makedirs(AVATARS_DIR, exist_ok=True)
     os.makedirs(ESCENAS_DIR, exist_ok=True)
     os.makedirs(RELATOS_DIR, exist_ok=True)
+    os.makedirs(os.path.join(PUBLIC_DIR, "assets", "js"), exist_ok=True)
+    os.makedirs(os.path.join(PUBLIC_DIR, "assets", "images"), exist_ok=True)
+    os.makedirs(os.path.join(PUBLIC_DIR, "assets", "css"), exist_ok=True)
+
+    # Copiar activos estáticos maestros (Alpine.js, Logos, Favicon) desde src/assets hacia public/assets
+    if os.path.exists(SRC_ASSETS_DIR):
+        src_images = os.path.join(SRC_ASSETS_DIR, "images")
+        dest_images = os.path.join(PUBLIC_DIR, "assets", "images")
+        if os.path.exists(src_images):
+            for img_file in os.listdir(src_images):
+                sf = os.path.join(src_images, img_file)
+                df = os.path.join(dest_images, img_file)
+                if os.path.isfile(sf) and (not os.path.exists(df) or os.path.getmtime(sf) > os.path.getmtime(df)):
+                    shutil.copy2(sf, df)
+
+        src_js = os.path.join(SRC_ASSETS_DIR, "js")
+        dest_js = os.path.join(PUBLIC_DIR, "assets", "js")
+        if os.path.exists(src_js):
+            for js_file in os.listdir(src_js):
+                sf = os.path.join(src_js, js_file)
+                df = os.path.join(dest_js, js_file)
+                if os.path.isfile(sf) and (not os.path.exists(df) or os.path.getmtime(sf) > os.path.getmtime(df)):
+                    shutil.copy2(sf, df)
+
+    # Sincronizar archivos estáticos legales y directivas IA en public/
+    for fname in ["LICENSE.md", "ai.txt"]:
+        src_f = os.path.join(BASE_DIR, fname)
+        dest_f = os.path.join(PUBLIC_DIR, fname)
+        if os.path.exists(src_f):
+            if not os.path.exists(dest_f) or os.path.getmtime(src_f) > os.path.getmtime(dest_f):
+                shutil.copy2(src_f, dest_f)
 
     if not os.path.exists(src_dir):
         print(f"Directorio fuente {src_dir} no accesible, usando data/relatos.json existente...")
@@ -321,7 +354,7 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
         if not os.path.exists(portada_src):
             portada_src = os.path.join(sp, 'youtube', 'portada-es-ES.jpg')
         if os.path.exists(portada_src):
-            dest_portada = os.path.join(BASE_DIR, portada_webp)
+            dest_portada = os.path.join(PUBLIC_DIR, portada_webp)
             if not os.path.exists(dest_portada) or os.path.getmtime(portada_src) > os.path.getmtime(dest_portada):
                 with Image.open(portada_src) as im:
                     im.save(dest_portada, 'WEBP', quality=85)
@@ -430,7 +463,7 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
 
 def generate_index_html(relatos):
     """Genera index.html optimizado para SEO: catálogo visual con tarjetas 16:9 que enlazan a cada página dedicada."""
-    target_file = os.path.join(BASE_DIR, "index.html")
+    target_file = os.path.join(PUBLIC_DIR, "index.html")
 
     # Serializar catálogo ligero para Alpine.js (sin inyectar el texto completo de los 10 relatos en el index)
     catalogo_light = []
@@ -807,7 +840,7 @@ def generate_story_pages(relatos):
     for idx, r in enumerate(relatos):
         prev_r = relatos[idx - 1] if idx > 0 else relatos[-1]
         next_r = relatos[idx + 1] if idx < len(relatos) - 1 else relatos[0]
-        page_file = os.path.join(BASE_DIR, "relatos", f"{r['id']}-{r['slug']}.html")
+        page_file = os.path.join(RELATOS_DIR, f"{r['id']}-{r['slug']}.html")
 
         # Capítulos HTML
         caps_html = []
@@ -1079,7 +1112,7 @@ def generate_sitemap_and_robots(relatos):
         sitemap_lines.append(f"  <url><loc>{SITE_URL}/{r['pagina_url']}</loc><lastmod>{now_date}</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>")
     sitemap_lines.append('</urlset>')
 
-    with open(os.path.join(BASE_DIR, "sitemap.xml"), 'w', encoding='utf-8') as f:
+    with open(os.path.join(PUBLIC_DIR, "sitemap.xml"), 'w', encoding='utf-8') as f:
         f.write("\n".join(sitemap_lines))
 
     robots_txt = f"""# robots.txt — Raupulus Tales (relatos.raupulus.dev)
@@ -1135,17 +1168,19 @@ Disallow: /
 
 Sitemap: {SITE_URL}/sitemap.xml
 """
-    with open(os.path.join(BASE_DIR, "robots.txt"), 'w', encoding='utf-8') as f:
+    with open(os.path.join(PUBLIC_DIR, "robots.txt"), 'w', encoding='utf-8') as f:
         f.write(robots_txt)
-    print("✅ sitemap.xml y robots.txt generados con éxito")
+    print("✅ sitemap.xml y robots.txt generados con éxito en public/")
 
 
 def compile_css():
-    """Ejecuta la transpilación de Tailwind CSS v4 para que assets/css/tailwind.css esté listo."""
+    """Ejecuta la transpilación de Tailwind CSS v4 para que public/assets/css/tailwind.css esté listo."""
     print("🎨 Compilando Tailwind CSS...")
     try:
-        subprocess.run(["npx", "@tailwindcss/cli", "-i", "src/input.css", "-o", "assets/css/tailwind.css", "--minify"], cwd=BASE_DIR, capture_output=True, text=True, check=True)
-        print("✅ Tailwind CSS compilado correctamente.")
+        dest_css = os.path.join(PUBLIC_DIR, "assets", "css", "tailwind.css")
+        os.makedirs(os.path.dirname(dest_css), exist_ok=True)
+        subprocess.run(["npx", "@tailwindcss/cli", "-i", "src/input.css", "-o", "public/assets/css/tailwind.css", "--minify"], cwd=BASE_DIR, capture_output=True, text=True, check=True)
+        print("✅ Tailwind CSS compilado correctamente en public/assets/css/tailwind.css.")
     except Exception as e:
         print(f"⚠️ Error al compilar CSS: {e}")
 

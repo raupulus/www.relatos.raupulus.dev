@@ -57,29 +57,37 @@
 ## 🛠️ Arquitectura Técnica
 
 - **Frontend Estático y Ligero:** HTML5 semántico con [Alpine.js](https://alpinejs.dev/) embebido localmente para reactividad instantánea (buscador en tiempo real y filtrado por categorías).
-- **Estilos:** [Tailwind CSS v4](https://tailwindcss.com/) pretranspilado en local (`assets/css/tailwind.css`) sin dependencias externas en tiempo de ejecución.
+- **Estilos:** [Tailwind CSS v4](https://tailwindcss.com/) pretranspilado en local (`public/assets/css/tailwind.css`) sin dependencias externas en tiempo de ejecución.
 - **Cero CDNs externos:** Sin llamadas a Google Fonts ni CDNs de terceros; máxima privacidad, velocidad y cumplimiento de RGPD.
-- **Generador Estático Python:** `scripts/build_site.py` sincroniza relatos, genera páginas dedicadas, comprime portadas y avatares a WebP, y actualiza el catálogo, `sitemap.xml` y `robots.txt`.
+- **Generador Estático Python:** `scripts/build_site.py` sincroniza relatos, genera páginas dedicadas, comprime portadas y avatares a WebP, y actualiza el catálogo, `sitemap.xml`, directivas `ai.txt` y `robots.txt` dentro de `public/`.
 
 ### Estructura del Repositorio
 
 ```text
-├── index.html                  # Catálogo principal con hero y filtros reactivos
-├── relatos/                    # Páginas estáticas dedicadas por cada historia
-│   ├── 0001-la-que-no-tuvo-hijos.html
-│   └── ...
+├── public/                     # 🌐 Raíz pública para Apache (DocumentRoot)
+│   ├── index.html              # Catálogo principal con hero y filtros reactivos
+│   ├── relatos/                # Páginas estáticas dedicadas por cada historia
+│   │   ├── 0001-la-que-no-tuvo-hijos.html
+│   │   └── ...
+│   ├── assets/
+│   │   ├── css/tailwind.css    # CSS minificado compilado localmente
+│   │   ├── js/alpine.min.js    # Alpine.js local autónomo
+│   │   └── images/             # Portadas 16:9, avatares WebP, escenas, logo y favicon
+│   ├── sitemap.xml             # Sitemap oficial para buscadores
+│   ├── robots.txt              # Reglas de rastreo y bloqueo de bots IA
+│   ├── ai.txt                  # Directivas de consentimiento contra ingesta y entrenamiento IA
+│   └── LICENSE.md              # Términos de propiedad intelectual accesibles vía web
 ├── data/
 │   └── relatos.json            # Base de datos local sincronizada
-├── assets/
-│   ├── css/tailwind.css        # CSS minificado compilado localmente
-│   ├── js/alpine.min.js        # Alpine.js local autónomo
-│   └── images/                 # Portadas 16:9, avatares WebP, logo y favicon
 ├── scripts/
-│   └── build_site.py           # Generador estático y sincronizador
+│   └── build_site.py           # Generador estático y sincronizador oficial
 ├── src/
-│   └── input.css               # Hoja fuente de Tailwind CSS
+│   ├── input.css               # Hoja fuente de Tailwind CSS
+│   └── assets/                 # Activos maestros de marca (logos, favicon, Alpine.js)
+├── serve.py                    # Servidor local de desarrollo (sirve public/ con cabeceras para YouTube)
 ├── LICENSE                     # Licencia dual AGPLv3 + Reserva de Derechos
 ├── LICENSE.md                  # Términos detallados de propiedad intelectual
+├── AGENTS.md                   # Normas técnicas de desarrollo
 └── package.json
 ```
 
@@ -96,12 +104,14 @@
    ```bash
    npm run build
    ```
-   *Sincroniza datos, genera las páginas HTML dedicadas, actualiza sitemap y transpila Tailwind CSS.*
+   *Sincroniza datos, genera las páginas HTML dedicadas en `public/`, actualiza sitemap, directivas y transpila Tailwind CSS.*
 
-3. **Previsualizar en servidor local:**
+3. **Previsualizar en servidor local de desarrollo:**
    ```bash
-   npx serve .
+   python3 serve.py
+   # O con npm: npm run build && python3 serve.py
    ```
+   *Sirve el directorio `public/` en `http://localhost:8080` configurando las cabeceras `Referrer-Policy: strict-origin-when-cross-origin` para permitir la reproducción completa de vídeos de YouTube sin bloqueos.*
 
 ---
 

@@ -22,18 +22,23 @@
 
 ---
 
-## 3. ARQUITECTURA TÉCNICA Y SEO (PÁGINAS DEDICADAS)
+## 3. ARQUITECTURA TÉCNICA Y SEO (DIRECTORIO PÚBLICO Y PÁGINAS DEDICADAS)
 
-* **Estructura amigable para SEO:**
-  * `index.html`: Portada ligera con hero cinemático, filtros reactivos en Alpine.js y tarjetas 16:9 optimizadas.
-  * `relatos/NNNN-slug.html`: Cada relato cuenta con su propia página estática dedicada para indexación óptima en buscadores (Google / Bing), metadatos Open Graph, Twitter Cards y marcado semántico Schema.org (`ShortStory`).
+* **Directorio autocontenido `public/` (Apache DocumentRoot):**
+  * Todo archivo expuesto o requerido para internet reside **exclusivamente dentro de `public/`**, permitiendo que servidores web (Apache, Nginx) apunten directamente a él como raíz (`DocumentRoot`) sin exponer `.git`, `node_modules/`, `package.json`, código fuente o scripts.
+  * El primer nivel del repositorio contiene exclusivamente configuración, código fuente (`src/`), documentación (`docs/`, `AGENTS.md`), utilidades de compilación (`scripts/`, `serve.py`) y control de versiones.
+* **Estructura amigable para SEO dentro de `public/`:**
+  * `public/index.html`: Portada ligera con hero cinemático, filtros reactivos en Alpine.js y tarjetas 16:9 optimizadas.
+  * `public/relatos/NNNN-slug.html`: Cada relato cuenta con su propia página estática dedicada para indexación óptima en buscadores (Google / Bing), metadatos Open Graph, Twitter Cards y marcado semántico Schema.org (`ShortStory`).
+  * `public/sitemap.xml` y `public/robots.txt`: Indexación controlada y bloqueo explícito de bots de rastreo de IA.
+  * `public/ai.txt` y `public/LICENSE.md`: Directivas anti-scraping de IA y términos legales accesibles directamente.
 * **Cero dependencias externas en tiempo de ejecución:**
   * Prohibido cargar scripts, fuentes o estilos desde CDNs externos (Google Fonts, unpkg, cdnjs, etc.).
-  * **Alpine.js local:** Ubicado y servido exclusivamente desde `assets/js/alpine.min.js`.
-  * **Tailwind CSS pretranspilado:** Generado localmente en `assets/css/tailwind.css` desde `src/input.css` usando `npm run build:css`.
-  * Toda la web debe desplegarse completa y funcional de forma autónoma en servidores Nginx, Cloudflare Pages o GitHub Pages.
+  * **Alpine.js local:** Ubicado y servido exclusivamente desde `public/assets/js/alpine.min.js` (origen en `src/assets/js/`).
+  * **Tailwind CSS pretranspilado:** Generado localmente en `public/assets/css/tailwind.css` desde `src/input.css` usando `npm run build:css`.
+  * Toda la web debe desplegarse completa y funcional de forma autónoma en servidores Apache, Nginx, Cloudflare Pages o GitHub Pages.
 * **Optimización de recursos:**
-  * Logotipos e imágenes en formatos modernos ligeros (`.webp` prioritario y `.png`/`.jpg` de compatibilidad).
+  * Logotipos e imágenes en formatos modernos ligeros (`.webp` prioritario y `.png`/`.jpg` de compatibilidad) en `public/assets/images/`.
   * Código CSS minificado sin reglas superfluas.
 
 ---
@@ -125,9 +130,9 @@ La identidad visual toma de referencia los tonos extraídos directamente del log
    * Tras finalizar el relato en `Historias/NNNN-slug/`, ejecutar desde la raíz del proyecto web:
      ```bash
      npm run build
-     # Ejecuta scripts/build_site.py y recompila Tailwind CSS
+     # Ejecuta scripts/build_site.py y recompila Tailwind CSS en public/
      ```
-   * El script actualiza `data/relatos.json`, genera las portadas, avatares y las 5 escenas WebP en `assets/images/`, actualiza `index.html` con orden descendente, crea la página independiente `relatos/NNNN-slug.html`, refresca `sitemap.xml` y recompila `assets/css/tailwind.css`.
+   * El script actualiza `data/relatos.json`, genera las portadas, avatares y las 5 escenas WebP en `public/assets/images/`, sincroniza directivas y librerías estáticas, actualiza `public/index.html` con orden descendente, crea la página independiente `public/relatos/NNNN-slug.html`, refresca `public/sitemap.xml`, `public/robots.txt` y recompila `public/assets/css/tailwind.css`. Todo el contenido listo para servir en Apache DocumentRoot sin exponer el directorio raíz del proyecto.
 
 ---
 
