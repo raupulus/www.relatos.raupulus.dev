@@ -1,0 +1,107 @@
+# REGLAS Y ESTÁNDARES OFICIALES DEL PROYECTO: RAUPULUS TALES (relatos.raupulus.dev)
+
+> [!IMPORTANT]
+> Estas reglas son de cumplimiento estricto y permanente en todas las sesiones para el diseño y desarrollo de la web `relatos.raupulus.dev`, la integración de relatos, storyboards, locuciones, vídeos cinematográficos y publicación.
+
+---
+
+## 1. MISIÓN Y ALCANCE DE LA WEB
+
+**Raupulus Tales** (`relatos.raupulus.dev`) es el portal web oficial del universo de relatos y ficción multimedia de Raupulus. Presenta historias literarias completas concebidas con visión cinematográfica, audiolibros multilingües con locución calibrada (España `es-ES`, Latinoamérica `es-LAT`, Internacional `en-US`), biblias visuales de personajes y producciones en vídeo Full HD 1080p con movimiento Ken Burns y clips de apertura.
+
+---
+
+## 2. PRIVACIDAD Y SEGURIDAD ESTRICTA (PERMANENTE)
+
+* **Correo personal estrictamente prohibido:** NUNCA utilizar bajo ningún concepto ningún correo personal o privado del creador.
+* **Único correo público permitido:** `public@raupulus.dev`.
+* **Prohibición en archivos del proyecto:** Queda terminantemente prohibido incluir direcciones de correo privadas reales en código, comentarios, metadatos, documentación o commits.
+* Jamás exponer nombres reales completos, números telefónicos, direcciones IP privadas ni credenciales.
+
+---
+
+## 3. ARQUITECTURA TÉCNICA DE LA WEB (100% ESTÁTICA Y AUTÓNOMA)
+
+* **Cero dependencias externas en tiempo de ejecución:**
+  * Prohibido cargar scripts, fuentes o estilos desde CDNs externos (Google Fonts, unpkg, cdnjs, etc.).
+  * **Alpine.js local:** Ubicado y servido exclusivamente desde `assets/js/alpine.min.js`.
+  * **Tailwind CSS pretranspilado:** Generado localmente en `assets/css/tailwind.css` desde `src/input.css` usando `npm run build:css`.
+  * Toda la web debe desplegarse completa y funcional de forma autónoma en servidores Nginx, Cloudflare Pages o GitHub Pages.
+* **Optimización de recursos:**
+  * Logotipos e imágenes en formatos modernos ligeros (`.webp` prioritario y `.png`/`.jpg` de compatibilidad).
+  * Código CSS minificado sin reglas superfluas.
+
+---
+
+## 4. SISTEMA DE DISEÑO VISUAL Y PALETA CROMÁTICA
+
+La identidad visual toma de referencia los tonos extraídos directamente del logotipo oficial de Raupulus:
+
+* **Colores Principales:**
+  * **Crimson Red (`#941300` / `#b81d05`):** Acento dominante de fuego, intensidad y misterio. Uso en botones de acción principales, bordes de elementos activos, badges destacados y barras de progreso.
+  * **Velvet Plum (`#371632` / `#220d1f`):** Atmósfera secundaria noble y literaria. Uso en fondos intermedios, gradientes de ambientación y divisores.
+  * **Rose Damask (`#8f2e49` / `#ab3858`):** Matiz dramático cálido para etiquetas de género, tags y estados hover.
+  * **Obsidian Void (`#080308`):** Fondo general cinematográfico de contraste absoluto.
+  * **Obsidian Card (`#120813`):** Superficie de tarjetas y paneles modales.
+  * **Warm Mist (`#eedfe3`):** Color editorial de lectura óptima para textos de relatos, evitando el cansancio visual del blanco puro.
+  * **YouTube Brand Red (`#ff0000`):** Enlaces directos y acciones del canal de YouTube.
+* **Tipografía del sistema:**
+  * Sin descargas de fuentes: Pila tipográfica local y moderna (`system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`).
+  * Relatos formateados con `max-w-prose`, interlineado holgado (`leading-relaxed` / `leading-loose`) y legibilidad editorial.
+
+---
+
+## 5. ESTRUCTURA Y COMPONENTES DEL PORTAL
+
+1. **Header / Navbar:**
+   * Logotipo oficial local con enlace a inicio.
+   * Navegación limpia (Catálogo, Visor, El Universo).
+   * Selector rápido de idioma (`es-ES`, `es-LAT`, `en-US`).
+   * Botón de suscripción y enlace oficial al canal de YouTube.
+2. **Catálogo de Relatos:**
+   * Filtro reactivo con Alpine.js por géneros temáticos (Sci-Fi, Fantasía, Misterio, Drama, etc.).
+   * Tarjetas con formato 16:9 para portadas de episodios (`1280x720`).
+   * Badges de metadatos: ID secuencial de 4 dígitos (`0001`), tiempo de lectura silenciosa (a 220 ppm), duración del vídeo/locución (a 160 ppm) y disponibilidad multilingüe.
+   * Sinopsis directa sin spoilers.
+3. **Visor de Historia y Reproductor Multimedia:**
+   * Contenedor de vídeo responsive 16:9 preparado para embeber vídeos de YouTube sin desajustes de maquetación.
+   * Pestañas reactivas con Alpine.js:
+     * **Relato Literario:** Texto maestro completo dividido por escenas (`* * *`) con tipografía editorial.
+     * **Storyboard & Marcas:** Desglose técnico de escenas, marcas de tiempo y notas de apertura.
+     * **Avatares & Biblia Visual:** Fichas de consistencia de personajes (edad fija, rasgos anatómicos y láminas de avatar).
+     * **Locución & Audios:** Acceso a las tres pistas de locución calibradas.
+4. **Footer:**
+   * Enlaces al ecosistema Raupulus (`raupulus.dev`, `music.raupulus.dev`).
+   * Correo público oficial: `public@raupulus.dev`.
+   * Aviso de derechos y copyright.
+
+---
+
+## 6. INTEGRACIÓN CON EL ORIGEN DE DATOS (HISTORIAS MULTIMEDIA)
+
+* Los datos de la web se nutren del repositorio y estructura canónica de historias (`Historias/NNNN-slug/`):
+  * **Texto maestro:** `Historias/NNNN-slug/NNNN-slug.md`.
+  * **Metadatos y escenas:** `storyboard/storyboard.md`, `storyboard/escenas.md`, `storyboard/marcas_tiempo.json`.
+  * **Avatares:** `avatars/personaje-XX-<slug>-cabeza.png` y `-cuerpo.png`.
+  * **Portadas YouTube:** `youtube/portada-es-ES.jpg`, `portada-es-LAT.jpg`, `portada-en-US.jpg`.
+  * **ID de YouTube:** Registrado en `youtube/youtube.md`.
+* Los identificadores de relato siempre siguen el formato de 4 dígitos secuenciales (`0001`, `0002`...).
+
+---
+
+## 7. ESTÁNDARES OBLIGATORIOS DE ACCESIBILIDAD (A11Y), W3C Y RESPONSIVE
+
+* **Contraste de color WCAG AA/AAA:** Texto principal `#eedfe3` sobre fondos oscuros `#080308` (ratio > 11:1). Texto secundario `#a5919b` con ratio de contraste superior a 4.5:1.
+* **Navegación por teclado y foco visible:** Todo elemento interactivo debe contar con indicador visible de foco (`focus-visible:ring-2 focus-visible:ring-crimson`).
+* **Jerarquía semántica estricta:** `H1` único por página o vista, seguido secuencialmente por `H2` y `H3` sin saltos de nivel.
+* **Textos alternativos (`alt`):** Atributos `alt` exhaustivos y descriptivos en todas las imágenes. Elementos meramente decorativos marcados con `aria-hidden="true"`.
+* **Dimensiones explícitas y prevención de CLS:** Especificar siempre `width` y `height` o ratios de aspecto fijos (`aspect-video`) en elementos multimedia para evitar saltos visuales durante la carga.
+* **Touch targets en móviles:** Mínimo de 44x44px en botones, controles y selectores.
+
+---
+
+## 8. BUENAS PRÁCTICAS DE GIT Y CONTROL DE VERSIONES
+
+* Commits atómicos, semánticos y descriptivos en español o inglés (`feat:`, `fix:`, `style:`, `docs:`, `refactor:`).
+* No commitear `node_modules/`, archivos temporales de sistema (`.DS_Store`) ni registros de compilación.
+* Mantener la compilación de `assets/css/tailwind.css` actualizada y sincronizada con cualquier cambio en `src/input.css` o plantillas HTML antes de cada entrega o commit.
