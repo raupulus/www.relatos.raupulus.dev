@@ -679,8 +679,8 @@ def generate_index_html(relatos):
       </div>
 
       <div class="text-center md:text-right text-[11px] leading-relaxed">
-        <span class="block">© 2026 Raupulus Tales. Todos los derechos reservados.</span>
-        <span class="text-text-muted/75 text-[10px]">Obra literaria y multimedia privada. Prohibida su comercialización, reproducción o uso en IA sin autorización.</span>
+        <span class="block">Código web bajo <a href="LICENSE.md" class="underline hover:text-white">AGPLv3</a> • © 2026 Raupulus Tales.</span>
+        <span class="text-text-muted/75 text-[10px]">Contenido literario y audiovisual bajo reserva estricta de derechos. Prohibida copia, comercialización o uso en IA.</span>
       </div>
 
     </div>
@@ -968,7 +968,7 @@ def generate_story_pages(relatos):
 
   <footer class="bg-obsidian border-t border-border-subtle py-8 text-xs text-text-muted text-center">
     <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>© 2026 Raupulus Tales. Todos los derechos reservados.</div>
+      <div>Código bajo <a href="../LICENSE.md" class="underline hover:text-white">AGPLv3</a> • Contenido © 2026 Raupulus Tales. Todos los derechos reservados.</div>
       <div class="flex gap-4">
         <a href="../index.html" class="hover:text-white">Inicio</a>
         <a href="../LICENSE.md" class="hover:text-white text-damask-light">Propiedad & Derechos</a>
