@@ -171,3 +171,6 @@ La identidad visual toma de referencia los tonos extraídos directamente del log
 * Commits atómicos, semánticos y descriptivos en español o inglés (`feat:`, `fix:`, `style:`, `docs:`, `refactor:`).
 * No commitear `node_modules/`, archivos temporales de sistema (`.DS_Store`) ni registros de compilación.
 * Mantener la compilación de `assets/css/tailwind.css` actualizada y sincronizada con cualquier cambio en `src/input.css` o plantillas HTML antes de cada entrega o commit.
+* **Activos de Proyecto en Plataformas Git (GitHub / GitLab):**
+  * **GitHub Social Preview:** `1280x640 px` (aspect ratio 2:1), formato PNG/WebP.
+  * **GitLab Project Avatar:** Exactamente **`192x192 px`**, peso estricto **menor a 200 KiB** (formato PNG optimizado). Prohibido intentar subir imágenes panorámicas o de mayor peso en el avatar de proyecto de GitLab.
