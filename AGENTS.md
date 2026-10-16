@@ -123,16 +123,34 @@ La identidad visual toma de referencia los tonos extraídos directamente del log
    * Al ser historias largas (1.600 a 2.400+ palabras), la lectura en la pestaña *Relato Literario* debe enriquecerse visualmente intercalando **5 imágenes clave** del storyboard (`assets/images/escenas/NNNN-*.webp`) distribuidas proporcionalmente entre los párrafos.
    * Estas ilustraciones se extraen del lote de escenas de producción (`escenas/*.png`), se optimizan en formato WebP con relación de aspecto 16:9 y se insertan con sus respectivos pies de foto narrativos elegantes (`<figure>` y `<figcaption>`), mejorando la inmersión del lector sin interrumpir el ritmo dramático.
 
-4. **Visibilidad y Ordenación del Catálogo:**
-   * En el catálogo de la portada (`index.html`) y en la base de datos `data/relatos.json`, los relatos deben ordenarse **siempre con los últimos subidos arriba** (orden descendente por ID: `0010`, `0009`... `0001`) para dar máxima visibilidad inmediata a los nuevos estrenos y publicaciones recientes.
+4. **Gestión Ágil y Fuente Canónica Centralizada (`relatos.json` en la raíz):**
+   * El archivo `relatos.json` situado en la raíz del repositorio web actúa como la **fuente canónica directa** para el estado, metadatos y publicaciones de todas las historias.
+   * `scripts/build_site.py` detecta y carga prioritariamente este archivo raíz, evitando reprocesamientos pesados y optimizando el consumo de tokens y recursos al realizar actualizaciones frecuentes.
 
-5. **Compilación y Actualización Automática de la Web:**
-   * Tras finalizar el relato en `Historias/NNNN-slug/`, ejecutar desde la raíz del proyecto web:
+5. **Flujo de Estados (`estreno` vs `publicado`) y Protección de Contenido:**
+   * **Próximo Estreno (`"estado": "estreno"`, `"publicado": false`):**
+     * Se aplica cuando el relato o vídeo está en producción, en reserva o subido a YouTube en modo privado/oculto antes de su liberación pública.
+     * **En el Catálogo de Portada (`index.html`):** La tarjeta muestra un overlay oscuro transparente (`bg-black/75`) con el distintivo `Estreno`, el indicador "Próximamente en YouTube" y el botón de acción "Ver Ficha de Estreno".
+     * **En la Página Dedicada (`relatos/NNNN-slug.html`):** **PROTECCIÓN ESTRICTA CONTRA PLAGIO PREVIO.** Queda terminantemente prohibido exponer la historia completa antes de su estreno oficial. La página muestra **exclusivamente el primer párrafo** del texto literario como aperitivo narrativo, seguido de un panel protector de contenido en reserva que invita a suscribirse al canal de YouTube. La pestaña de capítulos se mantiene en reserva y las escenas intercaladas no se publican hasta el estreno.
+   * **Publicación Oficial (`"estado": "publicado"`, `"publicado": true`):**
+     * Al estrenar la historia y liberar el vídeo en YouTube, se actualizan los campos en `relatos.json` a `"estado": "publicado"`, `"publicado": true` y se registra el `youtube_id`.
+     * Al ejecutar `npm run build`, la página dedicada se regenera automáticamente al 100%, mostrando el reproductor de YouTube, el relato íntegro con sus 5 escenas intercaladas y el desglose narrativo de capítulos.
+
+6. **Visibilidad y Ordenación del Catálogo:**
+   * En el catálogo de la portada (`index.html`) y en la base de datos `relatos.json`, los relatos deben ordenarse **siempre con los últimos subidos arriba** (orden descendente por ID: `0010`, `0009`... `0001`) para dar máxima visibilidad inmediata a los nuevos estrenos y publicaciones recientes.
+
+7. **Optimización de Compartición en Redes Sociales (Open Graph y Twitter Cards):**
+   * Todas las páginas disponen de etiquetas meta canónicas completas para compartir en redes sociales y apps de mensajería (WhatsApp, Telegram, X, Facebook, LinkedIn).
+   * La portada (`index.html`) utiliza el banner cinemático oficial de 1200x630 en formato WebP (`assets/images/og-raupulus-tales.webp`), diseñado con la paleta de color del canal (`#080308`, `#941300`, `#371632`), el logotipo y la tipografía de marca.
+   * Cada relato individual (`relatos/NNNN-slug.html`) enlaza a su portada oficial 16:9 (`1280x720`) con dimensiones explícitas, tipo `article` y descripción adaptada.
+
+8. **Compilación y Actualización Automática de la Web:**
+   * Tras finalizar un relato o cambiar su estado en `relatos.json`, ejecutar desde la raíz del proyecto web:
      ```bash
      npm run build
      # Ejecuta scripts/build_site.py y recompila Tailwind CSS en public/
      ```
-   * El script actualiza `data/relatos.json`, genera las portadas, avatares y las 5 escenas WebP en `public/assets/images/`, sincroniza directivas y librerías estáticas, actualiza `public/index.html` con orden descendente, crea la página independiente `public/relatos/NNNN-slug.html`, refresca `public/sitemap.xml`, `public/robots.txt` y recompila `public/assets/css/tailwind.css`. Todo el contenido listo para servir en Apache DocumentRoot sin exponer el directorio raíz del proyecto.
+   * El script actualiza `data/relatos.json`, genera las portadas, avatares y las 5 escenas WebP en `public/assets/images/`, sincroniza directivas y librerías estáticas, actualiza `public/index.html` con orden descendente, crea o actualiza las páginas independientes `public/relatos/NNNN-slug.html` con la protección correspondiente según su estado, refresca `public/sitemap.xml`, `public/robots.txt` y recompila `public/assets/css/tailwind.css`. Todo el contenido listo para servir en Apache DocumentRoot sin exponer el directorio raíz del proyecto.
 
 ---
 

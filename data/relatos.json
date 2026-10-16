@@ -109,7 +109,9 @@
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
       }
-    }
+    },
+    "estado": "estreno",
+    "publicado": false
   },
   {
     "id": "0009",
@@ -237,7 +239,9 @@
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
       }
-    }
+    },
+    "estado": "publicado",
+    "publicado": true
   },
   {
     "id": "0008",
@@ -365,7 +369,9 @@
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
       }
-    }
+    },
+    "estado": "publicado",
+    "publicado": true
   },
   {
     "id": "0007",
@@ -492,7 +498,9 @@
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
       }
-    }
+    },
+    "estado": "publicado",
+    "publicado": true
   },
   {
     "id": "0006",
@@ -635,7 +643,9 @@
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
       }
-    }
+    },
+    "estado": "publicado",
+    "publicado": true
   },
   {
     "id": "0005",
@@ -772,7 +782,9 @@
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
       }
-    }
+    },
+    "estado": "publicado",
+    "publicado": true
   },
   {
     "id": "0004",
@@ -908,7 +920,9 @@
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
       }
-    }
+    },
+    "estado": "publicado",
+    "publicado": true
   },
   {
     "id": "0003",
@@ -1050,7 +1064,9 @@
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
       }
-    }
+    },
+    "estado": "publicado",
+    "publicado": true
   },
   {
     "id": "0002",
@@ -1186,7 +1202,9 @@
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
       }
-    }
+    },
+    "estado": "publicado",
+    "publicado": true
   },
   {
     "id": "0001",
@@ -1334,6 +1352,8 @@
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
       }
-    }
+    },
+    "estado": "publicado",
+    "publicado": true
   }
 ]

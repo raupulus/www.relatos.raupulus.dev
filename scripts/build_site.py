@@ -34,6 +34,7 @@ PORTADAS_DIR = os.path.join(PUBLIC_DIR, "assets", "images", "portadas")
 AVATARS_DIR = os.path.join(PUBLIC_DIR, "assets", "images", "avatars")
 ESCENAS_DIR = os.path.join(PUBLIC_DIR, "assets", "images", "escenas")
 SRC_ASSETS_DIR = os.path.join(BASE_DIR, "src", "assets")
+ROOT_RELATOS_FILE = os.path.join(BASE_DIR, "relatos.json")
 DATA_FILE = os.path.join(DATA_DIR, "relatos.json")
 
 
@@ -257,11 +258,24 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
             if not os.path.exists(dest_f) or os.path.getmtime(src_f) > os.path.getmtime(dest_f):
                 shutil.copy2(src_f, dest_f)
 
+    # Prioridad: si existe relatos.json en la raíz del proyecto web, usarlo directamente (ahorro de tokens y compilación rápida)
+    if os.path.exists(ROOT_RELATOS_FILE):
+        print("📄 Cargando base de datos canónica desde relatos.json en la raíz...")
+        with open(ROOT_RELATOS_FILE, 'r', encoding='utf-8') as f:
+            relatos = json.load(f)
+            # Asegurar sincronización con data/relatos.json
+            with open(DATA_FILE, 'w', encoding='utf-8') as df:
+                json.dump(relatos, df, ensure_ascii=False, indent=2)
+            return relatos
+
     if not os.path.exists(src_dir):
         print(f"Directorio fuente {src_dir} no accesible, usando data/relatos.json existente...")
         if os.path.exists(DATA_FILE):
             with open(DATA_FILE, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                relatos = json.load(f)
+                with open(ROOT_RELATOS_FILE, 'w', encoding='utf-8') as rf:
+                    json.dump(relatos, rf, ensure_ascii=False, indent=2)
+                return relatos
         return []
 
     story_dirs = sorted([d for d in os.listdir(src_dir) if os.path.isdir(os.path.join(src_dir, d)) and re.match(r'^\d{4}-', d)])
@@ -468,10 +482,13 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
     # Ordenar el catálogo con los últimos relatos arriba (orden descendente por ID)
     relatos = sorted(relatos, key=lambda x: x["id"], reverse=True)
 
+    with open(ROOT_RELATOS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(relatos, f, ensure_ascii=False, indent=2)
+
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(relatos, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ Sincronizados {len(relatos)} relatos en {DATA_FILE}")
+    print(f"✅ Sincronizados {len(relatos)} relatos en {ROOT_RELATOS_FILE}")
     return relatos
 
 
@@ -482,6 +499,7 @@ def generate_index_html(relatos):
     # Serializar catálogo ligero para Alpine.js (sin inyectar el texto completo de los 10 relatos en el index)
     catalogo_light = []
     for r in relatos:
+        is_published = r.get("publicado", bool(r.get("youtube_id"))) and r.get("estado") != "estreno"
         catalogo_light.append({
             "id": r["id"],
             "slug": r["slug"],
@@ -495,7 +513,9 @@ def generate_index_html(relatos):
             "lectura_min": r["lectura_min"],
             "duracion_audio": r["duracion_audio"],
             "portada": r["portada"],
-            "youtube_id": r["youtube_id"]
+            "youtube_id": r["youtube_id"],
+            "estado": "publicado" if is_published else "estreno",
+            "publicado": is_published
         })
 
     # Schema.org hasPart estructurado
@@ -544,12 +564,16 @@ def generate_index_html(relatos):
   <meta property="og:url" content="{SITE_URL}/">
   <meta property="og:title" content="Raupulus Tales — Historias y Ficción Multimedia">
   <meta property="og:description" content="Relatos literarios con audiolibros multilingües y producciones cinematográficas en vídeo 1080p.">
-  <meta property="og:image" content="{SITE_URL}/assets/images/logo.webp">
+  <meta property="og:image" content="{SITE_URL}/assets/images/og-raupulus-tales.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Raupulus Tales — Portal Oficial de Relatos y Ficción Multimedia">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@RaupulusTales">
   <meta name="twitter:title" content="Raupulus Tales — Historias y Ficción Multimedia">
   <meta name="twitter:description" content="Relatos de ficción multimedia con audiolibros calibrados y vídeos Full HD 1080p.">
-  <meta name="twitter:image" content="{SITE_URL}/assets/images/logo.webp">
+  <meta name="twitter:image" content="{SITE_URL}/assets/images/og-raupulus-tales.webp">
+  <meta name="twitter:image:alt" content="Raupulus Tales — Portal Oficial de Relatos y Ficción Multimedia">
 
   <!-- Iconos locales oficiales de Raupulus Tales -->
   <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
@@ -713,15 +737,25 @@ def generate_index_html(relatos):
               <img :src="r.portada" :alt="'Portada oficial del relato ' + r.titulo" width="1280" height="720" :loading="index < 3 ? 'eager' : 'lazy'" :fetchpriority="index === 0 ? 'high' : 'auto'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               
               <!-- Badges de esquina -->
-              <div class="absolute top-3 left-3 flex gap-2">
+              <div class="absolute top-3 left-3 flex gap-2 z-20">
                 <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-crimson text-white" x-text="r.id"></span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-obsidian/85 text-text-bright backdrop-blur border border-border-subtle" x-text="r.categoria_nombre"></span>
               </div>
 
               <!-- Duración en minutos -->
-              <div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-obsidian/90 backdrop-blur px-2 py-0.5 rounded text-[11px] text-text-bright font-mono border border-border-subtle">
+              <div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-obsidian/90 backdrop-blur px-2 py-0.5 rounded text-[11px] text-text-bright font-mono border border-border-subtle z-20">
                 <svg class="w-3.5 h-3.5 text-crimson-text" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
                 <span x-text="r.duracion_audio + ' min'"></span>
+              </div>
+
+              <!-- Overlay fondo negro transparente de Próximo Estreno -->
+              <div x-show="!r.publicado || r.estado === 'estreno'" 
+                   class="absolute inset-0 bg-black/75 backdrop-blur-[1px] flex flex-col items-center justify-center p-4 text-center z-10 transition-opacity">
+                <span class="px-3 py-1 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                  Estreno
+                </span>
+                <span class="text-[11px] text-text-muted mt-1.5 font-medium">Próximamente en YouTube</span>
               </div>
             </a>
 
@@ -741,12 +775,12 @@ def generate_index_html(relatos):
               <!-- Botones de Acción -->
               <div class="mt-5 pt-4 border-t border-border-subtle flex items-center justify-between text-xs">
                 <a :href="r.pagina_url" class="font-semibold text-crimson-glow group-hover:text-white flex items-center gap-1 transition">
-                  <span>Leer Relato Dedicado</span>
+                  <span x-text="r.publicado ? 'Leer Relato Dedicado' : 'Ver Ficha de Estreno'"></span>
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                 </a>
                 <span class="inline-flex items-center gap-1 text-[11px] text-text-muted font-medium">
                   <svg class="w-3 h-3 text-damask-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
-                  Audio & Vídeo HD
+                  <span x-text="r.publicado ? 'Audio & Vídeo HD' : 'En producción'"></span>
                 </span>
               </div>
             </div>
@@ -892,7 +926,12 @@ def generate_story_pages(relatos):
         prev_r = relatos[idx - 1] if idx > 0 else relatos[-1]
         next_r = relatos[idx + 1] if idx < len(relatos) - 1 else relatos[0]
         page_file = os.path.join(RELATOS_DIR, f"{r['id']}-{r['slug']}.html")
-        truncated_sinopsis = truncate_meta_desc(r['sinopsis'], 155)
+        is_published = r.get("publicado", bool(r.get("youtube_id"))) and r.get("estado") != "estreno"
+        
+        if not is_published:
+            meta_desc = f"Próximo estreno en Raupulus Tales. {truncate_meta_desc(r['sinopsis'], 120)}"
+        else:
+            meta_desc = truncate_meta_desc(r['sinopsis'], 155)
 
         # Capítulos HTML
         caps_html = []
@@ -940,7 +979,7 @@ def generate_story_pages(relatos):
         chars_rendered = "\n".join(chars_html)
 
         # Video embed or poster
-        if r.get('youtube_id'):
+        if is_published and r.get('youtube_id'):
             video_block = f"""
             <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
               <iframe src="https://www.youtube-nocookie.com/embed/{r['youtube_id']}?rel=0&modestbranding=1" 
@@ -953,14 +992,87 @@ def generate_story_pages(relatos):
         else:
             video_block = f"""
             <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-              <img src="../{r['portada']}" alt="Portada de {r['titulo']}" width="1280" height="720" class="w-full h-full object-cover opacity-75">
-              <div class="absolute inset-0 bg-obsidian/75 flex flex-col items-center justify-center text-center p-6">
-                <div class="text-lg font-bold text-white">Próximo Estreno Cinematográfico 1080p</div>
-                <p class="text-xs text-text-muted mt-1">Vídeo Full HD y locuciones en proceso de sincronización.</p>
-                <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="mt-4 px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition">Suscribirse al canal</a>
+              <img src="../{r['portada']}" alt="Portada de {r['titulo']}" width="1280" height="720" class="w-full h-full object-cover opacity-60">
+              <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-6">
+                <span class="px-3.5 py-1.5 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5 mb-3">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                  Próximo Estreno Cinematográfico 1080p
+                </span>
+                <div class="text-xl sm:text-2xl font-bold text-white max-w-lg mb-2">{r['titulo']}</div>
+                <p class="text-xs text-text-muted max-w-md mb-5">Producción audiovisual y locución en proceso de preparación para su estreno oficial en YouTube.</p>
+                <a href="{YT_SUBSCRIBE}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition shadow-lg flex items-center gap-2">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  Suscribirme para ver el estreno
+                </a>
               </div>
             </div>
             """
+
+        # Contenido del Relato: en estreno solo se muestra el primer párrafo para evitar plagio previo al lanzamiento
+        if is_published:
+            narrative_rendered = f"""
+            <div class="text-text-main">
+              {r['relato_html']}
+            </div>
+            """
+            chapters_panel_content = f"""
+            <div class="flex items-center justify-between border-b border-border-subtle pb-3 mb-4">
+              <h3 class="font-bold text-sm text-text-bright">Estructura Dramática de la Historia</h3>
+              <span class="text-xs font-mono text-damask-light font-bold">{r['duracion_audio']}</span>
+            </div>
+            {caps_rendered}
+            """
+            capitulos_btn_text = f"🎬 Capítulos ({len(r.get('capitulos', []))})"
+        else:
+            first_p = ""
+            if r.get('relato_raw'):
+                first_p = clean_narrative_text(r['relato_raw'].strip().split("\n\n")[0].strip())
+            elif r.get('relato_html'):
+                m_p = re.search(r'(<p\b[^>]*>[\s\S]*?</p>)', r['relato_html'])
+                first_p = m_p.group(1) if m_p else ""
+            if not first_p:
+                first_p = f'<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">{r["sinopsis"]}</p>'
+
+            narrative_rendered = f"""
+            <div class="text-text-main">
+              {first_p}
+            </div>
+
+            <!-- Panel de Contenido Protegido hasta Estreno -->
+            <div class="my-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-obsidian-card to-obsidian border border-damask/40 shadow-2xl text-center">
+              <div class="w-12 h-12 mx-auto rounded-full bg-crimson/20 border border-crimson/50 text-crimson-glow flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-crimson/30 border border-crimson/60 text-damask-light text-xs font-bold uppercase tracking-wider mb-2">Contenido Protegido • Próximo Estreno</span>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-3">La historia completa estará disponible en su estreno oficial</h3>
+              <p class="text-xs sm:text-sm text-text-muted max-w-lg mx-auto leading-relaxed mb-6">
+                Por protección estricta de derechos de autor y exclusividad editorial, el texto completo, el minutado de capítulos y las escenas cinematográficas se desbloquearán el día del estreno público en YouTube.
+              </p>
+              <div class="flex flex-wrap items-center justify-center gap-3">
+                <a href="{YT_SUBSCRIBE}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold text-xs transition shadow-lg flex items-center gap-2">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  Suscribirme para ver el estreno
+                </a>
+                <a href="../index.html#catalogo" class="px-5 py-2.5 rounded-lg bg-obsidian-card hover:bg-obsidian-elevated border border-border-subtle text-text-main font-semibold text-xs transition">
+                  Explorar historias publicadas
+                </a>
+              </div>
+            </div>
+            """
+            chapters_panel_content = f"""
+            <div class="p-8 text-center bg-obsidian-elevated rounded-xl border border-border-subtle">
+              <div class="w-10 h-10 mx-auto rounded-full bg-plum/60 border border-damask/40 text-damask-light flex items-center justify-center mb-3">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <h4 class="text-sm font-bold text-text-bright mb-1">Capítulos y Momentos Clave en Reserva</h4>
+              <p class="text-xs text-text-muted max-w-md mx-auto leading-relaxed">
+                El minutado oficial, las escenas cinematográficas y las marcas de tiempo narrativas se revelarán públicamente al estrenarse el vídeo en YouTube.
+              </p>
+            </div>
+            """
+            capitulos_btn_text = "🎬 Capítulos (En reserva)"
+
+        estreno_badge = f'<span class="px-2 py-0.5 rounded text-xs font-bold bg-crimson/30 border border-crimson text-damask-light uppercase tracking-wider">Próximo Estreno</span>' if not is_published else ''
 
         page_html = f"""<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
@@ -968,7 +1080,7 @@ def generate_story_pages(relatos):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{r['titulo']} | Raupulus Tales</title>
-  <meta name="description" content="{truncated_sinopsis}">
+  <meta name="description" content="{meta_desc}">
   <meta name="keywords" content="{r['titulo']}, Raupulus Tales, Relatos, {', '.join(r['generos'])}">
   <meta name="author" content="Raupulus Tales">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -978,23 +1090,23 @@ def generate_story_pages(relatos):
   <meta name="theme-color" content="#941300">
   <link rel="canonical" href="{SITE_URL}/{r['pagina_url']}">
 
-  <!-- Open Graph / Redes Sociales -->
+  <!-- Open Graph / Redes Sociales (1280x720 16:9 Oficial) -->
   <meta property="og:site_name" content="Raupulus Tales">
   <meta property="og:locale" content="es_ES">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{SITE_URL}/{r['pagina_url']}">
   <meta property="og:title" content="{r['titulo']} — Raupulus Tales">
-  <meta property="og:description" content="{truncated_sinopsis}">
+  <meta property="og:description" content="{meta_desc}">
   <meta property="og:image" content="{SITE_URL}/{r['portada']}">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="720">
-  <meta property="og:image:alt" content="Portada oficial del relato {r['titulo']}">
+  <meta property="og:image:alt" content="Portada oficial del relato {r['titulo']} — Raupulus Tales">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@RaupulusTales">
   <meta name="twitter:title" content="{r['titulo']} — Raupulus Tales">
-  <meta name="twitter:description" content="{truncated_sinopsis}">
+  <meta name="twitter:description" content="{meta_desc}">
   <meta name="twitter:image" content="{SITE_URL}/{r['portada']}">
-  <meta name="twitter:image:alt" content="Portada oficial del relato {r['titulo']}">
+  <meta name="twitter:image:alt" content="Portada oficial del relato {r['titulo']} — Raupulus Tales">
 
   <!-- Iconos locales oficiales de Raupulus Tales -->
   <link rel="icon" type="image/webp" href="../assets/images/favicon.webp">
@@ -1008,7 +1120,7 @@ def generate_story_pages(relatos):
     "@context": "https://schema.org",
     "@type": "ShortStory",
     "name": "{r['titulo']}",
-    "description": "{truncated_sinopsis}",
+    "description": "{meta_desc}",
     "inLanguage": "es-ES",
     "genre": "{r['categoria_nombre']}",
     "wordCount": {r['palabras']},
@@ -1071,6 +1183,7 @@ def generate_story_pages(relatos):
         <div class="flex flex-wrap items-center gap-2 mb-2">
           <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-crimson text-white">{r['id']}</span>
           <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-plum/60 border border-damask/40 text-text-bright">{r['categoria_nombre']}</span>
+          {estreno_badge}
           <span class="text-xs text-text-muted">• {r['palabras']} palabras • {r['duracion_audio']} min narración</span>
         </div>
         <h1 class="text-3xl sm:text-4xl font-extrabold text-text-bright">{r['titulo']}</h1>
@@ -1083,7 +1196,7 @@ def generate_story_pages(relatos):
         <!-- Pestañas Interactivas con Accesibilidad ARIA y touch targets 44px -->
         <div role="tablist" aria-label="Secciones del relato" class="flex border-b border-border-subtle bg-obsidian-elevated px-4 text-xs font-semibold overflow-x-auto">
           <button role="tab" id="tab-relato" aria-controls="panel-relato" :aria-selected="(vistaPestana === 'relato').toString()" :tabindex="vistaPestana === 'relato' ? '0' : '-1'" @click="vistaPestana = 'relato'" :class="vistaPestana === 'relato' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] inline-flex items-center px-5 py-2.5 border-b-2 transition whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson">📖 Relato Literario</button>
-          <button role="tab" id="tab-capitulos" aria-controls="panel-capitulos" :aria-selected="(vistaPestana === 'capitulos').toString()" :tabindex="vistaPestana === 'capitulos' ? '0' : '-1'" @click="vistaPestana = 'capitulos'" :class="vistaPestana === 'capitulos' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] inline-flex items-center px-5 py-2.5 border-b-2 transition whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson">🎬 Capítulos ({len(r.get('capitulos', []))})</button>
+          <button role="tab" id="tab-capitulos" aria-controls="panel-capitulos" :aria-selected="(vistaPestana === 'capitulos').toString()" :tabindex="vistaPestana === 'capitulos' ? '0' : '-1'" @click="vistaPestana = 'capitulos'" :class="vistaPestana === 'capitulos' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] inline-flex items-center px-5 py-2.5 border-b-2 transition whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson">{capitulos_btn_text}</button>
           <button role="tab" id="tab-personajes" aria-controls="panel-personajes" :aria-selected="(vistaPestana === 'personajes').toString()" :tabindex="vistaPestana === 'personajes' ? '0' : '-1'" @click="vistaPestana = 'personajes'" :class="vistaPestana === 'personajes' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] inline-flex items-center px-5 py-2.5 border-b-2 transition whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson">👤 Personajes ({len(r.get('personajes', []))})</button>
           <button role="tab" id="tab-locucion" aria-controls="panel-locucion" :aria-selected="(vistaPestana === 'locucion').toString()" :tabindex="vistaPestana === 'locucion' ? '0' : '-1'" @click="vistaPestana = 'locucion'" :class="vistaPestana === 'locucion' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] inline-flex items-center px-5 py-2.5 border-b-2 transition whitespace-nowrap focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson">🎙️ Locución</button>
         </div>
@@ -1095,9 +1208,7 @@ def generate_story_pages(relatos):
               <strong class="text-damask-light not-italic block mb-1">Sinopsis Oficial:</strong>
               {r['sinopsis']}
             </div>
-            <div class="text-text-main">
-              {r['relato_html']}
-            </div>
+            {narrative_rendered}
 
             <!-- Aviso restrictivo de derechos al pie del texto -->
             <div class="mt-12 p-4 rounded-lg bg-obsidian-card border border-border-subtle text-[11px] text-text-muted text-center leading-relaxed">
@@ -1108,11 +1219,7 @@ def generate_story_pages(relatos):
 
           <!-- Panel Capítulos (Sin archivos técnicos) -->
           <div role="tabpanel" id="panel-capitulos" aria-labelledby="tab-capitulos" tabindex="0" x-show="vistaPestana === 'capitulos'" class="space-y-3 focus:outline-none">
-            <div class="flex items-center justify-between border-b border-border-subtle pb-3 mb-4">
-              <h3 class="font-bold text-sm text-text-bright">Estructura Dramática de la Historia</h3>
-              <span class="text-xs font-mono text-damask-light font-bold">{r['duracion_audio']}</span>
-            </div>
-            {caps_rendered}
+            {chapters_panel_content}
           </div>
 
           <!-- Panel Personajes -->
@@ -1145,7 +1252,6 @@ def generate_story_pages(relatos):
         </div>
       </div>
 
-    </div>
   </main>
 
   <footer class="bg-obsidian border-t border-border-subtle py-8 text-xs text-text-muted text-center">
