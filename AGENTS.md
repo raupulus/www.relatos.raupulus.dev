@@ -17,11 +17,16 @@
 * **Único correo público permitido:** `public@raupulus.dev`.
 * **Prohibición en archivos del proyecto:** Queda terminantemente prohibido incluir direcciones de correo privadas reales en código, comentarios, metadatos, documentación o commits.
 * Jamás exponer nombres reales completos, números telefónicos, direcciones IP privadas ni credenciales.
+* **Propiedad Intelectual y Derechos Restrictivos:** Todos los textos literarios, relatos, tramas, personajes, ilustraciones, locuciones, storyboards y vídeos son obra artística y propiedad privada exclusiva de Raupulus Tales (Copyright © 2026). Prohibida terminantemente su explotación comercial, copia, redistribución, alteración o uso para minería/entrenamiento de modelos de IA sin autorización expresa. Ver `LICENSE.md`.
+* **Identidad de Marca:** El logotipo y favicon oficiales del proyecto provienen exclusivamente de los activos de canal de Raupulus Tales (`avatar_icono.jpg` y `marca_de_agua.png`), nunca del logotipo de la web principal o personal.
 
 ---
 
-## 3. ARQUITECTURA TÉCNICA DE LA WEB (100% ESTÁTICA Y AUTÓNOMA)
+## 3. ARQUITECTURA TÉCNICA Y SEO (PÁGINAS DEDICADAS)
 
+* **Estructura amigable para SEO:**
+  * `index.html`: Portada ligera con hero cinemático, filtros reactivos en Alpine.js y tarjetas 16:9 optimizadas.
+  * `relatos/NNNN-slug.html`: Cada relato cuenta con su propia página estática dedicada para indexación óptima en buscadores (Google / Bing), metadatos Open Graph, Twitter Cards y marcado semántico Schema.org (`ShortStory`).
 * **Cero dependencias externas en tiempo de ejecución:**
   * Prohibido cargar scripts, fuentes o estilos desde CDNs externos (Google Fonts, unpkg, cdnjs, etc.).
   * **Alpine.js local:** Ubicado y servido exclusivamente desde `assets/js/alpine.min.js`.

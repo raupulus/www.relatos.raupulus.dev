@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 """
 Raupulus Tales — scripts/build_site.py
-Generador estático y sincronizador oficial para la web (relatos.raupulus.dev).
+Generador estático optimizado para SEO y sincronizador oficial para relatos.raupulus.dev.
 
-Funciones principales:
-1. Sincroniza historias desde el origen canónico (Historias/NNNN-slug/) hacia data/relatos.json.
-2. Optimiza y copia portadas (16:9 WebP) y láminas de avatar a assets/images/.
-3. Limpia marcas de tiempo y capítulos (eliminando cualquier referencia técnica como video1.mp4).
-4. Genera index.html con catálogo reactivo (Alpine.js), filtros temáticos, buscador y visor multimedia.
-5. Genera páginas estáticas independientes en relatos/NNNN-slug.html con metadatos SEO y Schema.org.
-6. Genera sitemap.xml y robots.txt.
-7. Precompila Tailwind CSS (assets/css/tailwind.css) para que el repositorio sea 100% autónomo.
+Arquitectura:
+- index.html: Catálogo principal con diseño editorial, filtros temáticos reactivos,
+  buscador en tiempo real, hero cinemático y tarjetas 16:9 con enlace directo a cada relato.
+- relatos/NNNN-slug.html: Página dedicada independiente por cada relato con texto completo,
+  marcas de tiempo, reproductor de YouTube, personajes y metadatos SEO / Schema.org individuales.
 """
 
 import os
@@ -23,8 +20,8 @@ from datetime import datetime
 from PIL import Image
 
 SITE_URL = "https://relatos.raupulus.dev"
-YT_CHANNEL = "https://www.youtube.com/@raupulus"
-YT_SUBSCRIBE = "https://www.youtube.com/@raupulus?sub_confirmation=1"
+YT_CHANNEL = "https://www.youtube.com/@RaupulusTales"
+YT_SUBSCRIBE = "https://www.youtube.com/@RaupulusTales?sub_confirmation=1"
 PUBLIC_EMAIL = "public@raupulus.dev"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,7 +35,7 @@ DATA_FILE = os.path.join(DATA_DIR, "relatos.json")
 
 
 def clean_narrative_text(txt):
-    """Limpia y da formato HTML ligero a los párrafos del relato."""
+    """Limpia y formatea el relato en párrafos legibles con tipografía editorial."""
     paragraphs = txt.strip().split("\n\n")
     html_out = []
     for p in paragraphs:
@@ -46,14 +43,14 @@ def clean_narrative_text(txt):
         if not p:
             continue
         if p == "* * *":
-            html_out.append('<div class="scene-divider my-8 text-center text-damask font-serif tracking-widest text-lg font-bold select-none">* * *</div>')
+            html_out.append('<div class="scene-divider my-10 text-center text-damask font-serif tracking-widest text-xl font-bold select-none">* * *</div>')
         elif p.startswith("—") or p.startswith("- "):
             clean_p = p.lstrip("- ")
-            html_out.append(f'<p class="mb-5 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l border-damask/40 font-serif">{clean_p}</p>')
+            html_out.append(f'<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif">{clean_p}</p>')
         elif p.startswith("«") and p.endswith("»"):
             html_out.append(f'<blockquote class="my-6 pl-4 border-l-2 border-crimson italic text-text-muted text-base sm:text-lg font-serif">{p}</blockquote>')
         else:
-            html_out.append(f'<p class="mb-5 leading-relaxed text-text-main text-base sm:text-lg font-serif">{p}</p>')
+            html_out.append(f'<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">{p}</p>')
     return "\n".join(html_out)
 
 
@@ -176,6 +173,7 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
     os.makedirs(DATA_DIR, exist_ok=True)
     os.makedirs(PORTADAS_DIR, exist_ok=True)
     os.makedirs(AVATARS_DIR, exist_ok=True)
+    os.makedirs(RELATOS_DIR, exist_ok=True)
 
     if not os.path.exists(src_dir):
         print(f"Directorio fuente {src_dir} no accesible, usando data/relatos.json existente...")
@@ -240,13 +238,11 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                     elif '**Motivación:**' in line: motivacion = line.split('**Motivación:**', 1)[1].strip()
                     elif '**Conflicto:**' in line: conflicto = line.split('**Conflicto:**', 1)[1].strip()
 
-                # Buscar avatar local si existe
                 c_slug = cname.lower().replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u').replace('ñ','n')
                 c_words = [w for w in re.findall(r'\b[a-z]{3,}\b', c_slug) if w not in ('don','dona','senor','senora')]
                 avatar_cabeza = None
                 avatar_cuerpo = None
 
-                # Comprobar en avatars_out
                 for av_file in os.listdir(AVATARS_DIR) if os.path.exists(AVATARS_DIR) else []:
                     if av_file.startswith(num_id):
                         if any(w in av_file for w in c_words):
@@ -305,7 +301,7 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                     with Image.open(af) as im:
                         im.save(dest_av, 'WEBP', quality=85)
 
-        # Capítulos y Storyboard
+        # Capítulos
         mt_json = os.path.join(sp, 'storyboard', 'marcas_tiempo.json')
         chapters = []
         duracion_audio = "14:00"
@@ -320,8 +316,7 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                     c_sec = cap.get('segundos', 0)
                     c_time = cap.get('tiempo', '00:00')
                     c_title = clean_chapter_title(cap.get('titulo', ''))
-                    # Resumen narrativo sin archivos técnicos
-                    c_summary = sum_map.get(c_sec, f"Desarrollo dramático de la escena correspondiente a los acontecimientos de {c_time}.")
+                    c_summary = sum_map.get(c_sec, f"Acontecimientos del capítulo correspondientes al bloque de {c_time}.")
                     chapters.append({
                         "tiempo": c_time,
                         "segundos": c_sec,
@@ -332,7 +327,6 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
         relato_entry = {
             "id": num_id,
             "slug": slug,
-            "url_hash": f"#{num_id}-{slug}",
             "pagina_url": f"relatos/{num_id}-{slug}.html",
             "titulo": titulo,
             "sinopsis": sinopsis,
@@ -366,21 +360,37 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
 
 
 def generate_index_html(relatos):
-    """Genera la página principal index.html completamente reactiva con Alpine.js."""
+    """Genera index.html optimizado para SEO: catálogo visual con tarjetas 16:9 que enlazan a cada página dedicada."""
     target_file = os.path.join(BASE_DIR, "index.html")
 
-    # Serializar relatos para Alpine.js de forma segura
-    relatos_json_escaped = json.dumps(relatos, ensure_ascii=False).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', '&quot;')
+    # Serializar catálogo ligero para Alpine.js (sin inyectar el texto completo de los 10 relatos en el index)
+    catalogo_light = []
+    for r in relatos:
+        catalogo_light.append({
+            "id": r["id"],
+            "slug": r["slug"],
+            "pagina_url": r["pagina_url"],
+            "titulo": r["titulo"],
+            "sinopsis": r["sinopsis"],
+            "categoria": r["categoria"],
+            "categoria_nombre": r["categoria_nombre"],
+            "generos": r["generos"],
+            "palabras": r["palabras"],
+            "lectura_min": r["lectura_min"],
+            "duracion_audio": r["duracion_audio"],
+            "portada": r["portada"],
+            "youtube_id": r["youtube_id"]
+        })
 
     html = f"""<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raupulus Tales — Historias y Ficción Multimedia</title>
-  <meta name="description" content="Portal oficial de Raupulus Tales. Historias literarias completas, audiolibros multilingües, storyboards cinematográficos y vídeos 1080p.">
-  <meta name="keywords" content="Raupulus, Relatos, Cuentos, Audiolibros, Ficción Sonora, Historias de Terror, Suspense, Ciencia Ficción, Storyboard">
-  <meta name="author" content="Raupulus">
+  <title>Raupulus Tales — Portal Oficial de Relatos y Ficción Multimedia</title>
+  <meta name="description" content="Portal oficial de Raupulus Tales. Descubre historias completas de suspense, terror, ciencia ficción y drama, audiolibros multilingües y producciones cinematográficas en vídeo 1080p.">
+  <meta name="keywords" content="Raupulus Tales, Relatos, Cuentos, Ficción Sonora, Audiolibros, Historias de Terror, Suspense, Ciencia Ficción">
+  <meta name="author" content="Raupulus Tales">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#941300">
   <link rel="canonical" href="{SITE_URL}/">
@@ -394,12 +404,14 @@ def generate_index_html(relatos):
   <meta property="og:description" content="Relatos literarios con audiolibros multilingües y producciones cinematográficas en vídeo 1080p.">
   <meta property="og:image" content="{SITE_URL}/assets/images/logo.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@raupulus">
-  <meta name="twitter:creator" content="@raupulus">
+  <meta name="twitter:site" content="@RaupulusTales">
+  <meta name="twitter:title" content="Raupulus Tales — Historias y Ficción Multimedia">
+  <meta name="twitter:description" content="Relatos de ficción multimedia con audiolibros calibrados y vídeos Full HD 1080p.">
+  <meta name="twitter:image" content="{SITE_URL}/assets/images/logo.png">
 
-  <!-- Iconos locales -->
-  <link rel="icon" type="image/webp" href="assets/images/logo.webp">
-  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <!-- Iconos locales oficiales de Raupulus Tales -->
+  <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
 
   <!-- CSS local pretranspilado (Sin CDNs externos) -->
   <link rel="stylesheet" href="assets/css/tailwind.css">
@@ -410,22 +422,20 @@ def generate_index_html(relatos):
   <script type="application/ld+json">
   {{
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Raupulus Tales",
+    "@type": "CollectionPage",
+    "name": "Catálogo Oficial de Relatos — Raupulus Tales",
     "url": "{SITE_URL}/",
-    "description": "Portal oficial de ficción multimedia y relatos cinematográficos de Raupulus",
-    "inLanguage": ["es-ES", "es-419", "en-US"],
+    "description": "Colección de relatos literarios originales de ficción, suspense, ciencia ficción y drama con audiolibros en tres idiomas y vídeos cinematográficos.",
     "publisher": {{
       "@type": "Organization",
-      "name": "Raupulus",
+      "name": "Raupulus Tales",
       "logo": "{SITE_URL}/assets/images/logo.png"
     }}
   }}
   </script>
 </head>
 <body class="bg-obsidian text-text-main min-h-screen flex flex-col selection:bg-crimson selection:text-white"
-      x-data="talesApp()"
-      x-init="initApp()">
+      x-data="talesCatalog()">
 
   <!-- Fondo ambiental cinemático -->
   <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
@@ -438,10 +448,10 @@ def generate_index_html(relatos):
   <header class="sticky top-0 z-50 backdrop-blur-md bg-obsidian/90 border-b border-border-subtle transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       
-      <!-- Brand & Logotipo -->
+      <!-- Brand & Logotipo Oficial de Raupulus Tales -->
       <a href="#" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-crimson rounded-lg p-1" aria-label="Raupulus Tales - Inicio">
         <div class="relative w-10 h-10 rounded-full overflow-hidden border border-damask/50 group-hover:border-crimson transition-colors duration-300">
-          <img src="assets/images/logo.webp" alt="Raupulus Logo" width="40" height="40" class="w-full h-full object-cover">
+          <img src="assets/images/logo.webp" alt="Raupulus Tales Logo Oficial" width="40" height="40" class="w-full h-full object-cover">
         </div>
         <div class="flex flex-col">
           <span class="font-bold text-lg text-text-bright tracking-wider group-hover:text-damask-light transition-colors">RAUPULUS</span>
@@ -452,25 +462,18 @@ def generate_index_html(relatos):
       <!-- Navegación central -->
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
         <a href="#catalogo" class="text-text-main hover:text-text-bright hover:underline underline-offset-4 decoration-crimson transition">Catálogo</a>
-        <a href="#visor-relato" class="text-text-main hover:text-text-bright hover:underline underline-offset-4 decoration-crimson transition">Visor de Relato</a>
         <a href="#universo" class="text-text-main hover:text-text-bright hover:underline underline-offset-4 decoration-crimson transition">El Universo</a>
-        
-        <!-- Selector simulado de idioma de locución -->
-        <div class="flex items-center gap-1 bg-obsidian-card border border-border-subtle rounded-md p-1 text-xs">
-          <button @click="idiomaActivo = 'es-ES'" :class="idiomaActivo === 'es-ES' ? 'bg-crimson text-white font-bold' : 'text-text-muted hover:text-text-main'" class="px-2 py-0.5 rounded transition" title="Español de España">ES</button>
-          <button @click="idiomaActivo = 'es-LAT'" :class="idiomaActivo === 'es-LAT' ? 'bg-crimson text-white font-bold' : 'text-text-muted hover:text-text-main'" class="px-2 py-0.5 rounded transition" title="Español Latinoamericano">LAT</button>
-          <button @click="idiomaActivo = 'en-US'" :class="idiomaActivo === 'en-US' ? 'bg-crimson text-white font-bold' : 'text-text-muted hover:text-text-main'" class="px-2 py-0.5 rounded transition" title="Inglés Internacional">EN</button>
-        </div>
+        <a href="LICENSE.md" class="text-text-muted hover:text-text-main transition text-xs">Propiedad & Derechos</a>
 
         <!-- Botón Canal YouTube -->
         <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" 
            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-yt-red/90 hover:bg-yt-red text-white text-xs font-semibold tracking-wide transition shadow-sm hover:shadow-crimson/50">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          YouTube
+          Canal YouTube
         </a>
       </nav>
 
-      <!-- Menú Hamburguesa Móvil -->
+      <!-- Menú Móvil -->
       <button @click="menuAbierto = !menuAbierto" class="md:hidden p-2 rounded-lg text-text-muted hover:text-text-bright hover:bg-obsidian-card" aria-label="Abrir menú">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </button>
@@ -479,16 +482,9 @@ def generate_index_html(relatos):
     <!-- Menú desplegable móvil -->
     <div x-show="menuAbierto" @click.away="menuAbierto = false" x-cloak class="md:hidden border-b border-border-subtle bg-obsidian-card px-4 py-4 space-y-3">
       <a href="#catalogo" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">Catálogo de Relatos</a>
-      <a href="#visor-relato" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">Visor Multimedia</a>
       <a href="#universo" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">El Universo</a>
-      <div class="pt-2 border-t border-border-subtle flex items-center justify-between">
-        <span class="text-xs text-text-muted">Locución de estudio:</span>
-        <div class="flex gap-1">
-          <button @click="idiomaActivo = 'es-ES'" :class="idiomaActivo === 'es-ES' ? 'bg-crimson text-white' : 'text-text-muted'" class="px-2 py-1 text-xs rounded">ES</button>
-          <button @click="idiomaActivo = 'es-LAT'" :class="idiomaActivo === 'es-LAT' ? 'bg-crimson text-white' : 'text-text-muted'" class="px-2 py-1 text-xs rounded">LAT</button>
-          <button @click="idiomaActivo = 'en-US'" :class="idiomaActivo === 'en-US' ? 'bg-crimson text-white' : 'text-text-muted'" class="px-2 py-1 text-xs rounded">EN</button>
-        </div>
-      </div>
+      <a href="LICENSE.md" class="block text-sm text-text-muted hover:text-text-main">Aviso de Propiedad Intelectual</a>
+      <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="block text-sm font-semibold text-yt-red">YouTube Oficial ↗</a>
     </div>
   </header>
 
@@ -496,289 +492,32 @@ def generate_index_html(relatos):
   <main class="flex-1" id="main-content">
 
     <!-- Hero Section -->
-    <section class="relative py-16 md:py-20 border-b border-border-subtle overflow-hidden">
+    <section class="relative py-16 md:py-24 border-b border-border-subtle overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/40 border border-damask/40 text-xs font-semibold text-text-bright mb-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-plum/40 border border-damask/40 text-xs font-semibold text-text-bright mb-6">
           <span class="w-2 h-2 rounded-full bg-crimson animate-pulse"></span>
           Ficción Multimedia • Audiolibros Calibrados • Escenas Full HD 1080p
         </div>
 
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-bright tracking-tight max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-bright tracking-tight max-w-4xl mx-auto leading-tight">
           Historias que se leen, se escuchan y <span class="text-transparent bg-clip-text bg-gradient-to-r from-crimson via-damask to-damask-light">cobran vida</span>
         </h1>
         
         <p class="mt-6 text-base sm:text-lg text-text-muted max-w-2xl mx-auto leading-relaxed">
-          Universo narrativo cinematográfico de Raupulus: relatos literarios profundos, biblias visuales de personajes y producciones en vídeo con locución multilingüe.
+          Cada relato cuenta con su propia página dedicada: texto íntegro para lectura inmersiva, desglose de capítulos narrativos, fichas visuales de personajes y producciones en vídeo Full HD con locución multilingüe.
         </p>
 
         <!-- Accesos rápidos del Hero -->
         <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <button @click="irAUltimoEstreno()" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-white font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
+          <a :href="relatos[0]?.pagina_url" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-white font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            <span>Ver Último Estreno (<span x-text="relatos[0]?.titulo"></span>)</span>
-          </button>
+            <span>Leer Último Estreno (<span x-text="relatos[0]?.titulo"></span>)</span>
+          </a>
           <a href="#catalogo" class="px-6 py-3 rounded-lg bg-obsidian-card hover:bg-obsidian-elevated border border-border-subtle hover:border-damask text-text-main font-semibold text-sm transition-all duration-200">
-            Explorar Catálogo Completo (<span x-text="relatos.length"></span>)
+            Explorar las <span x-text="relatos.length"></span> Historias
           </a>
         </div>
-      </div>
-    </section>
-
-    <!-- Visor de Historia y Reproductor Multimedia -->
-    <section id="visor-relato" class="py-14 md:py-16 bg-obsidian-card/70 border-b border-border-subtle scroll-mt-14">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Cabecera del Visor con Metadatos del Relato Activo -->
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
-          <div>
-            <div class="flex items-center gap-2 mb-1">
-              <span class="px-2.5 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-crimson text-white" x-text="relatoActivo.id"></span>
-              <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-plum/60 border border-damask/40 text-text-bright" x-text="relatoActivo.categoria_nombre"></span>
-              <span class="text-xs text-text-muted">• <span x-text="relatoActivo.palabras"></span> palabras • ≈ <span x-text="relatoActivo.lectura_min"></span> min lectura</span>
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-text-bright" x-text="relatoActivo.titulo"></h2>
-          </div>
-
-          <!-- Selector rápido de siguiente / anterior relato -->
-          <div class="flex items-center gap-2 text-xs font-medium">
-            <button @click="anteriorRelato()" class="px-3 py-1.5 rounded-lg bg-obsidian border border-border-subtle hover:border-damask text-text-muted hover:text-white transition flex items-center gap-1">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-              Anterior
-            </button>
-            <button @click="siguienteRelato()" class="px-3 py-1.5 rounded-lg bg-obsidian border border-border-subtle hover:border-damask text-text-muted hover:text-white transition flex items-center gap-1">
-              Siguiente
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Marco del Visor / Reproductor -->
-        <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl">
-          
-          <!-- Contenedor de Vídeo 16:9 con Facade de Privacidad y Rendimiento -->
-          <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle flex items-center justify-center">
-            
-            <!-- Si tiene YouTube ID y el usuario aún no pulsó Play -->
-            <template x-if="relatoActivo.youtube_id && !videoReproduciendo">
-              <div class="relative w-full h-full cursor-pointer group" @click="reproducirVideo()">
-                <img :src="relatoActivo.portada" :alt="'Portada del relato ' + relatoActivo.titulo" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col items-center justify-center text-center p-4">
-                  <!-- Botón Play de YouTube Oficial -->
-                  <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-crimson/95 group-hover:bg-yt-red group-hover:scale-110 text-white flex items-center justify-center shadow-xl glow-crimson transition-all duration-300">
-                    <svg class="w-8 h-8 sm:w-10 sm:h-10 translate-x-0.5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                  </div>
-                  <div class="mt-4 font-bold text-sm sm:text-base text-white tracking-wide drop-shadow">Ver Producción Cinematográfica en YouTube (1080p)</div>
-                  <div class="text-xs text-text-main/80 mt-1">Duración: <span x-text="relatoActivo.duracion_audio"></span> min • Locución oficial multilingüe</div>
-                </div>
-              </div>
-            </template>
-
-            <!-- Si el usuario pulsó Play: Iframe embebido con youtube-nocookie -->
-            <template x-if="relatoActivo.youtube_id && videoReproduciendo">
-              <iframe :src="'https://www.youtube-nocookie.com/embed/' + relatoActivo.youtube_id + '?autoplay=1&playsinline=1&rel=0&modestbranding=1'"
-                      :title="'Vídeo oficial del relato ' + relatoActivo.titulo"
-                      class="w-full h-full border-0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
-            </template>
-
-            <!-- Si aún no tiene YouTube ID (en producción) -->
-            <template x-if="!relatoActivo.youtube_id">
-              <div class="relative w-full h-full">
-                <img :src="relatoActivo.portada" :alt="'Portada del relato ' + relatoActivo.titulo" class="w-full h-full object-cover opacity-60">
-                <div class="absolute inset-0 bg-obsidian/75 backdrop-blur-sm flex flex-col items-center justify-center text-center p-6">
-                  <div class="w-12 h-12 rounded-full bg-damask/40 text-text-bright flex items-center justify-center mb-3">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                  </div>
-                  <div class="text-base sm:text-lg font-bold text-white">Próximo Estreno Cinematográfico</div>
-                  <p class="text-xs sm:text-sm text-text-muted mt-1 max-w-md">El vídeo Full HD 1080p y las locuciones de estudio están en fase final de producción y sincronización.</p>
-                  <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="mt-4 px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition flex items-center gap-2">
-                    Suscribirse al Canal para el Estreno
-                  </a>
-                </div>
-              </div>
-            </template>
-
-          </div>
-
-          <!-- Barra de Acciones y Enlaces de YouTube -->
-          <div class="px-5 py-3 bg-obsidian-elevated/90 border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
-            <div class="flex items-center gap-2 text-text-muted">
-              <span>🎧 Locución activa:</span>
-              <span class="font-semibold text-text-bright" x-text="idiomaActivo === 'es-ES' ? 'Álvaro (España)' : (idiomaActivo === 'es-LAT' ? 'Alonso (Latinoamérica)' : 'Christopher (Inglés)')"></span>
-            </div>
-            <div class="flex items-center gap-3">
-              <template x-if="relatoActivo.youtube_url">
-                <a :href="relatoActivo.youtube_url" target="_blank" rel="noopener noreferrer" class="text-yt-red hover:text-red-400 font-semibold flex items-center gap-1 transition">
-                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  Abrir en YouTube
-                </a>
-              </template>
-              <a :href="relatoActivo.pagina_url" class="text-damask-light hover:text-white font-semibold transition">
-                Página Independiente ↗
-              </a>
-            </div>
-          </div>
-
-          <!-- Selector de Pestañas Interactivas (Alpine.js) -->
-          <div class="flex border-b border-border-subtle bg-obsidian-elevated px-4 text-xs font-semibold overflow-x-auto">
-            <button @click="vistaPestana = 'relato'" :class="vistaPestana === 'relato' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-text-main border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap flex items-center gap-2">
-              📖 Relato Literario
-            </button>
-            <button @click="vistaPestana = 'capitulos'" :class="vistaPestana === 'capitulos' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-text-main border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap flex items-center gap-2">
-              🎬 Capítulos & Storyboard
-            </button>
-            <button @click="vistaPestana = 'personajes'" :class="vistaPestana === 'personajes' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-text-main border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap flex items-center gap-2">
-              👤 Personajes & Biblia Visual (<span x-text="relatoActivo.personajes.length"></span>)
-            </button>
-            <button @click="vistaPestana = 'locucion'" :class="vistaPestana === 'locucion' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-text-main border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap flex items-center gap-2">
-              🎙️ Locución & Audios
-            </button>
-          </div>
-
-          <!-- Paneles de Contenido -->
-          <div class="p-6 md:p-10">
-
-            <!-- Panel 1: Relato Literario Completo -->
-            <div x-show="vistaPestana === 'relato'" x-cloak class="max-w-prose mx-auto">
-              <!-- Sinopsis de entrada -->
-              <div class="p-4 rounded-xl bg-obsidian-card border border-border-subtle mb-8 text-xs sm:text-sm text-text-muted italic leading-relaxed">
-                <span class="font-bold text-damask-light not-italic block mb-1">Sinopsis:</span>
-                <span x-text="relatoActivo.sinopsis"></span>
-              </div>
-
-              <!-- Texto del relato formateado -->
-              <div class="prose prose-invert max-w-none text-text-main" x-html="relatoActivo.relato_html"></div>
-
-              <div class="mt-10 pt-6 border-t border-border-subtle text-center text-xs text-text-muted">
-                Fin del relato • <a href="#catalogo" class="text-damask-light hover:underline font-semibold">Volver al catálogo para elegir otra historia</a>
-              </div>
-            </div>
-
-            <!-- Panel 2: Capítulos & Storyboard (100% libre de archivos técnicos o referencias video1) -->
-            <div x-show="vistaPestana === 'capitulos'" x-cloak class="space-y-4">
-              <div class="flex items-center justify-between border-b border-border-subtle pb-3">
-                <div>
-                  <h3 class="font-bold text-sm text-text-bright">Estructura Narrativa por Capítulos</h3>
-                  <p class="text-xs text-text-muted">Marcas de tiempo calibradas para navegación y sincronización en YouTube</p>
-                </div>
-                <span class="text-xs font-mono text-damask-light font-bold" x-text="relatoActivo.duracion_audio"></span>
-              </div>
-
-              <div class="space-y-3">
-                <template x-for="(cap, idx) in relatoActivo.capitulos" :key="idx">
-                  <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle hover:border-damask/60 transition flex flex-col sm:flex-row sm:items-start justify-between gap-3">
-                    <div class="flex items-start gap-3">
-                      <span class="font-mono text-xs font-bold text-crimson px-2.5 py-1 rounded bg-obsidian border border-border-subtle whitespace-nowrap" x-text="cap.tiempo"></span>
-                      <div>
-                        <h4 class="text-sm font-bold text-text-bright" x-text="cap.titulo"></h4>
-                        <p class="text-xs text-text-muted mt-1 leading-relaxed" x-text="cap.resumen"></p>
-                      </div>
-                    </div>
-                    <template x-if="relatoActivo.youtube_url">
-                      <a :href="relatoActivo.youtube_url + '&t=' + cap.segundos + 's'" target="_blank" rel="noopener noreferrer" class="text-[11px] font-semibold text-damask-light hover:text-white whitespace-nowrap transition flex items-center gap-1 self-end sm:self-auto">
-                        Ver instante ↗
-                      </a>
-                    </template>
-                  </div>
-                </template>
-              </div>
-            </div>
-
-            <!-- Panel 3: Personajes & Biblia Visual (Avatares y fichas inmutables) -->
-            <div x-show="vistaPestana === 'personajes'" x-cloak class="space-y-6">
-              <div class="border-b border-border-subtle pb-3">
-                <h3 class="font-bold text-sm text-text-bright">Fichas de Consistencia de Personajes</h3>
-                <p class="text-xs text-text-muted">Perfiles psicológicos, rasgos físicos inmutables y avatares de referencia visual.</p>
-              </div>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <template x-for="p in relatoActivo.personajes" :key="p.id">
-                  <div class="rounded-xl bg-obsidian-elevated border border-border-subtle p-5 flex flex-col justify-between">
-                    <div>
-                      <!-- Avatares si existen -->
-                      <div class="grid grid-cols-2 gap-2 mb-4" x-show="p.avatar_cabeza || p.avatar_cuerpo">
-                        <template x-if="p.avatar_cabeza">
-                          <div class="aspect-video rounded-lg overflow-hidden border border-border-subtle bg-black">
-                            <img :src="p.avatar_cabeza" :alt="'Avatar cabeza: ' + p.nombre" class="w-full h-full object-cover">
-                          </div>
-                        </template>
-                        <template x-if="p.avatar_cuerpo">
-                          <div class="aspect-video rounded-lg overflow-hidden border border-border-subtle bg-black">
-                            <img :src="p.avatar_cuerpo" :alt="'Avatar cuerpo: ' + p.nombre" class="w-full h-full object-cover">
-                          </div>
-                        </template>
-                      </div>
-
-                      <div class="flex items-center justify-between mb-2">
-                        <h4 class="text-base font-bold text-text-bright" x-text="p.nombre"></h4>
-                        <span class="text-xs px-2 py-0.5 rounded bg-plum/60 text-damask-light font-semibold" x-text="p.rol"></span>
-                      </div>
-
-                      <div class="space-y-2 text-xs text-text-muted">
-                        <div><strong class="text-text-main">Rasgos:</strong> <span x-text="p.rasgos"></span></div>
-                        <div x-show="p.motivacion"><strong class="text-text-main">Motivación:</strong> <span x-text="p.motivacion"></span></div>
-                        <div x-show="p.conflicto"><strong class="text-text-main">Conflicto:</strong> <span x-text="p.conflicto"></span></div>
-                      </div>
-                    </div>
-                  </div>
-                </template>
-              </div>
-            </div>
-
-            <!-- Panel 4: Locución & Audios Oficiales -->
-            <div x-show="vistaPestana === 'locucion'" x-cloak class="space-y-6">
-              <div class="border-b border-border-subtle pb-3">
-                <h3 class="font-bold text-sm text-text-bright">Trinidad de Voces de Estudio Calibradas</h3>
-                <p class="text-xs text-text-muted">Tres pistas de audio masterizadas a 192 kbps (48 kHz) con duraciones milimétricamente igualadas.</p>
-              </div>
-
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-                
-                <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center justify-between mb-2">
-                      <span class="font-bold text-text-bright">🇪🇸 Español de España</span>
-                      <span class="px-2 py-0.5 rounded bg-crimson text-white font-bold text-[10px]">Máster Vídeo</span>
-                    </div>
-                    <div class="text-text-main font-semibold">Voz: Álvaro Neural</div>
-                    <p class="text-text-muted mt-2 leading-relaxed">Pista de referencia para el vídeo Full HD 1080p con movimiento Ken Burns.</p>
-                  </div>
-                  <div class="mt-4 pt-3 border-t border-border-subtle text-[11px] text-damask-light">Duración: <span x-text="relatoActivo.duracion_audio"></span></div>
-                </div>
-
-                <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center justify-between mb-2">
-                      <span class="font-bold text-text-bright">🌎 Español Latinoamericano</span>
-                      <span class="px-2 py-0.5 rounded bg-plum text-text-bright font-bold text-[10px]">YouTube Studio</span>
-                    </div>
-                    <div class="text-text-main font-semibold">Voz: Alonso Neural</div>
-                    <p class="text-text-muted mt-2 leading-relaxed">Español neutro con tempo calibrado para reproducirse en sincronía perfecta con las escenas.</p>
-                  </div>
-                  <div class="mt-4 pt-3 border-t border-border-subtle text-[11px] text-damask-light">Duración calibrada a <span x-text="relatoActivo.duracion_audio"></span></div>
-                </div>
-
-                <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle flex flex-col justify-between">
-                  <div>
-                    <div class="flex items-center justify-between mb-2">
-                      <span class="font-bold text-text-bright">🇺🇸 Inglés Internacional</span>
-                      <span class="px-2 py-0.5 rounded bg-plum text-text-bright font-bold text-[10px]">YouTube Studio</span>
-                    </div>
-                    <div class="text-text-main font-semibold">Voz: Christopher Neural</div>
-                    <p class="text-text-muted mt-2 leading-relaxed">Adaptación íntegra al inglés para distribución internacional en YouTube Multi-audio.</p>
-                  </div>
-                  <div class="mt-4 pt-3 border-t border-border-subtle text-[11px] text-damask-light">Duración calibrada a <span x-text="relatoActivo.duracion_audio"></span></div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
       </div>
     </section>
 
@@ -788,13 +527,13 @@ def generate_index_html(relatos):
       <!-- Cabecera de Sección y Controles -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
         <div>
-          <span class="text-xs uppercase font-bold tracking-wider text-damask">Biblioteca Multimedia</span>
+          <span class="text-xs uppercase font-bold tracking-wider text-damask">Biblioteca de Ficción</span>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-text-bright mt-1">Catálogo de Historias</h2>
-          <p class="text-xs text-text-muted mt-1">Selecciona cualquier relato para abrirlo en el visor o consultar su ficha completa.</p>
+          <p class="text-xs text-text-muted mt-1">Haz clic en cualquier historia para acceder a su página dedicada con lectura completa y contenido multimedia.</p>
         </div>
 
         <!-- Buscador reactivo -->
-        <div class="w-full md:w-72">
+        <div class="w-full md:w-80">
           <label for="buscar-relato" class="sr-only">Buscar por título, temática o personaje</label>
           <div class="relative">
             <input type="text" id="buscar-relato" x-model="busqueda" placeholder="Buscar por título o palabra clave..." 
@@ -818,12 +557,11 @@ def generate_index_html(relatos):
       <!-- Rejilla de Tarjetas -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <template x-for="r in relatosFiltrados" :key="r.id">
-          <article class="group rounded-xl bg-obsidian-card border border-border-subtle hover:border-damask transition-all duration-300 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-crimson/10"
-                   :class="relatoActivo.id === r.id ? 'ring-2 ring-crimson border-crimson' : ''">
+          <article class="group rounded-xl bg-obsidian-card border border-border-subtle hover:border-damask transition-all duration-300 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-crimson/15">
             
-            <!-- Portada 16:9 -->
-            <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle cursor-pointer" @click="seleccionarRelato(r.id)">
-              <img :src="r.portada" :alt="'Portada de ' + r.titulo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <!-- Portada 16:9 con enlace a la página dedicada -->
+            <a :href="r.pagina_url" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle block" :aria-label="'Abrir relato ' + r.titulo">
+              <img :src="r.portada" :alt="'Portada oficial del relato ' + r.titulo" width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               
               <!-- Badges de esquina -->
               <div class="absolute top-3 left-3 flex gap-2">
@@ -836,7 +574,7 @@ def generate_index_html(relatos):
                 <svg class="w-3.5 h-3.5 text-crimson" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
                 <span x-text="r.duracion_audio + ' min'"></span>
               </div>
-            </div>
+            </a>
 
             <!-- Contenido de la Tarjeta -->
             <div class="p-5 flex-1 flex flex-col justify-between">
@@ -845,19 +583,19 @@ def generate_index_html(relatos):
                   <span>≈ <span x-text="r.palabras"></span> palabras</span>
                   <span class="text-damask-light font-medium">ES • LAT • EN</span>
                 </div>
-                <h3 class="text-lg font-bold text-text-bright group-hover:text-damask-light transition-colors leading-snug cursor-pointer" @click="seleccionarRelato(r.id)" x-text="r.titulo"></h3>
+                <h3 class="text-lg font-bold text-text-bright group-hover:text-damask-light transition-colors leading-snug">
+                  <a :href="r.pagina_url" x-text="r.titulo"></a>
+                </h3>
                 <p class="mt-2 text-xs text-text-muted line-clamp-3 leading-relaxed" x-text="r.sinopsis"></p>
               </div>
 
               <!-- Botones de Acción -->
               <div class="mt-5 pt-4 border-t border-border-subtle flex items-center justify-between text-xs">
-                <button @click="seleccionarRelato(r.id)" class="font-semibold text-crimson-glow group-hover:text-white flex items-center gap-1 transition">
-                  <span>Ver en Visor</span>
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                </button>
-                <a :href="r.pagina_url" class="text-text-muted hover:text-white transition font-medium">
-                  Ficha completa →
+                <a :href="r.pagina_url" class="font-semibold text-crimson-glow group-hover:text-white flex items-center gap-1 transition">
+                  <span>Leer Relato Dedicado</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                 </a>
+                <span class="text-[11px] text-text-muted">1080p Ken Burns</span>
               </div>
             </div>
           </article>
@@ -919,12 +657,12 @@ def generate_index_html(relatos):
 
   </main>
 
-  <!-- Footer Oficial -->
+  <!-- Footer Oficial con Reserva Estricta de Derechos -->
   <footer class="bg-obsidian border-t border-border-subtle py-12 text-xs text-text-muted">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
       
       <div class="flex items-center gap-3">
-        <img src="assets/images/logo.webp" alt="Raupulus Logo" width="32" height="32" class="w-8 h-8 rounded-full border border-border-subtle">
+        <img src="assets/images/logo.webp" alt="Raupulus Tales Logo Oficial" width="32" height="32" class="w-8 h-8 rounded-full border border-border-subtle">
         <div>
           <div class="font-bold text-text-bright">Raupulus Tales</div>
           <div class="text-[10px] text-text-muted">Ficción Multimedia & Storytelling Digital</div>
@@ -936,103 +674,44 @@ def generate_index_html(relatos):
         <a href="https://raupulus.dev" target="_blank" rel="noopener noreferrer" class="hover:text-text-bright transition">raupulus.dev</a>
         <a href="https://music.raupulus.dev" target="_blank" rel="noopener noreferrer" class="hover:text-text-bright transition">music.raupulus.dev</a>
         <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="hover:text-text-bright transition">YouTube Oficial</a>
+        <a href="LICENSE.md" class="hover:text-text-bright text-damask-light font-semibold transition">Propiedad & Derechos</a>
         <a href="mailto:{PUBLIC_EMAIL}" class="hover:text-text-bright transition">{PUBLIC_EMAIL}</a>
       </div>
 
-      <div class="text-center md:text-right text-[11px]">
-        <span>© 2026 Raupulus Tales. Todos los derechos reservados.</span>
+      <div class="text-center md:text-right text-[11px] leading-relaxed">
+        <span class="block">© 2026 Raupulus Tales. Todos los derechos reservados.</span>
+        <span class="text-text-muted/75 text-[10px]">Obra literaria y multimedia privada. Prohibida su comercialización, reproducción o uso en IA sin autorización.</span>
       </div>
 
     </div>
   </footer>
 
-  <!-- Datos y Lógica Reactiva Alpine.js -->
+  <!-- Lógica Reactiva Alpine.js para Catálogo -->
   <script>
-    function talesApp() {{
-      const rawRelatos = {json.dumps(relatos, ensure_ascii=False)};
+    function talesCatalog() {{
+      const rawRelatos = {json.dumps(catalogo_light, ensure_ascii=False)};
 
       return {{
         relatos: rawRelatos,
         filtroCategoria: 'todos',
         busqueda: '',
-        idiomaActivo: 'es-ES',
-        vistaPestana: 'relato',
         menuAbierto: false,
-        videoReproduciendo: false,
-        relatoActivo: rawRelatos[0] || {{}},
-
-        initApp() {{
-          // Comprobar hash en la URL para abrir relato concreto
-          const hash = window.location.hash;
-          if (hash) {{
-            const found = this.relatos.find(r => r.url_hash === hash || ('#' + r.id) === hash || ('#' + r.slug) === hash);
-            if (found) {{
-              this.relatoActivo = found;
-            }}
-          }}
-        }},
 
         get relatosFiltrados() {{
           return this.relatos.filter(r => {{
-            // Filtro por categoría temática
             const coincideCat = (this.filtroCategoria === 'todos') ||
                                 (r.categoria === this.filtroCategoria) ||
                                 (r.generos && r.generos.some(g => g.toLowerCase().includes(this.filtroCategoria)));
             
-            // Filtro por texto de búsqueda
             const query = this.busqueda.trim().toLowerCase();
             if (!query) return coincideCat;
 
             const coincideBusqueda = r.titulo.toLowerCase().includes(query) ||
                                      r.sinopsis.toLowerCase().includes(query) ||
-                                     (r.personajes && r.personajes.some(p => p.nombre.toLowerCase().includes(query))) ||
                                      (r.generos && r.generos.some(g => g.toLowerCase().includes(query)));
             
             return coincideCat && coincideBusqueda;
           }});
-        }},
-
-        seleccionarRelato(id) {{
-          const found = this.relatos.find(r => r.id === id);
-          if (found) {{
-            this.relatoActivo = found;
-            this.videoReproduciendo = false;
-            window.location.hash = found.id + '-' + found.slug;
-            
-            // Desplazar suavemente hacia el visor
-            const el = document.getElementById('visor-relato');
-            if (el) {{
-              el.scrollIntoView({{ behavior: 'smooth' }});
-            }}
-          }}
-        }},
-
-        irAUltimoEstreno() {{
-          if (this.relatos.length > 0) {{
-            this.seleccionarRelato(this.relatos[0].id);
-          }}
-        }},
-
-        siguienteRelato() {{
-          const idx = this.relatos.findIndex(r => r.id === this.relatoActivo.id);
-          if (idx !== -1 && idx < this.relatos.length - 1) {{
-            this.seleccionarRelato(this.relatos[idx + 1].id);
-          }} else {{
-            this.seleccionarRelato(this.relatos[0].id);
-          }}
-        }},
-
-        anteriorRelato() {{
-          const idx = this.relatos.findIndex(r => r.id === this.relatoActivo.id);
-          if (idx > 0) {{
-            this.seleccionarRelato(this.relatos[idx - 1].id);
-          }} else {{
-            this.seleccionarRelato(this.relatos[this.relatos.length - 1].id);
-          }}
-        }},
-
-        reproducirVideo() {{
-          this.videoReproduciendo = true;
         }}
       }};
     }}
@@ -1042,7 +721,7 @@ def generate_index_html(relatos):
 """
     with open(target_file, 'w', encoding='utf-8') as f:
         f.write(html)
-    print(f"✅ index.html generado con éxito ({os.path.getsize(target_file)} bytes)")
+    print(f"✅ index.html optimizado para SEO generado ({os.path.getsize(target_file)} bytes)")
 
 
 def generate_story_pages(relatos):
@@ -1055,7 +734,7 @@ def generate_story_pages(relatos):
         # Capítulos HTML
         caps_html = []
         for c in r.get('capitulos', []):
-            yt_link = f"<a href='{r['youtube_url']}&t={c['segundos']}s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white'>Ver instante ↗</a>" if r.get('youtube_url') else ""
+            yt_link = f"<a href='{r['youtube_url']}&t={c['segundos']}s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver instante en YouTube ↗</a>" if r.get('youtube_url') else ""
             caps_html.append(f"""
             <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle flex flex-col sm:flex-row sm:items-start justify-between gap-3">
               <div class="flex items-start gap-3">
@@ -1075,8 +754,8 @@ def generate_story_pages(relatos):
         for p in r.get('personajes', []):
             av_html = ""
             if p.get('avatar_cabeza') or p.get('avatar_cuerpo'):
-                img1 = f"<div class='aspect-video rounded bg-black overflow-hidden border border-border-subtle'><img src='../{p['avatar_cabeza']}' alt='Avatar cabeza {p['nombre']}' class='w-full h-full object-cover'></div>" if p.get('avatar_cabeza') else ""
-                img2 = f"<div class='aspect-video rounded bg-black overflow-hidden border border-border-subtle'><img src='../{p['avatar_cuerpo']}' alt='Avatar cuerpo {p['nombre']}' class='w-full h-full object-cover'></div>" if p.get('avatar_cuerpo') else ""
+                img1 = f"<div class='aspect-video rounded-lg bg-black overflow-hidden border border-border-subtle'><img src='../{p['avatar_cabeza']}' alt='Avatar cabeza de {p['nombre']}' width='1280' height='720' loading='lazy' class='w-full h-full object-cover'></div>" if p.get('avatar_cabeza') else ""
+                img2 = f"<div class='aspect-video rounded-lg bg-black overflow-hidden border border-border-subtle'><img src='../{p['avatar_cuerpo']}' alt='Avatar cuerpo de {p['nombre']}' width='1280' height='720' loading='lazy' class='w-full h-full object-cover'></div>" if p.get('avatar_cuerpo') else ""
                 av_html = f"<div class='grid grid-cols-2 gap-2 mb-3'>{img1}{img2}</div>"
 
             chars_html.append(f"""
@@ -1111,7 +790,7 @@ def generate_story_pages(relatos):
         else:
             video_block = f"""
             <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-              <img src="../{r['portada']}" alt="Portada de {r['titulo']}" class="w-full h-full object-cover opacity-75">
+              <img src="../{r['portada']}" alt="Portada de {r['titulo']}" width="1280" height="720" class="w-full h-full object-cover opacity-75">
               <div class="absolute inset-0 bg-obsidian/75 flex flex-col items-center justify-center text-center p-6">
                 <div class="text-lg font-bold text-white">Próximo Estreno Cinematográfico 1080p</div>
                 <p class="text-xs text-text-muted mt-1">Vídeo Full HD y locuciones en proceso de sincronización.</p>
@@ -1127,10 +806,13 @@ def generate_story_pages(relatos):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{r['titulo']} — Relato #{r['id']} | Raupulus Tales</title>
   <meta name="description" content="{r['sinopsis']}">
-  <meta name="keywords" content="{r['titulo']}, Raupulus, Relatos, {', '.join(r['generos'])}">
+  <meta name="keywords" content="{r['titulo']}, Raupulus Tales, Relatos, {', '.join(r['generos'])}">
+  <meta name="author" content="Raupulus Tales">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#941300">
   <link rel="canonical" href="{SITE_URL}/{r['pagina_url']}">
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Redes Sociales -->
   <meta property="og:site_name" content="Raupulus Tales">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{SITE_URL}/{r['pagina_url']}">
@@ -1138,11 +820,15 @@ def generate_story_pages(relatos):
   <meta property="og:description" content="{r['sinopsis']}">
   <meta property="og:image" content="{SITE_URL}/{r['portada']}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@RaupulusTales">
   <meta name="twitter:title" content="{r['titulo']} — Raupulus Tales">
   <meta name="twitter:description" content="{r['sinopsis']}">
   <meta name="twitter:image" content="{SITE_URL}/{r['portada']}">
 
-  <link rel="icon" type="image/webp" href="../assets/images/logo.webp">
+  <!-- Iconos locales oficiales de Raupulus Tales -->
+  <link rel="icon" type="image/webp" href="../assets/images/favicon.webp">
+  <link rel="apple-touch-icon" href="../assets/images/favicon.png">
+
   <link rel="stylesheet" href="../assets/css/tailwind.css">
   <script defer src="../assets/js/alpine.min.js"></script>
 
@@ -1175,15 +861,15 @@ def generate_story_pages(relatos):
   <header class="sticky top-0 z-50 backdrop-blur-md bg-obsidian/90 border-b border-border-subtle">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="../index.html" class="flex items-center gap-3 group">
-        <img src="../assets/images/logo.webp" alt="Raupulus Logo" width="36" height="36" class="w-9 h-9 rounded-full border border-damask/50">
+        <img src="../assets/images/logo.webp" alt="Raupulus Tales Logo Oficial" width="36" height="36" class="w-9 h-9 rounded-full border border-damask/50">
         <div>
           <span class="font-bold text-base text-text-bright tracking-wider">RAUPULUS</span>
           <span class="text-[9px] tracking-widest text-text-muted uppercase block -mt-1 font-semibold">TALES • RELATOS</span>
         </div>
       </a>
       <div class="flex items-center gap-4 text-xs">
-        <a href="../index.html#catalogo" class="text-text-muted hover:text-white transition">← Catálogo</a>
-        <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-yt-red text-white font-semibold">YouTube</a>
+        <a href="../index.html#catalogo" class="text-text-muted hover:text-white transition">← Catálogo Completo</a>
+        <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-yt-red text-white font-semibold">YouTube</a>
       </div>
     </div>
   </header>
@@ -1192,54 +878,88 @@ def generate_story_pages(relatos):
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       
       <!-- Navegación entre historias -->
-      <div class="flex items-center justify-between text-xs text-text-muted mb-6 pb-3 border-b border-border-subtle">
-        <a href="{prev_r['slug']}.html" class="hover:text-white transition">← Anterior: {prev_r['titulo']}</a>
+      <nav class="flex items-center justify-between text-xs text-text-muted mb-6 pb-3 border-b border-border-subtle" aria-label="Navegación entre relatos">
+        <a href="{prev_r['id']}-{prev_r['slug']}.html" class="hover:text-white transition flex items-center gap-1">← Anterior: {prev_r['titulo']}</a>
         <a href="../index.html#catalogo" class="hover:text-white transition font-medium">Índice</a>
-        <a href="{next_r['slug']}.html" class="hover:text-white transition">Siguiente: {next_r['titulo']} →</a>
-      </div>
+        <a href="{next_r['id']}-{next_r['slug']}.html" class="hover:text-white transition flex items-center gap-1">Siguiente: {next_r['titulo']} →</a>
+      </nav>
 
-      <!-- Cabecera -->
-      <div class="mb-6">
+      <!-- Cabecera de la Historia -->
+      <header class="mb-6">
         <div class="flex items-center gap-2 mb-2">
           <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-crimson text-white">{r['id']}</span>
           <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-plum/60 border border-damask/40 text-text-bright">{r['categoria_nombre']}</span>
           <span class="text-xs text-text-muted">• {r['palabras']} palabras • {r['duracion_audio']} min narración</span>
         </div>
         <h1 class="text-3xl sm:text-4xl font-extrabold text-text-bright">{r['titulo']}</h1>
-      </div>
+      </header>
 
-      <!-- Visor -->
+      <!-- Visor Multimedia y Lectura -->
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
         {video_block}
 
-        <!-- Pestañas -->
-        <div class="flex border-b border-border-subtle bg-obsidian-elevated px-4 text-xs font-semibold">
-          <button @click="vistaPestana = 'relato'" :class="vistaPestana === 'relato' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition">📖 Relato</button>
-          <button @click="vistaPestana = 'capitulos'" :class="vistaPestana === 'capitulos' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition">🎬 Capítulos ({len(r.get('capitulos', []))})</button>
-          <button @click="vistaPestana = 'personajes'" :class="vistaPestana === 'personajes' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition">👤 Personajes ({len(r.get('personajes', []))})</button>
+        <!-- Pestañas Interactivas -->
+        <div class="flex border-b border-border-subtle bg-obsidian-elevated px-4 text-xs font-semibold overflow-x-auto">
+          <button @click="vistaPestana = 'relato'" :class="vistaPestana === 'relato' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap">📖 Relato Literario</button>
+          <button @click="vistaPestana = 'capitulos'" :class="vistaPestana === 'capitulos' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap">🎬 Capítulos ({len(r.get('capitulos', []))})</button>
+          <button @click="vistaPestana = 'personajes'" :class="vistaPestana === 'personajes' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap">👤 Personajes ({len(r.get('personajes', []))})</button>
+          <button @click="vistaPestana = 'locucion'" :class="vistaPestana === 'locucion' ? 'text-white border-crimson bg-obsidian shadow-sm' : 'text-text-muted hover:text-white border-transparent'" class="px-5 py-3 border-b-2 transition whitespace-nowrap">🎙️ Locución</button>
         </div>
 
         <div class="p-6 md:p-10">
-          <!-- Relato -->
-          <div x-show="vistaPestana === 'relato'" class="max-w-prose mx-auto">
+          <!-- Panel Relato Literario -->
+          <article x-show="vistaPestana === 'relato'" class="max-w-prose mx-auto">
             <div class="p-4 rounded-xl bg-obsidian-card border border-border-subtle mb-8 text-xs sm:text-sm text-text-muted italic leading-relaxed">
-              <strong class="text-damask-light not-italic block mb-1">Sinopsis:</strong>
+              <strong class="text-damask-light not-italic block mb-1">Sinopsis Oficial:</strong>
               {r['sinopsis']}
             </div>
             <div class="text-text-main">
               {r['relato_html']}
             </div>
-          </div>
 
-          <!-- Capítulos -->
+            <!-- Aviso restrictivo de derechos al pie del texto -->
+            <div class="mt-12 p-4 rounded-lg bg-obsidian-card border border-border-subtle text-[11px] text-text-muted text-center leading-relaxed">
+              <strong class="text-damask-light block mb-1">Aviso Legal de Propiedad Intelectual:</strong>
+              Este relato es obra literaria protegida por derechos de autor (Copyright © 2026 Raupulus Tales). Queda terminantemente prohibida su comercialización, copia, reproducción total o parcial, adaptación o reutilización en modelos de IA sin autorización expresa.
+            </div>
+          </article>
+
+          <!-- Panel Capítulos (Sin archivos técnicos) -->
           <div x-show="vistaPestana === 'capitulos'" class="space-y-3">
+            <div class="flex items-center justify-between border-b border-border-subtle pb-3 mb-4">
+              <h3 class="font-bold text-sm text-text-bright">Estructura Dramática de la Historia</h3>
+              <span class="text-xs font-mono text-damask-light font-bold">{r['duracion_audio']}</span>
+            </div>
             {caps_rendered}
           </div>
 
-          <!-- Personajes -->
+          <!-- Panel Personajes -->
           <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {chars_rendered}
           </div>
+
+          <!-- Panel Locución -->
+          <div x-show="vistaPestana === 'locucion'" class="space-y-4">
+            <div class="border-b border-border-subtle pb-3 mb-4">
+              <h3 class="font-bold text-sm text-text-bright">Locuciones Oficiales de Estudio</h3>
+              <p class="text-xs text-text-muted">Masterizadas a 192 kbps (48 kHz) y calibradas con la duración del máster en vídeo.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+              <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle">
+                <span class="font-bold text-text-bright block mb-1">🇪🇸 España (Álvaro)</span>
+                <span class="text-text-muted">Pista máster en vídeo Full HD.</span>
+              </div>
+              <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle">
+                <span class="font-bold text-text-bright block mb-1">🌎 Latinoamérica (Alonso)</span>
+                <span class="text-text-muted">Español neutro disponible en YouTube.</span>
+              </div>
+              <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle">
+                <span class="font-bold text-text-bright block mb-1">🇺🇸 Inglés (Christopher)</span>
+                <span class="text-text-muted">Adaptación oficial internacional.</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -1251,7 +971,8 @@ def generate_story_pages(relatos):
       <div>© 2026 Raupulus Tales. Todos los derechos reservados.</div>
       <div class="flex gap-4">
         <a href="../index.html" class="hover:text-white">Inicio</a>
-        <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="hover:text-white">YouTube Oficial</a>
+        <a href="../LICENSE.md" class="hover:text-white text-damask-light">Propiedad & Derechos</a>
+        <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="hover:text-white">YouTube</a>
         <a href="mailto:{PUBLIC_EMAIL}" class="hover:text-white">{PUBLIC_EMAIL}</a>
       </div>
     </div>
@@ -1262,7 +983,7 @@ def generate_story_pages(relatos):
         with open(page_file, 'w', encoding='utf-8') as pf:
             pf.write(page_html)
 
-    print(f"✅ Generadas {len(relatos)} páginas individuales en relatos/")
+    print(f"✅ Generadas {len(relatos)} páginas individuales dedicadas en relatos/")
 
 
 def generate_sitemap_and_robots(relatos):
@@ -1274,7 +995,7 @@ def generate_sitemap_and_robots(relatos):
         f'  <url><loc>{SITE_URL}/</loc><lastmod>{now_date}</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>'
     ]
     for r in relatos:
-        sitemap_lines.append(f"  <url><loc>{SITE_URL}/{r['pagina_url']}</loc><lastmod>{now_date}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>")
+        sitemap_lines.append(f"  <url><loc>{SITE_URL}/{r['pagina_url']}</loc><lastmod>{now_date}</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>")
     sitemap_lines.append('</urlset>')
 
     with open(os.path.join(BASE_DIR, "sitemap.xml"), 'w', encoding='utf-8') as f:
@@ -1294,7 +1015,7 @@ def compile_css():
     """Ejecuta la transpilación de Tailwind CSS v4 para que assets/css/tailwind.css esté listo."""
     print("🎨 Compilando Tailwind CSS...")
     try:
-        res = subprocess.run(["npx", "@tailwindcss/cli", "-i", "src/input.css", "-o", "assets/css/tailwind.css", "--minify"], cwd=BASE_DIR, capture_output=True, text=True, check=True)
+        subprocess.run(["npx", "@tailwindcss/cli", "-i", "src/input.css", "-o", "assets/css/tailwind.css", "--minify"], cwd=BASE_DIR, capture_output=True, text=True, check=True)
         print("✅ Tailwind CSS compilado correctamente.")
     except Exception as e:
         print(f"⚠️ Error al compilar CSS: {e}")
