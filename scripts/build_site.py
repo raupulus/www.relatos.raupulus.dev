@@ -392,6 +392,9 @@ def generate_index_html(relatos):
   <meta name="keywords" content="Raupulus Tales, Relatos, Cuentos, Ficción Sonora, Audiolibros, Historias de Terror, Suspense, Ciencia Ficción">
   <meta name="author" content="Raupulus Tales">
   <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="ai" content="noai, noimageai">
+  <meta name="google-extended" content="none">
+  <link rel="author" href="ai.txt" type="text/plain">
   <meta name="theme-color" content="#941300">
   <link rel="canonical" href="{SITE_URL}/">
 
@@ -809,6 +812,9 @@ def generate_story_pages(relatos):
   <meta name="keywords" content="{r['titulo']}, Raupulus Tales, Relatos, {', '.join(r['generos'])}">
   <meta name="author" content="Raupulus Tales">
   <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="ai" content="noai, noimageai">
+  <meta name="google-extended" content="none">
+  <link rel="author" href="../ai.txt" type="text/plain">
   <meta name="theme-color" content="#941300">
   <link rel="canonical" href="{SITE_URL}/{r['pagina_url']}">
 
@@ -1001,8 +1007,56 @@ def generate_sitemap_and_robots(relatos):
     with open(os.path.join(BASE_DIR, "sitemap.xml"), 'w', encoding='utf-8') as f:
         f.write("\n".join(sitemap_lines))
 
-    robots_txt = f"""User-agent: *
+    robots_txt = f"""# robots.txt — Raupulus Tales (relatos.raupulus.dev)
+# Permitir indexación web estándar (SEO en Google, Bing, DuckDuckGo)
+User-agent: *
 Allow: /
+
+# Bloqueo estricto de bots de rastreo e ingesta para entrenamiento de IA
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Anthropic-AI
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Cohere-AI
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
 
 Sitemap: {SITE_URL}/sitemap.xml
 """

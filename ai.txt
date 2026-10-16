@@ -1,0 +1,23 @@
+# ai.txt — Raupulus Tales (relatos.raupulus.dev)
+# Directivas oficiales de uso de contenido para Inteligencia Artificial y Machine Learning.
+# Estándar de consentimiento explícito para rastreadores de IA.
+
+User-Agent: *
+Allow: No
+
+# Restricción general para entrenamiento de modelos
+Training: No
+Mining: No
+Scraping: No
+Derivatives: No
+
+# Cláusula de Propiedad y Derechos
+# Copyright (c) 2026 Raupulus Tales. Todos los derechos reservados.
+# Queda terminantemente prohibido el uso, extracción, indexación profunda, ingesta,
+# minería de datos o entrenamiento de modelos de Inteligencia Artificial (LLMs,
+# modelos de lenguaje multimodal, generadores de voz/audio y sintetizadores de imagen o vídeo)
+# a partir de cualquier texto literario, guion, sinopsis, audio, imagen, personaje
+# o recurso audiovisual publicado en este sitio web.
+
+Contact: public@raupulus.dev
+Policy: https://relatos.raupulus.dev/LICENSE.md
