@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://relatos.raupulus.dev" target="_blank" rel="noopener noreferrer">
-    <img src="assets/images/logo.webp" alt="Raupulus Tales Logo Oficial" width="120" style="border-radius: 50%;">
+    <img src="public/assets/images/logo.webp" alt="Raupulus Tales Logo Oficial" width="120" style="border-radius: 50%;">
   </a>
 </p>
 

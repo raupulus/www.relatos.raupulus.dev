@@ -215,12 +215,14 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
     os.makedirs(os.path.join(PUBLIC_DIR, "assets", "images"), exist_ok=True)
     os.makedirs(os.path.join(PUBLIC_DIR, "assets", "css"), exist_ok=True)
 
-    # Copiar activos estáticos maestros (Alpine.js, Logos, Favicon) desde src/assets hacia public/assets
+    # Copiar activos estáticos maestros (Alpine.js, Logos, Favicon en WebP) desde src/assets hacia public/assets
     if os.path.exists(SRC_ASSETS_DIR):
         src_images = os.path.join(SRC_ASSETS_DIR, "images")
         dest_images = os.path.join(PUBLIC_DIR, "assets", "images")
         if os.path.exists(src_images):
             for img_file in os.listdir(src_images):
+                if not img_file.lower().endswith(".webp"):
+                    continue
                 sf = os.path.join(src_images, img_file)
                 df = os.path.join(dest_images, img_file)
                 if os.path.isfile(sf) and (not os.path.exists(df) or os.path.getmtime(sf) > os.path.getmtime(df)):
@@ -507,16 +509,16 @@ def generate_index_html(relatos):
   <meta property="og:url" content="{SITE_URL}/">
   <meta property="og:title" content="Raupulus Tales — Historias y Ficción Multimedia">
   <meta property="og:description" content="Relatos literarios con audiolibros multilingües y producciones cinematográficas en vídeo 1080p.">
-  <meta property="og:image" content="{SITE_URL}/assets/images/logo.png">
+  <meta property="og:image" content="{SITE_URL}/assets/images/logo.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@RaupulusTales">
   <meta name="twitter:title" content="Raupulus Tales — Historias y Ficción Multimedia">
   <meta name="twitter:description" content="Relatos de ficción multimedia con audiolibros calibrados y vídeos Full HD 1080p.">
-  <meta name="twitter:image" content="{SITE_URL}/assets/images/logo.png">
+  <meta name="twitter:image" content="{SITE_URL}/assets/images/logo.webp">
 
   <!-- Iconos locales oficiales de Raupulus Tales -->
   <link rel="icon" type="image/webp" href="assets/images/favicon.webp">
-  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" type="image/webp" href="assets/images/favicon.webp">
 
   <!-- CSS local pretranspilado (Sin CDNs externos) -->
   <link rel="stylesheet" href="assets/css/tailwind.css">
@@ -534,7 +536,7 @@ def generate_index_html(relatos):
     "publisher": {{
       "@type": "Organization",
       "name": "Raupulus Tales",
-      "logo": "{SITE_URL}/assets/images/logo.png"
+      "logo": "{SITE_URL}/assets/images/logo.webp"
     }}
   }}
   </script>
@@ -941,7 +943,7 @@ def generate_story_pages(relatos):
 
   <!-- Iconos locales oficiales de Raupulus Tales -->
   <link rel="icon" type="image/webp" href="../assets/images/favicon.webp">
-  <link rel="apple-touch-icon" href="../assets/images/favicon.png">
+  <link rel="apple-touch-icon" type="image/webp" href="../assets/images/favicon.webp">
 
   <link rel="stylesheet" href="../assets/css/tailwind.css">
   <script defer src="../assets/js/alpine.min.js"></script>
@@ -964,7 +966,7 @@ def generate_story_pages(relatos):
     "publisher": {{
       "@type": "Organization",
       "name": "Raupulus Tales",
-      "logo": "{SITE_URL}/assets/images/logo.png"
+      "logo": "{SITE_URL}/assets/images/logo.webp"
     }}
   }}
   </script>

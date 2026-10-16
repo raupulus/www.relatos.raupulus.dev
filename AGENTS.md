@@ -37,8 +37,8 @@
   * **Alpine.js local:** Ubicado y servido exclusivamente desde `public/assets/js/alpine.min.js` (origen en `src/assets/js/`).
   * **Tailwind CSS pretranspilado:** Generado localmente en `public/assets/css/tailwind.css` desde `src/input.css` usando `npm run build:css`.
   * Toda la web debe desplegarse completa y funcional de forma autónoma en servidores Apache, Nginx, Cloudflare Pages o GitHub Pages.
-* **Optimización de recursos:**
-  * Logotipos e imágenes en formatos modernos ligeros (`.webp` prioritario y `.png`/`.jpg` de compatibilidad) en `public/assets/images/`.
+* **Optimización de recursos e imágenes (WebP Calidad 85):**
+  * **Todas las imágenes de la web residen y se sirven exclusivamente en formato `.webp` con calidad 85** (`public/assets/images/`): logotipos, favicons, marcas de agua, portadas 16:9, avatares de personajes y escenas intercaladas.
   * Código CSS minificado sin reglas superfluas.
 
 ---
