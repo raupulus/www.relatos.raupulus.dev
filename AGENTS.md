@@ -136,8 +136,9 @@ La identidad visual toma de referencia los tonos extraídos directamente del log
      * Al estrenar la historia y liberar el vídeo en YouTube, se actualizan los campos en `relatos.json` a `"estado": "publicado"`, `"publicado": true` y se registra el `youtube_id`.
      * Al ejecutar `npm run build`, la página dedicada se regenera automáticamente al 100%, mostrando el reproductor de YouTube, el relato íntegro con sus 5 escenas intercaladas y el desglose narrativo de capítulos.
 
-6. **Visibilidad y Ordenación del Catálogo:**
+6. **Visibilidad y Ordenación del Catálogo y Botón Principal del Hero:**
    * En el catálogo de la portada (`index.html`) y en la base de datos `relatos.json`, los relatos deben ordenarse **siempre con los últimos subidos arriba** (orden descendente por ID: `0010`, `0009`... `0001`) para dar máxima visibilidad inmediata a los nuevos estrenos y publicaciones recientes.
+   * **Botón principal del Hero («Leer Último Estreno»):** Debe enlazar **exclusivamente al último relato publicado de verdad** (`publicado === true` y `estado !== 'estreno'`), jamás a un relato en reserva o próximo estreno aún no publicado.
 
 7. **Optimización de Compartición en Redes Sociales (Open Graph y Twitter Cards):**
    * Todas las páginas disponen de etiquetas meta canónicas completas para compartir en redes sociales y apps de mensajería (WhatsApp, Telegram, X, Facebook, LinkedIn).

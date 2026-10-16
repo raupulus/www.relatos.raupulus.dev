@@ -211,9 +211,9 @@
 
         <!-- Accesos rápidos del Hero con fallback SSR -->
         <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <a href="relatos/0010-la-conspiracion-autocumplida-de-la-pandemia.html" :href="relatos[0]?.pagina_url" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-white font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
+          <a href="relatos/0009-la-profecia-autocumplida-del-apagon.html" :href="ultimoPublicado?.pagina_url" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-white font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            <span>Leer Último Estreno (<span x-text="relatos[0]?.titulo">La conspiración autocumplida de la pandemia</span>)</span>
+            <span>Leer Último Estreno (<span x-text="ultimoPublicado?.titulo">La profecía autocumplida del apagón</span>)</span>
           </a>
           <a href="#catalogo" class="px-6 py-3 rounded-lg bg-obsidian-card hover:bg-obsidian-elevated border border-border-subtle hover:border-damask text-text-main font-semibold text-sm transition-all duration-200">
             Explorar las <span x-text="relatos.length">10</span> Historias
@@ -469,6 +469,10 @@
         filtroCategoria: 'todos',
         busqueda: '',
         menuAbierto: false,
+
+        get ultimoPublicado() {
+          return this.relatos.find(r => r.publicado && r.estado !== 'estreno') || this.relatos[0];
+        },
 
         get relatosFiltrados() {
           return this.relatos.filter(r => {

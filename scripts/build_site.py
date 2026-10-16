@@ -541,6 +541,9 @@ def generate_index_html(relatos):
         for r in relatos
     ])
 
+    # Último relato publicado de verdad para el botón principal del Hero
+    ultimo_publicado = next((r for r in relatos if r.get('publicado', True) and r.get('estado') != 'estreno'), relatos[0])
+
     html = f"""<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -683,9 +686,9 @@ def generate_index_html(relatos):
 
         <!-- Accesos rápidos del Hero con fallback SSR -->
         <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <a href="{relatos[0]['pagina_url']}" :href="relatos[0]?.pagina_url" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-white font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
+          <a href="{ultimo_publicado['pagina_url']}" :href="ultimoPublicado?.pagina_url" class="px-6 py-3 rounded-lg bg-crimson hover:bg-crimson-glow text-white font-semibold text-sm transition-all duration-200 glow-crimson flex items-center gap-2">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            <span>Leer Último Estreno (<span x-text="relatos[0]?.titulo">{relatos[0]['titulo']}</span>)</span>
+            <span>Leer Último Estreno (<span x-text="ultimoPublicado?.titulo">{ultimo_publicado['titulo']}</span>)</span>
           </a>
           <a href="#catalogo" class="px-6 py-3 rounded-lg bg-obsidian-card hover:bg-obsidian-elevated border border-border-subtle hover:border-damask text-text-main font-semibold text-sm transition-all duration-200">
             Explorar las <span x-text="relatos.length">{len(relatos)}</span> Historias
@@ -892,6 +895,10 @@ def generate_index_html(relatos):
         filtroCategoria: 'todos',
         busqueda: '',
         menuAbierto: false,
+
+        get ultimoPublicado() {{
+          return this.relatos.find(r => r.publicado && r.estado !== 'estreno') || this.relatos[0];
+        }},
 
         get relatosFiltrados() {{
           return this.relatos.filter(r => {{
