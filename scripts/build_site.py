@@ -11,6 +11,7 @@ Arquitectura:
 """
 
 import os
+import sys
 import glob
 import re
 import json
@@ -26,6 +27,10 @@ PUBLIC_EMAIL = "public@raupulus.dev"
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HISTORIAS_SRC_DEFAULT = os.environ.get("RELATOS_SRC_DIR", "")
+if not HISTORIAS_SRC_DEFAULT:
+    _candidates = glob.glob(os.path.expanduser("~/Library/CloudStorage/GoogleDrive-*/Mi unidad/ia/Relatos/Historias"))
+    if _candidates and os.path.exists(_candidates[0]):
+        HISTORIAS_SRC_DEFAULT = _candidates[0]
 
 PUBLIC_DIR = os.path.join(BASE_DIR, "public")
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -258,8 +263,9 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
             if not os.path.exists(dest_f) or os.path.getmtime(src_f) > os.path.getmtime(dest_f):
                 shutil.copy2(src_f, dest_f)
 
-    # Prioridad: si existe relatos.json en la raíz del proyecto web, usarlo directamente (ahorro de tokens y compilación rápida)
-    if os.path.exists(ROOT_RELATOS_FILE):
+    force_sync = "--sync" in sys.argv or "--force" in sys.argv or bool(os.environ.get("FORCE_SYNC"))
+    # Prioridad: si existe relatos.json en la raíz del proyecto web y no se fuerza sincronización, usarlo directamente
+    if os.path.exists(ROOT_RELATOS_FILE) and not force_sync:
         print("📄 Cargando base de datos canónica desde relatos.json en la raíz...")
         with open(ROOT_RELATOS_FILE, 'r', encoding='utf-8') as f:
             relatos = json.load(f)
