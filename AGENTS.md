@@ -75,6 +75,9 @@ La identidad visual toma de referencia los tonos extraídos directamente del log
    * Sinopsis directa sin spoilers.
 3. **Visor de Historia y Reproductor Multimedia:**
    * Contenedor de vídeo responsive 16:9 preparado para embeber vídeos de YouTube sin desajustes de maquetación.
+   * **Barra de Acciones de YouTube bajo el vídeo:** Dos botones accesibles (touch targets min 44px) situados justo debajo del reproductor:
+     * A la izquierda: Botón de suscripción directa en YouTube (`Suscribirme en YouTube`).
+     * A la derecha: Botón de enlace directo para abrir el vídeo en YouTube (`Ver vídeo en YouTube`).
    * Pestañas reactivas con Alpine.js:
      * **Relato Literario:** Texto maestro completo dividido por escenas (`* * *`) con tipografía editorial.
      * **Capítulos & Storyboard:** Desglose narrativo limpio de capítulos con marcas de tiempo (`MM:SS`) y resumen dramático de acontecimientos. **PROHIBIDO estricta y terminantemente incluir nombres de archivos de producción audiovisual (`video1.mp4`, `video2.mp4`, `escena-XX.png`, `.wav`) o jerga técnica de software/renderizado.**
