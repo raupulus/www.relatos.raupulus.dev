@@ -25,8 +25,8 @@
         "rasgos": "Treinta y dos años. Estatura media, complexión enjuta y mirada atenta tras gafas redondas de montura de acetato oscuro. Cabello castaño corto con raya lateral descuidada. Viste jersey de lana azul marino de cuello chimenea, camisa de franela a cuadros oscuros y pantalones de pana marrón tabaco.",
         "motivacion": "Preservar la constancia física de los vecinos que el pueblo olvida y entender por qué su propia existencia figura registrada antes de su nacimiento.",
         "conflicto": "El terror a ser devorado por una amnesia colectiva que reescribe la realidad y el presentimiento de que su vida es una anomalía que el tiempo intenta corregir.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0012-personaje-01-mateo-rivas-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0012-personaje-01-mateo-rivas-cuerpo.webp"
       },
       {
         "id": "0012-p2",
@@ -35,8 +35,8 @@
         "rasgos": "Cuarenta y un años. Complexión atlética, cabello cobrizo trenzado a un lado y ojos verdes afilados por años de trabajo de campo. Viste parca técnica verde oliva, chaleco de loneta con bolsillos utilitarios y botas de montaña embarradas.",
         "motivacion": "Demostrar con metodología empírica el origen de las desapariciones y evitar que la histeria o el encubrimiento sepulten las pruebas.",
         "conflicto": "Enfrentar el colapso del método científico cuando sus propios colaboradores comienzan a disolverse de la memoria y del registro material.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0012-personaje-02-sara-obregon-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0012-personaje-02-sara-obregon-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -144,8 +144,8 @@
         "rasgos": "Treinta y cuatro años. Restauradora de documentos antiguos y archivista municipal en Madrid. Facciones serenas, mirada analítica tras unas gafas de carey fino y pelo castaño recogido en una coleta baja informal. Viste jerséis de lana gris, pantalones de pana y delantal de lino en su taller.",
         "motivacion": "Desentrañar el origen de la culpa que consumió a su vecino y encontrar al legítimo destinatario antes de que el archivo termine destruido.",
         "conflicto": "Descubrir que la piedad puede ser tan destructiva como la cobardía cuando se sostiene sobre un pacto de silencio.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0011-personaje-01-clara-morales-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0011-personaje-01-clara-morales-cuerpo.webp"
       },
       {
         "id": "0011-p2",
@@ -154,8 +154,8 @@
         "rasgos": "Ochenta y un años. Residente en un centro de mayores en Miraflores de la Sierra. Pelo completamente cano, rizado y corto; manos pequeñas deformadas por la artrosis y ojos oscuros cargados de una lucidez triste. Viste una rebeca de punto lila sobre blusa de cuello camisero.",
         "motivacion": "Desprenderse del peso moral que su familia arrastró durante medio siglo antes de que el tiempo borre los nombres.",
         "conflicto": "Aceptar que la lealtad ciega de un amigo protegió a su hijo de la cárcel, pero condenó a dos familias enteras a una penitencia sin fin.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0011-personaje-02-carmen-varela-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0011-personaje-02-carmen-varela-cuerpo.webp"
       }
     ],
     "capitulos": [
