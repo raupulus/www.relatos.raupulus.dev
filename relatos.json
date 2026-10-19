@@ -26,8 +26,8 @@
         "rasgos": "treinta y cinco años (edad exacta), complexión enjuta y fibrosa, pelo castaño revuelto y barba corta de dos días. Mirada analítica y obsesiva tras unas ojeras marcadas por las noches de revelado; viste chaqueta de lona encerada verde oliva con múltiples bolsillos, vaqueros oscuros y botas de cuero de trabajo.",
         "motivacion": "descifrar el origen físico y técnico de las fotografías para mantener el control sobre su entorno y salvaguardar su cordura.",
         "conflicto": "su mente científica y su rigor fotográfico chocan contra una trampa temporal que lo acorrala en su propia obra.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0016-personaje-01-ivan-bermejo-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0016-personaje-01-ivan-bermejo-cuerpo.webp"
       },
       {
         "id": "0016-p2",
@@ -36,8 +36,8 @@
         "rasgos": "treinta y ocho años (edad exacta), complexión ancha y corpulenta, gafas de pasta negra, pelo negro corto con entradas en las sienes. Viste jersey grueso de lana marrón tostado con cuello vuelto y abrigo de paño gris marengo; porta siempre un medidor láser de arquitecto y un bloc de notas técnico.",
         "motivacion": "ayudar a su amigo a desentrañar el misterio de la vivienda y convencerlo de que abandone la finca antes de que sufra un colapso nervioso.",
         "conflicto": "la evidencia empírica de sus mediciones demuestra la imposibilidad física de los tiros de cámara, dejándolo desarmado ante lo inexplicable.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0016-personaje-02-marcos-roldan-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0016-personaje-02-marcos-roldan-cuerpo.webp"
       },
       {
         "id": "0016-p3",
@@ -46,8 +46,8 @@
         "rasgos": "sesenta y ocho años (edad exacta en su última fotografía de 1974), rostro enjuto y anguloso con arrugas profundas, mirada gélida y penetrante, cabello canoso peinado hacia atrás y bigote fino amarilleado por los reactivos. Viste traje de tres piezas de pana gruesa marrón oscuro de corte setentero con camisa blanca de cuello ancho sin corbata.",
         "motivacion": "perpetuar el ciclo de captura de la vivienda y documentar la entrada de cada nuevo ocupante en la emulsión de plata.",
         "conflicto": "existe únicamente como una sombra atrapada en el haluro de plata y en la mecánica ciega del obturador del cuarto oscuro.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0016-personaje-03-julian-vega-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0016-personaje-03-julian-vega-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -137,8 +137,8 @@
     "lectura_min": 10,
     "duracion_audio": "13:24",
     "duracion_segundos": 804.82,
-    "youtube_id": null,
-    "youtube_url": null,
+    "youtube_id": "uRBDYur7njU",
+    "youtube_url": "https://www.youtube.com/watch?v=uRBDYur7njU",
     "portada": "assets/images/portadas/0015-no-mires-por-la-ventana-despues-de-medianoche.webp",
     "personajes": [
       {
@@ -148,8 +148,8 @@
         "rasgos": "treinta y seis años (edad exacta), complexión atlética y fibrosa, cabello castaño corto ligeramente ondulado y barba de tres días. Pragmático, analítico y protector; busca explicaciones lógicas ante cualquier anomalía para no alarmar a los suyos.",
         "motivacion": "proteger a su familia y mantener el control racional de la situación.",
         "conflicto": "su escepticismo inicial retrasa la huida hasta que la entidad suplanta su propia identidad.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0015-personaje-03-clara-rivas-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0015-personaje-03-clara-rivas-cuerpo.webp"
       },
       {
         "id": "0015-p2",
@@ -158,8 +158,8 @@
         "rasgos": "treinta y cuatro años (edad exacta), complexión esbelta, ojos verdes oscuros muy expresivos y media melena castaño cobrizo con raya al medio. Observadora, sensible y de reflejos rápidos; su instinto maternal detecta las señales de peligro antes que la lógica de su marido.",
         "motivacion": "salvaguardar a su hija Clara y abandonar la casa en cuanto comprende el horror.",
         "conflicto": "el aislamiento del lugar y la incredulidad de Miguel, que la obligan a actuar sola frente a la amenaza.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0015-personaje-02-laura-menendez-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0015-personaje-02-laura-menendez-cuerpo.webp"
       },
       {
         "id": "0015-p3",
@@ -168,8 +168,8 @@
         "rasgos": "ocho años (edad exacta), menuda, ojos grandes castaños, pecas sobre la nariz y melena lacia recogida en coleta baja con flequillo recto. Despierta, tímida e inocente; percibe la presencia exterior antes que los adultos.",
         "motivacion": "sentirse segura junto a sus padres y resguardarse del frío y de las sombras.",
         "conflicto": "su voz y su fragilidad son el primer objetivo copiado por la entidad para engañar a sus padres.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0015-personaje-03-clara-rivas-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0015-personaje-02-laura-menendez-cuerpo.webp"
       },
       {
         "id": "0015-p4",
@@ -178,8 +178,8 @@
         "rasgos": "setenta y un años (edad exacta), menuda, rostro curtido y arrugado con mirada hosca y penetrante, cabello canoso recogido bajo un pañuelo negro. Camina con paso lento pero firme apoyándose en un bastón de fresno. Viste chaqueta de lana negra con puños deshilachados sobre falda larga oscura.",
         "motivacion": "evitar que la entidad descubra nuevas formas de propagarse y sobrellevar con resignación fúnebre la maldición de la finca.",
         "conflicto": "su silencio culpable y la necesidad de alquilar la casa para subsistir la convierten en cómplice trágica del horror.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0015-personaje-04-anselma-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0015-personaje-04-anselma-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -295,8 +295,8 @@
         "rasgos": "Treinta y tres años de edad. Rostro anguloso de facciones cansadas, mirada inquisitiva y ceño marcado por el insomnio. Cabello castaño oscuro, corto y despeinado, barba cerrada de tres días. Complexión delgada y fibrosa, de un metro con setenta y ocho de estatura. Viste un suéter gris marengo de lana gruesa sobre una camiseta blanca, vaqueros oscuros desgastados y botas de cuero marrón de montaña. Carácter reflexivo, meticuloso y escéptico, acostumbrado a buscar explicaciones lógicas en la materia y en las estructuras antes de ceder al miedo.",
         "motivacion": "Comprender el secreto que atormentó a su abuelo durante treinta años, restaurar la casa familiar y recuperar el sosiego mental que perdió en la ciudad.",
         "conflicto": "El aislamiento del bosque amplifica sus recuerdos traumáticos de la infancia; cuando la casa comienza a deformar sus propios límites físicos y la criatura imita a sus seres queridos, su apego a la razón se desmorona por completo.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0014-personaje-01-alvaro-beltran-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0014-personaje-01-alvaro-beltran-cuerpo.webp"
       },
       {
         "id": "0014-p2",
@@ -305,8 +305,8 @@
         "rasgos": "Sesenta y ocho años de edad. Antiguo boticario y tabernero jubilado del pueblo de Navas del Brezo. Rostro curtido por las heladas de la sierra, surcado de arrugas hondas en torno a unos ojos grises penetrantes y lúcidos. Pelo canoso y ralo peinado hacia atrás, bigote blanco espeso recortado sobre el labio superior. Complexión ancha y ligeramente encorvada, de un metro con setenta y dos de estatura. Viste camisa de franela a cuadros tostados, chaleco de pana verde oliva con botones de cuerno y pantalón de pana marrón. Voz grave, pausada y rasposa por el tabaco negro.",
         "motivacion": "Advertir a Álvaro de la naturaleza letal de la vivienda y evitar que el muchacho cometa el mismo error que condenó a su familia treinta años atrás.",
         "conflicto": "Lleva décadas guardando el pacto de silencio del pueblo sobre la riada y la desaparición de la abuela Clara; hablar con Álvaro supone desenterrar culpas colectivas y admitir que la montaña nunca devuelve lo que traga.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0014-personaje-02-tomas-sanchis-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0014-personaje-02-tomas-sanchis-cuerpo.webp"
       }
     ],
     "capitulos": [
