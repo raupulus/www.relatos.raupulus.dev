@@ -284,6 +284,20 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                 return relatos
         return []
 
+    # Mapa de estados y publicaciones previas para preservar decisiones manuales al resincronizar
+    existing_status_map = {}
+    if os.path.exists(ROOT_RELATOS_FILE):
+        try:
+            with open(ROOT_RELATOS_FILE, 'r', encoding='utf-8') as erf:
+                prev_list = json.load(erf)
+                for pr in prev_list:
+                    existing_status_map[pr['id']] = {
+                        "estado": pr.get("estado"),
+                        "publicado": pr.get("publicado")
+                    }
+        except Exception:
+            pass
+
     story_dirs = sorted([d for d in os.listdir(src_dir) if os.path.isdir(os.path.join(src_dir, d)) and re.match(r'^\d{4}-', d)])
     relatos = []
 
@@ -370,7 +384,7 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
         palabras = len(re.findall(r'\b\w+\b', relato_raw))
         lectura_min = max(1, round(palabras / 220))
 
-        # YouTube ID
+        # YouTube ID y comprobación de subida a YouTube
         yt_id = None
         yt_file = os.path.join(sp, 'youtube', 'youtube.md')
         if os.path.exists(yt_file):
@@ -381,6 +395,17 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                 else:
                     m_yt2 = re.search(r'youtu\.be/([a-zA-Z0-9_-]{11})', yc)
                     if m_yt2: yt_id = m_yt2.group(1)
+
+        # Criterio estricto de inclusión en la web:
+        # Solo se incorporan a la web relatos que estén de verdad subidos a YouTube (tengan yt_id)
+        # y cuenten con todos los activos completos (vídeo renderizado, subtítulos y portada).
+        video_rendered = os.path.exists(os.path.join(sp, 'video', f"{sdir}-1080p-watermark.mp4"))
+        has_subtitles = bool(glob.glob(os.path.join(sp, 'subtitulos', f"{num_id}-*.srt")))
+        has_portada_src = os.path.exists(os.path.join(sp, 'youtube', 'portada.jpg')) or os.path.exists(os.path.join(sp, 'youtube', 'portada-es-ES.jpg'))
+
+        # Si no tiene ID de YouTube o no tiene los activos mínimos terminados, se ignora hasta que se suba
+        if not yt_id or not video_rendered or not has_subtitles or not has_portada_src:
+            continue
 
         # Portada WebP
         portada_webp = f"assets/images/portadas/{sdir}.webp"
@@ -456,6 +481,17 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                         "resumen": c_summary
                     })
 
+        # Asignar estado y publicación respetando valores previos existentes o fijando "estreno" por defecto
+        prev_info = existing_status_map.get(num_id, {})
+        estado_final = prev_info.get("estado")
+        pub_final = prev_info.get("publicado")
+
+        # Si no había estado previo explícito:
+        # Los relatos nuevos subidos en privado arrancan siempre como "estreno" (no publicado)
+        if estado_final is None and pub_final is None:
+            estado_final = "estreno"
+            pub_final = False
+
         relato_entry = {
             "id": num_id,
             "slug": slug,
@@ -481,7 +517,9 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                 "es_ES": {"voz": "Álvaro (es-ES-AlvaroNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Voz máster y vídeo"},
                 "es_LAT": {"voz": "Alonso (es-US-AlonsoNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Voz neutra latinoamericana"},
                 "en_US": {"voz": "Christopher (en-US-ChristopherNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Narración internacional en inglés"}
-            }
+            },
+            "estado": estado_final,
+            "publicado": bool(pub_final)
         }
         relatos.append(relato_entry)
 
@@ -505,7 +543,7 @@ def generate_index_html(relatos):
     # Serializar catálogo ligero para Alpine.js (sin inyectar el texto completo de los 10 relatos en el index)
     catalogo_light = []
     for r in relatos:
-        is_published = r.get("publicado", bool(r.get("youtube_id"))) and r.get("estado") != "estreno"
+        is_published = bool(r.get("publicado")) and r.get("estado") == "publicado"
         catalogo_light.append({
             "id": r["id"],
             "slug": r["slug"],
@@ -939,7 +977,7 @@ def generate_story_pages(relatos):
         prev_r = relatos[idx - 1] if idx > 0 else relatos[-1]
         next_r = relatos[idx + 1] if idx < len(relatos) - 1 else relatos[0]
         page_file = os.path.join(RELATOS_DIR, f"{r['id']}-{r['slug']}.html")
-        is_published = r.get("publicado", bool(r.get("youtube_id"))) and r.get("estado") != "estreno"
+        is_published = bool(r.get("publicado")) and r.get("estado") == "publicado"
         
         if not is_published:
             meta_desc = f"Próximo estreno en Raupulus Tales. {truncate_meta_desc(r['sinopsis'], 120)}"

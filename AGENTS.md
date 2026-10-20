@@ -107,7 +107,11 @@ La identidad visual toma de referencia los tonos extraídos directamente del log
 > [!IMPORTANT]
 > Cada vez que se desarrolle, sincronice o publique un nuevo relato en el universo Raupulus Tales (`Historias/NNNN-slug/`), se debe incorporar a la web siguiendo rigurosamente este patrón:
 
-1. **Agrupación y Clasificación Obligatoria por Tipo de Relato (`categoria`):**
+1. **Criterio Estricto de Inclusión en la Web (Solo Vídeos Subidos a YouTube con Activos Completos):**
+   * En la web **solo y exclusivamente** se incorporan los relatos que estén de verdad subidos a YouTube (con su correspondiente `youtube_id` registrado en `youtube/youtube.md`), que tengan el vídeo máster 1080p renderizado en `video/`, sus subtítulos `.srt` y su portada 16:9.
+   * Cualquier historia en desarrollo o producción que aún no haya sido subida a YouTube (aunque tenga relato o avatares) **debe ser ignorada completamente** por `build_site.py` y no aparecer en la web ni en `sitemap.xml`.
+
+2. **Agrupación y Clasificación Obligatoria por Tipo de Relato (`categoria`):**
    * Todo relato debe clasificarse en una de las categorías estándar para asegurar el correcto funcionamiento de los filtros reactivos en Alpine.js:
      * `suspense`: Suspense, intriga y thriller psicológico.
      * `scifi`: Ciencia ficción, distopías y futuros especulativos.
