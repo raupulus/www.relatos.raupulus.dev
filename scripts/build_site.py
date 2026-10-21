@@ -218,6 +218,15 @@ CHAPTER_SUMMARIES = {
         375: "Los búnkeres clandestinos reparten fórmulas caseras que desatan una intoxicación real y devastadora.",
         500: "La alerta sanitaria desbordada y la constatación de que el miedo fue más letal que el propio virus.",
         625: "El colapso de los refugios, el vademécum de la verdad y la lección grabada para el futuro."
+    },
+    "0025": {
+        0: "Apertura en el piso de la calle de la Palma; los preparativos minuciosos de Valeria y el inicio de la cena íntima con Adrián.",
+        164: "El timbre inesperado a medianoche, la llegada de Marcos y el impacto paralizante al descubrir la presencia de Lucía.",
+        248: "La colisión en el salón: el cruce de coartadas fallidas, miradas de reproche y la caída estrepitosa de las máscaras.",
+        411: "La partida precipitada de los invitados, la mesa destrozada y el silencio asfixiante entre Valeria y Adrián en la madrugada.",
+        495: "El reencuentro en la obra de Sagasta bajo el polvo y el cemento: una conversación franca sin cobardías ni rencores.",
+        611: "La tarjeta de boda que llega por correo, el viaje solitario a Jávea y el cierre sereno de una herida del pasado.",
+        737: "El retorno al piso de Malasaña, el brindis cómplice a oscuras y el rescate definitivo de una amistad madura y leal."
     }
 }
 
@@ -306,6 +315,28 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
         num_id = sdir[:4]
         slug = sdir[5:]
 
+        # Criterio estricto de inclusión en la web:
+        # Solo se incorporan a la web relatos que estén de verdad subidos a YouTube (tengan yt_id)
+        # y cuenten con todos los activos completos (vídeo renderizado, subtítulos y portada).
+        yt_id = None
+        yt_file = os.path.join(sp, 'youtube', 'youtube.md')
+        if os.path.exists(yt_file):
+            with open(yt_file, 'r', encoding='utf-8') as yf:
+                yc = yf.read()
+                m_yt = re.search(r'Vídeo ID:[^\n`]*`?([a-zA-Z0-9_-]{11})`?', yc)
+                if m_yt: yt_id = m_yt.group(1)
+                else:
+                    m_yt2 = re.search(r'youtu\.be/([a-zA-Z0-9_-]{11})', yc)
+                    if m_yt2: yt_id = m_yt2.group(1)
+
+        video_rendered = os.path.exists(os.path.join(sp, 'video', f"{sdir}-1080p-watermark.mp4"))
+        has_subtitles = bool(glob.glob(os.path.join(sp, 'subtitulos', f"{num_id}-*.srt")))
+        has_portada_src = os.path.exists(os.path.join(sp, 'youtube', 'portada.jpg')) or os.path.exists(os.path.join(sp, 'youtube', 'portada-es-ES.jpg'))
+
+        # Si no tiene ID de YouTube o no tiene los activos mínimos terminados, se ignora hasta que se suba
+        if not yt_id or not video_rendered or not has_subtitles or not has_portada_src:
+            continue
+
         # Archivo maestro
         mdfiles = glob.glob(os.path.join(sp, f"{num_id}*.md"))
         if not mdfiles:
@@ -339,6 +370,16 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
         raw_genres = [g.strip().strip('"').strip("'") for g in m_gen.group(1).split(',')] if m_gen else ['Suspense']
         categoria, categoria_nombre = get_category_info(raw_genres)
         generos = [g.title() for g in raw_genres]
+
+        # Avatares WebP (convertir antes de asociar a personajes)
+        avatars_src_dir = os.path.join(sp, 'avatars')
+        if os.path.exists(avatars_src_dir):
+            for af in glob.glob(os.path.join(avatars_src_dir, '*.png')):
+                bname = os.path.splitext(os.path.basename(af))[0]
+                dest_av = os.path.join(AVATARS_DIR, f"{num_id}-{bname}.webp")
+                if not os.path.exists(dest_av) or os.path.getmtime(af) > os.path.getmtime(dest_av):
+                    with Image.open(af) as im:
+                        im.save(dest_av, 'WEBP', quality=85)
 
         # Personajes
         characters = []
@@ -384,29 +425,6 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
         palabras = len(re.findall(r'\b\w+\b', relato_raw))
         lectura_min = max(1, round(palabras / 220))
 
-        # YouTube ID y comprobación de subida a YouTube
-        yt_id = None
-        yt_file = os.path.join(sp, 'youtube', 'youtube.md')
-        if os.path.exists(yt_file):
-            with open(yt_file, 'r', encoding='utf-8') as yf:
-                yc = yf.read()
-                m_yt = re.search(r'Vídeo ID:[^\n`]*`?([a-zA-Z0-9_-]{11})`?', yc)
-                if m_yt: yt_id = m_yt.group(1)
-                else:
-                    m_yt2 = re.search(r'youtu\.be/([a-zA-Z0-9_-]{11})', yc)
-                    if m_yt2: yt_id = m_yt2.group(1)
-
-        # Criterio estricto de inclusión en la web:
-        # Solo se incorporan a la web relatos que estén de verdad subidos a YouTube (tengan yt_id)
-        # y cuenten con todos los activos completos (vídeo renderizado, subtítulos y portada).
-        video_rendered = os.path.exists(os.path.join(sp, 'video', f"{sdir}-1080p-watermark.mp4"))
-        has_subtitles = bool(glob.glob(os.path.join(sp, 'subtitulos', f"{num_id}-*.srt")))
-        has_portada_src = os.path.exists(os.path.join(sp, 'youtube', 'portada.jpg')) or os.path.exists(os.path.join(sp, 'youtube', 'portada-es-ES.jpg'))
-
-        # Si no tiene ID de YouTube o no tiene los activos mínimos terminados, se ignora hasta que se suba
-        if not yt_id or not video_rendered or not has_subtitles or not has_portada_src:
-            continue
-
         # Portada WebP
         portada_webp = f"assets/images/portadas/{sdir}.webp"
         portada_src = os.path.join(sp, 'youtube', 'portada.jpg')
@@ -417,16 +435,6 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
             if not os.path.exists(dest_portada) or os.path.getmtime(portada_src) > os.path.getmtime(dest_portada):
                 with Image.open(portada_src) as im:
                     im.save(dest_portada, 'WEBP', quality=85)
-
-        # Avatares WebP
-        avatars_src_dir = os.path.join(sp, 'avatars')
-        if os.path.exists(avatars_src_dir):
-            for af in glob.glob(os.path.join(avatars_src_dir, '*.png')):
-                bname = os.path.splitext(os.path.basename(af))[0]
-                dest_av = os.path.join(AVATARS_DIR, f"{num_id}-{bname}.webp")
-                if not os.path.exists(dest_av) or os.path.getmtime(af) > os.path.getmtime(dest_av):
-                    with Image.open(af) as im:
-                        im.save(dest_av, 'WEBP', quality=85)
 
         # Escenas WebP para intercalar en el relato literario (5 escenas clave distribuidas a lo largo del texto)
         escenas_src_dir = os.path.join(sp, 'escenas')

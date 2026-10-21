@@ -1,5 +1,159 @@
 [
   {
+    "id": "0025",
+    "slug": "la-cena-de-los-cuatro",
+    "pagina_url": "relatos/0025-la-cena-de-los-cuatro.html",
+    "titulo": "La cena de los cuatro",
+    "sinopsis": "Adrián y Valeria, amigos inseparables desde el instituto, comparten piso en Madrid mientras mantienen en secreto sendos romances con parejas que prometen dejarlo todo por ellos. Convencidos de que ha llegado la hora de sincerarse, organizan una cena íntima para presentar a sus amantes sin sospechar que ambos comparten el mismo hogar desde hace tres años. Lo que comienza como una velada de celebración estalla en una encrucijada donde la culpa, el desengaño y el tiempo reconfigurarán de forma imprevista sus destinos.",
+    "categoria": "drama",
+    "categoria_nombre": "Drama",
+    "generos": [
+      "Drama",
+      "Romance"
+    ],
+    "palabras": 2117,
+    "lectura_min": 10,
+    "duracion_audio": "13:41",
+    "duracion_segundos": 821.84,
+    "youtube_id": "CzWTrJcQk9g",
+    "youtube_url": "https://www.youtube.com/watch?v=CzWTrJcQk9g",
+    "portada": "assets/images/portadas/0025-la-cena-de-los-cuatro.webp",
+    "personajes": [
+      {
+        "id": "0025-p1",
+        "nombre": "Adrián Fuentes",
+        "rol": "protagonista y contrapunto reflexivo.",
+        "rasgos": "veinticinco años, complexión delgada, pelo castaño despeinado y mirada atenta. Creativo publicitario; reservado, prudente y con tendencia a esquivar los conflictos mediante el humor. Viste jerséis de punto fino y vaqueros desgastados.",
+        "motivacion": "consolidar su relación con Lucía y preservar el refugio doméstico que comparte con Valeria.",
+        "conflicto": "la culpa de haber construido su idilio sobre la clandestinidad y descubrir que fue cómplice de un engaño mayor.",
+        "avatar_cabeza": "assets/images/avatars/0025-personaje-01-adrian-fuentes-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0025-personaje-01-adrian-fuentes-cuerpo.webp"
+      },
+      {
+        "id": "0025-p2",
+        "nombre": "Valeria Ramos",
+        "rol": "coprotagonista e impulsora de la velada.",
+        "rasgos": "veinticinco años, media melena negra recogida en una coleta informal, facciones vivas y sonrisa franca que se endurece ante la mentira. Estudiante de interiorismo; pasional, enérgica y propensa a idealizar los afectos ajenos. Viste camisas amplias de lino y zapatillas de lona.",
+        "motivacion": "formalizar su historia con Marcos y festejar con su mejor amigo el paso hacia la vida adulta.",
+        "conflicto": "asumir su ingenuidad y aceptar que su necesidad de afecto la empujó a cerrar los ojos ante señales evidentes de deslealtad.",
+        "avatar_cabeza": "assets/images/avatars/0025-personaje-02-valeria-ramos-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0025-personaje-02-valeria-ramos-cuerpo.webp"
+      },
+      {
+        "id": "0025-p3",
+        "nombre": "Lucía Ortega",
+        "rol": "catalizadora dramática y amante secreta de Adrián.",
+        "rasgos": "veintiséis años, tez clara, ojos grises inquisitivos y melena rubia oscura cortada sobre los hombros. Analista de cuentas; lúcida, metódica y atrapada en la inercia de una convivencia extinguida sin estridencias.",
+        "motivacion": "salir del estancamiento emocional con Marcos sin provocar una fractura traumática.",
+        "conflicto": "descubrir que la infidelidad que justificaba en sí misma era el reflejo exacto de la que su pareja practicaba a sus espaldas.",
+        "avatar_cabeza": "assets/images/avatars/0025-personaje-03-lucia-ortega-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0025-personaje-03-lucia-ortega-cuerpo.webp"
+      },
+      {
+        "id": "0025-p4",
+        "nombre": "Marcos Varela",
+        "rol": "catalizador dramático y amante secreto de Valeria.",
+        "rasgos": "veintiocho años, porte atlético, mandíbula cuadrada, barba corta y mirada seductora acostumbrada a evitar responsabilidades. Arquitecto técnico y docente; elocuente y evasivo cuando la situación le exige firmeza.",
+        "motivacion": "sentirse admirado fuera de la rutina cotidiana sin renunciar a la estabilidad de su hogar.",
+        "conflicto": "la cobardía moral de haber prometido dos futuros incompatibles hasta verse acorralado por el azar.",
+        "avatar_cabeza": "assets/images/avatars/0025-personaje-04-marcos-varela-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0025-personaje-04-marcos-varela-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "La cena íntima en la calle de la Palma",
+        "resumen": "Apertura en el piso de la calle de la Palma; los preparativos minuciosos de Valeria y el inicio de la cena íntima con Adrián."
+      },
+      {
+        "tiempo": "02:44",
+        "segundos": 164,
+        "titulo": "La llegada de Marcos y el choque en el umbral",
+        "resumen": "El timbre inesperado a medianoche, la llegada de Marcos y el impacto paralizante al descubrir la presencia de Lucía."
+      },
+      {
+        "tiempo": "04:08",
+        "segundos": 248,
+        "titulo": "El desenmascaramiento y el cruce de mentiras",
+        "resumen": "La colisión en el salón: el cruce de coartadas fallidas, miradas de reproche y la caída estrepitosa de las máscaras."
+      },
+      {
+        "tiempo": "06:51",
+        "segundos": 411,
+        "titulo": "Las cenizas de la noche y el silencio en el piso",
+        "resumen": "La partida precipitada de los invitados, la mesa destrozada y el silencio asfixiante entre Valeria y Adrián en la madrugada."
+      },
+      {
+        "tiempo": "08:15",
+        "segundos": 495,
+        "titulo": "La demolición de Sagasta y la verdad sin armaduras",
+        "resumen": "El reencuentro en la obra de Sagasta bajo el polvo y el cemento: una conversación franca sin cobardías ni rencores."
+      },
+      {
+        "tiempo": "10:11",
+        "segundos": 611,
+        "titulo": "La invitación de boda y el viaje a Jávea",
+        "resumen": "La tarjeta de boda que llega por correo, el viaje solitario a Jávea y el cierre sereno de una herida del pasado."
+      },
+      {
+        "tiempo": "12:17",
+        "segundos": 737,
+        "titulo": "El regreso a Madrid y la madurez de la amistad",
+        "resumen": "El retorno al piso de Malasaña, el brindis cómplice a oscuras y el rescate definitivo de una amistad madura y leal."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0025-003-valeria-pasillo-bombilla-cuarto-bano.webp",
+        "caption": "Ilustración de escena: Valeria pasillo bombilla cuarto bano",
+        "alt": "Escena oficial de La cena de los cuatro — Valeria pasillo bombilla cuarto bano"
+      },
+      {
+        "src": "assets/images/escenas/0025-022-valeria-desconcertada-pregunta-agencia.webp",
+        "caption": "Ilustración de escena: Valeria desconcertada pregunta agencia",
+        "alt": "Escena oficial de La cena de los cuatro — Valeria desconcertada pregunta agencia"
+      },
+      {
+        "src": "assets/images/escenas/0025-041-adrian-suelo-pasillo-manos-cara.webp",
+        "caption": "Ilustración de escena: Adrian suelo pasillo manos cara",
+        "alt": "Escena oficial de La cena de los cuatro — Adrian suelo pasillo manos cara"
+      },
+      {
+        "src": "assets/images/escenas/0025-060-sobre-blanco-buzon-calle-palma.webp",
+        "caption": "Ilustración de escena: Sobre blanco buzon calle palma",
+        "alt": "Escena oficial de La cena de los cuatro — Sobre blanco buzon calle palma"
+      },
+      {
+        "src": "assets/images/escenas/0025-079-noche-madrid-silencio-amistad.webp",
+        "caption": "Ilustración de escena: Noche madrid silencio amistad",
+        "alt": "Escena oficial de La cena de los cuatro — Noche madrid silencio amistad"
+      }
+    ],
+    "relato_raw": "El timbre del tercero izquierda sonó a las nueve menos diez con ese zumbido seco de los telefonillos antiguos de la calle de la Palma. Adrián estaba en la cocina doblando servilletas sobre la mesa de fórmica verde, mientras el aroma a romero y patatas asadas llenaba el corredor.\n\n—Si es Marcos, ábrele tú —gritó Valeria desde el fondo del pasillo, peleando con la bombilla del cuarto de baño que parpadeaba desde el martes—. Todavía tengo los dedos manchados de yeso del taller.\n\nAdrián se secó las palmas en el trapo de cocina. Llevaban tres meses compartiendo aquel piso de techos altos y tarima crujiente, un refugio improvisado tras dejar las casas de sus padres donde las cajas de cartón aún servían de mesas auxiliares. Se conocían desde cuarto de la ESO, cuando compartían apuntes de física en un banco del Retiro, y presumían de una complicidad limpia. Al menos hasta esa semana, cuando ambos reconocieron que sus romances ya no cabían en susurros a deshoras.\n\nAl descolgar, la voz que sonó fue la de Lucía, amortiguada por el viento del portal:\n\n—Soy yo. No sé si he traído vino suficiente.\n\n—Sube, anda. Tercer piso, a la derecha.\n\nAdrián dejó la puerta entornada y encendió las velas de té alineadas en el alféizar. Estaba nervioso. Llevaba cuatro meses viéndose con Lucía en cafeterías discretas y hoteles cercanos a Nuevos Ministerios. Ella trabajaba en el departamento de cuentas de su misma agencia y siempre repetía la misma promesa con la vista fija en su café: su novio no era mala persona, simplemente la rutina los había ahogado, pero necesitaba hallar el momento exacto para mudarse sin destrozarlo. Adrián la había creído.\n\nLa cancela de hierro del ascensor chirrió en el rellano. Lucía entró envuelta en un abrigo marengo, con la nariz enrojecida por el otoño y una bolsa de papel kraft con dos botellas de Rioja.\n\n—Huele a casa de verdad —dijo ella, soltando el bolso y rodeándole el cuello con los brazos fríos—. Me ha costado aparcar un triunfo.\n\nSe besaron con la torpeza apresurada de quienes no están acostumbrados a quererse con las luces del techo encendidas.\n\n—Valeria está terminando de arreglarse —susurró Adrián, retirándole un mechón claro de la frente—. Te va a encantar. No tiene doblez.\n\nDos golpes sonaron entonces en la madera entornada de la entrada.\n\n—¡Adelante, que está abierto! —avisó Valeria, saliendo por fin con una camisa blanca remangada—. Marcos, prepárate, que Adrián ha traído un queso que parece…\n\nLa frase murió en su garganta.\n\n* * *\n\nEn el umbral, recortado contra la bombilla de la escalera, estaba un hombre de chaqueta de cuero y bufanda de espiga con una caja de pasteles bajo el brazo.\n\nEl silencio que cayó sobre el recibidor fue instantáneo y glacial, como si el aire del rellano hubiera congelado los pulmones de los cuatro a la vez. Marcos no dio un paso adelante. Se quedó inmóvil, con la mano suspendida en el aire, clavando los ojos en la mujer del abrigo que sujetaba dos copas de cristal.\n\nLucía retrocedió con tal brusquedad que el borde de una copa chocó contra el aparador. No se quebró de milagro. Sus pupilas, habitualmente serenas, pasaron de Marcos a Valeria y de Valeria a Adrián en un cálculo vertiginoso que desmoronaba cualquier defensa.\n\n—¿Qué haces tú aquí? —preguntó Lucía. Su voz salió en un hilo áspero.\n\nValeria parpadeó, desconcertada, buscando en su amigo un gesto cómplice que explicara el absurdo:\n\n—¿Os conocéis de la agencia? Marcos es el arquitecto del estudio que os conté, el que…\n\n—¿Qué haces tú aquí, Marcos? —repitió Lucía, elevando el tono e ignorando a Valeria.\n\nMarcos tragó saliva. La caja de pasteles tembló bajo su brazo.\n\n—Lucía, espera… déjame hablar —murmuró, rehuyendo la mirada de Adrián—. Me dijiste que cenabas con unas compañeras de máster en Chamberí.\n\n—¿Chamberí? —saltó Adrián, dando un paso al frente mientras el estómago se le cerraba en un nudo ardiente—. Lucía trabaja conmigo en Gran Vía. Y ha venido a cenar conmigo. Es mi pareja.\n\n—¿Tu pareja? —la risa de Marcos fue breve y amarga, un espasmo de incredulidad defensiva—. No puede ser tu pareja, chaval. Esta mujer vive conmigo en la calle Sagasta desde hace tres años.\n\nLas palabras cayeron sobre la tarima como plomo fundido. Valeria se llevó una mano al pecho; el color abandonó sus mejillas con tal violencia que tuvo que apoyarse en el marco de la cocina.\n\n—No —susurró Valeria, mirando a Marcos con una súplica rota—. Me dijiste que compartías piso con un socio mientras liquidabais un alquiler. Que el mes que viene te mudabas a Malasaña.\n\nLucía dejó las copas sobre la cómoda con un golpe seco. Miró a Marcos con un desprecio tan puro que parecía haber olvidado que ella misma estaba abrazando a otro hombre segundos antes.\n\n—¿Liquidando el alquiler? —inquirió Lucía, cruzándose de brazos con la mandíbula rígida—. ¿Por eso evitabas firmar la renovación de la hipoteca la semana pasada? ¿Por esta cría?\n\n—¡No la llames así! —gritó Adrián, interponiéndose entre Lucía y Valeria por instinto protector—. ¡La que lleva cuatro meses engañándome eres tú! ¡Diciéndome que tu ex no aceptaba la ruptura y que dormías en el sofá!\n\n—¡Porque tú me mentías cada noche! —estalló Marcos, señalando a Lucía con un dedo tembloroso—. ¡Me hacías sentir culpable por estar distante mientras te acostabas con este chaval!\n\n—¡Y tú te acostabas con mi compañera de piso! —bramó Adrián—. ¡Los dos sois unos farsantes!\n\nEl salón se convirtió en una sala de autopsias. Durante diez minutos implacables se cruzaron fechas, excusas calcadas, viajes de trabajo ficticios y escapadas que coincidían con precisión cruel en el calendario. Marcos le había prometido a Valeria las mismas palabras que Lucía le susurraba a Adrián en el coche: que la culpa era del tiempo y que solo faltaban semanas para ser libres.\n\nValeria no gritó. Clavó la mirada en la caja de dulces sobre el mueble: era de la pastelería de la plaza de Olavide donde él la citaba los jueves.\n\n—Fuera —dijo Valeria en voz baja. Nadie la oyó entre los reproches—. ¡He dicho que os larguéis! —gritó entonces, con una fuerza que retumbó en la escalera—. ¡Fuera los dos de mi casa ahora mismo!\n\nLucía recogió su bolso, esquivó a Adrián sin mirarlo y bajó las escaleras a zancadas sonoras. Marcos intentó rozar el brazo de Valeria al salir:\n\n—Valeria, déjame explicarte…\n\n—Si me tocas, llamo a la policía —respondió ella entre dientes, con los ojos arrasados de rabia.\n\nLa puerta se cerró con un golpe que estremeció el cristal del pasillo.\n\n* * *\n\nEn la cocina, el horno pitó anunciando que las patatas estaban listas. Ninguno fue a apagarlo. Adrián se dejó caer en el suelo, con la espalda pegada al tabique y las manos en la cara. Valeria permaneció junto al alféizar, contemplando cómo las velas de té se consumían contra el vidrio oscuro.\n\n—¿Tú sabías algo? —preguntó él al cabo de un largo rato, con la voz rota.\n\nValeria no se giró.\n\n—¿Cómo iba a saberlo? Me enseñó bocetos para reformar nuestro futuro piso. Me presentó a sus amigos como si fuera lo mejor de su vida.\n\n—A mí me decía que se sentía sola. Que yo era el único que la comprendía.\n\nValeria soltó una risa seca, sin rastro de humor:\n\n—Éramos el consuelo fácil de dos cobardes incapaces de romper. Y nosotros, encantados de sentirnos especiales.\n\nDurante las semanas siguientes, el piso de la calle de la Palma perdió su calidez. La vergüenza pesaba más que cualquier enfado: se evitaban en los desayunos, dejaban notas escuetas para pagar las facturas y salían temprano para regresar cuando el otro ya dormía. No se culpaban, pero mirarse a la cara suponía recordar la vanidad con la que habían creído burlar al mundo.\n\nEn el apartamento de Sagasta, la demolición de la vida común fue dolorosa. Marcos y Lucía tuvieron que repartir cuentas bancarias, devolver compras y clasificar cajas acumuladas durante años. Los primeros días fueron tormentosos, cargados del resentimiento de dos personas que se creían víctimas absolutas del otro.\n\nSin embargo, a la tercera tarde, sentados en un salón desmantelado entre precinto y periódicos viejos, el rencor se agotó.\n\n—¿Cuándo empezó lo vuestro? —preguntó Marcos de pronto, tendiéndole un café en vaso de cristal.\n\nLucía sopló sobre la taza, mirando el polvo suspendido en la ventana:\n\n—En junio. Después de tu viaje a Lisboa. Llevábamos meses durmiendo de espaldas, Marcos. Te levantabas a las seis para no coincidir conmigo.\n\nÉl no lo negó. Apoyó la nuca en la pared desnuda:\n\n—Tenías razón. Estaba aterrado. Sentía que casarme contigo era asumir que la vida se había terminado, que todo era una rutina sellada hasta la vejez. Cuando conocí a Valeria… no fue ella. Fue la ilusión de no tener pasado, de empezar de cero sin pedir perdón.\n\n—Adrián me miraba como si yo no tuviera defectos —confesó Lucía con una mueca triste—. Y yo estaba tan cansada de sentirme insuficiente que me dejé llevar. Fui una cobarde.\n\nPor primera vez hablaron sin escudos. El desastre ya había ocurrido y no quedaba nada que proteger. En esa crudeza descubrieron algo insólito: se conocían mejor que nadie. Entendían sus silencios culpables y sus debilidades. No regresaron juntos esa tarde, pero al entregar las llaves al casero cenaron juntos en una taberna cercana, sin promesas ni reproches, lejos de las mentiras que habían tejido.\n\n* * *\n\nCatorce meses después de aquella cena rota, el cartero dejó un sobre blanco en el buzón del tercero izquierda. Valeria recogió la correspondencia y entró en el salón, donde Adrián leía junto al balcón abierto al sol de primavera.\n\n—Es para los dos —dijo ella, dejando una cartulina de papel verjurado sobre sus piernas.\n\nAdrián leyó la caligrafía limpia en tinta azul oscuro:\n\n*«Marcos y Lucía tienen el placer de invitaros a su enlace…»*\n\nLa ceremonia se celebraría en una finca rústica frente a los acantilados de Jávea. Al dorso, una nota de Lucía añadía unas líneas: *«Sabemos que puede parecer un despropósito. Pero si hoy podemos querernos de verdad, sin trampas, es porque aquella noche rompisteis nuestras mentiras. No esperamos que vengáis, pero necesitábamos que supierais que no guardamos rencor.»*\n\nAdrián soltó la tarjeta sobre la mesa:\n\n—Qué cinismo. Levantaron su historia sobre las ruinas de las nuestras y ahora buscan nuestra bendición para sentirse limpios.\n\n—No es cinismo —respondió Valeria despacio, mirando las acacias del patio—. Es honestidad. Nos dicen que fuimos el error que necesitaban cometer para encontrarse.\n\n—¿Tú vas a ir?\n\nValeria tardó en contestar:\n\n—Sí. Necesito verlo.\n\nAdrián se quedó en Madrid el sábado de la boda, refugiado en una sala de cine. Valeria tomó un autobús al alba y se sentó en la última fila del jardín de Jávea, detrás de familiares e invitados que no la conocían. El mar rompía contra las rocas con un rumor constante. Cuando Lucía apareció del brazo de su padre, Valeria sintió una punzada breve en el estómago, un rescoldo de aquel orgullo herido. Pero al mirar a Marcos en el altar vio una quietud serena que jamás percibió en sus citas furtivas.\n\nAl pronunciar los votos no hubo dramatismo; se tomaron de las manos como dos náufragos que conocen el precio exacto del barco que hundieron para salvarse. Y al besarse, Valeria comprendió una verdad liberadora: Marcos nunca había sido para ella, ni Lucía para Adrián. Solo habían sido el detonante necesario para que dos personas dejaran de engañarse.\n\nEsa noche, de regreso a Madrid, Valeria abrió la puerta del piso pasadas las dos. Encontró a Adrián sentado a oscuras en el salón, con un vaso de agua en la mano y la luz lejana de las farolas dibujando sombras en el techo.\n\n—¿Qué tal ha ido? —preguntó él en un susurro.\n\nValeria se quitó los zapatos y se sentó en el suelo, apoyando la espalda en su sillón, en el mismo rincón donde lloraron juntos meses atrás:\n\n—Estaban guapos —dijo ella, cerrando los ojos—. Y se quieren de verdad.\n\nAdrián bebió un sorbo:\n\n—A veces me pregunto si volveremos a ser los de antes. Los del instituto. Los que no tenían nada que callarse.\n\nValeria contempló el salón en penumbra y la distancia prudente que se había instalado entre sus cuartos:\n\n—No —respondió con una calma franca—. Lo de antes ya no existe, Adrián. Pero podemos intentar ser los de ahora. Los que aprendieron a mirar la verdad sin salir huyendo.\n\nAdrián asintió despacio y le apretó el hombro con un gesto cansado y sincero. Fuera, Madrid dormía bajo el eco de la noche, mientras los dos amigos permanecieron juntos en silencio, aceptando por fin que madurar no consiste en evitar las heridas, sino en no fingir que nunca sangraron.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El timbre del tercero izquierda sonó a las nueve menos diez con ese zumbido seco de los telefonillos antiguos de la calle de la Palma. Adrián estaba en la cocina doblando servilletas sobre la mesa de fórmica verde, mientras el aroma a romero y patatas asadas llenaba el corredor.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Si es Marcos, ábrele tú —gritó Valeria desde el fondo del pasillo, peleando con la bombilla del cuarto de baño que parpadeaba desde el martes—. Todavía tengo los dedos manchados de yeso del taller.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Adrián se secó las palmas en el trapo de cocina. Llevaban tres meses compartiendo aquel piso de techos altos y tarima crujiente, un refugio improvisado tras dejar las casas de sus padres donde las cajas de cartón aún servían de mesas auxiliares. Se conocían desde cuarto de la ESO, cuando compartían apuntes de física en un banco del Retiro, y presumían de una complicidad limpia. Al menos hasta esa semana, cuando ambos reconocieron que sus romances ya no cabían en susurros a deshoras.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al descolgar, la voz que sonó fue la de Lucía, amortiguada por el viento del portal:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Soy yo. No sé si he traído vino suficiente.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Sube, anda. Tercer piso, a la derecha.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Adrián dejó la puerta entornada y encendió las velas de té alineadas en el alféizar. Estaba nervioso. Llevaba cuatro meses viéndose con Lucía en cafeterías discretas y hoteles cercanos a Nuevos Ministerios. Ella trabajaba en el departamento de cuentas de su misma agencia y siempre repetía la misma promesa con la vista fija en su café: su novio no era mala persona, simplemente la rutina los había ahogado, pero necesitaba hallar el momento exacto para mudarse sin destrozarlo. Adrián la había creído.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La cancela de hierro del ascensor chirrió en el rellano. Lucía entró envuelta en un abrigo marengo, con la nariz enrojecida por el otoño y una bolsa de papel kraft con dos botellas de Rioja.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Huele a casa de verdad —dijo ella, soltando el bolso y rodeándole el cuello con los brazos fríos—. Me ha costado aparcar un triunfo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Se besaron con la torpeza apresurada de quienes no están acostumbrados a quererse con las luces del techo encendidas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Valeria está terminando de arreglarse —susurró Adrián, retirándole un mechón claro de la frente—. Te va a encantar. No tiene doblez.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Dos golpes sonaron entonces en la madera entornada de la entrada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Adelante, que está abierto! —avisó Valeria, saliendo por fin con una camisa blanca remangada—. Marcos, prepárate, que Adrián ha traído un queso que parece…</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0025-003-valeria-pasillo-bombilla-cuarto-bano.webp\" alt=\"Escena oficial de La cena de los cuatro — Valeria pasillo bombilla cuarto bano\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Valeria pasillo bombilla cuarto bano</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La frase murió en su garganta.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el umbral, recortado contra la bombilla de la escalera, estaba un hombre de chaqueta de cuero y bufanda de espiga con una caja de pasteles bajo el brazo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El silencio que cayó sobre el recibidor fue instantáneo y glacial, como si el aire del rellano hubiera congelado los pulmones de los cuatro a la vez. Marcos no dio un paso adelante. Se quedó inmóvil, con la mano suspendida en el aire, clavando los ojos en la mujer del abrigo que sujetaba dos copas de cristal.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía retrocedió con tal brusquedad que el borde de una copa chocó contra el aparador. No se quebró de milagro. Sus pupilas, habitualmente serenas, pasaron de Marcos a Valeria y de Valeria a Adrián en un cálculo vertiginoso que desmoronaba cualquier defensa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Qué haces tú aquí? —preguntó Lucía. Su voz salió en un hilo áspero.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria parpadeó, desconcertada, buscando en su amigo un gesto cómplice que explicara el absurdo:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Os conocéis de la agencia? Marcos es el arquitecto del estudio que os conté, el que…</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Qué haces tú aquí, Marcos? —repitió Lucía, elevando el tono e ignorando a Valeria.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Marcos tragó saliva. La caja de pasteles tembló bajo su brazo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Lucía, espera… déjame hablar —murmuró, rehuyendo la mirada de Adrián—. Me dijiste que cenabas con unas compañeras de máster en Chamberí.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Chamberí? —saltó Adrián, dando un paso al frente mientras el estómago se le cerraba en un nudo ardiente—. Lucía trabaja conmigo en Gran Vía. Y ha venido a cenar conmigo. Es mi pareja.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Tu pareja? —la risa de Marcos fue breve y amarga, un espasmo de incredulidad defensiva—. No puede ser tu pareja, chaval. Esta mujer vive conmigo en la calle Sagasta desde hace tres años.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0025-022-valeria-desconcertada-pregunta-agencia.webp\" alt=\"Escena oficial de La cena de los cuatro — Valeria desconcertada pregunta agencia\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Valeria desconcertada pregunta agencia</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Las palabras cayeron sobre la tarima como plomo fundido. Valeria se llevó una mano al pecho; el color abandonó sus mejillas con tal violencia que tuvo que apoyarse en el marco de la cocina.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No —susurró Valeria, mirando a Marcos con una súplica rota—. Me dijiste que compartías piso con un socio mientras liquidabais un alquiler. Que el mes que viene te mudabas a Malasaña.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía dejó las copas sobre la cómoda con un golpe seco. Miró a Marcos con un desprecio tan puro que parecía haber olvidado que ella misma estaba abrazando a otro hombre segundos antes.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Liquidando el alquiler? —inquirió Lucía, cruzándose de brazos con la mandíbula rígida—. ¿Por eso evitabas firmar la renovación de la hipoteca la semana pasada? ¿Por esta cría?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡No la llames así! —gritó Adrián, interponiéndose entre Lucía y Valeria por instinto protector—. ¡La que lleva cuatro meses engañándome eres tú! ¡Diciéndome que tu ex no aceptaba la ruptura y que dormías en el sofá!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Porque tú me mentías cada noche! —estalló Marcos, señalando a Lucía con un dedo tembloroso—. ¡Me hacías sentir culpable por estar distante mientras te acostabas con este chaval!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Y tú te acostabas con mi compañera de piso! —bramó Adrián—. ¡Los dos sois unos farsantes!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El salón se convirtió en una sala de autopsias. Durante diez minutos implacables se cruzaron fechas, excusas calcadas, viajes de trabajo ficticios y escapadas que coincidían con precisión cruel en el calendario. Marcos le había prometido a Valeria las mismas palabras que Lucía le susurraba a Adrián en el coche: que la culpa era del tiempo y que solo faltaban semanas para ser libres.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria no gritó. Clavó la mirada en la caja de dulces sobre el mueble: era de la pastelería de la plaza de Olavide donde él la citaba los jueves.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Fuera —dijo Valeria en voz baja. Nadie la oyó entre los reproches—. ¡He dicho que os larguéis! —gritó entonces, con una fuerza que retumbó en la escalera—. ¡Fuera los dos de mi casa ahora mismo!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía recogió su bolso, esquivó a Adrián sin mirarlo y bajó las escaleras a zancadas sonoras. Marcos intentó rozar el brazo de Valeria al salir:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Valeria, déjame explicarte…</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Si me tocas, llamo a la policía —respondió ella entre dientes, con los ojos arrasados de rabia.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0025-041-adrian-suelo-pasillo-manos-cara.webp\" alt=\"Escena oficial de La cena de los cuatro — Adrian suelo pasillo manos cara\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Adrian suelo pasillo manos cara</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La puerta se cerró con un golpe que estremeció el cristal del pasillo.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En la cocina, el horno pitó anunciando que las patatas estaban listas. Ninguno fue a apagarlo. Adrián se dejó caer en el suelo, con la espalda pegada al tabique y las manos en la cara. Valeria permaneció junto al alféizar, contemplando cómo las velas de té se consumían contra el vidrio oscuro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Tú sabías algo? —preguntó él al cabo de un largo rato, con la voz rota.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria no se giró.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Cómo iba a saberlo? Me enseñó bocetos para reformar nuestro futuro piso. Me presentó a sus amigos como si fuera lo mejor de su vida.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—A mí me decía que se sentía sola. Que yo era el único que la comprendía.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria soltó una risa seca, sin rastro de humor:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Éramos el consuelo fácil de dos cobardes incapaces de romper. Y nosotros, encantados de sentirnos especiales.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Durante las semanas siguientes, el piso de la calle de la Palma perdió su calidez. La vergüenza pesaba más que cualquier enfado: se evitaban en los desayunos, dejaban notas escuetas para pagar las facturas y salían temprano para regresar cuando el otro ya dormía. No se culpaban, pero mirarse a la cara suponía recordar la vanidad con la que habían creído burlar al mundo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el apartamento de Sagasta, la demolición de la vida común fue dolorosa. Marcos y Lucía tuvieron que repartir cuentas bancarias, devolver compras y clasificar cajas acumuladas durante años. Los primeros días fueron tormentosos, cargados del resentimiento de dos personas que se creían víctimas absolutas del otro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sin embargo, a la tercera tarde, sentados en un salón desmantelado entre precinto y periódicos viejos, el rencor se agotó.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Cuándo empezó lo vuestro? —preguntó Marcos de pronto, tendiéndole un café en vaso de cristal.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0025-060-sobre-blanco-buzon-calle-palma.webp\" alt=\"Escena oficial de La cena de los cuatro — Sobre blanco buzon calle palma\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Sobre blanco buzon calle palma</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía sopló sobre la taza, mirando el polvo suspendido en la ventana:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—En junio. Después de tu viaje a Lisboa. Llevábamos meses durmiendo de espaldas, Marcos. Te levantabas a las seis para no coincidir conmigo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Él no lo negó. Apoyó la nuca en la pared desnuda:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Tenías razón. Estaba aterrado. Sentía que casarme contigo era asumir que la vida se había terminado, que todo era una rutina sellada hasta la vejez. Cuando conocí a Valeria… no fue ella. Fue la ilusión de no tener pasado, de empezar de cero sin pedir perdón.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Adrián me miraba como si yo no tuviera defectos —confesó Lucía con una mueca triste—. Y yo estaba tan cansada de sentirme insuficiente que me dejé llevar. Fui una cobarde.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Por primera vez hablaron sin escudos. El desastre ya había ocurrido y no quedaba nada que proteger. En esa crudeza descubrieron algo insólito: se conocían mejor que nadie. Entendían sus silencios culpables y sus debilidades. No regresaron juntos esa tarde, pero al entregar las llaves al casero cenaron juntos en una taberna cercana, sin promesas ni reproches, lejos de las mentiras que habían tejido.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Catorce meses después de aquella cena rota, el cartero dejó un sobre blanco en el buzón del tercero izquierda. Valeria recogió la correspondencia y entró en el salón, donde Adrián leía junto al balcón abierto al sol de primavera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Es para los dos —dijo ella, dejando una cartulina de papel verjurado sobre sus piernas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Adrián leyó la caligrafía limpia en tinta azul oscuro:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">*«Marcos y Lucía tienen el placer de invitaros a su enlace…»*</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La ceremonia se celebraría en una finca rústica frente a los acantilados de Jávea. Al dorso, una nota de Lucía añadía unas líneas: *«Sabemos que puede parecer un despropósito. Pero si hoy podemos querernos de verdad, sin trampas, es porque aquella noche rompisteis nuestras mentiras. No esperamos que vengáis, pero necesitábamos que supierais que no guardamos rencor.»*</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Adrián soltó la tarjeta sobre la mesa:</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0025-079-noche-madrid-silencio-amistad.webp\" alt=\"Escena oficial de La cena de los cuatro — Noche madrid silencio amistad\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Noche madrid silencio amistad</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Qué cinismo. Levantaron su historia sobre las ruinas de las nuestras y ahora buscan nuestra bendición para sentirse limpios.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No es cinismo —respondió Valeria despacio, mirando las acacias del patio—. Es honestidad. Nos dicen que fuimos el error que necesitaban cometer para encontrarse.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Tú vas a ir?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria tardó en contestar:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Sí. Necesito verlo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Adrián se quedó en Madrid el sábado de la boda, refugiado en una sala de cine. Valeria tomó un autobús al alba y se sentó en la última fila del jardín de Jávea, detrás de familiares e invitados que no la conocían. El mar rompía contra las rocas con un rumor constante. Cuando Lucía apareció del brazo de su padre, Valeria sintió una punzada breve en el estómago, un rescoldo de aquel orgullo herido. Pero al mirar a Marcos en el altar vio una quietud serena que jamás percibió en sus citas furtivas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al pronunciar los votos no hubo dramatismo; se tomaron de las manos como dos náufragos que conocen el precio exacto del barco que hundieron para salvarse. Y al besarse, Valeria comprendió una verdad liberadora: Marcos nunca había sido para ella, ni Lucía para Adrián. Solo habían sido el detonante necesario para que dos personas dejaran de engañarse.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Esa noche, de regreso a Madrid, Valeria abrió la puerta del piso pasadas las dos. Encontró a Adrián sentado a oscuras en el salón, con un vaso de agua en la mano y la luz lejana de las farolas dibujando sombras en el techo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Qué tal ha ido? —preguntó él en un susurro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria se quitó los zapatos y se sentó en el suelo, apoyando la espalda en su sillón, en el mismo rincón donde lloraron juntos meses atrás:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Estaban guapos —dijo ella, cerrando los ojos—. Y se quieren de verdad.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Adrián bebió un sorbo:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—A veces me pregunto si volveremos a ser los de antes. Los del instituto. Los que no tenían nada que callarse.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria contempló el salón en penumbra y la distancia prudente que se había instalado entre sus cuartos:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No —respondió con una calma franca—. Lo de antes ya no existe, Adrián. Pero podemos intentar ser los de ahora. Los que aprendieron a mirar la verdad sin salir huyendo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Adrián asintió despacio y le apretó el hombro con un gesto cansado y sincero. Fuera, Madrid dormía bajo el eco de la noche, mientras los dos amigos permanecieron juntos en silencio, aceptando por fin que madurar no consiste en evitar las heridas, sino en no fingir que nunca sangraron.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false
+  },
+  {
     "id": "0024",
     "slug": "las-cartas-del-invernadero",
     "pagina_url": "relatos/0024-las-cartas-del-invernadero.html",
@@ -26,8 +180,8 @@
         "rasgos": "veintitrés años, menuda, facciones finas y melancólicas, ojos avellana de mirada despierta pero contenida, cabello castaño oscuro ondulado recogido con sencillez. Viste vestidos de lino sobrio o faldas de lana fina en tonos arena y crema, alejándose del boato impuesto por su clase.",
         "motivacion": "escapar del destino prefijado por su familia y vivir con honestidad junto al hombre que ama.",
         "conflicto": "el control asfixiante de su padre y la red social que la reduce a una mera moneda de cambio dinástica.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0024-personaje-01-isabel-de-alcazar-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0024-personaje-01-isabel-de-alcazar-cuerpo.webp"
       },
       {
         "id": "0024-p2",
@@ -36,8 +190,8 @@
         "rasgos": "veinticuatro años, complexión fibrosa y espaldas anchas curtidas por el trabajo de campo, manos ásperas marcadas por el sustrato y la poda, ojos oscuros profundos y nobles, cabello negro corto revuelto por la brisa. Viste camisa de franela verde bosque arremangada, pantalones de pana parda y tirantes de cuero desgastados.",
         "motivacion": "ofrecer a Isabel un porvenir sencillo y libre de ataduras, manteniendo intacta su dignidad.",
         "conflicto": "su origen humilde, la fragilidad económica que lo ata al pueblo y la persecución de los Alcázar.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0024-personaje-02-mateo-duran-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0024-personaje-02-mateo-duran-cuerpo.webp"
       },
       {
         "id": "0024-p3",
@@ -46,8 +200,8 @@
         "rasgos": "cincuenta y seis años, alto, de porte marcial y mirada gélida implacable, pómulos marcados, bigote canoso recortado con precisión quirúrgica y sienes plateadas. Viste impecables trajes de paño inglés a medida de tres piezas en gris marengo o azul medianoche, con chaleco abotonado y reloj de leontina de oro.",
         "motivacion": "perpetuar la influencia económica y el prestigio social de su casa a través del matrimonio pactado de su hija.",
         "conflicto": "la rebeldía de Isabel y el desprecio de Mateo hacia su dinero, que amenazan con desmoronar su autoridad absoluta.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0024-personaje-01-isabel-de-alcazar-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0024-personaje-01-isabel-de-alcazar-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -165,8 +319,8 @@
         "rasgos": "cuarenta y cinco años exactos, complexión delgada y porte ligeramente encorvado por las horas ante el atril. Cabello castaño oscuro con canas incipientes en las sienes, ojos castaños de mirada introspectiva y manos largas y huesudas de músico. De carácter reservado, leal y melancólico, marcado por el peso de la renuncia filial.",
         "motivacion": "encontrar a Clara para pedirle perdón y comprender las decisiones que truncaron su juventud compartida.",
         "conflicto": "asumir que su sentido del deber y su silencio destruyeron la única oportunidad de felicidad verdadera, sin posibilidad de recuperar los años perdidos.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0023-personaje-01-miguel-valdes-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0023-personaje-01-miguel-valdes-cuerpo.webp"
       },
       {
         "id": "0023-p2",
@@ -175,8 +329,8 @@
         "rasgos": "cuarenta y tres años exactos, delgada y de una fragilidad física evidente, pero con una serenidad profunda en el rostro. Cabello castaño claro ondulado con mechones plateados, recogido en una trenza floja, ojos avellana luminosos y expresivos, y dedos finos de pianista. Carácter lúcido, compasivo y libre de resentimiento.",
         "motivacion": "despedirse en paz de la única persona a la que amó, cerrando sin reproches las heridas del pasado.",
         "conflicto": "el avance inexorable de una enfermedad que agota sus fuerzas y el dolor de confrontar la memoria del hijo que perdió en soledad.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0023-personaje-02-clara-salgado-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0023-personaje-02-clara-salgado-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -299,8 +453,8 @@
         "rasgos": "treinta y cuatro años, médica de urgencias. Pelo castaño liso recogido en coleta baja, ojos oscuros expresivos y manos delgadas habituadas a la precisión quirúrgica; generosa, reservada y con un sentido del deber que la empuja a proteger a quienes ama a costa de su propia felicidad.",
         "motivacion": "evitar que Andrés sacrifique su juventud y su futuro cuidando de una mujer que dejará de recordarlo.",
         "conflicto": "asumir el deterioro imparable de su mente mientras finge indiferencia ante el único hombre al que ha amado.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0022-personaje-01-lucia-mendez-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0022-personaje-01-lucia-mendez-cuerpo.webp"
       },
       {
         "id": "0022-p2",
@@ -309,8 +463,8 @@
         "rasgos": "treinta y seis años, bombero municipal de rescate. Complexión atlética, un metro ochenta y tres de estatura, mandíbula ancha con barba corta castaña y ojos color miel; leal, paciente, templado ante el peligro y profundamente constante en sus afectos.",
         "motivacion": "acompañar a Lucía y brindarle refugio y cariño cada día, sin importar si ella recuerda o no su pasado juntos.",
         "conflicto": "superar el dolor del rechazo inicial y aprender a amar a Lucía en el presente absoluto, sin exigirle memoria ni reciprocidad.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0022-personaje-02-andres-salgado-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0022-personaje-02-andres-salgado-cuerpo.webp"
       },
       {
         "id": "0022-p3",
@@ -319,8 +473,8 @@
         "rasgos": "treinta y cinco años, médica internista y compañera inseparable de guardias de Lucía. Melena corta castaña oscura a la mandíbula, gafas redondas de montura dorada fina y mirada observadora y compasiva.",
         "motivacion": "hacer justicia al sufrimiento de su amiga y reparar la herida que separó injustamente a Lucía y Andrés.",
         "conflicto": "romper el secreto profesional y la promesa de silencio que le hizo a Lucía para avisar a Andrés antes de que sea tarde.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0022-personaje-03-marta-varela-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0022-personaje-03-marta-varela-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -437,8 +591,8 @@
         "rasgos": "Sesenta y dos años exactos. Restauradora de manuscritos y encuadernadora artesanal jubilada. Facciones finas y nobles, mirada serena y reflexiva tras unos ojos castaño avellana con finas arrugas de expresión, cabello ondulado gris perla recogido en un moño bajo en la nuca. Viste una bata ligera de lino crudo sobre un jersey de punto fino color arena y falda recta de franela gris topo. De modales pausados, voz suave y un temperamento solitario habituado al silencio de los talleres de archivo.",
         "motivacion": "Comprender por fin el vacío que marcó toda su trayectoria vital tras la partida de su ciudad natal.",
         "conflicto": "Asimilar que el hombre que creyó indiferente pasó tres décadas escribiéndole en la sombra, y enfrentar la propia carta de confesión que ella misma ocultó en un cajón aquella última noche.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0021-personaje-01-clara-vidal-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0021-personaje-01-clara-vidal-cuerpo.webp"
       },
       {
         "id": "0021-p2",
@@ -447,8 +601,8 @@
         "rasgos": "Sesenta y un años exactos. Viuda de Daniel Montero. Elegante, sobria y de porte distinguido, con el dolor contenido del luto reciente. Pelo castaño oscuro con mechas plateadas cortado con precisión, ojos grises húmedos de fatiga moral y manos cuidadas que revelan una vida acomodada pero solitaria. Viste abrigo sastre negro de paño sobre traje de lana gris marengo y pañuelo de seda al cuello.",
         "motivacion": "Entregar a su legítima destinataria las cartas que su marido guardó en secreto, buscando dar sentido y verdad a los silencios que carcomieron su matrimonio.",
         "conflicto": "Enfrentarse a la mujer a quien su esposo amó en silencio durante treinta y cinco años, superando el rencor para ofrecer un acto de compasión y justicia póstuma.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0021-personaje-02-elena-santamaria-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0021-personaje-02-elena-santamaria-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -559,8 +713,8 @@
         "rasgos": "Setenta y dos años exactos. De mirada limpia y serena en ojos color avellana, pelo blanco ondulado recogido en un moño bajo sujeto con horquillas de carey, y arrugas finas marcadas alrededor de la boca que delatan décadas de sonrisas fáciles. Sus manos muestran manchas claras de la edad y dedos ligeramente torcidos por la artrosis de las mañanas frías. Viste abrigo de paño en espiga gris claro sobre jersey de cuello vuelto azul petróleo, falda recta de lana bajo la rodilla, medias gruesas oscuras, bufanda de lana color teja y mitones de punto gris para escribir al aire libre con pluma estilográfica.",
         "motivacion": "Mantener el contacto cotidiano con su difunto esposo Antonio y aprender a habitar el vacío de la casa sin que la tristeza la devore por dentro.",
         "conflicto": "Superar el miedo a que abrir su corazón a nuevos afectos signifique traicionar o atenuar el recuerdo de la vida que construyó durante cuarenta años.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0020-personaje-01-elisa-romero-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0020-personaje-01-elisa-romero-cuerpo.webp"
       },
       {
         "id": "0020-p2",
@@ -569,8 +723,8 @@
         "rasgos": "Diez años exactos. Niño menudo, ágil y de mirada despierta en grandes ojos color miel, con un remolino rebelde en la coronilla sobre el pelo castaño claro cortado a tijera y pecas salpicadas sobre el puente de la nariz. Viste anorak acolchado azul marino con cremallera roja, sudadera gris con capucha asomando sobre el cuello, vaqueros rectos con rodilleras reforzadas de pana azul y zapatillas deportivas de ante verde bosque con cordones amarillos. Carga siempre a la espalda una mochila pequeña de lona amarilla donde guarda ceras gastadas, sacapuntas metálico y hojas dobladas.",
         "motivacion": "Mantener encendido el recuerdo de su madre en el parque que ella solía visitar y encontrar una voz que lo escuche sin mirarlo con lástima.",
         "conflicto": "La impotencia de no saber cómo aliviar el derrumbe silencioso de su padre ni cómo impedir que el paso de los meses borre las canciones y aromas de su hogar de antes.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0020-personaje-02-nico-aranda-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0020-personaje-02-nico-aranda-cuerpo.webp"
       },
       {
         "id": "0020-p3",
@@ -579,8 +733,8 @@
         "rasgos": "Treinta y nueve años exactos. De complexión delgada, hombros ligeramente caídos y aspecto fatigado por el insomnio. Pelo castaño oscuro algo revuelto y barba corta de varios días sin perfilar que acentúa la palidez de sus mejillas y la sombra oscura bajo sus ojos castaños. Viste jersey grueso de lana azul marino con coderas de ante marrón, camisa de franela a cuadros oscuros con el cuello desabrochado, pantalón de pana marrón gastado en las rodillas y zapatos de cuero acordonados con suela de goma.",
         "motivacion": "Cumplir con sus obligaciones de padre, mantener a flote a su hijo y ocultar el desamparo que siente desde la muerte de su esposa.",
         "conflicto": "El bloqueo emocional que le impide aceptar su propia vulnerabilidad y la culpa constante de creer que su tristeza está arruinando la infancia de Nico.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0020-personaje-02-nico-aranda-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0020-personaje-02-nico-aranda-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -709,8 +863,8 @@
         "rasgos": "Treinta y dos años exactos. Técnico de recuperación de datos forenses. De complexión delgada, pelo castaño oscuro muy corto peinado hacia un lado, barba de tres días recortada con esmero y ojos castaño oscuro con ojeras de concentración. Viste bata gris marengo de taller sobre camisa vaquera oscura y pantalones rectos de algodón negro. Meticuloso, escéptico y obsesionado con la trazabilidad técnica de las evidencias.",
         "motivacion": "Extraer la información íntegra del dispositivo y descifrar el origen real de unas grabaciones que desafían las leyes de la física y de su propia memoria.",
         "conflicto": "Enfrentarse a la evidencia técnica de que su propia voz grabada admite la autoría del encierro mortal del edificio, mientras sus recuerdos de infancia se desmoronan como una ficción construida para protegerlo.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0019-personaje-01-marcos-soria-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0019-personaje-01-marcos-soria-cuerpo.webp"
       },
       {
         "id": "0019-p2",
@@ -719,8 +873,8 @@
         "rasgos": "Cincuenta y ocho años exactos. Antigua inspectora de siniestros y perito judicial de aseguradora, actualmente retirada. Mirada penetrante de ojos verdes tras montura fina de carey, pelo canoso cortado a la altura de la mandíbula y postura erguida pero fatigada. Viste gabardina marrón desgastada sobre cárdigan de punto verde musgo y bufanda de lana granate. De trato áspero, directo y marcado por el peso moral de no haber resuelto las negligencias del incendio.",
         "motivacion": "Desenterrar la verdad sobre la cadena de complicidades que cerró en falso la investigación del siniestro de Torres del Viento.",
         "conflicto": "Superar el recelo hacia Marcos al reconocer en él al muchacho rescatado aquella noche junto a las puertas de emergencia, debatiéndose entre la compasión y la sospecha de su implicación directa.",
-        "avatar_cabeza": null,
-        "avatar_cuerpo": null
+        "avatar_cabeza": "assets/images/avatars/0019-personaje-02-clara-ramos-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0019-personaje-02-clara-ramos-cuerpo.webp"
       }
     ],
     "capitulos": [
