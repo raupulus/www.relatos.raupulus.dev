@@ -150,8 +150,10 @@
         "rol": "Narración internacional en inglés"
       }
     },
-    "estado": "estreno",
-    "publicado": false
+    "estado": "programado",
+    "publicado": false,
+    "fecha_publicacion": "2026-10-29T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793300400
   },
   {
     "id": "0024",
@@ -288,8 +290,10 @@
         "rol": "Narración internacional en inglés"
       }
     },
-    "estado": "estreno",
-    "publicado": false
+    "estado": "programado",
+    "publicado": false,
+    "fecha_publicacion": "2026-10-26T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793041200
   },
   {
     "id": "0023",
@@ -423,8 +427,10 @@
         "rol": "Narración internacional en inglés"
       }
     },
-    "estado": "estreno",
-    "publicado": false
+    "estado": "programado",
+    "publicado": false,
+    "fecha_publicacion": "2026-10-27T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793127600
   },
   {
     "id": "0022",
@@ -561,8 +567,10 @@
         "rol": "Narración internacional en inglés"
       }
     },
-    "estado": "estreno",
-    "publicado": false
+    "estado": "programado",
+    "publicado": false,
+    "fecha_publicacion": "2026-10-28T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793214000
   },
   {
     "id": "0021",
@@ -683,8 +691,10 @@
         "rol": "Narración internacional en inglés"
       }
     },
-    "estado": "estreno",
-    "publicado": false
+    "estado": "programado",
+    "publicado": false,
+    "fecha_publicacion": "2026-10-24T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792864800
   },
   {
     "id": "0020",
@@ -833,8 +843,10 @@
         "rol": "Narración internacional en inglés"
       }
     },
-    "estado": "estreno",
-    "publicado": false
+    "estado": "programado",
+    "publicado": false,
+    "fecha_publicacion": "2026-10-25T20:00:00+01:00",
+    "fecha_publicacion_ts": 1792954800
   },
   {
     "id": "0019",
@@ -949,8 +961,10 @@
         "rol": "Narración internacional en inglés"
       }
     },
-    "estado": "estreno",
-    "publicado": false
+    "estado": "programado",
+    "publicado": false,
+    "fecha_publicacion": "2026-10-23T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792778400
   },
   {
     "id": "0018",
@@ -1099,8 +1113,10 @@
         "rol": "Narración internacional en inglés"
       }
     },
-    "estado": "estreno",
-    "publicado": false
+    "estado": "programado",
+    "publicado": false,
+    "fecha_publicacion": "2026-10-22T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792692000
   },
   {
     "id": "0017",
@@ -1220,8 +1236,10 @@
         "rol": "Narración internacional en inglés"
       }
     },
-    "estado": "estreno",
-    "publicado": false
+    "estado": "programado",
+    "publicado": false,
+    "fecha_publicacion": "2026-10-21T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792605600
   },
   {
     "id": "0016",
@@ -1370,8 +1388,10 @@
         "rol": "Narración internacional en inglés"
       }
     },
-    "estado": "estreno",
-    "publicado": false
+    "estado": "publicado",
+    "publicado": true,
+    "fecha_publicacion": "2026-10-20T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792519200
   },
   {
     "id": "0015",
@@ -1519,7 +1539,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-20T19:00:00+02:00",
+    "fecha_publicacion_ts": 1792515600
   },
   {
     "id": "0014",
@@ -1660,7 +1682,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-20T18:00:00+02:00",
+    "fecha_publicacion_ts": 1792512000
   },
   {
     "id": "0013",
@@ -1795,7 +1819,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-20T17:00:00+02:00",
+    "fecha_publicacion_ts": 1792508400
   },
   {
     "id": "0012",
@@ -1916,7 +1942,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-19T21:00:00+02:00",
+    "fecha_publicacion_ts": 1792436400
   },
   {
     "id": "0011",
@@ -2043,7 +2071,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-19T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792432800
   },
   {
     "id": "0010",
@@ -2172,7 +2202,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-18T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792346400
   },
   {
     "id": "0009",
@@ -2302,7 +2334,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-18T18:00:00+02:00",
+    "fecha_publicacion_ts": 1792339200
   },
   {
     "id": "0008",
@@ -2432,7 +2466,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-17T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792260000
   },
   {
     "id": "0007",
@@ -2561,7 +2597,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-16T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792173600
   },
   {
     "id": "0006",
@@ -2706,7 +2744,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-15T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792087200
   },
   {
     "id": "0005",
@@ -2845,7 +2885,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-14T20:00:00+02:00",
+    "fecha_publicacion_ts": 1792000800
   },
   {
     "id": "0004",
@@ -2983,7 +3025,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-13T20:00:00+02:00",
+    "fecha_publicacion_ts": 1791914400
   },
   {
     "id": "0003",
@@ -3127,7 +3171,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-12T20:00:00+02:00",
+    "fecha_publicacion_ts": 1791828000
   },
   {
     "id": "0002",
@@ -3265,7 +3311,9 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-11T20:00:00+02:00",
+    "fecha_publicacion_ts": 1791741600
   },
   {
     "id": "0001",
@@ -3415,6 +3463,8 @@
       }
     },
     "estado": "publicado",
-    "publicado": true
+    "publicado": true,
+    "fecha_publicacion": "2026-10-10T20:00:00+02:00",
+    "fecha_publicacion_ts": 1791655200
   }
 ]

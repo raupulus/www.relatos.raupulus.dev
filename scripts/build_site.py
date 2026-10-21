@@ -17,8 +17,63 @@ import re
 import json
 import shutil
 import subprocess
+import zoneinfo
 from datetime import datetime
 from PIL import Image
+
+MADRID_TZ = zoneinfo.ZoneInfo("Europe/Madrid")
+
+
+def parse_iso_datetime(dt_str):
+    if not dt_str:
+        return None
+    try:
+        dt = datetime.fromisoformat(dt_str)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=MADRID_TZ)
+        return dt
+    except Exception:
+        return None
+
+
+def get_current_time():
+    """Retorna la hora actual en zona horaria oficial Europe/Madrid, admitiendo override vía BUILD_NOW."""
+    custom_now = os.environ.get("BUILD_NOW")
+    if custom_now:
+        parsed = parse_iso_datetime(custom_now)
+        if parsed:
+            return parsed
+    return datetime.now(tz=MADRID_TZ)
+
+
+def is_story_published(story, now_dt=None):
+    """
+    Determina si un relato se considera publicado en base a su fecha de publicación
+    o su estado previo. Si cuenta con fecha_publicacion fiable, evalúa si la hora actual
+    ha superado dicho timestamp en la zona horaria oficial (Europe/Madrid).
+    """
+    if now_dt is None:
+        now_dt = get_current_time()
+    fecha_pub_str = story.get("fecha_publicacion")
+    if fecha_pub_str:
+        dt_pub = parse_iso_datetime(fecha_pub_str)
+        if dt_pub:
+            return now_dt >= dt_pub
+    ts_pub = story.get("fecha_publicacion_ts")
+    if ts_pub:
+        return now_dt.timestamp() >= ts_pub
+    return bool(story.get("publicado")) and story.get("estado") == "publicado"
+
+
+def format_spanish_schedule_date(iso_str):
+    """Formatea la fecha de estreno en formato legible en español."""
+    if not iso_str:
+        return "Próximamente"
+    dt = parse_iso_datetime(iso_str)
+    if not dt:
+        return "Próximamente"
+    meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+    return f"{dt.day} de {meses[dt.month - 1]} de {dt.year} a las {dt.strftime('%H:%M')} h"
 
 SITE_URL = "https://relatos.raupulus.dev"
 YT_CHANNEL = "https://www.youtube.com/@RaupulusTales"
@@ -278,19 +333,51 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
         print("📄 Cargando base de datos canónica desde relatos.json en la raíz...")
         with open(ROOT_RELATOS_FILE, 'r', encoding='utf-8') as f:
             relatos = json.load(f)
-            # Asegurar sincronización con data/relatos.json
-            with open(DATA_FILE, 'w', encoding='utf-8') as df:
-                json.dump(relatos, df, ensure_ascii=False, indent=2)
-            return relatos
+        changed = False
+        for r in relatos:
+            if r.get("fecha_publicacion") or r.get("fecha_publicacion_ts"):
+                is_pub = is_story_published(r)
+                if r.get("publicado") != is_pub:
+                    r["publicado"] = is_pub
+                    changed = True
+                if is_pub and r.get("estado") in ("programado", "estreno"):
+                    r["estado"] = "publicado"
+                    changed = True
+                elif not is_pub and r.get("estado") == "publicado":
+                    r["estado"] = "programado"
+                    changed = True
+        if changed:
+            with open(ROOT_RELATOS_FILE, 'w', encoding='utf-8') as f:
+                json.dump(relatos, f, ensure_ascii=False, indent=2)
+        # Asegurar sincronización con data/relatos.json
+        with open(DATA_FILE, 'w', encoding='utf-8') as df:
+            json.dump(relatos, df, ensure_ascii=False, indent=2)
+        return relatos
 
     if not os.path.exists(src_dir):
         print(f"Directorio fuente {src_dir} no accesible, usando data/relatos.json existente...")
         if os.path.exists(DATA_FILE):
             with open(DATA_FILE, 'r', encoding='utf-8') as f:
                 relatos = json.load(f)
-                with open(ROOT_RELATOS_FILE, 'w', encoding='utf-8') as rf:
-                    json.dump(relatos, rf, ensure_ascii=False, indent=2)
-                return relatos
+            changed = False
+            for r in relatos:
+                if r.get("fecha_publicacion") or r.get("fecha_publicacion_ts"):
+                    is_pub = is_story_published(r)
+                    if r.get("publicado") != is_pub:
+                        r["publicado"] = is_pub
+                        changed = True
+                    if is_pub and r.get("estado") in ("programado", "estreno"):
+                        r["estado"] = "publicado"
+                        changed = True
+                    elif not is_pub and r.get("estado") == "publicado":
+                        r["estado"] = "programado"
+                        changed = True
+            if changed:
+                with open(DATA_FILE, 'w', encoding='utf-8') as df:
+                    json.dump(relatos, df, ensure_ascii=False, indent=2)
+            with open(ROOT_RELATOS_FILE, 'w', encoding='utf-8') as rf:
+                json.dump(relatos, rf, ensure_ascii=False, indent=2)
+            return relatos
         return []
 
     # Mapa de estados y publicaciones previas para preservar decisiones manuales al resincronizar
@@ -302,7 +389,9 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                 for pr in prev_list:
                     existing_status_map[pr['id']] = {
                         "estado": pr.get("estado"),
-                        "publicado": pr.get("publicado")
+                        "publicado": pr.get("publicado"),
+                        "fecha_publicacion": pr.get("fecha_publicacion"),
+                        "fecha_publicacion_ts": pr.get("fecha_publicacion_ts")
                     }
         except Exception:
             pass
@@ -489,16 +578,21 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                         "resumen": c_summary
                     })
 
-        # Asignar estado y publicación respetando valores previos existentes o fijando "estreno" por defecto
+        # Asignar estado y publicación respetando valores previos existentes o evaluando fecha_publicacion
         prev_info = existing_status_map.get(num_id, {})
-        estado_final = prev_info.get("estado")
-        pub_final = prev_info.get("publicado")
+        fecha_pub = prev_info.get("fecha_publicacion")
+        fecha_pub_ts = prev_info.get("fecha_publicacion_ts")
 
-        # Si no había estado previo explícito:
-        # Los relatos nuevos subidos en privado arrancan siempre como "estreno" (no publicado)
-        if estado_final is None and pub_final is None:
-            estado_final = "estreno"
-            pub_final = False
+        if fecha_pub:
+            is_pub = is_story_published({"fecha_publicacion": fecha_pub})
+            estado_final = "publicado" if is_pub else "programado"
+            pub_final = is_pub
+        else:
+            estado_final = prev_info.get("estado")
+            pub_final = prev_info.get("publicado")
+            if estado_final is None and pub_final is None:
+                estado_final = "estreno"
+                pub_final = False
 
         relato_entry = {
             "id": num_id,
@@ -527,7 +621,9 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                 "en_US": {"voz": "Christopher (en-US-ChristopherNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Narración internacional en inglés"}
             },
             "estado": estado_final,
-            "publicado": bool(pub_final)
+            "publicado": bool(pub_final),
+            "fecha_publicacion": fecha_pub,
+            "fecha_publicacion_ts": fecha_pub_ts
         }
         relatos.append(relato_entry)
 
@@ -548,10 +644,10 @@ def generate_index_html(relatos):
     """Genera index.html optimizado para SEO: catálogo visual con tarjetas 16:9 que enlazan a cada página dedicada."""
     target_file = os.path.join(PUBLIC_DIR, "index.html")
 
-    # Serializar catálogo ligero para Alpine.js (sin inyectar el texto completo de los 10 relatos en el index)
+    # Serializar catálogo ligero para Alpine.js (sin inyectar el texto completo de los relatos en el index)
     catalogo_light = []
     for r in relatos:
-        is_published = bool(r.get("publicado")) and r.get("estado") == "publicado"
+        is_published = is_story_published(r)
         catalogo_light.append({
             "id": r["id"],
             "slug": r["slug"],
@@ -566,8 +662,10 @@ def generate_index_html(relatos):
             "duracion_audio": r["duracion_audio"],
             "portada": r["portada"],
             "youtube_id": r["youtube_id"],
-            "estado": "publicado" if is_published else "estreno",
-            "publicado": is_published
+            "estado": "publicado" if is_published else r.get("estado", "programado"),
+            "publicado": is_published,
+            "fecha_publicacion": r.get("fecha_publicacion"),
+            "fecha_publicacion_ts": r.get("fecha_publicacion_ts")
         })
 
     # Schema.org hasPart estructurado
@@ -593,8 +691,12 @@ def generate_index_html(relatos):
         for r in relatos
     ])
 
-    # Último relato publicado de verdad para el botón principal del Hero
-    ultimo_publicado = next((r for r in relatos if r.get('publicado', True) and r.get('estado') != 'estreno'), relatos[0])
+    # Último relato publicado de verdad para el botón principal del Hero (por fecha de publicación más reciente)
+    publicados = [r for r in relatos if is_story_published(r)]
+    if publicados:
+        ultimo_publicado = max(publicados, key=lambda x: x.get("fecha_publicacion_ts") or 0)
+    else:
+        ultimo_publicado = relatos[0]
 
     html = f"""<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
@@ -795,6 +897,9 @@ def generate_index_html(relatos):
               <div class="absolute top-3 left-3 flex gap-2 z-20">
                 <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-crimson text-white" x-text="r.id"></span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-obsidian/85 text-text-bright backdrop-blur border border-border-subtle" x-text="r.categoria_nombre"></span>
+                <template x-if="!estaPublicado(r)">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-damask/90 text-white border border-damask-light/40">Estreno</span>
+                </template>
               </div>
 
               <!-- Duración en minutos -->
@@ -804,13 +909,14 @@ def generate_index_html(relatos):
               </div>
 
               <!-- Overlay fondo negro transparente de Próximo Estreno -->
-              <div x-show="!r.publicado || r.estado === 'estreno'" 
+              <div x-show="!estaPublicado(r)" 
                    class="absolute inset-0 bg-black/75 backdrop-blur-[1px] flex flex-col items-center justify-center p-4 text-center z-10 transition-opacity">
                 <span class="px-3 py-1 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5">
                   <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
-                  Estreno
+                  Estreno Programado
                 </span>
-                <span class="text-[11px] text-text-muted mt-1.5 font-medium">Próximamente en YouTube</span>
+                <span class="text-[11px] text-text-bright mt-2 font-medium" x-text="formatearFechaEstreno(r.fecha_publicacion, r.fecha_publicacion_ts)"></span>
+                <span class="text-[10px] text-text-muted mt-0.5">en YouTube</span>
               </div>
             </a>
 
@@ -830,12 +936,12 @@ def generate_index_html(relatos):
               <!-- Botones de Acción -->
               <div class="mt-5 pt-4 border-t border-border-subtle flex items-center justify-between text-xs">
                 <a :href="r.pagina_url" class="font-semibold text-crimson-glow group-hover:text-white flex items-center gap-1 transition">
-                  <span x-text="r.publicado ? 'Leer Relato Dedicado' : 'Ver Ficha de Estreno'"></span>
+                  <span x-text="estaPublicado(r) ? 'Leer Relato Dedicado' : 'Ver Ficha de Estreno'"></span>
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                 </a>
                 <span class="inline-flex items-center gap-1 text-[11px] text-text-muted font-medium">
                   <svg class="w-3 h-3 text-damask-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
-                  <span x-text="r.publicado ? 'Audio & Vídeo HD' : 'En producción'"></span>
+                  <span x-text="estaPublicado(r) ? 'Audio & Vídeo HD' : (r.fecha_publicacion_ts ? 'Estreno 20:00 h' : 'En producción')"></span>
                 </span>
               </div>
             </div>
@@ -947,9 +1053,44 @@ def generate_index_html(relatos):
         filtroCategoria: 'todos',
         busqueda: '',
         menuAbierto: false,
+        ahora: Date.now(),
+
+        init() {{
+          setInterval(() => {{
+            this.ahora = Date.now();
+          }}, 10000);
+        }},
+
+        estaPublicado(r) {{
+          if (r.fecha_publicacion_ts) {{
+            return (r.fecha_publicacion_ts * 1000) <= this.ahora;
+          }}
+          return Boolean(r.publicado && r.estado === 'publicado');
+        }},
+
+        formatearFechaEstreno(isoStr, ts) {{
+          if (!ts && !isoStr) return 'Próximamente';
+          try {{
+            const d = ts ? new Date(ts * 1000) : new Date(isoStr);
+            const meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+            const partes = new Intl.DateTimeFormat('es-ES', {{
+              day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Madrid'
+            }}).formatToParts(d);
+            const map = {{}};
+            partes.forEach(p => map[p.type] = p.value);
+            const mesNom = meses[parseInt(map.month, 10) - 1] || map.month;
+            return `${{map.day}} ${{mesNom}} • ${{map.hour}}:${{map.minute}} h`;
+          }} catch (e) {{
+            return 'Próximamente';
+          }}
+        }},
 
         get ultimoPublicado() {{
-          return this.relatos.find(r => r.publicado && r.estado !== 'estreno') || this.relatos[0];
+          const pub = this.relatos.filter(r => this.estaPublicado(r));
+          if (!pub.length) return this.relatos[0];
+          return pub.reduce((latest, r) => {{
+            return ((r.fecha_publicacion_ts || 0) > (latest.fecha_publicacion_ts || 0)) ? r : latest;
+          }}, pub[0]);
         }},
 
         get relatosFiltrados() {{
@@ -985,10 +1126,14 @@ def generate_story_pages(relatos):
         prev_r = relatos[idx - 1] if idx > 0 else relatos[-1]
         next_r = relatos[idx + 1] if idx < len(relatos) - 1 else relatos[0]
         page_file = os.path.join(RELATOS_DIR, f"{r['id']}-{r['slug']}.html")
-        is_published = bool(r.get("publicado")) and r.get("estado") == "publicado"
+        is_published = is_story_published(r)
+        fecha_pub = r.get("fecha_publicacion") or ""
+        fecha_pub_ts = r.get("fecha_publicacion_ts") or 0
+        fecha_formateada = format_spanish_schedule_date(fecha_pub)
+        date_pub_schema = f'\n    "datePublished": "{fecha_pub}",' if fecha_pub else ""
         
         if not is_published:
-            meta_desc = f"Próximo estreno en Raupulus Tales. {truncate_meta_desc(r['sinopsis'], 120)}"
+            meta_desc = f"Próximo estreno en Raupulus Tales ({fecha_formateada}). {truncate_meta_desc(r['sinopsis'], 110)}"
         else:
             meta_desc = truncate_meta_desc(r['sinopsis'], 155)
 
@@ -1075,10 +1220,14 @@ def generate_story_pages(relatos):
               <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-6">
                 <span class="px-3.5 py-1.5 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5 mb-3">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
-                  Próximo Estreno Cinematográfico 1080p
+                  Estreno Programado en YouTube
                 </span>
                 <div class="text-xl sm:text-2xl font-bold text-white max-w-lg mb-2">{r['titulo']}</div>
-                <p class="text-xs text-text-muted max-w-md mb-5">Producción audiovisual y locución en proceso de preparación para su estreno oficial en YouTube.</p>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
+                  <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>Fecha de estreno: {fecha_formateada}</span>
+                </div>
+                <p class="text-xs text-text-muted max-w-md mb-5">El vídeo y la historia completa se desbloquearán en esta página el día del estreno oficial.</p>
                 <a href="{YT_SUBSCRIBE}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition shadow-lg flex items-center gap-2">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                   Suscribirme para ver el estreno
@@ -1124,7 +1273,11 @@ def generate_story_pages(relatos):
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
               </div>
               <span class="inline-block px-3 py-1 rounded-full bg-crimson/30 border border-crimson/60 text-damask-light text-xs font-bold uppercase tracking-wider mb-2">Contenido Protegido • Próximo Estreno</span>
-              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-3">La historia completa estará disponible en su estreno oficial</h3>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-2">La historia completa estará disponible en su estreno oficial</h3>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
+                <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <span>Estreno: {fecha_formateada}</span>
+              </div>
               <p class="text-xs sm:text-sm text-text-muted max-w-lg mx-auto leading-relaxed mb-6">
                 Por protección estricta de derechos de autor y exclusividad editorial, el texto completo, el minutado de capítulos y las escenas cinematográficas se desbloquearán el día del estreno público en YouTube.
               </p>
@@ -1146,13 +1299,13 @@ def generate_story_pages(relatos):
               </div>
               <h4 class="text-sm font-bold text-text-bright mb-1">Capítulos y Momentos Clave en Reserva</h4>
               <p class="text-xs text-text-muted max-w-md mx-auto leading-relaxed">
-                El minutado oficial, las escenas cinematográficas y las marcas de tiempo narrativas se revelarán públicamente al estrenarse el vídeo en YouTube.
+                El minutado oficial, las escenas cinematográficas y las marcas de tiempo narrativas se revelarán públicamente al estrenarse el vídeo el <strong class="text-text-bright">{fecha_formateada}</strong>.
               </p>
             </div>
             """
             capitulos_btn_text = "🎬 Capítulos (En reserva)"
 
-        estreno_badge = f'<span class="px-2 py-0.5 rounded text-xs font-bold bg-crimson/30 border border-crimson text-damask-light uppercase tracking-wider">Próximo Estreno</span>' if not is_published else ''
+        estreno_badge = f'<span class="px-2 py-0.5 rounded text-xs font-bold bg-crimson/30 border border-crimson text-damask-light uppercase tracking-wider">Estreno: {fecha_formateada}</span>' if not is_published else ''
 
         page_html = f"""<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
@@ -1203,7 +1356,7 @@ def generate_story_pages(relatos):
     "description": "{meta_desc}",
     "inLanguage": "es-ES",
     "genre": "{r['categoria_nombre']}",
-    "wordCount": {r['palabras']},
+    "wordCount": {r['palabras']},{date_pub_schema}
     "url": "{SITE_URL}/{r['pagina_url']}",
     "image": "{SITE_URL}/{r['portada']}",
     "author": {{
@@ -1345,6 +1498,7 @@ def generate_story_pages(relatos):
       </div>
     </div>
   </footer>
+
 </body>
 </html>
 """
