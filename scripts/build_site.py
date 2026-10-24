@@ -335,6 +335,13 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
             relatos = json.load(f)
         changed = False
         for r in relatos:
+            if r.get("fecha_publicacion"):
+                dt_p = parse_iso_datetime(r["fecha_publicacion"])
+                if dt_p:
+                    ts = int(dt_p.timestamp())
+                    if r.get("fecha_publicacion_ts") != ts:
+                        r["fecha_publicacion_ts"] = ts
+                        changed = True
             if r.get("fecha_publicacion") or r.get("fecha_publicacion_ts"):
                 is_pub = is_story_published(r)
                 if r.get("publicado") != is_pub:
@@ -343,8 +350,16 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                 if is_pub and r.get("estado") in ("programado", "estreno"):
                     r["estado"] = "publicado"
                     changed = True
-                elif not is_pub and r.get("estado") == "publicado":
-                    r["estado"] = "programado"
+                elif not is_pub and r.get("estado") in ("publicado", "programado"):
+                    r["estado"] = "estreno"
+                    changed = True
+            # Asegurar quinteto de locuciones oficiales
+            if "locucion" in r and isinstance(r["locucion"], dict):
+                if "pt_BR" not in r["locucion"]:
+                    r["locucion"]["pt_BR"] = {"voz": "Antonio (pt-BR-AntonioNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Locución en portugués de Brasil"}
+                    changed = True
+                if "de_DE" not in r["locucion"]:
+                    r["locucion"]["de_DE"] = {"voz": "Killian (de-DE-KillianNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Locución en alemán de Alemania"}
                     changed = True
         if changed:
             with open(ROOT_RELATOS_FILE, 'w', encoding='utf-8') as f:
@@ -618,7 +633,9 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
             "locucion": {
                 "es_ES": {"voz": "Álvaro (es-ES-AlvaroNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Voz máster y vídeo"},
                 "es_LAT": {"voz": "Alonso (es-US-AlonsoNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Voz neutra latinoamericana"},
-                "en_US": {"voz": "Christopher (en-US-ChristopherNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Narración internacional en inglés"}
+                "en_US": {"voz": "Christopher (en-US-ChristopherNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Narración internacional en inglés"},
+                "pt_BR": {"voz": "Antonio (pt-BR-AntonioNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Locución en portugués de Brasil"},
+                "de_DE": {"voz": "Killian (de-DE-KillianNeural)", "calidad": "192 kbps, 48 kHz", "rol": "Locución en alemán de Alemania"}
             },
             "estado": estado_final,
             "publicado": bool(pub_final),
@@ -925,7 +942,7 @@ def generate_index_html(relatos):
               <div>
                 <div class="flex items-center justify-between text-xs text-text-muted mb-2">
                   <span>≈ <span x-text="r.palabras"></span> palabras</span>
-                  <span class="text-damask-light font-medium">ES • LAT • EN</span>
+                  <span class="text-damask-light font-medium">ES • LAT • EN • PT • DE</span>
                 </div>
                 <h3 class="text-lg font-bold text-text-bright group-hover:text-damask-light transition-colors leading-snug">
                   <a :href="r.pagina_url" x-text="r.titulo"></a>
@@ -992,9 +1009,9 @@ def generate_index_html(relatos):
             <div class="w-10 h-10 rounded-lg bg-plum/50 border border-damask/50 text-damask-light flex items-center justify-center mb-4">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
             </div>
-            <h3 class="text-sm font-bold text-text-bright mb-2">Trinidad de Voces Multilingües</h3>
+            <h3 class="text-sm font-bold text-text-bright mb-2">Quinteto de Voces Multilingües</h3>
             <p class="text-text-muted leading-relaxed">
-              Locución en estudio a 192 kbps: Álvaro (España), Alonso (Latinoamérica) y Christopher (Inglés), con tempo y duración calibrados exactamente al segundo.
+              Locución en estudio a 192 kbps: Álvaro (España), Alonso (Latinoamérica), Christopher (Inglés), Antonio (Portugués de Brasil) y Killian (Alemán), con tempo y duración calibrados exactamente al segundo.
             </p>
           </div>
 
@@ -1463,21 +1480,29 @@ def generate_story_pages(relatos):
           <!-- Panel Locución -->
           <div role="tabpanel" id="panel-locucion" aria-labelledby="tab-locucion" tabindex="0" x-show="vistaPestana === 'locucion'" class="space-y-4 focus:outline-none">
             <div class="border-b border-border-subtle pb-3 mb-4">
-              <h3 class="font-bold text-sm text-text-bright">Locuciones Oficiales de Estudio</h3>
+              <h3 class="font-bold text-sm text-text-bright">Quinteto Oficial de Locuciones de Estudio</h3>
               <p class="text-xs text-text-muted">Masterizadas a 192 kbps (48 kHz) y calibradas con la duración del máster en vídeo.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-              <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
+              <div class="p-3.5 rounded-xl bg-obsidian-elevated border border-border-subtle">
                 <span class="font-bold text-text-bright block mb-1">🇪🇸 España (Álvaro)</span>
-                <span class="text-text-muted">Pista máster en vídeo Full HD.</span>
+                <span class="text-text-muted text-[11px]">Pista máster en vídeo Full HD.</span>
               </div>
-              <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle">
+              <div class="p-3.5 rounded-xl bg-obsidian-elevated border border-border-subtle">
                 <span class="font-bold text-text-bright block mb-1">🌎 Latinoamérica (Alonso)</span>
-                <span class="text-text-muted">Español neutro disponible en YouTube.</span>
+                <span class="text-text-muted text-[11px]">Español neutro disponible en YouTube.</span>
               </div>
-              <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle">
+              <div class="p-3.5 rounded-xl bg-obsidian-elevated border border-border-subtle">
                 <span class="font-bold text-text-bright block mb-1">🇺🇸 Inglés (Christopher)</span>
-                <span class="text-text-muted">Adaptación oficial internacional.</span>
+                <span class="text-text-muted text-[11px]">Adaptación oficial internacional.</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-obsidian-elevated border border-border-subtle">
+                <span class="font-bold text-text-bright block mb-1">🇧🇷 Portugués (Antonio)</span>
+                <span class="text-text-muted text-[11px]">Locución en portugués de Brasil.</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-obsidian-elevated border border-border-subtle">
+                <span class="font-bold text-text-bright block mb-1">🇩🇪 Alemán (Killian)</span>
+                <span class="text-text-muted text-[11px]">Locución en alemán de Alemania.</span>
               </div>
             </div>
           </div>

@@ -139,6 +139,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
@@ -286,6 +296,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
@@ -417,12 +437,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-05T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793905200
   },
   {
     "id": "0043",
@@ -570,12 +600,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-12T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794510000
   },
   {
     "id": "0042",
@@ -717,12 +757,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-04T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793818800
   },
   {
     "id": "0041",
@@ -870,12 +920,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-07T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794078000
   },
   {
     "id": "0040",
@@ -1010,12 +1070,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-11T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794423600
   },
   {
     "id": "0039",
@@ -1150,12 +1220,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-01T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793559600
   },
   {
     "id": "0038",
@@ -1307,12 +1387,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-02T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793646000
   },
   {
     "id": "0037",
@@ -1452,12 +1542,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-13T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794596400
   },
   {
     "id": "0036",
@@ -1604,12 +1704,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-10T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794337200
   },
   {
     "id": "0035",
@@ -1751,12 +1861,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-09T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794250800
   },
   {
     "id": "0034",
@@ -1896,12 +2016,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-08T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794164400
   },
   {
     "id": "0033",
@@ -2043,12 +2173,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-10-31T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793473200
   },
   {
     "id": "0032",
@@ -2182,12 +2322,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-01T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793559600
   },
   {
     "id": "0031",
@@ -2323,12 +2473,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-06T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793991600
   },
   {
     "id": "0030",
@@ -2469,12 +2629,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-03T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793732400
   },
   {
     "id": "0029",
@@ -2609,12 +2779,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-10-31T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793473200
   },
   {
     "id": "0028",
@@ -2744,12 +2924,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-10-31T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793473200
   },
   {
     "id": "0027",
@@ -2869,12 +3059,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-10-30T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793386800
   },
   {
     "id": "0026",
@@ -3009,12 +3209,22 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-10-30T20:00:00+01:00",
+    "fecha_publicacion_ts": 1793386800
   },
   {
     "id": "0025",
@@ -3165,9 +3375,19 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-29T20:00:00+01:00",
     "fecha_publicacion_ts": 1793300400
@@ -3305,9 +3525,19 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-26T20:00:00+01:00",
     "fecha_publicacion_ts": 1793041200
@@ -3442,9 +3672,19 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-27T20:00:00+01:00",
     "fecha_publicacion_ts": 1793127600
@@ -3582,9 +3822,19 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-28T20:00:00+01:00",
     "fecha_publicacion_ts": 1793214000
@@ -3706,9 +3956,19 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-24T20:00:00+02:00",
     "fecha_publicacion_ts": 1792864800
@@ -3858,9 +4118,19 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-25T20:00:00+01:00",
     "fecha_publicacion_ts": 1792954800
@@ -3976,6 +4246,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -4128,6 +4408,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -4251,6 +4541,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -4403,6 +4703,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -4553,6 +4863,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -4696,6 +5016,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -4833,6 +5163,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -4956,6 +5296,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -5085,6 +5435,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -5216,6 +5576,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -5348,6 +5718,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -5480,6 +5860,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -5611,6 +6001,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -5758,6 +6158,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -5899,6 +6309,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -6039,6 +6459,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -6185,6 +6615,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -6325,6 +6765,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
@@ -6477,6 +6927,16 @@
         "voz": "Christopher (en-US-ChristopherNeural)",
         "calidad": "192 kbps, 48 kHz",
         "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
       }
     },
     "estado": "publicado",
