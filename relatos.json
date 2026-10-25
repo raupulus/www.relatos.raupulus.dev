@@ -1,12 +1,169 @@
 [
   {
+    "id": "0047",
+    "slug": "el-ladron-de-identidades",
+    "pagina_url": "relatos/0047-el-ladron-de-identidades.html",
+    "titulo": "El ladrón de identidades",
+    "sinopsis": "En un pueblo donde las tardes mueren temprano, Lucía descubre que su mejor amigo ha desaparecido sin dejar rastro y que nadie recuerda que haya existido jamás. Al investigar las huellas borradas, una figura de gabán oscuro empieza a rondar las calles robando vidas y memorias para burlar a la muerte.",
+    "categoria": "terror",
+    "categoria_nombre": "Terror",
+    "generos": [
+      "Terror",
+      "Misterio",
+      "Suspense"
+    ],
+    "palabras": 2336,
+    "lectura_min": 11,
+    "duracion_audio": "13:57",
+    "duracion_segundos": 837.92,
+    "youtube_id": "AhCxpQqxD_I",
+    "youtube_url": "https://www.youtube.com/watch?v=AhCxpQqxD_I",
+    "portada": "assets/images/portadas/0047-el-ladron-de-identidades.webp",
+    "personajes": [
+      {
+        "id": "0047-p1",
+        "nombre": "Lucía Ramos",
+        "rol": "protagonista.",
+        "rasgos": "diecisiete años, complexión ágil y menuda, cabello castaño recogido en una coleta baja, ojos pardos de mirada fija y observadora; viste una cazadora vaquera desgastada sobre una sudadera gris y zapatillas de lona oscura; carácter reservado, memoria minuciosa y una tenacidad silenciosa que roza la terquedad.",
+        "motivacion": "rescatar a su mejor amigo del olvido y demostrar que sus recuerdos compartidos son reales.",
+        "conflicto": "lucha contra la pérdida progresiva de sus propios recuerdos mientras una criatura milenaria intenta devorar su identidad.",
+        "avatar_cabeza": "assets/images/avatars/0047-personaje-01-lucia-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0047-personaje-01-lucia-cuerpo.webp"
+      },
+      {
+        "id": "0047-p2",
+        "nombre": "Marcos Soler",
+        "rol": "contrapunto y víctima desencadenante.",
+        "rasgos": "diecisiete años, complexión desgarbada y alta, cabello castaño claro revuelto, pecas tenues en el puente de la nariz y una cicatriz pequeña bajo la barbilla; viste un jersey de lana verde oliva con coderas y pantalones de pana marrón; carácter espontáneo, hábil arreglando radios viejas y de risa contagiosa.",
+        "motivacion": "recuperar su vida y el contacto con las personas que lo vieron crecer.",
+        "conflicto": "ha sido borrado de la memoria de sus padres y amigos, quedando reducido a un eco que se disuelve en el aire.",
+        "avatar_cabeza": "assets/images/avatars/0047-personaje-02-marcos-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0047-personaje-02-marcos-cuerpo.webp"
+      },
+      {
+        "id": "0047-p3",
+        "nombre": "Julián (El Ladrón de Rostros)",
+        "rol": "antagonista.",
+        "rasgos": "apariencia exterior de cuarenta y dos años, estatura alta, complexión enjuta y huesuda, piel cetrina que parece tensarse de manera artificial sobre los pómulos; ojos grises, apagados, sin brillo reflejado; viste un gabán largo de paño negro y guantes de cuero desgastados; habla con una calma gélida intercalando timbres vocales ajenos.",
+        "motivacion": "usurpar existencias enteras para burlar el paso de los siglos y sostener su cuerpo incorpóreo.",
+        "conflicto": "los recuerdos verdaderos compartidos entre dos personas vivas resquebrajan su tejido de identidades robadas.",
+        "avatar_cabeza": "assets/images/avatars/0047-personaje-03-julian-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0047-personaje-03-julian-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "El timbre ausente en la calle del Olmo",
+        "resumen": "El timbre de Marcos no suena en el cruce de las cuatro esquinas y su madre asegura no tener ningún hijo."
+      },
+      {
+        "tiempo": "02:21",
+        "segundos": 141,
+        "titulo": "El pupitre vacío y la tuerca de bronce",
+        "resumen": "El pupitre de Marcos desaparece del aula y Lucía encuentra una tuerca de bronce grabada en su bolsillo."
+      },
+      {
+        "tiempo": "04:12",
+        "segundos": 252,
+        "titulo": "La máscara bajo la farola de medianoche",
+        "resumen": "Una figura alta bajo la farola de medianoche muestra un rostro ondulante donde asoma por instantes la cara de Marcos."
+      },
+      {
+        "tiempo": "05:35",
+        "segundos": 335,
+        "titulo": "El caserón de la harina y los cuatro siglos",
+        "resumen": "Lucía encara a Julián en la vieja fábrica harinera y descubre cómo la realidad cose el vacío de sus víctimas."
+      },
+      {
+        "tiempo": "08:35",
+        "segundos": 515,
+        "titulo": "El membrillo de la abuela Carmen",
+        "resumen": "En casa de la abuela Carmen, Lucía lucha por rescatar el recuerdo del nieto antes de que el borrado sea irreversible."
+      },
+      {
+        "tiempo": "10:33",
+        "segundos": 633,
+        "titulo": "El estallido del humo y el regreso",
+        "resumen": "Un alarido resuena en el molino, la fotografía recupera el color y Marcos reaparece en el pueblo."
+      },
+      {
+        "tiempo": "12:13",
+        "segundos": 733,
+        "titulo": "La muchacha del vestido de flores",
+        "resumen": "Durante la cena familiar, Lucía descubre en un viejo álbum a otra víctima olvidada desde el verano de 1972."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0047-003-lucia-espera-bordillo-granito.webp",
+        "caption": "Ilustración de escena: Lucia espera bordillo granito",
+        "alt": "Escena oficial de El ladrón de identidades — Lucia espera bordillo granito"
+      },
+      {
+        "src": "assets/images/escenas/0047-023-pantalla-movil-conversaciones-borradas.webp",
+        "caption": "Ilustración de escena: Pantalla movil conversaciones borradas",
+        "alt": "Escena oficial de El ladrón de identidades — Pantalla movil conversaciones borradas"
+      },
+      {
+        "src": "assets/images/escenas/0047-044-lucia-replica-padres-vacios.webp",
+        "caption": "Ilustración de escena: Lucia replica padres vacios",
+        "alt": "Escena oficial de El ladrón de identidades — Lucia replica padres vacios"
+      },
+      {
+        "src": "assets/images/escenas/0047-064-chasquido-seco-quiebro-viga.webp",
+        "caption": "Ilustración de escena: Chasquido seco quiebro viga",
+        "alt": "Escena oficial de El ladrón de identidades — Chasquido seco quiebro viga"
+      },
+      {
+        "src": "assets/images/escenas/0047-084-chica-vestido-flores-atrapada-olvido.webp",
+        "caption": "Ilustración de escena: Chica vestido flores atrapada olvido",
+        "alt": "Escena oficial de El ladrón de identidades — Chica vestido flores atrapada olvido"
+      }
+    ],
+    "relato_raw": "El timbre de la bicicleta de Marcos sonaba siempre dos veces en el cruce de las cuatro esquinas: un tintineo corto y limpio que avisaba a Lucía para volver juntos a casa. Aquella tarde de noviembre, las campanas de la iglesia dieron las seis y cuarto sin que el camino devolviese un solo rumor de ruedas. Lucía esperó diez minutos sentada sobre el bordillo de granito, con las manos metidas en los bolsillos de la cazadora vaquera. El aire del atardecer mordía con fuerza y el cielo sobre los tejados de adobe se apagaba en un tono ceniza. Extrañada por el retraso de su amigo, cargó la mochila al hombro y subió la cuesta hacia la calle del Olmo.\n\nLa cancela de los Soler estaba entornada. Lucía cruzó el patio y llamó a la puerta de madera maciza. Al abrirse la hoja, apareció Elena con un trapo de cocina entre los dedos y el semblante sereno.\n\n—Buenas tardes, Elena. Venía a ver si Marcos estaba ya arriba. Llevo un rato esperándolo en el cruce.\n\nLa mujer la miró con una cortesía distante y educada, sin la calidez habitual con la que solía recibirla cada tarde.\n\n—¿A quién buscas, muchacha? —preguntó, ladeando la cabeza.\n\n—A Marcos. Su hijo.\n\nElena sonrió con extrañeza y negó despacio con la cabeza.\n\n—Te estás equivocando de casa, hija. Mi marido y yo vivimos solos desde que nos casamos. Nunca hemos tenido muchachos.\n\nA Lucía se le cortó la respiración de golpe. En el recibidor, el perchero de madera seguía en su sitio, pero la trenca verde de Marcos no estaba en su percha habitual. En el patio, donde por la mañana descansaba su bicicleta con el guardabarros torcido, solo había tres tiestos rotos cubiertos de musgo seco.\n\n—Elena, estuvimos merendando en esta cocina ayer mismo —insistió Lucía, dando un paso adelante con el pecho encogido—. Se le cayó la leche en la mesa y usted se rio mientras lo limpiaba.\n\n—No sé qué broma es esta —dijo la mujer, cerrando la puerta con gesto cansado—. Vuelve a tu casa antes de que caiga la niebla y tus padres se preocupen.\n\nEl cerrojo encajó por dentro con un chasquido metálico rotundo.\n\n* * *\n\nA la mañana siguiente, Lucía llegó temprano al instituto con la cabeza embotada tras una noche en vela repasando recuerdos. En el aula, el pupitre contiguo al suyo, donde Marcos acostumbraba a apoyar los codos y dibujar diagramas mecánicos en los márgenes, estaba ocupado por una pila de libros viejos desparejados. Cuando don Teodoro pasó la lista matinal, saltó de su apellido al siguiente sin detenerse.\n\n—¿Y Marcos Soler? —preguntó Lucía, poniéndose en pie de inmediato.\n\nEl profesor levantó la vista de sus fichas de cartulina.\n\n—¿Quién dices, Lucía?\n\n—Marcos. Se sienta a mi izquierda desde septiembre.\n\nDon Teodoro repasó las hojas con el dedo índice y negó con paciencia.\n\n—En este curso no hay nadie con ese apellido. Siéntate, por favor, y abre el libro por la página cuarenta.\n\nLucía miró a sus compañeros de clase, pero nadie pestañeó con complicidad; la observaban como a una extraña que desvaría. En el recreo corrió hacia el tablón del vestíbulo. En la foto del equipo de balonmano, entre el hombro de Mateo y el marco de madera, solo quedaba un espacio de pared enlucida. El hueco permanecía exacto, pero Marcos había desaparecido de la imagen como si jamás hubiese posado ante la cámara.\n\nEn su teléfono móvil tampoco quedaba rastro: las conversaciones se habían borrado y el número figuraba como inexistente. Desesperada, metió la mano en el bolsillo interior de la cazadora. Sus dedos tocaron algo sólido y frío: una tuerca de bronce hexagonal, limada a mano por las cuatro caras, con las iniciales «L» y «M» grabadas a punta de navaja. Marcos se la había regalado en agosto tras pulirla en el taller del herrero del pueblo. El objeto pesaba en su palma con la certeza rotunda de la materia viva y real.\n\n* * *\n\nLa niebla bajó del cerro al anochecer y cubrió las calles con una humedad pegajosa que apagaba cualquier ruido lejano. Desde la penumbra de su habitación, Lucía vigilaba la farola del cruce, cuyo cono amarillo zumbaba en el silencio desierto del pueblo.\n\nA las once y media escuchó unas pisadas lentas sobre los adoquines húmedos. Una figura alta con un gabán largo de paño negro y sombrero de fieltro calado sobre las cejas se detuvo frente a la cancela de los Soler.\n\nLucía contuvo el aliento pegando la frente al cristal helado. El hombre levantó despacio la cabeza y la luz le dio de lleno en la cara. Lo que vio le heló la sangre en las venas: su piel no parecía firme, sino que ondeaba como el agua sucia al recibir un golpe. Por un segundo fugaz, las facciones cetrinas de cuarenta años se suavizaron, la mandíbula se ensanchó y apareció la sonrisa torcida de Marcos, con su peca sobre el labio y la mirada que Lucía conocía de memoria. Fue apenas un latido; de inmediato, el rostro volvió a tensarse en una máscara madura, angulosa y huesuda.\n\nEl desconocido giró el cuello hacia la ventana de Lucía. La miró directamente con unos ojos grises desprovistos de brillo reflejado y curvó los labios en la misma mueca burlona que Marcos ponía al ganar una partida de cartas. Aquella sombra no había matado a su amigo: se lo había puesto encima como una prenda ajena para caminar entre los vivos.\n\n* * *\n\nEn cuanto la figura dobló la esquina, Lucía bajó a la calle a oscuras con una linterna en la mano. Siguió la silueta del gabán a distancia prudencial, pegándose a las tapias de piedra. El hombre caminaba sin volverse hasta que tomó el sendero de la vieja fábrica harinera, un caserón abandonado junto al cauce seco del río.\n\nLucía cruzó la puerta desvencijada del molino procurando esquivar los cascotes. El interior olía a cereal rancio, óxido y humedad profunda. En la nave central, sentado sobre un cajón de madera entre tolvas polvorientas, el hombre la esperaba con las manos enfundadas en guantes de cuero.\n\n—Tienes una obstinación poco común, Lucía —dijo con una voz extraña que superponía timbres diversos: la aspereza de un viejo, la cadencia de una mujer y el tono quebrado de un adolescente—. Casi nadie nota la ausencia cuando retiro una pieza. El mundo se acomoda al hueco de inmediato.\n\n—¿Dónde está Marcos? —exigió ella, enfocando la linterna a su pecho.\n\nEl hombre sonrió con una calma glacial.\n\n—Marcos sostiene mi pulso esta temporada. Este cuerpo necesita leña fresca para no volverse ceniza. Llevo cuatro siglos tomando una vida aquí y otra allá. Cuando arranco una existencia de cuajo, la realidad cose el roto para no desgarrarse. Nadie echa de menos lo que cree que jamás ha existido. Los padres duermen en paz creyendo que nunca concibieron y los amigos siguen su camino sin mirar atrás.\n\n—Sus padres están vacíos por dentro y tú lo sabes —replicó Lucía con rabia—. Y yo me acuerdo de él.\n\nEl ser se levantó con una soltura que desmentía sus años aparentes y avanzó dos pasos hacia ella.\n\n—Te acuerdas porque eres terca, pero ese recuerdo se gastará en pocos días. Primero olvidarás el tono exacto de su voz; luego, sus gestos cotidianos; al final pensarás que te lo inventaste para no estar sola. Y si insistes en no soltarlo, tendré que tomar tu rostro también.\n\nAlargó una mano enguantada hacia su frente. Al aproximarse, la piel de sus dedos tembló, adoptando la forma huesuda y juvenil de la mano de Marcos. Lucía, en lugar de retroceder, sacó la tuerca de bronce y la alzó con fuerza entre los dos.\n\n—¡Míralo bien! —gritó con la garganta apretada—. Tú puedes borrar la memoria de los demás, pero lo que hicimos juntos existe en el mundo real. ¡Él me dio esto con sus propias manos!\n\nEl ser vaciló y retiró el brazo con un espasmo brusco, como si el metal caliente le quemara la mirada. Durante un instante agónico, la cara de Marcos emergió bajo el sombrero en un grito mudo de socorro.\n\n—Una baratija no detiene el hambre —siseó el monstruo, jadeando al recuperar su aspecto cetrino—. Si nadie más sostiene ese peso contigo, tu recuerdo morirá antes del amanecer.\n\nLucía giró sobre sus talones y corrió hacia la salida sin mirar atrás.\n\n* * *\n\nLlegó a casa de su abuela Carmen con el pecho ardiendo por el esfuerzo. Aporreó la puerta de madera hasta que la anciana encendió la luz del zaguán y la hizo pasar, alarmada al ver a su nieta pálida y con la ropa salpicada de barro.\n\nLucía la llevó de la mano hasta la mesa camilla y sacó de su mochila una fotografía doblada por las esquinas: Marcos junto al cobertizo de leña de la abuela, con un jersey manchado de serrín y una azada en la mano. La imagen se veía lechosa, perdiendo el color como si se disolviera poco a poco sobre el papel.\n\n—Abuela, mírale con atención —suplicó Lucía, colocando la tuerca de bronce sobre la palma abierta de la anciana—. El muchacho que vino en julio cuando el vendaval levantó las tejas. Te ayudó toda la tarde a apilar los leños secos y le diste pan con dulce de membrillo y un vaso de agua fresca.\n\nCarmen miró la cartulina con los ojos entrecerrados y un desconcierto vacío en el rostro.\n\n—Hija, ese cobertizo lo arreglé yo sola con la ayuda del herrero...\n\n—¡No estuviste sola! Tenía diecisiete años y una cicatriz pequeña bajo la barbilla porque se cayó de la tapia del cura cuando éramos niños. Te llamó tía Carmen para sacarte una sonrisa cuando te enfadaste por las astillas. ¡Haz memoria, por favor! Si no lo recuerdas tú conmigo, esa cosa lo borrará del mundo para siempre.\n\nLa anciana guardó silencio. En la salita solo resonaba el péndulo del reloj de pared. Carmen bajó despacio la mirada hacia la mancha seca de membrillo en el borde de la fotografía y rozó el metal de la tuerca. Poco a poco, una chispa limpia de lucidez rasgó la bruma de sus pupilas.\n\n—Marcos... —susurró Carmen, cerrando los dedos sarmentosos con fuerza sobre la mano de su nieta—. El nieto de don Antonio el maestro. Tenía las manos llenas de arañazos de las zarzas. Claro que estuvo aquí... Se comió media barra de pan el condenado.\n\n* * *\n\nEn el mismo instante en que la anciana pronunció su nombre, un chasquido seco retumbó en la noche, semejante al quiebro de una viga maestra en un edificio viejo.\n\nA lo lejos, en la dirección de la harinera abandonada, un alarido desgarrador cruzó el pueblo: no era una voz humana, sino el bramido de muchas gargantas apagándose a la vez. Sobre la mesa camilla, la fotografía recuperó de golpe sus tonos vivos; las pecas sobre la nariz y la sonrisa franca de Marcos brillaron de nuevo sobre el papel con una nitidez perfecta.\n\nPor la ventana, Lucía vio elevarse sobre el tejado del molino una columna de humo negro que el viento de poniente desbarató en copos de ceniza fría.\n\nAl amanecer, la campana de la iglesia sonó con su toque alegre habitual. Lucía bajó apresurada por la cuesta de la calle del Olmo. En el patio de los Soler, la cancela de hierro estaba abierta de par en par y la bicicleta azul descansaba apoyada contra el muro, con la cadena recién engrasada goteando sobre la grava.\n\nElena abrazaba a su hijo en el quicio de la puerta entre sollozos desconcertados, como quien despierta de una pesadilla interminable de la que no logra recordar el argumento. Marcos, con su jersey verde oliva y el pelo revuelto, miraba a su alrededor con el aturdimiento de quien regresa de un viaje demasiado largo.\n\nAl ver a Lucía en el camino, Marcos sonrió y alzó la mano derecha.\n\n—Te he estado esperando en el cruce —dijo con la voz rasposa—. Creí que te habías olvidado de mí.\n\nLucía apretó la tuerca en su bolsillo y sintió que el aire volvía a entrarle en los pulmones sin dolor.\n\n—Nunca —respondió con una sonrisa temblorosa—. Ni aunque el pueblo entero se quede ciego.\n\n* * *\n\nAquella noche cenaron juntos en casa de la abuela Carmen para festejar el regreso del muchacho tras su supuesto extravío por el monte. Comieron sopa caliente y guiso de cordero, riendo con un alivio compartido que templaba la cocina frente a la escarcha exterior.\n\nMás tarde, mientras Marcos y su madre fregaban los cacharros entre bromas, Lucía se acercó al aparador de caoba y abrió el viejo álbum de tapas de terciopelo granate donde Carmen guardaba los recuerdos familiares y del pueblo desde principios de siglo.\n\nPasó las páginas amarillentas hasta una imagen panorámica tomada en la plaza mayor en el verano de mil novecientos setenta y dos. Una treintena de jóvenes posaban sonrientes en las escalinatas de la fuente, con ropas de fiesta y peinados de la época al sol del mediodía.\n\nEn la segunda fila, entre dos muchachos que miraban hacia lados opuestos, había una chica de pie con un vestido claro de flores diminutas. Miraba directamente a la cámara con una expresión quieta, solitaria y serena.\n\nLucía comprobó el reverso de la cartulina: no había ningún nombre escrito junto a su figura, mientras que todos los demás estaban rotulados con tinta azul. Llamó a su abuela y le señaló el rostro de la muchacha. Carmen se puso las gafas, observó la fotografía detenidamente y negó despacio con la cabeza.\n\n—Qué extraño —murmuró la anciana, acariciando el papel con el pulgar—. Conozco a todos los de esa quinta, pero a esta chica no la he visto en la vida. Debió de ser alguien de paso que vino a las fiestas y no volvió jamás.\n\nLucía sintió que un frío repentino le erizaba la piel de la nuca.\n\nLa joven del vestido de flores seguía en el centro de la cartulina, atrapada en el brillo del papel, esperando a alguien que ya nadie en el mundo recordaría jamás.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El timbre de la bicicleta de Marcos sonaba siempre dos veces en el cruce de las cuatro esquinas: un tintineo corto y limpio que avisaba a Lucía para volver juntos a casa. Aquella tarde de noviembre, las campanas de la iglesia dieron las seis y cuarto sin que el camino devolviese un solo rumor de ruedas. Lucía esperó diez minutos sentada sobre el bordillo de granito, con las manos metidas en los bolsillos de la cazadora vaquera. El aire del atardecer mordía con fuerza y el cielo sobre los tejados de adobe se apagaba en un tono ceniza. Extrañada por el retraso de su amigo, cargó la mochila al hombro y subió la cuesta hacia la calle del Olmo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La cancela de los Soler estaba entornada. Lucía cruzó el patio y llamó a la puerta de madera maciza. Al abrirse la hoja, apareció Elena con un trapo de cocina entre los dedos y el semblante sereno.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Buenas tardes, Elena. Venía a ver si Marcos estaba ya arriba. Llevo un rato esperándolo en el cruce.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La mujer la miró con una cortesía distante y educada, sin la calidez habitual con la que solía recibirla cada tarde.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿A quién buscas, muchacha? —preguntó, ladeando la cabeza.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—A Marcos. Su hijo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena sonrió con extrañeza y negó despacio con la cabeza.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Te estás equivocando de casa, hija. Mi marido y yo vivimos solos desde que nos casamos. Nunca hemos tenido muchachos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A Lucía se le cortó la respiración de golpe. En el recibidor, el perchero de madera seguía en su sitio, pero la trenca verde de Marcos no estaba en su percha habitual. En el patio, donde por la mañana descansaba su bicicleta con el guardabarros torcido, solo había tres tiestos rotos cubiertos de musgo seco.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Elena, estuvimos merendando en esta cocina ayer mismo —insistió Lucía, dando un paso adelante con el pecho encogido—. Se le cayó la leche en la mesa y usted se rio mientras lo limpiaba.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No sé qué broma es esta —dijo la mujer, cerrando la puerta con gesto cansado—. Vuelve a tu casa antes de que caiga la niebla y tus padres se preocupen.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0047-003-lucia-espera-bordillo-granito.webp\" alt=\"Escena oficial de El ladrón de identidades — Lucia espera bordillo granito\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Lucia espera bordillo granito</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El cerrojo encajó por dentro con un chasquido metálico rotundo.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A la mañana siguiente, Lucía llegó temprano al instituto con la cabeza embotada tras una noche en vela repasando recuerdos. En el aula, el pupitre contiguo al suyo, donde Marcos acostumbraba a apoyar los codos y dibujar diagramas mecánicos en los márgenes, estaba ocupado por una pila de libros viejos desparejados. Cuando don Teodoro pasó la lista matinal, saltó de su apellido al siguiente sin detenerse.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Y Marcos Soler? —preguntó Lucía, poniéndose en pie de inmediato.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El profesor levantó la vista de sus fichas de cartulina.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Quién dices, Lucía?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Marcos. Se sienta a mi izquierda desde septiembre.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Don Teodoro repasó las hojas con el dedo índice y negó con paciencia.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—En este curso no hay nadie con ese apellido. Siéntate, por favor, y abre el libro por la página cuarenta.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía miró a sus compañeros de clase, pero nadie pestañeó con complicidad; la observaban como a una extraña que desvaría. En el recreo corrió hacia el tablón del vestíbulo. En la foto del equipo de balonmano, entre el hombro de Mateo y el marco de madera, solo quedaba un espacio de pared enlucida. El hueco permanecía exacto, pero Marcos había desaparecido de la imagen como si jamás hubiese posado ante la cámara.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En su teléfono móvil tampoco quedaba rastro: las conversaciones se habían borrado y el número figuraba como inexistente. Desesperada, metió la mano en el bolsillo interior de la cazadora. Sus dedos tocaron algo sólido y frío: una tuerca de bronce hexagonal, limada a mano por las cuatro caras, con las iniciales «L» y «M» grabadas a punta de navaja. Marcos se la había regalado en agosto tras pulirla en el taller del herrero del pueblo. El objeto pesaba en su palma con la certeza rotunda de la materia viva y real.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0047-023-pantalla-movil-conversaciones-borradas.webp\" alt=\"Escena oficial de El ladrón de identidades — Pantalla movil conversaciones borradas\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Pantalla movil conversaciones borradas</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La niebla bajó del cerro al anochecer y cubrió las calles con una humedad pegajosa que apagaba cualquier ruido lejano. Desde la penumbra de su habitación, Lucía vigilaba la farola del cruce, cuyo cono amarillo zumbaba en el silencio desierto del pueblo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A las once y media escuchó unas pisadas lentas sobre los adoquines húmedos. Una figura alta con un gabán largo de paño negro y sombrero de fieltro calado sobre las cejas se detuvo frente a la cancela de los Soler.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía contuvo el aliento pegando la frente al cristal helado. El hombre levantó despacio la cabeza y la luz le dio de lleno en la cara. Lo que vio le heló la sangre en las venas: su piel no parecía firme, sino que ondeaba como el agua sucia al recibir un golpe. Por un segundo fugaz, las facciones cetrinas de cuarenta años se suavizaron, la mandíbula se ensanchó y apareció la sonrisa torcida de Marcos, con su peca sobre el labio y la mirada que Lucía conocía de memoria. Fue apenas un latido; de inmediato, el rostro volvió a tensarse en una máscara madura, angulosa y huesuda.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El desconocido giró el cuello hacia la ventana de Lucía. La miró directamente con unos ojos grises desprovistos de brillo reflejado y curvó los labios en la misma mueca burlona que Marcos ponía al ganar una partida de cartas. Aquella sombra no había matado a su amigo: se lo había puesto encima como una prenda ajena para caminar entre los vivos.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En cuanto la figura dobló la esquina, Lucía bajó a la calle a oscuras con una linterna en la mano. Siguió la silueta del gabán a distancia prudencial, pegándose a las tapias de piedra. El hombre caminaba sin volverse hasta que tomó el sendero de la vieja fábrica harinera, un caserón abandonado junto al cauce seco del río.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía cruzó la puerta desvencijada del molino procurando esquivar los cascotes. El interior olía a cereal rancio, óxido y humedad profunda. En la nave central, sentado sobre un cajón de madera entre tolvas polvorientas, el hombre la esperaba con las manos enfundadas en guantes de cuero.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Tienes una obstinación poco común, Lucía —dijo con una voz extraña que superponía timbres diversos: la aspereza de un viejo, la cadencia de una mujer y el tono quebrado de un adolescente—. Casi nadie nota la ausencia cuando retiro una pieza. El mundo se acomoda al hueco de inmediato.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Dónde está Marcos? —exigió ella, enfocando la linterna a su pecho.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El hombre sonrió con una calma glacial.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0047-044-lucia-replica-padres-vacios.webp\" alt=\"Escena oficial de El ladrón de identidades — Lucia replica padres vacios\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Lucia replica padres vacios</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Marcos sostiene mi pulso esta temporada. Este cuerpo necesita leña fresca para no volverse ceniza. Llevo cuatro siglos tomando una vida aquí y otra allá. Cuando arranco una existencia de cuajo, la realidad cose el roto para no desgarrarse. Nadie echa de menos lo que cree que jamás ha existido. Los padres duermen en paz creyendo que nunca concibieron y los amigos siguen su camino sin mirar atrás.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Sus padres están vacíos por dentro y tú lo sabes —replicó Lucía con rabia—. Y yo me acuerdo de él.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El ser se levantó con una soltura que desmentía sus años aparentes y avanzó dos pasos hacia ella.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Te acuerdas porque eres terca, pero ese recuerdo se gastará en pocos días. Primero olvidarás el tono exacto de su voz; luego, sus gestos cotidianos; al final pensarás que te lo inventaste para no estar sola. Y si insistes en no soltarlo, tendré que tomar tu rostro también.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Alargó una mano enguantada hacia su frente. Al aproximarse, la piel de sus dedos tembló, adoptando la forma huesuda y juvenil de la mano de Marcos. Lucía, en lugar de retroceder, sacó la tuerca de bronce y la alzó con fuerza entre los dos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Míralo bien! —gritó con la garganta apretada—. Tú puedes borrar la memoria de los demás, pero lo que hicimos juntos existe en el mundo real. ¡Él me dio esto con sus propias manos!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El ser vaciló y retiró el brazo con un espasmo brusco, como si el metal caliente le quemara la mirada. Durante un instante agónico, la cara de Marcos emergió bajo el sombrero en un grito mudo de socorro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Una baratija no detiene el hambre —siseó el monstruo, jadeando al recuperar su aspecto cetrino—. Si nadie más sostiene ese peso contigo, tu recuerdo morirá antes del amanecer.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía giró sobre sus talones y corrió hacia la salida sin mirar atrás.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Llegó a casa de su abuela Carmen con el pecho ardiendo por el esfuerzo. Aporreó la puerta de madera hasta que la anciana encendió la luz del zaguán y la hizo pasar, alarmada al ver a su nieta pálida y con la ropa salpicada de barro.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0047-064-chasquido-seco-quiebro-viga.webp\" alt=\"Escena oficial de El ladrón de identidades — Chasquido seco quiebro viga\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Chasquido seco quiebro viga</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía la llevó de la mano hasta la mesa camilla y sacó de su mochila una fotografía doblada por las esquinas: Marcos junto al cobertizo de leña de la abuela, con un jersey manchado de serrín y una azada en la mano. La imagen se veía lechosa, perdiendo el color como si se disolviera poco a poco sobre el papel.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Abuela, mírale con atención —suplicó Lucía, colocando la tuerca de bronce sobre la palma abierta de la anciana—. El muchacho que vino en julio cuando el vendaval levantó las tejas. Te ayudó toda la tarde a apilar los leños secos y le diste pan con dulce de membrillo y un vaso de agua fresca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen miró la cartulina con los ojos entrecerrados y un desconcierto vacío en el rostro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Hija, ese cobertizo lo arreglé yo sola con la ayuda del herrero...</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡No estuviste sola! Tenía diecisiete años y una cicatriz pequeña bajo la barbilla porque se cayó de la tapia del cura cuando éramos niños. Te llamó tía Carmen para sacarte una sonrisa cuando te enfadaste por las astillas. ¡Haz memoria, por favor! Si no lo recuerdas tú conmigo, esa cosa lo borrará del mundo para siempre.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La anciana guardó silencio. En la salita solo resonaba el péndulo del reloj de pared. Carmen bajó despacio la mirada hacia la mancha seca de membrillo en el borde de la fotografía y rozó el metal de la tuerca. Poco a poco, una chispa limpia de lucidez rasgó la bruma de sus pupilas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Marcos... —susurró Carmen, cerrando los dedos sarmentosos con fuerza sobre la mano de su nieta—. El nieto de don Antonio el maestro. Tenía las manos llenas de arañazos de las zarzas. Claro que estuvo aquí... Se comió media barra de pan el condenado.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el mismo instante en que la anciana pronunció su nombre, un chasquido seco retumbó en la noche, semejante al quiebro de una viga maestra en un edificio viejo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A lo lejos, en la dirección de la harinera abandonada, un alarido desgarrador cruzó el pueblo: no era una voz humana, sino el bramido de muchas gargantas apagándose a la vez. Sobre la mesa camilla, la fotografía recuperó de golpe sus tonos vivos; las pecas sobre la nariz y la sonrisa franca de Marcos brillaron de nuevo sobre el papel con una nitidez perfecta.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Por la ventana, Lucía vio elevarse sobre el tejado del molino una columna de humo negro que el viento de poniente desbarató en copos de ceniza fría.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0047-084-chica-vestido-flores-atrapada-olvido.webp\" alt=\"Escena oficial de El ladrón de identidades — Chica vestido flores atrapada olvido\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Chica vestido flores atrapada olvido</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al amanecer, la campana de la iglesia sonó con su toque alegre habitual. Lucía bajó apresurada por la cuesta de la calle del Olmo. En el patio de los Soler, la cancela de hierro estaba abierta de par en par y la bicicleta azul descansaba apoyada contra el muro, con la cadena recién engrasada goteando sobre la grava.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena abrazaba a su hijo en el quicio de la puerta entre sollozos desconcertados, como quien despierta de una pesadilla interminable de la que no logra recordar el argumento. Marcos, con su jersey verde oliva y el pelo revuelto, miraba a su alrededor con el aturdimiento de quien regresa de un viaje demasiado largo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al ver a Lucía en el camino, Marcos sonrió y alzó la mano derecha.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Te he estado esperando en el cruce —dijo con la voz rasposa—. Creí que te habías olvidado de mí.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía apretó la tuerca en su bolsillo y sintió que el aire volvía a entrarle en los pulmones sin dolor.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Nunca —respondió con una sonrisa temblorosa—. Ni aunque el pueblo entero se quede ciego.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Aquella noche cenaron juntos en casa de la abuela Carmen para festejar el regreso del muchacho tras su supuesto extravío por el monte. Comieron sopa caliente y guiso de cordero, riendo con un alivio compartido que templaba la cocina frente a la escarcha exterior.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Más tarde, mientras Marcos y su madre fregaban los cacharros entre bromas, Lucía se acercó al aparador de caoba y abrió el viejo álbum de tapas de terciopelo granate donde Carmen guardaba los recuerdos familiares y del pueblo desde principios de siglo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Pasó las páginas amarillentas hasta una imagen panorámica tomada en la plaza mayor en el verano de mil novecientos setenta y dos. Una treintena de jóvenes posaban sonrientes en las escalinatas de la fuente, con ropas de fiesta y peinados de la época al sol del mediodía.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En la segunda fila, entre dos muchachos que miraban hacia lados opuestos, había una chica de pie con un vestido claro de flores diminutas. Miraba directamente a la cámara con una expresión quieta, solitaria y serena.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía comprobó el reverso de la cartulina: no había ningún nombre escrito junto a su figura, mientras que todos los demás estaban rotulados con tinta azul. Llamó a su abuela y le señaló el rostro de la muchacha. Carmen se puso las gafas, observó la fotografía detenidamente y negó despacio con la cabeza.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Qué extraño —murmuró la anciana, acariciando el papel con el pulgar—. Conozco a todos los de esa quinta, pero a esta chica no la he visto en la vida. Debió de ser alguien de paso que vino a las fiestas y no volvió jamás.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Lucía sintió que un frío repentino le erizaba la piel de la nuca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La joven del vestido de flores seguía en el centro de la cartulina, atrapada en el brillo del papel, esperando a alguien que ya nadie en el mundo recordaría jamás.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false,
+    "fecha_publicacion": null,
+    "fecha_publicacion_ts": null
+  },
+  {
     "id": "0046",
     "slug": "la-app-de-los-tres-deseos",
     "pagina_url": "relatos/0046-la-app-de-los-tres-deseos.html",
     "titulo": "La app de los tres deseos",
     "sinopsis": "Durante una cena en un piso céntrico, tres amigos descubren un archivo móvil que promete conceder tres deseos a cada usuario sin pedir registro ni permisos. Lo que arranca como una broma tecnológica se transforma en pesadilla cuando descubren la ley oculta del algoritmo: cada beneficio extrae su coste vital de la persona más querida del entorno íntimo. Cuando la aplicación se vuelve viral en todo el planeta, el precio acumulado de miles de millones de ambiciones desata una catástrofe que sacude los cimientos mismos de la Tierra.",
-    "categoria": "scifi",
-    "categoria_nombre": "Ciencia Ficción",
+    "categoria": "terror",
+    "categoria_nombre": "Terror",
     "generos": [
       "Ciencia-Ficcion",
       "Suspense",
@@ -449,7 +606,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-05T20:00:00+01:00",
     "fecha_publicacion_ts": 1793905200
@@ -612,7 +769,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-12T20:00:00+01:00",
     "fecha_publicacion_ts": 1794510000
@@ -769,7 +926,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-04T20:00:00+01:00",
     "fecha_publicacion_ts": 1793818800
@@ -932,7 +1089,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-07T20:00:00+01:00",
     "fecha_publicacion_ts": 1794078000
@@ -1082,7 +1239,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-11T20:00:00+01:00",
     "fecha_publicacion_ts": 1794423600
@@ -1232,7 +1389,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-01T20:00:00+01:00",
     "fecha_publicacion_ts": 1793559600
@@ -1399,7 +1556,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-02T20:00:00+01:00",
     "fecha_publicacion_ts": 1793646000
@@ -1554,7 +1711,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-13T20:00:00+01:00",
     "fecha_publicacion_ts": 1794596400
@@ -1716,7 +1873,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-10T20:00:00+01:00",
     "fecha_publicacion_ts": 1794337200
@@ -1873,7 +2030,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-09T20:00:00+01:00",
     "fecha_publicacion_ts": 1794250800
@@ -2028,7 +2185,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-08T20:00:00+01:00",
     "fecha_publicacion_ts": 1794164400
@@ -2185,7 +2342,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-31T20:00:00+01:00",
     "fecha_publicacion_ts": 1793473200
@@ -2334,7 +2491,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-01T20:00:00+01:00",
     "fecha_publicacion_ts": 1793559600
@@ -2485,7 +2642,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-06T20:00:00+01:00",
     "fecha_publicacion_ts": 1793991600
@@ -2641,7 +2798,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-03T20:00:00+01:00",
     "fecha_publicacion_ts": 1793732400
@@ -2791,7 +2948,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-31T20:00:00+01:00",
     "fecha_publicacion_ts": 1793473200
@@ -2936,7 +3093,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-31T20:00:00+01:00",
     "fecha_publicacion_ts": 1793473200
@@ -3071,7 +3228,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-30T20:00:00+01:00",
     "fecha_publicacion_ts": 1793386800
@@ -3221,7 +3378,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-30T20:00:00+01:00",
     "fecha_publicacion_ts": 1793386800
@@ -3387,7 +3544,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-29T20:00:00+01:00",
     "fecha_publicacion_ts": 1793300400
@@ -3537,7 +3694,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-26T20:00:00+01:00",
     "fecha_publicacion_ts": 1793041200
@@ -3684,7 +3841,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-27T20:00:00+01:00",
     "fecha_publicacion_ts": 1793127600
@@ -3834,7 +3991,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-28T20:00:00+01:00",
     "fecha_publicacion_ts": 1793214000
@@ -3968,8 +4125,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-10-24T20:00:00+02:00",
     "fecha_publicacion_ts": 1792864800
   },
@@ -4130,8 +4287,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-10-25T20:00:00+01:00",
     "fecha_publicacion_ts": 1792954800
   },

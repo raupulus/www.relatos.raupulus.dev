@@ -282,6 +282,15 @@ CHAPTER_SUMMARIES = {
         495: "El reencuentro en la obra de Sagasta bajo el polvo y el cemento: una conversación franca sin cobardías ni rencores.",
         611: "La tarjeta de boda que llega por correo, el viaje solitario a Jávea y el cierre sereno de una herida del pasado.",
         737: "El retorno al piso de Malasaña, el brindis cómplice a oscuras y el rescate definitivo de una amistad madura y leal."
+    },
+    "0047": {
+        0: "El timbre de Marcos no suena en el cruce de las cuatro esquinas y su madre asegura no tener ningún hijo.",
+        141: "El pupitre de Marcos desaparece del aula y Lucía encuentra una tuerca de bronce grabada en su bolsillo.",
+        252: "Una figura alta bajo la farola de medianoche muestra un rostro ondulante donde asoma por instantes la cara de Marcos.",
+        335: "Lucía encara a Julián en la vieja fábrica harinera y descubre cómo la realidad cose el vacío de sus víctimas.",
+        515: "En casa de la abuela Carmen, Lucía lucha por rescatar el recuerdo del nieto antes de que el borrado sea irreversible.",
+        633: "Un alarido resuena en el molino, la fotografía recupera el color y Marcos reaparece en el pueblo.",
+        733: "Durante la cena familiar, Lucía descubre en un viejo álbum a otra víctima olvidada desde el verano de 1972."
     }
 }
 
