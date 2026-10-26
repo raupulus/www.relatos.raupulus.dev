@@ -90,12 +90,15 @@ if not HISTORIAS_SRC_DEFAULT:
 PUBLIC_DIR = os.path.join(BASE_DIR, "public")
 DATA_DIR = os.path.join(BASE_DIR, "data")
 RELATOS_DIR = os.path.join(PUBLIC_DIR, "relatos")
+MITOLOGIA_DIR = os.path.join(PUBLIC_DIR, "mitologia")
 PORTADAS_DIR = os.path.join(PUBLIC_DIR, "assets", "images", "portadas")
 AVATARS_DIR = os.path.join(PUBLIC_DIR, "assets", "images", "avatars")
 ESCENAS_DIR = os.path.join(PUBLIC_DIR, "assets", "images", "escenas")
 SRC_ASSETS_DIR = os.path.join(BASE_DIR, "src", "assets")
 ROOT_RELATOS_FILE = os.path.join(BASE_DIR, "relatos.json")
 DATA_FILE = os.path.join(DATA_DIR, "relatos.json")
+ROOT_MITOLOGIA_FILE = os.path.join(BASE_DIR, "mitologia.json")
+DATA_MITOLOGIA_FILE = os.path.join(DATA_DIR, "mitologia.json")
 
 
 def clean_narrative_text(txt, story_id=None, inline_images=None):
@@ -682,9 +685,71 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
     return relatos
 
 
-def generate_index_html(relatos):
+def sync_mitologia_data():
+    """Carga y sincroniza la base de datos independiente mitologia.json (con youtube_id + youtube_short_id)."""
+    os.makedirs(DATA_DIR, exist_ok=True)
+    os.makedirs(MITOLOGIA_DIR, exist_ok=True)
+    os.makedirs(os.path.join(PUBLIC_DIR, "data"), exist_ok=True)
+
+    mitologia = []
+    if os.path.exists(ROOT_MITOLOGIA_FILE):
+        try:
+            with open(ROOT_MITOLOGIA_FILE, 'r', encoding='utf-8') as f:
+                mitologia = json.load(f)
+        except Exception as e:
+            print(f"⚠️ Error al leer {ROOT_MITOLOGIA_FILE}: {e}")
+            mitologia = []
+    else:
+        with open(ROOT_MITOLOGIA_FILE, 'w', encoding='utf-8') as f:
+            json.dump([], f, ensure_ascii=False, indent=2)
+
+    # Ordenar por ID descendente (M0010, M0009... M0001)
+    mitologia = sorted(mitologia, key=lambda x: str(x.get("id", "")), reverse=True)
+
+    with open(DATA_MITOLOGIA_FILE, 'w', encoding='utf-8') as f:
+        json.dump(mitologia, f, ensure_ascii=False, indent=2)
+
+    pub_mit_file = os.path.join(PUBLIC_DIR, "data", "mitologia.json")
+    with open(pub_mit_file, 'w', encoding='utf-8') as f:
+        json.dump(mitologia, f, ensure_ascii=False, indent=2)
+
+    print(f"✅ Sincronizadas {len(mitologia)} historias mitológicas en {ROOT_MITOLOGIA_FILE}")
+    return mitologia
+
+
+def generate_index_html(relatos, mitologia=None):
     """Genera index.html optimizado para SEO: catálogo visual con tarjetas 16:9 que enlazan a cada página dedicada."""
+    if mitologia is None:
+        mitologia = []
     target_file = os.path.join(PUBLIC_DIR, "index.html")
+
+    mitologia_light = []
+    for m in mitologia:
+        is_pub_m = is_story_published(m)
+        mitologia_light.append({
+            "id": m["id"],
+            "slug": m["slug"],
+            "nombre": m.get("nombre", m.get("titulo", "")),
+            "epiteto": m.get("epiteto", ""),
+            "pagina_url": m.get("pagina_url", f"mitologia/{m['id']}-{m['slug']}.html"),
+            "titulo": m.get("titulo", m.get("titulo_completo", "")),
+            "sinopsis": m.get("sinopsis", ""),
+            "region": m.get("region", ""),
+            "tradicion": m.get("tradicion", ""),
+            "tradicion_nombre": m.get("tradicion_nombre", ""),
+            "grupo": m.get("grupo", ""),
+            "grupo_nombre": m.get("grupo_nombre", ""),
+            "palabras": m.get("palabras", 860),
+            "lectura_min": m.get("lectura_min", 4),
+            "duracion_audio": m.get("duracion_audio", m.get("duracion_video", "5:20")),
+            "portada": m.get("portada", "assets/images/og-raupulus-tales.webp"),
+            "youtube_id": m.get("youtube_id", ""),
+            "youtube_short_id": m.get("youtube_short_id", ""),
+            "estado": "publicado" if is_pub_m else m.get("estado", "programado"),
+            "publicado": is_pub_m,
+            "fecha_publicacion": m.get("fecha_publicacion"),
+            "fecha_publicacion_ts": m.get("fecha_publicacion_ts")
+        })
 
     # Serializar catálogo ligero para Alpine.js (sin inyectar el texto completo de los relatos en el index)
     catalogo_light = []
@@ -830,7 +895,11 @@ def generate_index_html(relatos):
 
       <!-- Navegación central -->
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-        <a href="#catalogo" class="text-text-main hover:text-text-bright hover:underline underline-offset-4 decoration-crimson transition">Catálogo</a>
+        <a href="#catalogo" class="text-text-main hover:text-text-bright hover:underline underline-offset-4 decoration-crimson transition">Relatos</a>
+        <a href="#mitologia" class="text-text-main hover:text-text-bright hover:underline underline-offset-4 decoration-crimson transition flex items-center gap-1">
+          <span class="text-crimson-glow">⚡</span>
+          <span>Mitología</span>
+        </a>
         <a href="#universo" class="text-text-main hover:text-text-bright hover:underline underline-offset-4 decoration-crimson transition">El Universo</a>
         <a href="LICENSE.md" class="text-text-muted hover:text-text-main transition text-xs">Propiedad & Derechos</a>
 
@@ -851,6 +920,7 @@ def generate_index_html(relatos):
     <!-- Menú desplegable móvil -->
     <div id="mobile-menu" x-show="menuAbierto" @click.away="menuAbierto = false" x-cloak class="md:hidden border-b border-border-subtle bg-obsidian-card px-4 py-4 space-y-3">
       <a href="#catalogo" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">Catálogo de Relatos</a>
+      <a href="#mitologia" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">⚡ Mitología & Leyendas</a>
       <a href="#universo" @click="menuAbierto = false" class="block text-sm text-text-main hover:text-text-bright">El Universo</a>
       <a href="LICENSE.md" class="block text-sm text-text-muted hover:text-text-main">Aviso de Propiedad Intelectual</a>
       <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="block text-sm font-semibold text-yt-red">YouTube Oficial ↗</a>
@@ -1009,6 +1079,99 @@ def generate_index_html(relatos):
 
     </section>
 
+    <!-- Sección Independiente: Mitología, Dioses y Leyendas del Mundo (mitologia.json) -->
+    <section id="mitologia" class="scroll-mt-20 py-16 border-t border-border-subtle bg-gradient-to-b from-obsidian via-obsidian-card/30 to-obsidian">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Cabecera de Mitología y Buscador -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <span class="text-xs uppercase font-bold tracking-wider text-crimson-glow flex items-center gap-1.5">
+              <span>⚡</span>
+              <span>Enciclopedia Audiovisual Paralela</span>
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-text-bright mt-1">Mitología, Dioses y Leyendas del Mundo</h2>
+            <p class="text-xs text-text-muted mt-1 max-w-2xl">
+              Crónicas épicas de más de 5 minutos y Shorts vinculados sobre los dioses, panteones, monstruos primordiales y leyendas de cada civilización, con texto completo e iconografía.
+            </p>
+          </div>
+
+          <div class="w-full md:w-80" x-show="mitologia.length > 0">
+            <label for="buscar-mitologia" class="sr-only">Buscar dios, panteón o civilización</label>
+            <div class="relative">
+              <input type="text" id="buscar-mitologia" x-model="busquedaMitologia" placeholder="Buscar dios, grupo o cultura..." 
+                     class="w-full min-h-[44px] px-4 py-2.5 pl-9 rounded-lg bg-obsidian-card border border-border-subtle text-xs text-text-main placeholder-text-muted focus:outline-none focus:border-damask focus:ring-1 focus:ring-crimson transition">
+              <svg class="w-4 h-4 text-text-muted absolute left-3 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filtros por Tradición / Civilización -->
+        <div x-show="mitologia.length > 0" class="flex flex-wrap items-center gap-2 mb-8 text-xs">
+          <button @click="filtroTradicion = 'todas'" :class="filtroTradicion === 'todas' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Todas (<span x-text="mitologia.length">0</span>)</button>
+          <button @click="filtroTradicion = 'egipto'" :class="filtroTradicion === 'egipto' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Egipto</button>
+          <button @click="filtroTradicion = 'nordica'" :class="filtroTradicion === 'nordica' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Nórdica (Æsir / Vanir)</button>
+          <button @click="filtroTradicion = 'grecia'" :class="filtroTradicion === 'grecia' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Grecia (Olimpo)</button>
+          <button @click="filtroTradicion = 'folclore'" :class="filtroTradicion === 'folclore' ? 'bg-crimson text-white border-crimson' : 'bg-obsidian-card text-text-muted border-border-subtle hover:text-white'" class="min-h-[44px] inline-flex items-center px-4 py-2 rounded-full border transition font-medium">Folclore & Críptidos</button>
+        </div>
+
+        <!-- Rejilla de Tarjetas Mitológicas -->
+        <div x-show="mitologia.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <template x-for="(m, idxM) in mitologiaFiltrada" :key="m.id">
+            <article class="group rounded-xl bg-obsidian-card border border-border-subtle hover:border-crimson transition-all duration-300 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-crimson/15">
+              <a :href="m.pagina_url" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle block" :aria-label="'Abrir historia mitológica ' + m.titulo">
+                <img :src="m.portada" :alt="'Portada oficial de ' + m.titulo" width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 z-20">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-crimson text-white" x-text="'⚡ ' + m.id"></span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-obsidian/85 text-text-bright backdrop-blur border border-border-subtle" x-text="m.grupo_nombre + ' (' + m.tradicion_nombre + ')'"></span>
+                </div>
+                <div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-obsidian/90 backdrop-blur px-2 py-0.5 rounded text-[11px] text-text-bright font-mono border border-border-subtle z-20">
+                  <span x-text="m.duracion_audio + ' min'"></span>
+                  <template x-if="m.youtube_short_id">
+                    <span class="text-damask-light font-sans font-bold">• +Short</span>
+                  </template>
+                </div>
+              </a>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between text-xs text-text-muted mb-2">
+                    <span>≈ <span x-text="m.palabras"></span> palabras</span>
+                    <span class="text-damask-light font-medium">ES • LAT • EN • PT • DE</span>
+                  </div>
+                  <h3 class="text-lg font-bold text-text-bright group-hover:text-damask-light transition-colors leading-snug">
+                    <a :href="m.pagina_url" x-text="m.titulo"></a>
+                  </h3>
+                  <p class="mt-2 text-xs text-text-muted line-clamp-3 leading-relaxed" x-text="m.sinopsis"></p>
+                </div>
+                <div class="mt-5 pt-4 border-t border-border-subtle flex items-center justify-between text-xs">
+                  <a :href="m.pagina_url" class="font-semibold text-crimson-glow group-hover:text-white flex items-center gap-1 transition">
+                    <span>Leer Historia & Ver Vídeo + Short</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </template>
+        </div>
+
+        <!-- Estado inicial cuando aún no hay vídeos mitológicos publicados -->
+        <div x-show="mitologia.length === 0" class="p-8 sm:p-10 rounded-2xl bg-obsidian-card border border-border-subtle text-center max-w-3xl mx-auto shadow-xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-crimson/20 border border-crimson/50 text-damask-light text-xs font-bold uppercase tracking-wider mb-3">
+            <span>⚡ Nueva Serie Paralela en Producción</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-2">Crónicas de Dioses, Seres Mitológicos y Folclore Mundial</h3>
+          <p class="text-xs sm:text-sm text-text-muted leading-relaxed mb-6">
+            Próximamente se estrenarán en esta sección independiente los episodios dedicados a cada deidad y criatura legendaria (Dioses del Olimpo, Dioses Æsir, Cosmogonía Egipcia y Críptidos), con su historia épica escrita al completo, vídeo de 5 minutos, YouTube Short enlazado y locución en los 5 idiomas.
+          </p>
+          <a href="{YT_SUBSCRIBE}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-yt-red hover:bg-red-700 text-white text-xs font-semibold transition shadow-lg">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <span>Suscribirme en YouTube para los estrenos mitológicos</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Sección El Universo Raupulus -->
     <section id="universo" class="scroll-mt-20 py-16 bg-obsidian-card/40 border-t border-border-subtle">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1089,11 +1252,15 @@ def generate_index_html(relatos):
   <script>
     function talesCatalog() {{
       const rawRelatos = {json.dumps(catalogo_light, ensure_ascii=False)};
+      const rawMitologia = {json.dumps(mitologia_light, ensure_ascii=False)};
 
       return {{
         relatos: rawRelatos,
+        mitologia: rawMitologia,
         filtroCategoria: 'todos',
         busqueda: '',
+        filtroTradicion: 'todas',
+        busquedaMitologia: '',
         menuAbierto: false,
         ahora: Date.now(),
 
@@ -1149,6 +1316,21 @@ def generate_index_html(relatos):
                                      (r.generos && r.generos.some(g => g.toLowerCase().includes(query)));
             
             return coincideCat && coincideBusqueda;
+          }});
+        }},
+
+        get mitologiaFiltrada() {{
+          return this.mitologia.filter(m => {{
+            const coincideTrad = (this.filtroTradicion === 'todas') ||
+                                 (m.tradicion === this.filtroTradicion) ||
+                                 (m.region === this.filtroTradicion);
+            const q = this.busquedaMitologia.trim().toLowerCase();
+            if (!q) return coincideTrad;
+            const coincideQ = (m.titulo || '').toLowerCase().includes(q) ||
+                              (m.sinopsis || '').toLowerCase().includes(q) ||
+                              (m.grupo_nombre || '').toLowerCase().includes(q) ||
+                              (m.tradicion_nombre || '').toLowerCase().includes(q);
+            return coincideTrad && coincideQ;
           }});
         }}
       }};
@@ -1558,8 +1740,207 @@ def generate_story_pages(relatos):
     print(f"✅ Generadas {len(relatos)} páginas individuales dedicadas en relatos/")
 
 
-def generate_sitemap_and_robots(relatos):
+def generate_mythology_pages(mitologia):
+    """Genera las páginas estáticas independientes public/mitologia/MNNNN-slug.html con vídeo 5m, Short y texto completo."""
+    os.makedirs(MITOLOGIA_DIR, exist_ok=True)
+    if not mitologia:
+        print("ℹ️  mitologia.json está vacío por ahora (0 páginas en mitologia/ hasta publicar M0001).")
+        return
+
+    for idx, m in enumerate(mitologia):
+        prev_m = mitologia[idx - 1] if idx > 0 else mitologia[-1]
+        next_m = mitologia[idx + 1] if idx < len(mitologia) - 1 else mitologia[0]
+        pagina_url = m.get("pagina_url", f"mitologia/{m['id']}-{m['slug']}.html")
+        page_file = os.path.join(PUBLIC_DIR, pagina_url)
+        titulo = m.get("titulo", m.get("titulo_completo", m.get("nombre", "")))
+        grupo_lbl = f"{m.get('grupo_nombre', 'Mitología')} ({m.get('tradicion_nombre', '')})".strip(" ()")
+        dur_audio = m.get("duracion_audio", m.get("duracion_video", "5:20"))
+        palabras = m.get("palabras", 860)
+        portada = m.get("portada", "assets/images/og-raupulus-tales.webp")
+        sinopsis = m.get("sinopsis", "")
+        meta_desc = truncate_meta_desc(sinopsis, 155)
+        yt_id = m.get("youtube_id", "")
+        yt_short_id = m.get("youtube_short_id", "")
+        yt_watch_url = f"https://www.youtube.com/watch?v={yt_id}" if yt_id else YT_CHANNEL
+        yt_short_url = f"https://www.youtube.com/shorts/{yt_short_id}" if yt_short_id else ""
+
+        # Capítulos / Actos
+        caps_html = []
+        for c in m.get("capitulos", []):
+            yt_link = f"<a href='{yt_watch_url}&t={c.get('segundos', 0)}s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>" if yt_id else ""
+            caps_html.append(f"""
+            <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+              <div class="flex items-start gap-3">
+                <span class="font-mono text-xs font-bold text-crimson-text px-2.5 py-1 rounded bg-obsidian border border-border-subtle">{c.get('tiempo', '00:00')}</span>
+                <div>
+                  <h4 class="text-sm font-bold text-text-bright">{c.get('titulo', '')}</h4>
+                  <p class="text-xs text-text-muted mt-1 leading-relaxed">{c.get('resumen', '')}</p>
+                </div>
+              </div>
+              {yt_link}
+            </div>
+            """)
+        caps_rendered = "\n".join(caps_html)
+
+        # Personajes / Avatares
+        chars_html = []
+        for p in m.get("personajes", []):
+            av_html = ""
+            if p.get("avatar_cabeza") or p.get("avatar_cuerpo"):
+                img1 = f"<div class='aspect-video rounded-lg bg-black overflow-hidden border border-border-subtle'><img src='../{p['avatar_cabeza']}' alt='Avatar cabeza de {p['nombre']}' width='1280' height='720' loading='lazy' class='w-full h-full object-cover'></div>" if p.get("avatar_cabeza") else ""
+                img2 = f"<div class='aspect-video rounded-lg bg-black overflow-hidden border border-border-subtle'><img src='../{p['avatar_cuerpo']}' alt='Avatar cuerpo de {p['nombre']}' width='1280' height='720' loading='lazy' class='w-full h-full object-cover'></div>" if p.get("avatar_cuerpo") else ""
+                av_html = f"<div class='grid grid-cols-2 gap-2 mb-3'>{img1}{img2}</div>"
+            chars_html.append(f"""
+            <div class="p-5 rounded-xl bg-obsidian-elevated border border-border-subtle flex flex-col justify-between">
+              <div>
+                {av_html}
+                <div class="flex items-center justify-between mb-2">
+                  <h4 class="text-base font-bold text-text-bright">{p.get('nombre', '')}</h4>
+                  <span class="text-xs px-2 py-0.5 rounded bg-plum/60 text-damask-light font-semibold">{p.get('rol', 'Deidad')}</span>
+                </div>
+                <div class="space-y-1.5 text-xs text-text-muted">
+                  <div><strong class="text-text-main">Iconografía:</strong> {p.get('rasgos', '')}</div>
+                </div>
+              </div>
+            </div>
+            """)
+        chars_rendered = "\n".join(chars_html)
+
+        # Conmutador de Vídeo Completo (5m) y YouTube Short (9:16)
+        short_toggle_btn = f"""
+        <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')"
+                class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition">
+          <span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span>
+        </button>
+        """ if yt_short_id else ""
+
+        short_player_block = f"""
+        <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
+          <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
+            <iframe src="https://www.youtube-nocookie.com/embed/{yt_short_id}?rel=0&modestbranding=1"
+                    title="Short: {titulo}"
+                    class="w-full h-full border-0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+          </div>
+          <a href="{yt_short_url}" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
+        </div>
+        """ if yt_short_id else ""
+
+        page_html = f"""<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{titulo} | Raupulus Tales</title>
+  <meta name="description" content="{meta_desc}">
+  <meta name="author" content="Raupulus Tales">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="ai" content="noai, noimageai">
+  <link rel="canonical" href="{SITE_URL}/{pagina_url}">
+  <meta property="og:site_name" content="Raupulus Tales">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{SITE_URL}/{pagina_url}">
+  <meta property="og:title" content="{titulo} — Raupulus Tales">
+  <meta property="og:description" content="{meta_desc}">
+  <meta property="og:image" content="{SITE_URL}/{portada}">
+  <link rel="icon" type="image/webp" href="../assets/images/favicon.webp">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+  <script defer src="../assets/js/alpine.min.js"></script>
+</head>
+<body class="bg-obsidian text-text-main min-h-screen flex flex-col selection:bg-crimson selection:text-white"
+      x-data="{{ vistaPestana: 'relato', modoVideo: 'largo' }}">
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-obsidian/90 border-b border-border-subtle">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="../index.html#mitologia" class="flex items-center gap-3 group">
+        <img src="../assets/images/logo-160.webp" alt="Raupulus Tales Logo" width="36" height="36" class="w-9 h-9 rounded-full border border-damask/50">
+        <div>
+          <span class="font-bold text-base text-text-bright tracking-wider">RAUPULUS</span>
+          <span class="text-[9px] tracking-widest text-crimson-glow uppercase block -mt-1 font-semibold">⚡ MITOLOGÍA & LEYENDAS</span>
+        </div>
+      </a>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="../index.html#mitologia" class="text-text-muted hover:text-white transition">← Catálogo Mitológico</a>
+        <a href="{YT_CHANNEL}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-yt-red text-white font-semibold">YouTube</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 py-10" id="main-content">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <header class="mb-6">
+        <div class="flex flex-wrap items-center gap-2 mb-2">
+          <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-crimson text-white">⚡ {m['id']}</span>
+          <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-plum/60 border border-damask/40 text-text-bright">{grupo_lbl}</span>
+          <span class="text-xs text-text-muted">• {palabras} palabras • {dur_audio} min narración</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-text-bright">{titulo}</h1>
+      </header>
+
+      <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
+        <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+          <iframe src="https://www.youtube-nocookie.com/embed/{yt_id}?rel=0&modestbranding=1"
+                  title="{titulo}"
+                  class="w-full h-full border-0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+        </div>
+        {short_player_block}
+        <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
+          <a href="{YT_SUBSCRIBE}" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
+            <span>Suscribirme en YouTube</span>
+          </a>
+          <div class="flex flex-wrap items-center gap-2">
+            {short_toggle_btn}
+            <a href="{yt_watch_url}" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
+              <span>Ver vídeo en YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div role="tablist" class="flex border-b border-border-subtle bg-obsidian-elevated px-4 text-xs font-semibold overflow-x-auto">
+          <button @click="vistaPestana = 'relato'" :class="vistaPestana === 'relato' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] px-5 py-2.5 border-b-2 transition whitespace-nowrap">📖 Historia Mitológica</button>
+          <button @click="vistaPestana = 'capitulos'" :class="vistaPestana === 'capitulos' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] px-5 py-2.5 border-b-2 transition whitespace-nowrap">🎬 Actos ({len(m.get('capitulos', []))})</button>
+          <button @click="vistaPestana = 'personajes'" :class="vistaPestana === 'personajes' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] px-5 py-2.5 border-b-2 transition whitespace-nowrap">⚡ Iconografía ({len(m.get('personajes', []))})</button>
+          <button @click="vistaPestana = 'locucion'" :class="vistaPestana === 'locucion' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] px-5 py-2.5 border-b-2 transition whitespace-nowrap">🎙️ Locución (5 Idiomas)</button>
+        </div>
+
+        <div class="p-6 md:p-10">
+          <article x-show="vistaPestana === 'relato'" class="max-w-prose mx-auto">
+            <div class="p-4 rounded-xl bg-obsidian-card border border-border-subtle mb-8 text-xs sm:text-sm text-text-muted italic leading-relaxed">
+              <strong class="text-damask-light not-italic block mb-1">Sinopsis Mitológica:</strong>
+              {sinopsis}
+            </div>
+            <div class="text-text-main">
+              {m.get('relato_html', '')}
+            </div>
+          </article>
+          <div x-show="vistaPestana === 'capitulos'" class="space-y-3">{caps_rendered}</div>
+          <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">{chars_rendered}</div>
+          <div x-show="vistaPestana === 'locucion'" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-obsidian-elevated border border-border-subtle"><strong class="text-text-bright block">🇪🇸 España (Álvaro)</strong><span class="text-text-muted text-[11px]">Vídeo 5m + Short</span></div>
+            <div class="p-3.5 rounded-xl bg-obsidian-elevated border border-border-subtle"><strong class="text-text-bright block">🌎 Latinoamérica (Alonso)</strong><span class="text-text-muted text-[11px]">Vídeo 5m + Short</span></div>
+            <div class="p-3.5 rounded-xl bg-obsidian-elevated border border-border-subtle"><strong class="text-text-bright block">🇺🇸 Inglés (Christopher)</strong><span class="text-text-muted text-[11px]">Vídeo 5m + Short</span></div>
+            <div class="p-3.5 rounded-xl bg-obsidian-elevated border border-border-subtle"><strong class="text-text-bright block">🇧🇷 Portugués (Antonio)</strong><span class="text-text-muted text-[11px]">Vídeo 5m + Short</span></div>
+            <div class="p-3.5 rounded-xl bg-obsidian-elevated border border-border-subtle"><strong class="text-text-bright block">🇩🇪 Alemán (Killian)</strong><span class="text-text-muted text-[11px]">Vídeo 5m + Short</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+"""
+        with open(page_file, 'w', encoding='utf-8') as pf:
+            pf.write(page_html)
+
+    print(f"✅ Generadas {len(mitologia)} páginas mitológicas dedicadas en mitologia/")
+
+
+def generate_sitemap_and_robots(relatos, mitologia=None):
     """Genera sitemap.xml y robots.txt oficiales."""
+    if mitologia is None:
+        mitologia = []
     now_date = datetime.now().strftime("%Y-%m-%d")
     sitemap_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -1568,6 +1949,9 @@ def generate_sitemap_and_robots(relatos):
     ]
     for r in relatos:
         sitemap_lines.append(f"  <url><loc>{SITE_URL}/{r['pagina_url']}</loc><lastmod>{now_date}</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>")
+    for m in mitologia:
+        pag_m = m.get("pagina_url", f"mitologia/{m['id']}-{m['slug']}.html")
+        sitemap_lines.append(f"  <url><loc>{SITE_URL}/{pag_m}</loc><lastmod>{now_date}</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>")
     sitemap_lines.append('</urlset>')
 
     with open(os.path.join(PUBLIC_DIR, "sitemap.xml"), 'w', encoding='utf-8') as f:
@@ -1646,9 +2030,11 @@ def compile_css():
 def main():
     print("🚀 Iniciando compilación de relatos.raupulus.dev...")
     relatos = sync_assets_and_data()
-    generate_index_html(relatos)
+    mitologia = sync_mitologia_data()
+    generate_index_html(relatos, mitologia)
     generate_story_pages(relatos)
-    generate_sitemap_and_robots(relatos)
+    generate_mythology_pages(mitologia)
+    generate_sitemap_and_robots(relatos, mitologia)
     compile_css()
     print("✨ Sitio web compilado y listo para desplegar al 100%.")
 
