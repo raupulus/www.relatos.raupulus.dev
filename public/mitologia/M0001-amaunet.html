@@ -49,41 +49,40 @@
       </header>
 
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
-        <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-          <iframe src="https://www.youtube-nocookie.com/embed/Trx75TFfYYA?rel=0&modestbranding=1"
-                  title="Amaunet: La Madre del Viento Invisible ⚡ Cosmogonía (Egipto)"
-                  class="w-full h-full border-0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-        </div>
         
-        <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
-          <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
-            <iframe src="https://www.youtube-nocookie.com/embed/i7nThsRILoo?rel=0&modestbranding=1"
-                    title="Short: Amaunet: La Madre del Viento Invisible ⚡ Cosmogonía (Egipto)"
-                    class="w-full h-full border-0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-          </div>
-          <a href="https://www.youtube.com/shorts/i7nThsRILoo" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
-        </div>
-        
+            <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+              <iframe src="https://www.youtube-nocookie.com/embed/Trx75TFfYYA?rel=0&modestbranding=1"
+                      title="Amaunet: La Madre del Viento Invisible ⚡ Cosmogonía (Egipto)"
+                      class="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+            </div>
+            
+            <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
+              <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
+                <iframe src="https://www.youtube-nocookie.com/embed/i7nThsRILoo?rel=0&modestbranding=1"
+                        title="Short: Amaunet: La Madre del Viento Invisible ⚡ Cosmogonía (Egipto)"
+                        class="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
+              <a href="https://www.youtube.com/shorts/i7nThsRILoo" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
+            </div>
+            
+            
         <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
           <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
             <span>Suscribirme en YouTube</span>
           </a>
           <div class="flex flex-wrap items-center gap-2">
-            
-        <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')"
-                class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition">
-          <span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span>
-        </button>
-        
+            <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')" class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition"><span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span></button>
             <a href="https://www.youtube.com/watch?v=Trx75TFfYYA" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
               <span>Ver vídeo en YouTube ↗</span>
             </a>
           </div>
         </div>
+        
+            
 
         <div role="tablist" class="flex border-b border-border-subtle bg-obsidian-elevated px-4 text-xs font-semibold overflow-x-auto">
           <button @click="vistaPestana = 'relato'" :class="vistaPestana === 'relato' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] px-5 py-2.5 border-b-2 transition whitespace-nowrap">📖 Historia Mitológica</button>
@@ -98,9 +97,81 @@
               <strong class="text-damask-light not-italic block mb-1">Sinopsis Mitológica:</strong>
               Mucho antes de que existieran las arenas de Egipto o el fuego del sol de Ra, en el océano negro de Nun reinaba la Ogdóada de Hermópolis. Entre las ocho fuerzas primordiales se alzaba Amaunet, «La Oculta», la diosa cobra que custodiaba el aliento invisible capaz de agitar el abismo y alumbrar el loto de la creación.
             </div>
+            
             <div class="text-text-main">
-              
+              <p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Amaunet, la diosa primordial de lo oculto, señora del aliento invisible que agitó el abismo antes del primer amanecer.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Mucho antes de que existieran las arenas de Egipto, las estrellas del firmamento o el fuego de los dioses solares, el universo entero era un océano negro, espeso y sin orillas. En aquella inmensidad anterior al tiempo, donde no había arriba ni abajo ni latía un solo corazón, reinaba la Ogdóada de Hermópolis: ocho divinidades primordiales agrupadas en cuatro parejas que encarnaban las fuerzas puras del caos. Entre las aguas inertes, la tiniebla absoluta y la infinitud sin forma, se alzaba la figura más enigmática de todas: Amaunet. Los antiguos escribas grabaron su nombre en los muros como *Jmn.t*, una palabra sagrada que significa literalmente «La Oculta», la faz femenina de aquello que existe pero jamás puede ser atrapado por los ojos. Con el cuerpo esbelto de una reina envuelta en lino blanco y la cabeza imponente de una cobra de escamas de esmeralda y oro, ella formaba junto a su consorte, Amón primordial, el corazón secreto del abismo.</p>
+
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../assets/images/escenas/M0001-004-ocho-divinidades.webp" alt="Las ocho fuerzas primordiales de la Ogdóada en las aguas negras del abismo de Hermópolis." width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              </div>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>Las ocho fuerzas primordiales de la Ogdóada en las aguas negras del abismo de Hermópolis.</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Para la sabiduría del Antiguo Egipto, Amaunet representaba un don luminoso e indispensable sin el cual la vida jamás habría brotado. Mientras las demás fuerzas del abismo eran peso muerto, agua estancada y oscuridad inmóvil, Amaunet custodiaba el milagro del movimiento invisible y de la potencialidad creadora. Ella era la brisa secreta que recorría la superficie de las aguas primordiales sin dejar huella, impidiendo que la materia quedara congelada en una muerte eterna. Por eso los sacerdotes de Hermópolis y de Tebas la veneraron como una madre protectora de todo lo que nace. En los Textos de los Sarcófagos y en los bajorrelieves del templo de Luxor, Amaunet extendía su amparo sobre los faraones en el día de su coronación, amamantando a los reyes con leche divina y soplando desde el norte el viento fresco que anunciaba la crecida fértil del Nilo. En su mano izquierda sostenía el *ankh*, la llave dorada del aliento vital, y en la derecha alzaba el cetro de papiro que prometía vigor, juventud y cobijo a las almas justas que cruzaban el umbral de la muerte.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../assets/images/escenas/M0001-011-bajorrelieves-luxor.webp" alt="Amaunet extendiendo su manto protector sobre el faraón durante la coronación en Lúxor." width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              </div>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>Amaunet extendiendo su manto protector sobre el faraón durante la coronación en Lúxor.</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Pero la señora de lo oculto poseía también un rostro sombrío e implacable que infundía un temor reverencial en los mortales. Al ser la dueña de lo que no tiene forma ni rostro visible, Amaunet encarnaba también el vértigo ante la nada y la amenaza perpetua de que el orden del mundo se disolviera de nuevo en el caos original. Su cabeza de cobra real con el capuchón desplegado advertía que el mismo aire invisible que sostiene los pulmones puede convertirse, en un parpadeo, en la asfixia silenciosa de las tumbas o en la tormenta ciega que sepulta reinos enteros bajo la arena. A diferencia de los dioses celestes que caminaban a plena luz, Amaunet jamás ofrecía consuelo directo ni mostraba sus designios: habitaba en la penumbra helada de los santuarios interiores, allí donde ningún hombre común osaba pronunciar su verdadero nombre por miedo a despertar a las serpientes del abismo. Su propia historia sufrió además el golpe de la ambición política: cuando Tebas se alzó como capital del imperio y Amón fue proclamado soberano supremo, los sacerdotes sustituyeron a la antigua diosa serpiente por una nueva esposa real, la poderosa Mut, desplazando a Amaunet hacia las sombras olvidadas del principio del mundo.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Sin embargo, ningún decreto de los templos pudo borrar su hazaña mayor en el mito de la creación de Hermópolis. Cuentan los himnos más antiguos que hubo un instante en que la eternidad inmóvil estuvo a punto de ahogarse en su propio silencio. Las aguas de Nun pesaban como plomo negro y las tinieblas de Kuk aplastaban cualquier chispa de existencia. Fue entonces cuando Amón y Amaunet unieron sus esencias invisibles en las profundidades del océano primordial. Amaunet irguió su cuello de escamas verdes, hizo brillar su diadema de oro en la negrura absoluta y dejó escapar un primer soplo largo, profundo y silencioso sobre la superficie dormida. Aquel viento sin origen agitó el abismo desde sus entrañas. Las corrientes oscuras chocaron entre sí, el lodo sagrado se arremolinó con violencia y de las aguas rotas emergió la primera tierra firme del cosmos: la Colina de las Llamas. Sobre aquel montículo humeante, vigilado por los ojos de ámbar de Amaunet y rodeado por las ocho fuerzas de la Ogdóada, se abrió el gran loto primordial del que brotó por primera vez el niño solar, desgarrando la noche eterna con un estallido de fuego dorado.</p>
+
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../assets/images/escenas/M0001-016-capuchon-cobra.webp" alt="El rostro sombrío de la señora del viento invisible con el capuchón de cobra desplegado." width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              </div>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>El rostro sombrío de la señora del viento invisible con el capuchón de cobra desplegado.</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            
+
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../assets/images/escenas/M0001-027-loto-solar.webp" alt="El nacimiento del niño solar emergiendo del loto primordial sobre la Colina de las Llamas." width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              </div>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>El nacimiento del niño solar emergiendo del loto primordial sobre la Colina de las Llamas.</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            
+
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../assets/images/escenas/M0001-023-primer-soplo.webp" alt="El primer soplo sagrado de Amaunet desgarrando la inmovilidad de las aguas primordiales." width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              </div>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>El primer soplo sagrado de Amaunet desgarrando la inmovilidad de las aguas primordiales.</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Cuando el sol ascendió al firmamento y los dioses jóvenes repartieron las leyes de Egipto, las ocho deidades del origen descendieron a las cavernas sagradas bajo Medinet Habu para dormir el sueño de los siglos. Pero los sabios del Nilo sabían que lo oculto nunca desaparece cuando llega la luz: simplemente se retira detrás del velo de las cosas visibles. Hoy, cuando el viento nocturno silba entre las columnas solitarias de Luxor y levanta una bruma dorada sobre las aguas del río, el eco de Amaunet recuerda al mundo que toda luz nació de un suspiro en la oscuridad, y que lo más poderoso del universo sigue siendo aquello que ningún ojo humano puede ver.</p>
             </div>
+            
           </article>
           <div x-show="vistaPestana === 'capitulos'" class="space-y-3">
             <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle flex flex-col sm:flex-row sm:items-start justify-between gap-3">

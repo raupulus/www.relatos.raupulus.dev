@@ -133,9 +133,9 @@ def clean_narrative_text(txt, story_id=None, inline_images=None):
         # Insertar de atrás hacia adelante para mantener los índices
         for pos, img_data in reversed(list(zip(positions, inline_images))):
             target_idx = min(pos, len(html_paragraphs) - 2)
-            caption = img_data.get('caption', '')
-            img_src = img_data.get('src', '')
-            alt_text = img_data.get('alt', 'Escena cinematográfica del relato')
+            caption = img_data.get('caption') or img_data.get('pie', '')
+            img_src = img_data.get('src') or img_data.get('archivo', '')
+            alt_text = img_data.get('alt') or caption or 'Escena cinematográfica del relato'
             
             fig_html = f"""
             <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
@@ -1763,11 +1763,13 @@ def generate_mythology_pages(mitologia):
         yt_short_id = m.get("youtube_short_id", "")
         yt_watch_url = f"https://www.youtube.com/watch?v={yt_id}" if yt_id else YT_CHANNEL
         yt_short_url = f"https://www.youtube.com/shorts/{yt_short_id}" if yt_short_id else ""
+        is_published = is_story_published(m)
+        fecha_formateada = format_spanish_schedule_date(m.get("fecha_publicacion"))
 
         # Capítulos / Actos
         caps_html = []
         for c in m.get("capitulos", []):
-            yt_link = f"<a href='{yt_watch_url}&t={c.get('segundos', 0)}s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>" if yt_id else ""
+            yt_link = f"<a href='{yt_watch_url}&t={c.get('segundos', 0)}s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>" if (yt_id and is_published) else ""
             caps_html.append(f"""
             <div class="p-4 rounded-xl bg-obsidian-elevated border border-border-subtle flex flex-col sm:flex-row sm:items-start justify-between gap-3">
               <div class="flex items-start gap-3">
@@ -1806,26 +1808,115 @@ def generate_mythology_pages(mitologia):
             """)
         chars_rendered = "\n".join(chars_html)
 
-        # Conmutador de Vídeo Completo (5m) y YouTube Short (9:16)
-        short_toggle_btn = f"""
-        <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')"
-                class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition">
-          <span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span>
-        </button>
-        """ if yt_short_id else ""
-
-        short_player_block = f"""
-        <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
-          <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
-            <iframe src="https://www.youtube-nocookie.com/embed/{yt_short_id}?rel=0&modestbranding=1"
-                    title="Short: {titulo}"
-                    class="w-full h-full border-0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+        # Barra de acciones de YouTube debajo del vídeo
+        video_actions = f"""
+        <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
+          <a href="{YT_SUBSCRIBE}" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
+            <span>Suscribirme en YouTube</span>
+          </a>
+          <div class="flex flex-wrap items-center gap-2">
+            {'<button @click="modoVideo = (modoVideo === \'largo\' ? \'short\' : \'largo\')" class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition"><span x-text="modoVideo === \'largo\' ? \'📱 Ver YouTube Short (45s)\' : \'🎬 Volver al Vídeo Completo (5m)\'">📱 Ver YouTube Short (45s)</span></button>' if (yt_short_id and is_published) else ''}
+            <a href="{yt_watch_url}" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
+              <span>Ver vídeo en YouTube ↗</span>
+            </a>
           </div>
-          <a href="{yt_short_url}" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
         </div>
-        """ if yt_short_id else ""
+        """
+
+        # Bloque de vídeo / Estreno
+        if is_published and yt_id:
+            short_player_block = f"""
+            <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
+              <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
+                <iframe src="https://www.youtube-nocookie.com/embed/{yt_short_id}?rel=0&modestbranding=1"
+                        title="Short: {titulo}"
+                        class="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
+              <a href="{yt_short_url}" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
+            </div>
+            """ if yt_short_id else ""
+
+            video_block = f"""
+            <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+              <iframe src="https://www.youtube-nocookie.com/embed/{yt_id}?rel=0&modestbranding=1"
+                      title="{titulo}"
+                      class="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+            </div>
+            {short_player_block}
+            {video_actions}
+            """
+        else:
+            video_block = f"""
+            <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+              <img src="../{portada}" alt="Portada de {titulo}" width="1280" height="720" class="w-full h-full object-cover opacity-60">
+              <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-6">
+                <span class="px-3.5 py-1.5 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5 mb-3">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                  Estreno Programado en YouTube
+                </span>
+                <div class="text-xl sm:text-2xl font-bold text-white max-w-lg mb-2">{titulo}</div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
+                  <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>Fecha de estreno: {fecha_formateada}</span>
+                </div>
+                <p class="text-xs text-text-muted max-w-md mb-5">El vídeo, el Short y la historia mitológica completa se desbloquearán en esta página el día del estreno oficial.</p>
+                <a href="{YT_SUBSCRIBE}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition shadow-lg flex items-center gap-2">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  Suscribirme para ver el estreno
+                </a>
+              </div>
+            </div>
+            {video_actions}
+            """
+
+        # Contenido del Relato: en estreno solo se muestra el primer párrafo para evitar plagio previo al lanzamiento
+        if is_published:
+            m_relato_html = m.get('relato_html')
+            if not m_relato_html and m.get('texto_relato'):
+                m_relato_html = clean_narrative_text(m['texto_relato'], story_id=m['id'], inline_images=m.get('escenas_intercaladas', []))
+            narrative_rendered = f"""
+            <div class="text-text-main">
+              {m_relato_html or ''}
+            </div>
+            """
+        else:
+            first_p = ""
+            if m.get('texto_relato'):
+                first_p = clean_narrative_text(m['texto_relato'].strip().split("\n\n")[0].strip())
+            if not first_p:
+                first_p = f'<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">{sinopsis}</p>'
+
+            narrative_rendered = f"""
+            <div class="text-text-main">
+              {first_p}
+            </div>
+
+            <!-- Panel de Contenido Protegido hasta Estreno -->
+            <div class="my-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-obsidian-card to-obsidian border border-damask/40 shadow-2xl text-center">
+              <div class="w-12 h-12 mx-auto rounded-full bg-crimson/20 border border-crimson/50 text-crimson-glow flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-crimson/30 border border-crimson/60 text-damask-light text-xs font-bold uppercase tracking-wider mb-2">Contenido Protegido • Próximo Estreno</span>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-2">La historia completa estará disponible en su estreno oficial</h3>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
+                <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <span>Estreno: {fecha_formateada}</span>
+              </div>
+              <p class="text-xs sm:text-sm text-text-muted max-w-lg mx-auto leading-relaxed mb-6">
+                Por protección estricta de derechos de autor y exclusividad editorial, el texto completo, el minutado de capítulos y las escenas cinematográficas se desbloquearán el día del estreno público en YouTube.
+              </p>
+              <div class="flex flex-wrap items-center justify-center gap-3">
+                <a href="{YT_SUBSCRIBE}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold text-xs transition shadow-lg flex items-center gap-2">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  <span>Suscribirme al canal de YouTube</span>
+                </a>
+              </div>
+            </div>
+            """
 
         page_html = f"""<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
@@ -1878,25 +1969,7 @@ def generate_mythology_pages(mitologia):
       </header>
 
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
-        <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-          <iframe src="https://www.youtube-nocookie.com/embed/{yt_id}?rel=0&modestbranding=1"
-                  title="{titulo}"
-                  class="w-full h-full border-0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-        </div>
-        {short_player_block}
-        <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
-          <a href="{YT_SUBSCRIBE}" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
-            <span>Suscribirme en YouTube</span>
-          </a>
-          <div class="flex flex-wrap items-center gap-2">
-            {short_toggle_btn}
-            <a href="{yt_watch_url}" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
-              <span>Ver vídeo en YouTube ↗</span>
-            </a>
-          </div>
-        </div>
+        {video_block}
 
         <div role="tablist" class="flex border-b border-border-subtle bg-obsidian-elevated px-4 text-xs font-semibold overflow-x-auto">
           <button @click="vistaPestana = 'relato'" :class="vistaPestana === 'relato' ? 'text-white border-crimson bg-obsidian' : 'text-text-muted hover:text-white border-transparent'" class="min-h-[44px] px-5 py-2.5 border-b-2 transition whitespace-nowrap">📖 Historia Mitológica</button>
@@ -1911,9 +1984,7 @@ def generate_mythology_pages(mitologia):
               <strong class="text-damask-light not-italic block mb-1">Sinopsis Mitológica:</strong>
               {sinopsis}
             </div>
-            <div class="text-text-main">
-              {m.get('relato_html', '')}
-            </div>
+            {narrative_rendered}
           </article>
           <div x-show="vistaPestana === 'capitulos'" class="space-y-3">{caps_rendered}</div>
           <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">{chars_rendered}</div>
