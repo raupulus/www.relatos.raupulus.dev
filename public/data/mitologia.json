@@ -1,5 +1,95 @@
 [
   {
+    "id": "M0003",
+    "slug": "ammon-libico",
+    "nombre": "Ammon líbico",
+    "epiteto": "El Señor del Oráculo de Siwa",
+    "titulo_completo": "Ammon líbico: El Señor del Oráculo de Siwa ⚡ Dioses Bereberes (África)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "bereber",
+    "tradicion_nombre": "Mitología Bereber",
+    "grupo": "dioses",
+    "grupo_nombre": "Dioses Bereberes",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 882,
+    "duracion_video": "05:31",
+    "duracion_audio": "05:31",
+    "duracion_short": "00:48",
+    "sinopsis": "En las profundidades del desierto del Sahara, en el remoto oasis de Siwa rodeado por un mar de dunas infinitas, reinaba Ammon líbico: la majestuosa divinidad bereber con cuernos de carnero sagrado que gobernaba los manantiales de agua dulce y las profecías del desierto. Venerado por caravanas nómadas y consultado por reyes legendarios, su santuario en lo alto de la roca de Aghurmi custodiaba la voz que reveló a Alejandro Magno su destino universal.",
+    "youtube_id": "jY9VEzc-kHw",
+    "youtube_short_id": "nr47XD42IS0",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=jY9VEzc-kHw",
+    "youtube_short_url": "https://www.youtube.com/shorts/nr47XD42IS0",
+    "portada": "assets/images/portadas/M0003-ammon-libico.webp",
+    "pagina_url": "mitologia/M0003-ammon-libico.html",
+    "personajes": [
+      {
+        "nombre": "Ammon líbico",
+        "rol": "Dios Oracular del Desierto y los Manantiales",
+        "rasgos": "Anciano majestuoso de porte recio y tez curtida, mirada de sabio milenario, barba espesa de hebras oscuras y plata, grandes cuernos enroscados de carnero sagrado con anillas de bronce, túnica sahariana cruda con fíbulas de bronce, manto índigo, báculo de acacia y copa de libaciones.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-ammon-libico-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-ammon-libico-cuerpo.webp"
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0003-006-manifestacion-ammon.webp",
+        "pie": "Manifestación de Ammon líbico como anciano sagrado con cuernos espiralados de carnero."
+      },
+      {
+        "archivo": "assets/images/escenas/M0003-009-fuente-del-sol.webp",
+        "pie": "La legendaria Fuente del Sol en el oasis de Siwa, manantial termal de aguas cristalinas."
+      },
+      {
+        "archivo": "assets/images/escenas/M0003-020-ejercito-cambises-tragado.webp",
+        "pie": "El ejército persa de Cambises sepultado por la descomunal tempestad de arena en Siwa."
+      },
+      {
+        "archivo": "assets/images/escenas/M0003-028-sacerdote-oraculo-alejandro.webp",
+        "pie": "El sacerdote de Aghurmi saludando a Alejandro Magno como hijo predilecto de Ammon."
+      },
+      {
+        "archivo": "assets/images/escenas/M0003-035-manto-arena-oraculo.webp",
+        "pie": "El silencio eterno del desierto cubriendo las ruinas milenarias del oráculo de Siwa."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Oasis Sagrado de Siwa",
+        "resumen": "En el confín del desierto sahariano, el oasis de Siwa emerge como refugio verde custodiado por Ammon líbico, el dios con cuernos de carnero sagrado."
+      },
+      {
+        "tiempo": "01:09",
+        "segundos": 69,
+        "titulo": "II. La Fuente del Sol y las Caravanas",
+        "resumen": "La bendición de las aguas termales y la voz oracular en Aghurmi guían a las caravanas nómadas y resuelven litigios sin derramar sangre."
+      },
+      {
+        "tiempo": "02:12",
+        "segundos": 132,
+        "titulo": "III. El Ejército Perdido de Cambises",
+        "resumen": "El rey persa Cambises envía cincuenta mil guerreros a destruir el santuario; Ammon desata el siroco abrasador y los sepulta para siempre."
+      },
+      {
+        "tiempo": "03:17",
+        "segundos": 197,
+        "titulo": "IV. La Revelación de Alejandro Magno",
+        "resumen": "Guiado por cuervos sagrados a través del desierto, el joven rey macedonio llega al oráculo y recibe la profecía de su soberanía universal."
+      },
+      {
+        "tiempo": "04:38",
+        "segundos": 278,
+        "titulo": "V. El Eco Eterno de las Arenas",
+        "resumen": "El ocaso del oráculo tras la caída de imperios y la memoria inmortal del dios carnero en las arenas y en su hijo, el dios toro Gurzil."
+      }
+    ],
+    "texto_relato": "Ammon líbico, el señor de los cuernos sagrados y la voz oracular que guio a las caravanas a través del mar de arena.\n\n* * *\n\nEn los confines más remotos del norte de África, donde el viento del Sahara esculpe un océano infinito de dunas doradas, se alza el legendario oasis de Siwa. En aquel refugio verde protegido por colinas de roca blanca y manantiales cristalinos, habitaba desde tiempos inmemoriales Ammon líbico: la deidad suprema de las antiguas tribus bereberes que poblaban los márgenes del desierto. Mucho antes de que los faraones de Egipto extendieran su influencia hacia el oeste o los navegantes griegos fundaran las colonias de Cirene, los pueblos nómadas ya reconocían su presencia soberana. Ammon se manifestaba como un anciano venerable de mirada penetrante y noble porte sahariano, de cuyas sienes brotaban los imponentes cuernos enroscados del carnero sagrado. Su trono no residía en palacios opulentos, sino en la cumbre rocosa de Aghurmi, allí donde el silencio del desierto se quebraba únicamente por el murmullo de las aguas termales y el susurro de las hojas de palma.\n\n* * *\n\nPara los viajeros y las caravanas que se aventuraban por las rutas mortales del Sahara, Ammon era el faro de vida y la esperanza encarnada. Su bendición alimentaba la célebre Fuente del Sol, un prodigioso manantial cuyas aguas brotaban gélidas durante el calor abrasador del mediodía y humeantes al caer la noche helada del desierto. El dios bendecía las palmeras datileras, aseguraba los pastos para los rebaños y enviaba brisas refrescantes que disipaban el sopor abrasador de las dunas. Pero su mayor don era el don de la profecía. Desde su santuario de piedra caliza, los sacerdotes interpretaban los balanceos de la barca sagrada de Ammon, respondiendo a las plegarias de reyes y pastores por igual. Su oráculo resolvía litigios tribales sin derramar una sola gota de sangre, restablecía el honor de las familias nómadas y revelaba las sendas seguras para cruzar las arenas ardientes. Aquel que recibía la bendición del dios con cabeza de carnero jamás perdía el rumbo ni perecía de sed bajo el sol inclemente.\n\n* * *\n\nSin embargo, la faz benevolente del dios guardaba un reverso despiadado y terrible. Ammon era también el guardián implacable del Sahara, y el mismo desierto que alimentaba con sus manantiales podía convertirse en una tumba colosal para los arrogantes que profanaban sus dominios. La leyenda más estremecedora de su ira tuvo lugar cuando el rey persa Cambises el Segundo, embriagado por la soberbia militar, envió un ejército de cincuenta mil soldados con la orden de incendiar el oráculo de Siwa y degollar a sus sacerdotes. La expedición se adentró en el mar de dunas sin respeto alguno por los ritos sagrados. Fue entonces cuando Ammon desató el siroco: una tempestad descomunal de viento abrasador que borró el sol en pleno día y alzó montañas de arena sobre las filas invasoras. En cuestión de horas, el ejército entero de Cambises fue tragado por las arenas sin dejar rastro de armaduras, caballos ni osamentas. Los desiertos de Ammon no perdonaban el sacrilegio; quien desafiaba su santuario quedaba sepultado en el olvido eterno.\n\n* * *\n\nEl episodio más célebre de su historia cósmica se produjo en el invierno del año trescientos treinta y uno antes de Cristo. El joven rey macedonio Alejandro Magno, tras conquistar Egipto, sintió la imperiosa necesidad de consultar al dios carnero para descubrir la verdad sobre su propio linaje. Acompañado por un selecto destacamento de jinetes, Alejandro se internó en el mar de arena. Tras días de marcha bajo un sol calcinante, los guías perdieron el rumbo y el agua de los odres se agotó, amenazando con una muerte segura a la expedición. Cuentan los cronistas que fue el propio Ammon quien intervino en el momento más desesperado: dos cuervos negros de graznido penetrante y dos serpientes del desierto aparecieron milagrosamente entre las crestas de arena para guiar a los macedonios hasta el oasis. Exhausto y cubierto de polvo, Alejandro ascendió finalmente a la roca de Aghurmi. Al cruzar el umbral del templo, el anciano sacerdote del oráculo salió a su encuentro y, poseído por el aliento de Ammon, lo saludó con voz solemne llamándolo hijo predilecto de la divinidad. En la penumbra del sanctasanctórum, a solas frente al icono coronado de carnero, Alejandro recibió una profecía íntima que jamás desveló a mortal alguno, pero que transformó para siempre su mirada y selló su destino como soberano del mundo.\n\n* * *\n\nCumplida su era de esplendor y tras ver pasar imperios, faraones y conquistadores, el culto a Ammon líbico se replegó lentamente hacia las sombras del pasado. El oráculo de Siwa enmudeció entre las ruinas desmoronadas de Aghurmi, pero la efigie del dios con cuernos de carnero perduró inmortal en las monedas de plata de Cirene y en la memoria del norte de África. Su hijo, el temible dios toro Gurzil, heredaría la furia guerrera de las tribus bereberes, mientras la silueta de Ammon permanecía grabada en la soledad de las rocas saharianas. Hoy, cuando las caravanas de camellos divisan el palmeral verde de Siwa tras jornadas interminables de polvo y calor, el viento que acaricia las palmeras susurra todavía el nombre sagrado del dios carnero, recordando al viajero que bajo el manto de arena del Sahara duerme la sabiduría eterna de quienes supieron escuchar la voz del desierto."
+  },
+  {
     "id": "M0002",
     "slug": "amon-primordial",
     "nombre": "Amón primordial",
