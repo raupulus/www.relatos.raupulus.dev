@@ -1,5 +1,162 @@
 [
   {
+    "id": "0049",
+    "slug": "el-hombre-que-nadie-recuerda",
+    "pagina_url": "relatos/0049-el-hombre-que-nadie-recuerda.html",
+    "titulo": "El hombre que nadie recuerda",
+    "sinopsis": "Al ordenar una caja de fotografías familiares, Clara descubre la figura de un desconocido de abrigo oscuro apostado en el fondo de sus recuerdos más felices. Lo que empieza como un enigma doméstico se transforma en una pesadilla cuando el intruso adopta el rostro de su antiguo profesor de instituto y borra cualquier rastro de su existencia en la memoria de los demás. Con el pánico de ver cómo el olvido comienza a devorar el rostro y la vida de su propio hermano, Clara emprende una batalla contrarreloj contra una sombra que no deja huellas en el mundo.",
+    "categoria": "terror",
+    "categoria_nombre": "Terror",
+    "generos": [
+      "Misterio",
+      "Terror",
+      "Suspense"
+    ],
+    "palabras": 2354,
+    "lectura_min": 11,
+    "duracion_audio": "15:27",
+    "duracion_segundos": 927.25,
+    "youtube_id": "2sXPij_iyi4",
+    "youtube_url": "https://www.youtube.com/watch?v=2sXPij_iyi4",
+    "portada": "assets/images/portadas/0049-el-hombre-que-nadie-recuerda.webp",
+    "personajes": [
+      {
+        "id": "0049-p1",
+        "nombre": "Clara Mendoza",
+        "rol": "protagonista, documentalista meticulosa y observadora.",
+        "rasgos": "veinticuatro años exactos, complexión delgada, estatura media, cabello castaño lacio a la altura de los hombros con flequillo recto despeinado, ojos castaños avellana con ojeras de concentración y un lunar diminuto sobre el pómulo derecho. Viste abrigo tres cuartos de paño gris marengo sobre jersey de cuello vuelto color teja, vaqueros rectos oscuros y botas de cuero negro desgastadas.",
+        "motivacion": "proteger la memoria de sus seres queridos, aferrarse a la verdad tangible de su pasado y evitar que la entidad usurpe su propia vida.",
+        "conflicto": "el aislamiento absoluto frente a una realidad que cambia a espaldas de todos y el terror de sentir cómo el olvido empieza a carcomer sus propios recuerdos más sagrados.",
+        "avatar_cabeza": "assets/images/avatars/0049-personaje-01-clara-mendoza-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0049-personaje-01-clara-mendoza-cuerpo.webp"
+      },
+      {
+        "id": "0049-p2",
+        "nombre": "El Hombre Sin Nombre (El Intruso)",
+        "rol": "antagonista sobrenatural, usurpador de existencias.",
+        "rasgos": "cuarenta y cinco años aparentes en su forma residual, complexión huesuda y encorvada, tez de una palidez terrosa y fría, ojos hundidos de un gris plomizo sin brillo y cabello ralo entrecano peinado hacia atrás. Viste un abrigo largo de paño marrón oscuro gastado en los puños. Su sonrisa es una línea horizontal rígida que no arruga la piel, y es capaz de adquirir las facciones y la voz de aquellos a quienes arrebata su lugar en el mundo.",
+        "motivacion": "alimentarse del vacío biográfico, sustituir a personas vivas y anclarse en la realidad física mediante el borrado absoluto de sus víctimas.",
+        "conflicto": "la resistencia obstinada de Clara, cuyos registros físicos y anotaciones escritas actúan como una barrera contra su asimilación total.",
+        "avatar_cabeza": "assets/images/avatars/0049-personaje-02-el-intruso-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0049-personaje-02-el-intruso-cuerpo.webp"
+      },
+      {
+        "id": "0049-p3",
+        "nombre": "Mateo Mendoza",
+        "rol": "contrapunto dramático y emocional, hermano menor de Clara.",
+        "rasgos": "veinte años exactos, complexión ágil y espigada, cabello castaño rizado y alborotado, ojos pardos vivos y una cicatriz pequeña en el arco de la ceja izquierda por una caída infantil en bicicleta. Viste sudadera con capucha verde oliva, vaqueros desgastados y zapatillas de lona blancas manchadas de grafito.",
+        "motivacion": "salir adelante en sus estudios de arquitectura, acompañar a su hermana y mantener la calidez de su complicidad cotidiana.",
+        "conflicto": "es el blanco directo de la entidad; su propia historia y su rastro material comienzan a desvanecerse de la realidad sin que él llegue a comprender el horror que lo engulle.",
+        "avatar_cabeza": "assets/images/avatars/0049-personaje-03-mateo-mendoza-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0049-personaje-03-mateo-mendoza-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "El hombre del abrigo marrón",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 00:00."
+      },
+      {
+        "tiempo": "02:08",
+        "segundos": 128,
+        "titulo": "La transfiguración de Don Anselmo",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 02:08."
+      },
+      {
+        "tiempo": "04:23",
+        "segundos": 263,
+        "titulo": "La desaparición de los archivos",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 04:23."
+      },
+      {
+        "tiempo": "06:41",
+        "segundos": 401,
+        "titulo": "La denuncia imposible",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 06:41."
+      },
+      {
+        "tiempo": "09:06",
+        "segundos": 546,
+        "titulo": "El cuarto sin memoria",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 09:06."
+      },
+      {
+        "tiempo": "11:07",
+        "segundos": 667,
+        "titulo": "La pared de los nombres",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 11:07."
+      },
+      {
+        "tiempo": "12:58",
+        "segundos": 778,
+        "titulo": "La última línea de tinta",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 12:58."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0049-003-foto-padre-limonada-mateo-broma.webp",
+        "caption": "Ilustración de escena: Foto padre limonada mateo broma",
+        "alt": "Escena oficial de El hombre que nadie recuerda — Foto padre limonada mateo broma"
+      },
+      {
+        "src": "assets/images/escenas/0049-024-secretaria-teclea-niega-cabeza.webp",
+        "caption": "Ilustración de escena: Secretaria teclea niega cabeza",
+        "alt": "Escena oficial de El hombre que nadie recuerda — Secretaria teclea niega cabeza"
+      },
+      {
+        "src": "assets/images/escenas/0049-046-clara-acera-viento-telefono.webp",
+        "caption": "Ilustración de escena: Clara acera viento telefono",
+        "alt": "Escena oficial de El hombre que nadie recuerda — Clara acera viento telefono"
+      },
+      {
+        "src": "assets/images/escenas/0049-068-nombres-victimas-muro-blanco.webp",
+        "caption": "Ilustración de escena: Nombres victimas muro blanco",
+        "alt": "Escena oficial de El hombre que nadie recuerda — Nombres victimas muro blanco"
+      },
+      {
+        "src": "assets/images/escenas/0049-089-clara-alza-vista-cruza-umbral.webp",
+        "caption": "Ilustración de escena: Clara alza vista cruza umbral",
+        "alt": "Escena oficial de El hombre que nadie recuerda — Clara alza vista cruza umbral"
+      }
+    ],
+    "relato_raw": "La fotografía olía a cartón húmedo y pegamento seco de hace quince años. Clara la sostuvo por los bordes para no rozar el brillo amarilleado del papel. En la imagen, una niña de diez años soplaba las velas de una tarta casera de fresas; a su izquierda, su padre sostenía una jarra de limonada y, a la derecha, su hermano Mateo alzaba dos dedos detrás de su cabeza para hacerle cuernos de broma. Todo encajaba en la memoria de aquel domingo de verano salvo la esquina superior derecha.\n\nAl fondo del porche, recortado contra la celosía blanca, un hombre permanecía de pie. Vestía un abrigo de paño marrón oscuro, una prenda pesada e invernal que desentonaba con el calor de julio. Miraba fijo al objetivo, con las manos metidas en los bolsillos y los labios apretados en una línea recta que simulaba una sonrisa.\n\nClara levantó la vista hacia la mesa del comedor, donde su madre desgranaba judías verdes.\n\n—Mamá, ¿quién era este hombre?\n\nMercedes tomó la copia con la yema de los dedos y entrecerró los ojos tras las gafas. Su expresión apenas varió; era la calma rutinaria de quien revisa la lista de la compra.\n\n—¿Qué hombre, Clara?\n\n—El que está detrás de la hiedra. Lleva un abrigo marrón.\n\nMercedes devolvió la foto sobre el hule y soltó una risita seca.\n\n—Será la sombra del toldo, hija. O algún vecino que se asomó a saludar. En esa fiesta solo estábamos nosotros cuatro y los tíos.\n\nClara guardó la fotografía en el bolsillo. Durante esa tarde, mientras la lluvia golpeaba los cristales del piso, revolvió las cajas del altillo. Encontró el mismo abrigo marrón en la foto de su primer día de instituto, asomando tras la verja; lo vio de nuevo en una instantánea de la playa de Llanes, sobre las rocas húmedas mientras Mateo aprendía a nadar. Siempre a la misma distancia. Siempre con la misma fijeza inerte en los ojos.\n\n* * *\n\nEl lunes amaneció frío y con niebla baja. Clara subió al autobús de la línea veintisiete en la glorieta. El vaho empañaba las ventanillas y el suelo de goma crujía bajo las suelas mojadas. Avanzó por el pasillo y se sentó en la cuarta fila.\n\nTres asientos más adelante viajaba un hombre con un abrigo largo de paño marrón gastado en los puños.\n\nClara sintió una punzada en la boca del estómago. Cuando el vehículo frenó ante un semáforo, el viajero giró la cabeza hacia el pasillo.\n\nA Clara se le cortó el aliento. Aquel rostro no era el del desconocido borroso de las fotografías. Era don Anselmo.\n\nDon Anselmo Garrido había sido su profesor de historia durante tres cursos en el instituto. Tenía la misma barbilla partida, la arruga entre las cejas y la pequeña insignia metálica prendida en la solapa izquierda. El corazón de Clara empezó a martillear desbocado.\n\nSe levantó del asiento y se apoyó en la barra contigua.\n\n—¿Don Anselmo? —murmuró.\n\nEl hombre alzó la mirada despacio. Sus ojos eran de un gris apagado y turbio, como agua estancada en un barreño de cinc. La miró a través de ella, como si Clara fuese una figura de humo.\n\n—Se equivoca de persona, señorita —respondió.\n\nLa voz sonó rasposa, pero el timbre pertenecía sin duda a don Anselmo. Antes de que Clara pudiera insistir, las puertas se abrieron con un bufido y el hombre descendió hacia la acera, perdiéndose entre la marea de paraguas.\n\nUna hora después, Clara entraba en la secretaría del instituto.\n\n—Busco el contacto de don Anselmo Garrido —dijo, apoyando las palmas sobre el mostrador—. Fui alumna suya.\n\nLa secretaria consultó el registro digital de nóminas y negó con la cabeza tras varios minutos de tecleo silencioso.\n\n—Aquí no figura nadie con ese nombre. Ni titular ni interino.\n\n—Dio clase aquí hasta hace dos años. Al final de la segunda planta.\n\n—Al final de esa planta solo está el cuarto de limpieza —zanjó la mujer—. Desde que se inauguró el edificio.\n\n* * *\n\nClara subió a la segunda planta. La puerta junto al aula de dibujo tenía un cartel de plástico: *Útiles de limpieza*. Dentro solo había cubos azules, fregonas escurridas y garrafas de lejía. Ni libros ni mapas históricos. Nada.\n\nRegresó a su apartamento con el estómago cerrado. Se sentó ante el ordenador y buscó el nombre del profesor en directorios, claustros y listas de oposiciones. Ni una sola mención administrativa. Aquel hombre se había disuelto del mundo sin dejar rastro.\n\nA las siete de la tarde, la llave giró en la cerradura de la entrada. Mateo entró cargado con su tubo portaplanos y una carpeta llena de croquis. Dejó las zapatillas mojadas junto al felpudo y se colgó la sudadera verde oliva en la percha.\n\n—Vaya día de perros en la escuela de arquitectura —dijo Mateo—. ¿Tienes café?\n\nClara lo miró desde la mesa. La presencia de su hermano, con su pelo rizado y esa cicatriz diminuta sobre la ceja izquierda que se hizo al caer de la bicicleta a los ocho años, le devolvió una brizna de aire a los pulmones.\n\n—Mateo, siéntate. Mira esto.\n\nClara colocó las fotografías sobre la mesa y le relató el encuentro del autobús y la visita al instituto. Mateo examinó las imágenes bajo la lámpara con el ceño fruncido.\n\n—Es raro el abrigo, Clara, pero igual estás saturada de estudiar. Hace semanas que duermes mal.\n\n—¡Fíjate en las fotos! Esta mañana tenía la cara de don Anselmo. ¿Te acuerdas de él? Vino a casa cuando terminé bachillerato.\n\nMateo clavó la vista en la esquina del papel. Un parpadeo lento veló sus ojos pardos.\n\n—Papá tiene muchos libros de historia… pero no me suena ningún Anselmo, Clara. De verdad que no me acuerdo.\n\nClara sintió que el suelo perdía firmeza. Tomó la fotografía de nuevo: la figura del abrigo marrón parecía haber ganado nitidez sobre el papel satinado, mientras que los contornos de sus padres y de Mateo lucían ahora ligeramente más pálidos, como si la tinta original se evaporase bajo la luz.\n\n* * *\n\nEl martes por la mañana, Clara se presentó en la comisaría de distrito. Tras esperar en una sala con olor a tabaco frío, un subinspector la atendió tras una mampara de metacrilato rayado.\n\n—Quiero denunciar una usurpación de identidad y una desaparición sistemática —comenzó Clara, extendiendo las fotografías—. Hay un individuo que se apropia de la vida de personas concretas. Cuando lo hace, todo el mundo olvida que existieron.\n\nEl agente examinó los papeles con desgana.\n\n—Necesito un nombre, dos apellidos y un documento de identidad.\n\n—Don Anselmo Garrido. Era profesor en la calle Ibiza.\n\nEl policía tecleó los datos en el terminal. La pantalla zumbó sin arrojar resultados.\n\n—No consta en el censo actual ni en el histórico. Sin datos comprobables ni un familiar directo, no puedo abrir diligencias.\n\n—¡Nadie puede denunciarlo porque nadie se acuerda de él! —suplicó Clara—. Si borra la memoria de los demás, nadie viene a comisaría.\n\nEl agente suspiró con frialdad y le devolvió los papeles.\n\n—Váyase a casa, señorita. Si vuelve a montar un escándalo tendré que multarla por alteración del orden.\n\nClara salió a la calle con las manos heladas. Con una angustia que le cerraba la garganta, sacó el teléfono y marcó el número fijo de sus padres para escuchar la voz de su hermano.\n\nEl tono sonó cuatro veces antes de que su madre descolgara.\n\n—¿Mamá? ¿Está Mateo en casa? No me responde al móvil.\n\nAl otro lado se hizo una pausa densa, un silencio blanco que sonó más aterrador que cualquier alarma.\n\n—¿Quién dices, Clara?\n\n—Mateo. Tu hijo. Mi hermano.\n\nMercedes dejó escapar una risita desconcertada.\n\n—Hija, qué bromas tienes. Sabes bien que siempre quise tener otro crío después de ti, pero nunca llegó. Has sido hija única toda la vida.\n\nA Clara se le cayó el teléfono sobre la acera. La pantalla se partió en una telaraña de cristal. No se detuvo a recogerlo; echó a correr hacia la casa familiar con los pulmones ardiendo y las lágrimas frías en las mejillas.\n\n* * *\n\nSubió los cuatro pisos de la escalera comunitaria sin esperar al ascensor. Metió la llave en la cerradura y empujó la puerta de golpe.\n\n—¡Mateo! —gritó, cruzando el recibidor.\n\nSus padres estaban en el salón viendo la televisión. Su padre la miró sorprendido, con el mando suspendido en el aire.\n\nClara corrió por el pasillo hasta la segunda puerta a la derecha: la habitación de su hermano. Empujó la hoja de madera.\n\nEl cuarto no tenía la cama nido de Mateo, ni sus planos de arquitectura sobre el escritorio, ni sus pósteres en la pared. En su lugar había una tabla de planchar plegada, tres cajas de mantas y una hilera de trajes viejos colgados en fundas de plástico negro. El polvo cubría el suelo como si nadie hubiese vivido allí en diez años.\n\nClara cayó de rodillas sobre la alfombra.\n\n—¿Dónde están sus cosas? —sollozó, clavando las uñas en el tejido—. Papá, ¿dónde habéis puesto sus maquetas? La cicatriz de la ceja... cuando se cayó en el parque...\n\nSu padre se acercó despacio, con las manos abiertas y una compasión sincera y asustada en la mirada.\n\n—Clara, nos estás asustando. En este cuarto solo guardamos los trastos de la abuela. Ven a sentarte, vamos a llamar a un médico.\n\nClara se levantó de un salto, eludió los brazos de su padre y huyó escaleras abajo hacia el portal.\n\nSe detuvo ante el espejo del vestíbulo. Cerró los ojos con fuerza para retener el rostro de su hermano. Trató de reconstruir sus facciones en la penumbra de su memoria. Y entonces sintió el verdadero abismo: la forma exacta de la nariz de Mateo se le escapaba entre los dedos. Quiso recordar el timbre de su risa y solo halló un eco plano y hueco, como el crujido de hojas secas pisoteadas en un sendero.\n\nEl hombre del abrigo marrón ya no estaba solo en las fotos. El olvido había colonizado su propia cabeza.\n\n* * *\n\nClara se encerró en su apartamento. Echó los tres cerrojos y arrastró la cómoda del pasillo hasta bloquear la puerta principal. Bajó las persianas a cal y canto, dejando la casa en una penumbra rota únicamente por la lámpara del escritorio.\n\nHabía comprado en la papelería cuatro paquetes de rotuladores negros de punta gruesa indeleble.\n\nComenzó por la pared del cabecero de la cama. Escribió con trazos rápidos, hundiendo la fibra sobre el yeso blanco hasta que la muñeca le ardió:\n\n*DON ANSELMO GARRIDO. Profesor de historia. Ojos castaños. Insignia de bronce en la solapa.*\n\nDebajo anotó los nombres de otros rostros que creyó vislumbrar en las fotos familiares: tenderos, vecinos del barrio, siluetas desvanecidas. Y en el centro de la pared norte, con letras de más de un palmo de altura, trazó el nombre de su hermano:\n\n*MATEO MENDOZA. Veinte años. Mi hermano pequeño. Estudiante de arquitectura. Manchas de grafito en los nudillos. Sudadera verde oliva. Cicatriz en la ceja izquierda por una caída de bicicleta a los ocho años. Le gustaba el café cargado con dos cucharadas de azúcar.*\n\nRellenó cada centímetro de pared con recuerdos tangibles: las tardes de lluvia jugando a las cartas, el viaje a la playa de Llanes, la música que sonaba en su cuarto cuando dibujaba de noche. La tinta negra cubrió el yeso como una hiedra apretada, un escudo de grafito y memoria contra la noche que avanzaba implacable.\n\nAgotada, con las yemas de los dedos tiznadas de negro y el olor químico de los rotuladores en la garganta, Clara se dejó caer sobre la alfombra a los pies de la cama. Abrazó sus rodillas y mantuvo la mirada fija en las letras de la pared hasta que los párpados se le cerraron por completo.\n\n* * *\n\nUn rayo de luz grisácea se filtró entre las rendijas de la persiana.\n\nClara despertó con un sobresalto y el corazón latiéndole en la boca. El silencio en el apartamento era absoluto.\n\nSe incorporó apoyándose en la pared. Parpadeó para acostumbrar los ojos a la penumbra matinal y contempló los muros de su dormitorio.\n\nLas palabras seguían allí. Los nombres de don Anselmo y de Mateo destacaban en la penumbra como cicatrices sobre la cal viva. Clara soltó un suspiro trémulo. No lo había soñado; la memoria resistía.\n\nPero al bajar la vista hacia la parte inferior del muro, junto al zócalo de madera y justo debajo de la última línea que describía la risa de su hermano, Clara se quedó petrificada.\n\nHabía una nueva frase escrita con rotulador negro. La tinta estaba fresca, reluciente y húmeda bajo la tenue luz del amanecer. Los trazos tenían las mismas curvas alargadas, la misma inclinación a la derecha y la misma presión que su propia mano. Era su letra.\n\nLa línea decía:\n\n*CLARA MENDOZA. Veinticuatro años. Desaparición: veintiséis de octubre.*\n\nLa fecha de hoy.\n\nDesde el pasillo exterior, al otro lado de la cómoda que bloqueaba la entrada, llegó el crujido seco y pausado de una pisada sobre la tarima de madera.\n\nClara no gritó. Comprendió con una lucidez atroz que el intruso no venía a matarla; venía a ocupar su ropa, a sentarse en su mesa y a borrar su paso por el mundo para que su familia y sus amigos siguieran desayunando sin saber jamás que una muchacha de veinticuatro años llamada Clara había respirado a su lado.\n\nEl pomo de latón de la puerta del dormitorio empezó a girar despacio, milímetro a milímetro.\n\nCon los dedos rígidos por el espanto, Clara arrancó la última hoja de su cuaderno de notas sobre el escritorio. Apoyó el rotulador contra el papel y escribió una única frase con un pulso desesperado:\n\n«Si estás leyendo esto, significa que todavía no me ha encontrado».\n\nDobló el papel en cuatro pliegues apretados y lo introdujo en la rendija oscura que separaba el zócalo de la pared, empujándolo con la uña hasta que quedó oculto en el hueco del ladrillo.\n\nLa puerta crujió al ceder bajo una presión lenta y silenciosa. La sombra larga de un abrigo marrón se derramó sobre el suelo de la habitación. Clara alzó la vista y no apartó los ojos de la figura que cruzaba el umbral.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La fotografía olía a cartón húmedo y pegamento seco de hace quince años. Clara la sostuvo por los bordes para no rozar el brillo amarilleado del papel. En la imagen, una niña de diez años soplaba las velas de una tarta casera de fresas; a su izquierda, su padre sostenía una jarra de limonada y, a la derecha, su hermano Mateo alzaba dos dedos detrás de su cabeza para hacerle cuernos de broma. Todo encajaba en la memoria de aquel domingo de verano salvo la esquina superior derecha.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al fondo del porche, recortado contra la celosía blanca, un hombre permanecía de pie. Vestía un abrigo de paño marrón oscuro, una prenda pesada e invernal que desentonaba con el calor de julio. Miraba fijo al objetivo, con las manos metidas en los bolsillos y los labios apretados en una línea recta que simulaba una sonrisa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara levantó la vista hacia la mesa del comedor, donde su madre desgranaba judías verdes.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Mamá, ¿quién era este hombre?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Mercedes tomó la copia con la yema de los dedos y entrecerró los ojos tras las gafas. Su expresión apenas varió; era la calma rutinaria de quien revisa la lista de la compra.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Qué hombre, Clara?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—El que está detrás de la hiedra. Lleva un abrigo marrón.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Mercedes devolvió la foto sobre el hule y soltó una risita seca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Será la sombra del toldo, hija. O algún vecino que se asomó a saludar. En esa fiesta solo estábamos nosotros cuatro y los tíos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara guardó la fotografía en el bolsillo. Durante esa tarde, mientras la lluvia golpeaba los cristales del piso, revolvió las cajas del altillo. Encontró el mismo abrigo marrón en la foto de su primer día de instituto, asomando tras la verja; lo vio de nuevo en una instantánea de la playa de Llanes, sobre las rocas húmedas mientras Mateo aprendía a nadar. Siempre a la misma distancia. Siempre con la misma fijeza inerte en los ojos.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El lunes amaneció frío y con niebla baja. Clara subió al autobús de la línea veintisiete en la glorieta. El vaho empañaba las ventanillas y el suelo de goma crujía bajo las suelas mojadas. Avanzó por el pasillo y se sentó en la cuarta fila.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Tres asientos más adelante viajaba un hombre con un abrigo largo de paño marrón gastado en los puños.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara sintió una punzada en la boca del estómago. Cuando el vehículo frenó ante un semáforo, el viajero giró la cabeza hacia el pasillo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A Clara se le cortó el aliento. Aquel rostro no era el del desconocido borroso de las fotografías. Era don Anselmo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Don Anselmo Garrido había sido su profesor de historia durante tres cursos en el instituto. Tenía la misma barbilla partida, la arruga entre las cejas y la pequeña insignia metálica prendida en la solapa izquierda. El corazón de Clara empezó a martillear desbocado.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0049-003-foto-padre-limonada-mateo-broma.webp\" alt=\"Escena oficial de El hombre que nadie recuerda — Foto padre limonada mateo broma\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Foto padre limonada mateo broma</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Se levantó del asiento y se apoyó en la barra contigua.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Don Anselmo? —murmuró.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El hombre alzó la mirada despacio. Sus ojos eran de un gris apagado y turbio, como agua estancada en un barreño de cinc. La miró a través de ella, como si Clara fuese una figura de humo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Se equivoca de persona, señorita —respondió.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La voz sonó rasposa, pero el timbre pertenecía sin duda a don Anselmo. Antes de que Clara pudiera insistir, las puertas se abrieron con un bufido y el hombre descendió hacia la acera, perdiéndose entre la marea de paraguas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Una hora después, Clara entraba en la secretaría del instituto.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Busco el contacto de don Anselmo Garrido —dijo, apoyando las palmas sobre el mostrador—. Fui alumna suya.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La secretaria consultó el registro digital de nóminas y negó con la cabeza tras varios minutos de tecleo silencioso.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Aquí no figura nadie con ese nombre. Ni titular ni interino.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Dio clase aquí hasta hace dos años. Al final de la segunda planta.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Al final de esa planta solo está el cuarto de limpieza —zanjó la mujer—. Desde que se inauguró el edificio.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara subió a la segunda planta. La puerta junto al aula de dibujo tenía un cartel de plástico: *Útiles de limpieza*. Dentro solo había cubos azules, fregonas escurridas y garrafas de lejía. Ni libros ni mapas históricos. Nada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Regresó a su apartamento con el estómago cerrado. Se sentó ante el ordenador y buscó el nombre del profesor en directorios, claustros y listas de oposiciones. Ni una sola mención administrativa. Aquel hombre se había disuelto del mundo sin dejar rastro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A las siete de la tarde, la llave giró en la cerradura de la entrada. Mateo entró cargado con su tubo portaplanos y una carpeta llena de croquis. Dejó las zapatillas mojadas junto al felpudo y se colgó la sudadera verde oliva en la percha.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Vaya día de perros en la escuela de arquitectura —dijo Mateo—. ¿Tienes café?</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0049-024-secretaria-teclea-niega-cabeza.webp\" alt=\"Escena oficial de El hombre que nadie recuerda — Secretaria teclea niega cabeza\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Secretaria teclea niega cabeza</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara lo miró desde la mesa. La presencia de su hermano, con su pelo rizado y esa cicatriz diminuta sobre la ceja izquierda que se hizo al caer de la bicicleta a los ocho años, le devolvió una brizna de aire a los pulmones.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Mateo, siéntate. Mira esto.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara colocó las fotografías sobre la mesa y le relató el encuentro del autobús y la visita al instituto. Mateo examinó las imágenes bajo la lámpara con el ceño fruncido.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Es raro el abrigo, Clara, pero igual estás saturada de estudiar. Hace semanas que duermes mal.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Fíjate en las fotos! Esta mañana tenía la cara de don Anselmo. ¿Te acuerdas de él? Vino a casa cuando terminé bachillerato.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Mateo clavó la vista en la esquina del papel. Un parpadeo lento veló sus ojos pardos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Papá tiene muchos libros de historia… pero no me suena ningún Anselmo, Clara. De verdad que no me acuerdo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara sintió que el suelo perdía firmeza. Tomó la fotografía de nuevo: la figura del abrigo marrón parecía haber ganado nitidez sobre el papel satinado, mientras que los contornos de sus padres y de Mateo lucían ahora ligeramente más pálidos, como si la tinta original se evaporase bajo la luz.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El martes por la mañana, Clara se presentó en la comisaría de distrito. Tras esperar en una sala con olor a tabaco frío, un subinspector la atendió tras una mampara de metacrilato rayado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Quiero denunciar una usurpación de identidad y una desaparición sistemática —comenzó Clara, extendiendo las fotografías—. Hay un individuo que se apropia de la vida de personas concretas. Cuando lo hace, todo el mundo olvida que existieron.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El agente examinó los papeles con desgana.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Necesito un nombre, dos apellidos y un documento de identidad.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Don Anselmo Garrido. Era profesor en la calle Ibiza.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El policía tecleó los datos en el terminal. La pantalla zumbó sin arrojar resultados.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No consta en el censo actual ni en el histórico. Sin datos comprobables ni un familiar directo, no puedo abrir diligencias.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0049-046-clara-acera-viento-telefono.webp\" alt=\"Escena oficial de El hombre que nadie recuerda — Clara acera viento telefono\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Clara acera viento telefono</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Nadie puede denunciarlo porque nadie se acuerda de él! —suplicó Clara—. Si borra la memoria de los demás, nadie viene a comisaría.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El agente suspiró con frialdad y le devolvió los papeles.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Váyase a casa, señorita. Si vuelve a montar un escándalo tendré que multarla por alteración del orden.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara salió a la calle con las manos heladas. Con una angustia que le cerraba la garganta, sacó el teléfono y marcó el número fijo de sus padres para escuchar la voz de su hermano.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El tono sonó cuatro veces antes de que su madre descolgara.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Mamá? ¿Está Mateo en casa? No me responde al móvil.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al otro lado se hizo una pausa densa, un silencio blanco que sonó más aterrador que cualquier alarma.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Quién dices, Clara?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Mateo. Tu hijo. Mi hermano.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Mercedes dejó escapar una risita desconcertada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Hija, qué bromas tienes. Sabes bien que siempre quise tener otro crío después de ti, pero nunca llegó. Has sido hija única toda la vida.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A Clara se le cayó el teléfono sobre la acera. La pantalla se partió en una telaraña de cristal. No se detuvo a recogerlo; echó a correr hacia la casa familiar con los pulmones ardiendo y las lágrimas frías en las mejillas.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Subió los cuatro pisos de la escalera comunitaria sin esperar al ascensor. Metió la llave en la cerradura y empujó la puerta de golpe.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Mateo! —gritó, cruzando el recibidor.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sus padres estaban en el salón viendo la televisión. Su padre la miró sorprendido, con el mando suspendido en el aire.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0049-068-nombres-victimas-muro-blanco.webp\" alt=\"Escena oficial de El hombre que nadie recuerda — Nombres victimas muro blanco\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Nombres victimas muro blanco</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara corrió por el pasillo hasta la segunda puerta a la derecha: la habitación de su hermano. Empujó la hoja de madera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El cuarto no tenía la cama nido de Mateo, ni sus planos de arquitectura sobre el escritorio, ni sus pósteres en la pared. En su lugar había una tabla de planchar plegada, tres cajas de mantas y una hilera de trajes viejos colgados en fundas de plástico negro. El polvo cubría el suelo como si nadie hubiese vivido allí en diez años.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara cayó de rodillas sobre la alfombra.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Dónde están sus cosas? —sollozó, clavando las uñas en el tejido—. Papá, ¿dónde habéis puesto sus maquetas? La cicatriz de la ceja... cuando se cayó en el parque...</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Su padre se acercó despacio, con las manos abiertas y una compasión sincera y asustada en la mirada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Clara, nos estás asustando. En este cuarto solo guardamos los trastos de la abuela. Ven a sentarte, vamos a llamar a un médico.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara se levantó de un salto, eludió los brazos de su padre y huyó escaleras abajo hacia el portal.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Se detuvo ante el espejo del vestíbulo. Cerró los ojos con fuerza para retener el rostro de su hermano. Trató de reconstruir sus facciones en la penumbra de su memoria. Y entonces sintió el verdadero abismo: la forma exacta de la nariz de Mateo se le escapaba entre los dedos. Quiso recordar el timbre de su risa y solo halló un eco plano y hueco, como el crujido de hojas secas pisoteadas en un sendero.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El hombre del abrigo marrón ya no estaba solo en las fotos. El olvido había colonizado su propia cabeza.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara se encerró en su apartamento. Echó los tres cerrojos y arrastró la cómoda del pasillo hasta bloquear la puerta principal. Bajó las persianas a cal y canto, dejando la casa en una penumbra rota únicamente por la lámpara del escritorio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Había comprado en la papelería cuatro paquetes de rotuladores negros de punta gruesa indeleble.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Comenzó por la pared del cabecero de la cama. Escribió con trazos rápidos, hundiendo la fibra sobre el yeso blanco hasta que la muñeca le ardió:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">*DON ANSELMO GARRIDO. Profesor de historia. Ojos castaños. Insignia de bronce en la solapa.*</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Debajo anotó los nombres de otros rostros que creyó vislumbrar en las fotos familiares: tenderos, vecinos del barrio, siluetas desvanecidas. Y en el centro de la pared norte, con letras de más de un palmo de altura, trazó el nombre de su hermano:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">*MATEO MENDOZA. Veinte años. Mi hermano pequeño. Estudiante de arquitectura. Manchas de grafito en los nudillos. Sudadera verde oliva. Cicatriz en la ceja izquierda por una caída de bicicleta a los ocho años. Le gustaba el café cargado con dos cucharadas de azúcar.*</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0049-089-clara-alza-vista-cruza-umbral.webp\" alt=\"Escena oficial de El hombre que nadie recuerda — Clara alza vista cruza umbral\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Clara alza vista cruza umbral</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Rellenó cada centímetro de pared con recuerdos tangibles: las tardes de lluvia jugando a las cartas, el viaje a la playa de Llanes, la música que sonaba en su cuarto cuando dibujaba de noche. La tinta negra cubrió el yeso como una hiedra apretada, un escudo de grafito y memoria contra la noche que avanzaba implacable.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Agotada, con las yemas de los dedos tiznadas de negro y el olor químico de los rotuladores en la garganta, Clara se dejó caer sobre la alfombra a los pies de la cama. Abrazó sus rodillas y mantuvo la mirada fija en las letras de la pared hasta que los párpados se le cerraron por completo.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Un rayo de luz grisácea se filtró entre las rendijas de la persiana.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara despertó con un sobresalto y el corazón latiéndole en la boca. El silencio en el apartamento era absoluto.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Se incorporó apoyándose en la pared. Parpadeó para acostumbrar los ojos a la penumbra matinal y contempló los muros de su dormitorio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Las palabras seguían allí. Los nombres de don Anselmo y de Mateo destacaban en la penumbra como cicatrices sobre la cal viva. Clara soltó un suspiro trémulo. No lo había soñado; la memoria resistía.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Pero al bajar la vista hacia la parte inferior del muro, junto al zócalo de madera y justo debajo de la última línea que describía la risa de su hermano, Clara se quedó petrificada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Había una nueva frase escrita con rotulador negro. La tinta estaba fresca, reluciente y húmeda bajo la tenue luz del amanecer. Los trazos tenían las mismas curvas alargadas, la misma inclinación a la derecha y la misma presión que su propia mano. Era su letra.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La línea decía:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">*CLARA MENDOZA. Veinticuatro años. Desaparición: veintiséis de octubre.*</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La fecha de hoy.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Desde el pasillo exterior, al otro lado de la cómoda que bloqueaba la entrada, llegó el crujido seco y pausado de una pisada sobre la tarima de madera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Clara no gritó. Comprendió con una lucidez atroz que el intruso no venía a matarla; venía a ocupar su ropa, a sentarse en su mesa y a borrar su paso por el mundo para que su familia y sus amigos siguieran desayunando sin saber jamás que una muchacha de veinticuatro años llamada Clara había respirado a su lado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El pomo de latón de la puerta del dormitorio empezó a girar despacio, milímetro a milímetro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Con los dedos rígidos por el espanto, Clara arrancó la última hoja de su cuaderno de notas sobre el escritorio. Apoyó el rotulador contra el papel y escribió una única frase con un pulso desesperado:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">«Si estás leyendo esto, significa que todavía no me ha encontrado».</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Dobló el papel en cuatro pliegues apretados y lo introdujo en la rendija oscura que separaba el zócalo de la pared, empujándolo con la uña hasta que quedó oculto en el hueco del ladrillo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La puerta crujió al ceder bajo una presión lenta y silenciosa. La sombra larga de un abrigo marrón se derramó sobre el suelo de la habitación. Clara alzó la vista y no apartó los ojos de la figura que cruzaba el umbral.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false,
+    "fecha_publicacion": null,
+    "fecha_publicacion_ts": null
+  },
+  {
     "id": "0048",
     "slug": "el-reflejo-equivocado",
     "pagina_url": "relatos/0048-el-reflejo-equivocado.html",
@@ -757,7 +914,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-05T20:00:00+01:00",
     "fecha_publicacion_ts": 1793905200
@@ -920,7 +1077,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-12T20:00:00+01:00",
     "fecha_publicacion_ts": 1794510000
@@ -1077,7 +1234,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-04T20:00:00+01:00",
     "fecha_publicacion_ts": 1793818800
@@ -1240,7 +1397,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-07T20:00:00+01:00",
     "fecha_publicacion_ts": 1794078000
@@ -1390,7 +1547,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-11T20:00:00+01:00",
     "fecha_publicacion_ts": 1794423600
@@ -1540,7 +1697,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-01T20:00:00+01:00",
     "fecha_publicacion_ts": 1793559600
@@ -1707,7 +1864,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-02T20:00:00+01:00",
     "fecha_publicacion_ts": 1793646000
@@ -1862,7 +2019,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-13T20:00:00+01:00",
     "fecha_publicacion_ts": 1794596400
@@ -2024,7 +2181,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-10T20:00:00+01:00",
     "fecha_publicacion_ts": 1794337200
@@ -2181,7 +2338,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-09T20:00:00+01:00",
     "fecha_publicacion_ts": 1794250800
@@ -2232,8 +2389,8 @@
         "rasgos": "Seis años. Niño de seis años de complexión menuda, rostro angelical redondo, ojos oscuros vivaces, cabello castaño liso con flequillo corto y una peca distintiva en la barbilla. Vestido con jersey de lana roja tejida a mano y pantalón corto de pana marrón.",
         "motivacion": "En vida, el amor y la risa infantil; como efigie de cera poseída, parásito del subsuelo que busca alimento y calor consumiendo la voluntad de su madre.",
         "conflicto": "Ser el reflejo inocente que atrapa y condena a Teresa a la locura.",
-        "avatar_cabeza": "assets/images/avatars/0034-personaje-02-teresa-balmes-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0034-personaje-02-teresa-balmes-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0034-personaje-03-diego-balmes-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0034-personaje-03-diego-balmes-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -2336,7 +2493,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-08T20:00:00+01:00",
     "fecha_publicacion_ts": 1794164400
@@ -2369,8 +2526,8 @@
         "rasgos": "Treinta y siete años. Enfermera de urgencias, observadora clínica, de complexión delgada y mirada atenta con ojeras leves causadas por las guardias. Lleva el cabello castaño oscuro recogido en una coleta baja y viste jerséis de punto grueso y pantalones prácticos.",
         "motivacion": "Proteger a su hija Lucía a cualquier precio y desentrañar la causa racional o sobrenatural del deterioro de la niña.",
         "conflicto": "Debe enfrentarse a una entidad que manipula sus instintos maternales y utiliza el amor filial como trampa mental.",
-        "avatar_cabeza": "assets/images/avatars/0033-personaje-02-lucia-ramos-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0033-personaje-02-lucia-ramos-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0033-personaje-01-elena-ramos-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0033-personaje-01-elena-ramos-cuerpo.webp"
       },
       {
         "id": "0033-p2",
@@ -2389,8 +2546,8 @@
         "rasgos": "Treinta y nueve años. Ebanista y restaurador de maderas, corpulento, de hombros anchos, barba corta salpicada de canas incipientes y manos curtidas por el trabajo manual. Viste camisas de franela a cuadros y pantalones de loneta resistente.",
         "motivacion": "Asegurar el bienestar de su familia en el nuevo hogar y reparar las viejas estructuras de la vivienda.",
         "conflicto": "Su escepticismo inicial retrasa la toma de medidas, hasta que el peligro para su hija se vuelve innegable.",
-        "avatar_cabeza": "assets/images/avatars/0033-personaje-02-lucia-ramos-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0033-personaje-02-lucia-ramos-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0033-personaje-03-marcos-ramos-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0033-personaje-03-marcos-ramos-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -2493,7 +2650,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-31T20:00:00+01:00",
     "fecha_publicacion_ts": 1793473200
@@ -2642,7 +2799,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-01T20:00:00+01:00",
     "fecha_publicacion_ts": 1793559600
@@ -2685,8 +2842,8 @@
         "rasgos": "treinta y tres años, complexión robusta y espalda ancha, mandíbula cuadrada con barba corta y cuidada, ojos color avellana y pelo castaño oscuro corto. Viste una sobrecamisa de franela a cuadros verdes y negros sobre camiseta gris marengo y botas de montaña. De trato templado, pragmático y protector.",
         "motivacion": "asegurar la solidez de las vigas y techumbres de la vivienda para que su hermana pueda vivir con total seguridad.",
         "conflicto": "su escepticismo inicial retrasa la huida, convirtiéndolo en la primera víctima física del letargo paralizante que impone el maleficio.",
-        "avatar_cabeza": "assets/images/avatars/0031-personaje-01-clara-morales-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0031-personaje-01-clara-morales-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0031-personaje-02-mateo-morales-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0031-personaje-02-mateo-morales-cuerpo.webp"
       },
       {
         "id": "0031-p3",
@@ -2793,7 +2950,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-06T20:00:00+01:00",
     "fecha_publicacion_ts": 1793991600
@@ -2949,7 +3106,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-03T20:00:00+01:00",
     "fecha_publicacion_ts": 1793732400
@@ -3099,7 +3256,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-31T20:00:00+01:00",
     "fecha_publicacion_ts": 1793473200
@@ -3244,7 +3401,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-31T20:00:00+01:00",
     "fecha_publicacion_ts": 1793473200
@@ -3379,7 +3536,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-30T20:00:00+01:00",
     "fecha_publicacion_ts": 1793386800
@@ -3529,7 +3686,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-30T20:00:00+01:00",
     "fecha_publicacion_ts": 1793386800
@@ -3695,7 +3852,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-29T20:00:00+01:00",
     "fecha_publicacion_ts": 1793300400
@@ -3747,8 +3904,8 @@
         "rasgos": "cincuenta y seis años, alto, de porte marcial y mirada gélida implacable, pómulos marcados, bigote canoso recortado con precisión quirúrgica y sienes plateadas. Viste impecables trajes de paño inglés a medida de tres piezas en gris marengo o azul medianoche, con chaleco abotonado y reloj de leontina de oro.",
         "motivacion": "perpetuar la influencia económica y el prestigio social de su casa a través del matrimonio pactado de su hija.",
         "conflicto": "la rebeldía de Isabel y el desprecio de Mateo hacia su dinero, que amenazan con desmoronar su autoridad absoluta.",
-        "avatar_cabeza": "assets/images/avatars/0024-personaje-01-isabel-de-alcazar-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0024-personaje-01-isabel-de-alcazar-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0024-personaje-03-alvaro-de-alcazar-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0024-personaje-03-alvaro-de-alcazar-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -3845,7 +4002,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-26T20:00:00+01:00",
     "fecha_publicacion_ts": 1793041200
@@ -3992,7 +4149,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-27T20:00:00+01:00",
     "fecha_publicacion_ts": 1793127600
@@ -4142,7 +4299,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-28T20:00:00+01:00",
     "fecha_publicacion_ts": 1793214000
@@ -4328,8 +4485,8 @@
         "rasgos": "Treinta y nueve años exactos. De complexión delgada, hombros ligeramente caídos y aspecto fatigado por el insomnio. Pelo castaño oscuro algo revuelto y barba corta de varios días sin perfilar que acentúa la palidez de sus mejillas y la sombra oscura bajo sus ojos castaños. Viste jersey grueso de lana azul marino con coderas de ante marrón, camisa de franela a cuadros oscuros con el cuello desabrochado, pantalón de pana marrón gastado en las rodillas y zapatos de cuero acordonados con suela de goma.",
         "motivacion": "Cumplir con sus obligaciones de padre, mantener a flote a su hijo y ocultar el desamparo que siente desde la muerte de su esposa.",
         "conflicto": "El bloqueo emocional que le impide aceptar su propia vulnerabilidad y la culpa constante de creer que su tristeza está arruinando la infancia de Nico.",
-        "avatar_cabeza": "assets/images/avatars/0020-personaje-02-nico-aranda-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0020-personaje-02-nico-aranda-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0020-personaje-03-daniel-aranda-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0020-personaje-03-daniel-aranda-cuerpo.webp"
       }
     ],
     "capitulos": [
@@ -5055,8 +5212,8 @@
         "rasgos": "treinta y seis años (edad exacta), complexión atlética y fibrosa, cabello castaño corto ligeramente ondulado y barba de tres días. Pragmático, analítico y protector; busca explicaciones lógicas ante cualquier anomalía para no alarmar a los suyos.",
         "motivacion": "proteger a su familia y mantener el control racional de la situación.",
         "conflicto": "su escepticismo inicial retrasa la huida hasta que la entidad suplanta su propia identidad.",
-        "avatar_cabeza": "assets/images/avatars/0015-personaje-03-clara-rivas-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0015-personaje-03-clara-rivas-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0015-personaje-01-miguel-rivas-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0015-personaje-01-miguel-rivas-cuerpo.webp"
       },
       {
         "id": "0015-p2",
@@ -5076,7 +5233,7 @@
         "motivacion": "sentirse segura junto a sus padres y resguardarse del frío y de las sombras.",
         "conflicto": "su voz y su fragilidad son el primer objetivo copiado por la entidad para engañar a sus padres.",
         "avatar_cabeza": "assets/images/avatars/0015-personaje-03-clara-rivas-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0015-personaje-02-laura-menendez-cuerpo.webp"
+        "avatar_cuerpo": "assets/images/avatars/0015-personaje-03-clara-rivas-cuerpo.webp"
       },
       {
         "id": "0015-p4",
@@ -6511,8 +6668,8 @@
         "rasgos": "Cuarenta y seis años. Físico enjuto, hombros encorvados de inclinar la vista sobre el chibalete, dedos manchados de tinta imborrable y gafas redondas con la patilla remendada con alambre. Prudente, meticuloso y desgarrado por la culpa del superviviente.",
         "motivacion": "Descubrir la verdad tras la caída de sus compañeros y proteger su dignidad sin convertirse en verdugo.",
         "conflicto": "Saber que su propia vida se compró al precio de la sangre de los suyos.",
-        "avatar_cabeza": "assets/images/avatars/0005-personaje-02-mateo-soria-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0005-personaje-02-mateo-soria-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0005-personaje-01-gregorio-soria-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0005-personaje-01-gregorio-soria-cuerpo.webp"
       },
       {
         "id": "0005-p2",
@@ -6661,8 +6818,8 @@
         "rasgos": "cuarenta y siete años. Delgada, mirada afilada tras gafas de pasta y media melena morena recogida en una pinza improvisada. Viste traje de lino arrugado por el calor y fuma a escondidas en las gasolineras. Pragmática, controladora y distante, huyó de Cádiz a los diecisiete años convencida de una traición materna.",
         "motivacion": "cumplir el encargo testamentario lo antes posible para regresar a su despacho en la capital y cerrar el capítulo familiar.",
         "conflicto": "el resentimiento hacia su hermano por haberla juzgado y el miedo a descubrir que construyó su vida sobre un error.",
-        "avatar_cabeza": "assets/images/avatars/0004-personaje-03-benigno-cespedes-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0004-personaje-03-benigno-cespedes-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0004-personaje-01-marta-cespedes-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0004-personaje-01-marta-cespedes-cuerpo.webp"
       },
       {
         "id": "0004-p2",
@@ -6671,8 +6828,8 @@
         "rasgos": "cuarenta y cuatro años. Robusto, piel tostada por el sol marinero, pelo rizado canoso y barba descuidada de tres días. Viste guayabera blanca abierta sobre camiseta vieja y bermudas de lona gastadas. Verborreico, sentimental y visceral, asumió en solitario el cuidado de su madre enferma hasta el final.",
         "motivacion": "hacer justicia a los últimos deseos de Encarna y obligar a su hermana a mirarle a los ojos tras quince años de ausencias.",
         "conflicto": "el agotamiento acumulado tras años de cuidador y la rabia contenida por la distancia de Marta.",
-        "avatar_cabeza": "assets/images/avatars/0004-personaje-03-benigno-cespedes-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0004-personaje-03-benigno-cespedes-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0004-personaje-02-nacho-cespedes-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0004-personaje-02-nacho-cespedes-cuerpo.webp"
       },
       {
         "id": "0004-p3",
@@ -6831,8 +6988,8 @@
         "rasgos": "cincuenta y cinco años. Corpulento, de hombros anchos caídos por el cansancio, manos marcadas por grasa de motor que no sale y ojeras profundas de noches en vela. Viste mono azul de trabajo y cazadora raída. Seco, protector y al borde del colapso físico y mental.",
         "motivacion": "proteger a su padre de sufrir accidentes en las vías y poder descansar tras años de cuidados en solitario.",
         "conflicto": "la culpa por haber ocultado la maleta y el dolor de ver que su padre ha olvidado todo su matrimonio.",
-        "avatar_cabeza": "assets/images/avatars/0003-personaje-02-anselmo-recio-cabeza.webp",
-        "avatar_cuerpo": "assets/images/avatars/0003-personaje-02-anselmo-recio-cuerpo.webp"
+        "avatar_cabeza": "assets/images/avatars/0003-personaje-03-ramon-recio-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0003-personaje-03-ramon-recio-cuerpo.webp"
       }
     ],
     "capitulos": [

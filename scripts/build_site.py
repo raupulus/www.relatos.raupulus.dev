@@ -512,14 +512,22 @@ def sync_assets_and_data(src_dir=HISTORIAS_SRC_DEFAULT):
                 c_words = [w for w in re.findall(r'\b[a-z]{3,}\b', c_slug) if w not in ('don','dona','senor','senora')]
                 avatar_cabeza = None
                 avatar_cuerpo = None
+                best_score_cabeza = 0
+                best_score_cuerpo = 0
 
                 for av_file in os.listdir(AVATARS_DIR) if os.path.exists(AVATARS_DIR) else []:
                     if av_file.startswith(num_id):
-                        if any(w in av_file for w in c_words):
-                            if 'cabeza' in av_file:
+                        score = 0
+                        if f"personaje-{cidx:02d}" in av_file or f"personaje-{cidx}-" in av_file:
+                            score += 10
+                        score += sum(1 for w in c_words if w in av_file.lower())
+                        if score > 0:
+                            if 'cabeza' in av_file and score > best_score_cabeza:
                                 avatar_cabeza = f"assets/images/avatars/{av_file}"
-                            elif 'cuerpo' in av_file:
+                                best_score_cabeza = score
+                            elif 'cuerpo' in av_file and score > best_score_cuerpo:
                                 avatar_cuerpo = f"assets/images/avatars/{av_file}"
+                                best_score_cuerpo = score
 
                 characters.append({
                     "id": f"{num_id}-p{cidx}",
