@@ -291,6 +291,14 @@ CHAPTER_SUMMARIES = {
         515: "En casa de la abuela Carmen, Lucía lucha por rescatar el recuerdo del nieto antes de que el borrado sea irreversible.",
         633: "Un alarido resuena en el molino, la fotografía recupera el color y Marcos reaparece en el pueblo.",
         733: "Durante la cena familiar, Lucía descubre en un viejo álbum a otra víctima olvidada desde el verano de 1972."
+    },
+    "0050": {
+        0: "Álex Valdés hereda el taller familiar tras la muerte de su abuelo Julián y halla un enigmático reloj de bolsillo de plata con filigranas de raíces.",
+        124: "Don Anselmo visita a Álex para advertirle sobre el perturbador cambio del abuelo antes de morir y la maldición oculta en el mueble.",
+        262: "Clara cae presa de una debilidad repentina y aterradora mientras sufre un envejecimiento biológico acelerado sin explicación médica.",
+        400: "En el sótano, Álex descubre el cuaderno de 1962 donde su abuelo describe el parásito mecánico que devora el tiempo de sus víctimas.",
+        539: "Álex se ofrece voluntariamente al reloj para salvar a su hermana pequeña y asume el sacrificio de su propia juventud.",
+        716: "Clara despierta recuperada en el salón soleado, pero al abrazar a su hermano descubre una perturbadora verdad oculta en su mirada."
     }
 }
 
