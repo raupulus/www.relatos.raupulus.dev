@@ -1,5 +1,156 @@
 [
   {
+    "id": "0048",
+    "slug": "el-reflejo-equivocado",
+    "pagina_url": "relatos/0048-el-reflejo-equivocado.html",
+    "titulo": "El reflejo equivocado",
+    "sinopsis": "Daniel comienza a percibir un desfase de medio segundo en los movimientos de su imagen al otro lado del espejo del baño. Lo que en un principio atribuye al agotamiento deriva en una certeza monstruosa cuando la figura del cristal deja de imitarlo para sonreír con fría autonomía. Atrapado en un piso antiguo donde cada superficie pulida se convierte en una ventana acechante, Daniel emprende una desesperada batalla contra un doble que reclama su carne y su lugar en el mundo.",
+    "categoria": "terror",
+    "categoria_nombre": "Terror",
+    "generos": [
+      "Terror",
+      "Misterio",
+      "Suspense"
+    ],
+    "palabras": 2314,
+    "lectura_min": 11,
+    "duracion_audio": "14:10",
+    "duracion_segundos": 850.88,
+    "youtube_id": "HDXWrbmOihU",
+    "youtube_url": "https://www.youtube.com/watch?v=HDXWrbmOihU",
+    "portada": "assets/images/portadas/0048-el-reflejo-equivocado.webp",
+    "personajes": [
+      {
+        "id": "0048-p1",
+        "nombre": "Daniel Castro",
+        "rol": "protagonista, estudiante metódico y observador.",
+        "rasgos": "veintitrés años exactos, complexión delgada, cabello castaño oscuro lacio y revuelto, ojos pardos vivos enmarcados por ojeras profundas y un lunar milimétrico bajo la comisura izquierda del labio. Viste un jersey de lana azul marino de cuello redondo sobre camiseta gris y vaqueros oscuros desgastados.",
+        "motivacion": "demostrar que no ha perdido la razón, defender la frontera de su propia mente y evitar que la entidad del espejo invada su vida cotidiana.",
+        "conflicto": "el aislamiento absoluto frente a su entorno íntimo, la duda asfixiante de su propia cordura y el avance implacable del ser que aprende a sortear las leyes de la física.",
+        "avatar_cabeza": "assets/images/avatars/0048-personaje-01-daniel-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0048-personaje-01-daniel-cuerpo.webp"
+      },
+      {
+        "id": "0048-p2",
+        "nombre": "El Reflejo (El Doble del Espejo)",
+        "rol": "antagonista sobrenatural, usurpador de identidades.",
+        "rasgos": "veintitrés años aparentes, fisionomía idéntica a Daniel en cada facción y pliegue de ropa, pero con una quietud espectral, parpadeo desfasado y una rigidez gélida en la mirada que carece de calidez humana. Su sonrisa no pliega la piel de los pómulos y su voz resuena como una vibración seca contra el azogue.",
+        "motivacion": "romper el límite material del cristal, cruzar al lado tangible de la realidad y sustituir a Daniel de forma definitiva ante los ojos de su familia.",
+        "conflicto": "la consistencia del cristal y la lucidez residual del original, que aún le impiden afianzar su presencia corpórea en el aire caliente de la casa.",
+        "avatar_cabeza": "assets/images/avatars/0048-personaje-02-reflejo-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0048-personaje-02-reflejo-cuerpo.webp"
+      },
+      {
+        "id": "0048-p3",
+        "nombre": "Carmen Castro",
+        "rol": "contrapunto humano, madre de Daniel.",
+        "rasgos": "cincuenta y cuatro años exactos, mirada dulce pero fatigada, cabello castaño con mechas plateadas sujeto con una pinza de carey, rostro bondadoso con arrugas serenas en las sienes. Viste un cárdigan de punto beige sobre blusa de flores tenues y zapatillas de lona cómodas.",
+        "motivacion": "arropar a su hijo, aliviar la presión del sobreesfuerzo que cree que lo atormenta y mantener la calma doméstica.",
+        "conflicto": "su incapacidad para percibir la brecha en el espejo, lo que la lleva a interpretar los signos del horror como un brote de agotamiento nervioso hasta que la ausencia final se vuelve innegable.",
+        "avatar_cabeza": "assets/images/avatars/0048-personaje-03-carmen-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0048-personaje-03-carmen-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "El retraso en el cristal del baño",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 00:00."
+      },
+      {
+        "tiempo": "01:33",
+        "segundos": 93,
+        "titulo": "La sonrisa que no arruga los ojos",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 01:33."
+      },
+      {
+        "tiempo": "03:55",
+        "segundos": 235,
+        "titulo": "Piel con piel a través del espejo",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 03:55."
+      },
+      {
+        "tiempo": "06:41",
+        "segundos": 401,
+        "titulo": "Los dedos que traspasan la ventana",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 06:41."
+      },
+      {
+        "tiempo": "08:48",
+        "segundos": 528,
+        "titulo": "El estallido del azogue",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 08:48."
+      },
+      {
+        "tiempo": "11:02",
+        "segundos": 662,
+        "titulo": "El hombre que no proyecta sombra",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 11:02."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0048-003-manuales-calculo-rotuladores-mesa.webp",
+        "caption": "Ilustración de escena: Manuales calculo rotuladores mesa",
+        "alt": "Escena oficial de El reflejo equivocado — Manuales calculo rotuladores mesa"
+      },
+      {
+        "src": "assets/images/escenas/0048-023-parpados-abiertos-doble-sin-parpadear.webp",
+        "caption": "Ilustración de escena: Parpados abiertos doble sin parpadear",
+        "alt": "Escena oficial de El reflejo equivocado — Parpados abiertos doble sin parpadear"
+      },
+      {
+        "src": "assets/images/escenas/0048-043-envoltorio-luna-armario-bulto.webp",
+        "caption": "Ilustración de escena: Envoltorio luna armario bulto",
+        "alt": "Escena oficial de El reflejo equivocado — Envoltorio luna armario bulto"
+      },
+      {
+        "src": "assets/images/escenas/0048-063-manos-sangrantes-astillas-suelo.webp",
+        "caption": "Ilustración de escena: Manos sangrantes astillas suelo",
+        "alt": "Escena oficial de El reflejo equivocado — Manos sangrantes astillas suelo"
+      },
+      {
+        "src": "assets/images/escenas/0048-083-cristales-rotos-desde-dentro.webp",
+        "caption": "Ilustración de escena: Cristales rotos desde dentro",
+        "alt": "Escena oficial de El reflejo equivocado — Cristales rotos desde dentro"
+      }
+    ],
+    "relato_raw": "El tubo fluorescente del baño parpadeó dos veces antes de estabilizarse en un zumbido agudo. Daniel escupió la espuma blanca en la pila de porcelana, abrió el grifo y se enjuagó la boca con el cuenco de la mano. Eran más de las dos de la madrugada. En su cuarto aún aguardaban abiertos los manuales de cálculo y los rotuladores sin tapar.\n\nAl erguirse y sacudirse las gotas de la barbilla, alzó la vista hacia el espejo del botiquín.\n\nDurante una fracción de segundo tan minúscula que casi pareció un tropiezo del ojo, el muchacho del cristal tardó en levantar la cabeza. Daniel ya tenía los ojos clavados en la luna de vidrio, pero su réplica todavía estaba incorporándose antes de cuadrar la mirada al frente. El muchacho se quedó inmóvil, con la espalda rígida.\n\n—El cansancio —murmuró para sí en el silencio de la casa—. Llevo catorce horas seguidas sobre los planos.\n\nMovió la mano derecha hacia el cepillo de dientes. En el espejo, la mano reflejada repitió el gesto con exacta sincronía. Daniel soltó el aire de golpe, apagó la luz y caminó a oscuras por el pasillo hacia su cama, convenciéndose de que la fatiga ocular jugaba malas pasadas.\n\nSin embargo, al apoyar la cabeza en la almohada y mirar hacia la puerta entreabierta, la luna del armario devolvió el reflejo de la farola de la calle. En el fondo de aquel cristal oscuro, la silueta de su cuerpo tardó dos segundos en acomodarse sobre las sábanas.\n\n* * *\n\nLa tarde siguiente amaneció cubierta por una lluvia plomiza que golpeaba las contraventanas. Daniel apenas había avanzado dos páginas. Cada vez que alzaba la taza de café, sus ojos se desviaban hacia la puerta acristalada del aparador del salón. Había una discordancia sutil entre su movimiento y la imagen.\n\nA media tarde, agobiado por el dolor de cervicales, dejó caer el bolígrafo y se cubrió el rostro con ambas manos, hundiendo los dedos en el pelo revuelto con un suspiro áspero.\n\nCuando separó los dedos para mirar entre ellos, sintió un golpe helado en el estómago.\n\nEn el cristal del aparador, el reflejo no tenía las manos en la cara. La figura estaba erguida en el interior del mueble, con los brazos caídos y la espalda recta. Lo miraba fijamente desde el fondo de la madera barnizada, con una sonrisa estrecha y tensa que no arrugaba los pómulos ni los ojos. Era una mueca rígida que imitaba la alegría sin comprender la carne.\n\nDaniel se puso en pie de un salto, empujando la silla con un chirrido estridente.\n\nEn ese mismo instante, la figura del aparador se recompuso con un espasmo y adoptó la misma postura de sobresalto, jadeando con la boca abierta. Pero la trampa ya estaba descubierta: la mirada del cristal no reflejaba miedo, sino una curiosidad paciente y calculadora.\n\n—¿Daniel? ¿Qué ha sido ese golpe, hijo?\n\nCarmen apareció por el pasillo con un trapo de cocina entre las manos. Al verlo pálido, apoyado contra la mesa con los nudillos blancos de tanta presión, se acercó a paso rápido y le tocó la frente.\n\n—Tienes la piel helada —dijo su madre con ternura—. Llevas semanas sin salir más que a por pan. Te preparo una manzanilla y te acuestas un rato.\n\nCarmen se dio la vuelta hacia el espejo ovalado del recibidor para colocarse la pinza de carey en el pelo. Daniel la observó con el pulso desbocado. La imagen de su madre en el cristal era normal: sus movimientos eran simultáneos y la preocupación de su entrecejo se copiaba sin demora.\n\nPero detrás de ella, en el mismo óvalo de vidrio, el Daniel del espejo no miraba a la madre. Clavaba sus ojos exclusivamente en el Daniel real, y mientras el muchacho parpadeaba por el sudor, los párpados del doble permanecieron inmóviles, abiertos de par en par.\n\n* * *\n\nLa tormenta arreció al filo de la medianoche. El viento azotaba los canalones y la lluvia arrojaba grava contra los cristales. Daniel no se desvistió. Permaneció sentado en el borde del colchón con la lámpara de la mesilla encendida, vigilando el espejo de cuerpo entero frente a la cama.\n\nA las tres y diecisiete de la madrugada, la lámpara dio un chasquido seco y la bombilla se fundió. Solo quedó la claridad lechosa de la farola municipal entrando entre las rendijas.\n\nDaniel intentó levantarse, pero sus piernas no respondieron. En el fondo del espejo, la habitación no estaba a oscuras. Había una claridad cenicienta que no provenía de ninguna ventana, y la cama reflejada estaba vacía, con las mantas pulcras y estiradas.\n\nLa figura de Daniel avanzaba desde el fondo del espejo hacia la superficie.\n\nCaminaba sin ruido de pasos. Se detuvo a escasos centímetros del marco de madera oscura que separaba los dos mundos. Vestía su mismo jersey azul y sus vaqueros gastados, pero su postura revelaba una vitalidad hambrienta.\n\nImpulsado por un instinto ciego, Daniel gateó sobre la alfombra hasta quedar frente al marco. Alzó la mano derecha y apoyó la yema del dedo índice contra el cristal.\n\nCualquier persona que acerca un dedo a un espejo observa una separación de milímetros debida al grosor del vidrio antes de tocar el azogue. Pero esta vez no hubo separación.\n\nLa yema del reflejo se aplastó directamente contra la yema de Daniel, piel contra piel a través de una película invisible.\n\nUn frío atroz, más denso que el hielo del invierno, subió por el dedo de Daniel, trepó por la muñeca y le atenazó el codo con un dolor punzante. Daniel quiso apartar el brazo, pero la succión del cristal lo retenía como un fango helado.\n\nEl doble pegó el rostro al vidrio. Su respiración no empañó la superficie. Abrió los labios y una voz áspera, que sonaba como el roce de dos pizarras en un pozo, vibró directamente en los huesos de su cráneo:\n\n—Estás agotado —dijo el ser por la vibración del cristal—. Te pesan los días. Yo no me canso nunca. Déjame salir y ocuparé tu sitio. Nadie notará la diferencia. Ni siquiera tu madre.\n\n—No... —jadeó Daniel, tirando del brazo con todas sus fuerzas hasta que la piel se despegó con un chasquido viscoso—. ¡Esta es mi vida!\n\nEl muchacho cayó de espaldas sobre la tarima, respirando a bocanadas mientras se frotaba los dedos entumecidos. En el espejo, la entidad sonrió y apoyó ambas palmas planas contra el cristal, empujando hacia afuera. El vidrio crujió, abombándose hacia el interior del cuarto como una lámina de goma tensa.\n\n* * *\n\nA la mañana siguiente, Daniel se levantó antes del amanecer con los ojos inyectados en sangre.\n\nAprovechando que Carmen había salido a la compra, recorrió la casa con sábanas viejas y cinta de carrocero. Tapó el espejo ovalado del pasillo. Cubrió el botiquín del baño con dos capas de tela áspera. Envolvió la luna del armario de su cuarto hasta convertirla en un bulto ciego y opaco.\n\nPero la casa estaba llena de trampas.\n\nAl entrar en la cocina a por agua, su mirada tropezó con la cafetera de acero sobre los fogones apagados. En la curvatura pulida del metal, su figura deformada no se inclinaba hacia el vaso: la imagen esférica lo señalaba con un dedo largo y se burlaba en silencio.\n\nDaniel cerró los ojos y retrocedió, chocando contra el fregadero.\n\nEntonces escuchó el goteo.\n\nVenía de la ventana que daba al patio interior de luces, donde la lluvia resbalaba en regueros paralelos sobre el cristal exterior. Giró la cabeza muy despacio.\n\nAllí estaba.\n\nAl otro lado del vidrio de la cocina, suspendido en el vacío del patio como si pisase suelo firme, su doble lo miraba fijamente. Pero esta vez la frontera física cedía. La entidad levantó el brazo derecho y empujó la superficie de la ventana.\n\nCon un sonido blando y húmedo, semejante al desgarro de una membrana, los nudillos del doble atravesaron el plano del cristal sin quebrarlo. Los dedos penetraron en el aire caliente de la cocina. Eran idénticos a los de Daniel, pero rezumaban una escarcha negruzca que cayó en gotas sibilantes sobre el azulejo blanco.\n\nEl ser deslizó media mano al interior, saboreando el aire real.\n\n—Falta muy poco —susurró la voz por las rendijas—. Cuando el cristal se abra, ya no sabrás en qué lado te quedaste.\n\nEl pánico encendió la sangre de Daniel. Salió de la cocina a la carrera, fue hasta el armario de herramientas del recibidor y abrió el cajón inferior. Entre cables viejos encontró el pesado martillo de uña con mango de fresno que su padre había usado durante décadas.\n\n* * *\n\nNo hubo vacilación. El muchacho actuó con la furia ciega de quien defiende su pellejo en una trinchera.\n\nRegresó al pasillo y descargó el primer golpe sobre el espejo ovalado del recibidor. La sábana amortiguó el estruendo, pero bajo la tela el cristal estalló con un crujido sordo. Daniel arrancó el lienzo y golpeó una y otra vez el centro del marco. Los pedazos plateados saltaron por los aires, cayendo sobre la tarima con un tintineo agudo.\n\nEn cada fragmento esparcido por el suelo, el rostro del doble aparecía multiplicado: ojos desorbitados, bocas abiertas en muecas de dolor convulsivo y manos que se agitaban dentro de esquirlas del tamaño de monedas.\n\n—¡Fuera! ¡Lárgate de mi casa! —gritó Daniel con la voz rota, sintiendo cómo el polvo de azogue le quemaba la garganta.\n\nEntró en el baño como una tromba. De dos martillazos arrancó la puerta del botiquín y la estrelló contra el suelo de gres hasta convertirla en arena brillante. Pasó a su dormitorio. Desgarró la cinta del armario empotrado y arremetió contra la gran luna vertical.\n\nEl golpe abrió una estrella blanca de fracturas que recorrió el espejo de arriba abajo. A través de la telaraña de grietas vio la figura del ser: la entidad se retorcía con la boca abierta en un alarido mudo, con el pecho arqueado hacia atrás mientras grietas luminosas se abrían en su piel y en su ropa, partiéndolo en pedazos.\n\nDaniel descargó un último golpe en el centro del pecho reflejado. El espejo entero cedió hacia adentro y se desplomó contra el fondo del armario en una cascada de astillas inertes.\n\nEl silencio cayó sobre el piso como una losa.\n\nDaniel dejó caer el martillo. Sus manos sangraban despacio por cortes superficiales en las palmas y los nudillos. Las astillas crujían bajo sus zapatillas mientras retrocedía hasta dejarse caer contra la pared.\n\nMiró a su alrededor. No quedaba un solo espejo entero. La casa era un campo de ruinas de vidrio quebrado, pero la presencia se había evaporado. El aire volvía a sentirse tibio y ordinario. Había destruido la puerta antes de que el usurpador pudiese poner ambos pies en su mundo.\n\n* * *\n\nLa mañana siguiente trajo una calma limpia que disipó la lluvia. Un sol suave de otoño entraba por los balcones, proyectando rectángulos dorados sobre el salón.\n\nCarmen no había gritado al encontrar el destrozo la tarde anterior. Al ver a su hijo sentado entre los restos de cristal con la mirada perdida y las manos ensangrentadas, simplemente lo había abrazado con lágrimas en los ojos, creyendo que la presión de los exámenes le había quebrado los nervios. Le había curado los cortes con yodo y lo había acostado sin hacer preguntas, tratándolo como a un convaleciente.\n\nAhora, Carmen barría con paciencia las últimas esquirlas de la alfombra, juntándolas en el recogedor de metal con un sonido rítmico.\n\nDaniel salió de la cocina sosteniendo una taza de café humeante con ambas manos. Se sentía extrañamente descansado. Por primera vez en meses no sentía opresión en el pecho ni tirantez en los hombros. Los cortes en los nudillos ya no le dolían; la piel alrededor de las heridas se veía tersa, seca y limpia, como si hubiesen cicatrizado en horas.\n\nBebió un sorbo largo. El café estaba hirviendo, pero el calor no le quemó la lengua ni el paladar; descendió por su garganta como una corriente tibia y agradable.\n\nCaminó hacia la gran cristalera del balcón, atraído por el aire fresco de la calle. Apoyó el hombro contra el marco de madera y miró los tejados mojados, saboreando el silencio.\n\nDetrás de él, el roce de la escoba se detuvo en seco.\n\nDaniel no se dio la vuelta de inmediato. Siguió contemplando el vuelo de las palomas.\n\n—Daniel... —la voz de Carmen sonó hueca, desprovista de su calidez habitual, afinada por una vibración de desconcierto que heló la estancia.\n\nEl muchacho ladeó la cabeza con una sonrisa serena.\n\n—Dime, mamá.\n\nCarmen había soltado el mango de la escoba. Tenía las manos entrelazadas contra el pecho y la mirada fija en el ventanal de la terraza, donde la luz del sol pegaba de lleno contra el cuerpo de su hijo.\n\n—Daniel... —repitió la mujer, dando un paso vacilante hacia atrás mientras el color abandonaba sus mejillas—. ¿Por qué llevas toda la mañana sin proyectar sombra en el suelo? ¿Y por qué tu cuerpo no se refleja en el cristal de la ventana?\n\nDaniel clavó los ojos en el vidrio transparente del balcón que tenía a un palmo de la nariz.\n\nLa calle, los árboles del parque y los cables de la luz se veían con nitidez a través del panel. Pero en la superficie lisa del cristal no había ninguna silueta. No había rastro de su jersey azul marino, ni de sus ojos pardos, ni del lunar bajo el labio. Ni siquiera el vaho de su respiración empañaba el vidrio a pesar del aire frío.\n\nAl bajar la vista hacia sus manos, comprobó que sostenían la taza con firmeza milimétrica, pero los dedos no tenían peso.\n\nEl muchacho que había empuñado el martillo creyó que quebraba la puerta para impedir que el monstruo saliera. Pero los espejos solo muestran lo que tienen delante. Y él no había destruido la cárcel desde fuera. Había roto los cristales desde dentro para no volver a salir jamás.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El tubo fluorescente del baño parpadeó dos veces antes de estabilizarse en un zumbido agudo. Daniel escupió la espuma blanca en la pila de porcelana, abrió el grifo y se enjuagó la boca con el cuenco de la mano. Eran más de las dos de la madrugada. En su cuarto aún aguardaban abiertos los manuales de cálculo y los rotuladores sin tapar.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al erguirse y sacudirse las gotas de la barbilla, alzó la vista hacia el espejo del botiquín.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Durante una fracción de segundo tan minúscula que casi pareció un tropiezo del ojo, el muchacho del cristal tardó en levantar la cabeza. Daniel ya tenía los ojos clavados en la luna de vidrio, pero su réplica todavía estaba incorporándose antes de cuadrar la mirada al frente. El muchacho se quedó inmóvil, con la espalda rígida.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—El cansancio —murmuró para sí en el silencio de la casa—. Llevo catorce horas seguidas sobre los planos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Movió la mano derecha hacia el cepillo de dientes. En el espejo, la mano reflejada repitió el gesto con exacta sincronía. Daniel soltó el aire de golpe, apagó la luz y caminó a oscuras por el pasillo hacia su cama, convenciéndose de que la fatiga ocular jugaba malas pasadas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sin embargo, al apoyar la cabeza en la almohada y mirar hacia la puerta entreabierta, la luna del armario devolvió el reflejo de la farola de la calle. En el fondo de aquel cristal oscuro, la silueta de su cuerpo tardó dos segundos en acomodarse sobre las sábanas.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La tarde siguiente amaneció cubierta por una lluvia plomiza que golpeaba las contraventanas. Daniel apenas había avanzado dos páginas. Cada vez que alzaba la taza de café, sus ojos se desviaban hacia la puerta acristalada del aparador del salón. Había una discordancia sutil entre su movimiento y la imagen.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A media tarde, agobiado por el dolor de cervicales, dejó caer el bolígrafo y se cubrió el rostro con ambas manos, hundiendo los dedos en el pelo revuelto con un suspiro áspero.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Cuando separó los dedos para mirar entre ellos, sintió un golpe helado en el estómago.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el cristal del aparador, el reflejo no tenía las manos en la cara. La figura estaba erguida en el interior del mueble, con los brazos caídos y la espalda recta. Lo miraba fijamente desde el fondo de la madera barnizada, con una sonrisa estrecha y tensa que no arrugaba los pómulos ni los ojos. Era una mueca rígida que imitaba la alegría sin comprender la carne.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Daniel se puso en pie de un salto, empujando la silla con un chirrido estridente.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0048-003-manuales-calculo-rotuladores-mesa.webp\" alt=\"Escena oficial de El reflejo equivocado — Manuales calculo rotuladores mesa\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Manuales calculo rotuladores mesa</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En ese mismo instante, la figura del aparador se recompuso con un espasmo y adoptó la misma postura de sobresalto, jadeando con la boca abierta. Pero la trampa ya estaba descubierta: la mirada del cristal no reflejaba miedo, sino una curiosidad paciente y calculadora.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Daniel? ¿Qué ha sido ese golpe, hijo?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen apareció por el pasillo con un trapo de cocina entre las manos. Al verlo pálido, apoyado contra la mesa con los nudillos blancos de tanta presión, se acercó a paso rápido y le tocó la frente.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Tienes la piel helada —dijo su madre con ternura—. Llevas semanas sin salir más que a por pan. Te preparo una manzanilla y te acuestas un rato.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen se dio la vuelta hacia el espejo ovalado del recibidor para colocarse la pinza de carey en el pelo. Daniel la observó con el pulso desbocado. La imagen de su madre en el cristal era normal: sus movimientos eran simultáneos y la preocupación de su entrecejo se copiaba sin demora.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Pero detrás de ella, en el mismo óvalo de vidrio, el Daniel del espejo no miraba a la madre. Clavaba sus ojos exclusivamente en el Daniel real, y mientras el muchacho parpadeaba por el sudor, los párpados del doble permanecieron inmóviles, abiertos de par en par.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La tormenta arreció al filo de la medianoche. El viento azotaba los canalones y la lluvia arrojaba grava contra los cristales. Daniel no se desvistió. Permaneció sentado en el borde del colchón con la lámpara de la mesilla encendida, vigilando el espejo de cuerpo entero frente a la cama.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A las tres y diecisiete de la madrugada, la lámpara dio un chasquido seco y la bombilla se fundió. Solo quedó la claridad lechosa de la farola municipal entrando entre las rendijas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Daniel intentó levantarse, pero sus piernas no respondieron. En el fondo del espejo, la habitación no estaba a oscuras. Había una claridad cenicienta que no provenía de ninguna ventana, y la cama reflejada estaba vacía, con las mantas pulcras y estiradas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La figura de Daniel avanzaba desde el fondo del espejo hacia la superficie.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Caminaba sin ruido de pasos. Se detuvo a escasos centímetros del marco de madera oscura que separaba los dos mundos. Vestía su mismo jersey azul y sus vaqueros gastados, pero su postura revelaba una vitalidad hambrienta.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0048-023-parpados-abiertos-doble-sin-parpadear.webp\" alt=\"Escena oficial de El reflejo equivocado — Parpados abiertos doble sin parpadear\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Parpados abiertos doble sin parpadear</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Impulsado por un instinto ciego, Daniel gateó sobre la alfombra hasta quedar frente al marco. Alzó la mano derecha y apoyó la yema del dedo índice contra el cristal.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Cualquier persona que acerca un dedo a un espejo observa una separación de milímetros debida al grosor del vidrio antes de tocar el azogue. Pero esta vez no hubo separación.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La yema del reflejo se aplastó directamente contra la yema de Daniel, piel contra piel a través de una película invisible.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Un frío atroz, más denso que el hielo del invierno, subió por el dedo de Daniel, trepó por la muñeca y le atenazó el codo con un dolor punzante. Daniel quiso apartar el brazo, pero la succión del cristal lo retenía como un fango helado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El doble pegó el rostro al vidrio. Su respiración no empañó la superficie. Abrió los labios y una voz áspera, que sonaba como el roce de dos pizarras en un pozo, vibró directamente en los huesos de su cráneo:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Estás agotado —dijo el ser por la vibración del cristal—. Te pesan los días. Yo no me canso nunca. Déjame salir y ocuparé tu sitio. Nadie notará la diferencia. Ni siquiera tu madre.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No... —jadeó Daniel, tirando del brazo con todas sus fuerzas hasta que la piel se despegó con un chasquido viscoso—. ¡Esta es mi vida!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El muchacho cayó de espaldas sobre la tarima, respirando a bocanadas mientras se frotaba los dedos entumecidos. En el espejo, la entidad sonrió y apoyó ambas palmas planas contra el cristal, empujando hacia afuera. El vidrio crujió, abombándose hacia el interior del cuarto como una lámina de goma tensa.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A la mañana siguiente, Daniel se levantó antes del amanecer con los ojos inyectados en sangre.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Aprovechando que Carmen había salido a la compra, recorrió la casa con sábanas viejas y cinta de carrocero. Tapó el espejo ovalado del pasillo. Cubrió el botiquín del baño con dos capas de tela áspera. Envolvió la luna del armario de su cuarto hasta convertirla en un bulto ciego y opaco.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Pero la casa estaba llena de trampas.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0048-043-envoltorio-luna-armario-bulto.webp\" alt=\"Escena oficial de El reflejo equivocado — Envoltorio luna armario bulto\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Envoltorio luna armario bulto</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al entrar en la cocina a por agua, su mirada tropezó con la cafetera de acero sobre los fogones apagados. En la curvatura pulida del metal, su figura deformada no se inclinaba hacia el vaso: la imagen esférica lo señalaba con un dedo largo y se burlaba en silencio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Daniel cerró los ojos y retrocedió, chocando contra el fregadero.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Entonces escuchó el goteo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Venía de la ventana que daba al patio interior de luces, donde la lluvia resbalaba en regueros paralelos sobre el cristal exterior. Giró la cabeza muy despacio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Allí estaba.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al otro lado del vidrio de la cocina, suspendido en el vacío del patio como si pisase suelo firme, su doble lo miraba fijamente. Pero esta vez la frontera física cedía. La entidad levantó el brazo derecho y empujó la superficie de la ventana.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Con un sonido blando y húmedo, semejante al desgarro de una membrana, los nudillos del doble atravesaron el plano del cristal sin quebrarlo. Los dedos penetraron en el aire caliente de la cocina. Eran idénticos a los de Daniel, pero rezumaban una escarcha negruzca que cayó en gotas sibilantes sobre el azulejo blanco.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El ser deslizó media mano al interior, saboreando el aire real.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Falta muy poco —susurró la voz por las rendijas—. Cuando el cristal se abra, ya no sabrás en qué lado te quedaste.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El pánico encendió la sangre de Daniel. Salió de la cocina a la carrera, fue hasta el armario de herramientas del recibidor y abrió el cajón inferior. Entre cables viejos encontró el pesado martillo de uña con mango de fresno que su padre había usado durante décadas.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">No hubo vacilación. El muchacho actuó con la furia ciega de quien defiende su pellejo en una trinchera.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0048-063-manos-sangrantes-astillas-suelo.webp\" alt=\"Escena oficial de El reflejo equivocado — Manos sangrantes astillas suelo\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Manos sangrantes astillas suelo</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Regresó al pasillo y descargó el primer golpe sobre el espejo ovalado del recibidor. La sábana amortiguó el estruendo, pero bajo la tela el cristal estalló con un crujido sordo. Daniel arrancó el lienzo y golpeó una y otra vez el centro del marco. Los pedazos plateados saltaron por los aires, cayendo sobre la tarima con un tintineo agudo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En cada fragmento esparcido por el suelo, el rostro del doble aparecía multiplicado: ojos desorbitados, bocas abiertas en muecas de dolor convulsivo y manos que se agitaban dentro de esquirlas del tamaño de monedas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Fuera! ¡Lárgate de mi casa! —gritó Daniel con la voz rota, sintiendo cómo el polvo de azogue le quemaba la garganta.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Entró en el baño como una tromba. De dos martillazos arrancó la puerta del botiquín y la estrelló contra el suelo de gres hasta convertirla en arena brillante. Pasó a su dormitorio. Desgarró la cinta del armario empotrado y arremetió contra la gran luna vertical.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El golpe abrió una estrella blanca de fracturas que recorrió el espejo de arriba abajo. A través de la telaraña de grietas vio la figura del ser: la entidad se retorcía con la boca abierta en un alarido mudo, con el pecho arqueado hacia atrás mientras grietas luminosas se abrían en su piel y en su ropa, partiéndolo en pedazos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Daniel descargó un último golpe en el centro del pecho reflejado. El espejo entero cedió hacia adentro y se desplomó contra el fondo del armario en una cascada de astillas inertes.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El silencio cayó sobre el piso como una losa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Daniel dejó caer el martillo. Sus manos sangraban despacio por cortes superficiales en las palmas y los nudillos. Las astillas crujían bajo sus zapatillas mientras retrocedía hasta dejarse caer contra la pared.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Miró a su alrededor. No quedaba un solo espejo entero. La casa era un campo de ruinas de vidrio quebrado, pero la presencia se había evaporado. El aire volvía a sentirse tibio y ordinario. Había destruido la puerta antes de que el usurpador pudiese poner ambos pies en su mundo.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La mañana siguiente trajo una calma limpia que disipó la lluvia. Un sol suave de otoño entraba por los balcones, proyectando rectángulos dorados sobre el salón.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen no había gritado al encontrar el destrozo la tarde anterior. Al ver a su hijo sentado entre los restos de cristal con la mirada perdida y las manos ensangrentadas, simplemente lo había abrazado con lágrimas en los ojos, creyendo que la presión de los exámenes le había quebrado los nervios. Le había curado los cortes con yodo y lo había acostado sin hacer preguntas, tratándolo como a un convaleciente.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0048-083-cristales-rotos-desde-dentro.webp\" alt=\"Escena oficial de El reflejo equivocado — Cristales rotos desde dentro\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Cristales rotos desde dentro</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Ahora, Carmen barría con paciencia las últimas esquirlas de la alfombra, juntándolas en el recogedor de metal con un sonido rítmico.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Daniel salió de la cocina sosteniendo una taza de café humeante con ambas manos. Se sentía extrañamente descansado. Por primera vez en meses no sentía opresión en el pecho ni tirantez en los hombros. Los cortes en los nudillos ya no le dolían; la piel alrededor de las heridas se veía tersa, seca y limpia, como si hubiesen cicatrizado en horas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Bebió un sorbo largo. El café estaba hirviendo, pero el calor no le quemó la lengua ni el paladar; descendió por su garganta como una corriente tibia y agradable.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Caminó hacia la gran cristalera del balcón, atraído por el aire fresco de la calle. Apoyó el hombro contra el marco de madera y miró los tejados mojados, saboreando el silencio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Detrás de él, el roce de la escoba se detuvo en seco.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Daniel no se dio la vuelta de inmediato. Siguió contemplando el vuelo de las palomas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Daniel... —la voz de Carmen sonó hueca, desprovista de su calidez habitual, afinada por una vibración de desconcierto que heló la estancia.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El muchacho ladeó la cabeza con una sonrisa serena.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Dime, mamá.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen había soltado el mango de la escoba. Tenía las manos entrelazadas contra el pecho y la mirada fija en el ventanal de la terraza, donde la luz del sol pegaba de lleno contra el cuerpo de su hijo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Daniel... —repitió la mujer, dando un paso vacilante hacia atrás mientras el color abandonaba sus mejillas—. ¿Por qué llevas toda la mañana sin proyectar sombra en el suelo? ¿Y por qué tu cuerpo no se refleja en el cristal de la ventana?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Daniel clavó los ojos en el vidrio transparente del balcón que tenía a un palmo de la nariz.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La calle, los árboles del parque y los cables de la luz se veían con nitidez a través del panel. Pero en la superficie lisa del cristal no había ninguna silueta. No había rastro de su jersey azul marino, ni de sus ojos pardos, ni del lunar bajo el labio. Ni siquiera el vaho de su respiración empañaba el vidrio a pesar del aire frío.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al bajar la vista hacia sus manos, comprobó que sostenían la taza con firmeza milimétrica, pero los dedos no tenían peso.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El muchacho que había empuñado el martillo creyó que quebraba la puerta para impedir que el monstruo saliera. Pero los espejos solo muestran lo que tienen delante. Y él no había destruido la cárcel desde fuera. Había roto los cristales desde dentro para no volver a salir jamás.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false,
+    "fecha_publicacion": null,
+    "fecha_publicacion_ts": null
+  },
+  {
     "id": "0047",
     "slug": "el-ladron-de-identidades",
     "pagina_url": "relatos/0047-el-ladron-de-identidades.html",
@@ -606,7 +757,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-05T20:00:00+01:00",
     "fecha_publicacion_ts": 1793905200
@@ -769,7 +920,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-12T20:00:00+01:00",
     "fecha_publicacion_ts": 1794510000
@@ -926,7 +1077,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-04T20:00:00+01:00",
     "fecha_publicacion_ts": 1793818800
@@ -1089,7 +1240,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-07T20:00:00+01:00",
     "fecha_publicacion_ts": 1794078000
@@ -1239,7 +1390,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-11T20:00:00+01:00",
     "fecha_publicacion_ts": 1794423600
@@ -1389,7 +1540,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-01T20:00:00+01:00",
     "fecha_publicacion_ts": 1793559600
@@ -1556,7 +1707,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-02T20:00:00+01:00",
     "fecha_publicacion_ts": 1793646000
@@ -1711,7 +1862,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-13T20:00:00+01:00",
     "fecha_publicacion_ts": 1794596400
@@ -1873,7 +2024,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-10T20:00:00+01:00",
     "fecha_publicacion_ts": 1794337200
@@ -2030,7 +2181,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-09T20:00:00+01:00",
     "fecha_publicacion_ts": 1794250800
@@ -2185,7 +2336,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-08T20:00:00+01:00",
     "fecha_publicacion_ts": 1794164400
@@ -2342,7 +2493,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-31T20:00:00+01:00",
     "fecha_publicacion_ts": 1793473200
@@ -2491,7 +2642,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-01T20:00:00+01:00",
     "fecha_publicacion_ts": 1793559600
@@ -2642,7 +2793,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-06T20:00:00+01:00",
     "fecha_publicacion_ts": 1793991600
@@ -2798,7 +2949,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-03T20:00:00+01:00",
     "fecha_publicacion_ts": 1793732400
@@ -2948,7 +3099,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-31T20:00:00+01:00",
     "fecha_publicacion_ts": 1793473200
@@ -3093,7 +3244,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-31T20:00:00+01:00",
     "fecha_publicacion_ts": 1793473200
@@ -3228,7 +3379,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-30T20:00:00+01:00",
     "fecha_publicacion_ts": 1793386800
@@ -3378,7 +3529,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-30T20:00:00+01:00",
     "fecha_publicacion_ts": 1793386800
@@ -3544,7 +3695,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-29T20:00:00+01:00",
     "fecha_publicacion_ts": 1793300400
@@ -3694,7 +3845,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-26T20:00:00+01:00",
     "fecha_publicacion_ts": 1793041200
@@ -3841,7 +3992,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-27T20:00:00+01:00",
     "fecha_publicacion_ts": 1793127600
@@ -3991,7 +4142,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-10-28T20:00:00+01:00",
     "fecha_publicacion_ts": 1793214000
