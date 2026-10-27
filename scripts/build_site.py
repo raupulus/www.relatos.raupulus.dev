@@ -706,6 +706,31 @@ def sync_mitologia_data():
     # Ordenar por ID descendente (M0010, M0009... M0001)
     mitologia = sorted(mitologia, key=lambda x: str(x.get("id", "")), reverse=True)
 
+    changed = False
+    for m in mitologia:
+        if m.get("fecha_publicacion"):
+            dt_p = parse_iso_datetime(m["fecha_publicacion"])
+            if dt_p:
+                ts = int(dt_p.timestamp())
+                if m.get("fecha_publicacion_ts") != ts:
+                    m["fecha_publicacion_ts"] = ts
+                    changed = True
+        if m.get("fecha_publicacion") or m.get("fecha_publicacion_ts"):
+            is_pub = is_story_published(m)
+            if m.get("publicado") != is_pub:
+                m["publicado"] = is_pub
+                changed = True
+            if is_pub and m.get("estado") in ("programado", "estreno"):
+                m["estado"] = "publicado"
+                changed = True
+            elif not is_pub and m.get("estado") in ("publicado", "programado"):
+                m["estado"] = "estreno"
+                changed = True
+
+    if changed:
+        with open(ROOT_MITOLOGIA_FILE, 'w', encoding='utf-8') as f:
+            json.dump(mitologia, f, ensure_ascii=False, indent=2)
+
     with open(DATA_MITOLOGIA_FILE, 'w', encoding='utf-8') as f:
         json.dump(mitologia, f, ensure_ascii=False, indent=2)
 
@@ -1127,9 +1152,17 @@ def generate_index_html(relatos, mitologia=None):
                 </div>
                 <div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-obsidian/90 backdrop-blur px-2 py-0.5 rounded text-[11px] text-text-bright font-mono border border-border-subtle z-20">
                   <span x-text="m.duracion_audio + ' min'"></span>
-                  <template x-if="m.youtube_short_id">
+                  <template x-if="m.youtube_short_id && estaPublicado(m)">
                     <span class="text-damask-light font-sans font-bold">• +Short</span>
                   </template>
+                </div>
+                <!-- Overlay de Estreno si aún no está publicado -->
+                <div x-show="!estaPublicado(m)" 
+                     class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-4 z-10 transition-opacity">
+                  <span class="px-2.5 py-1 rounded bg-crimson/90 border border-crimson text-white text-[10px] font-bold uppercase tracking-wider shadow-md">
+                    Estreno
+                  </span>
+                  <span class="text-xs text-text-bright font-semibold mt-1" x-text="m.fecha_publicacion_ts ? 'Estreno Programado' : 'Próximamente en YouTube'"></span>
                 </div>
               </a>
               <div class="p-5 flex-1 flex flex-col justify-between">
@@ -1145,9 +1178,13 @@ def generate_index_html(relatos, mitologia=None):
                 </div>
                 <div class="mt-5 pt-4 border-t border-border-subtle flex items-center justify-between text-xs">
                   <a :href="m.pagina_url" class="font-semibold text-crimson-glow group-hover:text-white flex items-center gap-1 transition">
-                    <span>Leer Historia & Ver Vídeo + Short</span>
+                    <span x-text="estaPublicado(m) ? 'Leer Historia & Ver Vídeo + Short' : 'Ver Ficha de Estreno'"></span>
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                   </a>
+                  <span class="inline-flex items-center gap-1 text-[11px] text-text-muted font-medium">
+                    <svg class="w-3 h-3 text-damask-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                    <span x-text="estaPublicado(m) ? 'Audio & Vídeo HD' : (m.fecha_publicacion_ts ? 'Estreno 20:00 h' : 'En producción')"></span>
+                  </span>
                 </div>
               </div>
             </article>
