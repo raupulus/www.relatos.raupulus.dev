@@ -1,5 +1,102 @@
 [
   {
+    "id": "M0005",
+    "slug": "asase-yaa",
+    "nombre": "Asase Yaa",
+    "epiteto": "Madre de la Tierra y la Verdad",
+    "titulo_completo": "Asase Yaa: La Madre de la Tierra y la Verdad ⚡ Espíritus Abosom (África)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Espíritus Abosom",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 888,
+    "duracion_video": "05:34",
+    "duracion_audio": "05:34",
+    "duracion_short": "00:50",
+    "sinopsis": "En el corazón espiritual del pueblo akan de África occidental, Asase Yaa reina como la gran Madre Tierra: el seno fértil que nutre a los vivos y la morada eterna que acoge a los antepasados asamanfo. Consorte cósmica de Nyame, el dios supremo del cielo, ella encarna la justicia incorruptible, la verdad moral y el orden sagrado del universo. Cada jueves, la tierra reclama reposo absoluto: profanar su descanso despierta la sequía y el juicio de los ancestros.",
+    "youtube_id": "hXRojVxzKRQ",
+    "youtube_short_id": "SpUj3rAycIU",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=hXRojVxzKRQ",
+    "youtube_short_url": "https://www.youtube.com/shorts/SpUj3rAycIU",
+    "portada": "assets/images/portadas/M0005-asase-yaa.webp",
+    "pagina_url": "mitologia/M0005-asase-yaa.html",
+    "personajes": [
+      {
+        "nombre": "Asase Yaa",
+        "rol": "Diosa Primordial de la Tierra, la Verdad y la Agricultura",
+        "rasgos": "Matrona noble y venerable de etnia akan, tez de ébano profundo con cálidos matices de terracota, trenzas tradicionales con cuentas de arcilla y oro, vestida con manto kente bermellón y collar de cauris.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-asase-yaa-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-asase-yaa-cuerpo.webp"
+      },
+      {
+        "nombre": "Kwabena",
+        "rol": "Cazador y Agricultor Ashanti",
+        "rasgos": "Joven fornido de piel oscura curtida por el sol africano, sayal corto de cuero de antílope y azadón de hierro, postrado en reverente sobrecogimiento.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-asase-yaa-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-asase-yaa-cuerpo.webp"
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0005-003-nyame-y-asase-yaa-cielo-y-tierra.webp",
+        "pie": "El firmamento de Nyame y la tierra fértil de Asase Yaa encontrándose en el horizonte místico."
+      },
+      {
+        "archivo": "assets/images/escenas/M0005-004-matrona-venerable-tez-arcillosa.webp",
+        "pie": "Asase Yaa, matrona venerable de tez arcillosa, trenzas con cuentas de barro y manto kente."
+      },
+      {
+        "archivo": "assets/images/escenas/M0005-010-campesinos-ofrendan-primicias.webp",
+        "pie": "Campesinos akan depositando ofrendas de primicias sobre la tierra sagrada en acción de gracias."
+      },
+      {
+        "archivo": "assets/images/escenas/M0005-024-temblor-y-fractura-con-vapor-rojo.webp",
+        "pie": "La tierra partiéndose con estruendo telúrico y vapores bermellones ante la profanación del reposo sagrado."
+      },
+      {
+        "archivo": "assets/images/escenas/M0005-031-ciclo-existencia-humana-y-retorno.webp",
+        "pie": "El ciclo sagrado de la existencia y el retorno de los antepasados asamanfo al seno eterno de la Madre Tierra."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Vientre Fértil y la Madre Silenciosa",
+        "resumen": "En el corazón espiritual del pueblo akan, Asase Yaa reina como la gran Madre Tierra que nutre a los vivos y acoge a los antepasados."
+      },
+      {
+        "tiempo": "01:05",
+        "segundos": 65,
+        "titulo": "II. El Matrimonio Cósmico y el Día Sagrado de la Tierra",
+        "resumen": "Consorte cósmica de Nyame, dios supremo del cielo, ella exige el reposo sagrado de los jueves (Yawoada) sin azadones ni heridas sobre el suelo."
+      },
+      {
+        "tiempo": "02:08",
+        "segundos": 128,
+        "titulo": "III. El Juicio Postmortem y los Antepasados Asamanfo",
+        "resumen": "Diosa de la verdad moral y la justicia comunitaria; ante ella se jura descalzo y en su seno descansan las almas de los justos."
+      },
+      {
+        "tiempo": "03:17",
+        "segundos": 197,
+        "titulo": "IV. La Maldición de la Codicia y la Profanación",
+        "resumen": "Cuando la sangre inocente o la codicia humana mancillan la tierra, la sequía y la esterilidad azotan a las aldeas infractoras."
+      },
+      {
+        "tiempo": "04:43",
+        "segundos": 283,
+        "titulo": "V. El Tabú Roto y la Verdad Incorruptible",
+        "resumen": "El cazador Kwabena profana el bosque sagrado durante la sequía, y tras el juicio divino y la expiación, brota el manantial que salva al pueblo."
+      }
+    ],
+    "texto_relato": "Asase Yaa, la madre nutricia de la tierra fértil y la guardiana implacable de la verdad que acoge a los muertos en su seno eterno.\n\n* * *\n\nEn el principio de la cosmología del pueblo akan, mucho antes de que los reyes ashanti levantaran sus palacios o los clanes desbrozaran la espesura primordial, ya existía la gran Madre Tierra: Asase Yaa. Nacida de la voluntad creadora junto a Nyame, el soberano del firmamento, ella es el suelo viviente que sostiene los pasos de hombres, fieras y espíritus abosom. Se manifiesta como una matrona venerable de porte majestuoso y tez arcillosa, coronada por intrincadas trenzas con cuentas de terracota y envuelta en telas kente de ricos tonos ocres y bermellones. En su regazo descansa una calabaza colmada de granos dorados y ñames fértiles, mientras de las yemas de sus dedos brotan tiernas raíces que se hunden en el humus sagrado. Ella no habita en las nubes ni en templos de piedra; su altar supremo es cada puñado de tierra fecunda sobre el que caminan los mortales.\n\n* * *\n\nPara las aldeas agrícolas de Ghana y Costa de Marfil, Asase Yaa es la generosidad maternal encarnada. Cada amanecer, la tierra negra despierta por su aliento para alimentar los sembrados y hacer germinar el grano sagrado. De su vientre emanan los arroyos cristalinos que riegan las selvas y los tubérculos que sustentan a las familias en épocas de dura sequía. Los campesinos honran su presencia inclinando la frente hacia el suelo antes de la siembra y depositando las primicias de la cosecha sobre la tierra virgen sin segar. Ella es también el cimiento inquebrantable de la justicia comunitaria y la guardiana del juramento: ningún litigante osa mentir si pisa descalzo la tierra, pues la Madre conoce el latido íntimo de cada corazón humano. Asase Yaa protege los hogares, bendice el vientre de las mujeres estériles y otorga paz a quienes respetan los ciclos naturales. Cuando los ancianos vierten libaciones de vino de palma sobre el polvo, agradecen a la madre que sostiene amorosamente sus pasos día tras día.\n\n* * *\n\nSin embargo, la bondad de la Madre Tierra oculta una severidad implacable ante la profanación y el sacrilegio. El jueves, conocido reverentemente como Yawoada, es su día sagrado absoluto. Durante esas veinticuatro horas rige una ley inviolable en todo el territorio: queda terminantemente prohibido herir la tierra. Ninguna azada puede penetrar el suelo, ningún arado de hierro puede quebrar los terrones y ninguna pala puede abrir una fosa. Asase Yaa exige ese descanso semanal para que la tierra respire y cure sus heridas. Aquel imprudente que quebranta el tabú del jueves desafía una maldición temible: sus cosechas se marchitan en un solo día, las serpientes venenosas infestan sus chozas y el suelo fértil se torna arcilla estéril como ceniza. Pero su mayor cólera despierta contra quienes derraman sangre inocente. Para la diosa, la sangre no purificada es un veneno que corrompe su vientre. Quien comete homicidio es juzgado por la propia tierra, que puede abrirse bajo sus pies o negarle sustento hasta consumirlo en el destierro.\n\n* * *\n\nLa leyenda más recordada entre los sacerdotes akan narra los tiempos de la Gran Sequía Primordial, cuando el sol calcinó los ríos y una plaga asoló los campos ashanti. Desesperado por el hambre de su clan, un audaz cazador llamado Kwabena ignoró la advertencia de los ancianos en un fatídico amanecer de jueves. Tomando su azadón de hierro, se adentró en el bosque sagrado y golpeó la tierra con furia para arrancar raíces silvestres. Al primer impacto del metal, un temblor sobrecogedor sacudió la selva y una grieta profunda brotó del suelo emitiendo vapor bermellón. De la fractura emergió la imponente figura de Asase Yaa, con ojos relampagueantes de barro ardiente y lianas espinosas enredadas en sus brazos. Con voz que retumbaba como trueno subterráneo, la diosa increpó al mortal: «¿Acaso desgarras las carnes de tu propia madre en su día de reposo?». Kwabena cayó de rodillas aterrado, soltando sus armas y hundiendo el rostro en el polvo para suplicar perdón. Conmovida por su arrepentimiento sincero pero firme en su justicia, la Madre Tierra le ordenó un rito de expiación: ayunar tres lunas, purificar el suelo con aceite de palma y plantar siete higueras sagradas en la linde del bosque. Cuando el cazador cumplió la penitencia, Asase Yaa abrió las entrañas del suelo y un manantial de agua fresca brotó hacia la superficie, salvando a la comunidad entera.\n\n* * *\n\nAl concluir el ciclo de la existencia humana, la relación con Asase Yaa alcanza su sentido más hondo y trascendente. Para el pueblo akan, la muerte no es una despedida hacia la nada, sino el retorno definitivo al abrazo maternal que todo lo engendró. Antes de depositar a un difunto en la fosa, los sepultureros golpean suavemente la tierra pidiéndole permiso a la diosa para acoger un nuevo cuerpo en su descanso eterno. Aunque los siglos transformaron los antiguos reinos ashanti y nuevas creencias penetraron en los valles boscosos, el respeto a la Madre Tierra permanece inalterable en Ghana y Costa de Marfil. Los campesinos continúan suspendiendo las faenas agrícolas los jueves sagrados, recordando a las nuevas generaciones que la humanidad no es dueña del suelo que pisa, sino huésped temporal en el vientre eterno de Asase Yaa."
+  },
+  {
     "id": "M0004",
     "slug": "anansi",
     "nombre": "Anansi",
