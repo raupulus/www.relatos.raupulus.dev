@@ -50,32 +50,32 @@
 
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
         
-            <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-              <img src="../assets/images/portadas/M0002-amon-primordial.webp" alt="Portada de Amón primordial: El Señor del Aliento Oculto ⚡ Cosmogonía (Egipto)" width="1280" height="720" class="w-full h-full object-cover opacity-60">
-              <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-6">
-                <span class="px-3.5 py-1.5 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5 mb-3">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
-                  Estreno Programado en YouTube
-                </span>
-                <div class="text-xl sm:text-2xl font-bold text-white max-w-lg mb-2">Amón primordial: El Señor del Aliento Oculto ⚡ Cosmogonía (Egipto)</div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                  <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                  <span>Fecha de estreno: Próximamente</span>
-                </div>
-                <p class="text-xs text-text-muted max-w-md mb-5">El vídeo, el Short y la historia mitológica completa se desbloquearán en esta página el día del estreno oficial.</p>
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  Suscribirme para ver el estreno
-                </a>
-              </div>
+            <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+              <iframe src="https://www.youtube-nocookie.com/embed/t-aaaPz2Yk0?rel=0&modestbranding=1"
+                      title="Amón primordial: El Señor del Aliento Oculto ⚡ Cosmogonía (Egipto)"
+                      class="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
             </div>
+            
+            <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
+              <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
+                <iframe src="https://www.youtube-nocookie.com/embed/62Ejlw550cg?rel=0&modestbranding=1"
+                        title="Short: Amón primordial: El Señor del Aliento Oculto ⚡ Cosmogonía (Egipto)"
+                        class="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
+              <a href="https://www.youtube.com/shorts/62Ejlw550cg" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
+            </div>
+            
             
         <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
           <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
             <span>Suscribirme en YouTube</span>
           </a>
           <div class="flex flex-wrap items-center gap-2">
-            
+            <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')" class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition"><span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span></button>
             <a href="https://www.youtube.com/watch?v=t-aaaPz2Yk0" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
               <span>Ver vídeo en YouTube ↗</span>
             </a>
@@ -100,28 +100,75 @@
             
             <div class="text-text-main">
               <p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Amón primordial, el señor del aliento invisible y la fuerza oculta que agitó las aguas antes de la creación.</p>
-            </div>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Mucho antes de que el sol de Ra dorara los muros de Karnak o las crecidas del Nilo depositaran su limo fértil sobre la tierra negra de Egipto, el cosmos no era más que una masa líquida, fría y desprovista de orillas llamada Nun. En aquel abismo sin límites ni tiempo, donde la luz no había nacido y ninguna voz humana pronunciaba palabra alguna, habitaban ocho entidades primordiales agrupadas en cuatro parejas sagradas: la misteriosa Ogdóada de Hermópolis. Cada par encarnaba una dimensión elemental del caos previo al orden. Las aguas infinitas pertenecían a Nun y Naunet; la tiniebla absoluta era el dominio de Kuk y Kauket; la inmensidad informe dependía de Huh y Hauhet. Y en el núcleo más recóndito de aquella negrura sin fondo se alzaba la presencia más enigmática del panteón: Amón.</p>
 
-            <!-- Panel de Contenido Protegido hasta Estreno -->
-            <div class="my-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-obsidian-card to-obsidian border border-damask/40 shadow-2xl text-center">
-              <div class="w-12 h-12 mx-auto rounded-full bg-crimson/20 border border-crimson/50 text-crimson-glow flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../assets/images/escenas/M0002-004-ogdoada-hermopolis.webp" alt="Las ocho entidades primordiales de la Ogdóada de Hermópolis en el abismo de Nun." width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
               </div>
-              <span class="inline-block px-3 py-1 rounded-full bg-crimson/30 border border-crimson/60 text-damask-light text-xs font-bold uppercase tracking-wider mb-2">Contenido Protegido • Próximo Estreno</span>
-              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-2">La historia completa estará disponible en su estreno oficial</h3>
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                <span>Estreno: Próximamente</span>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>Las ocho entidades primordiales de la Ogdóada de Hermópolis en el abismo de Nun.</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Los antiguos escribas grabaron su nombre en los muros de piedra como «Jmn», un vocablo sagrado que significa literalmente «El Oculto» o «Aquel que no puede ser contemplado por los ojos mortales». A diferencia de las deidades que milenios después se manifestarían en templos colosales y estatuas de piedra brillante, el Amón original era la potencia invisible por excelencia, el principio que existe antes de que cualquier cosa adquiera nombre o figura. Los bajorrelieves más antiguos lo representaban con un cuerpo vigoroso de piel bronceada y la cabeza imponente de una rana sagrada de escamas oscuras y ojos de oro puro, coronado por el aliento silencioso que precede a todo movimiento. Junto a su consorte femenina, la diosa serpiente Amaunet, custodiaba el cuarto misterio del cosmos: la facultad de actuar en la sombra sin dejar rastro visible.</p>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Para la cosmovisión del Antiguo Egipto, la imagen de la rana no era un capricho mitológico, sino un símbolo prodigioso de fecundidad y vida latente. Así como las ranas emergían milagrosamente del lodo negro tras la retirada de las aguas del Nilo, Amón encarnaba la semilla divina dispuesta a brotar desde la materia informe del abismo primordial. En su mano derecha sostenía el cetro was, símbolo del poder que rige las fuerzas ocultas, y en su mano izquierda portaba el anj dorado, la llave que insufla el soplo vital en los seres vivos. Él era el viento celestial que recorría las aguas estancadas sin hacer ruido, la primera pulsación de aire que impedía que la materia quedara atrapada para siempre en la rigidez de una muerte eterna. Los sacerdotes de Hermópolis lo veneraban como el guardián del aliento que un día llenaría los pulmones de reyes y mortales.</p>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Sin embargo, aquella naturaleza oculta albergaba también un aspecto estremecedor que infundía temor reverencial. Amón era la personificación del vacío insondable, la nada previa a la existencia donde cualquier pensamiento humano se disuelve en el vértigo. Su rostro anfibio, bañado por la penumbra de las profundidades acuáticas, recordaba a los hombres que el orden del mundo es frágil y que la misma fuerza invisible que insufla la vida puede retirarse de golpe, dejando tras de sí la asfixia silenciosa, el frío de las tumbas y el horror del caos original. En los santuarios más arcaicos, los sacerdotes jamás pronunciaban su verdadero nombre en voz alta, temiendo que una invocación imprudente perturbara el delicado equilibrio de las corrientes cósmicas.</p>
+
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../assets/images/escenas/M0002-010-bajorrelieve-cabeza-rana.webp" alt="Retrato arcaico de Amón primordial con cabeza de rana sagrada y ojos de oro puro." width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
               </div>
-              <p class="text-xs sm:text-sm text-text-muted max-w-lg mx-auto leading-relaxed mb-6">
-                Por protección estricta de derechos de autor y exclusividad editorial, el texto completo, el minutado de capítulos y las escenas cinematográficas se desbloquearán el día del estreno público en YouTube.
-              </p>
-              <div class="flex flex-wrap items-center justify-center gap-3">
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold text-xs transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  <span>Suscribirme al canal de YouTube</span>
-                </a>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>Retrato arcaico de Amón primordial con cabeza de rana sagrada y ojos de oro puro.</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Muchos confunden a este dios originario con el Amón-Ra tebano de épocas posteriores, el gran monarca imperial coronado con altas plumas de avestruz y cabeza de carnero que gobernó el Imperio Nuevo. Pero el Amón de la Ogdóada era infinitamente más antiguo que cualquier sacerdocio tebano y que cualquier corona de oro. No exigía sacrificios multitudinarios ni riquezas arrebatadas a naciones vencidas; su santuario no estaba hecho de granito tallado, sino de la oscuridad intacta de los primeros instantes del mundo.</p>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">El momento culminante de su mito tuvo lugar en la noche sagrada de la creación. Las aguas de Nun pesaban como plomo y las tinieblas de Kuk amenazaban con congelar el tiempo en una parálisis sin fin. Fue entonces cuando Amón, uniendo su potencia masculina al soplo serpentino de Amaunet, desató desde su pecho una corriente de aire cálido que hendió las profundidades de arriba abajo. Aquella turbulencia sin origen agitó el abismo desde sus entrañas, provocando que las olas oscuras chocaran con violencia y el fango primordial comenzara a arremolinarse sobre sí mismo. De esa sacudida nació la primera tierra firme del universo: la sagrada Colina de las Llamas.</p>
+
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../assets/images/escenas/M0002-029-loto-primordial-monticulo.webp" alt="El gran loto primordial brotando sobre la Colina de las Llamas vigilado por Amón." width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
               </div>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>El gran loto primordial brotando sobre la Colina de las Llamas vigilado por Amón.</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            
+
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../assets/images/escenas/M0002-014-cetro-was-y-anj.webp" alt="El cetro was del dominio divino y el anj dorado que insufla el soplo de vida." width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              </div>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>El cetro was del dominio divino y el anj dorado que insufla el soplo de vida.</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            
+
+            <figure class="my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group">
+              <div class="relative aspect-video bg-black overflow-hidden">
+                <img src="../assets/images/escenas/M0002-026-amon-soplo-creacion.webp" alt="Amón primordial desatando el aliento cálido que hendió las profundidades del abismo." width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              </div>
+              <figcaption class="p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between">
+                <span>Amón primordial desatando el aliento cálido que hendió las profundidades del abismo.</span>
+                <span class="text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider">Escena Oficial</span>
+              </figcaption>
+            </figure>
+            
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Sobre aquel montículo humeante, vigilado de cerca por los ojos dorados de Amón y bendecido por su aliento invisible, brotó el gran loto primordial que abrió lentamente sus pétalos para dar a luz al niño solar, desgarrando la noche cósmica con el primer amanecer de la historia. Cumplida su misión generadora, las deidades de la Ogdóada no buscaron reinar sobre la tierra ni imponer sus leyes a los mortales. Descendieron en procesión solemne a las criptas subterráneas bajo Medinet Habu para sumergirse en el sueño de los siglos.</p>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Allí permanece Amón primordial en la quietud eterna, recordándonos que el origen de la existencia no fue un golpe de espada ni un trueno destructor, sino el aliento misterioso de un viento invisible que agitó la oscuridad antes de que naciera la luz.</p>
             </div>
             
           </article>
@@ -134,7 +181,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El océano primordial Nun y las ocho deidades de la Ogdóada hermopolitana.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=t-aaaPz2Yk0&t=0s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -146,7 +193,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El significado del nombre sagrado Jmn («El Oculto») y la cabeza de rana sagrada.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=t-aaaPz2Yk0&t=60s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -158,7 +205,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">La rana como símbolo de vida latente, el cetro was y el anj dorado de la vida.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=t-aaaPz2Yk0&t=111s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -170,7 +217,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El pavor reverencial a la nada primordial y el contraste con el Amón-Ra tebano.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=t-aaaPz2Yk0&t=164s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -182,7 +229,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El aliento que alzó la Colina de las Llamas, el loto del sol y el retiro bajo Medinet Habu.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=t-aaaPz2Yk0&t=242s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             </div>
           <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">

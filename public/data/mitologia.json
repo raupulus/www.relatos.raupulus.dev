@@ -1,5 +1,95 @@
 [
   {
+    "id": "M0007",
+    "slug": "bia",
+    "nombre": "Bia",
+    "epiteto": "El Señor de las Aguas Indómitas",
+    "titulo_completo": "Bia: El Señor de las Aguas Indómitas ⚡ Espíritus Abosom (África)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Espíritus Abosom",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 880,
+    "duracion_video": "05:29",
+    "duracion_audio": "05:29",
+    "duracion_short": "00:50",
+    "sinopsis": "En las densas selvas de la frontera entre Ghana y Costa de Marfil reina Bia, el espíritu abosom de las aguas salvajes y primogénito del dios supremo Nyame. Destinado a heredar el rico reino dorado de Ashanti pero despojado por la astucia de su hermano menor Tano, Bia convirtió su exilio en un santuario impenetrable de vida salvaje y dignidad inquebrantable. Descubre el mito épico del dios fluvial que domina las riadas, protege a los linajes ribereños y demuestra que el verdadero poder reside en la soberanía de la naturaleza virgen.",
+    "youtube_id": "P-W4UUuX410",
+    "youtube_short_id": "ADxkFEqQo60",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=P-W4UUuX410",
+    "youtube_short_url": "https://www.youtube.com/shorts/ADxkFEqQo60",
+    "portada": "assets/images/portadas/M0007-bia.webp",
+    "pagina_url": "mitologia/M0007-bia.html",
+    "personajes": [
+      {
+        "nombre": "Bia",
+        "rol": "Espíritu Abosom Fluvial de las Corrientes Indómitas y Soberano de la Selva",
+        "rasgos": "Joven guerrero y sacerdote akan de 28 años, físico hercúleo y atlético, piel de ébano oscuro pulido con reflejos húmedos, adornado con sartas de cauris, piedras de río, amuletos de latón, lianas de agua dulce y faldellín kente tradicional.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-bia-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-bia-cuerpo.webp"
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0007-002-profundidades-boscosas-valle-rio-bia.webp",
+        "pie": "Las profundidades boscosas donde las tierras altas de Ghana se funden con los valles vírgenes de Costa de Marfil y nace el río Bia."
+      },
+      {
+        "archivo": "assets/images/escenas/M0007-004-bia-joven-guerrero-sacerdote-rio.webp",
+        "pie": "Bia manifestado como noble guerrero y sacerdote de porte atlético, piel de ébano y adornos ceremoniales de cauris y lianas de agua dulce."
+      },
+      {
+        "archivo": "assets/images/escenas/M0007-011-refugio-fauna-elefantes-de-bosque-y-leopardos.webp",
+        "pie": "El dominio inviolable de Bia como refugio sagrado para los elefantes de bosque, leopardos y la biodiversidad salvaje."
+      },
+      {
+        "archivo": "assets/images/escenas/M0007-025-tano-disfrazado-ante-nyame-robo-bendicion.webp",
+        "pie": "El engaño de Tano al alba ante su padre anciano Nyame para arrebatar la primogenitura y el corazón dorado de Ashanti."
+      },
+      {
+        "archivo": "assets/images/escenas/M0007-033-florecer-vida-en-rincon-mas-salvaje.webp",
+        "pie": "La dignidad inquebrantable de Bia haciendo florecer la vida y la pureza en el rincón más salvaje del mundo."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. Las Aguas Sagradas de la Selva Virgen",
+        "resumen": "En las profundidades boscosas entre Ghana y Costa de Marfil, nace Bia, el primogénito de Nyame y Asase Yaa, señor de las corrientes indómitas y protector del río sagrado."
+      },
+      {
+        "tiempo": "01:10",
+        "segundos": 70,
+        "titulo": "II. La Arteria Nutricia y el Refugio de la Vida",
+        "resumen": "Las aguas de Bia alimentan cosechas fértiles de ñame y plátano, y ofrecen un refugio inviolable para los elefantes de bosque, leopardos y comunidades ribereñas."
+      },
+      {
+        "tiempo": "02:13",
+        "segundos": 133,
+        "titulo": "III. La Cólera Fluvial y el Juicio de la Verdad",
+        "resumen": "Bia castiga con crecidas colosales y torrentes bermellón a quienes talan árboles sagrados, contaminan los manantiales o juran en falso ante sus aguas."
+      },
+      {
+        "tiempo": "03:17",
+        "segundos": 197,
+        "titulo": "IV. La Disputa de la Primogenitura con Tano",
+        "resumen": "El hermano menor Tano engaña al anciano Nyame al alba con pieles aromáticas y roba la bendición de Ashanti; Bia acepta el destierro con serenidad majestuosa sin odio fratricida."
+      },
+      {
+        "tiempo": "04:42",
+        "segundos": 282,
+        "titulo": "V. El Santuario Invencible de la Naturaleza",
+        "resumen": "Bia transforma su exilio en la gran Reserva de la Biosfera de Bia, demostrando que la verdadera nobleza reside en hacer florecer la vida en el corazón salvaje de la creación."
+      }
+    ],
+    "texto_relato": "Bia, la divinidad abosom de las corrientes indómitas y el soberano del río que custodia las selvas impenetrables del oeste.\n\n* * *\n\nEn las profundidades boscosas donde las tierras altas de Ghana se funden con los valles vírgenes de Costa de Marfil, el agua no fluye como un simple curso natural, sino como la sangre viva de un dios. De la unión primordial entre Nyame, señor supremo del firmamento, y Asase Yaa, la gran madre de la tierra, nació Bia, el primogénito de los ríos sagrados. Venerado por las naciones akan como un joven guerrero y sacerdote de porte atlético y mirada penetrante, su piel de ébano oscuro resplandece bañada por la espuma dorada de los rápidos. Desprovisto de mantos pesados que atenúen su agilidad, su torso firme está ceñido por sartas ceremoniales de conchas de cauris, piedras pulidas del lecho fluvial y antiguos amuletos de latón sagrado. A su paso, lianas trepadoras de agua dulce caen sobre sus hombros como una corona viva, mientras peces brillantes saltan en torno a sus brazos anunciando la presencia del abosom de las aguas libres.\n\n* * *\n\nPara los linajes ribereños que aprendieron a convivir con la selva ecuatorial, Nana Bia representa la fertilidad inagotable, el cobijo de los viajeros y la protección frente al hambre. Su cauce es la arteria nutricia que mantiene con vida uno de los últimos santuarios de bosque lluvioso del continente africano. Bajo su mirada benévola, las cosechas de ñame y plátano prosperan en las llanuras de inundación, y los peces que desovan en las orillas pedregosas garantizan el sustento diario de las aldeas. Cazadores y pescadores acuden con respeto a su ribera antes de internarse en la espesura para verter libaciones de vino de palma y depositar ñame machacado con aceite rojo, solicitando su favor para cruzar los vados traicioneros. En el dominio de Bia, los animales salvajes hallan un refugio inviolable: los elefantes de bosque bajan a beber en manadas serenas, los leopardos descansan en las riberas y los monos colobos pueblan las copas, sabiendo que bajo el amparo del río ninguna peste ni cazador furtivo puede quebrar la paz del bosque sagrado.\n\n* * *\n\nSin embargo, la misma corriente mansa que nutre la selva puede transfigurarse en una fuerza destructiva implacable cuando los mortales vulneran las leyes sagradas de la naturaleza. Bia no tolera la profanación de sus orillas ni la codicia de quienes explotan sus recursos sin el debido respeto ritual. Cortar árboles centenarios junto al agua, contaminar los manantiales con inmundicias o arrojar redes en los remolinos sagrados desata la cólera inmediata del dios fluvial. La divinidad responde transformando las aguas cristalinas en un torrente furioso de lodo bermellón y troncos a la deriva. Fuertes crecidas arrasan los campamentos ribereños, y remolinos súbitos devoran las canoas de los infractores sin dejar rastro de sus cuerpos. Los ancianos relatan que aquel que miente en una disputa comunitaria y jura en falso sobre las aguas de Bia es consumido por fiebres repentinas y delirios oscuros de los que solo la confesión pública y una ofrenda expiatoria pueden salvarlo. Ante el río, la verdad es tan pura como su corriente más profunda.\n\n* * *\n\nEl episodio cumbre que definió el destino de Bia es la legendaria disputa de la primogenitura con su hermano Tano, señor del río vecino. En los albores del mundo, cuando el creador Nyame envejeció y sus ojos comenzaron a nublarse, convocó a sus siervos celestiales con la intención de repartir la tierra entre sus dos hijos mayores. Amando profundamente a Bia por ser el primogénito noble y cumplidor, Nyame tenía reservadas para él las ricas llanuras centrales de Ashanti, colmadas de vetas de oro brillante y pueblos prósperos, mientras que para Tano destinaría las densas selvas periféricas del oeste. No obstante, un sirviente astuto favoreció en secreto a Tano, advirtiéndole del juicio divino. Tano se cubrió con pieles aromáticas y se presentó al alba ante Nyame imitando la voz serena de Bia. Engañado por su debilidad, el dios supremo bendijo a Tano con el corazón del reino y sus riquezas. Cuando el verdadero Bia regresó de la espesura, la verdad quedó al descubierto entre lágrimas amargas. Pero la palabra de Nyame era irrevocable y el decreto ya no podía deshacerse. Con dignidad majestuosa que asombró a los cielos, Bia aceptó el despojo sin odio fratricida. Tomó las tierras salvajes del oeste, declarando que su poder no nacería del oro efímero de los palacios, sino de la soberanía eterna de la naturaleza viva.\n\n* * *\n\nDesde aquel día fundacional, el dios Bia convirtió su destierro aparente en una fortaleza inexpugnable de pureza ancestral. Mientras otros reinos crecían, guerreaban y sucumbían a la codicia, las aguas del río Bia continuaron fluyendo soberanas a través de los siglos, marcando la frontera indómita entre Ghana y Costa de Marfil. Hoy en día, su legado sobrevive en la gran Reserva de la Biosfera de Bia, un santuario ecológico global donde la selva virgen permanece viva e incorruptible. En sus santuarios tradicionales, los sacerdotes siguen saludando al abosom de los cauris y las aguas rápidas, recordando a cada generación que la verdadera nobleza no consiste en poseer el oro ajeno, sino en hacer florecer la vida en el rincón más salvaje del mundo."
+  },
+  {
     "id": "M0006",
     "slug": "asuo-gyebi",
     "nombre": "Asuo Gyebi",

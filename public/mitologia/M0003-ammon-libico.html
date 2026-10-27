@@ -50,32 +50,32 @@
 
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
         
-            <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-              <img src="../assets/images/portadas/M0003-ammon-libico.webp" alt="Portada de Ammon líbico: El Señor del Oráculo de Siwa ⚡ Dioses Bereberes (África)" width="1280" height="720" class="w-full h-full object-cover opacity-60">
-              <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-6">
-                <span class="px-3.5 py-1.5 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5 mb-3">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
-                  Estreno Programado en YouTube
-                </span>
-                <div class="text-xl sm:text-2xl font-bold text-white max-w-lg mb-2">Ammon líbico: El Señor del Oráculo de Siwa ⚡ Dioses Bereberes (África)</div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                  <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                  <span>Fecha de estreno: Próximamente</span>
-                </div>
-                <p class="text-xs text-text-muted max-w-md mb-5">El vídeo, el Short y la historia mitológica completa se desbloquearán en esta página el día del estreno oficial.</p>
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  Suscribirme para ver el estreno
-                </a>
-              </div>
+            <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+              <iframe src="https://www.youtube-nocookie.com/embed/jY9VEzc-kHw?rel=0&modestbranding=1"
+                      title="Ammon líbico: El Señor del Oráculo de Siwa ⚡ Dioses Bereberes (África)"
+                      class="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
             </div>
+            
+            <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
+              <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
+                <iframe src="https://www.youtube-nocookie.com/embed/nr47XD42IS0?rel=0&modestbranding=1"
+                        title="Short: Ammon líbico: El Señor del Oráculo de Siwa ⚡ Dioses Bereberes (África)"
+                        class="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
+              <a href="https://www.youtube.com/shorts/nr47XD42IS0" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
+            </div>
+            
             
         <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
           <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
             <span>Suscribirme en YouTube</span>
           </a>
           <div class="flex flex-wrap items-center gap-2">
-            
+            <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')" class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition"><span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span></button>
             <a href="https://www.youtube.com/watch?v=jY9VEzc-kHw" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
               <span>Ver vídeo en YouTube ↗</span>
             </a>
@@ -100,28 +100,16 @@
             
             <div class="text-text-main">
               <p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Ammon líbico, el señor de los cuernos sagrados y la voz oracular que guio a las caravanas a través del mar de arena.</p>
-            </div>
-
-            <!-- Panel de Contenido Protegido hasta Estreno -->
-            <div class="my-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-obsidian-card to-obsidian border border-damask/40 shadow-2xl text-center">
-              <div class="w-12 h-12 mx-auto rounded-full bg-crimson/20 border border-crimson/50 text-crimson-glow flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-              </div>
-              <span class="inline-block px-3 py-1 rounded-full bg-crimson/30 border border-crimson/60 text-damask-light text-xs font-bold uppercase tracking-wider mb-2">Contenido Protegido • Próximo Estreno</span>
-              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-2">La historia completa estará disponible en su estreno oficial</h3>
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                <span>Estreno: Próximamente</span>
-              </div>
-              <p class="text-xs sm:text-sm text-text-muted max-w-lg mx-auto leading-relaxed mb-6">
-                Por protección estricta de derechos de autor y exclusividad editorial, el texto completo, el minutado de capítulos y las escenas cinematográficas se desbloquearán el día del estreno público en YouTube.
-              </p>
-              <div class="flex flex-wrap items-center justify-center gap-3">
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold text-xs transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  <span>Suscribirme al canal de YouTube</span>
-                </a>
-              </div>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">En los confines más remotos del norte de África, donde el viento del Sahara esculpe un océano infinito de dunas doradas, se alza el legendario oasis de Siwa. En aquel refugio verde protegido por colinas de roca blanca y manantiales cristalinos, habitaba desde tiempos inmemoriales Ammon líbico: la deidad suprema de las antiguas tribus bereberes que poblaban los márgenes del desierto. Mucho antes de que los faraones de Egipto extendieran su influencia hacia el oeste o los navegantes griegos fundaran las colonias de Cirene, los pueblos nómadas ya reconocían su presencia soberana. Ammon se manifestaba como un anciano venerable de mirada penetrante y noble porte sahariano, de cuyas sienes brotaban los imponentes cuernos enroscados del carnero sagrado. Su trono no residía en palacios opulentos, sino en la cumbre rocosa de Aghurmi, allí donde el silencio del desierto se quebraba únicamente por el murmullo de las aguas termales y el susurro de las hojas de palma.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Para los viajeros y las caravanas que se aventuraban por las rutas mortales del Sahara, Ammon era el faro de vida y la esperanza encarnada. Su bendición alimentaba la célebre Fuente del Sol, un prodigioso manantial cuyas aguas brotaban gélidas durante el calor abrasador del mediodía y humeantes al caer la noche helada del desierto. El dios bendecía las palmeras datileras, aseguraba los pastos para los rebaños y enviaba brisas refrescantes que disipaban el sopor abrasador de las dunas. Pero su mayor don era el don de la profecía. Desde su santuario de piedra caliza, los sacerdotes interpretaban los balanceos de la barca sagrada de Ammon, respondiendo a las plegarias de reyes y pastores por igual. Su oráculo resolvía litigios tribales sin derramar una sola gota de sangre, restablecía el honor de las familias nómadas y revelaba las sendas seguras para cruzar las arenas ardientes. Aquel que recibía la bendición del dios con cabeza de carnero jamás perdía el rumbo ni perecía de sed bajo el sol inclemente.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Sin embargo, la faz benevolente del dios guardaba un reverso despiadado y terrible. Ammon era también el guardián implacable del Sahara, y el mismo desierto que alimentaba con sus manantiales podía convertirse en una tumba colosal para los arrogantes que profanaban sus dominios. La leyenda más estremecedora de su ira tuvo lugar cuando el rey persa Cambises el Segundo, embriagado por la soberbia militar, envió un ejército de cincuenta mil soldados con la orden de incendiar el oráculo de Siwa y degollar a sus sacerdotes. La expedición se adentró en el mar de dunas sin respeto alguno por los ritos sagrados. Fue entonces cuando Ammon desató el siroco: una tempestad descomunal de viento abrasador que borró el sol en pleno día y alzó montañas de arena sobre las filas invasoras. En cuestión de horas, el ejército entero de Cambises fue tragado por las arenas sin dejar rastro de armaduras, caballos ni osamentas. Los desiertos de Ammon no perdonaban el sacrilegio; quien desafiaba su santuario quedaba sepultado en el olvido eterno.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">El episodio más célebre de su historia cósmica se produjo en el invierno del año trescientos treinta y uno antes de Cristo. El joven rey macedonio Alejandro Magno, tras conquistar Egipto, sintió la imperiosa necesidad de consultar al dios carnero para descubrir la verdad sobre su propio linaje. Acompañado por un selecto destacamento de jinetes, Alejandro se internó en el mar de arena. Tras días de marcha bajo un sol calcinante, los guías perdieron el rumbo y el agua de los odres se agotó, amenazando con una muerte segura a la expedición. Cuentan los cronistas que fue el propio Ammon quien intervino en el momento más desesperado: dos cuervos negros de graznido penetrante y dos serpientes del desierto aparecieron milagrosamente entre las crestas de arena para guiar a los macedonios hasta el oasis. Exhausto y cubierto de polvo, Alejandro ascendió finalmente a la roca de Aghurmi. Al cruzar el umbral del templo, el anciano sacerdote del oráculo salió a su encuentro y, poseído por el aliento de Ammon, lo saludó con voz solemne llamándolo hijo predilecto de la divinidad. En la penumbra del sanctasanctórum, a solas frente al icono coronado de carnero, Alejandro recibió una profecía íntima que jamás desveló a mortal alguno, pero que transformó para siempre su mirada y selló su destino como soberano del mundo.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Cumplida su era de esplendor y tras ver pasar imperios, faraones y conquistadores, el culto a Ammon líbico se replegó lentamente hacia las sombras del pasado. El oráculo de Siwa enmudeció entre las ruinas desmoronadas de Aghurmi, pero la efigie del dios con cuernos de carnero perduró inmortal en las monedas de plata de Cirene y en la memoria del norte de África. Su hijo, el temible dios toro Gurzil, heredaría la furia guerrera de las tribus bereberes, mientras la silueta de Ammon permanecía grabada en la soledad de las rocas saharianas. Hoy, cuando las caravanas de camellos divisan el palmeral verde de Siwa tras jornadas interminables de polvo y calor, el viento que acaricia las palmeras susurra todavía el nombre sagrado del dios carnero, recordando al viajero que bajo el manto de arena del Sahara duerme la sabiduría eterna de quienes supieron escuchar la voz del desierto.</p>
             </div>
             
           </article>
@@ -134,7 +122,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">En el confín del desierto sahariano, el oasis de Siwa emerge como refugio verde custodiado por Ammon líbico, el dios con cuernos de carnero sagrado.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=jY9VEzc-kHw&t=0s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -146,7 +134,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">La bendición de las aguas termales y la voz oracular en Aghurmi guían a las caravanas nómadas y resuelven litigios sin derramar sangre.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=jY9VEzc-kHw&t=69s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -158,7 +146,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El rey persa Cambises envía cincuenta mil guerreros a destruir el santuario; Ammon desata el siroco abrasador y los sepulta para siempre.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=jY9VEzc-kHw&t=132s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -170,7 +158,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Guiado por cuervos sagrados a través del desierto, el joven rey macedonio llega al oráculo y recibe la profecía de su soberanía universal.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=jY9VEzc-kHw&t=197s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -182,7 +170,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El ocaso del oráculo tras la caída de imperios y la memoria inmortal del dios carnero en las arenas y en su hijo, el dios toro Gurzil.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=jY9VEzc-kHw&t=278s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             </div>
           <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">

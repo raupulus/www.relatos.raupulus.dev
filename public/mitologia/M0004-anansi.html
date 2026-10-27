@@ -50,32 +50,32 @@
 
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
         
-            <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-              <img src="../assets/images/portadas/M0004-anansi.webp" alt="Portada de Anansi: El Señor de Todas las Historias ⚡ Espíritus Abosom (África)" width="1280" height="720" class="w-full h-full object-cover opacity-60">
-              <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-6">
-                <span class="px-3.5 py-1.5 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5 mb-3">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
-                  Estreno Programado en YouTube
-                </span>
-                <div class="text-xl sm:text-2xl font-bold text-white max-w-lg mb-2">Anansi: El Señor de Todas las Historias ⚡ Espíritus Abosom (África)</div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                  <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                  <span>Fecha de estreno: Próximamente</span>
-                </div>
-                <p class="text-xs text-text-muted max-w-md mb-5">El vídeo, el Short y la historia mitológica completa se desbloquearán en esta página el día del estreno oficial.</p>
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  Suscribirme para ver el estreno
-                </a>
-              </div>
+            <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+              <iframe src="https://www.youtube-nocookie.com/embed/2E3uBcV42Gg?rel=0&modestbranding=1"
+                      title="Anansi: El Señor de Todas las Historias ⚡ Espíritus Abosom (África)"
+                      class="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
             </div>
+            
+            <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
+              <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
+                <iframe src="https://www.youtube-nocookie.com/embed/Od8wjMbhxD0?rel=0&modestbranding=1"
+                        title="Short: Anansi: El Señor de Todas las Historias ⚡ Espíritus Abosom (África)"
+                        class="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
+              <a href="https://www.youtube.com/shorts/Od8wjMbhxD0" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
+            </div>
+            
             
         <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
           <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
             <span>Suscribirme en YouTube</span>
           </a>
           <div class="flex flex-wrap items-center gap-2">
-            
+            <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')" class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition"><span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span></button>
             <a href="https://www.youtube.com/watch?v=2E3uBcV42Gg" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
               <span>Ver vídeo en YouTube ↗</span>
             </a>
@@ -100,28 +100,16 @@
             
             <div class="text-text-main">
               <p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Anansi, el espíritu tejedor de historias y el maestro del ingenio que arrebató la sabiduría a los dioses del cielo.</p>
-            </div>
-
-            <!-- Panel de Contenido Protegido hasta Estreno -->
-            <div class="my-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-obsidian-card to-obsidian border border-damask/40 shadow-2xl text-center">
-              <div class="w-12 h-12 mx-auto rounded-full bg-crimson/20 border border-crimson/50 text-crimson-glow flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-              </div>
-              <span class="inline-block px-3 py-1 rounded-full bg-crimson/30 border border-crimson/60 text-damask-light text-xs font-bold uppercase tracking-wider mb-2">Contenido Protegido • Próximo Estreno</span>
-              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-2">La historia completa estará disponible en su estreno oficial</h3>
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                <span>Estreno: Próximamente</span>
-              </div>
-              <p class="text-xs sm:text-sm text-text-muted max-w-lg mx-auto leading-relaxed mb-6">
-                Por protección estricta de derechos de autor y exclusividad editorial, el texto completo, el minutado de capítulos y las escenas cinematográficas se desbloquearán el día del estreno público en YouTube.
-              </p>
-              <div class="flex flex-wrap items-center justify-center gap-3">
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold text-xs transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  <span>Suscribirme al canal de YouTube</span>
-                </a>
-              </div>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">En el corazón de las selvas occidentales de África, donde los árboles sagrados entrelazan sus copas hasta ocultar la luz del firmamento, la tradición del pueblo akan venera a Kwaku Anansi: la gran araña cósmica y el trickster más célebre de la mitología universal. A diferencia de las majestuosas divinidades que gobiernan los truenos, las tormentas o los ríos sagrados desde alturas inaccesibles, Anansi camina en el umbral constante entre el reino místico de los espíritus abosom y el mundo terrenal de los mortales. Se manifiesta en la figura de una diminuta araña de hilo invisible o en la presencia venerable de un anciano astuto de ropajes tradicionales en índigo, portador de una calabaza repleta de relatos y ojos que centellean con malicia sagrada. En la corteza de los viejos baobabs, su sombra proyecta ocho extremidades finas y pacientes, símbolo imperecedero de la red invisible con la que entrelaza el destino, la palabra y la supervivencia de los seres humanos.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Para los habitantes de las aldeas africanas, Anansi representa la victoria del débil frente a los poderosos y el triunfo definitivo del ingenio sobre la fuerza bruta. En los tiempos remotos del origen del mundo, la humanidad vivía sumergida en la penumbra del silencio, ignorante de su propio pasado y desprovista de consuelo frente a la adversidad de la selva. Fue Anansi quien ascendió hasta la bóveda celeste colgado de un hilo de seda brillante para arrebatar las historias a Nyame, el dios supremo del firmamento. Al descender a la tierra con el cofre de los relatos sagrados, enseñó a los ancianos a narrar junto a la hoguera comunitaria, otorgó la memoria colectiva a los clanes y regaló a los campesinos la sabiduría ancestral para sembrar las tierras y resistir las sequías prolongadas. Los cuentos de Anansi, conocidos reverentemente como Anansesem, se convirtieron en el escudo moral de los oprimidos, demostrando que ninguna muralla ni bestia salvaje puede doblegar a quien posee la paciencia para tejer palabras certeras.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Sin embargo, el alma del maestro del engaño alberga un reverso sombrío alimentado por la vanidad, la gula insaciable y una codicia implacable. Incapaz de contener su apetito egoísta, Anansi recurre con frecuencia a trampas despiadadas que sacrifican la lealtad y el honor de su linaje. En tiempos de amarga escasez, fingió su propia muerte para alimentarse en secreto de las mejores cosechas, mientras su propia familia padecía hambre en el duelo. Su soberbia llegó al extremo de intentar recolectar toda la sabiduría del cosmos dentro de una calabaza sellada con resina para guardarla exclusivamente para sí, negándose a compartirla con el resto de las criaturas. Aquel que confía ciegamente en la risa afable de la araña corre el riesgo de quedar atrapado en su red de embustes; pues Anansi no reconoce más ley que su conveniencia, y su lengua afilada conduce al inocente hacia el abismo con tal de eludir las consecuencias de sus propios actos.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">La hazaña cumbre que consagró su leyenda en el panteón de los espíritus comenzó el día en que Anansi osó presentarse ante el trono de Nyame para reclamar la custodia de todos los cuentos del universo. El señor del cielo rio con desdén ante su audacia y le impuso un precio imposible que ningún guerrero había logrado pagar: la captura viva de Osebo, el temible leopardo de colmillos de hierro; de las Mmoboro, el enjambre de avispas ponzoñosas; de Onini, la gigantesca pitón de la selva; y de Mmoatia, la criatura espectral del bosque que ningún mortal puede contemplar. Sin empuñar armas, Anansi desplegó su astucia magistral. Vertió agua sobre una hoja de plátano para convencer a las avispas de que caía un diluvio, incitándolas a refugiarse dentro de una calabaza seca donde las atrapó. Con una vara de palmera retó a la gran pitón, diciéndole que su cuerpo era más corto que el madero hasta lograr que se estirara para atarla firmemente de extremo a extremo. Cavó una fosa profunda donde cayó el leopardo, apresándolo con lianas resistentes. Finalmente, modeló una muñeca de madera cubierta de savia pegajosa; cuando el espíritu del bosque la golpeó enfurecido por su silencio, quedó adherido sin remedio. Al contemplar los cuatro tributos a sus pies, Nyame reconoció la derrota y proclamó a Anansi dueño de todas las historias.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Aunque Anansi tropezó muchas veces con su propia arrogancia y vio su calabaza de sabiduría romperse contra las ramas de un árbol para esparcir el conocimiento por la tierra, su espíritu indomable jamás fue sometido. Cuando las cadenas del tráfico de esclavos arrastraron a los pueblos de África hacia tierras lejanas, el mito de la araña burlona cruzó el océano Atlántico en el corazón de los desterrados, transformándose en el Caribe y las Américas en el gran símbolo de la resistencia cultural y el ingenio frente a la tiranía. Hoy, en los rincones más umbríos de la espesura y en los hogares donde la voz humana conjura la memoria de los antepasados, Kwaku Anansi sigue habitando entre los hilos de seda del rincón, recordándonos que en un mundo dominado por gigantes arrogantes, la inteligencia paciente de la pequeña araña siempre tendrá la última palabra.</p>
             </div>
             
           </article>
@@ -134,7 +122,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">En el corazón de las selvas africanas, el pueblo akan venera a Kwaku Anansi, mediador entre las divinidades abosom y los mortales.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=2E3uBcV42Gg&t=0s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -146,7 +134,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Anansi asciende por un hilo de seda ante Nyame, obtiene el cofre sagrado de las historias y regala la sabiduría y la memoria oral a los pueblos.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=2E3uBcV42Gg&t=68s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -158,7 +146,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">La ambición y el egoísmo de la araña trickster conducen a trampas despiadadas y a lecciones morales que alertan contra la gula y la soberbia.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=2E3uBcV42Gg&t=129s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -170,7 +158,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Para ganar los relatos, Anansi captura con ingenio sin derramar sangre al leopardo Osebo, las avispas Mmoboro, la pitón Onini y el espíritu Mmoatia.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=2E3uBcV42Gg&t=187s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -182,7 +170,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">La calabaza de sabiduría se quiebra en el baobab esparciéndose por el mundo, y el mito viaja a través del Atlántico como símbolo eterno de resistencia.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=2E3uBcV42Gg&t=271s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             </div>
           <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">
