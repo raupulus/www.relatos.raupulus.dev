@@ -1,5 +1,95 @@
 [
   {
+    "id": "M0004",
+    "slug": "anansi",
+    "nombre": "Anansi",
+    "epiteto": "El Señor de Todas las Historias",
+    "titulo_completo": "Anansi: El Señor de Todas las Historias ⚡ Espíritus Abosom (África)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Espíritus Abosom",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 889,
+    "duracion_video": "05:20",
+    "duracion_audio": "05:20",
+    "duracion_short": "00:46",
+    "sinopsis": "En las profundidades de las selvas de África occidental, la tradición oral del pueblo akan celebra a Kwaku Anansi: la legendaria araña cósmica y el trickster más célebre de la mitología universal. Mediador entre los espíritus abosom y los mortales, Anansi empleó su infinita astucia para arrebatar las historias al dios supremo del cielo, convirtiéndose en el protector de los desvalidos y en el gran maestro del ingenio frente a la fuerza bruta.",
+    "youtube_id": "2E3uBcV42Gg",
+    "youtube_short_id": "Od8wjMbhxD0",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=2E3uBcV42Gg",
+    "youtube_short_url": "https://www.youtube.com/shorts/Od8wjMbhxD0",
+    "portada": "assets/images/portadas/M0004-anansi.webp",
+    "pagina_url": "mitologia/M0004-anansi.html",
+    "personajes": [
+      {
+        "nombre": "Kwaku Anansi",
+        "rol": "Espíritu Tejedor y Trickster de la Sabiduría",
+        "rasgos": "Anciano akan enjuto de porte ágil y piel ébano profunda, cabello y barba corta entrecana, mirada vivaz, manto índigo tradicional sobre un hombro con símbolos adinkra y collar de cauris.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-anansi-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-anansi-cuerpo.webp"
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0004-003-kwaku-anansi-arana-cosmica.webp",
+        "pie": "Kwaku Anansi, la gran araña cósmica y espíritu del ingenio en la tradición Akan."
+      },
+      {
+        "archivo": "assets/images/escenas/M0004-009-ascenso-al-cielo-hilo-seda.webp",
+        "pie": "Anansi ascendiendo por un hilo de seda plateada hacia la corte celeste del dios Nyame."
+      },
+      {
+        "archivo": "assets/images/escenas/M0004-020-nyame-exige-cuatro-tributos.webp",
+        "pie": "El dios supremo Nyame exigiendo la captura de las cuatro bestias imposibles a cambio de los relatos."
+      },
+      {
+        "archivo": "assets/images/escenas/M0004-023-trampa-de-la-vara-y-la-piton.webp",
+        "pie": "La trampa de la vara de palma y la captura con astucia de la serpiente pitón Onini."
+      },
+      {
+        "archivo": "assets/images/escenas/M0004-027-calabaza-rota-sabiduria-esparcida.webp",
+        "pie": "La calabaza quebrándose en las ramas del baobab, esparciendo la sabiduría cósmica entre toda la humanidad."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. La Gran Araña y el Reino de los Abosom",
+        "resumen": "En el corazón de las selvas africanas, el pueblo akan venera a Kwaku Anansi, mediador entre las divinidades abosom y los mortales."
+      },
+      {
+        "tiempo": "01:08",
+        "segundos": 68,
+        "titulo": "II. El Ascenso al Cielo y el Regalo de los Relatos",
+        "resumen": "Anansi asciende por un hilo de seda ante Nyame, obtiene el cofre sagrado de las historias y regala la sabiduría y la memoria oral a los pueblos."
+      },
+      {
+        "tiempo": "02:09",
+        "segundos": 129,
+        "titulo": "III. El Reverso Sombrío: Vanidad y Engaño",
+        "resumen": "La ambición y el egoísmo de la araña trickster conducen a trampas despiadadas y a lecciones morales que alertan contra la gula y la soberbia."
+      },
+      {
+        "tiempo": "03:07",
+        "segundos": 187,
+        "titulo": "IV. El Precio de Nyame y las Cuatro Bestias",
+        "resumen": "Para ganar los relatos, Anansi captura con ingenio sin derramar sangre al leopardo Osebo, las avispas Mmoboro, la pitón Onini y el espíritu Mmoatia."
+      },
+      {
+        "tiempo": "04:31",
+        "segundos": 271,
+        "titulo": "V. La Calabaza de Sabiduría y el Legado Inmortal",
+        "resumen": "La calabaza de sabiduría se quiebra en el baobab esparciéndose por el mundo, y el mito viaja a través del Atlántico como símbolo eterno de resistencia."
+      }
+    ],
+    "texto_relato": "Anansi, el espíritu tejedor de historias y el maestro del ingenio que arrebató la sabiduría a los dioses del cielo.\n\n* * *\n\nEn el corazón de las selvas occidentales de África, donde los árboles sagrados entrelazan sus copas hasta ocultar la luz del firmamento, la tradición del pueblo akan venera a Kwaku Anansi: la gran araña cósmica y el trickster más célebre de la mitología universal. A diferencia de las majestuosas divinidades que gobiernan los truenos, las tormentas o los ríos sagrados desde alturas inaccesibles, Anansi camina en el umbral constante entre el reino místico de los espíritus abosom y el mundo terrenal de los mortales. Se manifiesta en la figura de una diminuta araña de hilo invisible o en la presencia venerable de un anciano astuto de ropajes tradicionales en índigo, portador de una calabaza repleta de relatos y ojos que centellean con malicia sagrada. En la corteza de los viejos baobabs, su sombra proyecta ocho extremidades finas y pacientes, símbolo imperecedero de la red invisible con la que entrelaza el destino, la palabra y la supervivencia de los seres humanos.\n\n* * *\n\nPara los habitantes de las aldeas africanas, Anansi representa la victoria del débil frente a los poderosos y el triunfo definitivo del ingenio sobre la fuerza bruta. En los tiempos remotos del origen del mundo, la humanidad vivía sumergida en la penumbra del silencio, ignorante de su propio pasado y desprovista de consuelo frente a la adversidad de la selva. Fue Anansi quien ascendió hasta la bóveda celeste colgado de un hilo de seda brillante para arrebatar las historias a Nyame, el dios supremo del firmamento. Al descender a la tierra con el cofre de los relatos sagrados, enseñó a los ancianos a narrar junto a la hoguera comunitaria, otorgó la memoria colectiva a los clanes y regaló a los campesinos la sabiduría ancestral para sembrar las tierras y resistir las sequías prolongadas. Los cuentos de Anansi, conocidos reverentemente como Anansesem, se convirtieron en el escudo moral de los oprimidos, demostrando que ninguna muralla ni bestia salvaje puede doblegar a quien posee la paciencia para tejer palabras certeras.\n\n* * *\n\nSin embargo, el alma del maestro del engaño alberga un reverso sombrío alimentado por la vanidad, la gula insaciable y una codicia implacable. Incapaz de contener su apetito egoísta, Anansi recurre con frecuencia a trampas despiadadas que sacrifican la lealtad y el honor de su linaje. En tiempos de amarga escasez, fingió su propia muerte para alimentarse en secreto de las mejores cosechas, mientras su propia familia padecía hambre en el duelo. Su soberbia llegó al extremo de intentar recolectar toda la sabiduría del cosmos dentro de una calabaza sellada con resina para guardarla exclusivamente para sí, negándose a compartirla con el resto de las criaturas. Aquel que confía ciegamente en la risa afable de la araña corre el riesgo de quedar atrapado en su red de embustes; pues Anansi no reconoce más ley que su conveniencia, y su lengua afilada conduce al inocente hacia el abismo con tal de eludir las consecuencias de sus propios actos.\n\n* * *\n\nLa hazaña cumbre que consagró su leyenda en el panteón de los espíritus comenzó el día en que Anansi osó presentarse ante el trono de Nyame para reclamar la custodia de todos los cuentos del universo. El señor del cielo rio con desdén ante su audacia y le impuso un precio imposible que ningún guerrero había logrado pagar: la captura viva de Osebo, el temible leopardo de colmillos de hierro; de las Mmoboro, el enjambre de avispas ponzoñosas; de Onini, la gigantesca pitón de la selva; y de Mmoatia, la criatura espectral del bosque que ningún mortal puede contemplar. Sin empuñar armas, Anansi desplegó su astucia magistral. Vertió agua sobre una hoja de plátano para convencer a las avispas de que caía un diluvio, incitándolas a refugiarse dentro de una calabaza seca donde las atrapó. Con una vara de palmera retó a la gran pitón, diciéndole que su cuerpo era más corto que el madero hasta lograr que se estirara para atarla firmemente de extremo a extremo. Cavó una fosa profunda donde cayó el leopardo, apresándolo con lianas resistentes. Finalmente, modeló una muñeca de madera cubierta de savia pegajosa; cuando el espíritu del bosque la golpeó enfurecido por su silencio, quedó adherido sin remedio. Al contemplar los cuatro tributos a sus pies, Nyame reconoció la derrota y proclamó a Anansi dueño de todas las historias.\n\n* * *\n\nAunque Anansi tropezó muchas veces con su propia arrogancia y vio su calabaza de sabiduría romperse contra las ramas de un árbol para esparcir el conocimiento por la tierra, su espíritu indomable jamás fue sometido. Cuando las cadenas del tráfico de esclavos arrastraron a los pueblos de África hacia tierras lejanas, el mito de la araña burlona cruzó el océano Atlántico en el corazón de los desterrados, transformándose en el Caribe y las Américas en el gran símbolo de la resistencia cultural y el ingenio frente a la tiranía. Hoy, en los rincones más umbríos de la espesura y en los hogares donde la voz humana conjura la memoria de los antepasados, Kwaku Anansi sigue habitando entre los hilos de seda del rincón, recordándonos que en un mundo dominado por gigantes arrogantes, la inteligencia paciente de la pequeña araña siempre tendrá la última palabra."
+  },
+  {
     "id": "M0003",
     "slug": "ammon-libico",
     "nombre": "Ammon líbico",
