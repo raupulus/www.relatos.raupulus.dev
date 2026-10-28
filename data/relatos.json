@@ -147,8 +147,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-18T20:00:00+01:00",
+    "fecha_publicacion_ts": 1795028400
   },
   {
     "id": "0049",
@@ -304,8 +304,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-16T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794855600
   },
   {
     "id": "0048",
@@ -455,8 +455,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-17T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794942000
   },
   {
     "id": "0047",
@@ -612,8 +612,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-15T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794769200
   },
   {
     "id": "0046",
@@ -767,10 +767,10 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "estado": "publicado",
+    "publicado": true,
+    "fecha_publicacion": "2026-10-27T00:00:00+01:00",
+    "fecha_publicacion_ts": 1793055600
   },
   {
     "id": "0045",
@@ -926,8 +926,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-14T20:00:00+01:00",
+    "fecha_publicacion_ts": 1794682800
   },
   {
     "id": "0044",
@@ -1850,8 +1850,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": "2026-11-01T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793559600
+    "fecha_publicacion": "2026-11-01T16:00:00+01:00",
+    "fecha_publicacion_ts": 1793545200
   },
   {
     "id": "0038",
@@ -2801,10 +2801,10 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
-    "fecha_publicacion": "2026-10-31T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793473200
+    "estado": "publicado",
+    "publicado": true,
+    "fecha_publicacion": "2026-10-26T23:00:00+01:00",
+    "fecha_publicacion_ts": 1793052000
   },
   {
     "id": "0032",
@@ -3407,10 +3407,10 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
-    "fecha_publicacion": "2026-10-31T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793473200
+    "estado": "publicado",
+    "publicado": true,
+    "fecha_publicacion": "2026-10-26T22:00:00+01:00",
+    "fecha_publicacion_ts": 1793048400
   },
   {
     "id": "0028",
@@ -3837,10 +3837,10 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
-    "fecha_publicacion": "2026-10-30T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793386800
+    "estado": "publicado",
+    "publicado": true,
+    "fecha_publicacion": "2026-10-26T21:00:00+01:00",
+    "fecha_publicacion_ts": 1793044800
   },
   {
     "id": "0025",
@@ -4300,8 +4300,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-10-27T20:00:00+01:00",
     "fecha_publicacion_ts": 1793127600
   },
@@ -4450,8 +4450,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-10-28T20:00:00+01:00",
     "fecha_publicacion_ts": 1793214000
   },

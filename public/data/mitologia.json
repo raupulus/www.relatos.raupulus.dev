@@ -1,5 +1,95 @@
 [
   {
+    "id": "M0008",
+    "slug": "bosomtwe",
+    "nombre": "Bosomtwe",
+    "epiteto": "El Guardián del Cráter Sagrado",
+    "titulo_completo": "Bosomtwe: El Guardián del Cráter Sagrado ⚡ Espíritus Abosom (África)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Espíritus Abosom",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 864,
+    "duracion_video": "05:28",
+    "duracion_audio": "05:28",
+    "duracion_short": "00:53",
+    "sinopsis": "En el corazón boscoso del imperio ashanti reposa el lago Bosumtwi, un ojo de agua cristalina nacido del impacto de una estrella cósmica hace un millón de años. Venerado por la tradición akan como el umbral supremo donde las almas de los difuntos se despiden de la tierra, el lago está protegido por Bosomtwe, el espíritu abosom del cráter sagrado. Descubre la leyenda del dios antílope, las leyes milenarias que prohíben tocar sus aguas con canoas o remos de hierro, y el pacto ancestral que vincula a pescadores y espíritus con el espejo eterno de Ghana.",
+    "youtube_id": "aAmE_7bcmcI",
+    "youtube_short_id": "GuI5QjQEUHE",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=aAmE_7bcmcI",
+    "youtube_short_url": "https://www.youtube.com/shorts/GuI5QjQEUHE",
+    "portada": "assets/images/portadas/M0008-bosomtwe.webp",
+    "pagina_url": "mitologia/M0008-bosomtwe.html",
+    "personajes": [
+      {
+        "nombre": "Bosomtwe",
+        "rol": "Espíritu Abosom del Cráter Sagrado y Custodio del Umbral de las Almas",
+        "rasgos": "Divinidad akan de 30 años de porte majestuoso, torso atlético esculpido, piel de bronce y ébano pulido con reflejos húmedos, mirada serena con destellos verde esmeralda, corona sagrada de nenúfares blancos y juncos, líneas ceremoniales de arcilla blanca hyire y faldellín tradicional kente ashanti azul zafiro y verde musgo.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-bosomtwe-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-bosomtwe-cuerpo.webp"
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0008-002-selva-montañosa-reino-ashanti-ghana.webp",
+        "pie": "La selva montañosa del reino ashanti donde reposa la cuenca sagrada del lago Bosumtwi."
+      },
+      {
+        "archivo": "assets/images/escenas/M0008-005-nacimiento-nana-bosomtwe-aguas-profundas.webp",
+        "pie": "Nana Bosomtwe emergiendo de las aguas profundas del cráter meteórico como espíritu soberano de la caldera."
+      },
+      {
+        "archivo": "assets/images/escenas/M0008-018-pescadores-navegan-en-planchas-padua.webp",
+        "pie": "Pescadores ashanti navegando sobre planchas tradicionales padua sin tocar el agua con remos de metal."
+      },
+      {
+        "archivo": "assets/images/escenas/M0008-026-emergencia-de-bosomtwe-entre-la-espuma.webp",
+        "pie": "La revelación del dios Bosomtwe ante el cazador Akora Bompe tras la persecución del antílope sagrado."
+      },
+      {
+        "archivo": "assets/images/escenas/M0008-031-lavatorio-de-manos-y-despedida-de-bosomtwe.webp",
+        "pie": "El lavatorio ritual de manos de las almas que se despiden de la tierra terrenal antes de cruzar hacia Asamando."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Cráter Sagrado y el Espejo de las Almas",
+        "resumen": "En el corazón del reino ashanti reposa el lago Bosumtwi, un cráter meteórico de aguas puras donde mora Nana Bosomtwe, el espíritu de las profundidades."
+      },
+      {
+        "tiempo": "01:10",
+        "segundos": 70,
+        "titulo": "II. El Tabú Sagrado del Metal y las Planchas Padua",
+        "resumen": "Las comunidades ribereñas respetan el tabú akyiwadde que prohíbe el hierro en el agua, navegando únicamente sobre planchas de madera padua impulsadas a mano."
+      },
+      {
+        "tiempo": "02:15",
+        "segundos": 135,
+        "titulo": "III. El Juicio de las Profundidades y la Ira del Abosom",
+        "resumen": "Quien transgrede las leyes sagradas desata remolinos violentos; cada cierto tiempo el lago exhala gases sulfurosos (bosome twe apu) bendiciendo con pesca abundante."
+      },
+      {
+        "tiempo": "03:20",
+        "segundos": 200,
+        "titulo": "IV. El Tránsito de las Almas hacia Asamando",
+        "resumen": "La leyenda del cazador Akora Bompe y el antílope herido otwe que condujo al descubrimiento del manantial primordial que se ensanchó en el lago sagrado."
+      },
+      {
+        "tiempo": "04:37",
+        "segundos": 277,
+        "titulo": "V. La Eterna Alianza del Lago y los Hombres",
+        "resumen": "Las almas kra acuden al lago para lavar sus manos y despedirse del dios antes de marchar a Asamando, sellando la comunión eterna entre la tierra y el firmamento."
+      }
+    ],
+    "texto_relato": "Bosomtwe, señor de las aguas del cráter y custodio del espejo sagrado donde las almas de los muertos se despiden del mundo terrenal.\n\n* * *\n\nEn el corazón montañoso del reino ashanti, donde la selva tropical abraza las tierras altas de Ghana, se abre una herida celeste de misterio inmemorial. Hace un millón de años, una esfera de fuego cósmico se desprendió del firmamento de Nyame e impactó contra el bosque con la fuerza de mil rayos. El choque excavó una cuenca circular perfecta, un cráter profundo que las lluvias y los manantiales subterráneos llenaron de agua dulce sin concederle salida hacia el mar. De aquel lecho sellado por la roca nació Nana Bosomtwe, el espíritu abosom soberano de las profundidades lacustres. Venerado como un dios de porte majestuoso y piel de bronce oscuro bañada por la humedad constante, Bosomtwe lleva la frente ceñida por nenúfares blancos y juncos. Sobre su pecho y hombros descansan trazos ceremoniales de arcilla blanca hyire, el pigmento sagrado que los sacerdotes akan consagran a la victoria de la vida y al tránsito hacia el más allá.\n\n* * *\n\nPara los pueblos ribereños que custodian el lago, la presencia de Bosomtwe representa el sustento inagotable, la fertilidad y el sosiego espiritual. Sus aguas cristalinas, protegidas del viento por los altos bordes del cráter, ofrecen un remanso donde las comunidades han prosperado cultivando ñame, mandioca y cacao en las laderas fértiles. El dios regala a sus hijos especies únicas de peces que no habitan en ningún otro rincón del planeta, garantizando el alimento de las familias sin peligro de corrientes bravas. Asimismo, las ancianas y las mujeres que anhelan concebir acuden al alba a bañarse en sus orillas, implorando la bendición de una linfa que alivia las fiebres y limpia los pesares del alma. Cada cierto ciclo de estaciones ocurre además el prodigio de Bosome twe apu: desde las simas del lago brotan vapores antiguos que tiñen el centro del agua de oscuro y hacen flotar miles de peces aturdidos. Los pescadores celebran este regalo con toques festivos de tambores fontomfrom, agradeciendo al gran abosom que comparta su abundancia con los mortales.\n\n* * *\n\nSin embargo, la superficie mansa que refleja las nubes del cielo esconde un código moral estricto que ningún mortal puede quebrantar. Bosomtwe es un dios protector, pero sumamente celoso de la pureza de su santuario, y vigila el cumplimiento de los akyiwadde, las prohibiciones ancestrales del lago. La ley más rigurosa prohíbe de manera absoluta introducir en el agua canoas ordinarias, remos cortantes o cualquier herramienta de hierro. Para la fe ashanti, el metal es un instrumento de guerra que hiere la carne sagrada del dios. Por ello, los pescadores deben navegar sobre las padua, simples planchas de madera flotante sin quilla que impulsan exclusivamente con las palmas de las manos o jícaras de calabaza. Quien desafía este mandato e intenta surcar el lago con botes de hierro o derrama sangre en sus riberas desata la cólera subterránea de la divinidad. En un instante, la calma se convierte en un remolino violento que devora la embarcación hasta tragarla en sus abismos sin devolver jamás los restos del profanador.\n\n* * *\n\nEl mito cumbre que consagró el culto a esta divinidad narra la odisea de Akora Bompe, un audaz cazador ashanti. Mientras rastreaba las espesuras de Asaman, divisó un antílope extraordinario de pelaje rojizo brillante y cuernos dorados que destellaban con un fulgor divino. Akora tensó su arco y disparó una flecha, hiriendo levemente al animal. El antílope huyó con agilidad sobrenatural internándose en una hondonada oculta por helechos gigantescos. El cazador lo siguió sin tregua hasta llegar a un pequeño estanque rodeado de silencio. Al verse acorralado, el antílope se arrojó al agua y se desvaneció al instante como si fuera humo. Cuando Akora se asomó a la orilla buscando a su presa, el estanque comenzó a ensancharse ante sus ojos con un bramido colosal, derribando los árboles y extendiéndose hasta convertirse en el inmenso lago circular de Bosumtwi. De las profundidades emergió la figura imponente de Bosomtwe entre la espuma. El dios reveló que el antílope herido era su propia forma visible, enviada para guiar a los hombres hasta el manantial de la vida. A cambio de respetar sus leyes y jamás tocar el agua con metales, Bosomtwe prometió alimentar a su pueblo para siempre.\n\n* * *\n\nDesde aquel pacto sagrado sellado entre el cazador y la deidad, el lago se convirtió en el templo natural más venerado de Ghana. Para la cosmovisión akan, el cráter no solo sustenta a los vivos, sino que constituye el umbral final donde el alma de cada difunto, el kra, acude a lavarse las manos y despedirse de Bosomtwe antes de cruzar hacia Asamando, la morada luminosa de los ancestros. Hoy en día, los pescadores tradicionales siguen surcando sus aguas sobre las planchas padua de madera virgen, honrando el juramento de no herir al dios con hierro. Cada tarde, cuando la niebla desciende desde las cumbres y cubre el espejo de agua con un velo de plata, los ashanti contemplan el horizonte sabiendo que Nana Bosomtwe permanece allí, custodiando las almas y recordando al mundo que la tierra y las estrellas se fundieron un día en un abrazo eterno."
+  },
+  {
     "id": "M0007",
     "slug": "bia",
     "nombre": "Bia",
