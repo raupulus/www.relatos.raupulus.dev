@@ -1,5 +1,95 @@
 [
   {
+    "id": "M0009",
+    "slug": "kra",
+    "nombre": "Kra",
+    "epiteto": "La Chispa Divina del Alma",
+    "titulo_completo": "Kra: La Chispa Divina del Alma ⚡ Espíritus Abosom (África)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Espíritus Abosom",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 898,
+    "duracion_video": "05:08",
+    "duracion_audio": "05:08",
+    "duracion_short": "00:53",
+    "sinopsis": "En la teología mística del pueblo akan de Ghana y Costa de Marfil, la vida humana no es un simple cuerpo mortal, sino una arquitectura sagrada iluminada por el Kra: la chispa divina y aliento inmortal emanado directamente del Dios del Cielo, Nyame. Antes de nacer, cada alma comparece ante el trono del Creador para sellar su destino irrevocable (nkrabea) y consagrarse al día sagrado de la semana en que descendió a la tierra. Descubre la batalla espiritual junto a la sangre materna (mogya) y el espíritu paterno (ntoro), las asechanzas de la bruja devoradora Obayifo, el ancestral rito purificador del Kradware y el viaje supremo hacia las aguas del lago Bosumtwi donde el alma emprende su retorno a la eternidad.",
+    "youtube_id": "6TRzhHRU8PY",
+    "youtube_short_id": "jm6RfhFVxq0",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=6TRzhHRU8PY",
+    "youtube_short_url": "https://www.youtube.com/shorts/jm6RfhFVxq0",
+    "portada": "assets/images/portadas/M0009-kra.webp",
+    "pagina_url": "mitologia/M0009-kra.html",
+    "personajes": [
+      {
+        "nombre": "Kra",
+        "rol": "La Chispa Divina del Alma y Custodio del Destino Humano",
+        "rasgos": "Personificación celestial de 25 años de etnia akan, porte noble y radiante, piel de ébano lustroso que emite un sutil fulgor áureo interior, ojos con destellos dorados y ambarinos de infinita sabiduría, finos trazos ceremoniales de arcilla blanca hyire en frente y sienes, disco pectoral de oro macizo cincelado akrafokonmu sobre el pecho, y túnica ceremonial blanca inmaculada con bordados en hilo de oro.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-kra-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-kra-cuerpo.webp"
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0009-003-kra-silueta-ante-trono-aureo.webp",
+        "pie": "Kra, la chispa divina del alma, postrándose ante el trono áureo del Creador Nyame en la corte celestial."
+      },
+      {
+        "archivo": "assets/images/escenas/M0009-008-mogya-sangre-nutricia-materna.webp",
+        "pie": "La madre ashanti acunando a su recién nacido, encarnando el linaje materno y la sangre nutricia mogya."
+      },
+      {
+        "archivo": "assets/images/escenas/M0009-018-acecho-de-la-temible-obayifo.webp",
+        "pie": "El acecho de la temible criatura vampírica Obayifo en la espesura del bosque tropical acechando a las almas desprotegidas."
+      },
+      {
+        "archivo": "assets/images/escenas/M0009-021-sacerdote-okrafo-lavatorio-de-alma.webp",
+        "pie": "El sacerdote okrafo con el disco de oro akrafokonmu oficiando el rito milenario de purificación del Kradware."
+      },
+      {
+        "archivo": "assets/images/escenas/M0009-026-kra-ante-el-abosom-bosomtwe.webp",
+        "pie": "El encuentro sagrado en la orilla de Lake Bosumtwi donde el alma purifica sus manos ante el dios lacustre Bosomtwe antes del ascenso final."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Encuentro Celestial y el Nkrabea",
+        "resumen": "Antes de nacer, el Kra comparece ante el trono áureo de Nyame para recibir su carácter, talentos y destino irrevocable (nkrabea)."
+      },
+      {
+        "tiempo": "01:05",
+        "segundos": 65,
+        "titulo": "II. La Cuádruple Naturaleza y los Nombres Sagrados",
+        "resumen": "La arquitectura cósmica del ser humano en la tradición akan: la sangre materna mogya, el espíritu paterno ntoro, la sombra sunsum y los nombres consagrados krada."
+      },
+      {
+        "tiempo": "02:23",
+        "segundos": 143,
+        "titulo": "III. Las Sombras del Obayifo y el Kradware",
+        "resumen": "El debilitamiento del alma por la culpa moral, el asedio de la bruja Obayifo y la restauración sagrada mediante el lavatorio ritual del Kradware oficiado por los sacerdotes okrafo."
+      },
+      {
+        "tiempo": "03:30",
+        "segundos": 210,
+        "titulo": "IV. El Último Viaje y el Espejo de Bosumtwi",
+        "resumen": "Al agotarse los días terrenales, el alma emprende su viaje final hacia el lago Bosumtwi para lavar sus manos y despedirse del mundo material ante el abosom lacustre."
+      },
+      {
+        "tiempo": "04:21",
+        "segundos": 261,
+        "titulo": "V. El Retorno al Seno de Nyame",
+        "resumen": "El ascenso del Kra purificado de regreso al firmamento para rendir testimonio ante Dios y reintegrarse a la luz eterna cósmica."
+      }
+    ],
+    "texto_relato": "Antes de que el primer aliento infle los pulmones de un recién nacido y antes de que su llanto rompa la penumbra del mundo terrenal, un encuentro solemne tiene lugar en el palacio celestial de Nyame, el señor supremo del firmamento. Frente al trono áureo del creador, en medio de una corte de espíritus primordiales y astros titilantes, se postra una silueta de luz pura y fulgor inextinguible: es el Kra, la chispa divina desprendida del propio aliento sagrado de Dios. Allí, en la antesala silenciosa de la existencia, el alma escucha la proclamación de su nkrabea, el destino irrevocable que habrá de guiar sus pasos entre los mortales. Nyame le asigna su carácter íntimo, sus talentos, las pruebas que pondrán a prueba su temple, el número exacto de sus días y la misión sagrada que deberá cumplir en la tierra. Con una reverencia solemne y el pecho encendido por la promesa divina, el Kra desciende a través de las nubes para anidar en el vientre materno, aguardando la hora de su encarnación.\n\n* * *\n\nPara los sabios y sacerdotes de la nación akan, el ser humano no es una entidad simple, sino una delicada y majestuosa arquitectura cósmica forjada por tres fuerzas complementarias. De la madre recibe el mogya, la sangre nutricia que engendra la carne, otorga la pertenencia al clan matriarcal y ata el cuerpo al barro fértil de la tierra. Del padre hereda el ntoro, el espíritu transmitido por el semen que define la personalidad visible y el temple social. Junto a ellos camina el sunsum, la sombra y el ego moral que lucha en la noche y puede vagar durante los sueños. Pero en el corazón mismo de este templo viviente, invisible y eterno, late el don exclusivo del Creador: el Kra. Es en este misterio primordial donde arraiga la tradición de los nombres sagrados: cada niño akan recibe su primer apelativo según el día de la semana en que su Kra descendió al mundo —como Kofi para el viernes o Kwame para el sábado—, consagrando su vida entera a la divinidad que custodia su aliento. Es el guardián espiritual de cada individuo, una presencia luminosa que vigila el honor, previene las asechanzas del destino y susurra advertencias en el silencio del pensamiento. Si una persona camina con rectitud, generosidad y respeto a las leyes ancestrales, su Kra resplandece con un vigor invencible, dotándola de una fuerza vital que ninguna sombra puede quebrantar.\n\n* * *\n\nSin embargo, el alma no es un espectador inmune a las flaquezas y tormentos de la existencia terrenal. Cuando la deshonra, la envidia o la traición desgarran la conducta de un individuo, su Kra se entristece, pierde su brillo dorado y repliega su resguardo protector. Un hombre con el alma agraviada se vuelve presa fácil de la enfermedad, la melancolía y las maquinaciones de la temible Obayifo, la criatura devoradora de fuerza vital que acecha en las sombras del bosque. Para restaurar esta armonía quebrantada, la tradición ashanti celebra el rito milenario del Kradware, el lavatorio y purificación del alma. En el krada, el día consagrado de la semana en que nació el individuo, la persona acude ante un manantial de agua pura vestida con telas de algodón blanco inmaculado. Guiado por los sacerdotes okrafo, quienes portan sobre el pecho el sagrado disco pectoral de oro akrafokonmu, el creyente realiza abluciones con hierbas aromáticas, ofrece libaciones y comparte un banquete ritual de ñame machacado con huevo hervido. Con este alimento sagrado, el Kra es apaciguado, recupera su fulgor original y renueva su alianza eterna con el firmamento.\n\n* * *\n\nCuando los hilos del destino tejido por Nyame se agotan y el cuerpo mortal exhala su último suspiro terrenal, el Kra se desprende suavemente de la envoltura de carne y emprende su viaje final. No deambula como un espectro ciego ni vaga condenado entre las tumbas de la aldea. Su sendero lo guía directamente hacia el lago Bosumtwi, el cráter sagrado en el corazón de Ashanti cuyas aguas espejadas marcan la frontera inmutable entre la vida y el más allá. Allí, ante la presencia majestuosa del abosom lacustre Bosomtwe, el alma se acerca a las orillas pedregosas para cumplir con el rito supremo del lavatorio de manos. En ese instante de paz absoluta y recogimiento cósmico, el Kra se despoja de las fatigas, las heridas y los apegos del mundo material, despidiéndose para siempre de la tierra fértil que habitó mientras contempla su propio reflejo limpio de toda mancha terrenal.\n\n* * *\n\nPurificado por las aguas del cráter y ligero como una ráfaga de brisa al atardecer, el Kra asciende de regreso a la morada celeste de Nyame. Ante el trono del Padre del Cielo, el alma rinde testimonio de su tránsito por el mundo: relata cómo empleó sus talentos, si defendió la verdad frente a la codicia y si honró el pacto sagrado sellado antes de nacer. Si su camino fue digno, el Kra se reintegra al seno de la luz eterna de Dios o es enviado nuevamente a través de las generaciones familiares como un don protector renovado, mientras la sombra sunsum del difunto es acogida en Asamando para velar por los suyos como un venerado antepasado. Así se perpetúa la fe inmemorial de los akan: la certeza inquebrantable de que la existencia humana no es una chispa efímera condenada al olvido, sino un destello eterno del aliento divino que regresa siempre a su origen sagrado."
+  },
+  {
     "id": "M0008",
     "slug": "bosomtwe",
     "nombre": "Bosomtwe",
