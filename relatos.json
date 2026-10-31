@@ -1,5 +1,156 @@
 [
   {
+    "id": "0051",
+    "slug": "la-persona-que-tenia-mi-numero",
+    "pagina_url": "relatos/0051-la-persona-que-tenia-mi-numero.html",
+    "titulo": "La persona que tenía mi número",
+    "sinopsis": "Hugo amanece un domingo cualquiera con una avalancha de mensajes que le agradecen haber organizado una fiesta salvaje en la otra punta de Madrid. Convencido de que se trata de una confusión, pronto descubre fotografías suyas en lugares donde jamás ha estado, conversaciones que nunca mantuvo y cargos bancarios que vacían sus ahorros. Cuando acude a la policía para denunciar la suplantación, los agentes le muestran grabaciones donde se le ve cometiendo varios delitos. Atrapado en una pesadilla donde sus propios amigos desconfían de él, Hugo inicia una persecución desesperada tras un doble idéntico que se adelanta a cada uno de sus pasos y que parece devorar sus recuerdos para ocupar su lugar en el mundo.",
+    "categoria": "terror",
+    "categoria_nombre": "Terror",
+    "generos": [
+      "Suspense",
+      "Misterio",
+      "Terror"
+    ],
+    "palabras": 2001,
+    "lectura_min": 9,
+    "duracion_audio": "13:47",
+    "duracion_segundos": 827.72,
+    "youtube_id": "aDnxj8Qneg4",
+    "youtube_url": "https://www.youtube.com/watch?v=aDnxj8Qneg4",
+    "portada": "assets/images/portadas/0051-la-persona-que-tenia-mi-numero.webp",
+    "personajes": [
+      {
+        "id": "0051-p1",
+        "nombre": "Hugo Morales",
+        "rol": "protagonista principal, víctima de suplantación existencial.",
+        "rasgos": "veintiocho años exactos, estatura de un metro y ochenta centímetros, complexión delgada pero ágil, cabello castaño oscuro corto y peinado hacia atrás con dedos rápidos, ojos color miel oscura tras pestañas espesas y una pequeña cicatriz horizontal de un centímetro sobre el arco de la ceja izquierda. Viste jersey de punto verde bosque de cuello redondo sobre camiseta blanca de algodón, cazadora corta de cuero marrón desgastado, pantalones vaqueros rectos oscuros y zapatillas de lona gris plomo.",
+        "motivacion": "demostrar su inocencia, detener el robo sistemático de su identidad y recuperar el control de su propia memoria antes de ser borrado por completo.",
+        "conflicto": "impotencia absoluta ante un entorno que no distingue la copia del original y el pavor de descubrir lagunas crecientes en sus propios recuerdos infantiles y cotidianos.",
+        "avatar_cabeza": "assets/images/avatars/0051-personaje-01-hugo-morales-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0051-personaje-01-hugo-morales-cuerpo.webp"
+      },
+      {
+        "id": "0051-p2",
+        "nombre": "El Impostor (El Doble del Futuro)",
+        "rol": "antagonista sobrenatural, usurpador temporal.",
+        "rasgos": "apariencia física idéntica a Hugo con veintiocho años exactos, misma estatura, complexión y cicatriz sobre la ceja izquierda, pero con una quietud perturbadora en el porte, respiración imperceptible y unos ojos miel que casi no parpadean. Viste prendas de idéntico corte pero en tonos más apagados y pulcros: cazadora negra mate de corte recto, jersey de punto fino gris grafito y calzado oscuro impecable sin marcas de uso.",
+        "motivacion": "consolidar su presencia material en el presente consumiendo los vínculos sociales y los recuerdos del Hugo original para nacer como la única versión válida.",
+        "conflicto": "necesita que el círculo íntimo y los registros del sistema acepten su existencia para despojar al original de su anclaje en la realidad.",
+        "avatar_cabeza": "assets/images/avatars/0051-personaje-02-el-impostor-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0051-personaje-02-el-impostor-cuerpo.webp"
+      },
+      {
+        "id": "0051-p3",
+        "nombre": "Irene Salgado",
+        "rol": "contrapunto emocional, amiga íntima y compañera de estudio de diseño.",
+        "rasgos": "veintiocho años exactos, estatura de un metro y sesenta y cinco centímetros, complexión menuda y enérgica, cabello castaño rizado recogido en un moño informal con mechones sueltos sobre la nuca, ojos castaños grandes y expresivos de mirada franca. Viste gabardina corta color mostaza sobre sudadera gris perla, vaqueros pitillo oscuros y botines de cuero marrón con cordones.",
+        "motivacion": "apoyar a su amigo de la universidad y averiguar qué le está ocurriendo en realidad, debatiéndose entre la lealtad y el desconcierto ante las pruebas físicas.",
+        "conflicto": "el choque entre su afecto por Hugo y las evidencias incontestables que le muestran los chats de madrugada, las fotos de la fiesta y los vídeos de seguridad que la policía le exhibe.",
+        "avatar_cabeza": "assets/images/avatars/0051-personaje-03-irene-salgado-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0051-personaje-03-irene-salgado-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "La fiesta que nunca existió",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 00:00."
+      },
+      {
+        "tiempo": "01:59",
+        "segundos": 119,
+        "titulo": "El rastro digital en el estudio",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 01:59."
+      },
+      {
+        "tiempo": "04:10",
+        "segundos": 250,
+        "titulo": "La encerrona en comisaría",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 04:10."
+      },
+      {
+        "tiempo": "06:14",
+        "segundos": 374,
+        "titulo": "La anomalía de los tres minutos",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 06:14."
+      },
+      {
+        "tiempo": "08:50",
+        "segundos": 530,
+        "titulo": "El encuentro en Nuevos Ministerios",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 08:50."
+      },
+      {
+        "tiempo": "11:37",
+        "segundos": 697,
+        "titulo": "La sombra en la cinta familiar",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 11:37."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0051-003-hugo-escucha-audio-cama.webp",
+        "caption": "Ilustración de escena: Hugo escucha audio cama",
+        "alt": "Escena oficial de La persona que tenía mi número — Hugo escucha audio cama"
+      },
+      {
+        "src": "assets/images/escenas/0051-021-cargos-bancarios-rojos.webp",
+        "caption": "Ilustración de escena: Cargos bancarios rojos",
+        "alt": "Escena oficial de La persona que tenía mi número — Cargos bancarios rojos"
+      },
+      {
+        "src": "assets/images/escenas/0051-040-anselmo-recrimina-hugo.webp",
+        "caption": "Ilustración de escena: Anselmo recrimina hugo",
+        "alt": "Escena oficial de La persona que tenía mi número — Anselmo recrimina hugo"
+      },
+      {
+        "src": "assets/images/escenas/0051-059-explicacion-tiempo-espacio-cerrado.webp",
+        "caption": "Ilustración de escena: Explicacion tiempo espacio cerrado",
+        "alt": "Escena oficial de La persona que tenía mi número — Explicacion tiempo espacio cerrado"
+      },
+      {
+        "src": "assets/images/escenas/0051-077-timbre-puerta-calle-suena.webp",
+        "caption": "Ilustración de escena: Timbre puerta calle suena",
+        "alt": "Escena oficial de La persona que tenía mi número — Timbre puerta calle suena"
+      }
+    ],
+    "relato_raw": "El teléfono vibró sobre la mesilla a las ocho y diez de la mañana con la insistencia de un insecto atrapado en un vaso. Hugo estiró el brazo desde debajo del edredón, tanteó la pantalla y se frotó los párpados pegados de sueño. Tenía nueve llamadas perdidas y una cascada de mensajes.\n\nEl primer audio era de Irene:\n\n—Hugo, qué noche la de ayer. Gracias por pagar la última ronda en el ático de Moncloa. Aluciné con la terraza que te sacaste de la manga. Te dejamos las llaves del portal en el bolsillo de la cazadora. Descansa esa resaca.\n\nHugo se sentó en el borde del colchón con la garganta seca. El suelo de tarima estaba helado bajo sus pies. Miró alrededor: la taza de manzanilla de la víspera seguía junto a los lápices; el ordenador mostraba el último catálogo que había guardado a las once y media antes de acostarse. No había salido de casa en todo el sábado.\n\nDesbloqueó el terminal y abrió la galería compartida del grupo. La primera imagen lo dejó sin aire. Era una azotea iluminada con guirnaldas y el horizonte nocturno de Madrid al fondo. En el centro, sosteniendo una copa de ginebra con la mano izquierda, aparecía él mismo. Llevaba su cazadora de cuero marrón, el jersey verde bosque y la cicatriz blanca partiéndole la ceja izquierda. Sonreía con los ojos entrecerrados mientras abrazaba a Pablo y a Irene. La marca de tiempo marcaba las dos y cuarenta de la madrugada.\n\nHugo saltó de la cama y abrió el armario. Su cazadora colgaba de la percha, limpia y fría. Metió la mano derecha en el bolsillo exterior: sus dedos rozaron un manojo de llaves con un llavero verde que jamás había visto.\n\n* * *\n\nEl estudio de diseño olía a café y papel satinado. Irene repasaba unas pruebas de imprenta sobre la mesa de corte. Al oír el portazo alzó la vista con una sonrisa perezosa.\n\n—Vaya cara traes —dijo ella dejando la cuchilla—. Si no aguantas tres copas no te metas a anfitrión. Por cierto, Pablo se fue diciendo que veía las farolas dobles.\n\nHugo apoyó las palmas sobre la madera y la miró fijamente.\n\n—Irene, escúchame. Yo no estuve en Moncloa anoche. No salí de mi piso desde las siete.\n\nIrene soltó una risa breve que se apagó al ver la rigidez de su mandíbula.\n\n—Venga ya, Hugo. Estuviste allí desde la una. Nos recogiste en el metro y pagaste la cuenta con la aplicación.\n\n—¡Que no era yo! —gritó Hugo, arrojando su móvil sobre el tapete—. Mira el registro. No tengo llamadas salientes.\n\nIrene sacó su teléfono y abrió el chat.\n\n—Me escribiste tú a las dos menos cuarto para decirnos que subiéramos por el montacargas. Mira el número.\n\nHugo miró la pantalla ajena. El prefijo, los nueve dígitos y la foto de perfil eran suyos. El texto usaba sus giros habituales, sus faltas ortográficas familiares y los mismos emoticonos que solía teclear con prisa.\n\nCon las manos frías, Hugo abrió la aplicación del banco en su móvil. Cuando el balance cargó en cifras rojas, las piernas le temblaron: tres cargos de cuatrocientos euros en un pub de Princesa, una factura de ochocientos cincuenta euros en una joyería y una transferencia inmediata de seis mil euros autorizada a las tres y media.\n\nBajo la operación figuraba una línea en verde: «Identificación completada mediante reconocimiento biométrico facial y código por mensaje de texto».\n\n—Alguien me ha clonado la tarjeta y la línea —susurró Hugo, retrocediendo hacia la pared—. Vamos a comisaría ahora mismo.\n\n* * *\n\nLa oficina de denuncias de Chamberí olía a desinfectante y tabaco rancio. Un subinspector de unos cincuenta años escuchó el relato mientras tecleaba con desgana en un monitor cuadrado.\n\n—A ver si lo entiendo —dijo el agente—. Dice que le han clonado el teléfono, pero ese alguien se parece físicamente a usted y los camareros lo reconocen sin dudar.\n\n—No sé cómo lo hace —insistió Hugo—. Estaba durmiendo. Miren las cámaras de mi rellano. Alguien está viviendo por mí.\n\nEl subinspector se quitó las gafas y miró a un compañero que aguardaba junto a la puerta. El otro policía asintió y cerró la hoja de madera.\n\n—Señor Morales, hace una hora nos avisaron del banco de la calle Alberto Aguilera. A las cuatro y diez de la madrugada, un individuo forzó un cajero exterior y se llevó siete mil euros antes de que saltara la alarma.\n\nEl agente giró la pantalla hacia Hugo y pulsó la reproducción.\n\nLa grabación en blanco y negro era nítida. A las 04:10:22, un hombre con una cazadora idéntica a la suya se acercaba al cajero con paso tranquilo. Tecleó cuatro dígitos con soltura y alzó la cabeza hacia la cámara oculta.\n\nA Hugo se le revolvió el estómago. Era su cara. Sus mismos pómulos, su pelo revuelto y la cicatriz cruzando la ceja izquierda. El individuo miró fijo a la lente durante cinco segundos con una media sonrisa fría, sin pestañear una sola vez. Después recogió el dinero y desapareció en la acera.\n\n—Las huellas del teclado coinciden al noventa y nueve por ciento con las suyas, señor Morales —dijo el subinspector levantándose—. Queda retenido.\n\nIrene, sentada al fondo del pasillo, vio cómo le ponían los grilletes. Cuando Hugo la miró pidiendo auxilio, ella apartó la vista hacia el suelo y retrocedió dos pasos.\n\n* * *\n\nSiete horas después, el abogado de oficio logró que el juez decretara libertad provisional sin fianza, con entrega de pasaporte y firma semanal. Su teléfono y sus tarjetas quedaron bajo custodia judicial.\n\nHugo caminó hacia su portal bajo una llovizna gris que calaba el cuero de la cazadora. Se detuvo ante la garita acristalada de don Anselmo, el conserje que llevaba cuatro décadas en la finca.\n\n—Don Anselmo, por favor —rogó Hugo—. Déjeme ver las cámaras del portal del sábado por la noche.\n\nEl anciano dudó, pero le abrió la puerta y señaló el monitor de cuatro cuadrantes.\n\n—No sé qué te pasa hoy, Hugo. Esta mañana cuando saliste ni me diste los buenos días.\n\n—¿A qué hora salí el sábado, don Anselmo?\n\n—Sobre las diez menos veinte, como siempre que vas a cenar.\n\nHugo ajustó la rueda del reproductor hasta las 21:38.\n\nA las 21:40 en punto, el ascensor se abrió. De la cabina salió un hombre con su cazadora, sus vaqueros y su andar elástico. Hizo un gesto seco al conserje y empujó la cancela hacia la calle.\n\nHugo sintió que el suelo se hundía. A esa hora recordaba estar calentando sopa de fideos en su cocina. Pero al intentar evocar el sabor de la sopa o el color del cazo, tropezó con una mancha blanca, un hueco mudo.\n\n—Ponga la cámara de la acera —pidió Hugo, apoyando las manos en la mesa.\n\nEl conserje pulsó dos teclas. La cámara exterior mostraba la calle mojada. El doble cruzó la calzada a las 21:42. Tres minutos después, a las 21:45, la puerta del portal volvió a abrirse y apareció un segundo Hugo, pálido y apresurado, camino de la tienda de ultramarinos.\n\n—Pero bueno... —murmuró don Anselmo—. ¿Tienes un gemelo?\n\nHugo no contestó. Salir tres minutos después de sí mismo era una anticipación atroz. Aquel ser no imitaba sus pasos: los vivía por adelantado, escribiendo el futuro antes de que llegara. Y la niebla avanzaba en su cabeza. Hugo intentó recordar el nombre de su maestra de primaria y no halló nada. Intentó recordar la voz de su madre llamándolo a comer y solo escuchó un zumbido áspero.\n\n* * *\n\nCompró un teléfono desechable en un locutorio de Fuencarral. Al introducir su correo de respaldo, saltó un aviso: «Recarga de abono de transporte completada en Nuevos Ministerios, acceso Castellana».\n\nEran las diez de la noche. Hugo bajó las escaleras mecánicas hacia los andenes subterráneos. El aire olía a goma quemada y humedad ferrosa. Cruzó los tornos y avanzó por el laberinto de pasillos hacia las vías secundarias.\n\nEn el andén tres, sentado en un banco de piedra bajo un cartel apagado, estaba él.\n\nNo había nadie más cerca. El impostor vestía una cazadora idéntica pero de un negro mate que absorbía la luz de los tubos fluorescentes. Mantenía las manos sobre las rodillas con una rigidez mineral. No pestañeaba. Su pecho no se movía.\n\nHugo se detuvo a dos metros, apretando los puños.\n\n—¿Quién eres? —susurró—. ¿Por qué me estás destrozando la vida? Me has quitado a mis amigos, mi trabajo, mi dinero.\n\nEl doble alzó la cabeza despacio. Sus ojos miel carecían de brillo húmedo. Habló con la voz exacta de Hugo, limpia y desprovista de emoción:\n\n—No te estoy quitando nada, Hugo. Y no te imito. Crees que soy un usurpador del pasado, pero te equivocas. Soy la versión de ti que todavía no ha nacido.\n\nHugo negó con la cabeza, asustado.\n\n—Eso es imposible.\n\n—El tiempo solo tolera una presencia a la vez —continuó el doble sin mover un rasgo—. Fui diseñado para ocupar este lugar, pero tú prolongaste tu estancia. Por eso entro despacio. Cada vez que alguien cree en mí, cada vez que Irene confía en mi mensaje o la policía archiva tu culpa, una parte de tu pasado se desprende y pasa a mis manos.\n\nHugo sintió una punzada detrás de los ojos, como si le arrancaran un cable del cerebro.\n\n—¡Mientes! —gritó, abalanzándose sobre él para prenderlo de las solapas.\n\nPero sus dedos atravesaron la tela negra sin encontrar resistencia. La figura se deshizo en una corriente de aire gélido y estática, igual que humo barrido por una ráfaga. El banco quedó vacío.\n\nHugo cayó de rodillas sobre las baldosas. Se sujetó la cabeza mientras un sudor frío le empapaba el cuello. Acababa de olvidar la fecha exacta de su cumpleaños. Sabía que caía en otoño, pero el número y el mes habían desaparecido para siempre.\n\n* * *\n\nCaminó dos horas sin rumbo hasta llegar al barrio donde creció. La casa de sus padres llevaba tres años deshabitada. Hugo abrió la cerradura con la llave que aún guardaba en el bolsillo y encendió la luz del pasillo.\n\nNecesitaba una prueba material de que él había existido antes de que la sombra consumiera sus cimientos.\n\nSubió al trastero y bajó una caja carcomida por el polvo. Dentro guardaban álbumes familiares y cintas de vídeo magnéticas. Conectó un reproductor antiguo a un televisor de tubo e introdujo una cinta rotulada con la letra redonda de su madre: «Cumpleaños Hugo, 6 años».\n\nLa pantalla zumbó con estática gris antes de encender una imagen granulada.\n\nEra el salón de aquella misma casa, veintidós años atrás. La mesa lucía un mantel de papel, vasos de plástico y una tarta con seis velas. En el centro aparecía él de niño, con jersey azul y el flequillo revuelto, riendo mientras sus padres y sus primos cantaban alrededor.\n\nA Hugo se le saltaron las lágrimas al escuchar la risa clara de su madre. Creyó haber recuperado el anclaje con el mundo.\n\nEntonces la cámara casera comenzó a moverse en un paneo lento hacia la puerta del pasillo, buscando a la abuela que traía una bandeja de refrescos.\n\nA Hugo se le cortó la respiración.\n\nAl fondo del corredor, en la penumbra que se abría junto al marco de madera, había una figura de pie. Era un hombre adulto de veintiocho años, alto, con cazadora negra mate y los brazos caídos. Tenía la cara iluminada por el parpadeo lejano de las seis velas. Era su mismo rostro. Eran sus propios ojos miel, abiertos y fijos en la oscuridad, observando al niño soplar las velas con una paciencia fría.\n\nEl impostor no había clonado su teléfono aquella semana. No provenía de una brecha en la red ni de un capricho del azar. Llevaba toda su vida aguardando allí, oculto en los rincones ciegos de su infancia, esperando el momento exacto en que la última persona del mundo dejara de creer en él.\n\nDesde el descansillo de abajo, el timbre de la calle empezó a sonar con un toque largo y pausado.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El teléfono vibró sobre la mesilla a las ocho y diez de la mañana con la insistencia de un insecto atrapado en un vaso. Hugo estiró el brazo desde debajo del edredón, tanteó la pantalla y se frotó los párpados pegados de sueño. Tenía nueve llamadas perdidas y una cascada de mensajes.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El primer audio era de Irene:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Hugo, qué noche la de ayer. Gracias por pagar la última ronda en el ático de Moncloa. Aluciné con la terraza que te sacaste de la manga. Te dejamos las llaves del portal en el bolsillo de la cazadora. Descansa esa resaca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo se sentó en el borde del colchón con la garganta seca. El suelo de tarima estaba helado bajo sus pies. Miró alrededor: la taza de manzanilla de la víspera seguía junto a los lápices; el ordenador mostraba el último catálogo que había guardado a las once y media antes de acostarse. No había salido de casa en todo el sábado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Desbloqueó el terminal y abrió la galería compartida del grupo. La primera imagen lo dejó sin aire. Era una azotea iluminada con guirnaldas y el horizonte nocturno de Madrid al fondo. En el centro, sosteniendo una copa de ginebra con la mano izquierda, aparecía él mismo. Llevaba su cazadora de cuero marrón, el jersey verde bosque y la cicatriz blanca partiéndole la ceja izquierda. Sonreía con los ojos entrecerrados mientras abrazaba a Pablo y a Irene. La marca de tiempo marcaba las dos y cuarenta de la madrugada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo saltó de la cama y abrió el armario. Su cazadora colgaba de la percha, limpia y fría. Metió la mano derecha en el bolsillo exterior: sus dedos rozaron un manojo de llaves con un llavero verde que jamás había visto.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El estudio de diseño olía a café y papel satinado. Irene repasaba unas pruebas de imprenta sobre la mesa de corte. Al oír el portazo alzó la vista con una sonrisa perezosa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Vaya cara traes —dijo ella dejando la cuchilla—. Si no aguantas tres copas no te metas a anfitrión. Por cierto, Pablo se fue diciendo que veía las farolas dobles.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo apoyó las palmas sobre la madera y la miró fijamente.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Irene, escúchame. Yo no estuve en Moncloa anoche. No salí de mi piso desde las siete.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Irene soltó una risa breve que se apagó al ver la rigidez de su mandíbula.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0051-003-hugo-escucha-audio-cama.webp\" alt=\"Escena oficial de La persona que tenía mi número — Hugo escucha audio cama\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Hugo escucha audio cama</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Venga ya, Hugo. Estuviste allí desde la una. Nos recogiste en el metro y pagaste la cuenta con la aplicación.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Que no era yo! —gritó Hugo, arrojando su móvil sobre el tapete—. Mira el registro. No tengo llamadas salientes.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Irene sacó su teléfono y abrió el chat.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Me escribiste tú a las dos menos cuarto para decirnos que subiéramos por el montacargas. Mira el número.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo miró la pantalla ajena. El prefijo, los nueve dígitos y la foto de perfil eran suyos. El texto usaba sus giros habituales, sus faltas ortográficas familiares y los mismos emoticonos que solía teclear con prisa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Con las manos frías, Hugo abrió la aplicación del banco en su móvil. Cuando el balance cargó en cifras rojas, las piernas le temblaron: tres cargos de cuatrocientos euros en un pub de Princesa, una factura de ochocientos cincuenta euros en una joyería y una transferencia inmediata de seis mil euros autorizada a las tres y media.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Bajo la operación figuraba una línea en verde: «Identificación completada mediante reconocimiento biométrico facial y código por mensaje de texto».</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Alguien me ha clonado la tarjeta y la línea —susurró Hugo, retrocediendo hacia la pared—. Vamos a comisaría ahora mismo.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La oficina de denuncias de Chamberí olía a desinfectante y tabaco rancio. Un subinspector de unos cincuenta años escuchó el relato mientras tecleaba con desgana en un monitor cuadrado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—A ver si lo entiendo —dijo el agente—. Dice que le han clonado el teléfono, pero ese alguien se parece físicamente a usted y los camareros lo reconocen sin dudar.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No sé cómo lo hace —insistió Hugo—. Estaba durmiendo. Miren las cámaras de mi rellano. Alguien está viviendo por mí.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0051-021-cargos-bancarios-rojos.webp\" alt=\"Escena oficial de La persona que tenía mi número — Cargos bancarios rojos\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Cargos bancarios rojos</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El subinspector se quitó las gafas y miró a un compañero que aguardaba junto a la puerta. El otro policía asintió y cerró la hoja de madera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Señor Morales, hace una hora nos avisaron del banco de la calle Alberto Aguilera. A las cuatro y diez de la madrugada, un individuo forzó un cajero exterior y se llevó siete mil euros antes de que saltara la alarma.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El agente giró la pantalla hacia Hugo y pulsó la reproducción.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La grabación en blanco y negro era nítida. A las 04:10:22, un hombre con una cazadora idéntica a la suya se acercaba al cajero con paso tranquilo. Tecleó cuatro dígitos con soltura y alzó la cabeza hacia la cámara oculta.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A Hugo se le revolvió el estómago. Era su cara. Sus mismos pómulos, su pelo revuelto y la cicatriz cruzando la ceja izquierda. El individuo miró fijo a la lente durante cinco segundos con una media sonrisa fría, sin pestañear una sola vez. Después recogió el dinero y desapareció en la acera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Las huellas del teclado coinciden al noventa y nueve por ciento con las suyas, señor Morales —dijo el subinspector levantándose—. Queda retenido.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Irene, sentada al fondo del pasillo, vio cómo le ponían los grilletes. Cuando Hugo la miró pidiendo auxilio, ella apartó la vista hacia el suelo y retrocedió dos pasos.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Siete horas después, el abogado de oficio logró que el juez decretara libertad provisional sin fianza, con entrega de pasaporte y firma semanal. Su teléfono y sus tarjetas quedaron bajo custodia judicial.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo caminó hacia su portal bajo una llovizna gris que calaba el cuero de la cazadora. Se detuvo ante la garita acristalada de don Anselmo, el conserje que llevaba cuatro décadas en la finca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Don Anselmo, por favor —rogó Hugo—. Déjeme ver las cámaras del portal del sábado por la noche.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El anciano dudó, pero le abrió la puerta y señaló el monitor de cuatro cuadrantes.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0051-040-anselmo-recrimina-hugo.webp\" alt=\"Escena oficial de La persona que tenía mi número — Anselmo recrimina hugo\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Anselmo recrimina hugo</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No sé qué te pasa hoy, Hugo. Esta mañana cuando saliste ni me diste los buenos días.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿A qué hora salí el sábado, don Anselmo?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Sobre las diez menos veinte, como siempre que vas a cenar.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo ajustó la rueda del reproductor hasta las 21:38.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A las 21:40 en punto, el ascensor se abrió. De la cabina salió un hombre con su cazadora, sus vaqueros y su andar elástico. Hizo un gesto seco al conserje y empujó la cancela hacia la calle.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo sintió que el suelo se hundía. A esa hora recordaba estar calentando sopa de fideos en su cocina. Pero al intentar evocar el sabor de la sopa o el color del cazo, tropezó con una mancha blanca, un hueco mudo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Ponga la cámara de la acera —pidió Hugo, apoyando las manos en la mesa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El conserje pulsó dos teclas. La cámara exterior mostraba la calle mojada. El doble cruzó la calzada a las 21:42. Tres minutos después, a las 21:45, la puerta del portal volvió a abrirse y apareció un segundo Hugo, pálido y apresurado, camino de la tienda de ultramarinos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Pero bueno... —murmuró don Anselmo—. ¿Tienes un gemelo?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo no contestó. Salir tres minutos después de sí mismo era una anticipación atroz. Aquel ser no imitaba sus pasos: los vivía por adelantado, escribiendo el futuro antes de que llegara. Y la niebla avanzaba en su cabeza. Hugo intentó recordar el nombre de su maestra de primaria y no halló nada. Intentó recordar la voz de su madre llamándolo a comer y solo escuchó un zumbido áspero.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Compró un teléfono desechable en un locutorio de Fuencarral. Al introducir su correo de respaldo, saltó un aviso: «Recarga de abono de transporte completada en Nuevos Ministerios, acceso Castellana».</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0051-059-explicacion-tiempo-espacio-cerrado.webp\" alt=\"Escena oficial de La persona que tenía mi número — Explicacion tiempo espacio cerrado\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Explicacion tiempo espacio cerrado</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Eran las diez de la noche. Hugo bajó las escaleras mecánicas hacia los andenes subterráneos. El aire olía a goma quemada y humedad ferrosa. Cruzó los tornos y avanzó por el laberinto de pasillos hacia las vías secundarias.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el andén tres, sentado en un banco de piedra bajo un cartel apagado, estaba él.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">No había nadie más cerca. El impostor vestía una cazadora idéntica pero de un negro mate que absorbía la luz de los tubos fluorescentes. Mantenía las manos sobre las rodillas con una rigidez mineral. No pestañeaba. Su pecho no se movía.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo se detuvo a dos metros, apretando los puños.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Quién eres? —susurró—. ¿Por qué me estás destrozando la vida? Me has quitado a mis amigos, mi trabajo, mi dinero.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El doble alzó la cabeza despacio. Sus ojos miel carecían de brillo húmedo. Habló con la voz exacta de Hugo, limpia y desprovista de emoción:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No te estoy quitando nada, Hugo. Y no te imito. Crees que soy un usurpador del pasado, pero te equivocas. Soy la versión de ti que todavía no ha nacido.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo negó con la cabeza, asustado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Eso es imposible.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—El tiempo solo tolera una presencia a la vez —continuó el doble sin mover un rasgo—. Fui diseñado para ocupar este lugar, pero tú prolongaste tu estancia. Por eso entro despacio. Cada vez que alguien cree en mí, cada vez que Irene confía en mi mensaje o la policía archiva tu culpa, una parte de tu pasado se desprende y pasa a mis manos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo sintió una punzada detrás de los ojos, como si le arrancaran un cable del cerebro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Mientes! —gritó, abalanzándose sobre él para prenderlo de las solapas.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0051-077-timbre-puerta-calle-suena.webp\" alt=\"Escena oficial de La persona que tenía mi número — Timbre puerta calle suena\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Timbre puerta calle suena</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Pero sus dedos atravesaron la tela negra sin encontrar resistencia. La figura se deshizo en una corriente de aire gélido y estática, igual que humo barrido por una ráfaga. El banco quedó vacío.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hugo cayó de rodillas sobre las baldosas. Se sujetó la cabeza mientras un sudor frío le empapaba el cuello. Acababa de olvidar la fecha exacta de su cumpleaños. Sabía que caía en otoño, pero el número y el mes habían desaparecido para siempre.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Caminó dos horas sin rumbo hasta llegar al barrio donde creció. La casa de sus padres llevaba tres años deshabitada. Hugo abrió la cerradura con la llave que aún guardaba en el bolsillo y encendió la luz del pasillo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Necesitaba una prueba material de que él había existido antes de que la sombra consumiera sus cimientos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Subió al trastero y bajó una caja carcomida por el polvo. Dentro guardaban álbumes familiares y cintas de vídeo magnéticas. Conectó un reproductor antiguo a un televisor de tubo e introdujo una cinta rotulada con la letra redonda de su madre: «Cumpleaños Hugo, 6 años».</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La pantalla zumbó con estática gris antes de encender una imagen granulada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Era el salón de aquella misma casa, veintidós años atrás. La mesa lucía un mantel de papel, vasos de plástico y una tarta con seis velas. En el centro aparecía él de niño, con jersey azul y el flequillo revuelto, riendo mientras sus padres y sus primos cantaban alrededor.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A Hugo se le saltaron las lágrimas al escuchar la risa clara de su madre. Creyó haber recuperado el anclaje con el mundo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Entonces la cámara casera comenzó a moverse en un paneo lento hacia la puerta del pasillo, buscando a la abuela que traía una bandeja de refrescos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A Hugo se le cortó la respiración.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al fondo del corredor, en la penumbra que se abría junto al marco de madera, había una figura de pie. Era un hombre adulto de veintiocho años, alto, con cazadora negra mate y los brazos caídos. Tenía la cara iluminada por el parpadeo lejano de las seis velas. Era su mismo rostro. Eran sus propios ojos miel, abiertos y fijos en la oscuridad, observando al niño soplar las velas con una paciencia fría.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El impostor no había clonado su teléfono aquella semana. No provenía de una brecha en la red ni de un capricho del azar. Llevaba toda su vida aguardando allí, oculto en los rincones ciegos de su infancia, esperando el momento exacto en que la última persona del mundo dejara de creer en él.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Desde el descansillo de abajo, el timbre de la calle empezó a sonar con un toque largo y pausado.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false,
+    "fecha_publicacion": null,
+    "fecha_publicacion_ts": null
+  },
+  {
     "id": "0050",
     "slug": "la-vida-prestada",
     "pagina_url": "relatos/0050-la-vida-prestada.html",
@@ -145,7 +296,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-18T20:00:00+01:00",
     "fecha_publicacion_ts": 1795028400
@@ -302,7 +453,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-16T20:00:00+01:00",
     "fecha_publicacion_ts": 1794855600
@@ -453,7 +604,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-17T20:00:00+01:00",
     "fecha_publicacion_ts": 1794942000
@@ -610,7 +761,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-15T20:00:00+01:00",
     "fecha_publicacion_ts": 1794769200
@@ -924,7 +1075,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-14T20:00:00+01:00",
     "fecha_publicacion_ts": 1794682800
@@ -1065,7 +1216,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-05T20:00:00+01:00",
     "fecha_publicacion_ts": 1793905200
@@ -1228,7 +1379,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-12T20:00:00+01:00",
     "fecha_publicacion_ts": 1794510000
@@ -1385,7 +1536,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-04T20:00:00+01:00",
     "fecha_publicacion_ts": 1793818800
@@ -1548,7 +1699,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-07T20:00:00+01:00",
     "fecha_publicacion_ts": 1794078000
@@ -1698,7 +1849,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-11T20:00:00+01:00",
     "fecha_publicacion_ts": 1794423600
@@ -1848,7 +1999,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-01T16:00:00+01:00",
     "fecha_publicacion_ts": 1793545200
@@ -2015,7 +2166,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-02T20:00:00+01:00",
     "fecha_publicacion_ts": 1793646000
@@ -2170,7 +2321,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-13T20:00:00+01:00",
     "fecha_publicacion_ts": 1794596400
@@ -2332,7 +2483,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-10T20:00:00+01:00",
     "fecha_publicacion_ts": 1794337200
@@ -2489,7 +2640,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-09T20:00:00+01:00",
     "fecha_publicacion_ts": 1794250800
@@ -2644,7 +2795,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-08T20:00:00+01:00",
     "fecha_publicacion_ts": 1794164400
@@ -2950,7 +3101,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-01T20:00:00+01:00",
     "fecha_publicacion_ts": 1793559600
@@ -3101,7 +3252,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-06T20:00:00+01:00",
     "fecha_publicacion_ts": 1793991600
@@ -3257,7 +3408,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-03T20:00:00+01:00",
     "fecha_publicacion_ts": 1793732400
@@ -3552,7 +3703,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-10-31T20:00:00+01:00",
     "fecha_publicacion_ts": 1793473200
