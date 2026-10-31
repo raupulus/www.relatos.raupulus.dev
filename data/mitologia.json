@@ -1,5 +1,100 @@
 [
   {
+    "id": "M0010",
+    "slug": "mmoatia",
+    "nombre": "Mmoatia",
+    "epiteto": "Los Pequeños Espíritus del Bosque Sagrado",
+    "titulo_completo": "Mmoatia: Los Pequeños Espíritus del Bosque Sagrado ⚡ Espíritus Abosom (África)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Espíritus Abosom",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 855,
+    "duracion_video": "05:39",
+    "duracion_audio": "05:39",
+    "duracion_short": "00:53",
+    "sinopsis": "En las densas selvas ecuatoriales de Ghana habitan los Mmoatia, los diminutos espíritus del bosque y custodios supremos de la medicina tradicional sagrada (dunsin) en la mitología akan. Seres feéricos de sesenta centímetros con largas melenas cobrizas y los pies orientados hacia atrás para confundir a los viajeros, conocen el remedio para cada veneno y la virtud curativa de cada raíz. Descubre cómo acogen e instruyen a los grandes sanadores en aldeas invisibles entre las raíces de árboles sagrados, la temible cólera de la casta roja sobre los profanadores del bosque y la legendaria treta de la muñeca de resina con la que la astuta araña Kwaku Anansi logró capturarlos.",
+    "youtube_id": "LzD7oF_CQwA",
+    "youtube_short_id": "hsuTz6wxkEY",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=LzD7oF_CQwA",
+    "youtube_short_url": "https://www.youtube.com/shorts/hsuTz6wxkEY",
+    "portada": "assets/images/portadas/M0010-mmoatia.webp",
+    "pagina_url": "mitologia/M0010-mmoatia.html",
+    "personajes": [
+      {
+        "nombre": "Mmoatia (Aboatia)",
+        "rol": "Espíritu Guardián del Bosque y Maestro de la Medicina Sagrada",
+        "rasgos": "Ser feérico de 60 cm de estatura y 28 años en fisonomía antropomórfica, complexión ágil y fibrosa, piel lustrosa de bronce terroso, ojos ambarinos y dorados centelleantes, pies orientados hacia atrás con talones al frente, larga melena cobriza ondulada hasta la cintura con semillas sagradas y lianas, y faldellín corto de corteza batida ocre con calabazas rituales de pócimas medicinales.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-mmoatia-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-mmoatia-cuerpo.webp"
+      },
+      {
+        "nombre": "Kwaku Anansi",
+        "rol": "La Astuta Araña Tejedora de Engaños",
+        "rasgos": "Hombre maduro akan de 40 años con facciones vivaces, sonrisa pícara y sutiles patrones de telaraña en su túnica batakari, portador de la muñeca de resina akua'ba."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0010-004-mmoatia-estatura-diminuta-sesenta-cm.webp",
+        "pie": "Mmoatia, el diminuto espíritu del bosque sagrado con sus sesenta centímetros de estatura y larga melena cobriza entre los helechos gigantes de Ghana."
+      },
+      {
+        "archivo": "assets/images/escenas/M0010-005-anatomia-sobrenatural-pies-invertidos.webp",
+        "pie": "La anatomía sobrenatural de los Mmoatia con los pies completamente vueltos hacia atrás y talones al frente para confundir a los viajeros."
+      },
+      {
+        "archivo": "assets/images/escenas/M0010-012-aldea-suspendida-raices-ficus-sagrado.webp",
+        "pie": "La aldea invisible de los Mmoatia anidada entre las colosales raíces aéreas de un árbol sagrado odum en el corazón de la selva ashanti."
+      },
+      {
+        "archivo": "assets/images/escenas/M0010-017-tres-castas-negra-blanca-roja.webp",
+        "pie": "Las tres castas míticas de los Mmoatia: los espíritus negros de la medicina, los sabios blancos y la temible casta roja de ira súbita y venganza."
+      },
+      {
+        "archivo": "assets/images/escenas/M0010-030-bofetada-mano-atrapada-resina-caucho.webp",
+        "pie": "La joven aboatia atrapada en la resina de caucho de la muñeca akua'ba tras el duelo de astucia contra la araña Kwaku Anansi."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. Invocación y Origen de los Espíritus",
+        "resumen": "En las umbrías profundidades de la selva ecuatorial de Ghana habitan los Mmoatia: espíritus creados por Nyame y vinculados a Asase Yaa con pies orientados hacia atrás y melenas cobrizas."
+      },
+      {
+        "tiempo": "01:08",
+        "segundos": 68,
+        "titulo": "II. Los Maestros de la Medicina Dunsin",
+        "resumen": "Los dones de los Mmoatia a la humanidad: maestros supremos de la etnobotánica que acogen a cazadores y futuros sacerdotes en aldeas entre las raíces para enseñarles los secretos de la curación."
+      },
+      {
+        "tiempo": "02:15",
+        "segundos": 135,
+        "titulo": "III. La Cólera Sagrada y las Tres Castas",
+        "resumen": "Las castas negra, blanca y roja; la furia de los espíritus rojos que castigan la profanación del bosque con piedras invisibles, silbidos sobrenaturales y huellas invertidas hacia ciénagas mortales."
+      },
+      {
+        "tiempo": "03:21",
+        "segundos": 201,
+        "titulo": "IV. El Duelo de Astucia con Kwaku Anansi",
+        "resumen": "Para cumplir las cuatro pruebas de Nyame, la araña Anansi talla una muñeca akua'ba cubierta de resina de caucho pegajosa y una calabaza de plátanos maduros, capturando a una joven aboatia."
+      },
+      {
+        "tiempo": "04:52",
+        "segundos": 292,
+        "titulo": "V. El Legado Eterno en el Corazón del Bosque",
+        "resumen": "La vigencia viva de los Mmoatia en la medicina comunitaria contemporánea de Ghana, donde los curanderos tradicionales aún depositan plátanos y vino de palma al pie de las ceibas sagradas."
+      }
+    ],
+    "texto_relato": "Mmoatia, los pequeños espíritus del bosque sagrado y custodios del conocimiento secreto de las plantas medicinales en la tradición de Ghana.\n\n* * *\n\nEn las umbrías profundidades de la selva ecuatorial de Ghana, donde las copas de los árboles odum ocultan la luz del mediodía, late un reino invisible para los ojos comunes. Creados por el dios supremo Nyame y vinculados a la madre tierra Asase Yaa, habitan los Mmoatia: los espíritus del bosque. Su estatura apenas alcanza los dos palmos del suelo, rondando los sesenta centímetros de altura. Su anatomía desafía las leyes del mundo terrenal: sus pies están orientados hacia atrás, con los talones al frente y los dedos hacia la espalda, de modo que sus pisadas en el fango parecen alejarse cuando en verdad avanzan hacia el viajero. Su piel de bronce reluce bajo la penumbra, coronada por largas melenas rojizas que descienden hasta la cintura con semillas sagradas y lianas. Desde sus ojos ambarinos chisporrotea una mirada viva que descubre los secretos más remotos de la naturaleza virgen.\n\n* * *\n\nPara los pueblos akan y la nación ashanti, los Mmoatia no son espectros malignos, sino los maestros supremos de la etnobotánica y guardianes de la medicina tradicional sagrada conocida como dunsin. En sus manos diminutas reside la ciencia viva de la selva: conocen con precisión la raíz que calma la fiebre letal, la corteza que detiene las hemorragias, la hoja que aclara la visión y la savia amarga que neutraliza el veneno de la víbora cornuda. Cuando un mortal de noble corazón —un cazador desorientado o un futuro sacerdote okomfo— se extravía en la espesura, los Mmoatia no buscan dañarlo. Guiándolo con destellos entre los helechos, lo acogen en sus aldeas suspendidas entre las raíces aéreas de los grandes ficus. Durante semanas o meses, sustentan al huésped con calabazas de plátanos maduros —su manjar más venerado— y agua de rocío, revelándole con paciencia ancestral los cánticos de poder y el uso terapéutico de cada hierba. Cuando el elegido regresa a su aldea, vuelve consagrado como un consumado sanador capaz de devolver la salud a su pueblo.\n\n* * *\n\nSin embargo, el temperamento de los moradores de la floresta es tan voluble como el viento previo a la tormenta tropical. Divididos en tres castas míticas —los de piel negra, blanca y roja—, son estos últimos los más temidos por su ira súbita y su carácter vengativo. Los Mmoatia castigan a quienes profanan los claros de sus danzas nocturnas, a los leñadores que talan árboles sagrados sin ofrendas y a los cazadores que matan hembras preñadas en sus dominios. Su castigo comienza con ráfagas de piedras invisibles que silban entre el follaje y ramas desgajadas desde las copas. Si el intruso insiste, los espíritus emiten su característico silbido agudo sobrenatural, un tañido que desorienta los sentidos y sume la mente en delirios. Gracias a sus huellas invertidas, confunden a los rastreadores, guiándolos hacia ciénagas movedizas o precipicios ocultos. Quien traiciona sus secretos o se burla de su corta estatura sufre una cólera implacable: los Mmoatia le sellan la voz o lo abandonan perdido en el laberinto impenetrable del bosque.\n\n* * *\n\nLa leyenda más célebre que atestigua el orgullo de los Mmoatia narra su épico enfrentamiento contra Kwaku Anansi, la astuta araña tejedora de engaños. Cuando Anansi quiso comprar a Nyame el cofre con todos los relatos del mundo, el Creador le exigió cuatro pruebas imposibles. Una de ellas era entregar vivo a un Mmoatia, el espíritu intangible que ningún cazador había logrado atrapar. Sabiendo que la agilidad de los duendes burlaría cualquier red, Anansi ideó una trampa sutil. Esculpió en madera una muñeca ceremonial akua’ba y cubrió su cuerpo con resina pegajosa de caucho. Colocó en sus brazos una calabaza con plátanos maduros, ató un hilo invisible a su cabeza y aguardó oculto tras la maleza. Pronto apareció una joven aboatia que, atraída por el fruto, pidió permiso a la figura para comer. Anansi tiró del hilo y la muñeca asintió. Tras comer el manjar, la aboatia dio las gracias, pero al no recibir respuesta verbal, tomó el silencio como un insulto intolerable: «¿Acaso eres demasiado soberbia para no responder a mi cortesía?». Furiosa, abofeteó a la figura. Su mano quedó atrapada en la resina. Al forcejear con la otra mano y arremeter con sus pies invertidos, quedó inmovilizada contra la madera. Anansi emergió, ató al espíritu y lo condujo ante Nyame, grabando aquel duelo para siempre en la memoria ancestral.\n\n* * *\n\nAunque los senderos de asfalto han menguado la espesura original de África occidental, los Mmoatia jamás han abandonado el santuario umbrío de la selva. En la sociedad ashanti contemporánea, su presencia continúa siendo el pilar invisible sobre el que descansa la medicina herbal comunitaria. Antes de recolectar raíces al alba o cortar cortezas medicinales, los sanadores tradicionales siguen acudiendo a los pies de las ceibas sagradas para depositar ofrendas ceremoniales de plátano y vino de palma, susurrando oraciones a los pequeños guardianes. Los Mmoatia encarnan la advertencia imperecedera de que la naturaleza alberga misterios que la soberbia humana jamás podrá dominar: seres diminutos de pasos invertidos que custodian la armonía vegetal en el eterno corazón verde de la tierra."
+  },
+  {
     "id": "M0009",
     "slug": "kra",
     "nombre": "Kra",
