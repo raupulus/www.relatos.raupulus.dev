@@ -920,5 +920,105 @@
     ],
     "fecha_publicacion": "2026-10-26T14:19:00+01:00",
     "fecha_publicacion_ts": 1793020740
+  },
+  {
+    "id": "M0011",
+    "slug": "ntoro",
+    "nombre": "Ntoro",
+    "epiteto": "El Espíritu Paterno y las Aguas Sagradas",
+    "titulo_completo": "Ntoro: El Espíritu Paterno y las Aguas Sagradas ⚡ Deidades y Espíritus (Mitología Ashanti y Akan)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Deidades y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 852,
+    "duracion_video": "05:27",
+    "duracion_audio": "05:27",
+    "duracion_short": "00:50",
+    "sinopsis": "En la cosmovisión akan y ashanti de Ghana y Costa de Marfil, la carne y la sangre proceden de la madre, pero el carácter, el valor y el destino moral nacen de la simiente del padre: el Ntoro. Transmitido mediante rituales con agua fluvial bendita y custodiado por espíritus acuáticos y tótems sagrados, este principio espiritual otorga una coraza invisible a sus hijos, pero desata una ruina implacable si se violan los tabúes ancestrales del linaje.",
+    "youtube_id": "zKUE4dRfki8",
+    "youtube_short_id": "8sx2yoyw9ks",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=zKUE4dRfki8",
+    "youtube_short_url": "https://www.youtube.com/shorts/8sx2yoyw9ks",
+    "portada": "assets/images/portadas/M0011-ntoro.webp",
+    "pagina_url": "mitologia/M0011-ntoro.html",
+    "personajes": [
+      {
+        "nombre": "Ntoro (Manifestación Ancestral)",
+        "rol": "Espíritu Paterno y Protector del Linaje Fluvial",
+        "rasgos": "Presencia espiritual de patriarca guerrero de 45 años, piel de ébano oscuro lustrosa con reflejos dorados y marcas ceremoniales de caolín blanco (hyirew), toga kente sobre el hombro izquierdo en tonos oro y azul río, bastón oratorio con el emblema de leopardo sagrado y aura mística felina.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-ntoro-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-ntoro-cuerpo.webp"
+      },
+      {
+        "nombre": "Kwame Asante",
+        "rol": "Joven Cazador del Clan Bosommuru",
+        "rasgos": "Joven de 22 años, complexión atlética, sayo de cazador tradicional en tonos tierra, brazalete de cobre ancestral y colgante protector de caolín."
+      },
+      {
+        "nombre": "Osei Tutu",
+        "rol": "Padre y Anciano del Consejo",
+        "rasgos": "Patriarca sabio de 55 años con barba entrecana y mirada templada, oficiante del rito de bautismo abadinto junto al taburete sagrado (asesedwa)."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0011-002-cosmogonia-akan-pacto-tripartito.webp",
+        "pie": "La cosmogonía espiritual akan: el pacto tripartito de la sangre materna (mogya), el soplo divino (kra) y el fuego del espíritu paterno (ntoro)."
+      },
+      {
+        "archivo": "assets/images/escenas/M0011-009-rito-bautismo-abadinto-agua-sagrada.webp",
+        "pie": "El rito sagrado del abadinto en la aldea ashanti: el padre ungiendo la frente del recién nacido con agua de río y hierbas para transferir su Ntoro."
+      },
+      {
+        "archivo": "assets/images/escenas/M0011-014-rigor-moral-tabues-sagrados-akyiwade.webp",
+        "pie": "El espíritu del padre como juez estricto ante el altar sagrado de los tabúes ancestrales (akyiwade) que no toleran la impureza moral."
+      },
+      {
+        "archivo": "assets/images/escenas/M0011-025-manifestacion-leopardo-agua-resplandor-dorado.webp",
+        "pie": "La manifestación espectral del gran leopardo de agua emergiendo en la bruma de Kumasi para salvar al joven cazador Kwame Asante."
+      },
+      {
+        "archivo": "assets/images/escenas/M0011-031-taburete-sagrado-asesedwa-libaciones.webp",
+        "pie": "La libación ritual de agua cristalina sobre la tierra fértil junto al taburete sagrado (asesedwa), asegurando la custodia eterna del alma paterna."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Alma Paterna y el Pacto Tripartito",
+        "resumen": "La triple naturaleza de la persona en la cosmovisión akan: la sangre de la madre, el aliento de Nyame y el espíritu moral del padre nacido de las aguas sagradas."
+      },
+      {
+        "tiempo": "01:07",
+        "segundos": 67,
+        "titulo": "II. La Faz Luminosa: El Rito de Abadinto",
+        "resumen": "La bendición del abadinto, el escudo invisible de valentía en la batalla y la conexión con las doce divisiones sagradas del agua y deidades como Bosommuru y Bosompra."
+      },
+      {
+        "tiempo": "02:15",
+        "segundos": 135,
+        "titulo": "III. La Faz Oscura: Los Tabúes Akyiwade",
+        "resumen": "Las prohibiciones sagradas de cada linaje, la retirada del Ntoro ante la transgresión y la desprotección del kra frente a la brujería y el aislamiento moral."
+      },
+      {
+        "tiempo": "03:27",
+        "segundos": 207,
+        "titulo": "IV. El Mito Cumbre: La Fiera de Kumasi",
+        "resumen": "La ordalía del joven cazador Kwame Asante en las selvas de Kumasi y la milagrosa intervención del gran leopardo de agua invocado en la memoria de su padre."
+      },
+      {
+        "tiempo": "04:39",
+        "segundos": 279,
+        "titulo": "V. Destino y Legado: Las Aguas Eternas",
+        "resumen": "El peregrinaje de retorno del Ntoro hacia las corrientes ancestrales tras la muerte terrenal y su presencia continua en los altares familiares asesedwa."
+      }
+    ],
+    "texto": "Ntoro, el hálito espiritual del padre que forja el carácter y custodia el linaje de las aguas sagradas.\n\n* * *\n\nEn la cosmogonía de los pueblos akan y ashanti, la vida humana no nace de una sola simiente, sino de un pacto espiritual tripartito. De la madre proviene la sangre, el mogya, que construye la carne terrenal y ata al individuo a su clan materno. De Nyame, el creador celestial, desciende el soplo del kra, la chispa inmortal y el destino personal. Pero es del padre de quien emana el ntoro, el fuego espiritual y la fuerza invisible del carácter transmitida a través de la semilla varonil. El ntoro no es un dios lejano en el firmamento ni un fantasma errante, sino una presencia divina encarnada en cada generación. Nace de las aguas primordiales de Ghana y Costa de Marfil, allí donde los grandes ríos y lagos sagrados albergan a los espíritus abosom. Cada linaje paterno está consagrado a una corriente eterna y a un tótem protector que vigila desde las sombras del bosque.\n\n* * *\n\nBajo su faz luminosa, el ntoro es el escudo invisible y el molde ético de la existencia. Es el principio que otorga el valor en la batalla, la templanza en el juicio y la sabiduría para gobernar la casa y la aldea. Cuando un niño llega al mundo en el bosque ashanti, el padre realiza el sagrado ritual del abadinto: toma agua fresca mezclada con hierbas aromáticas de su río tutelar y unge la lengua y la frente del recién nacido. En ese instante supremo, el ntoro del progenitor abraza el alma del hijo, transfiriéndole la bendición de sus antepasados y la afiliación a una de las doce divisiones sagradas del agua. Cada una de estas ramas venera a una deidad fluvial, como Bosommuru, el espíritu de los torrentes turbulentos, o Bosompra, el señor del río sagrado. Aquel cuyo ntoro es fuerte camina con paso firme entre los vivos, protegido contra venenos, envidias y tempestades. Su presencia impone respeto natural y su linaje florece en abundancia fecunda, porque las aguas místicas de sus padres riegan y purifican sin descanso cada uno de sus pasos.\n\n* * *\n\nSin embargo, el espíritu del padre es celoso, riguroso e implacable frente a la impureza moral. Cada división del ntoro impone a sus portadores un conjunto inmutable de prohibiciones sagradas, conocidas como akyiwade. Algunos linajes tienen vedado consumir la carne del leopardo salvaje, otros no pueden tocar el pez del lago sagrado, derramar sangre de carnero en días prohibidos o pronunciar blasfemias junto a las riberas. Quebrantar estos tabúes desencadena una sombra devastadora. El ntoro no tolera la traición ni la cobardía: cuando un individuo mancha su herencia, el espíritu paterno se repliega indignado, abandonando al transgresor a su propia fragilidad. Sin la coraza del ntoro, el kra queda desprotegido ante los hechiceros oscuros y los espíritus errantes del bosque. Sobrevienen enfermedades inexplicables, sequedad en la estirpe y terrores nocturnos donde los tótems ancestrales reclaman justicia. La ira del ntoro no castiga con fuego exterior, sino pudriendo por dentro la fuerza vital del hombre, sumiéndolo en la vergüenza, el aislamiento y la pérdida irreparable del honor ante la comunidad.\n\n* * *\n\nLa tradición oral ashanti recuerda la prueba suprema del joven cazador Kwame Asante, perteneciente a la casta del ntoro Bosommuru, cuyo tótem es la serpiente pitón y el leopardo de la espesura. Durante una implacable expedición en las selvas vírgenes de Kumasi, Kwame fue emboscado por una sombra maligna que devoraba el aliento de los cazadores en la oscuridad. Despojado de su lanza y consumido por la fiebre, el joven estuvo a punto de sucumbir al terror cuando recordó la bendición de las aguas que su padre le había otorgado al borde del río. Arrodillándose sobre el lodo húmedo de la ribera, Kwame invocó la memoria de su progenitor y el juramento eterno de su sangre paterna. De pronto, un resplandor dorado iluminó la bruma: la manifestación espectral del gran leopardo de agua emergió a sus espaldas, con pupilas como brasas ardientes. La fiera espiritual se abalanzó sobre la entidad sombría, destrozando sus fauces invisibles con garras de pura luz y devolviendo la calma al bosque ancestral. Kwame se puso en pie transformado: el ntoro de su linaje había respondido al llamado, confirmando que la fuerza de un padre nunca abandona al hijo que honra sus mandatos.\n\n* * *\n\nCuando el último aliento escapa del cuerpo del hombre akan, la materia regresa a Asase Yaa, la madre tierra, y el soplo del kra remonta los cielos hacia la morada de Nyame. Pero el ntoro no perece en el polvo ni sube a las alturas lejanas. El espíritu paterno emprende un solemne peregrinaje de retorno hacia las corrientes místicas de su río ancestral, donde se reúne con los abosom y los grandes sabios del pasado. Desde esos remansos sagrados, el ntoro continúa vigilando a los descendientes vivos que llevan su nombre y respetan sus prohibiciones. Mientras un hijo rece ante el taburete sagrado de madera y vierta libaciones de agua cristalina sobre la tierra fértil, el alma del padre seguirá viva, custodiando para siempre el corazón secreto del pueblo ashanti."
   }
 ]
