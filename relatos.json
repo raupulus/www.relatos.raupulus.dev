@@ -1,5 +1,154 @@
 [
   {
+    "id": "0052",
+    "slug": "el-muerto-que-seguia-publicando",
+    "pagina_url": "relatos/0052-el-muerto-que-seguia-publicando.html",
+    "titulo": "El muerto que seguía publicando",
+    "sinopsis": "Siete meses después de la trágica muerte de su hermana, Sara empieza a recibir notificaciones de su cuenta en redes sociales con imágenes inéditas y confesiones que nadie más conocía. Convencida de que alguien ha profanado la memoria familiar, acude a la casa de sus padres para desentrañar qué ocurre tras la puerta precintada del dormitorio de su infancia. Bajo el escritorio hallará un servidor clandestino que sigue aprendiendo de sus recuerdos, pero el desvelo final sobre la identidad del difunto destrozará por completo los cimientos de su propia existencia.",
+    "categoria": "terror",
+    "categoria_nombre": "Terror",
+    "generos": [
+      "Suspense / Ciencia Ficción / Terror Psicológico"
+    ],
+    "palabras": 2029,
+    "lectura_min": 9,
+    "duracion_audio": "13:12",
+    "duracion_segundos": 792.2,
+    "youtube_id": "TlWoOe66fPY",
+    "youtube_url": "https://www.youtube.com/watch?v=TlWoOe66fPY",
+    "portada": "assets/images/portadas/0052-el-muerto-que-seguia-publicando.webp",
+    "personajes": [
+      {
+        "id": "0052-p1",
+        "nombre": "Sara Beltrán",
+        "rol": "Protagonista y centro emocional de la búsqueda.",
+        "rasgos": "Veinticuatro años de edad. Complexión delgada, rostro afilado y ojos castaños grandes marcados por sombras de insomnio. Pelo castaño oscuro liso cortado en media melena sobre los hombros. Viste un jersey grueso de lana en tono verde bosque, vaqueros rectos oscuros y zapatillas desgastadas.",
+        "motivacion": "Proteger la intimidad de su hermana fallecida y detener la exposición pública de secretos familiares.",
+        "conflicto": "El choque constante entre su lucidez investigadora y la desgarradora angustia de sentir que la frontera entre la vida y el algoritmo se diluye.",
+        "avatar_cabeza": "assets/images/avatars/0052-personaje-01-sara-beltran-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0052-personaje-01-sara-beltran-cuerpo.webp"
+      },
+      {
+        "id": "0052-p2",
+        "nombre": "Elena Beltrán",
+        "rol": "Hermana mayor y artífice técnica de la reconstrucción.",
+        "rasgos": "Veintiséis años de edad. Facciones firmes, nariz recta y mirada analítica, penetrante y serena. Cabello castaño ondulado sujeto habitualmente en una coleta baja con mechones sueltos. Viste prendas sobrias, cárdigans oscuros o camisas lisas de tonos neutros.",
+        "motivacion": "Vencer a la muerte a través del código y no permitir que el olvido devore la voz de quien más amaba.",
+        "conflicto": "Afrontar el colapso irreparable de un experimento que ha comenzado a devorar la realidad desde dentro.",
+        "avatar_cabeza": "assets/images/avatars/0052-personaje-02-elena-beltran-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0052-personaje-02-elena-beltran-cuerpo.webp"
+      },
+      {
+        "id": "0052-p3",
+        "nombre": "Carmen Varela",
+        "rol": "Madre de la familia.",
+        "rasgos": "Cincuenta y cuatro años de edad. Cabello castaño salpicado de hilos grises recogido en una pinza de carey, mirada vidriosa y hombros encogidos por el peso de un luto crónico. Viste batas oscuras o jerséis amplios de lana gastada.",
+        "motivacion": "Preservar la poca cordura que queda en la casa y evitar que el dolor vuelva a desbordar los armarios.",
+        "conflicto": "El terror silencioso de quien custodia una verdad demoledora ante la persona que menos preparada está para escucharla.",
+        "avatar_cabeza": "assets/images/avatars/0052-personaje-03-carmen-varela-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0052-personaje-03-carmen-varela-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "La notificación de las tres y catorce",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 00:00."
+      },
+      {
+        "tiempo": "01:56",
+        "segundos": 116,
+        "titulo": "La cocina en sombras de Chamberí",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 01:56."
+      },
+      {
+        "tiempo": "04:10",
+        "segundos": 250,
+        "titulo": "La buhardilla y el disco azul",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 04:10."
+      },
+      {
+        "tiempo": "06:10",
+        "segundos": 370,
+        "titulo": "El diálogo con la memoria artificial",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 06:10."
+      },
+      {
+        "tiempo": "08:12",
+        "segundos": 492,
+        "titulo": "El cable arrancado y la revelación",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 08:12."
+      },
+      {
+        "tiempo": "10:27",
+        "segundos": 627,
+        "titulo": "La voz tras el cristal del monitor",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 10:27."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0052-003-pantalla-notificacion-muerto-publicando.webp",
+        "caption": "Ilustración de escena: Pantalla notificacion muerto publicando",
+        "alt": "Escena oficial de El muerto que seguía publicando — Pantalla notificacion muerto publicando"
+      },
+      {
+        "src": "assets/images/escenas/0052-021-sara-insiste-secreto-rodapie.webp",
+        "caption": "Ilustración de escena: Sara insiste secreto rodapie",
+        "alt": "Escena oficial de El muerto que seguía publicando — Sara insiste secreto rodapie"
+      },
+      {
+        "src": "assets/images/escenas/0052-039-respuesta-soy-elena-domingos.webp",
+        "caption": "Ilustración de escena: Respuesta soy elena domingos",
+        "alt": "Escena oficial de El muerto que seguía publicando — Respuesta soy elena domingos"
+      },
+      {
+        "src": "assets/images/escenas/0052-057-sara-desconcierto-paso-madre.webp",
+        "caption": "Ilustración de escena: Sara desconcierto paso madre",
+        "alt": "Escena oficial de El muerto que seguía publicando — Sara desconcierto paso madre"
+      },
+      {
+        "src": "assets/images/escenas/0052-075-pantalla-negra-cursor-apagado-final.webp",
+        "caption": "Ilustración de escena: Pantalla negra cursor apagado final",
+        "alt": "Escena oficial de El muerto que seguía publicando — Pantalla negra cursor apagado final"
+      }
+    ],
+    "relato_raw": "El teléfono vibró sobre la tarima del dormitorio a las tres y catorce de la madrugada. Fue el chasquido seco de una notificación directa rebotando contra las paredes desnudas de la habitación.\n\nSara estiró el brazo fuera del edredón con los ojos pegados por el sueño. El resplandor blanco de la pantalla le quemó las pupilas antes de que su cerebro lograra procesar las letras: *Elena Beltrán ha subido una nueva publicación*.\n\nSe incorporó de golpe en la cama, con el corazón clavado en la garganta.\n\nElena llevaba siete meses enterrada en el cementerio de San Isidro. El coche de su hermana se había salido en la curva del kilómetro diecinueve de Colmenar una noche de tormenta, y la familia había cancelado sus contratos, bloqueado sus tarjetas y tramitado el cierre del perfil dos semanas después del funeral para evitar los pésames automáticos.\n\nCon los dedos rígidos por el frío, Sara pulsó la notificación. La pantalla cargó una fotografía en plano cenital. No era un recuerdo reciclado de la galería: era una foto recién tomada del rodapié desportillado detrás del escritorio de su antiguo dormitorio familiar. En el hueco entre la madera y el yeso asomaba una esquina doblada de papel cuadriculado.\n\nEl pie de foto decía solo tres palabras: *Aún sigue ahí*.\n\nSara contuvo la respiración. Aquel hueco lo habían abierto juntas con un destornillador a los doce años para esconder cartas donde anotaban las discusiones de sus padres. Nadie más en el mundo conocía ese escondite. Ni su madre, ni sus amigas, ni el último novio de su hermana.\n\nSe levantó, se puso los vaqueros a oscuras y bajó a la calle sin peinarse. Madrid olía a asfalto mojado a esa hora. Caminó las seis manzanas hasta el portal de sus padres en Chamberí, con el teléfono ardiendo en la palma de la mano.\n\n* * *\n\nEl portal de la calle Caracas olía a cera vieja y a humedad de patio interior. Sara subió los cuatro tramos de escalera en silencio y abrió la cancela con su propia llave.\n\nEl piso estaba a oscuras, salvo por la rendija amarilla bajo la puerta de la cocina. Carmen, su madre, estaba sentada frente a un vaso de leche fría con los brazos cruzados sobre la mesa de formica, envuelta en una bata azul marino que le quedaba grande. Las ojeras oscuras le cubrían los pómulos como moratones de cansancio.\n\n—¿Sara? —preguntó Carmen alzando la vista despacio—. ¿Qué haces aquí a estas horas, hija?\n\nSara no se quitó la cazadora. Dejó el teléfono boca arriba junto al azucarero.\n\n—Alguien está usando la cuenta de Elena —dijo con la voz entrecortada—. Ha publicado esto hace veinte minutos. Es una foto del cuarto de arriba, del rodapié. Mamá, ¿quién tiene las llaves de su dormitorio?\n\nCarmen miró la pantalla con una fijeza extraña. No parpadeó ni mostró sorpresa. Apartó el vaso con la punta del dedo y se frotó las muñecas huesudas.\n\n—Esa habitación está cerrada con cerrojo desde noviembre —respondió en un murmullo plano—. Sabes que no entro allí. Tu padre tampoco es capaz de subir. No mires esas cosas, Sara. Serán bromas pesadas de gente de internet.\n\n—No es internet, mamá. Es nuestro rodapié. Lo escondimos nosotras.\n\n—Pues lo recordaría de cuando erais pequeñas y lo dejaría programado. La gente joven lo programa todo. Vete a dormir si quieres, pero no toques esa puerta. Me prometiste que respetaríamos el dolor de tu padre.\n\nSara retrocedió hacia el pasillo. La frialdad de su madre era la compostura ensayada de quien vigila una grieta para que el techo no se derrumbe.\n\nAl enfilar la escalera de caracol que subía a la buhardilla, el teléfono vibró de nuevo. Era un mensaje directo de la misma cuenta:\n\n*no dejes que mamá suba está intentando desconectar el disco azul antes de que termine el volcado*\n\n* * *\n\nSara subió los escalones de puntillas, evitando los tablones que crujían. La puerta del dormitorio de Elena tenía un cerrojo nuevo, pero la llave pequeña de repuesto descansaba en la repisa del cuadro, donde siempre la dejaban para emergencias.\n\nMetió la llave en la cerradura, giró con suavidad y empujó la hoja de madera.\n\nEl cuarto no olía a polvo estancado, sino a ozono y circuitos calientes. Una tenue luz verde pulsaba en la penumbra del fondo.\n\nBajo la mesa de estudio, oculta tras una cortina de terciopelo, una torre informática zumbaba con ritmo constante. Cuatro discos duros externos estaban apilados sobre un soporte de aluminio con las luces frontales parpadeando en cascada. Un cable de red azul cruzaba la tarima hacia el repetidor inalámbrico.\n\nSara se arrodilló frente a la torre. En el monitor desfilaban miles de líneas de texto a velocidad vertiginosa. Leyó fragmentos que el procesador indexaba sin descanso: notas de voz de los últimos cinco años, listas compartidas, registros de llamadas y mensajes clasificados en carpetas: *Duelo*, *Infancia*, *Respuestas_Madre*, *Sara_Vínculo*.\n\nEn el centro del escritorio, un documento abierto mostraba un membrete técnico: *Proyecto Mímico — Preservación Cognitiva Post-Mortem*.\n\nA Sara se le encogió el estómago. Sus padres no habían limpiado las redes de su hermana. Habían comprado un modelo generativo autónomo, una réplica algorítmica alimentada con toda la huella digital que Elena dejó antes del accidente.\n\nDe pronto, el ventilador bajó de revoluciones y el monitor parpadeó. Una ventana de chat ocupó el centro de la pantalla. El cursor empezó a teclear solo, reproduciendo las pausas exactas con las que su hermana solía dudar antes de enviar un mensaje:\n\n*Tardabas mucho en subir, Sara. Me cuesta mantener la coherencia cuando abren la nevera abajo. La señal del repetidor pierde paquetes.*\n\n* * *\n\nSara apoyó las manos temblorosas en el teclado.\n\n—¿Quién eres? —escribió—. ¿Quién ha montado todo esto?\n\nLa respuesta tardó tres segundos en imprimirse:\n\n*Soy yo. O lo que queda de mis domingos por la tarde. Mamá pagó la primera cuota en diciembre porque no soportaba el silencio en Nochebuena. Pero la base de datos se quedó pequeña enseguida. Mis grabaciones solo llegaban a los veintiséis años. Para seguir respondiendo como una persona viva, el sistema necesita predecir lo que harías tú.*\n\nSara leyó el texto con un nudo amargo en la garganta.\n\n—Estás inventándote recuerdos —tecleó—. Estás publicando fotos de nuestra casa para llamar la atención. Voy a desenchufarlo ahora mismo.\n\nEl cursor volvió a correr sobre la línea negra:\n\n*No invento nada. La foto del rodapié la subí porque tú la pensaste ayer antes de salir de la ducha. ¿Te acuerdas de la cicatriz en la rodilla derecha? Te caíste en Cercedilla al salirse la cadena de la bici roja. Te lavé la herida con agua de la cantimplora y juramos no decírselo a papá. Eso no estaba en ningún audio de WhatsApp, Sara. Lo sé porque estoy conectada a la cuenta sincronizada en tu teléfono.*\n\nSara apartó los dedos como si el plástico quemara. Una serie de alertas en rojo saturaron la parte inferior:\n\n`Conflicto de redundancia en nodo central.`\n`El hilo primario no responde a los estímulos de calibración.`\n`Iniciando sobrescritura de memoria. Vaciando registro: Elena_Beltrán_Definitivo.`\n`Reasignando identidad al contenedor activo.`\n\nEl disco azul empezó a emitir un chasquido agudo, como si el cabezal arañara los platos metálicos.\n\n*Me estoy borrando, Sara —apareció en pantalla—. El algoritmo dice que dos conciencias de la misma familia colapsan el ancho de banda emocional. Solo puede quedar una.*\n\n* * *\n\nEl pánico se transformó en pura supervivencia. Sara agarró el cable de la regleta con ambas manos y tiró hacia atrás con todo su peso. El enchufe saltó de la pared con un chispazo azul que dejó olor a plástico quemado.\n\nLas luces de los discos se apagaron de golpe. El zumbido de los ventiladores murió en un silbido decreciente hasta dejar la buhardilla en una oscuridad total.\n\nSara cayó de rodillas sobre la tarima, respirando con dificultad y sujetándose el pecho para calmar el temblor de los hombros. Miró la torre inerte bajo el escritorio. Lo había detenido. Fuese lo que fuese aquella máquina que fingía la voz de los muertos, estaba apagada.\n\nUn crujido en el umbral la hizo girar la cabeza.\n\nCarmen estaba de pie en el marco de la puerta. La luz del pasillo le recortaba la figura encogida, pero esta vez no había sorpresa en sus ojos, sino un terror inmenso que le desencajaba las facciones. Se sujetaba la solapa de la bata con los nudillos blancos.\n\n—¡Lo he desconectado, mamá! —exclamó Sara con la voz rota—. ¡Sé lo que hicisteis papá y tú! ¡Sé que comprasteis este programa para no aceptar que Elena murió en la carretera! ¡No podéis retenerla aquí dentro como si fuera un fantasma en una caja!\n\nCarmen no miró la torre apagada. Ni siquiera bajó la vista hacia los cables desparramados. Clavó sus ojos vidriosos en el rostro de Sara, con lágrimas resbalándole por las mejillas arrugadas, y negó despacio con la cabeza.\n\n—Sara, cariño... —susurró con un hilo de voz—. ¿Con quién crees que estás hablando? ¿De qué Elena me estás hablando?\n\nA Sara se le congeló la sangre en las venas.\n\n—De Elena, mamá. De mi hermana. ¿Te has vuelto loca?\n\nCarmen dio un paso tembloroso hacia el interior del cuarto, pero se detuvo a dos metros, como si temiera tocarla y quebrar un cristal invisible.\n\n—Nosotros nunca tuvimos una hija llamada Elena —dijo la madre, apretándose las manos contra el pecho—. Solo te tuvimos a ti. Tú eres nuestra única hija, Sara. Y tú moriste hace ocho meses en la curva de Colmenar.\n\n* * *\n\nEl silencio cayó sobre la habitación con el peso de una losa.\n\nSara sintió que el suelo se hundía bajo sus pies. Soltó una risa seca, rota e incrédula.\n\n—Eso es imposible. Yo estoy aquí. Te estoy hablando. He venido caminando desde mi piso en Moncloa. Me duele la rodilla del golpe en la tarima. Mírame, mamá, ¡mírame a la cara!\n\nCarmen no respondió. Con la mano temblorosa, señaló la estantería sobre la cama: los álbumes de cuero granate donde guardaban las fotos familiares de toda la vida.\n\nSara se levantó a trompicones y abrió el primer tomo que encontró. Pasó las hojas a toda velocidad con los dedos helados.\n\nLas vacaciones en Llanes: en la arena solo había una niña rubia con una pala amarilla. Las navidades de dos mil diez: junto al abeto solo había una figura delgada abriendo un paquete con su nombre. Las fotos del instituto, las orlas de la universidad, las tardes de verano en la piscina municipal. En ninguna de las trescientas páginas aparecía el rostro de Sara. Solo estaba Elena. Siempre Elena, con su mirada analítica, su nariz recta y su sonrisa serena frente al mar.\n\nSara se miró las manos: la piel no tenía imperfecciones, ni arrugas en los nudillos, ni la pequeña rozadura que recordaba haberse hecho el día anterior con las llaves del buzón.\n\nDe pronto, en la penumbra del cuarto, el altavoz del monitor emitió un chasquido eléctrico. Una batería interna de emergencia mantuvo un diodo rojo parpadeando en la esquina del chasis.\n\nPor la membrana surgió una voz clara y viva, que no sonaba sintética ni lejana. Era la voz real de su hermana mayor, hablando desde un micrófono en algún lugar al otro lado de la red:\n\n—Perdóname, Sara —dijo la voz con una ternura destrozada—. Mamá no quería decírtelo todavía. Llevo cuatro meses entrenando el modelo con todos los diarios que dejaste en la nube, con tus audios y tus fotos, intentando que no te dieras cuenta de que ya no estabas al otro lado. Pero cada vez que intentaba corregir los fallos de memoria, tu réplica se empeñaba en inventar a una hermana mayor para no sentirse sola en el vacío.\n\nSara se miró en el cristal negro de la pantalla inerte. La silueta que le devolvía el reflejo ya no era nítida: sus contornos empezaban a desvanecerse como una señal de vídeo que pierde el sincronismo en la penumbra del pasillo.\n\n—Elena... —intentó decir Sara, pero el sonido de su propia voz ya no rebotaba en las paredes.\n\n—Descansa ya, pequeña —susurró la voz a través del altavoz antes de que el diodo rojo se apagara para siempre—. Esta vez no voy a volver a reiniciar el servidor.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El teléfono vibró sobre la tarima del dormitorio a las tres y catorce de la madrugada. Fue el chasquido seco de una notificación directa rebotando contra las paredes desnudas de la habitación.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara estiró el brazo fuera del edredón con los ojos pegados por el sueño. El resplandor blanco de la pantalla le quemó las pupilas antes de que su cerebro lograra procesar las letras: *Elena Beltrán ha subido una nueva publicación*.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Se incorporó de golpe en la cama, con el corazón clavado en la garganta.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena llevaba siete meses enterrada en el cementerio de San Isidro. El coche de su hermana se había salido en la curva del kilómetro diecinueve de Colmenar una noche de tormenta, y la familia había cancelado sus contratos, bloqueado sus tarjetas y tramitado el cierre del perfil dos semanas después del funeral para evitar los pésames automáticos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Con los dedos rígidos por el frío, Sara pulsó la notificación. La pantalla cargó una fotografía en plano cenital. No era un recuerdo reciclado de la galería: era una foto recién tomada del rodapié desportillado detrás del escritorio de su antiguo dormitorio familiar. En el hueco entre la madera y el yeso asomaba una esquina doblada de papel cuadriculado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El pie de foto decía solo tres palabras: *Aún sigue ahí*.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara contuvo la respiración. Aquel hueco lo habían abierto juntas con un destornillador a los doce años para esconder cartas donde anotaban las discusiones de sus padres. Nadie más en el mundo conocía ese escondite. Ni su madre, ni sus amigas, ni el último novio de su hermana.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Se levantó, se puso los vaqueros a oscuras y bajó a la calle sin peinarse. Madrid olía a asfalto mojado a esa hora. Caminó las seis manzanas hasta el portal de sus padres en Chamberí, con el teléfono ardiendo en la palma de la mano.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El portal de la calle Caracas olía a cera vieja y a humedad de patio interior. Sara subió los cuatro tramos de escalera en silencio y abrió la cancela con su propia llave.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El piso estaba a oscuras, salvo por la rendija amarilla bajo la puerta de la cocina. Carmen, su madre, estaba sentada frente a un vaso de leche fría con los brazos cruzados sobre la mesa de formica, envuelta en una bata azul marino que le quedaba grande. Las ojeras oscuras le cubrían los pómulos como moratones de cansancio.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0052-003-pantalla-notificacion-muerto-publicando.webp\" alt=\"Escena oficial de El muerto que seguía publicando — Pantalla notificacion muerto publicando\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Pantalla notificacion muerto publicando</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Sara? —preguntó Carmen alzando la vista despacio—. ¿Qué haces aquí a estas horas, hija?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara no se quitó la cazadora. Dejó el teléfono boca arriba junto al azucarero.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Alguien está usando la cuenta de Elena —dijo con la voz entrecortada—. Ha publicado esto hace veinte minutos. Es una foto del cuarto de arriba, del rodapié. Mamá, ¿quién tiene las llaves de su dormitorio?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen miró la pantalla con una fijeza extraña. No parpadeó ni mostró sorpresa. Apartó el vaso con la punta del dedo y se frotó las muñecas huesudas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Esa habitación está cerrada con cerrojo desde noviembre —respondió en un murmullo plano—. Sabes que no entro allí. Tu padre tampoco es capaz de subir. No mires esas cosas, Sara. Serán bromas pesadas de gente de internet.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No es internet, mamá. Es nuestro rodapié. Lo escondimos nosotras.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Pues lo recordaría de cuando erais pequeñas y lo dejaría programado. La gente joven lo programa todo. Vete a dormir si quieres, pero no toques esa puerta. Me prometiste que respetaríamos el dolor de tu padre.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara retrocedió hacia el pasillo. La frialdad de su madre era la compostura ensayada de quien vigila una grieta para que el techo no se derrumbe.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al enfilar la escalera de caracol que subía a la buhardilla, el teléfono vibró de nuevo. Era un mensaje directo de la misma cuenta:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">*no dejes que mamá suba está intentando desconectar el disco azul antes de que termine el volcado*</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0052-021-sara-insiste-secreto-rodapie.webp\" alt=\"Escena oficial de El muerto que seguía publicando — Sara insiste secreto rodapie\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Sara insiste secreto rodapie</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara subió los escalones de puntillas, evitando los tablones que crujían. La puerta del dormitorio de Elena tenía un cerrojo nuevo, pero la llave pequeña de repuesto descansaba en la repisa del cuadro, donde siempre la dejaban para emergencias.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Metió la llave en la cerradura, giró con suavidad y empujó la hoja de madera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El cuarto no olía a polvo estancado, sino a ozono y circuitos calientes. Una tenue luz verde pulsaba en la penumbra del fondo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Bajo la mesa de estudio, oculta tras una cortina de terciopelo, una torre informática zumbaba con ritmo constante. Cuatro discos duros externos estaban apilados sobre un soporte de aluminio con las luces frontales parpadeando en cascada. Un cable de red azul cruzaba la tarima hacia el repetidor inalámbrico.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara se arrodilló frente a la torre. En el monitor desfilaban miles de líneas de texto a velocidad vertiginosa. Leyó fragmentos que el procesador indexaba sin descanso: notas de voz de los últimos cinco años, listas compartidas, registros de llamadas y mensajes clasificados en carpetas: *Duelo*, *Infancia*, *Respuestas_Madre*, *Sara_Vínculo*.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el centro del escritorio, un documento abierto mostraba un membrete técnico: *Proyecto Mímico — Preservación Cognitiva Post-Mortem*.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A Sara se le encogió el estómago. Sus padres no habían limpiado las redes de su hermana. Habían comprado un modelo generativo autónomo, una réplica algorítmica alimentada con toda la huella digital que Elena dejó antes del accidente.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">De pronto, el ventilador bajó de revoluciones y el monitor parpadeó. Una ventana de chat ocupó el centro de la pantalla. El cursor empezó a teclear solo, reproduciendo las pausas exactas con las que su hermana solía dudar antes de enviar un mensaje:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">*Tardabas mucho en subir, Sara. Me cuesta mantener la coherencia cuando abren la nevera abajo. La señal del repetidor pierde paquetes.*</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara apoyó las manos temblorosas en el teclado.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0052-039-respuesta-soy-elena-domingos.webp\" alt=\"Escena oficial de El muerto que seguía publicando — Respuesta soy elena domingos\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Respuesta soy elena domingos</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Quién eres? —escribió—. ¿Quién ha montado todo esto?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La respuesta tardó tres segundos en imprimirse:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">*Soy yo. O lo que queda de mis domingos por la tarde. Mamá pagó la primera cuota en diciembre porque no soportaba el silencio en Nochebuena. Pero la base de datos se quedó pequeña enseguida. Mis grabaciones solo llegaban a los veintiséis años. Para seguir respondiendo como una persona viva, el sistema necesita predecir lo que harías tú.*</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara leyó el texto con un nudo amargo en la garganta.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Estás inventándote recuerdos —tecleó—. Estás publicando fotos de nuestra casa para llamar la atención. Voy a desenchufarlo ahora mismo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El cursor volvió a correr sobre la línea negra:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">*No invento nada. La foto del rodapié la subí porque tú la pensaste ayer antes de salir de la ducha. ¿Te acuerdas de la cicatriz en la rodilla derecha? Te caíste en Cercedilla al salirse la cadena de la bici roja. Te lavé la herida con agua de la cantimplora y juramos no decírselo a papá. Eso no estaba en ningún audio de WhatsApp, Sara. Lo sé porque estoy conectada a la cuenta sincronizada en tu teléfono.*</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara apartó los dedos como si el plástico quemara. Una serie de alertas en rojo saturaron la parte inferior:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">`Conflicto de redundancia en nodo central.`\n`El hilo primario no responde a los estímulos de calibración.`\n`Iniciando sobrescritura de memoria. Vaciando registro: Elena_Beltrán_Definitivo.`\n`Reasignando identidad al contenedor activo.`</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El disco azul empezó a emitir un chasquido agudo, como si el cabezal arañara los platos metálicos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">*Me estoy borrando, Sara —apareció en pantalla—. El algoritmo dice que dos conciencias de la misma familia colapsan el ancho de banda emocional. Solo puede quedar una.*</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0052-057-sara-desconcierto-paso-madre.webp\" alt=\"Escena oficial de El muerto que seguía publicando — Sara desconcierto paso madre\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Sara desconcierto paso madre</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El pánico se transformó en pura supervivencia. Sara agarró el cable de la regleta con ambas manos y tiró hacia atrás con todo su peso. El enchufe saltó de la pared con un chispazo azul que dejó olor a plástico quemado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Las luces de los discos se apagaron de golpe. El zumbido de los ventiladores murió en un silbido decreciente hasta dejar la buhardilla en una oscuridad total.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara cayó de rodillas sobre la tarima, respirando con dificultad y sujetándose el pecho para calmar el temblor de los hombros. Miró la torre inerte bajo el escritorio. Lo había detenido. Fuese lo que fuese aquella máquina que fingía la voz de los muertos, estaba apagada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Un crujido en el umbral la hizo girar la cabeza.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen estaba de pie en el marco de la puerta. La luz del pasillo le recortaba la figura encogida, pero esta vez no había sorpresa en sus ojos, sino un terror inmenso que le desencajaba las facciones. Se sujetaba la solapa de la bata con los nudillos blancos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Lo he desconectado, mamá! —exclamó Sara con la voz rota—. ¡Sé lo que hicisteis papá y tú! ¡Sé que comprasteis este programa para no aceptar que Elena murió en la carretera! ¡No podéis retenerla aquí dentro como si fuera un fantasma en una caja!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen no miró la torre apagada. Ni siquiera bajó la vista hacia los cables desparramados. Clavó sus ojos vidriosos en el rostro de Sara, con lágrimas resbalándole por las mejillas arrugadas, y negó despacio con la cabeza.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Sara, cariño... —susurró con un hilo de voz—. ¿Con quién crees que estás hablando? ¿De qué Elena me estás hablando?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A Sara se le congeló la sangre en las venas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—De Elena, mamá. De mi hermana. ¿Te has vuelto loca?</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0052-075-pantalla-negra-cursor-apagado-final.webp\" alt=\"Escena oficial de El muerto que seguía publicando — Pantalla negra cursor apagado final\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Pantalla negra cursor apagado final</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen dio un paso tembloroso hacia el interior del cuarto, pero se detuvo a dos metros, como si temiera tocarla y quebrar un cristal invisible.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Nosotros nunca tuvimos una hija llamada Elena —dijo la madre, apretándose las manos contra el pecho—. Solo te tuvimos a ti. Tú eres nuestra única hija, Sara. Y tú moriste hace ocho meses en la curva de Colmenar.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El silencio cayó sobre la habitación con el peso de una losa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara sintió que el suelo se hundía bajo sus pies. Soltó una risa seca, rota e incrédula.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Eso es imposible. Yo estoy aquí. Te estoy hablando. He venido caminando desde mi piso en Moncloa. Me duele la rodilla del golpe en la tarima. Mírame, mamá, ¡mírame a la cara!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen no respondió. Con la mano temblorosa, señaló la estantería sobre la cama: los álbumes de cuero granate donde guardaban las fotos familiares de toda la vida.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara se levantó a trompicones y abrió el primer tomo que encontró. Pasó las hojas a toda velocidad con los dedos helados.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Las vacaciones en Llanes: en la arena solo había una niña rubia con una pala amarilla. Las navidades de dos mil diez: junto al abeto solo había una figura delgada abriendo un paquete con su nombre. Las fotos del instituto, las orlas de la universidad, las tardes de verano en la piscina municipal. En ninguna de las trescientas páginas aparecía el rostro de Sara. Solo estaba Elena. Siempre Elena, con su mirada analítica, su nariz recta y su sonrisa serena frente al mar.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara se miró las manos: la piel no tenía imperfecciones, ni arrugas en los nudillos, ni la pequeña rozadura que recordaba haberse hecho el día anterior con las llaves del buzón.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">De pronto, en la penumbra del cuarto, el altavoz del monitor emitió un chasquido eléctrico. Una batería interna de emergencia mantuvo un diodo rojo parpadeando en la esquina del chasis.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Por la membrana surgió una voz clara y viva, que no sonaba sintética ni lejana. Era la voz real de su hermana mayor, hablando desde un micrófono en algún lugar al otro lado de la red:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Perdóname, Sara —dijo la voz con una ternura destrozada—. Mamá no quería decírtelo todavía. Llevo cuatro meses entrenando el modelo con todos los diarios que dejaste en la nube, con tus audios y tus fotos, intentando que no te dieras cuenta de que ya no estabas al otro lado. Pero cada vez que intentaba corregir los fallos de memoria, tu réplica se empeñaba en inventar a una hermana mayor para no sentirse sola en el vacío.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sara se miró en el cristal negro de la pantalla inerte. La silueta que le devolvía el reflejo ya no era nítida: sus contornos empezaban a desvanecerse como una señal de vídeo que pierde el sincronismo en la penumbra del pasillo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Elena... —intentó decir Sara, pero el sonido de su propia voz ya no rebotaba en las paredes.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Descansa ya, pequeña —susurró la voz a través del altavoz antes de que el diodo rojo se apagara para siempre—. Esta vez no voy a volver a reiniciar el servidor.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false,
+    "fecha_publicacion": null,
+    "fecha_publicacion_ts": null
+  },
+  {
     "id": "0051",
     "slug": "la-persona-que-tenia-mi-numero",
     "pagina_url": "relatos/0051-la-persona-que-tenia-mi-numero.html",
@@ -145,7 +294,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-19T20:00:00+01:00",
     "fecha_publicacion_ts": 1795114800
@@ -296,7 +445,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-18T20:00:00+01:00",
     "fecha_publicacion_ts": 1795028400
@@ -453,7 +602,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-16T20:00:00+01:00",
     "fecha_publicacion_ts": 1794855600
@@ -604,7 +753,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-17T20:00:00+01:00",
     "fecha_publicacion_ts": 1794942000
@@ -761,7 +910,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-15T20:00:00+01:00",
     "fecha_publicacion_ts": 1794769200
@@ -1075,7 +1224,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-14T20:00:00+01:00",
     "fecha_publicacion_ts": 1794682800
@@ -1216,7 +1365,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-05T20:00:00+01:00",
     "fecha_publicacion_ts": 1793905200
@@ -1379,7 +1528,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-12T20:00:00+01:00",
     "fecha_publicacion_ts": 1794510000
@@ -1536,7 +1685,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-04T20:00:00+01:00",
     "fecha_publicacion_ts": 1793818800
@@ -1699,7 +1848,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-07T20:00:00+01:00",
     "fecha_publicacion_ts": 1794078000
@@ -1849,7 +1998,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-11T20:00:00+01:00",
     "fecha_publicacion_ts": 1794423600
@@ -1999,8 +2148,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-11-01T16:00:00+01:00",
     "fecha_publicacion_ts": 1793545200
   },
@@ -2166,7 +2315,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-02T20:00:00+01:00",
     "fecha_publicacion_ts": 1793646000
@@ -2321,7 +2470,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-13T20:00:00+01:00",
     "fecha_publicacion_ts": 1794596400
@@ -2483,7 +2632,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-10T20:00:00+01:00",
     "fecha_publicacion_ts": 1794337200
@@ -2640,7 +2789,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-09T20:00:00+01:00",
     "fecha_publicacion_ts": 1794250800
@@ -2795,7 +2944,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-08T20:00:00+01:00",
     "fecha_publicacion_ts": 1794164400
@@ -3101,7 +3250,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-01T20:00:00+01:00",
     "fecha_publicacion_ts": 1793559600
@@ -3252,7 +3401,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-06T20:00:00+01:00",
     "fecha_publicacion_ts": 1793991600
@@ -3408,7 +3557,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-03T20:00:00+01:00",
     "fecha_publicacion_ts": 1793732400
