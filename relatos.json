@@ -1,5 +1,154 @@
 [
   {
+    "id": "0053",
+    "slug": "el-hombre-que-aparecia-en-los-documentos",
+    "pagina_url": "relatos/0053-el-hombre-que-aparecia-en-los-documentos.html",
+    "titulo": "El hombre que aparecía en los documentos",
+    "sinopsis": "Nicolás trabaja en el sótano de una gestoría madrileña digitalizando legajos antiguos y expedientes civiles. Su rutina se quiebra cuando descubre que el pasaporte de una mujer madura, el permiso de conducir de un anciano y la ficha escolar de un niño comparten exactamente la misma fotografía de carnet: el rostro neutro y severo de un hombre de cuarenta y dos años. Lo que comienza como una supuesta anomalía de imprenta se transforma en una pesadilla burocrática cuando el sistema empieza a borrar la existencia de Nicolás para devolverle al desconocido un lugar que jamás debió perder.",
+    "categoria": "suspense",
+    "categoria_nombre": "Suspense",
+    "generos": [
+      "Suspense / Thriller Psicológico"
+    ],
+    "palabras": 1888,
+    "lectura_min": 9,
+    "duracion_audio": "12:31",
+    "duracion_segundos": 751.71,
+    "youtube_id": "W_BkAXpRoO8",
+    "youtube_url": "https://www.youtube.com/watch?v=W_BkAXpRoO8",
+    "portada": "assets/images/portadas/0053-el-hombre-que-aparecia-en-los-documentos.webp",
+    "personajes": [
+      {
+        "id": "0053-p1",
+        "nombre": "Nicolás Valverde",
+        "rol": "Protagonista; auxiliar de archivo y digitalización documental.",
+        "rasgos": "Treinta y un años de edad. Complexión delgada, estatura media (un metro y setenta y siete centímetros). Rostro pálido de oficina, facciones angulosas y ojos castaños inquisitivos tras unas gafas de montura metálica fina. Cabello castaño oscuro corto, peinado hacia un lado con raya limpia. Viste camisa azul clara arremangada en los antebrazos sobre camiseta interior blanca, pantalón chino gris marengo y zapatos de cuero oscuro gastados en la puntera.",
+        "motivacion": "Descubrir el origen del fallo burocrático que contamina los archivos y defender la autenticidad de su propia identidad antes de que sea borrada por completo.",
+        "conflicto": "Se enfrenta a una maquinaria administrativa implacable que no solo desconoce su rostro, sino que le demuestra que su memoria y su vida han sido levantadas sobre la suplantación de otra persona.",
+        "avatar_cabeza": "assets/images/avatars/0053-personaje-01-nicolas-valverde-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0053-personaje-01-nicolas-valverde-cuerpo.webp"
+      },
+      {
+        "id": "0053-p2",
+        "nombre": "Julián Cárdenas / El Desconocido",
+        "rol": "El rostro ubicuo de los expedientes; la identidad primigenia borrada por el Estado.",
+        "rasgos": "Cuarenta y dos años de edad inmutables. Estatura sólida (un metro y ochenta centímetros), mandíbula ancha y cuadrada, pómulos marcados y mirada grisácea, penetrante y desprovista de emoción aparente. Una pequeña marca oscura cerca de la comisura derecha del labio. Cabello negro lacio con discretas canas plateadas en las sienes, peinado hacia atrás con sobriedad institucional. En todas las fotografías de carnet viste una chaqueta oscura de lana con solapas anchas sobre camisa blanca de cuello almidonado sin corbata.",
+        "motivacion": "Reclamar la presencia documental que le fue arrebatada cuatro décadas atrás, expulsando a quienes heredaron sus datos civiles.",
+        "conflicto": "Su existencia no busca destruir por malicia, sino reintegrarse en un registro que intentó hacerlo desaparecer mediante un pacto de silencio gubernamental.",
+        "avatar_cabeza": "assets/images/avatars/0053-personaje-02-julian-cardenas-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0053-personaje-02-julian-cardenas-cuerpo.webp"
+      },
+      {
+        "id": "0053-p3",
+        "nombre": "Valeria Ramos",
+        "rol": "Abogada y jefa de gestión documental en la gestoría; compañera y confidente de Nicolás.",
+        "rasgos": "Treinta y cuatro años de edad. Estatura media (un metro y sesenta y siete centímetros), porte ágil y profesional. Cabello castaño cobrizo recogido en un moño bajo con mechones sueltos sobre las sienes. Ojos almendrados color miel, mirada directa y analítica. Viste blazer azul marino con botones dorados sobre blusa de seda cruda, pantalón de pinzas oscuro y pendientes discretos de plata.",
+        "motivacion": "Mantener el rigor legal de los expedientes de la empresa y auxiliar a Nicolás, hasta que la alteración de los registros coloniza su propia memoria inmediata.",
+        "conflicto": "Su confianza ciega en los protocolos digitales la sitúa entre la lealtad hacia su compañero y la imposibilidad de contradecir lo que la pantalla oficial le certifica.",
+        "avatar_cabeza": "assets/images/avatars/0053-personaje-03-valeria-ramos-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0053-personaje-03-valeria-ramos-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "El hallazgo en el sótano",
+        "resumen": "Nicolás descubre la fotografía de un hombre desconocido de 42 años en documentos antiguos de diferentes décadas."
+      },
+      {
+        "tiempo": "02:10",
+        "segundos": 130,
+        "titulo": "La visita a Estrecho",
+        "resumen": "Visita al domicilio de Dionisio Morales, donde la anciana esposa reconoce al hombre de la foto como su marido."
+      },
+      {
+        "tiempo": "04:08",
+        "segundos": 248,
+        "titulo": "El examen con Valeria",
+        "resumen": "Valeria comprueba los legajos y el censo oficial, donde el mismo rostro invade los archivos estatales."
+      },
+      {
+        "tiempo": "06:18",
+        "segundos": 378,
+        "titulo": "La metamorfosis del carnet",
+        "resumen": "El DNI físico de Nicolás se transforma desde dentro y Valeria empieza a olvidar su verdadera cara."
+      },
+      {
+        "tiempo": "08:02",
+        "segundos": 482,
+        "titulo": "La comisaría de los Madrazo",
+        "resumen": "El escáner biométrico policial identifica a Nicolás como Julián Cárdenas, sujeto vector del Protocolo Mnemosis."
+      },
+      {
+        "tiempo": "10:10",
+        "segundos": 610,
+        "titulo": "El secreto de la Almudena",
+        "resumen": "En el archivo histórico, Nicolás descubre la verdad de las identidades ficticias y asume su verdadera existencia."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0053-003-recuadro-foto-filiacion-pasaporte.webp",
+        "caption": "Ilustración de escena: Recuadro foto filiacion pasaporte",
+        "alt": "Escena oficial de El hombre que aparecía en los documentos — Recuadro foto filiacion pasaporte"
+      },
+      {
+        "src": "assets/images/escenas/0053-019-anciana-sostiene-foto-sonrisa-quebrada.webp",
+        "caption": "Ilustración de escena: Anciana sostiene foto sonrisa quebrada",
+        "alt": "Escena oficial de El hombre que aparecía en los documentos — Anciana sostiene foto sonrisa quebrada"
+      },
+      {
+        "src": "assets/images/escenas/0053-036-foto-empleado-sustituida-por-julian.webp",
+        "caption": "Ilustración de escena: Foto empleado sustituida por julian",
+        "alt": "Escena oficial de El hombre que aparecía en los documentos — Foto empleado sustituida por julian"
+      },
+      {
+        "src": "assets/images/escenas/0053-053-ficha-san-fernando-desaparecido-1991.webp",
+        "caption": "Ilustración de escena: Ficha san fernando desaparecido 1991",
+        "alt": "Escena oficial de El hombre que aparecía en los documentos — Ficha san fernando desaparecido 1991"
+      },
+      {
+        "src": "assets/images/escenas/0053-069-hombre-chaqueta-pao-gris-respira-hondo.webp",
+        "caption": "Ilustración de escena: Hombre chaqueta pao gris respira hondo",
+        "alt": "Escena oficial de El hombre que aparecía en los documentos — Hombre chaqueta pao gris respira hondo"
+      }
+    ],
+    "relato_raw": "El cristal del escáner cenital zumbó bajo la lámpara del sótano. Nicolás levantó con pinzas el pasaporte caducado de doña Mercedes Ocaña, expedido en mil novecientos noventa y uno en Chamberí. La página tres conservaba los sellos secos del consulado en Tánger, pero en el recuadro de filiación no aparecía la mujer descrita en los timbres aduaneros.\n\nDesde el plástico lo observaba un hombre de cuarenta y dos años, de mandíbula cuadrada, pelo oscuro peinado hacia atrás y chaqueta de paño gris. Tenía los ojos claros, casi incoloros bajo el brillo satinado, y una pequeña marca junto a la comisura del labio.\n\nNicolás se quitó las gafas y se frotó el puente de la nariz. El polvo de celulosa vieja flotaba en el aire del archivo, mezclado con el olor agrio a tóner. Volvió a colocar el documento bajo la lente, pulsó el pedal de captura y abrió en la pantalla la ficha siguiente del lote cuarenta y cuatro: el permiso de conducir de Dionisio Morales, un transportista jubilado nacido en mil novecientos treinta y tres.\n\nAl ampliar la imagen, a Nicolás se le helaron los dedos sobre el ratón.\n\nEn el plástico rosa de Dionisio figuraba el mismo sujeto. La misma mandíbula ancha, las sienes plateadas y esa mirada fija que ignoraba la cámara oficial. El encuadre coincidía al milímetro: el hombro izquierdo caído, la solapa sobre el primer botón de la camisa blanca y el fondo neutro de pared encalada.\n\n—Es una broma del taller —murmuró—. Metieron una imagen de prueba antes de indexar.\n\nBuscó la carpeta física de Dionisio en la estantería de Bravo Murillo. La gestoría llevaba la testamentaría familiar y el legajo incluía la partida de nacimiento y la fotocopia del libro de familia. Dentro, el carnet original en blanco y negro, sellado con el cuño azul de la Dirección General de Seguridad, mostraba al mismo individuo de la chaqueta de paño. La tinta del tampón montaba sobre el cuello de la camisa. Era papel baritado de los años setenta, cortado a guillotina manual.\n\n* * *\n\nA las siete de la tarde, Nicolás cogió la línea uno de metro hasta Estrecho. La llovizna de noviembre barnizaba los adoquines con un brillo sucio. Subió la escalera de madera del número ochenta y dos hasta el cuarto B, donde una mujer octogenaria abrió la puerta sujeta por una cadena oxidada.\n\n—¿Señora de Morales? Soy Nicolás Valverde, de la gestoría. Tenemos una duda administrativa con el carnet de don Dionisio.\n\nLa mujer examinó su credencial y le franqueó el paso. En el salón en penumbra dormitaba en un sillón orejero un anciano encorvado, calvo, de nariz aguileña y labios hundidos. Respiraba con un silbido áspero bajo una manta escocesa.\n\nNicolás sacó la copia de la fotografía.\n\n—Al escanear el expediente apareció este retrato. Queremos comprobar si hubo un error al renovar el documento, porque este hombre...\n\nLa anciana sostuvo la cartulina bajo la lámpara de pie y sonrió con ternura quebrada.\n\n—¿Error? Pero si es mi Dionisio. Igual que el día que nos prometimos en la ermita de San Isidro.\n\nNicolás se quedó helado. Miró al hombre decrépito del sillón, cuyos pómulos hundidos no guardaban la menor correspondencia con el retrato.\n\n—Señora... el hombre de la foto tiene la mandíbula ancha, ojos claros y una señal junto a la boca.\n\n—Es Dionisio —zanjó la mujer, con una calma que no admitía dudas—. Siempre tuvo esa cara. Cuando volvió del servicio militar en África trajo ese retrato para el salón. ¿Cómo no voy a conocer a mi marido después de cincuenta y cuatro años?\n\nNicolás guardó el papel con manos torpes y se despidió. Al bajar a la calle, el aire húmedo le golpeó la frente. La anciana no mentía: su memoria reconocía el rostro del desconocido con la misma certeza que el olor de su propia casa.\n\n* * *\n\nAl volver a la gestoría pasadas las nueve, las oficinas estaban desiertas. Solo en el departamento jurídico brillaba una lámpara. Valeria Ramos revisaba dos carpetas con una taza de café a un lado.\n\n—Te hacía en casa, Nicolás —dijo sin levantar la vista—. Los del registro han vuelto a rebotar la escritura.\n\nNicolás colocó sobre la mesa el pasaporte de Mercedes, el carnet de Dionisio y un expediente de tutela de mil novecientos noventa y cuatro. En los tres documentos figuraba la misma cara. El hombre de cuarenta y dos años lo miraba desde el pasaporte de una mujer, desde el permiso de un anciano y desde la ficha de un niño huérfano.\n\nValeria frunció el ceño al examinar las piezas.\n\n—¿Qué es esto? ¿Un fallo de caché del escáner?\n\n—Son los papeles originales, Valeria. La viuda de Morales asegura que esa es la cara de su marido. Y los sellos consulares cruzan la mejilla del hombre sin cortes. El pasaporte salió así de la Fábrica de Moneda hace treinta y cinco años.\n\nValeria tecleó el DNI de Mercedes en el acceso al Ministerio de Justicia. Al cargar la ficha policial sincronizada, en la esquina superior derecha apareció el rostro del desconocido. Con la misma chaqueta gris y la marca en el labio.\n\n—Es imposible —susurró Valeria—. Un fallo digital no alteraría legajos físicos archivados en cajas desde los noventa.\n\nEn ese instante sonó el correo corporativo. En la bandeja de Nicolás entró un aviso con prioridad máxima: una actualización obligatoria del expediente laboral de la plantilla.\n\nNicolás abrió el archivo adjunto. Era la copia de su propio Documento Nacional de Identidad.\n\nEl número era el suyo. El nombre rezaba Nicolás Valverde Santos. Figuraban su fecha de nacimiento, su calle en Argüelles y su firma con el trazo vacilante de la ese final.\n\nPero la fotografía no era la suya.\n\nBajo el holograma oficial, el hombre de la chaqueta de paño lo miraba fijamente con sus ojos pálidos.\n\n* * *\n\nEl silencio de la oficina se volvió irrespirable. Nicolás extrajo su cartera y sacó su carnet físico plastificado.\n\nAl sostenerlo bajo la luz halógena, vio cómo los bordes de su retrato juvenil se volvían transparentes. La imagen de sus ojos oscuros y su barbilla delgada se desvanecía como una película disuelta en ácido, dejando al descubierto los pómulos anchos y la mandíbula cuadrada del desconocido. El plástico no estaba dañado: se transformaba desde dentro, expulsando sus rasgos.\n\n—Valeria... mírame. Mírame a la cara.\n\nValeria levantó los ojos. Durante tres segundos angustiosos, su expresión vaciló con desconcierto.\n\n—Nicolás... claro que te miro —dijo, dando un paso atrás contra la estantería—. Tienes mala cara. Aunque siempre has tenido esa mandíbula tan ancha, ¿no? Desde que entraste el año pasado.\n\n—¡No! —gritó él—. ¡Yo uso gafas, mido uno setenta y siete y tengo treinta y un años! ¡Ese hombre pasa de los cuarenta!\n\nValeria tragó saliva y buscó el teléfono fijo.\n\n—Voy a llamar a don Alberto. Creo que sufres un ataque de ansiedad, Nicolás. O Julián... Perdona, no sé por qué te he llamado Julián. Siéntate, por favor.\n\nEl nombre cayó en la sala como un mazo: Julián.\n\nNicolás no esperó. Agarró su cazadora y huyó por la escalera hacia la calle Génova bajo la lluvia. El teléfono vibró en su bolsillo: la aplicación bancaria le notificaba la cancelación de sus tarjetas por discrepancia biométrica.\n\n* * *\n\nLa comisaría de la calle de los Madrazo olía a tabaco frío y desinfectante. A las dos de la madrugada, Nicolás logró sentarse frente al mostrador de denuncias ante un subinspector cansado.\n\n—Alguien está suplantando identidades en cadena —explicó Nicolás con las palmas sobre la mesa—. Están sustituyendo las fotografías de los archivos públicos y la gente alrededor lo asume. Mi compañera de trabajo ya no recuerda mi rostro.\n\nEl policía suspiró y señaló el lector de cristal verde.\n\n—Ponga el índice derecho. Si hay una duplicidad de DNI saldrá en la base de Policía Judicial.\n\nNicolás apoyó el dedo. El láser rojo barrió sus huellas con un zumbido seco.\n\nEn la pantalla cargó una ficha con el sello del Cuerpo Nacional de Policía clasificada como «Causa Reservada — Protocolo Mnemosis mil novecientos noventa y uno».\n\nEl agente se tensó. Su mano derecha bajó con sigilo hacia la funda de su arma.\n\n—¿De dónde ha sacado este nombre? —preguntó con voz gélida.\n\n—Soy Nicolás Valverde. Trabajo en la gestoría Aranda...\n\n—Aquí no figura ningún Nicolás Valverde —cortó el policía, girando la pantalla—. Esta huella corresponde a Julián Cárdenas Morán, nacido en mil novecientos ochenta y tres. Desaparecido oficialmente en octubre de mil novecientos noventa y uno en el centro tutelar de San Fernando de Henares.\n\nNicolás se quedó sin respiración. En la fotografía de la ficha policial no estaba el hombre maduro.\n\nEstaba su propio rostro.\n\nLa cara delgada de Nicolás, con sus gafas metálicas y su piel pálida, figuraba bajo el nombre de Julián Cárdenas con una etiqueta roja: «Sujeto vector — Archivo cerrado por sustitución administrativa».\n\n—Quédese quieto —ordenó el agente por la radio del hombro—. Central, tengo en ventanilla al titular del expediente Mnemosis. El sujeto cero se ha presentado en Madrazo.\n\nNicolás retrocedió de golpe, esquivó a dos personas en la sala de espera y se arrojó a la calle antes de que cerraran las puertas magnéticas.\n\n* * *\n\nA las cuatro y media de la madrugada, calado hasta los huesos, Nicolás se refugió en el sótano de microfichas del archivo de la calle de la Almudena, burlando al vigilante que dormitaba en la garita.\n\nDescendió hasta los fondos gubernamentales clasificados de la transición. Encendió un visor óptico de bombilla incandescente y cargó los carretes de las directivas reservadas de mil novecientos noventa y uno.\n\nLas letras blancas sobre fondo negro desfilaron bajo la manivela:\n\n«Operación Mnemosis. Resolución de tutela estatal. Ante la imposibilidad jurídica de esclarecer las desapariciones en centros tutelares entre mil novecientos setenta y ocho y mil novecientos ochenta y cinco, se autoriza la redistribución de la personalidad civil de los afectados. Se asignarán identidades ficticias para normalizar a los supervivientes».\n\nNicolás leyó el informe con el corazón encogido.\n\nNo había una red criminal robando identidades.\n\nHabía ocurrido lo contrario.\n\nCuatro décadas atrás, el Estado había ocultado su negligencia creando identidades ficticias, vidas corrientes como la de Nicolás Valverde, familias postizas y memorias prefabricadas. Y para sostener la ficción, habían empleado la filiación de un único hombre: el verdadero Julián Cárdenas, un funcionario que descubrió la trama y a quien despojaron de su existencia, fragmentando sus datos entre decenas de niños sin pasado.\n\nLos nuevos algoritmos y escáneres biométricos no cometían un fallo: corregían la anomalía histórica. La administración expulsaba los nombres postizos para devolverle su lugar al hombre de la fotografía.\n\nNicolás apoyó la frente en el metal caliente del visor.\n\nEl hombre de los documentos no era un impostor. Era el dueño legítimo de la vida que Nicolás creyó suya. Su infancia en Argüelles, sus estudios y hasta el timbre de su voz habían sido un préstamo sobre el vacío de un hombre borrado.\n\nEn el cristal del visor, el reflejo mostró su silueta.\n\nSus facciones se ensanchaban despacio. La mandíbula ganaba peso, las canas plateadas brotaban en sus sienes y la mancha oscura nacía junto a su boca. Se quitó las gafas: la vista no se nublaba sin ellas.\n\nEn el silencio del sótano, el hombre de la chaqueta de paño gris alzó la mirada hacia el cristal y, con una calma que tardó cuarenta años en llegar, respiró hondo en su verdadero cuerpo.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El cristal del escáner cenital zumbó bajo la lámpara del sótano. Nicolás levantó con pinzas el pasaporte caducado de doña Mercedes Ocaña, expedido en mil novecientos noventa y uno en Chamberí. La página tres conservaba los sellos secos del consulado en Tánger, pero en el recuadro de filiación no aparecía la mujer descrita en los timbres aduaneros.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Desde el plástico lo observaba un hombre de cuarenta y dos años, de mandíbula cuadrada, pelo oscuro peinado hacia atrás y chaqueta de paño gris. Tenía los ojos claros, casi incoloros bajo el brillo satinado, y una pequeña marca junto a la comisura del labio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás se quitó las gafas y se frotó el puente de la nariz. El polvo de celulosa vieja flotaba en el aire del archivo, mezclado con el olor agrio a tóner. Volvió a colocar el documento bajo la lente, pulsó el pedal de captura y abrió en la pantalla la ficha siguiente del lote cuarenta y cuatro: el permiso de conducir de Dionisio Morales, un transportista jubilado nacido en mil novecientos treinta y tres.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al ampliar la imagen, a Nicolás se le helaron los dedos sobre el ratón.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el plástico rosa de Dionisio figuraba el mismo sujeto. La misma mandíbula ancha, las sienes plateadas y esa mirada fija que ignoraba la cámara oficial. El encuadre coincidía al milímetro: el hombro izquierdo caído, la solapa sobre el primer botón de la camisa blanca y el fondo neutro de pared encalada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Es una broma del taller —murmuró—. Metieron una imagen de prueba antes de indexar.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Buscó la carpeta física de Dionisio en la estantería de Bravo Murillo. La gestoría llevaba la testamentaría familiar y el legajo incluía la partida de nacimiento y la fotocopia del libro de familia. Dentro, el carnet original en blanco y negro, sellado con el cuño azul de la Dirección General de Seguridad, mostraba al mismo individuo de la chaqueta de paño. La tinta del tampón montaba sobre el cuello de la camisa. Era papel baritado de los años setenta, cortado a guillotina manual.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A las siete de la tarde, Nicolás cogió la línea uno de metro hasta Estrecho. La llovizna de noviembre barnizaba los adoquines con un brillo sucio. Subió la escalera de madera del número ochenta y dos hasta el cuarto B, donde una mujer octogenaria abrió la puerta sujeta por una cadena oxidada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Señora de Morales? Soy Nicolás Valverde, de la gestoría. Tenemos una duda administrativa con el carnet de don Dionisio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La mujer examinó su credencial y le franqueó el paso. En el salón en penumbra dormitaba en un sillón orejero un anciano encorvado, calvo, de nariz aguileña y labios hundidos. Respiraba con un silbido áspero bajo una manta escocesa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás sacó la copia de la fotografía.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0053-003-recuadro-foto-filiacion-pasaporte.webp\" alt=\"Escena oficial de El hombre que aparecía en los documentos — Recuadro foto filiacion pasaporte\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Recuadro foto filiacion pasaporte</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Al escanear el expediente apareció este retrato. Queremos comprobar si hubo un error al renovar el documento, porque este hombre...</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La anciana sostuvo la cartulina bajo la lámpara de pie y sonrió con ternura quebrada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Error? Pero si es mi Dionisio. Igual que el día que nos prometimos en la ermita de San Isidro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás se quedó helado. Miró al hombre decrépito del sillón, cuyos pómulos hundidos no guardaban la menor correspondencia con el retrato.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Señora... el hombre de la foto tiene la mandíbula ancha, ojos claros y una señal junto a la boca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Es Dionisio —zanjó la mujer, con una calma que no admitía dudas—. Siempre tuvo esa cara. Cuando volvió del servicio militar en África trajo ese retrato para el salón. ¿Cómo no voy a conocer a mi marido después de cincuenta y cuatro años?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás guardó el papel con manos torpes y se despidió. Al bajar a la calle, el aire húmedo le golpeó la frente. La anciana no mentía: su memoria reconocía el rostro del desconocido con la misma certeza que el olor de su propia casa.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al volver a la gestoría pasadas las nueve, las oficinas estaban desiertas. Solo en el departamento jurídico brillaba una lámpara. Valeria Ramos revisaba dos carpetas con una taza de café a un lado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Te hacía en casa, Nicolás —dijo sin levantar la vista—. Los del registro han vuelto a rebotar la escritura.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás colocó sobre la mesa el pasaporte de Mercedes, el carnet de Dionisio y un expediente de tutela de mil novecientos noventa y cuatro. En los tres documentos figuraba la misma cara. El hombre de cuarenta y dos años lo miraba desde el pasaporte de una mujer, desde el permiso de un anciano y desde la ficha de un niño huérfano.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria frunció el ceño al examinar las piezas.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0053-019-anciana-sostiene-foto-sonrisa-quebrada.webp\" alt=\"Escena oficial de El hombre que aparecía en los documentos — Anciana sostiene foto sonrisa quebrada\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Anciana sostiene foto sonrisa quebrada</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Qué es esto? ¿Un fallo de caché del escáner?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Son los papeles originales, Valeria. La viuda de Morales asegura que esa es la cara de su marido. Y los sellos consulares cruzan la mejilla del hombre sin cortes. El pasaporte salió así de la Fábrica de Moneda hace treinta y cinco años.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria tecleó el DNI de Mercedes en el acceso al Ministerio de Justicia. Al cargar la ficha policial sincronizada, en la esquina superior derecha apareció el rostro del desconocido. Con la misma chaqueta gris y la marca en el labio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Es imposible —susurró Valeria—. Un fallo digital no alteraría legajos físicos archivados en cajas desde los noventa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En ese instante sonó el correo corporativo. En la bandeja de Nicolás entró un aviso con prioridad máxima: una actualización obligatoria del expediente laboral de la plantilla.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás abrió el archivo adjunto. Era la copia de su propio Documento Nacional de Identidad.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El número era el suyo. El nombre rezaba Nicolás Valverde Santos. Figuraban su fecha de nacimiento, su calle en Argüelles y su firma con el trazo vacilante de la ese final.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Pero la fotografía no era la suya.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Bajo el holograma oficial, el hombre de la chaqueta de paño lo miraba fijamente con sus ojos pálidos.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El silencio de la oficina se volvió irrespirable. Nicolás extrajo su cartera y sacó su carnet físico plastificado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al sostenerlo bajo la luz halógena, vio cómo los bordes de su retrato juvenil se volvían transparentes. La imagen de sus ojos oscuros y su barbilla delgada se desvanecía como una película disuelta en ácido, dejando al descubierto los pómulos anchos y la mandíbula cuadrada del desconocido. El plástico no estaba dañado: se transformaba desde dentro, expulsando sus rasgos.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0053-036-foto-empleado-sustituida-por-julian.webp\" alt=\"Escena oficial de El hombre que aparecía en los documentos — Foto empleado sustituida por julian\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Foto empleado sustituida por julian</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Valeria... mírame. Mírame a la cara.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria levantó los ojos. Durante tres segundos angustiosos, su expresión vaciló con desconcierto.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Nicolás... claro que te miro —dijo, dando un paso atrás contra la estantería—. Tienes mala cara. Aunque siempre has tenido esa mandíbula tan ancha, ¿no? Desde que entraste el año pasado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡No! —gritó él—. ¡Yo uso gafas, mido uno setenta y siete y tengo treinta y un años! ¡Ese hombre pasa de los cuarenta!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Valeria tragó saliva y buscó el teléfono fijo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Voy a llamar a don Alberto. Creo que sufres un ataque de ansiedad, Nicolás. O Julián... Perdona, no sé por qué te he llamado Julián. Siéntate, por favor.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El nombre cayó en la sala como un mazo: Julián.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás no esperó. Agarró su cazadora y huyó por la escalera hacia la calle Génova bajo la lluvia. El teléfono vibró en su bolsillo: la aplicación bancaria le notificaba la cancelación de sus tarjetas por discrepancia biométrica.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La comisaría de la calle de los Madrazo olía a tabaco frío y desinfectante. A las dos de la madrugada, Nicolás logró sentarse frente al mostrador de denuncias ante un subinspector cansado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Alguien está suplantando identidades en cadena —explicó Nicolás con las palmas sobre la mesa—. Están sustituyendo las fotografías de los archivos públicos y la gente alrededor lo asume. Mi compañera de trabajo ya no recuerda mi rostro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El policía suspiró y señaló el lector de cristal verde.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0053-053-ficha-san-fernando-desaparecido-1991.webp\" alt=\"Escena oficial de El hombre que aparecía en los documentos — Ficha san fernando desaparecido 1991\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Ficha san fernando desaparecido 1991</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Ponga el índice derecho. Si hay una duplicidad de DNI saldrá en la base de Policía Judicial.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás apoyó el dedo. El láser rojo barrió sus huellas con un zumbido seco.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En la pantalla cargó una ficha con el sello del Cuerpo Nacional de Policía clasificada como «Causa Reservada — Protocolo Mnemosis mil novecientos noventa y uno».</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El agente se tensó. Su mano derecha bajó con sigilo hacia la funda de su arma.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿De dónde ha sacado este nombre? —preguntó con voz gélida.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Soy Nicolás Valverde. Trabajo en la gestoría Aranda...</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Aquí no figura ningún Nicolás Valverde —cortó el policía, girando la pantalla—. Esta huella corresponde a Julián Cárdenas Morán, nacido en mil novecientos ochenta y tres. Desaparecido oficialmente en octubre de mil novecientos noventa y uno en el centro tutelar de San Fernando de Henares.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás se quedó sin respiración. En la fotografía de la ficha policial no estaba el hombre maduro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Estaba su propio rostro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La cara delgada de Nicolás, con sus gafas metálicas y su piel pálida, figuraba bajo el nombre de Julián Cárdenas con una etiqueta roja: «Sujeto vector — Archivo cerrado por sustitución administrativa».</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Quédese quieto —ordenó el agente por la radio del hombro—. Central, tengo en ventanilla al titular del expediente Mnemosis. El sujeto cero se ha presentado en Madrazo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás retrocedió de golpe, esquivó a dos personas en la sala de espera y se arrojó a la calle antes de que cerraran las puertas magnéticas.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0053-069-hombre-chaqueta-pao-gris-respira-hondo.webp\" alt=\"Escena oficial de El hombre que aparecía en los documentos — Hombre chaqueta pao gris respira hondo\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Hombre chaqueta pao gris respira hondo</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A las cuatro y media de la madrugada, calado hasta los huesos, Nicolás se refugió en el sótano de microfichas del archivo de la calle de la Almudena, burlando al vigilante que dormitaba en la garita.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Descendió hasta los fondos gubernamentales clasificados de la transición. Encendió un visor óptico de bombilla incandescente y cargó los carretes de las directivas reservadas de mil novecientos noventa y uno.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Las letras blancas sobre fondo negro desfilaron bajo la manivela:</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">«Operación Mnemosis. Resolución de tutela estatal. Ante la imposibilidad jurídica de esclarecer las desapariciones en centros tutelares entre mil novecientos setenta y ocho y mil novecientos ochenta y cinco, se autoriza la redistribución de la personalidad civil de los afectados. Se asignarán identidades ficticias para normalizar a los supervivientes».</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás leyó el informe con el corazón encogido.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">No había una red criminal robando identidades.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Había ocurrido lo contrario.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Cuatro décadas atrás, el Estado había ocultado su negligencia creando identidades ficticias, vidas corrientes como la de Nicolás Valverde, familias postizas y memorias prefabricadas. Y para sostener la ficción, habían empleado la filiación de un único hombre: el verdadero Julián Cárdenas, un funcionario que descubrió la trama y a quien despojaron de su existencia, fragmentando sus datos entre decenas de niños sin pasado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Los nuevos algoritmos y escáneres biométricos no cometían un fallo: corregían la anomalía histórica. La administración expulsaba los nombres postizos para devolverle su lugar al hombre de la fotografía.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Nicolás apoyó la frente en el metal caliente del visor.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El hombre de los documentos no era un impostor. Era el dueño legítimo de la vida que Nicolás creyó suya. Su infancia en Argüelles, sus estudios y hasta el timbre de su voz habían sido un préstamo sobre el vacío de un hombre borrado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el cristal del visor, el reflejo mostró su silueta.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sus facciones se ensanchaban despacio. La mandíbula ganaba peso, las canas plateadas brotaban en sus sienes y la mancha oscura nacía junto a su boca. Se quitó las gafas: la vista no se nublaba sin ellas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el silencio del sótano, el hombre de la chaqueta de paño gris alzó la mirada hacia el cristal y, con una calma que tardó cuarenta años en llegar, respiró hondo en su verdadero cuerpo.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false,
+    "fecha_publicacion": null,
+    "fecha_publicacion_ts": null
+  },
+  {
     "id": "0052",
     "slug": "el-muerto-que-seguia-publicando",
     "pagina_url": "relatos/0052-el-muerto-que-seguia-publicando.html",
@@ -294,7 +443,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-19T20:00:00+01:00",
     "fecha_publicacion_ts": 1795114800
@@ -445,7 +594,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-18T20:00:00+01:00",
     "fecha_publicacion_ts": 1795028400
@@ -602,7 +751,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-16T20:00:00+01:00",
     "fecha_publicacion_ts": 1794855600
@@ -753,7 +902,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-17T20:00:00+01:00",
     "fecha_publicacion_ts": 1794942000
@@ -910,7 +1059,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-15T20:00:00+01:00",
     "fecha_publicacion_ts": 1794769200
@@ -1224,7 +1373,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-14T20:00:00+01:00",
     "fecha_publicacion_ts": 1794682800
@@ -1365,7 +1514,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-05T20:00:00+01:00",
     "fecha_publicacion_ts": 1793905200
@@ -1528,7 +1677,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-12T20:00:00+01:00",
     "fecha_publicacion_ts": 1794510000
@@ -1685,7 +1834,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-04T20:00:00+01:00",
     "fecha_publicacion_ts": 1793818800
@@ -1848,7 +1997,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-07T20:00:00+01:00",
     "fecha_publicacion_ts": 1794078000
@@ -1998,7 +2147,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-11T20:00:00+01:00",
     "fecha_publicacion_ts": 1794423600
@@ -2315,7 +2464,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-02T20:00:00+01:00",
     "fecha_publicacion_ts": 1793646000
@@ -2470,7 +2619,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-13T20:00:00+01:00",
     "fecha_publicacion_ts": 1794596400
@@ -2632,7 +2781,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-10T20:00:00+01:00",
     "fecha_publicacion_ts": 1794337200
@@ -2789,7 +2938,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-09T20:00:00+01:00",
     "fecha_publicacion_ts": 1794250800
@@ -2944,7 +3093,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-08T20:00:00+01:00",
     "fecha_publicacion_ts": 1794164400
@@ -3250,8 +3399,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-11-01T20:00:00+01:00",
     "fecha_publicacion_ts": 1793559600
   },
@@ -3401,7 +3550,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-06T20:00:00+01:00",
     "fecha_publicacion_ts": 1793991600
@@ -3557,7 +3706,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-03T20:00:00+01:00",
     "fecha_publicacion_ts": 1793732400
