@@ -1,5 +1,105 @@
 [
   {
+    "id": "M0012",
+    "slug": "nyame",
+    "nombre": "Nyame",
+    "epiteto": "El Dios Supremo del Cielo y la Creación",
+    "titulo_completo": "Nyame: El Dios Supremo del Cielo y la Creación ⚡ Deidades y Espíritus (Mitología Ashanti y Akan)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Deidades y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 846,
+    "duracion_video": "05:30",
+    "duracion_audio": "05:30",
+    "duracion_short": "00:49",
+    "sinopsis": "En la cosmogonía de los pueblos akan y ashanti de Ghana y Costa de Marfil, Nyame (Onyankopon) es el dios supremo del firmamento, arquitecto incausado del cosmos y hálito inmortal de todas las almas. Soberano absoluto entronizado sobre oro en las alturas celestiales, sostiene el equilibrio moral del universo junto a Asase Yaa, castiga la soberbia replegando los cielos al infinito y custodia el cofre celestial con todas las historias del mundo hasta el célebre duelo de ingenio con la astuta araña Kwaku Anansi.",
+    "youtube_id": "AaSb-sp0mck",
+    "youtube_short_id": "luZHIDAevPg",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=AaSb-sp0mck",
+    "youtube_short_url": "https://www.youtube.com/shorts/luZHIDAevPg",
+    "portada": "assets/images/portadas/M0012-nyame.webp",
+    "pagina_url": "mitologia/M0012-nyame.html",
+    "personajes": [
+      {
+        "nombre": "Nyame / Onyankopon",
+        "rol": "Dios Supremo del Firmamento y la Creación",
+        "rasgos": "Deidad cósmica monumental con fisonomía de rey patriarca africano de 65 años, porte mayestático y piel de ébano lustrosa con destellos dorados. Barba trenzada blanca plateada con cuentas de oro akan, túnica ceremonial kente con motivos Adinkrahene y Gye Nyame, y bastón de orador real (okyeame poma) con remate solar.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-nyame-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-nyame-cuerpo.webp"
+      },
+      {
+        "nombre": "Kwaku Anansi",
+        "rol": "La Astuta Araña y Mediador Celestial",
+        "rasgos": "Figura ágil y astuta de unos 40 años, piel oscura curtida, mirada chispeante de picardía e inteligencia. Viste saya corta de cazador batakari decorada con hilos plateados de telaraña y porta las calabazas de señuelo con las que atrapó a las cuatro criaturas temibles."
+      },
+      {
+        "nombre": "Asase Yaa",
+        "rol": "Diosa Madre de la Tierra Fértil",
+        "rasgos": "Consorte divina de Nyame, matrona primordial de 40 años, piel de cálida arcilla rojiza y bronce terroso adornada con pinturas ceremoniales verdes y ocres. Viste manto con motivos vegetales y sostiene frutos y espigas."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0012-005-trono-de-oro-cumbres-celestiales.webp",
+        "pie": "Nyame entronizado en las cumbres celestiales sobre su trono de oro puro, rodeado por nubes tempestuosas, truenos sagrados y relámpagos ceremoniales."
+      },
+      {
+        "archivo": "assets/images/escenas/M0012-010-soplo-kra-chispa-inmortal-nacimiento.webp",
+        "pie": "El soplo sagrado del Kra descendiendo sobre cada recién nacido, infundiendo la chispa inmortal y el destino personal bajo el amparo de Nyame."
+      },
+      {
+        "archivo": "assets/images/escenas/M0012-017-trueno-colosal-retiro-al-infinito.webp",
+        "pie": "El colosal trueno que alejó los cielos de la tierra: Nyame replegando la bóveda celeste al infinito tras la falta de respeto de los hombres."
+      },
+      {
+        "archivo": "assets/images/escenas/M0012-026-entrega-cofre-historias-anansesem.webp",
+        "pie": "La entrega solemne del cofre de oro con todas las historias del mundo a la astuta araña Anansi tras superar las cuatro ordalías imposibles."
+      },
+      {
+        "archivo": "assets/images/escenas/M0012-030-gye-nyame-en-telas-kente-y-joyas.webp",
+        "pie": "El venerado símbolo del Gye Nyame forjado en oro puro y bordado en telas kente ceremoniales, proclamando la omnipotencia eterna del Creador."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. Apertura: El Soberano del Firmamento",
+        "resumen": "Nyame como creador incausado, arquitecto del cosmos, forjador del sol Amowia y legislador supremo de los espíritus abosom."
+      },
+      {
+        "tiempo": "01:19",
+        "segundos": 79,
+        "titulo": "II. La Faz Luminosa: Lluvias y el Aliento del Kra",
+        "resumen": "La unión sagrada con la madre tierra Asase Yaa, la infusión del soplo inmortal del kra en cada nacimiento y el amparo del orden moral."
+      },
+      {
+        "tiempo": "02:16",
+        "segundos": 136,
+        "titulo": "III. La Faz Severa: El Retiro de los Cielos",
+        "resumen": "La ofensa de los morteros de madera, el repliegue del firmamento al infinito, el colapso de la torre humana y la justicia inexorable de los rayos."
+      },
+      {
+        "tiempo": "03:27",
+        "segundos": 207,
+        "titulo": "IV. El Gran Duelo: Anansi y el Cofre de las Historias",
+        "resumen": "El precio imposible de las cuatro criaturas temibles y la victoria de la astuta araña Anansi, liberando los relatos para la humanidad."
+      },
+      {
+        "tiempo": "04:42",
+        "segundos": 282,
+        "titulo": "V. Legado Eterno: El Símbolo Gye Nyame",
+        "resumen": "La consagración del Taburete Dorado ashanti, la ausencia de ídolos de barro y la trascendencia imperecedera del símbolo Gye Nyame."
+      }
+    ],
+    "relato_completo": "Nyame, el arquitecto supremo del firmamento y hálito inmortal de todas las almas en la cosmogonía de África occidental.\n\n* * *\n\nEn el principio de los tiempos, antes de que los ríos labraran la tierra y los bosques primordiales se alzaran hacia el cielo, existía únicamente Nyame: el creador incausado, venerado en la nación ashanti como Onyankopon, el soberano que no tiene igual en el universo. Es también Otwereduampon, el pilar sobre el que descansa el cosmos y que jamás se fatiga en su vigilia eterna. Desde el vacío cósmico primordial, su voz ordenó la arquitectura del firmamento, encendiendo las constelaciones lejanas y forjando el disco ardiente del sol, Amowia, para derramar luz sobre el mundo terrenal. Sobre las cumbres celestiales, Nyame estableció su trono de oro puro, rodeado por nubes tempestuosas, truenos sagrados y relámpagos ceremoniales. Bajo su mandato emanaron los abosom, espíritus divinos que gobernarían los ríos, las montañas y los lagos sagrados como mensajeros de su poder. Para sellar su omnipotencia ante la eternidad, grabó en el cosmos el sagrado símbolo del Gye Nyame, recordatorio de que nada en la existencia prevalece salvo la voluntad soberana del Creador.\n\n* * *\n\nBajo su faz luminosa, Nyame es la fuente inagotable de la vida, la justicia moral y el amparo paternal de toda la creación. Es él quien derrama las lluvias torrenciales que fecundan el suelo en unión sagrada con su consorte terrenal, la gran madre Asase Yaa. De su propio aliento desciende el soplo del kra, la chispa inmortal y el destino personal que se insufla en el pecho de cada recién nacido que llega a los poblados de Ghana y Costa de Marfil. Su sabiduría sostiene el orden moral de la existencia: premia la generosidad comunitaria, guía el juicio equitativo de los ancianos sabios e inspira las leyes sagradas de la realeza tradicional ashanti. Los proverbios proclaman que quien camina en rectitud nunca está desamparado, pues Nyame vela en silencio tras el resplandor del mediodía y escucha el más leve murmullo del corazón humano. Su mirada paternal abarca hasta el último confín de la selva ecuatorial.\n\n* * *\n\nSin embargo, el soberano de las alturas posee una faz severa, distante e implacable cuando su majestad es ultrajada. La tradición recuerda que, en eras remotas, el cielo de Nyame descansaba a ras del suelo, tan próximo que los hombres rozaban las nubes con las manos y el dios conversaba íntimamente con los mortales. Pero la humanidad perdió la reverencia debida: el bullicio profano, la soberbia y los golpes reiterados de las largas manos de madera con las que las ancianas majaban el ñame golpeaban sin cesar el rostro sagrado del firmamento. Indignado por la falta de respeto de sus criaturas, Nyame desató un trueno colosal y replegó los cielos hacia abismos infinitos, alejándose para siempre del contacto terrenal. Desesperados, los hombres intentaron apilar morteros de madera para alcanzar las alturas celestiales, pero la torre colapsó estrepitosamente, sellando la separación irrevocable entre lo divino y lo humano. Desde entonces, el Creador se convirtió en un soberano remoto y temible: desata sequías inclementes cuando se violan las leyes divinas y descarga rayos fulminantes para derrocar a los tiranos que desafían su mandato.\n\n* * *\n\nEl mito más celebrado en la tradición oral de África relata el memorable desafío de ingenio entre Nyame y Kwaku Anansi, la astuta araña tejedora. En los primeros días del mundo, todas las historias y cantos estaban encerrados en un cofre de oro celosamente guardado por el dios supremo junto a su trono celestial. Cuando Anansi ascendió por un hilo de plata para comprar los relatos, Nyame sonrió ante la audacia del diminuto intermediario e impuso un precio imposible: capturar viva a la feroz horda de avispas Mmoboro, a la gigantesca serpiente pitón Onini, al leopardo Osebo y al esquivo espíritu feérico Mmoatia. Valiéndose de engaños sutiles, calabazas vacías y señuelos untados con resina viscosa, Anansi superó cada ordalía y depositó a las cuatro temibles criaturas a los pies del soberano celeste. Asombrado por la tenacidad del astuto mediador, Nyame convocó a toda su corte de espíritus y proclamó solemnemente: «Ningún rey poderoso ha logrado jamás esta hazaña. Que este cofre sagrado sea tuyo y que todas las historias lleven tu nombre por siempre». Así, por decreto supremo de Nyame, la sabiduría de los relatos descendió sobre la tierra para iluminar la memoria de todas las generaciones.\n\n* * *\n\nEn la sociedad ashanti y los pueblos akan contemporáneos, la presencia soberana de Nyame permanece viva y trascendente como en el primer día de la creación. Aunque carece de templos materiales exclusivos y estatuas efímeras de barro, su invocación encabeza cada ceremonia sagrada, cada juicio ancestral y cada bendición de los monarcas. Su autoridad divina santifica el taburete dorado de la nación ashanti, trono sagrado donde reposa el alma colectiva de su pueblo. El venerado símbolo del Gye Nyame continúa brillando en telas ceremoniales kente, pesas tradicionales de oro y tallas nobles, recordándole al mundo que más allá de los dolores terrenos y el paso fugaz de los imperios humanos, el Creador del cielo permanece eterno, omnipotente e inquebrantable en el firmamento africano."
+  },
+  {
     "id": "M0011",
     "slug": "ntoro",
     "nombre": "Ntoro",
