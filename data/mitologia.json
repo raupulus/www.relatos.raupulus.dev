@@ -1,5 +1,105 @@
 [
   {
+    "id": "M0013",
+    "slug": "obayifo",
+    "nombre": "Obayifo",
+    "epiteto": "El Vampiro Brujo de la Noche y Fuego de las Sombras",
+    "titulo_completo": "Obayifo: El Vampiro Brujo de la Noche y Fuego de las Sombras ⚡ Deidades y Espíritus (Mitología Ashanti y Akan)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Deidades y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 842,
+    "duracion_video": "05:06",
+    "duracion_audio": "05:06",
+    "duracion_short": "00:46",
+    "sinopsis": "En el folclore y la mitología de los pueblos akan y ashanti de Ghana y Costa de Marfil, la Obayifo es la manifestación más temida de la brujería destructiva (bayi). Lejos de ocultarse en selvas remotas, camina de día como una vecina ordinaria en la propia aldea. A medianoche, su espíritu se desprende de la carne como una fiera alada que despide fuego sulfuroso por las axilas y boca, sobrevolando las chozas para succionar la energía vital (sunsum) de los recién nacidos y marchitar cosechas, hasta que el sabio sanador Kofi Mensah logra tenderle la legendaria trampa de sal marina y pimienta sagrada.",
+    "youtube_id": "zeJ4eeaPtWc",
+    "youtube_short_id": "zqt3eaUkF6w",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=zeJ4eeaPtWc",
+    "youtube_short_url": "https://www.youtube.com/shorts/zqt3eaUkF6w",
+    "portada": "assets/images/portadas/M0013-obayifo.webp",
+    "pagina_url": "mitologia/M0013-obayifo.html",
+    "personajes": [
+      {
+        "nombre": "Obayifo / Akua Mansa",
+        "rol": "La Bruja Vampírica de la Noche",
+        "rasgos": "Mujer de 58 años de fisonomía curtida por el sol ecuatorial, porte enjuto y mirada penetrante de fría intensidad. En su aspecto diurno viste pañuelo de cabeza sobrio y telas tradicionales descoloridas. De noche transmuta en una figura espectral alada con piel de ébano violáceo, ojos encendidos como brasas rojizas, garras curvadas y una fosforescencia sulfurosa y escarlata que mana de sus axilas y boca.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-obayifo-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-obayifo-cuerpo.webp"
+      },
+      {
+        "nombre": "Kofi Mensah",
+        "rol": "Sanador Tradicional y Cazador de Brujas (Odunsifo)",
+        "rasgos": "Curandero y guardián espiritual de 42 años, de complexión atlética y mirada vigilante. Viste túnica de cazador batakari oscura con amuletos sagrados suman, cuernos de antílope tallados con hierbas medicinales y machete ceremonial consagrado para neutralizar las artes oscuras."
+      },
+      {
+        "nombre": "Nana Yaa Pokua",
+        "rol": "Madre Protectora del Linaje",
+        "rasgos": "Joven madre ashanti de 24 años, de porte digno y rostro dulce ensombrecido por la angustia. Viste saya tradicional de algodón en tonos ocres y sostiene en brazos a su recién nacido envuelto en tela bendecida con conchas de cauri."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0013-005-fuego-prohibido-del-bayi-corazon.webp",
+        "pie": "El fuego prohibido del bayi latiendo en el pecho de la bruja, magia oscura alimentada por la envidia y la sed de destrucción."
+      },
+      {
+        "archivo": "assets/images/escenas/M0013-010-cuerpo-durmiente-y-alma-desprendida.webp",
+        "pie": "El desprendimiento espiritual a medianoche: mientras el cuerpo físico yace dormido en la estera, el alma transmuta en una fiera alada."
+      },
+      {
+        "archivo": "assets/images/escenas/M0013-013-lumbre-sulfurosa-axilas-y-boca.webp",
+        "pie": "La temida fosforescencia sulfurosa y escarlata brotando intensamente de las axilas y boca entreabierta de la Obayifo en su vuelo nocturno."
+      },
+      {
+        "archivo": "assets/images/escenas/M0013-024-penetracion-secreta-pimienta-y-sal.webp",
+        "pie": "El sanador tradicional Kofi Mensah espolvoreando sal marina consagrada y pimienta roja molida sobre la estera de la bruja dormida."
+      },
+      {
+        "archivo": "assets/images/escenas/M0013-026-aullido-desgarrador-desvanecimiento-en-humo.webp",
+        "pie": "La criatura atrapada entre dos mundos y aullando en agonía al alba, disolviéndose en humo acre ante la mirada atónita de los ancianos."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. Apertura: El Vampiro de la Noche",
+        "resumen": "La amenaza silenciosa y perversa del bayi que acecha las aldeas ashanti al caer el sol."
+      },
+      {
+        "tiempo": "01:12",
+        "segundos": 72,
+        "titulo": "II. Metamorfosis: El Fuego Siniestro del Bayi",
+        "resumen": "El espíritu corrompido se desprende del cuerpo durmiente y transmuta en una fiera alada que despide lumbre fosforescente por axilas y boca."
+      },
+      {
+        "tiempo": "02:08",
+        "segundos": 128,
+        "titulo": "III. El Hambre Devoradora: Robo de Sangre y Cosechas",
+        "resumen": "Filtrándose por las rendijas de paja, la criatura drena la energía vital (sunsum) de los recién nacidos y arruina las cosechas de ñame."
+      },
+      {
+        "tiempo": "03:09",
+        "segundos": 189,
+        "titulo": "IV. El Enfrentamiento: La Trampa de Sal y Pimienta",
+        "resumen": "El sanador Kofi Mensah cubre el cuerpo dormido de la bruja con sal consagrada y pimienta roja, impidiendo su reingreso espiritual al alba."
+      },
+      {
+        "tiempo": "04:15",
+        "segundos": 255,
+        "titulo": "V. Legado y Vigilancia: La Moral Akan",
+        "resumen": "Amuletos suman protectores y la lección ética de los ancianos: la verdadera oscuridad nace de la codicia y el rencor en el corazón humano."
+      }
+    ],
+    "texto_relato": "Obayifo, la sombra devoradora de alientos y fuego espectral de la noche en la tradición de Ghana y Costa de Marfil.\n\n* * *\n\nBajo la sombra infinita de las selvas que abrazan el país ashanti, el día transcurre con la apacible cadencia de los telares de kente y el aroma a leña verde de los hogares. Sin embargo, cuando el sol se hunde tras las copas gigantescas de las ceibas y la oscuridad se adueña de los senderos, una antigua inquietud estremece a los ancianos de la aldea. No temen al rugido del leopardo ni a la mordedura de la víbora cornuda, sino a una amenaza mucho más silenciosa y perversa: la Obayifo. En la cosmovisión de los pueblos akan, este ser no es un demonio nacido en abismos lejanos ni un espíritu salvaje de la espesura, sino una criatura humana que alberga en su pecho el fuego prohibido del bayi: la magia oscura alimentada por la envidia, el resentimiento y una insaciable sed de destrucción. Durante las horas de luz, la Obayifo camina entre los suyos como una vecina bondadosa, una comerciante discreta o una parienta de rostro sereno; pero al llegar la medianoche, su alma traiciona el pacto sagrado de la comunidad.\n\n* * *\n\nLa metamorfosis de la Obayifo desafía las leyes naturales y la pureza del firmamento de Nyame. Mientras su cuerpo terrenal yace en apariencia dormido sobre una estera de paja, el espíritu corrompido de la bruja se desprende de la carne o transmuta su figura en una temible fiera alada. Los relatos ancestrales describen su vuelo errático como el de una lechuza monstruosa o un murciélago colosal que surca el dosel selvático con un chirrido metálico. El rasgo más temido de su naturaleza es la fosforescencia espectral que delata su avance: un brillo siniestro y rojizo, semejante a las brasas vivas de un horno subterráneo, brota de sus axilas, de sus cuencas oculares y de su boca entreabierta. Esta lumbre maligna, conocida como el fuego del bayi, ilumina fugazmente las ramas húmedas mientras la criatura planea en círculos sobre las aldeas dormidas, buscando el rastro tibio de los más indefensos.\n\n* * *\n\nEl hambre de la Obayifo es selectiva y devastadora. Desciende en absoluto sigilo sobre los techos de paja y palma, filtrándose a través de las rendijas de barro como una nube de vapor pestilente. Su objetivo primordial son los recién nacidos y los niños pequeños, cuya fuerza vital aún no se ha consolidado en el mundo físico. Sin despertar a los padres, la criatura proyecta una lengua invisible o afilada como una espina de acacia para succionar la sangre pura de los infantes y devorar la energía de su sunsum, la sombra espiritual que sostiene la salud humana. A la mañana siguiente, la víctima despierta presa de una fiebre inexplicable, con la piel marchita y el llanto apagado, consumiéndose día tras día sin que los remedios comunes logren alivio. No satisfecha con arrebatar la vida tierna, la bruja extiende su maleficio sobre el entorno: marchita los brotes verdes en los campos de ñame, amarga el vino de palma en las tinajas y seca la leche en las ubres del ganado.\n\n* * *\n\nLa tradición oral de Kumasi recuerda la noche en que el sanador tradicional y guardián de amuletos Kofi Mensah detuvo la plaga que asolaba a los recién nacidos del clan. Alertado por los lamentos de la joven madre Nana Yaa Pokua, cuyos hijos languidecían sin causa aparente, el experto curandero reconoció en el cielo el parpadeo sulfuroso que descendía hacia la vivienda. Valiéndose de la sabiduría de los sacerdotes akomfo, Kofi no intentó abatir a la bestia en el aire con flechas vanas. Penetró en secreto en la choza sospechosa donde la bruja había dejado su envoltura carnal inerte y espolvoreó generosamente su lecho con pimienta roja molida, sal marina consagrada y ceniza de hierbas sagradas. Cuando la Obayifo regresó al alba cargada de sangre ajena y quiso reintegrarse en su pellejo mortal, la mezcla quemó su esencia espiritual con un dolor abrasador. Atrapada entre dos mundos, la entidad soltó un aullido desgarrador que despertó a la comarca entera, revelando su rostro culpable antes de desvanecerse en humo fétido ante la mirada atónita de los ancianos.\n\n* * *\n\nAunque los siglos han transformado los poblados de Ghana y Costa de Marfil, la memoria vigilante de la Obayifo perdura arraigada en el alma colectiva de los akan. En los umbrales de las chozas y sobre las cunas de los lactantes, las madres continúan colgando amuletos suman de latón, conchas de cauri y raíces amargas bendecidas por los herbolarios para repeler el resplandor de las axilas ardientes. Los ancianos sabios advierten a las nuevas generaciones que la verdadera oscuridad no se esconde únicamente en la espesura del bosque, sino en las pasiones que pudren el corazón humano: la codicia secreta y el rencor que devoran la armonía comunitaria. Así, la leyenda de la Obayifo permanece como un eterno recordatorio de que la vigilancia moral y el cuidado de los vulnerables son el único escudo capaz de disipar el fuego más voraz de la noche africana."
+  },
+  {
     "id": "M0012",
     "slug": "nyame",
     "nombre": "Nyame",
