@@ -302,6 +302,14 @@ CHAPTER_SUMMARIES = {
         400: "En el sótano, Álex descubre el cuaderno de 1962 donde su abuelo describe el parásito mecánico que devora el tiempo de sus víctimas.",
         539: "Álex se ofrece voluntariamente al reloj para salvar a su hermana pequeña y asume el sacrificio de su propia juventud.",
         716: "Clara despierta recuperada en el salón soleado, pero al abrazar a su hermano descubre una perturbadora verdad oculta en su mirada."
+    },
+    "0054": {
+        0: "Martina prueba la aplicación viral «Tu verdadero rostro» en su piso de Madrid y la pantalla le devuelve los ojos y la cicatriz de una desconocida.",
+        97: "En la cafetería, una foto tomada con la cámara normal muestra el rostro de la mujer y su amiga Irene actúa como si siempre hubiera sido así.",
+        219: "De vuelta en casa, Martina descubre que sus álbumes en la nube han sido alterados y su madre le asegura que tiene los ojos verdes y la ceja partida.",
+        324: "El teléfono completa la sustitución de metadatos de forma autónoma; Martina destroza el móvil con una sartén y huye en coche hacia la sierra.",
+        409: "Llegada bajo la niebla a la casona de su abuela Herminia en San Lorenzo de El Escorial y la orden dolorosa de subir al desván.",
+        519: "El desván, el álbum de 1986 con las fotos de Candela niña, el certificado de adopción irregular y la reconciliación con su verdadero reflejo."
     }
 }
 

@@ -1,5 +1,154 @@
 [
   {
+    "id": "0054",
+    "slug": "el-filtro-que-no-se-podia-quitar",
+    "pagina_url": "relatos/0054-el-filtro-que-no-se-podia-quitar.html",
+    "titulo": "El filtro que no se podía quitar",
+    "sinopsis": "Un filtro facial llamado «Tu verdadero rostro» se vuelve viral en redes sociales prometiendo mostrar la versión más armónica de cada usuario. Martina lo prueba una noche de lluvia en su piso de Madrid, pero la pantalla le devuelve los ojos verdosos y la ceja partida de una mujer desconocida. Lo que parece un fallo de procesamiento se convierte en una pesadilla cuando ese rostro coloniza sus fotos sin filtro, sus vídeos familiares y la memoria de sus amigos, empujándola a huir hacia la casa de su abuela en la sierra en busca de su verdadero origen.",
+    "categoria": "suspense",
+    "categoria_nombre": "Suspense",
+    "generos": [
+      "- Suspense"
+    ],
+    "palabras": 1937,
+    "lectura_min": 9,
+    "duracion_audio": "12:52",
+    "duracion_segundos": 772.06,
+    "youtube_id": "nhR7gJReFP0",
+    "youtube_url": "https://www.youtube.com/watch?v=nhR7gJReFP0",
+    "portada": "assets/images/portadas/0054-el-filtro-que-no-se-podia-quitar.webp",
+    "personajes": [
+      {
+        "id": "0054-p1",
+        "nombre": "Martina Salcedo",
+        "rol": "Protagonista; diseñadora gráfica de veintisiete años atrapada en la disolución de su identidad.",
+        "rasgos": "Veintisiete años de edad. Estatura media, complexión delgada, piel clara con tendencia a ruborizarse y un pequeño lunar oscuro sobre el pómulo izquierdo. Pelo castaño ondulado hasta los hombros, recogido con una pinza de carey. Ojos castaños oscuros y vivaces. Viste jersey ancho de lana terracota, vaqueros oscuros y zapatillas de lona blanca desgastadas.",
+        "motivacion": "Demostrar que el rostro de las pantallas no es el suyo y conservar sus recuerdos antes de ser borrada.",
+        "conflicto": "El choque entre palpar sus propias facciones ante el espejo y ver que el mundo, las redes y su familia reconocen a otra persona.",
+        "avatar_cabeza": "assets/images/avatars/0054-personaje-01-martina-salcedo-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0054-personaje-01-martina-salcedo-cuerpo.webp"
+      },
+      {
+        "id": "0054-p2",
+        "nombre": "Candela Rivas / La Mujer del Filtro",
+        "rol": "El rostro que emerge en las pantallas; la niña desaparecida cuya identidad civil ocupó Martina.",
+        "rasgos": "Treinta y ocho años de edad. Facciones angulosas, pómulos altos, mandíbula firme y una fina cicatriz vertical que le divide la ceja derecha. Ojos verdes claros, penetrantes y vidriosos, con ojeras violáceas. Pelo caoba oscuro y liso, peinado con raya al medio tras las orejas. En las imágenes del filtro viste blusas de lino blanco roto o americanas sobrias de franela oscura.",
+        "motivacion": "Reclamar la existencia civil que le fue arrebatada cuando era un bebé en una maternidad madrileña.",
+        "conflicto": "Su huella biológica pugna por cerrar una anomalía histórica forzada por un pacto de silencio.",
+        "avatar_cabeza": "assets/images/avatars/0054-personaje-02-candela-rivas-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0054-personaje-02-candela-rivas-cuerpo.webp"
+      },
+      {
+        "id": "0054-p3",
+        "nombre": "Herminia Salcedo",
+        "rol": "Abuela de Martina; guardiana del secreto familiar y de los recuerdos analógicos en la sierra.",
+        "rasgos": "Setenta y seis años de edad. Piel blanca surcada por arrugas finas, manos huesudas con manchas de sol y cabello plateado recogido en un moño tirante. Ojos azules desvaídos tras gafas de montura dorada. Viste rebeca de lana gruesa verde botella sobre vestidos oscuros de punto y zapatillas de paño.",
+        "motivacion": "Proteger a su nieta del dolor y guardar la culpa que carcomió a la familia durante cuatro décadas.",
+        "conflicto": "Afrontar la desesperación de la joven a la que crio sabiendo que la vida que le entregaron pertenecía a otra persona.",
+        "avatar_cabeza": "assets/images/avatars/0054-personaje-03-herminia-salcedo-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0054-personaje-03-herminia-salcedo-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "Tu verdadero rostro",
+        "resumen": "Martina prueba la aplicación viral «Tu verdadero rostro» en su piso de Madrid y la pantalla le devuelve los ojos y la cicatriz de una desconocida."
+      },
+      {
+        "tiempo": "01:37",
+        "segundos": 97,
+        "titulo": "La foto de la cafetería",
+        "resumen": "En la cafetería, una foto tomada con la cámara normal muestra el rostro de la mujer y su amiga Irene actúa como si siempre hubiera sido así."
+      },
+      {
+        "tiempo": "03:39",
+        "segundos": 219,
+        "titulo": "Los álbumes en la nube",
+        "resumen": "De vuelta en casa, Martina descubre que sus álbumes en la nube han sido alterados y su madre le asegura que tiene los ojos verdes y la ceja partida."
+      },
+      {
+        "tiempo": "05:24",
+        "segundos": 324,
+        "titulo": "Sustitución de metadatos",
+        "resumen": "El teléfono completa la sustitución de metadatos de forma autónoma; Martina destroza el móvil con una sartén y huye en coche hacia la sierra."
+      },
+      {
+        "tiempo": "06:49",
+        "segundos": 409,
+        "titulo": "La casona de San Lorenzo",
+        "resumen": "Llegada bajo la niebla a la casona de su abuela Herminia en San Lorenzo de El Escorial y la orden dolorosa de subir al desván."
+      },
+      {
+        "tiempo": "08:39",
+        "segundos": 519,
+        "titulo": "Candela Rivas (1986)",
+        "resumen": "El desván, el álbum de 1986 con las fotos de Candela niña, el certificado de adopción irregular y la reconciliación con su verdadero reflejo."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0054-003-martina-pulsa-camara-frontal-movil.webp",
+        "caption": "Ilustración de escena: Martina pulsa camara frontal movil",
+        "alt": "Escena oficial de El filtro que no se podía quitar — Martina pulsa camara frontal movil"
+      },
+      {
+        "src": "assets/images/escenas/0054-020-martina-palpa-ceja-lunar-dedos.webp",
+        "caption": "Ilustración de escena: Martina palpa ceja lunar dedos",
+        "alt": "Escena oficial de El filtro que no se podía quitar — Martina palpa ceja lunar dedos"
+      },
+      {
+        "src": "assets/images/escenas/0054-038-martina-baja-aparcamiento-garaje-penumbra.webp",
+        "caption": "Ilustración de escena: Martina baja aparcamiento garaje penumbra",
+        "alt": "Escena oficial de El filtro que no se podía quitar — Martina baja aparcamiento garaje penumbra"
+      },
+      {
+        "src": "assets/images/escenas/0054-056-caligrafia-pluma-candela-nuestro-angel-1986.webp",
+        "caption": "Ilustración de escena: Caligrafia pluma candela nuestro angel 1986",
+        "alt": "Escena oficial de El filtro que no se podía quitar — Caligrafia pluma candela nuestro angel 1986"
+      },
+      {
+        "src": "assets/images/escenas/0054-073-frente-contra-cristal-frio-respiro-hondo-paz.webp",
+        "caption": "Ilustración de escena: Frente contra cristal frio respiro hondo paz",
+        "alt": "Escena oficial de El filtro que no se podía quitar — Frente contra cristal frio respiro hondo paz"
+      }
+    ],
+    "relato_raw": "El reflejo de la pantalla iluminaba la mesa con un resplandor azulado. Afuera, la llovizna de noviembre repiqueteaba contra los cristales del salón en la calle Velarde.\n\nEl filtro se llamaba «Tu verdadero rostro». Llevaba tres días encabezando las tendencias: prometía un ajuste biométrico capaz de mostrar la versión más armónica de cada usuario sin recurrir a maquillaje digital. Martina pulsó la cámara frontal.\n\nUna malla de puntos amarillos recorrió su frente y sus mejillas con un chasquido del altavoz. La imagen se congeló un segundo y la máscara digital encajó sobre su rostro.\n\nMartina soltó el aire de golpe y apartó el teléfono.\n\nEn la pantalla no estaba ella. La miraba una mujer de unos treinta y ocho años, de mandíbula ancha, pelo caoba liso con raya al medio y unos ojos verdes, casi transparentes, bajo ojeras profundas. Una cicatriz vertical de dos centímetros le partía la ceja derecha y continuaba hacia la sien. Cuando Martina parpadeó, la desconocida parpadeó con un leve retraso. Cuando abrió la boca con asombro, la mujer tensó los labios con severidad amarga.\n\n—Vaya broma —murmuró.\n\nDeslizó el dedo para desactivar el filtro. La cámara normal le devolvió sus ojos oscuros, su pelo ondulado y el lunar sobre el pómulo izquierdo. Respiró aliviada: los servidores debían de estar colapsados. Cerró la aplicación y se fue a dormir con el rumor del agua en el patio.\n\n* * *\n\nA las diez de la mañana siguiente, en la cafetería cercana a su estudio de diseño, Martina esperaba el café junto a Irene entre olor a tostadas y vapor de cafetera.\n\n—Tienes que probar el filtro nuevo —dijo Irene, revolviendo el azúcar—. A Marcos lo dejó igual, pero a mí me afinó la nariz.\n\n—A mí me puso la cara de otra —respondió Martina sonriendo—. Una mujer mayor con la ceja rota. Estarán saturados los servidores.\n\n—Ponte aquí, que nos hacemos una foto antes de entrar.\n\nIrene levantó el móvil, abrió la cámara normal y sonrió. Martina posó sujetando la taza caliente. La lente disparó dos veces.\n\n—A ver qué tal —dijo Irene mirando la galería. Su dedo se detuvo—. Oye, qué favorecida sales.\n\nMartina se asomó por encima de su hombro.\n\nEl café estuvo a punto de volcarse. En la foto, con su jersey terracota, no estaba su rostro: aparecía la mujer del filtro. La mandíbula angulosa, el pelo liso caoba y la cicatriz blanca partiéndole la ceja derecha. La desconocida miraba a la cámara con una sonrisa forzada.\n\n—Irene... —susurró Martina—. ¿Qué es esto?\n\n—Nosotras dos, ¿quién va a ser?\n\n—Esa no soy yo. Yo tengo el pelo ondulado, los ojos marrones y un lunar.\n\nIrene pestañeó con desconcierto y volvió a mirar la pantalla.\n\n—Martina, déjate de bromas. Siempre has tenido los ojos claros. Y la cicatriz la tienes desde la facultad. ¿Te has peinado distinto hoy? La voy a subir al grupo.\n\nIrene hablaba con absoluta naturalidad. Martina retrocedió un paso, palpándose la cara con los dedos: su piel estaba lisa sobre la ceja y el relieve del lunar seguía en su sitio. Pero en el ventanal de la cafetería, su reflejo parecía más ancho, más maduro.\n\n* * *\n\nFingió una migraña y volvió a su piso a primera hora de la tarde. En el baño, bajo el halógeno del espejo, su reflejo físico seguía intacto: sus veintisiete años, sus rizos castaños y sus ojos oscuros.\n\n«Es un fallo del teléfono», pensó. «Un error de caché en las pantallas».\n\nEncendió el portátil en el salón y abrió la nube donde guardaba sus álbumes digitalizados. Entró en la carpeta de su fiesta de dieciocho años.\n\nAl cargar las miniaturas, ahogó un grito.\n\nAlrededor de la mesa estaban sus tíos, sus primos y su madre sosteniendo una tarta con dos velas rojas. Y en el centro, soplando las velas con el vestido azul que Martina recordaba haber llevado, estaba la mujer de treinta y ocho años. La misma mirada fría, la misma piel pálida, la misma cicatriz en la ceja.\n\nCon las manos heladas, marcó el número de su madre. La llamada conectó al cuarto tono.\n\n—Hola, cariño —dijo Rosa—. ¿Pasa algo?\n\n—Mamá... —Martina contuvo el llanto—. Descríbeme. Dime cómo tengo los ojos. ¿Tengo alguna marca en la cara?\n\nHubo un silencio breve al otro lado.\n\n—¿A qué viene eso ahora, Martina? Tienes los ojos verdes de la familia de tu abuelo y la cicatriz que te hiciste de pequeña en la ceja con la cama. Anda, no digas tonterías que estoy con la cena de tu padre.\n\n—Mamá, yo no tengo ninguna cicatriz. Mis ojos son marrones y tengo un lunar en el pómulo.\n\n—Martina, déjate de complejos absurdos. Te llamo luego, un beso.\n\nLa línea se cortó.\n\n* * *\n\nEl teléfono vibró sobre la mesa con una sacudida seca.\n\nEn la pantalla parpadeó un aviso del sistema:\n\n`Alineación facial completada.`\n`Sustitución de metadatos finalizada.`\n`Índice de coherencia biográfica: 91%.`\n\nLa cámara frontal se encendió sola. El punto verde de grabación brilló en la esquina. En la ventana de vista previa, el rostro de Martina ya no existía: la mujer de pelo caoba la miraba fijamente desde el dispositivo con paciente serenidad, esperando al otro lado de la pantalla.\n\nUn terror asfixiante se apoderó de ella.\n\nArrojó el teléfono contra las baldosas de la cocina. El cristal se astilló en mil pedazos, pero el diodo de la cámara continuó encendido emitiendo un zumbido. Cogió una sartén de hierro y golpeó el aparato tres veces hasta destrozar la batería y la placa base. Con una tijera extrajo la tarjeta telefónica, dobló el chip dorado y tiró los restos a la basura.\n\nMetió una muda en una mochila, agarró la cazadora y bajó corriendo al aparcamiento.\n\nTenía que ir a un sitio sin redes conectadas ni copias en la nube. Tenía que ir a la casa de su abuela Herminia en San Lorenzo de El Escorial: la casona de piedra donde aún sobrevivían las cajas de zapatos con fotos en papel revelado, el único lugar donde la memoria no dependía de un servidor.\n\n* * *\n\nUna niebla espesa borraba los pinos de la sierra. Martina conducía aferrada al volante, evitando mirar el retrovisor por miedo a ver desaparecer sus ojos en la penumbra del coche.\n\nLlegó a San Lorenzo pasadas las ocho. El pueblo olía a leña quemada y a granito mojado. Subió los tres escalones del porche y golpeó la puerta de madera con los nudillos.\n\nLa puerta se abrió despacio. Su abuela Herminia apareció en el umbral, con su rebeca verde botella, las gafas doradas colgando de la cadena y una taza humeante en la mano.\n\n—¿Martina? —preguntó la anciana—. Hija mía, qué horas... Pasa adentro que estás calada.\n\nMartina entró en el recibidor, cerró la puerta y sujetó a su abuela por los hombros.\n\n—Abuela, mírame bien a la cara. ¿Quién soy yo?\n\nHerminia se quedó quieta. Sus ojos azules recorrieron las facciones de Martina: la mandíbula tensa, los labios temblorosos y el lunar en el pómulo izquierdo. Una sombra de dolor antiguo nubló su mirada, y bajó la vista hacia las baldosas de barro.\n\n—Eres mi niña —susurró con voz quebrada—. La que hemos querido siempre.\n\n—Dime cómo es mi cara, abuela. En Madrid dicen que tengo los ojos verdes y una cicatriz en la ceja. Las fotos del móvil han cambiado. Dicen que soy una mujer de casi cuarenta años.\n\nHerminia no respondió. Caminó despacio hacia la salita, donde crepitaba la estufa de hierro.\n\n—Sube al desván —dijo sin girarse—. En el baúl de roble detrás del armario. La llave está en la caja de latón de las galletas. Míralo tú misma, Martina. Yo ya no tengo fuerzas para seguir fingiendo.\n\n* * *\n\nEl desván olía a alcanfor, a papel seco y a vigas centenarias. La única bombilla colgaba de un cable desnudo en mitad de la estancia.\n\nMartina abrió el baúl tras girar la llave de hierro y apartó varias sábanas de hilo. En el fondo descansaba un álbum encuadernado en terciopelo granate con refuerzos de latón en las esquinas. En la portada dorada figuraba una fecha grabada: *1986*.\n\nAbrió la primera página con las manos rígidas por el frío.\n\nEran fotografías químicas de época pegadas con esquineras amarillentas. Cumpleaños, meriendas en el jardín y veranos en la costa con colores desvaídos.\n\nEn la tercera página, Martina se quedó sin aliento.\n\nUna niña de tres años sonreía en un columpio bajo los cerezos. Vestía un peto vaquero y miraba a la cámara con una serenidad insólita. Tenía los ojos verdes claros, el pelo caoba sobre la frente y una fina cicatriz blanca que le partía la ceja derecha.\n\nAl pie de la foto, con la caligrafía apretada de su abuela, estaba escrito a pluma:\n\n*Candela, nuestro ángel. Verano de 1986.*\n\nMartina pasó las hojas febrilmente. Las fotos de Candela llegaban hasta los cinco años: en la playa, con un perro pastor, con el uniforme escolar. Y de pronto, a mitad del álbum, las fotos se cortaban de golpe. Las páginas siguientes estaban vacías, con las esquineras arrancadas.\n\nDebajo del álbum había una carpeta de cartón azul atada con una cinta. Martina la abrió.\n\nDentro halló un certificado de defunción a nombre de una recién nacida sin filiación en una clínica privada de la calle O'Donnell, varios resguardos de pagos bancarios y una partida de nacimiento falsificada donde el nombre de Candela había sido tachado con tinta roja y sustituido por el de Martina Salcedo.\n\nUnos pasos lentos sonaron en la escalera. Herminia apareció en el desván, apoyándose en la barandilla con el pecho agitado.\n\n—Candela desapareció una tarde de mayo en el Retiro —dijo la anciana entre lágrimas—. Tenía cinco años. Tu madre casi pierde el juicio; estuvo dos meses ingresada sin hablar ni comer. Los médicos dijeron que no resistiría otro invierno sin su hija.\n\nMartina apretaba los papeles contra el pecho mientras la estancia parecía girar a su alrededor.\n\n—¿Y qué hicisteis? ¿Quién soy yo?\n\n—Tu padre y tu abuelo encontraron a un intermediario. En aquella clínica de O'Donnell entraban muchas mujeres jóvenes sin recursos. Pagaron una fortuna por una recién nacida que nadie iba a reclamar. Te trajeron envuelta en un chal una noche de tormenta. Te pusieron la ropa de Candela, te dieron sus apellidos y la cuna que llevaba dos años vacía. Para proteger a tu madre, nos convencimos de que tú eras ella. Durante veintisiete años cerramos los ojos para no ver la diferencia.\n\nHerminia se acercó despacio y le rozó la mejilla con dedos temblorosos.\n\n—El filtro no inventa nada, Martina. Las redes cruzan las caras de todo el país, buscan a los niños robados y comparan los huesos para devolver los nombres a los vivos. La mujer de tu teléfono es Candela, que sobrevivió en alguna parte y está reclamando los papeles que le quitamos para dártelos a ti.\n\nMartina se apartó con suavidad.\n\nCaminó hacia el ventanuco del desván, que daba a los tejados mojados de San Lorenzo y a la silueta oscura de las montañas. El cristal estaba empañado por el calor de la estufa.\n\nCon la manga del jersey terracota, frotó el vaho del vidrio.\n\nLa superficie limpia le devolvió su reflejo en la penumbra.\n\nMartina miró con atención. La mandíbula ancha ya no le parecía extraña. Las sombras bajo los ojos verdes tenían el peso de una verdad que llevaba cuatro décadas esperando en silencio. Y sobre la ceja derecha, la cicatriz blanca brillaba con la nitidez de una herida que por fin dejaba de ocultarse.\n\nApoyó la frente contra el cristal frío, cerró los ojos y, por primera vez en su vida, respiró hondo sin miedo a saber quién la estaba mirando.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El reflejo de la pantalla iluminaba la mesa con un resplandor azulado. Afuera, la llovizna de noviembre repiqueteaba contra los cristales del salón en la calle Velarde.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El filtro se llamaba «Tu verdadero rostro». Llevaba tres días encabezando las tendencias: prometía un ajuste biométrico capaz de mostrar la versión más armónica de cada usuario sin recurrir a maquillaje digital. Martina pulsó la cámara frontal.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Una malla de puntos amarillos recorrió su frente y sus mejillas con un chasquido del altavoz. La imagen se congeló un segundo y la máscara digital encajó sobre su rostro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Martina soltó el aire de golpe y apartó el teléfono.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En la pantalla no estaba ella. La miraba una mujer de unos treinta y ocho años, de mandíbula ancha, pelo caoba liso con raya al medio y unos ojos verdes, casi transparentes, bajo ojeras profundas. Una cicatriz vertical de dos centímetros le partía la ceja derecha y continuaba hacia la sien. Cuando Martina parpadeó, la desconocida parpadeó con un leve retraso. Cuando abrió la boca con asombro, la mujer tensó los labios con severidad amarga.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Vaya broma —murmuró.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Deslizó el dedo para desactivar el filtro. La cámara normal le devolvió sus ojos oscuros, su pelo ondulado y el lunar sobre el pómulo izquierdo. Respiró aliviada: los servidores debían de estar colapsados. Cerró la aplicación y se fue a dormir con el rumor del agua en el patio.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A las diez de la mañana siguiente, en la cafetería cercana a su estudio de diseño, Martina esperaba el café junto a Irene entre olor a tostadas y vapor de cafetera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Tienes que probar el filtro nuevo —dijo Irene, revolviendo el azúcar—. A Marcos lo dejó igual, pero a mí me afinó la nariz.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—A mí me puso la cara de otra —respondió Martina sonriendo—. Una mujer mayor con la ceja rota. Estarán saturados los servidores.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Ponte aquí, que nos hacemos una foto antes de entrar.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Irene levantó el móvil, abrió la cámara normal y sonrió. Martina posó sujetando la taza caliente. La lente disparó dos veces.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0054-003-martina-pulsa-camara-frontal-movil.webp\" alt=\"Escena oficial de El filtro que no se podía quitar — Martina pulsa camara frontal movil\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Martina pulsa camara frontal movil</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—A ver qué tal —dijo Irene mirando la galería. Su dedo se detuvo—. Oye, qué favorecida sales.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Martina se asomó por encima de su hombro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El café estuvo a punto de volcarse. En la foto, con su jersey terracota, no estaba su rostro: aparecía la mujer del filtro. La mandíbula angulosa, el pelo liso caoba y la cicatriz blanca partiéndole la ceja derecha. La desconocida miraba a la cámara con una sonrisa forzada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Irene... —susurró Martina—. ¿Qué es esto?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Nosotras dos, ¿quién va a ser?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Esa no soy yo. Yo tengo el pelo ondulado, los ojos marrones y un lunar.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Irene pestañeó con desconcierto y volvió a mirar la pantalla.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Martina, déjate de bromas. Siempre has tenido los ojos claros. Y la cicatriz la tienes desde la facultad. ¿Te has peinado distinto hoy? La voy a subir al grupo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Irene hablaba con absoluta naturalidad. Martina retrocedió un paso, palpándose la cara con los dedos: su piel estaba lisa sobre la ceja y el relieve del lunar seguía en su sitio. Pero en el ventanal de la cafetería, su reflejo parecía más ancho, más maduro.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Fingió una migraña y volvió a su piso a primera hora de la tarde. En el baño, bajo el halógeno del espejo, su reflejo físico seguía intacto: sus veintisiete años, sus rizos castaños y sus ojos oscuros.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">«Es un fallo del teléfono», pensó. «Un error de caché en las pantallas».</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Encendió el portátil en el salón y abrió la nube donde guardaba sus álbumes digitalizados. Entró en la carpeta de su fiesta de dieciocho años.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0054-020-martina-palpa-ceja-lunar-dedos.webp\" alt=\"Escena oficial de El filtro que no se podía quitar — Martina palpa ceja lunar dedos\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Martina palpa ceja lunar dedos</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al cargar las miniaturas, ahogó un grito.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Alrededor de la mesa estaban sus tíos, sus primos y su madre sosteniendo una tarta con dos velas rojas. Y en el centro, soplando las velas con el vestido azul que Martina recordaba haber llevado, estaba la mujer de treinta y ocho años. La misma mirada fría, la misma piel pálida, la misma cicatriz en la ceja.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Con las manos heladas, marcó el número de su madre. La llamada conectó al cuarto tono.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Hola, cariño —dijo Rosa—. ¿Pasa algo?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Mamá... —Martina contuvo el llanto—. Descríbeme. Dime cómo tengo los ojos. ¿Tengo alguna marca en la cara?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Hubo un silencio breve al otro lado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿A qué viene eso ahora, Martina? Tienes los ojos verdes de la familia de tu abuelo y la cicatriz que te hiciste de pequeña en la ceja con la cama. Anda, no digas tonterías que estoy con la cena de tu padre.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Mamá, yo no tengo ninguna cicatriz. Mis ojos son marrones y tengo un lunar en el pómulo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Martina, déjate de complejos absurdos. Te llamo luego, un beso.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La línea se cortó.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El teléfono vibró sobre la mesa con una sacudida seca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En la pantalla parpadeó un aviso del sistema:</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0054-038-martina-baja-aparcamiento-garaje-penumbra.webp\" alt=\"Escena oficial de El filtro que no se podía quitar — Martina baja aparcamiento garaje penumbra\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Martina baja aparcamiento garaje penumbra</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">`Alineación facial completada.`\n`Sustitución de metadatos finalizada.`\n`Índice de coherencia biográfica: 91%.`</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La cámara frontal se encendió sola. El punto verde de grabación brilló en la esquina. En la ventana de vista previa, el rostro de Martina ya no existía: la mujer de pelo caoba la miraba fijamente desde el dispositivo con paciente serenidad, esperando al otro lado de la pantalla.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Un terror asfixiante se apoderó de ella.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Arrojó el teléfono contra las baldosas de la cocina. El cristal se astilló en mil pedazos, pero el diodo de la cámara continuó encendido emitiendo un zumbido. Cogió una sartén de hierro y golpeó el aparato tres veces hasta destrozar la batería y la placa base. Con una tijera extrajo la tarjeta telefónica, dobló el chip dorado y tiró los restos a la basura.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Metió una muda en una mochila, agarró la cazadora y bajó corriendo al aparcamiento.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Tenía que ir a un sitio sin redes conectadas ni copias en la nube. Tenía que ir a la casa de su abuela Herminia en San Lorenzo de El Escorial: la casona de piedra donde aún sobrevivían las cajas de zapatos con fotos en papel revelado, el único lugar donde la memoria no dependía de un servidor.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Una niebla espesa borraba los pinos de la sierra. Martina conducía aferrada al volante, evitando mirar el retrovisor por miedo a ver desaparecer sus ojos en la penumbra del coche.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Llegó a San Lorenzo pasadas las ocho. El pueblo olía a leña quemada y a granito mojado. Subió los tres escalones del porche y golpeó la puerta de madera con los nudillos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La puerta se abrió despacio. Su abuela Herminia apareció en el umbral, con su rebeca verde botella, las gafas doradas colgando de la cadena y una taza humeante en la mano.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Martina? —preguntó la anciana—. Hija mía, qué horas... Pasa adentro que estás calada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Martina entró en el recibidor, cerró la puerta y sujetó a su abuela por los hombros.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Abuela, mírame bien a la cara. ¿Quién soy yo?</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0054-056-caligrafia-pluma-candela-nuestro-angel-1986.webp\" alt=\"Escena oficial de El filtro que no se podía quitar — Caligrafia pluma candela nuestro angel 1986\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Caligrafia pluma candela nuestro angel 1986</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Herminia se quedó quieta. Sus ojos azules recorrieron las facciones de Martina: la mandíbula tensa, los labios temblorosos y el lunar en el pómulo izquierdo. Una sombra de dolor antiguo nubló su mirada, y bajó la vista hacia las baldosas de barro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Eres mi niña —susurró con voz quebrada—. La que hemos querido siempre.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Dime cómo es mi cara, abuela. En Madrid dicen que tengo los ojos verdes y una cicatriz en la ceja. Las fotos del móvil han cambiado. Dicen que soy una mujer de casi cuarenta años.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Herminia no respondió. Caminó despacio hacia la salita, donde crepitaba la estufa de hierro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Sube al desván —dijo sin girarse—. En el baúl de roble detrás del armario. La llave está en la caja de latón de las galletas. Míralo tú misma, Martina. Yo ya no tengo fuerzas para seguir fingiendo.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El desván olía a alcanfor, a papel seco y a vigas centenarias. La única bombilla colgaba de un cable desnudo en mitad de la estancia.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Martina abrió el baúl tras girar la llave de hierro y apartó varias sábanas de hilo. En el fondo descansaba un álbum encuadernado en terciopelo granate con refuerzos de latón en las esquinas. En la portada dorada figuraba una fecha grabada: *1986*.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Abrió la primera página con las manos rígidas por el frío.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Eran fotografías químicas de época pegadas con esquineras amarillentas. Cumpleaños, meriendas en el jardín y veranos en la costa con colores desvaídos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En la tercera página, Martina se quedó sin aliento.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Una niña de tres años sonreía en un columpio bajo los cerezos. Vestía un peto vaquero y miraba a la cámara con una serenidad insólita. Tenía los ojos verdes claros, el pelo caoba sobre la frente y una fina cicatriz blanca que le partía la ceja derecha.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al pie de la foto, con la caligrafía apretada de su abuela, estaba escrito a pluma:</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0054-073-frente-contra-cristal-frio-respiro-hondo-paz.webp\" alt=\"Escena oficial de El filtro que no se podía quitar — Frente contra cristal frio respiro hondo paz\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Frente contra cristal frio respiro hondo paz</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">*Candela, nuestro ángel. Verano de 1986.*</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Martina pasó las hojas febrilmente. Las fotos de Candela llegaban hasta los cinco años: en la playa, con un perro pastor, con el uniforme escolar. Y de pronto, a mitad del álbum, las fotos se cortaban de golpe. Las páginas siguientes estaban vacías, con las esquineras arrancadas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Debajo del álbum había una carpeta de cartón azul atada con una cinta. Martina la abrió.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Dentro halló un certificado de defunción a nombre de una recién nacida sin filiación en una clínica privada de la calle O'Donnell, varios resguardos de pagos bancarios y una partida de nacimiento falsificada donde el nombre de Candela había sido tachado con tinta roja y sustituido por el de Martina Salcedo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Unos pasos lentos sonaron en la escalera. Herminia apareció en el desván, apoyándose en la barandilla con el pecho agitado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Candela desapareció una tarde de mayo en el Retiro —dijo la anciana entre lágrimas—. Tenía cinco años. Tu madre casi pierde el juicio; estuvo dos meses ingresada sin hablar ni comer. Los médicos dijeron que no resistiría otro invierno sin su hija.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Martina apretaba los papeles contra el pecho mientras la estancia parecía girar a su alrededor.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Y qué hicisteis? ¿Quién soy yo?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Tu padre y tu abuelo encontraron a un intermediario. En aquella clínica de O'Donnell entraban muchas mujeres jóvenes sin recursos. Pagaron una fortuna por una recién nacida que nadie iba a reclamar. Te trajeron envuelta en un chal una noche de tormenta. Te pusieron la ropa de Candela, te dieron sus apellidos y la cuna que llevaba dos años vacía. Para proteger a tu madre, nos convencimos de que tú eras ella. Durante veintisiete años cerramos los ojos para no ver la diferencia.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Herminia se acercó despacio y le rozó la mejilla con dedos temblorosos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—El filtro no inventa nada, Martina. Las redes cruzan las caras de todo el país, buscan a los niños robados y comparan los huesos para devolver los nombres a los vivos. La mujer de tu teléfono es Candela, que sobrevivió en alguna parte y está reclamando los papeles que le quitamos para dártelos a ti.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Martina se apartó con suavidad.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Caminó hacia el ventanuco del desván, que daba a los tejados mojados de San Lorenzo y a la silueta oscura de las montañas. El cristal estaba empañado por el calor de la estufa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Con la manga del jersey terracota, frotó el vaho del vidrio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La superficie limpia le devolvió su reflejo en la penumbra.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Martina miró con atención. La mandíbula ancha ya no le parecía extraña. Las sombras bajo los ojos verdes tenían el peso de una verdad que llevaba cuatro décadas esperando en silencio. Y sobre la ceja derecha, la cicatriz blanca brillaba con la nitidez de una herida que por fin dejaba de ocultarse.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Apoyó la frente contra el cristal frío, cerró los ojos y, por primera vez en su vida, respiró hondo sin miedo a saber quién la estaba mirando.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false,
+    "fecha_publicacion": null,
+    "fecha_publicacion_ts": null
+  },
+  {
     "id": "0053",
     "slug": "el-hombre-que-aparecia-en-los-documentos",
     "pagina_url": "relatos/0053-el-hombre-que-aparecia-en-los-documentos.html",
@@ -53,38 +202,38 @@
       {
         "tiempo": "00:00",
         "segundos": 0,
-        "titulo": "El hallazgo en el sótano",
-        "resumen": "Nicolás descubre la fotografía de un hombre desconocido de 42 años en documentos antiguos de diferentes décadas."
+        "titulo": "Capítulo 1",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 00:00."
       },
       {
         "tiempo": "02:10",
         "segundos": 130,
-        "titulo": "La visita a Estrecho",
-        "resumen": "Visita al domicilio de Dionisio Morales, donde la anciana esposa reconoce al hombre de la foto como su marido."
+        "titulo": "Capítulo 2",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 02:10."
       },
       {
         "tiempo": "04:08",
         "segundos": 248,
-        "titulo": "El examen con Valeria",
-        "resumen": "Valeria comprueba los legajos y el censo oficial, donde el mismo rostro invade los archivos estatales."
+        "titulo": "Capítulo 3",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 04:08."
       },
       {
         "tiempo": "06:18",
         "segundos": 378,
-        "titulo": "La metamorfosis del carnet",
-        "resumen": "El DNI físico de Nicolás se transforma desde dentro y Valeria empieza a olvidar su verdadera cara."
+        "titulo": "Capítulo 4",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 06:18."
       },
       {
         "tiempo": "08:02",
         "segundos": 482,
-        "titulo": "La comisaría de los Madrazo",
-        "resumen": "El escáner biométrico policial identifica a Nicolás como Julián Cárdenas, sujeto vector del Protocolo Mnemosis."
+        "titulo": "Capítulo 5",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 08:02."
       },
       {
         "tiempo": "10:10",
         "segundos": 610,
-        "titulo": "El secreto de la Almudena",
-        "resumen": "En el archivo histórico, Nicolás descubre la verdad de las identidades ficticias y asume su verdadera existencia."
+        "titulo": "Capítulo 6",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 10:10."
       }
     ],
     "escenas_ilustraciones": [
@@ -443,7 +592,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-19T20:00:00+01:00",
     "fecha_publicacion_ts": 1795114800
@@ -594,7 +743,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-18T20:00:00+01:00",
     "fecha_publicacion_ts": 1795028400
@@ -751,7 +900,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-16T20:00:00+01:00",
     "fecha_publicacion_ts": 1794855600
@@ -902,7 +1051,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-17T20:00:00+01:00",
     "fecha_publicacion_ts": 1794942000
@@ -1059,7 +1208,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-15T20:00:00+01:00",
     "fecha_publicacion_ts": 1794769200
@@ -1373,7 +1522,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-14T20:00:00+01:00",
     "fecha_publicacion_ts": 1794682800
@@ -1514,7 +1663,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-05T20:00:00+01:00",
     "fecha_publicacion_ts": 1793905200
@@ -1677,7 +1826,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-12T20:00:00+01:00",
     "fecha_publicacion_ts": 1794510000
@@ -1834,7 +1983,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-04T20:00:00+01:00",
     "fecha_publicacion_ts": 1793818800
@@ -1997,7 +2146,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-07T20:00:00+01:00",
     "fecha_publicacion_ts": 1794078000
@@ -2147,7 +2296,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-11T20:00:00+01:00",
     "fecha_publicacion_ts": 1794423600
@@ -2619,7 +2768,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-13T20:00:00+01:00",
     "fecha_publicacion_ts": 1794596400
@@ -2781,7 +2930,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-10T20:00:00+01:00",
     "fecha_publicacion_ts": 1794337200
@@ -2938,7 +3087,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-09T20:00:00+01:00",
     "fecha_publicacion_ts": 1794250800
@@ -3093,7 +3242,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-08T20:00:00+01:00",
     "fecha_publicacion_ts": 1794164400
@@ -3550,7 +3699,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-06T20:00:00+01:00",
     "fecha_publicacion_ts": 1793991600
