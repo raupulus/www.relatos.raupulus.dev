@@ -592,7 +592,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-19T20:00:00+01:00",
     "fecha_publicacion_ts": 1795114800
@@ -743,7 +743,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-18T20:00:00+01:00",
     "fecha_publicacion_ts": 1795028400
@@ -900,7 +900,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-16T20:00:00+01:00",
     "fecha_publicacion_ts": 1794855600
@@ -1051,7 +1051,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-17T20:00:00+01:00",
     "fecha_publicacion_ts": 1794942000
@@ -1208,7 +1208,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-15T20:00:00+01:00",
     "fecha_publicacion_ts": 1794769200
@@ -1522,7 +1522,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-14T20:00:00+01:00",
     "fecha_publicacion_ts": 1794682800
@@ -1663,7 +1663,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-05T20:00:00+01:00",
     "fecha_publicacion_ts": 1793905200
@@ -1826,7 +1826,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-12T20:00:00+01:00",
     "fecha_publicacion_ts": 1794510000
@@ -1983,8 +1983,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-11-04T20:00:00+01:00",
     "fecha_publicacion_ts": 1793818800
   },
@@ -2146,7 +2146,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-07T20:00:00+01:00",
     "fecha_publicacion_ts": 1794078000
@@ -2296,7 +2296,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-11T20:00:00+01:00",
     "fecha_publicacion_ts": 1794423600
@@ -2768,7 +2768,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-13T20:00:00+01:00",
     "fecha_publicacion_ts": 1794596400
@@ -2930,7 +2930,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-10T20:00:00+01:00",
     "fecha_publicacion_ts": 1794337200
@@ -3087,7 +3087,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-09T20:00:00+01:00",
     "fecha_publicacion_ts": 1794250800
@@ -3242,7 +3242,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-08T20:00:00+01:00",
     "fecha_publicacion_ts": 1794164400
@@ -3699,7 +3699,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-06T20:00:00+01:00",
     "fecha_publicacion_ts": 1793991600
