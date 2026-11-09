@@ -1,5 +1,105 @@
 [
   {
+    "id": "M0015",
+    "slug": "okomfo-anokye",
+    "nombre": "Okomfo Anokye",
+    "epiteto": "El Sumo Sacerdote del Trono de Oro y Arquitecto Espiritual del Imperio",
+    "titulo_completo": "Okomfo Anokye: El Sumo Sacerdote del Trono de Oro ⚡ Deidades y Espíritus (Mitología Ashanti y Akan)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Deidades y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 844,
+    "duracion_video": "05:19",
+    "duracion_audio": "05:19",
+    "duracion_short": "00:50",
+    "sinopsis": "En la historia sagrada y la tradición espiritual de los pueblos akan y ashanti de Ghana y Costa de Marfil, Okomfo Anokye es el legendario sumo sacerdote, vidente místico y arquitecto espiritual del Imperio Ashanti. Junto a su compañero de armas, el rey unificador Osei Tutu I, Anokye desafió la tiranía opresora de Denkyira e hizo descender milagrosamente del cielo, entre relámpagos y brumas doradas, el sagrado Trono de Oro (Sika Dwa Kofi), morada eterna del alma colectiva ashanti. Para sellar la unidad inquebrantable de los clanes, clavó su pesada espada ceremonial en la roca viva de Kumasi, profetizando que ningún mortal lograría moverla y que, mientras la hoja reposara en la tierra, la nación jamás caería. Conoce la gesta épica del sacerdote que forjó un imperio con magia, fe y setenta y siete leyes eternas.",
+    "youtube_id": "Hybj4oc8n0k",
+    "youtube_short_id": "IXhPvtfjOyc",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=Hybj4oc8n0k",
+    "youtube_short_url": "https://www.youtube.com/shorts/IXhPvtfjOyc",
+    "portada": "assets/images/portadas/M0015-okomfo-anokye.webp",
+    "pagina_url": "mitologia/M0015-okomfo-anokye.html",
+    "personajes": [
+      {
+        "nombre": "Okomfo Anokye",
+        "rol": "Sumo Sacerdote y Arquitecto Espiritual del Imperio",
+        "rasgos": "Sabio sacerdote y adivino legendario de 48 años de edad aparente, de porte enjuto, sereno e imponente. Posee una piel de ébano oscuro lustroso, pómulos prominentes y una mirada penetrante cargada de sabiduría y fuego místico. Viste túnica sacerdotal tradicional de lienzo de algodón blanco inmaculado (akomfo ntoma) terciada sobre el hombro izquierdo, collares de cuentas sagradas y conchas de cauri, brazaletes de latón con amuletos protectores suman, y cabello recogido en finas trenzas ceremoniales adornadas con madera sagrada. En una mano porta el espantamoscas ritual de crin de caballo blanca (bodua) y en la otra la espada de hierro sagrada (afena) con empuñadura cubierta en pan de oro.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-okomfo-anokye-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-okomfo-anokye-cuerpo.webp"
+      },
+      {
+        "nombre": "Osei Tutu I",
+        "rol": "Primer Asantehene y Rey Guerrero Unificador",
+        "rasgos": "Primer monarca unificador del Imperio Ashanti, de 45 años, de complexión atlética y porte regio de estadista y general victorioso. Viste toga imperial kente en tonos oro, verde esmeralda y negro, brazaletes de oro pesado labrado en muñecas y antebrazos, sandalias ceremoniales con adornos áureos y diadema real con insignias de cuernos de carnero."
+      },
+      {
+        "nombre": "Ntim Gyakari",
+        "rol": "Último Rey Tirano de Denkyira",
+        "rasgos": "Monarca déspota de 40 años, arrogante y corpulento, ataviado con opulentos ornamentos dorados y túnica roja carmesí. Su corte exigía onerosos tributos a los pueblos vecinos hasta su estrepitosa caída en la histórica llanura de Feyiase."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0015-006-kumasi-arbol-floreciente-y-aldea.webp",
+        "pie": "El florecimiento del esqueje de árbol kuma en el claro del bosque, profecía fundacional de la capital Kumasi."
+      },
+      {
+        "archivo": "assets/images/escenas/M0015-010-descenso-del-trono-de-oro-sika-dwa.webp",
+        "pie": "El milagroso descenso del sagrado Trono de Oro (Sika Dwa Kofi) entre densas brumas y destellos celestiales."
+      },
+      {
+        "archivo": "assets/images/escenas/M0015-015-clavando-la-espada-en-la-roca-de-kumasi.webp",
+        "pie": "Okomfo Anokye hundiendo la espada de hierro afena hasta la empuñadura en la roca viva para sellar la unidad nacional."
+      },
+      {
+        "archivo": "assets/images/escenas/M0015-021-choque-de-ejercitos-en-llanuras-de-feyiase.webp",
+        "pie": "El choque definitivo de los ejércitos en Feyiase donde los ashanti quebraron para siempre la tiranía de Denkyira."
+      },
+      {
+        "archivo": "assets/images/escenas/M0015-030-santuario-actual-de-la-espada-en-kumasi.webp",
+        "pie": "El santuario histórico de la espada de Anokye en Kumasi, desafiando intacta el paso de los siglos y la fuerza humana."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Yugo de Denkyira y la Profecía del Kuma",
+        "resumen": "La humillación bajo el tributo opresor y el pacto sagrado entre Osei Tutu y el sacerdote Anokye."
+      },
+      {
+        "tiempo": "01:05",
+        "segundos": 65,
+        "titulo": "II. El Milagro del Trono de Oro (Sika Dwa Kofi)",
+        "resumen": "La asamblea sagrada de los clanes y el descenso del trono áureo desde el cielo como receptáculo del alma ashanti."
+      },
+      {
+        "tiempo": "02:18",
+        "segundos": 138,
+        "titulo": "III. La Espada Inamovible en la Roca",
+        "resumen": "El entierro de la espada afena en el suelo de Kumasi como juramento perpetuo de invencibilidad."
+      },
+      {
+        "tiempo": "03:14",
+        "segundos": 194,
+        "titulo": "IV. La Batalla de Feyiase y la Caída de Denkyira",
+        "resumen": "La protección mística en el campo de batalla y la derrota militar del rey Ntim Gyakari."
+      },
+      {
+        "tiempo": "04:14",
+        "segundos": 254,
+        "titulo": "V. Las Leyes Sagradas y el Legado Eterno",
+        "resumen": "Las setenta y siete leyes sagradas de convivencia y la partida legendaria de Anokye sin dejar tumba."
+      }
+    ],
+    "texto_relato": "A finales del siglo diecisiete, los clanes del pueblo ashanti vivían humillados bajo el tributo asfixiante de Denkyira. Cada luna, los recaudadores exigían oro en polvo, cosechas de ñame y doncellas para la corte enemiga. Entre las aldeas del bosque reinaban el miedo y la división, pero dos hombres sellaron un juramento secreto en la espesura: el estratega Osei Tutu y su más sabio consejero y vidente, Okomfo Anokye.\n\nAnokye no era un monarca secular ni un soldado ordinario, sino un sumo sacerdote de mirada ardiente, conocedor de las plantas medicinales y de los espíritus abosom. Para fijar el corazón sagrado del nuevo imperio, plantó dos esquejes de árbol kuma en lugares distantes. Uno se marchitó pronto, pero el segundo brotó con lozanía colosal. «Bajo la sombra protectora de este árbol próspero nacerá nuestra capital», profetizó el sacerdote. Así fue fundada Kumasi, la ciudad llamada a gobernar las tierras del bosque sagrado.\n\n* * *\n\nLa hora señalada para la gran alianza llegó en una asamblea solemne en Kumasi. Jefes de clan, ancianos y guerreros curtidos aguardaban con el aliento contenido. Okomfo Anokye, envuelto en vestiduras blancas de lienzo sagrado y cubierto de amuletos de latón, conchas de cauri y talismanes suman, ejecutó una danza ritual invocando a Nyame, el Creador Supremo, y a los espíritus ancestrales.\n\nEl aire se tornó espeso, cargado de ozono y presagio. Un trueno ensordecedor sacudió el firmamento al mediodía y el cielo se oscureció mientras una densa nube de polvo blanco y resplandor dorado descendía en espiral. De entre el torbellino emergió un asiento tallado de madera recubierto de oro puro, suspendido en el aire sin mano alguna que lo sostuviera: era el Sika Dwa Kofi, el Trono de Oro. Con suave majestad, el relicario descendió hasta posarse sobre las rodillas de Osei Tutu. Anokye proclamó ante la multitud que aquel asiento no pertenecía a un hombre, sino que custodiaba en su oro el sol de la nación, la salud del pueblo y el espíritu colectivo de todos los ashanti pasados, presentes y por nacer. Los clanes cayeron de hinojos conmovidos; las antiguas disputas tribales se disolvieron en un solo imperio indivisible.\n\n* * *\n\nSellada la unión espiritual, Okomfo Anokye empuñó su espada de hierro forjado, la sagrada afena con empuñadura de oro labrado, y la alzó ceremoniosamente hacia los cuatro vientos. Con ademán rotundo y vigor sobrenatural, el sacerdote clavó la pesada hoja en el suelo rocoso de Kumasi, hundiéndola firmemente hasta la empuñadura.\n\n«Esta espada es el ancla inmutable de nuestro destino», proclamó con voz de trueno. «Mientras esta hoja de hierro permanezca enterrada en Kumasi, ningún ejército extranjero, ninguna traición y ninguna calamidad logrará doblegar a la confederación ashanti. Pero si alguien lograra arrancarla, nuestro reino desaparecerá en el olvido». Desde aquel instante, el acero quedó misteriosamente soldado a la roca madre. Guerreros fornidos, recuas de bestias y, siglos después, expediciones coloniales con maquinaria pesada intentarían mover la espada sagrada sin conseguir desplazarla un solo milímetro.\n\n* * *\n\nLa respuesta del soberbio rey Ntim Gyakari de Denkyira fue inmediata: exigió la entrega del Trono de Oro y tributos duplicados. La guerra fue inevitable. En las llanuras de Feyiase, los dos ejércitos colisionaron con violencia atronadora entre el fango y la pólvora de los mosquetes.\n\nOkomfo Anokye no combatía en vanguardia, sino en el plano invisible. Apostado en lo alto de una colina sagrada, agitaba su espantamoscas ritual de crin de caballo y recitaba conjuros ancestrales que sembraban la confusión y el pánico en las filas enemigas. La tradición oral asegura que las balas disparadas contra los hombres de Osei Tutu se transformaban en rocío o eran atrapadas en el aire por las manos desnudas del sacerdote. Enardecidos por la presencia de su guía y la bendición del Trono de Oro, los guerreros ashanti barrieron las líneas invasoras. El propio Ntim Gyakari pereció en combate y el yugo opresor fue quebrado para siempre. De aquel triunfo emergió el Imperio Ashanti como potencia indiscutible.\n\n* * *\n\nTras la victoria, Okomfo Anokye rehusó riquezas personales. Se consagró a redactar setenta y siete leyes fundamentales que estructuraron la justicia comunitaria, el comercio del oro y el respeto a la diosa tierra Asase Yaa.\n\nAños después, presintiendo el fin de su ciclo terrenal, anunció a su pueblo que marcharía a la espesura para buscar una medicina que erradicara a la Muerte y vencerla definitivamente. Ordenó con severidad que nadie guardara luto ni tocara tambores fúnebres durante su trance en la choza sagrada. Pasaron siete días y, presas de la angustia, los familiares rompieron el juramento entonando lamentos de duelo. Al abrir las puertas, la estancia estaba completamente vacía: Okomfo Anokye se había esfumado en el viento, trascendiendo hacia la compañía eterna de los dioses.\n\nHoy, en el patio sagrado de Kumasi, la espada legendaria sigue clavada en la roca como testimonio impertérrito. Y cada vez que los tambores atumpan resuenan en los grandes festivales, se recuerda al sacerdote visionario que descolgó un trono de las nubes y forjó con fe inquebrantable el alma eterna de su pueblo."
+  },
+  {
     "id": "M0014",
     "slug": "odomankoma",
     "nombre": "Odomankoma",
