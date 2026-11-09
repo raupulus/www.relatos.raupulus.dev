@@ -1,5 +1,154 @@
 [
   {
+    "id": "0055",
+    "slug": "el-vecino-que-llevaba-muerto-tres-anos",
+    "pagina_url": "relatos/0055-el-vecino-que-llevaba-muerto-tres-anos.html",
+    "titulo": "El vecino que llevaba muerto tres años",
+    "sinopsis": "Álvaro se muda a una finca señorial de Madrid y entabla trato con Marcelo, un vecino del descansillo llamativamente servicial que parece conocer de antemano todos sus hábitos. El hallazgo accidental de una esquela mortuoria fechada tres años atrás revela que Marcelo falleció en esa misma vivienda antes de su llegada. Al comprobar que la puerta vecina lleva años sellada por orden judicial y que el hombre reaparece idéntico en grabaciones antiguas, Álvaro penetra en el piso clausurado para descubrir un horror insólito: el vecino no es un fantasma atrapado entre cuatro paredes, sino una entidad que drena las vidas ajenas para ocupar su lugar en el mundo exterior.",
+    "categoria": "suspense",
+    "categoria_nombre": "Suspense",
+    "generos": [
+      "- Suspense"
+    ],
+    "palabras": 1929,
+    "lectura_min": 9,
+    "duracion_audio": "12:26",
+    "duracion_segundos": 746.33,
+    "youtube_id": "uN4Z2_85nqU",
+    "youtube_url": "https://www.youtube.com/watch?v=uN4Z2_85nqU",
+    "portada": "assets/images/portadas/0055-el-vecino-que-llevaba-muerto-tres-anos.webp",
+    "personajes": [
+      {
+        "id": "0055-p1",
+        "nombre": "Álvaro Beltrán",
+        "rol": "Protagonista; ilustrador técnico y documentalista visual atrapado en la usurpación de su propia vida.",
+        "rasgos": "Veintiocho años de edad. Complexión delgada, estatura media (un metro y setenta y seis centímetros). Cabello castaño oscuro corto ligeramente revuelto, ojos pardos expresivos y barba corta bien perfilada. Viste cazadora de lona verde oliva con forro de borreguillo claro sobre jersey azul marino de cuello vuelto y vaqueros oscuros. Convive con su perra Gala, una podenca dócil de pelaje canela.",
+        "motivacion": "Demostrar que el habitante del cuarto B no puede existir y preservar su identidad antes de ser borrado del recuerdo de sus seres queridos.",
+        "conflicto": "Lucha contra una suplantación invisible que hace que sus propios amigos y familiares reconozcan al impostor fuera del portal.",
+        "avatar_cabeza": "assets/images/avatars/0055-personaje-01-alvaro-beltran-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0055-personaje-01-alvaro-beltran-cuerpo.webp"
+      },
+      {
+        "id": "0055-p2",
+        "nombre": "Marcelo Varela",
+        "rol": "Antagonista; el inquilino espectral del cuarto piso, un hombre inmutable que usurpa identidades para salir a la calle.",
+        "rasgos": "Cincuenta y cuatro años de edad inmutables. Estatura sólida (un metro y ochenta centímetros), porte erguido y ademanes parsimoniosos. Rostro pulcro y afeitado, piel cerúlea sin arrugas, ojos grises acuosos que parpadean con lentitud forzada y cabello entrecano peinado hacia atrás con raya a la izquierda. Viste invariablemente una rebeca abotonada de lana gris ceniza sobre camisa blanca sin corbata y pantalón de franela marengo.",
+        "motivacion": "Mimetizarse con los inquilinos que habitan en el descansillo para adueñarse de sus nombres, círculos sociales y rutinas fuera de la finca.",
+        "conflicto": "No puede abandonar el perímetro del edificio por sí mismo hasta consolidar la transferencia de la identidad de su víctima.",
+        "avatar_cabeza": "assets/images/avatars/0055-personaje-02-marcelo-varela-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0055-personaje-02-marcelo-varela-cuerpo.webp"
+      },
+      {
+        "id": "0055-p3",
+        "nombre": "Carmela Sotomayor",
+        "rol": "Conserje de la finca; testigo involuntario de las anomalías históricas del edificio.",
+        "rasgos": "Sesenta y ocho años de edad. Estatura baja, espalda cargada por los años de servicio. Cabello canoso teñido de castaño claro sujeto con una horquilla de carey. Ojos suspicaces tras gafas de montura marrón colgadas de un cordel al cuello. Viste bata azul marino de tergal con amplios bolsillos donde tintinea un pesado manojo de llaves maestras.",
+        "motivacion": "Preservar la tranquilidad de la comunidad de vecinos y evitar escándalos o desvalorizaciones en la finca.",
+        "conflicto": "Recuerda la muerte de Marcelo y la huida de antiguos arrendatarios, pero prefiere aferrarse a la burocracia para no perder el juicio.",
+        "avatar_cabeza": "assets/images/avatars/0055-personaje-03-carmela-sotomayor-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0055-personaje-03-carmela-sotomayor-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "El vecino servicial",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 00:00."
+      },
+      {
+        "tiempo": "01:50",
+        "segundos": 110,
+        "titulo": "La esquela de hace tres años",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 01:50."
+      },
+      {
+        "tiempo": "03:40",
+        "segundos": 220,
+        "titulo": "La puerta precintada",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 03:40."
+      },
+      {
+        "tiempo": "06:25",
+        "segundos": 385,
+        "titulo": "Las cintas de seguridad",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 06:25."
+      },
+      {
+        "tiempo": "07:55",
+        "segundos": 475,
+        "titulo": "El interior del cuarto B",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 07:55."
+      },
+      {
+        "tiempo": "09:28",
+        "segundos": 568,
+        "titulo": "La suplantación",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 09:28."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0055-003-gala-podenca-tumbada-alfombra-orejas-erguidas.webp",
+        "caption": "Ilustración de escena: Gala podenca tumbada alfombra orejas erguidas",
+        "alt": "Escena oficial de El vecino que llevaba muerto tres años — Gala podenca tumbada alfombra orejas erguidas"
+      },
+      {
+        "src": "assets/images/escenas/0055-020-fecha-esquela-noviembre-2023.webp",
+        "caption": "Ilustración de escena: Fecha esquela noviembre 2023",
+        "alt": "Escena oficial de El vecino que llevaba muerto tres años — Fecha esquela noviembre 2023"
+      },
+      {
+        "src": "assets/images/escenas/0055-038-pasos-grifos-respiracion-muro.webp",
+        "caption": "Ilustración de escena: Pasos grifos respiracion muro",
+        "alt": "Escena oficial de El vecino que llevaba muerto tres años — Pasos grifos respiracion muro"
+      },
+      {
+        "src": "assets/images/escenas/0055-055-llaves-repuesto-cartera-alvaro.webp",
+        "caption": "Ilustración de escena: Llaves repuesto cartera alvaro",
+        "alt": "Escena oficial de El vecino que llevaba muerto tres años — Llaves repuesto cartera alvaro"
+      },
+      {
+        "src": "assets/images/escenas/0055-072-luces-apagan-alvaro-penumbra-clausura.webp",
+        "caption": "Ilustración de escena: Luces apagan alvaro penumbra clausura",
+        "alt": "Escena oficial de El vecino que llevaba muerto tres años — Luces apagan alvaro penumbra clausura"
+      }
+    ],
+    "relato_raw": "El cerrojo emitió un chasquido áspero al encajar en el marco. Álvaro apoyó la última caja en el suelo de madera y se secó el sudor de la frente. Por los ventanales del cuarto piso entraba la luz plomiza de la tarde otoñal sobre los plátanos de sombra de la calle Raimundo Lulio. Gala, su podenca canela, dio dos vueltas sobre la alfombra y se tumbó con un resoplido hondo, las orejas erguidas hacia el descansillo.\n\nEl leve tintineo de unas llaves interrumpió el silencio. La puerta vecina se entreabrió despacio, sin el menor crujido. Un hombre de unos cincuenta y cuatro años, con el pelo entrecano peinado hacia atrás y una rebeca de lana gris ceniza, se asomó sosteniendo una caja de galletas de hojalata.\n\n—Buenas tardes, vecino —dijo el hombre con voz serena y pausada—. Disculpe el atrevimiento. Soy Marcelo, del cuarto B. He visto subir las cajas y he pensado que un poco de azúcar le vendría bien tras el esfuerzo.\n\nÁlvaro sonrió con timidez, agradeciendo el detalle.\n\n—Muchas gracias, don Marcelo. Soy Álvaro. Me he mudado hoy mismo; aún busco la cafetera.\n\n—Lo sé bien, las mudanzas son agotadoras —repuso Marcelo con calma—. Pero la finca es tranquila. Por cierto, qué estampa tan noble tiene Gala. A los podencos les sientan bien los paseos largos por Olavide para calmar el nervio.\n\nÁlvaro pestañeó desconcertado. En ningún momento de la tarde había pronunciado el nombre de la perra en alto. Antes de que pudiera formular la pregunta, el hombre le entregó la lata con una leve inclinación de cabeza y cerró su puerta sin hacer el menor ruido.\n\n* * *\n\nDurante los primeros días, las atenciones de Marcelo Varela se repitieron con una precisión asombrosa. Cada mañana, al sacar a Gala, la puerta de enfrente se abría en el segundo exacto en que Álvaro tocaba el picaporte. El vecino compartía el ascensor charlando con sobria cortesía sobre el barrio. Cuando una fuga en el sifón de la cocina inundó el bajo del fregadero, Marcelo apareció en el rellano antes de que Álvaro saliera a pedir ayuda, ofreciéndole una llave inglesa del doce envuelta en cinta roja.\n\n—Las tuercas de plomo de estos desagües se aflojan con los cambios de presión del invierno —explicó con voz neutra—. Media vuelta a derechas y quedará estanco.\n\nÁlvaro tomó la herramienta, turbado por la mirada gris y fija del hombre. Aquella constante anticipación, que al inicio atribuyó a la rutina de un jubilado atento, empezaba a despertar en su estómago una fría incomodidad.\n\nEl martes por la noche, al revisar la correspondencia en el vestíbulo, halló entre los folletos comerciales un sobre alargado de papel amarillento, sin franqueo ni remite, con la palabra *Comunidad* mecanografiada.\n\nSubió al piso y rasgó el borde junto a la mesa del salón. Dentro había un recorte de prensa plastificado de las páginas necrológicas de un diario madrileño. Bajo la cabecera solemne de la esquela figuraba la fotografía nítida de Marcelo Varela: la misma rebeca gris, la raya impecable al lado izquierdo y su media sonrisa fría.\n\nEl texto inferior no dejaba margen a dudas: *«Don Marcelo Varela Escudero. Falleció en su domicilio del cuarto piso B, a los cincuenta y cuatro años de edad. Sus herederos y amigos ruegan una oración por su alma. Madrid, doce de noviembre de dos mil veintitrés»*.\n\nÁlvaro releyó la fecha tres veces. El recorte tenía tres años exactos.\n\n* * *\n\nAmaneció con una niebla espesa que borraba las cornisas de la calle. Álvaro bajó por la escalera con el recorte en el bolsillo de su cazadora verde. En el portal encontró a Carmela, la conserje, barriendo el granito con movimientos mecánicos.\n\n—Carmela, disculpe —dijo Álvaro con voz tensa—. Quería preguntarle por el vecino del cuarto B. Marcelo.\n\nLa escoba se detuvo en seco. Carmela levantó la cabeza despacio, mirándolo por encima de sus gafas marrones con recelo creciente.\n\n—¿Qué clase de broma es esta, señor Beltrán? Ya le advertí que en la cuarta planta está usted solo.\n\n—No es una broma —replicó Álvaro extendiendo el recorte plastificado—. He hablado con él varias veces. Me dio galletas, me prestó esta llave y sabe cómo se llama mi perra. Vive enfrente.\n\nCarmela miró la fotografía y palideció de golpe. Se frotó las manos en el delantal azul y bajó la voz, mirando con aprensión hacia la escalera.\n\n—Guarde eso. Don Marcelo murió hace tres años en ese salón. Lo halló la policía municipal tras las quejas de los vecinos por el olor. No tenía parientes y el piso está embargado en litigio judicial. La puerta sigue precintada desde entonces. Nadie ha vuelto a pisar esa casa.\n\n—Le aseguro que la puerta se abre —insistió Álvaro, sintiendo un nudo en la garganta—. He hablado con él en el descansillo.\n\nCarmela lo tomó del brazo con dedos huesudos.\n\n—Subamos ahora mismo. Verá que está confundido.\n\nTomaron el ascensor en silencio. Al salir a la cuarta planta, la mujer señaló la puerta de enfrente.\n\nÁlvaro se quedó sin aliento.\n\nLa puerta del cuarto B estaba clausurada. Cruzando el marco colgaba una cinta blanca de precinto judicial, cubierta por una densa capa de polvo gris. La cerradura exhibía dos sellos de cera roja intactos del juzgado de instrucción. Los folletos publicitarios se acumulaban secos y aplastados contra la madera.\n\n—¿Lo ve? —susurró Carmela con voz entrecortada—. Nadie ha tocado este pomo en tres inviernos. Si sigue oyendo cosas, señor Beltrán, márchese de aquí. Como hicieron los otros.\n\nLa conserje bajó apresurada. Álvaro se quedó solo en el rellano. Con el corazón desbocado, apoyó la oreja contra la madera precintada del cuarto B.\n\nAl otro lado del tabique, a escasos centímetros de su rostro, sonó el roce inconfundible de una silla al deslizarse sobre el parqué y el tintineo de una taza sobre un platillo de porcelana.\n\n* * *\n\nDurante las noches siguientes, el piso clausurado no guardó silencio. Encerrado en su salón, con Gala gimiendo inquieta a sus pies, Álvaro escuchaba pasos sobre las tablas, el rumor de grifos abriéndose a deshoras y una respiración honda y pesada que parecíacompasarse con la suya al otro lado del muro.\n\nAl mediodía siguiente, aprovechando que la conserje salía a comprar, Álvaro bajó al sótano donde se custodiaba el monitor del circuito cerrado de vigilancia instalado en dos mil diez. Accedió a las grabaciones archivadas en el disco duro con dedos febriles.\n\nEn el vídeo de la madrugada anterior, a las tres y diecisiete, la cámara del portal registraba la puerta de la calle abriéndose desde el interior. Una figura con cazadora de lona verde y bufanda oscura salía al exterior con paso elástico. Álvaro pegó la cara a la pantalla: la persona del vídeo vestía su propia ropa.\n\nBuscó en las grabaciones de años atrás. En un archivo de dos mil quince, la cámara captaba a Marcelo Varela saliendo al patio con su rebeca gris, idéntico en edad, rostro y ademanes. Consultó entonces el cuaderno de altas de la comunidad: el anterior inquilino del cuarto A, Javier Romero, se había marchado precipitadamente en dos mil veintidós, dejando una nota confusa en la que afirmaba que desconocidos en la calle le hablaban como si fuera otra persona.\n\nEl cuarto B no albergaba una aparición inofensiva. Era un cepo paciente que vaciaba a los arrendatarios de enfrente para ocupar su existencia en el mundo exterior.\n\n* * *\n\nCon una palanqueta y una linterna, Álvaro subió al descansillo decidido a encarar el misterio. Se acercó a la puerta del cuarto B y tocó la cinta del juzgado. El papel sellado estaba cortado limpiamente por detrás con una hoja de afeitar: la banda simulaba estar intacta, pero el pestillo no trababa.\n\nEmpujó la hoja, que cedió con un chasquido sordo.\n\nEl interior olía a alcanfor rancio, cera vieja y papel químico. El haz de la linterna cortó las tinieblas de un salón vacío de muebles ordinarios. Las paredes desnudas estaban tapizadas por cientos de fotografías pegadas con alfileres.\n\nÁlvaro avanzó petrificado.\n\nEran instantáneas de distintas décadas: retratos en blanco y negro de los años setenta, polaroids desgastadas y copias digitales recientes. En todas aparecían antiguos vecinos de la finca en terrazas, portales o meriendas familiares. Y en el margen de cada foto, camuflado entre la multitud o reflejado en un escaparate, asomaba siempre Marcelo Varela, observando con su mirada fría y su sonrisa glacial.\n\nEn el centro de la estancia había una mesa camilla con una polaroid reciente.\n\nÁlvaro enfocó la luz sobre el papel.\n\nLa imagen lo retrataba a él, durmiendo en su propia cama con la sábana al pecho y Gala a sus pies. La fotografía había sido tomada desde el interior de su dormitorio esa misma madrugada. Junto a la foto descansaban las llaves de repuesto que creyó perder el primer día de mudanza y su cartera vieja con sus tarjetas de visita.\n\n* * *\n\nUn crujido a su espalda lo hizo girar en redondo.\n\nEn el umbral se recortaba Marcelo Varela. Pero no llevaba su rebeca de lana. Vestía la cazadora verde oliva de Álvaro, sus vaqueros y sus zapatillas. Su postura había mutado: imitaba con pasmosa exactitud el balanceo de hombros de Álvaro al caminar.\n\n—No debiste entrar, muchacho —dijo la figura con una voz que ya no era grave, sino que reproducía el timbre exacto de Álvaro—. Las transiciones requieren calma. Cuando te resistes, el encaje duele más.\n\n—¿Quién eres? —gritó Álvaro alzando la palanqueta con brazos temblorosos—. ¡Sal de aquí! ¡Voy a llamar a la policía!\n\nEl hombre ladeó la cabeza con lástima gélida.\n\n—La policía no atiende a quienes ya no constan en el registro, Álvaro. Esta casa necesita a alguien adentro para sostener el peso de la memoria. Yo cumplí mi turno durante muchos años; ahora te toca a ti descansar al otro lado del tabique.\n\nÁlvaro se abalanzó hacia el descansillo. El hombre se apartó con suavidad, dejándolo pasar. Álvaro entró en su piso y echó los tres cerrojos con desesperación.\n\nGala no ladró. Sentada en el pasillo, miraba hacia la puerta cerrada con el rabo moviéndose en una bienvenida dócil, reconociendo los pasos del dueño que acababa de marcharse escaleras abajo.\n\nCon los dedos rígidos, Álvaro sacó el móvil y llamó a Mario, su socio y mejor amigo. La llamada conectó al segundo tono.\n\n—¿Mario? —jadeó Álvaro contra la madera blindada—. Mario, ven a buscarme. Hay alguien en mi edificio con mis llaves y mi ropa...\n\nAl otro lado de la línea sonó el murmullo de una cafetería y una risa franca.\n\n—Venga, Álvaro, déjate de bromas —respondió Mario con humor—. ¿Cómo vas a estar en casa si acabamos de pedir un par de cañas en la terraza de Fuencarral? Siéntate ya, que se enfría la tortilla.\n\n—¿De qué hablas? —gritó Álvaro con la garganta rota—. ¡Estoy en mi piso!\n\n—Mírate, si estás cruzando el semáforo ahora mismo —dijo Mario con naturalidad—. Llevas la cazadora verde de la mudanza. Venga, apura.\n\nLa línea se cortó.\n\nÁlvaro corrió hacia el ventanal del salón y apartó el visillo con manos trémulas.\n\nAbajo, bajo la lluvia incipiente, un joven con cazadora verde oliva caminaba hacia la plaza de Olavide con paso firme. Al llegar a la esquina, la figura se detuvo un instante, alzó la vista hacia el cuarto piso y despidió con la mano en un saludo sereno y definitivo.\n\nEn el descansillo exterior, al otro lado de la puerta, sonó el chasquido del precinto judicial cerrándose sobre el marco. Las luces de la escalera se apagaron y un frío con aroma a cera vieja se filtró por las rendijas del suelo, envolviendo a Álvaro en la penumbra del apartamento clausurado.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El cerrojo emitió un chasquido áspero al encajar en el marco. Álvaro apoyó la última caja en el suelo de madera y se secó el sudor de la frente. Por los ventanales del cuarto piso entraba la luz plomiza de la tarde otoñal sobre los plátanos de sombra de la calle Raimundo Lulio. Gala, su podenca canela, dio dos vueltas sobre la alfombra y se tumbó con un resoplido hondo, las orejas erguidas hacia el descansillo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El leve tintineo de unas llaves interrumpió el silencio. La puerta vecina se entreabrió despacio, sin el menor crujido. Un hombre de unos cincuenta y cuatro años, con el pelo entrecano peinado hacia atrás y una rebeca de lana gris ceniza, se asomó sosteniendo una caja de galletas de hojalata.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Buenas tardes, vecino —dijo el hombre con voz serena y pausada—. Disculpe el atrevimiento. Soy Marcelo, del cuarto B. He visto subir las cajas y he pensado que un poco de azúcar le vendría bien tras el esfuerzo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Álvaro sonrió con timidez, agradeciendo el detalle.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Muchas gracias, don Marcelo. Soy Álvaro. Me he mudado hoy mismo; aún busco la cafetera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Lo sé bien, las mudanzas son agotadoras —repuso Marcelo con calma—. Pero la finca es tranquila. Por cierto, qué estampa tan noble tiene Gala. A los podencos les sientan bien los paseos largos por Olavide para calmar el nervio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Álvaro pestañeó desconcertado. En ningún momento de la tarde había pronunciado el nombre de la perra en alto. Antes de que pudiera formular la pregunta, el hombre le entregó la lata con una leve inclinación de cabeza y cerró su puerta sin hacer el menor ruido.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Durante los primeros días, las atenciones de Marcelo Varela se repitieron con una precisión asombrosa. Cada mañana, al sacar a Gala, la puerta de enfrente se abría en el segundo exacto en que Álvaro tocaba el picaporte. El vecino compartía el ascensor charlando con sobria cortesía sobre el barrio. Cuando una fuga en el sifón de la cocina inundó el bajo del fregadero, Marcelo apareció en el rellano antes de que Álvaro saliera a pedir ayuda, ofreciéndole una llave inglesa del doce envuelta en cinta roja.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Las tuercas de plomo de estos desagües se aflojan con los cambios de presión del invierno —explicó con voz neutra—. Media vuelta a derechas y quedará estanco.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Álvaro tomó la herramienta, turbado por la mirada gris y fija del hombre. Aquella constante anticipación, que al inicio atribuyó a la rutina de un jubilado atento, empezaba a despertar en su estómago una fría incomodidad.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0055-003-gala-podenca-tumbada-alfombra-orejas-erguidas.webp\" alt=\"Escena oficial de El vecino que llevaba muerto tres años — Gala podenca tumbada alfombra orejas erguidas\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Gala podenca tumbada alfombra orejas erguidas</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El martes por la noche, al revisar la correspondencia en el vestíbulo, halló entre los folletos comerciales un sobre alargado de papel amarillento, sin franqueo ni remite, con la palabra *Comunidad* mecanografiada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Subió al piso y rasgó el borde junto a la mesa del salón. Dentro había un recorte de prensa plastificado de las páginas necrológicas de un diario madrileño. Bajo la cabecera solemne de la esquela figuraba la fotografía nítida de Marcelo Varela: la misma rebeca gris, la raya impecable al lado izquierdo y su media sonrisa fría.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El texto inferior no dejaba margen a dudas: *«Don Marcelo Varela Escudero. Falleció en su domicilio del cuarto piso B, a los cincuenta y cuatro años de edad. Sus herederos y amigos ruegan una oración por su alma. Madrid, doce de noviembre de dos mil veintitrés»*.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Álvaro releyó la fecha tres veces. El recorte tenía tres años exactos.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Amaneció con una niebla espesa que borraba las cornisas de la calle. Álvaro bajó por la escalera con el recorte en el bolsillo de su cazadora verde. En el portal encontró a Carmela, la conserje, barriendo el granito con movimientos mecánicos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Carmela, disculpe —dijo Álvaro con voz tensa—. Quería preguntarle por el vecino del cuarto B. Marcelo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La escoba se detuvo en seco. Carmela levantó la cabeza despacio, mirándolo por encima de sus gafas marrones con recelo creciente.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Qué clase de broma es esta, señor Beltrán? Ya le advertí que en la cuarta planta está usted solo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No es una broma —replicó Álvaro extendiendo el recorte plastificado—. He hablado con él varias veces. Me dio galletas, me prestó esta llave y sabe cómo se llama mi perra. Vive enfrente.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmela miró la fotografía y palideció de golpe. Se frotó las manos en el delantal azul y bajó la voz, mirando con aprensión hacia la escalera.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0055-020-fecha-esquela-noviembre-2023.webp\" alt=\"Escena oficial de El vecino que llevaba muerto tres años — Fecha esquela noviembre 2023\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Fecha esquela noviembre 2023</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Guarde eso. Don Marcelo murió hace tres años en ese salón. Lo halló la policía municipal tras las quejas de los vecinos por el olor. No tenía parientes y el piso está embargado en litigio judicial. La puerta sigue precintada desde entonces. Nadie ha vuelto a pisar esa casa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Le aseguro que la puerta se abre —insistió Álvaro, sintiendo un nudo en la garganta—. He hablado con él en el descansillo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmela lo tomó del brazo con dedos huesudos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Subamos ahora mismo. Verá que está confundido.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Tomaron el ascensor en silencio. Al salir a la cuarta planta, la mujer señaló la puerta de enfrente.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Álvaro se quedó sin aliento.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La puerta del cuarto B estaba clausurada. Cruzando el marco colgaba una cinta blanca de precinto judicial, cubierta por una densa capa de polvo gris. La cerradura exhibía dos sellos de cera roja intactos del juzgado de instrucción. Los folletos publicitarios se acumulaban secos y aplastados contra la madera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Lo ve? —susurró Carmela con voz entrecortada—. Nadie ha tocado este pomo en tres inviernos. Si sigue oyendo cosas, señor Beltrán, márchese de aquí. Como hicieron los otros.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La conserje bajó apresurada. Álvaro se quedó solo en el rellano. Con el corazón desbocado, apoyó la oreja contra la madera precintada del cuarto B.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al otro lado del tabique, a escasos centímetros de su rostro, sonó el roce inconfundible de una silla al deslizarse sobre el parqué y el tintineo de una taza sobre un platillo de porcelana.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0055-038-pasos-grifos-respiracion-muro.webp\" alt=\"Escena oficial de El vecino que llevaba muerto tres años — Pasos grifos respiracion muro\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Pasos grifos respiracion muro</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Durante las noches siguientes, el piso clausurado no guardó silencio. Encerrado en su salón, con Gala gimiendo inquieta a sus pies, Álvaro escuchaba pasos sobre las tablas, el rumor de grifos abriéndose a deshoras y una respiración honda y pesada que parecíacompasarse con la suya al otro lado del muro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al mediodía siguiente, aprovechando que la conserje salía a comprar, Álvaro bajó al sótano donde se custodiaba el monitor del circuito cerrado de vigilancia instalado en dos mil diez. Accedió a las grabaciones archivadas en el disco duro con dedos febriles.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el vídeo de la madrugada anterior, a las tres y diecisiete, la cámara del portal registraba la puerta de la calle abriéndose desde el interior. Una figura con cazadora de lona verde y bufanda oscura salía al exterior con paso elástico. Álvaro pegó la cara a la pantalla: la persona del vídeo vestía su propia ropa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Buscó en las grabaciones de años atrás. En un archivo de dos mil quince, la cámara captaba a Marcelo Varela saliendo al patio con su rebeca gris, idéntico en edad, rostro y ademanes. Consultó entonces el cuaderno de altas de la comunidad: el anterior inquilino del cuarto A, Javier Romero, se había marchado precipitadamente en dos mil veintidós, dejando una nota confusa en la que afirmaba que desconocidos en la calle le hablaban como si fuera otra persona.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El cuarto B no albergaba una aparición inofensiva. Era un cepo paciente que vaciaba a los arrendatarios de enfrente para ocupar su existencia en el mundo exterior.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Con una palanqueta y una linterna, Álvaro subió al descansillo decidido a encarar el misterio. Se acercó a la puerta del cuarto B y tocó la cinta del juzgado. El papel sellado estaba cortado limpiamente por detrás con una hoja de afeitar: la banda simulaba estar intacta, pero el pestillo no trababa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Empujó la hoja, que cedió con un chasquido sordo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El interior olía a alcanfor rancio, cera vieja y papel químico. El haz de la linterna cortó las tinieblas de un salón vacío de muebles ordinarios. Las paredes desnudas estaban tapizadas por cientos de fotografías pegadas con alfileres.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Álvaro avanzó petrificado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Eran instantáneas de distintas décadas: retratos en blanco y negro de los años setenta, polaroids desgastadas y copias digitales recientes. En todas aparecían antiguos vecinos de la finca en terrazas, portales o meriendas familiares. Y en el margen de cada foto, camuflado entre la multitud o reflejado en un escaparate, asomaba siempre Marcelo Varela, observando con su mirada fría y su sonrisa glacial.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0055-055-llaves-repuesto-cartera-alvaro.webp\" alt=\"Escena oficial de El vecino que llevaba muerto tres años — Llaves repuesto cartera alvaro\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Llaves repuesto cartera alvaro</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el centro de la estancia había una mesa camilla con una polaroid reciente.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Álvaro enfocó la luz sobre el papel.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La imagen lo retrataba a él, durmiendo en su propia cama con la sábana al pecho y Gala a sus pies. La fotografía había sido tomada desde el interior de su dormitorio esa misma madrugada. Junto a la foto descansaban las llaves de repuesto que creyó perder el primer día de mudanza y su cartera vieja con sus tarjetas de visita.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Un crujido a su espalda lo hizo girar en redondo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el umbral se recortaba Marcelo Varela. Pero no llevaba su rebeca de lana. Vestía la cazadora verde oliva de Álvaro, sus vaqueros y sus zapatillas. Su postura había mutado: imitaba con pasmosa exactitud el balanceo de hombros de Álvaro al caminar.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No debiste entrar, muchacho —dijo la figura con una voz que ya no era grave, sino que reproducía el timbre exacto de Álvaro—. Las transiciones requieren calma. Cuando te resistes, el encaje duele más.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Quién eres? —gritó Álvaro alzando la palanqueta con brazos temblorosos—. ¡Sal de aquí! ¡Voy a llamar a la policía!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El hombre ladeó la cabeza con lástima gélida.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—La policía no atiende a quienes ya no constan en el registro, Álvaro. Esta casa necesita a alguien adentro para sostener el peso de la memoria. Yo cumplí mi turno durante muchos años; ahora te toca a ti descansar al otro lado del tabique.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Álvaro se abalanzó hacia el descansillo. El hombre se apartó con suavidad, dejándolo pasar. Álvaro entró en su piso y echó los tres cerrojos con desesperación.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0055-072-luces-apagan-alvaro-penumbra-clausura.webp\" alt=\"Escena oficial de El vecino que llevaba muerto tres años — Luces apagan alvaro penumbra clausura\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Luces apagan alvaro penumbra clausura</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Gala no ladró. Sentada en el pasillo, miraba hacia la puerta cerrada con el rabo moviéndose en una bienvenida dócil, reconociendo los pasos del dueño que acababa de marcharse escaleras abajo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Con los dedos rígidos, Álvaro sacó el móvil y llamó a Mario, su socio y mejor amigo. La llamada conectó al segundo tono.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿Mario? —jadeó Álvaro contra la madera blindada—. Mario, ven a buscarme. Hay alguien en mi edificio con mis llaves y mi ropa...</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al otro lado de la línea sonó el murmullo de una cafetería y una risa franca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Venga, Álvaro, déjate de bromas —respondió Mario con humor—. ¿Cómo vas a estar en casa si acabamos de pedir un par de cañas en la terraza de Fuencarral? Siéntate ya, que se enfría la tortilla.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¿De qué hablas? —gritó Álvaro con la garganta rota—. ¡Estoy en mi piso!</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Mírate, si estás cruzando el semáforo ahora mismo —dijo Mario con naturalidad—. Llevas la cazadora verde de la mudanza. Venga, apura.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La línea se cortó.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Álvaro corrió hacia el ventanal del salón y apartó el visillo con manos trémulas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Abajo, bajo la lluvia incipiente, un joven con cazadora verde oliva caminaba hacia la plaza de Olavide con paso firme. Al llegar a la esquina, la figura se detuvo un instante, alzó la vista hacia el cuarto piso y despidió con la mano en un saludo sereno y definitivo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el descansillo exterior, al otro lado de la puerta, sonó el chasquido del precinto judicial cerrándose sobre el marco. Las luces de la escalera se apagaron y un frío con aroma a cera vieja se filtró por las rendijas del suelo, envolviendo a Álvaro en la penumbra del apartamento clausurado.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false,
+    "fecha_publicacion": null,
+    "fecha_publicacion_ts": null
+  },
+  {
     "id": "0054",
     "slug": "el-filtro-que-no-se-podia-quitar",
     "pagina_url": "relatos/0054-el-filtro-que-no-se-podia-quitar.html",
@@ -592,7 +741,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-19T20:00:00+01:00",
     "fecha_publicacion_ts": 1795114800
@@ -743,7 +892,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-18T20:00:00+01:00",
     "fecha_publicacion_ts": 1795028400
@@ -900,7 +1049,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-16T20:00:00+01:00",
     "fecha_publicacion_ts": 1794855600
@@ -1051,7 +1200,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-17T20:00:00+01:00",
     "fecha_publicacion_ts": 1794942000
@@ -1208,7 +1357,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-15T20:00:00+01:00",
     "fecha_publicacion_ts": 1794769200
@@ -1522,7 +1671,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-14T20:00:00+01:00",
     "fecha_publicacion_ts": 1794682800
@@ -1663,8 +1812,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-11-05T20:00:00+01:00",
     "fecha_publicacion_ts": 1793905200
   },
@@ -1826,7 +1975,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-12T20:00:00+01:00",
     "fecha_publicacion_ts": 1794510000
@@ -2146,8 +2295,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-11-07T20:00:00+01:00",
     "fecha_publicacion_ts": 1794078000
   },
@@ -2296,7 +2445,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-11T20:00:00+01:00",
     "fecha_publicacion_ts": 1794423600
@@ -2768,7 +2917,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-13T20:00:00+01:00",
     "fecha_publicacion_ts": 1794596400
@@ -2930,7 +3079,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-10T20:00:00+01:00",
     "fecha_publicacion_ts": 1794337200
@@ -3087,7 +3236,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-09T20:00:00+01:00",
     "fecha_publicacion_ts": 1794250800
@@ -3242,8 +3391,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-11-08T20:00:00+01:00",
     "fecha_publicacion_ts": 1794164400
   },
@@ -3699,8 +3848,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-11-06T20:00:00+01:00",
     "fecha_publicacion_ts": 1793991600
   },
