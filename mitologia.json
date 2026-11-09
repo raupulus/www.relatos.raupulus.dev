@@ -1,5 +1,105 @@
 [
   {
+    "id": "M0016",
+    "slug": "sasabonsam",
+    "nombre": "Sasabonsam",
+    "epiteto": "El Monstruo Vampírico de las Ceibas y el Terror Alado del Bosque Profundo",
+    "titulo_completo": "Sasabonsam: El Monstruo Vampírico de las Ceibas Sagradas ⚡ Deidades y Espíritus (Mitología Ashanti y Akan)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Deidades y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 839,
+    "duracion_video": "05:19",
+    "duracion_audio": "05:19",
+    "duracion_short": "00:48",
+    "sinopsis": "En las tradiciones orales y las advertencias ancestrales de los pueblos akan y ashanti de Ghana y Costa de Marfil, Sasabonsam es el monstruo vampírico más temido del dosel arbóreo. Oculto entre el denso ramaje de las ceibas sagradas (onyina), esta colosal criatura humanoide posee pelaje rojizo, alas membranosas de murciélago, dientes de hierro puro y pies con garras ganchudas con las que se cuelga boca abajo para capturar en silencio a cazadores y leñadores solitarios. Su figura encarna los peligros implacables de la selva virgen y la noche, recordando que el bosque conserva secretos prohibidos para los mortales imprudentes.",
+    "youtube_id": "nBzVIrqeE58",
+    "youtube_short_id": "fiBb6-KdXck",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=nBzVIrqeE58",
+    "youtube_short_url": "https://www.youtube.com/shorts/fiBb6-KdXck",
+    "portada": "assets/images/portadas/M0016-sasabonsam.webp",
+    "pagina_url": "mitologia/M0016-sasabonsam.html",
+    "personajes": [
+      {
+        "nombre": "Sasabonsam",
+        "rol": "Monstruo Vampírico y Terror Alado del Dosel",
+        "rasgos": "Criatura humanoide colosal de 2,60 metros de altura con pelaje rojizo cobrizo espeso, rostro demoníaco-simiesco y ojos saltones que brillan como brasas incandescentes. Posee alas membranosas de murciélago gigante de más de 3,5 metros de envergadura, fauces cavernarias con afilados colmillos de hierro meteorítico oscuro y pies invertidos con garras curvadas hacia atrás para colgarse de las ramas maestras de las ceibas sagradas.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-sasabonsam-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-sasabonsam-cuerpo.webp"
+      },
+      {
+        "nombre": "Kwame Asare",
+        "rol": "Cazador Veterano Ashanti",
+        "rasgos": "Cazador experimentado de 46 años, de complexión atlética y fibrosa, curtido por décadas de rastreo en la selva virgen. Viste paño tradicional atofo marrón y arcilla ocre con amuletos suman protectores de latón y cauris, portando arco de ceiba y antorcha de resina consagrada."
+      },
+      {
+        "nombre": "Akua Serwaa",
+        "rol": "Curandera Herbolaria Ancestral",
+        "rasgos": "Venerable sabia curandera de 65 años de la aldea ashanti, con cabello cano en trenzas tradicionales y vestiduras de algodón añil con estampados Adinkra. Custodia las fórmulas medicinales de resina y las plegarias de protección contra las sombras del dosel."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0016-006-estampa-de-pesadilla-viviente.webp",
+        "pie": "La imponente figura de Sasabonsam acechando silenciosa en la espesura del dosel arbóreo."
+      },
+      {
+        "archivo": "assets/images/escenas/M0016-010-alas-membranosas-de-murcielago-colosal.webp",
+        "pie": "El despliegue de las colosales alas coriáceas de murciélago filtrando la luz nocturna entre las ramas."
+      },
+      {
+        "archivo": "assets/images/escenas/M0016-019-sasabonsam-colgado-a-treinta-metros.webp",
+        "pie": "Sasabonsam colgado boca abajo con sus garras curvadas sobre una ceiba sagrada a treinta metros de altura."
+      },
+      {
+        "archivo": "assets/images/escenas/M0016-025-humo-aromatico-y-destello-del-fuego.webp",
+        "pie": "El resplandor sagrado de la antorcha de resina y hierbas protectoras que repele la acometida de la bestia."
+      },
+      {
+        "archivo": "assets/images/escenas/M0016-031-el-amo-eterno-del-dosel-en-la-penumbra.webp",
+        "pie": "El señor indiscutido de las copas arbóreas vigilando eternamente la inmensidad de la selva virgen."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. La Advertencia del Bosque y el Depredador del Dosel",
+        "resumen": "Las advertencias ancestrales ashanti sobre los peligros de la selva virgen y la presencia del depredador de las alturas."
+      },
+      {
+        "tiempo": "01:05",
+        "segundos": 65,
+        "titulo": "II. La Anatomía del Monstruo Alado",
+        "resumen": "La fisonomía aterradora de Sasabonsam: pelaje rojizo, colmillos de hierro puro, alas de murciélago y garras curvadas."
+      },
+      {
+        "tiempo": "02:15",
+        "segundos": 135,
+        "titulo": "III. La Emboscada en la Ceiba Sagrada",
+        "resumen": "El descenso sigiloso del monstruo colgado boca abajo para sorprender al cazador Kwame Asare en el valle de ceibas."
+      },
+      {
+        "tiempo": "03:48",
+        "segundos": 228,
+        "titulo": "IV. El Fuego Protector y la Furia de Sasabonsam",
+        "resumen": "El encendido de la antorcha con resina y hierbas sagradas que repele el ataque y desata el rugido de la bestia."
+      },
+      {
+        "tiempo": "04:56",
+        "segundos": 296,
+        "titulo": "V. El Eco Eterno en las Alturas",
+        "resumen": "La retirada de la criatura hacia las copas de los árboles y la advertencia perenne grabada en la memoria del pueblo akan."
+      }
+    ],
+    "texto_relato": "En las profundidades impenetrables de la selva tropical de Ghana y Costa de Marfil, donde el dosel de las ceibas sagradas oculta la luz del sol y sume la tierra en una penumbra perpetua, los ancianos del pueblo ashanti transmiten desde hace incontables generaciones una advertencia ineludible: jamás mires solo hacia las copas de los árboles milenarios al caer la noche, pues entre sus ramas más altas aguarda Sasabonsam, el monstruo alado del bosque profundo.\n\nA diferencia de los espíritus tutelares abosom que custodian las aguas y los cerros, o de las traviesas criaturas mmoatia que habitan los matorrales bajos, Sasabonsam no es una fuerza benevolente ni una deidad a la que se rindan tributos de agradecimiento. Es el depredador por excelencia de las alturas, una entidad temible cuyo mero nombre evoca el crujido de ramas que se quiebran en la oscuridad y el silencio repentino de las aves cuando el peligro se cierne sobre la espesura.\n\nLos relatos tradicionales describen su estampa como una pesadilla viviente. Su cuerpo humanoide y gigantesco se encuentra cubierto de un espeso pelaje de tonalidades rojizas y cobrizas, similar al óxido que tiñe la tierra húmeda de las colinas. Su rostro, fiero y contrahecho, está dominado por ojos carmesí que brillan como ascuas encendidas en la negrura de la noche. En su boca relucen hileras de afilados dientes forjados en hierro puro, capaces de triturar madera maciza y quebrar los huesos más resistentes con un solo chasquido de sus mandíbulas. De sus omóplatos brotan colosales alas membranosas y coriáceas semejantes a las de un murciélago colosal, con las que surca la niebla del dosel sin emitir el más leve rumor.\n\nPero el rasgo más aterrador y singular de su anatomía reside en sus extremidades inferiores. Sus pies no poseen plantas planas para caminar sobre el suelo, sino dedos curvados hacia atrás terminados en garras ganchudas de descomunal potencia. Con estos ganchos monstruosos, Sasabonsam se cuelga boca abajo de las ramas más sólidas de la ceiba sagrada, el árbol onyxina, camuflándose entre lianas y musgos colgantes mientras aguarda pacientemente a sus presas.\n\n* * *\n\nCuentan las leyendas que durante la luna de la cosecha, el veterano cazador ashanti Kwame Asare se adentró en el corazón virgen del bosque persiguiendo el rastro de un antílope solitario. Asare era un hombre curtido, respetuoso de los tabúes de la caza y portador de amuletos suman confeccionados con raíces protectoras y cauris por la curandera de su aldea. Sin embargo, al alcanzar el valle de las ceibas gigantescas, un frío antinatural detuvo sus pasos. El coro constante de cigarras y ranas enmudeció de golpe, dejando tras de sí un vacío sepulcral.\n\nSintiendo el peso de una mirada fija en su nuca, Kwame alzó cautelosamente la vista hacia la copa de una ceiba colosal que rasgaba las brumas nocturnas. Colgado a más de treinta metros de altura, suspendido por sus garras curvadas entre el follaje espeso, el monstruo lo observaba inmóvil. Las alas de Sasabonsam estaban plegadas en torno a su pecho rojizo, pero sus ojos escarlata ardían con una fijeza hambrienta.\n\nAntes de que el cazador pudiera tensar la cuerda de su arco, la criatura desplegó sus membranas con un crujido seco y se descolgó en una caída vertiginosa y silenciosa. El batir pesado de sus alas generó ráfagas de aire que sacudieron los helechos y apagaron los últimos rescoldos del crepúsculo. Sasabonsam cayó sobre la espesura con un rugido metálico, extendiendo sus garras ganchudas para atrapar al intruso y arrastrarlo hacia las sombras de las ramas altas.\n\n* * *\n\nKwame reaccionó con la templanza forjada en mil cacerías. En lugar de huir a ciegas, arrojó al suelo su antorcha de resina inflamada y esparció un puñado de hierbas sagradas preparadas por la curandera Akua Serwaa. El humo aromático y picante de las plantas bendecidas envolvió la estancia, y el brillo rojizo del fuego hizo retroceder a la bestia, cuyos ojos sensibles a la claridad diurna sufrieron el destello repentino.\n\nCon un bramido de furia que estremeció los troncos de la arboleda, Sasabonsam batió sus inmensas alas coriáceas, levantando nubes de hojas muertas y ceniza. Sus colmillos de hierro brillaron al hendir el aire a escasos palmos del cazador, pero el calor del fuego sagrado y el cerco protector de los polvos benditos quebraron la sorpresa de su emboscada. Viéndose descubierto y acosado por las llamas crepitantes, el monstruo alado impulsó su cuerpo con un brinco prodigioso, aferrándose de nuevo a las lianas del dosel para perderse en la oscuridad impenetrable de las copas arbóreas.\n\nLos relatos antiguos aseguran que Sasabonsam jamás desapareció del todo de los bosques de Ghana. Todavía hoy, cuando los vientos de tormenta agitan con violencia las ramas más elevadas de las ceibas centenarias y se escucha un crujido gutural por encima de las lianas, los cazadores saben que el amo del dosel sigue allí: colgando en silencio en la penumbra, esperando con garras ganchudas y ojos de brasa a todo aquel que ose desafiar el misterio intocado de la selva sagrada."
+  },
+  {
     "id": "M0015",
     "slug": "okomfo-anokye",
     "nombre": "Okomfo Anokye",
