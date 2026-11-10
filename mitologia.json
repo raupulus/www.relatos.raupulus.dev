@@ -1,5 +1,110 @@
 [
   {
+    "id": "M0017",
+    "slug": "tano",
+    "nombre": "Tano",
+    "epiteto": "El Dios de las Aguas Sagradas y Señor de la Guerra",
+    "titulo_completo": "Tano: El Dios de las Aguas y Señor de la Guerra ⚡ Deidades y Espíritus (Mitología Ashanti y Akan)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "akan",
+    "tradicion_nombre": "Mitología Akan",
+    "grupo": "abosom",
+    "grupo_nombre": "Deidades y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 845,
+    "duracion_video": "05:18",
+    "duracion_audio": "05:18",
+    "duracion_short": "00:50",
+    "sinopsis": "En el panteón de los abosom de los pueblos akan y ashanti de Ghana y Costa de Marfil, Tano (Ta Kora) es el dios supremo de las aguas dulces y señor indiscutible de la guerra. Nacido del abrazo primordial entre Nyame, el creador celestial, y Asase Yaa, la madre tierra, Tano encarna la fuerza implacable de los torrentes capaces de nutrir cosechas y sanar a los enfermos, pero también de ahogar en feroces remolinos a quienes quebrantan sus tabúes sagrados. Su culto forjó la invencibilidad espiritual de los reyes ashanti y su pacto milenario selló la convivencia entre la vida divina y la muerte terrenal.",
+    "youtube_id": "_DIR7Wcap98",
+    "youtube_short_id": "QKwzedafM_U",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=_DIR7Wcap98",
+    "youtube_short_url": "https://www.youtube.com/shorts/QKwzedafM_U",
+    "portada": "assets/images/portadas/M0017-tano.webp",
+    "pagina_url": "mitologia/M0017-tano.html",
+    "personajes": [
+      {
+        "nombre": "Tano (Ta Kora)",
+        "rol": "Dios Supremo del Agua Dulce y Señor de la Guerra",
+        "rasgos": "Deidad imponente de piel de ébano lustroso, mirada ambarina penetrante y barba recortada. Porta cota de cuero ceremonial cubierta por cauris sagrados y amuletos de latón, empuñando una pesada lanza de guerra con punta de hierro celeste y escudo oval de antílope con emblemas Adinkra de poder fluvial.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-tano-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-tano-cuerpo.webp"
+      },
+      {
+        "nombre": "Bia",
+        "rol": "Hermano Mayor de Tano y Señor del Río Salvaje",
+        "rasgos": "Deidad agreste y taciturna, de facciones severas y complexión titánica. Encarna los bosques occidentales y las corrientes turbulentas de la frontera con Costa de Marfil, en perpetua rivalidad con su hermano menor por la herencia fértil de Ghana."
+      },
+      {
+        "nombre": "Nyame",
+        "rol": "Soberano del Cielo y Dios Creador Supremo",
+        "rasgos": "Anciano cósmico venerable y casi ciego por los eones, sentado en su taburete celestial de oro puro envuelto en túnicas resplandecientes de kente blanco y nubes luminosas."
+      },
+      {
+        "nombre": "Owuo",
+        "rol": "La Muerte Personificada",
+        "rasgos": "Entidad colosal de un solo ojo inmenso en la frente, cuerpo informe de sombras palpitantes cubierto de hollín y escamas de ceniza, armada con el garrote implacable que siega la vida de los mortales."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0017-002-tano-senor-de-los-torrentes.webp",
+        "pie": "Tano, señor de los torrentes y dios supremo de las aguas y de la guerra."
+      },
+      {
+        "archivo": "assets/images/escenas/M0017-007-siluros-sagrados-y-tambores-atumpan.webp",
+        "pie": "Los siluros sagrados nadando entre las aguas benditas al compás de los tambores atumpan."
+      },
+      {
+        "archivo": "assets/images/escenas/M0017-017-remolinos-voraces-cavernas-azabache.webp",
+        "pie": "Los oscuros remolinos del río Tano castigando a quienes vulneran sus tabúes sagrados."
+      },
+      {
+        "archivo": "assets/images/escenas/M0017-025-encuentro-cara-a-cara-con-owuo-muerte.webp",
+        "pie": "El imponente cara a cara entre el dios Tano y Owuo, la personificación de la Muerte."
+      },
+      {
+        "archivo": "assets/images/escenas/M0017-031-cuerpo-fluido-divinidad-eterna.webp",
+        "pie": "La divinidad eterna de Ta Kora fluyendo para siempre en los ríos y santuarios de Ghana."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Señor de los Torrentes y el Origen Divino",
+        "resumen": "El origen primordial de Tano a partir del abrazo entre Nyame y Asase Yaa, brotando como la corriente sagrada del río."
+      },
+      {
+        "tiempo": "01:11",
+        "segundos": 71,
+        "titulo": "II. La Bendición de las Aguas, la Sanación y la Guerra",
+        "resumen": "El doble poder de Tano: fuente inagotable de sanación y fertilidad para los justos y escudo invulnerable en la batalla."
+      },
+      {
+        "tiempo": "02:15",
+        "segundos": 135,
+        "titulo": "III. La Faz Oscura: Remolinos y Tabúes Sagrados",
+        "resumen": "La cólera implacable del río Tano ante el perjurio y el quebranto de sus mandamientos ancestrales."
+      },
+      {
+        "tiempo": "03:17",
+        "segundos": 197,
+        "titulo": "IV. El Engaño por la Herencia y el Duelo contra la Muerte",
+        "resumen": "La astucia de Tano frente a su hermano Bia y su titánico combate singular contra Owuo, la Muerte misma."
+      },
+      {
+        "tiempo": "04:38",
+        "segundos": 278,
+        "titulo": "V. El Cauce Eterno y el Legado de Ta Kora",
+        "resumen": "El pacto divino que sella la inmortalidad de Tano y la reverencia perenne de los sacerdotes en los santuarios de Techiman."
+      }
+    ],
+    "relato": "Tano, señor de los torrentes impetuosos, dios supremo de la guerra y juez implacable de las aguas ancestrales ashanti.\n\n* * *\n\nNacido del abrazo primordial entre Nyame, el soberano del cielo, y Asase Yaa, la madre tierra, Tano emergió como una corriente atronadora de agua viva que partió las rocas de la selva virgen. Conocido como Ta Kora, Tano el Anciano, encarna la fuerza indomable de los ríos que dan y arrebatan la vida en el corazón de Ghana y Costa de Marfil. Se le representa como un guerrero monumental de piel de ébano lustroso, ataviado con cota de cuero ceremonial cubierta por amuletos protectores de latón y conchas sagradas de cauri. En su diestra blande una pesada lanza de guerra de hierro celeste y en su siniestra un escudo de piel de antílope, coronado por brazaletes áureos que tintinean con el compás del oleaje. A sus pies, los siluros sagrados nadan entre remolinos espumosos, mientras en los santuarios de la espesura resuena el latido ceremonial de los tambores parlantes atumpan.\n\n* * *\n\nPara los pueblos y reyes ashanti, Tano es la fuente nutricia de la existencia y el escudo invulnerable en la batalla. De sus aguas caudalosas depende la fertilidad de los campos de ñame y las cosechas de cacao, pues sus vapores fecundan la tierra cuando las lluvias celestiales tardan en llegar. Es también el dios sanador por excelencia: en las pozas sagradas de Tanoso, los enfermos acuden a beber de sus remansos para purificar el alma y quebrar las maldiciones de la brujería nocturna. En la guerra, Tano fue proclamado general supremo de la confederación; antes del combate, los sacerdotes akomfo vertían vino de palma sobre su cuenco sagrado de latón para consultar el oráculo divino. Cuando otorgaba su favor, marchaba invisible a la vanguardia, desorientando al enemigo entre la bruma del río y doblando las flechas contrarias como juncos al viento. Sus aguas son santuarios inviolables donde los peces son considerados sus propios hijos, protegidos por un tabú sagrado que castiga con la muerte a quien intente capturarlos.\n\n* * *\n\nPero la benevolencia del señor del río esconde corrientes traicioneras y una cólera implacable. Tano no perdona la transgresión de sus leyes sagradas ni tolera la impureza en sus orillas. Los tabúes que rigen su culto son severos: la presencia de sangre, el hierro oxidado o los juramentos falsos cerca de su cauce desatan la furia de Ta Kora al instante. Quienes profanan sus remansos sagrados o desobedecen la palabra de sus sacerdotes sufren repentinas crecidas que engullen aldeas enteras en una sola noche de tormenta. Se cuenta que en las curvas más profundas del río, donde el agua se torna oscura como el azabache, Tano abre remolinos voraces que arrastran a los imprudentes hacia cavernas sumergidas de las que jamás se regresa. En la batalla, si un comandante ashanti quebrantaba los rituales sagrados por soberbia, el dios de la guerra le retiraba su amparo sin previo aviso, abandonando las tropas al exterminio para recordar a los mortales que el orgullo humano no es más que espuma frente a la corriente.\n\n* * *\n\nEl mito cumbre de Tano narra su audaz astucia por la herencia divina y su combate legendario contra la Muerte. Cuando el dios supremo Nyame envejeció y sus ojos se nublaron, decidió repartir la tierra entre sus hijos, prefiriendo en secreto a Bia, el primogénito, a quien deseaba entregar las comarcas más fértiles del este. Una cabra mensajera, que conocía la devoción de Tano, le advirtió con antelación de las intenciones de su padre. Antes del alba, Tano se vistió con pieles ásperas, imitó la voz de su hermano y se presentó ante Nyame, quien, palpándolo a tientas, le otorgó la bendición suprema y el dominio sobre las ricas selvas ashanti. Al llegar Bia poco después, el engaño quedó al descubierto, pero la palabra de un dios no podía revocarse; Nyame concedió a Bia las tierras lejanas del oeste, forjando una rivalidad eterna entre ambos ríos sagrados. Más tarde, Tano enfrentó a Owuo, la Muerte personificada, quien devoraba a los humanos sin descanso. Durante siete días y siete noches, lucharon cuerpo a cuerpo sacudiendo las montañas; incapaces de doblegarse, sellaron un pacto solemne: la Muerte se llevaría a los mortales al concluir su tiempo natural, pero Tano conservaría el derecho sagrado de arrebatar de sus garras a los consagrados a sus aguas.\n\n* * *\n\nHoy en día, el dios Tano continúa fluyendo por el corazón de África Occidental como un testimonio vivo del poder sagrado. Aunque los imperios han caído y los siglos han transformado las tierras ashanti, los santuarios de Techiman y Tanoso mantienen vivas las ofrendas ceremoniales. Sus sacerdotes siguen entrando en trance sagrado cuando los tambores atumpan invocan a Ta Kora sobre el agua en calma. El río Tano no es un mero curso geográfico, sino el cuerpo fluido de una divinidad eterna que vigila la rectitud de su pueblo, recordando a cada generación que la justicia, la fertilidad y la gloria eterna nacen del respeto a las aguas primordiales."
+  },
+  {
     "id": "M0016",
     "slug": "sasabonsam",
     "nombre": "Sasabonsam",
