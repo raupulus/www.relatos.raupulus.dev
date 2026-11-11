@@ -3079,8 +3079,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-11-10T20:00:00+01:00",
     "fecha_publicacion_ts": 1794337200
   },

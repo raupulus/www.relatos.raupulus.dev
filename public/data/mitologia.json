@@ -1,5 +1,111 @@
 [
   {
+    "id": "M0018",
+    "slug": "azapane",
+    "nombre": "Azapane",
+    "epiteto": "El Ingenio contra las Fauces del Leopardo",
+    "titulo_completo": "Azapane: El Ingenio contra las Fauces del Leopardo ⚡ Leyendas de África Central (Mitología Mangbetu)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "azande-camerun",
+    "tradicion_nombre": "Mitología Mangbetu y de África Central",
+    "grupo": "dioses",
+    "grupo_nombre": "Héroes y Espíritus Culturales",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 846,
+    "duracion_video": "05:58",
+    "duracion_audio": "05:58",
+    "duracion_short": "00:52",
+    "sinopsis": "En las densas selvas ecuatoriales de la cuenca del río Uele, el temible Leopardo Koli imponía su ley de garras y sangre sobre aldeanos y bestias, exigiendo sumisión absoluta. Pero donde las lanzas de los cazadores más fornidos se quebraban como juncos secos, se alzó Azapane: el astuto trickster del pueblo mangbetu, célebre por su estilizado cráneo lipombo, quien demostró que la mente despierta, el nudo certero de una liana y la palabra precisa son capaces de derribar a la fuerza más destructiva de la jungla.",
+    "youtube_id": "X-mQf6ShtNw",
+    "youtube_short_id": "K-gFuYMPQwI",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=X-mQf6ShtNw",
+    "youtube_short_url": "https://www.youtube.com/shorts/K-gFuYMPQwI",
+    "portada": "assets/images/portadas/M0018-azapane.webp",
+    "pagina_url": "mitologia/M0018-azapane.html",
+    "personajes": [
+      {
+        "nombre": "Azapane",
+        "rol": "Héroe Cultural y Espíritu Embaucador Mangbetu",
+        "rasgos": "Joven cazador de veintiocho años con el cráneo alargado estilizado (lipombo) coronado por un complejo peinado cilíndrico de microtrenzas con agujas de marfil. Viste faldellín geométrico negbe y vence a sus enemigos mediante trampas de cordel, astucia oral y un temple inquebrantable.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-azapane-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-azapane-cuerpo.webp"
+      },
+      {
+        "nombre": "Koli (El Gran Leopardo)",
+        "rol": "Tirano Depredador de la Selva de Ituri",
+        "rasgos": "Felino monumental de más de dos metros de longitud, pelaje dorado con densas rosetas azabache y colmillos curvos como dagas de marfil. Encarna la soberbia aristocrática, la violencia desmedida y la tiranía sobre la selva."
+      },
+      {
+        "nombre": "Nangbwe",
+        "rol": "Anciano del Consejo de la Aldea",
+        "rasgos": "Patriarca venerable que custodia las tradiciones orales y preside el consejo comunal frente al avance de la fiera."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0018-002-selva-ituri-dosel-infinito.webp",
+        "pie": "El dosel infinito y opresivo de la selva virgen de Ituri en la cuenca del Congo."
+      },
+      {
+        "archivo": "assets/images/escenas/M0018-007-azapane-paso-al-frente.webp",
+        "pie": "Azapane da un paso al frente en el consejo de la aldea mangbetu desafiando el miedo colectivo."
+      },
+      {
+        "archivo": "assets/images/escenas/M0018-014-koli-emerge-dientes-marfil.webp",
+        "pie": "El leopardo Koli emergiendo entre la niebla con sus colmillos de marfil afilados."
+      },
+      {
+        "archivo": "assets/images/escenas/M0018-024-koli-mete-cabeza-trampa.webp",
+        "pie": "Cegado por su vanidad y orgullo, Koli introduce voluntariamente su cabeza en la soga."
+      },
+      {
+        "archivo": "assets/images/escenas/M0018-031-viento-bejucos-triunfo-del-ingenio.webp",
+        "pie": "Azapane marchando triunfal hacia la espesura mientras su leyenda de ingenio perdura para siempre."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Dosel Infinito y el Terror de Koli",
+        "resumen": "La selva ecuatorial de Ituri bajo el yugo del gran leopardo tirano."
+      },
+      {
+        "tiempo": "00:33",
+        "segundos": 33,
+        "titulo": "II. El Fracaso de las Lanzas y el Paso al Frente de Azapane",
+        "resumen": "Las armas de hierro se doblan ante la fiera y Azapane propone vencerlo con ingenio."
+      },
+      {
+        "tiempo": "01:06",
+        "segundos": 66,
+        "titulo": "III. El Hombre del Lipombo y el Ingenio del Cazador",
+        "resumen": "La nobleza del cráneo alargado lipombo y la preparación de las lianas flexibles."
+      },
+      {
+        "tiempo": "02:01",
+        "segundos": 121,
+        "titulo": "IV. La Marcha Solitaria y el Encuentro en la Niebla",
+        "resumen": "Azapane camina silbando al atardecer y Koli surge de la espesura."
+      },
+      {
+        "tiempo": "03:08",
+        "segundos": 188,
+        "titulo": "V. La Falsa Tormenta Cósmica y la Trampa de Vanidad",
+        "resumen": "La astuta estratagema del embaucador que tienta el orgullo infinito de la fiera."
+      },
+      {
+        "tiempo": "04:39",
+        "segundos": 279,
+        "titulo": "VI. El Resorte de la Selva y el Triunfo de la Razón",
+        "resumen": "La trampa se dispara suspendiendo a Koli y consagrando el triunfo definitivo de la inteligencia."
+      }
+    ],
+    "relato": "Bajo el dosel infinito de la selva de Ituri, donde las copas de los árboles devoran la luz del mediodía y el aire pesa como un manto de vapor, no existía fiera más temida que Koli, el Gran Leopardo. No era un simple cazador entre los helechos gigantes de la cuenca del río Uele; era un tirano de músculos tensos y ojos ambarinos que exigía sumisión absoluta a cuanto ser viviente cruzara sus dominios.\n\nNingún cazador mangbetu se atrevía a internarse solo en la espesura al caer la tarde. Los ancianos contaban junto al fuego que Koli aguardaba sobre las ramas maestras, deleitándose en escuchar las pisadas humanas antes de desplomarse con un rugido atronador. Las mejores lanzas de hierro se doblaban contra su piel blindada por la brujería de la noche, y las trampas ordinarias saltaban hechas astillas bajo sus zarpas descomunales. El miedo amenazaba con encerrar a los hombres tras las empalizadas de caña para siempre.\n\nFue entonces cuando Azapane dio un paso al frente. No poseía la corpulencia de los guerreros fornidos ni los brazos anchos de quienes abaten búfalos con pesadas mazas. En su figura ágil destacaba el cráneo estilizado y alargado, signo de nobleza y pensamiento agudo entre los mangbetu, coronado por un tocado de finísimas trenzas sujetas con agujas de hueso. Sobre su faldellín de corteza batida descansaban apenas unos rollos de liana flexible, resina amarga de copal y una calabaza seca con agua de lluvia.\n\n—La fuerza sin gobierno es un río ciego que termina despeñándose en su propio abismo —dijo Azapane ante el consejo, con una sonrisa serena que desconcertó al anciano Nangbwe—. Si una roca es demasiado pesada para moverla con las manos, basta con hallar la grieta adecuada para que su propio peso la parta en dos.\n\n* * *\n\nAquella misma tarde, cuando el sol teñía de púrpura las aguas del Uele, Azapane se internó en el territorio prohibido. No caminaba con sigilo temeroso, sino silbando alegres melodías y golpeando los troncos con una vara de bambú.\n\nEl silencio cayó de golpe. El grito de los monos cesó en lo alto y las aves huyeron en desbandada. Desde una espesura de bejucos espinosos, dos brasas doradas se clavaron en el joven. Koli emergió despacio, arrastrando su vientre bajo sobre el musgo y mostrando unos colmillos capaces de quebrar el caparazón de un pangolín.\n\n—¿Has perdido el juicio, insignificante criatura de barro? —gruñó la fiera, haciendo temblar el suelo—. ¿O tu aldea te envía como tributo para saciar mi hambre?\n\nAzapane ni pestañeó. Fingió un bostezo desinteresado y continuó atando una resistente liana de mono entre dos árboles jóvenes, curvando sus copas hacia la tierra con ingeniosa tensión.\n\n—Vengo de cumplir una orden urgente del consejo del bosque, gran Koli —respondió con fingida reverencia—. Se acerca una tormenta cósmica enviada por los espíritus celestes, tan feroz que arrancará las ceibas y arrastrará a los animales hacia el fango.\n\nEl leopardo bufó con desprecio, pero una chispa de curiosidad encendió sus pupilas rasgadas.\n\n—Nada puede arrancar al rey de la selva. Mi agarre es eterno.\n\n—Eso les advertí a todos —añadió Azapane ajustando un lazo corredizo entre el follaje—. Les dije que tu fuerza te mantendría a salvo, pero aseguran que hasta los elefantes se están atando a los troncos para no volar por los aires. He preparado este amarre sagrado para probar la resistencia de los elegidos, aunque dudo que un lomo tan corpulento como el tuyo quepa en una estructura concebida para los más astutos.\n\n* * *\n\nLa vanidad, más ciega que la lanza más afilada, nubló el instinto del depredador. Irritado ante la duda sobre su grandeza, Koli avanzó a zancadas arrogantes hacia el lazo tendido en el suelo.\n\n—Apártate, parlanchín —rugió introduciendo voluntariamente su cabeza y sus garras dentro de la armazón de corteza y bejuco—. Átame con fuerza. Cuando el viento sople, verás que ni los cielos pueden doblegar a Koli.\n\nAzapane no vaciló. Con la velocidad del relámpago, tiró del cordel y cortó la traba con su cuchillo. Los dos árboles doblados se enderezaron como arcos de guerra, disparando la trampa con un chasquido seco. Koli quedó suspendido en el aire, inmovilizado por el lazo corredizo que apretaba su presa con cada desesperado forcejeo de sus ancas.\n\nEl tirano rugía enfurecido, arañando la nada mientras sus ojos destilaban promesas de venganza. Pero Azapane se sentó tranquilamente sobre una raíz, bebió un sorbo de agua y contempló al señor de las fauces vencido por su propio orgullo.\n\n—Tu fuerza te trajo hasta aquí, pero fue tu soberbia la que tensó la soga —dijo Azapane con voz pausada—. La selva ya no te pertenece a ti, sino a quienes saben leer los secretos de sus lianas.\n\nCuenta la tradición mangbetu que Azapane no ejecutó al tirano; permitió que la aldea contemplara al temible depredador humillado antes de desterrarlo para siempre al bosque profundo. Desde aquel día, cuando el viento agita los bejucos en la noche de Ituri, los ancianos recuerdan que no hay garra ni colmillo que pueda vencer cuando el ingenio del hombre despierta ante el peligro."
+  },
+  {
     "id": "M0017",
     "slug": "tano",
     "nombre": "Tano",
