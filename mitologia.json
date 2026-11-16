@@ -1,5 +1,99 @@
 [
   {
+    "id": "M0019",
+    "slug": "hilolombi",
+    "nombre": "Hilolombi",
+    "epiteto": "El Anciano de los Ancianos y Creador del Cosmos",
+    "titulo_completo": "Hilolombi: El Anciano de los Ancianos y Creador del Cosmos ⚡ Dioses y Espíritus (Mitología de Camerún)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "azande-camerun",
+    "tradicion_nombre": "Mitología Bassa y de Camerún",
+    "grupo": "dioses",
+    "grupo_nombre": "Dioses y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 852,
+    "duracion_video": "05:29",
+    "duracion_audio": "05:29",
+    "duracion_short": "00:49",
+    "sinopsis": "En la profunda tradición cosmológica del pueblo bassa de Camerún, Hilolombi —«el Anciano de los Ancianos»— se alza como la deidad suprema, anterior al tiempo, al espacio y a toda genealogía divina. De sus manos colosales brotaron el firmamento estrellado, las montañas sagradas y el aliento vital de los primeros seres humanos en la roca horadada de Ngog Lituba. Conoce la historia del creador que entregó a la humanidad el orden sagrado del Mbog y descubre por qué la soberbia y el estrépito de los mortales lo llevaron a retirarse más allá de las galaxias.",
+    "youtube_id": "XLYemSH09sA",
+    "youtube_short_id": "NvJjPS1_EGk",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=XLYemSH09sA",
+    "youtube_short_url": "https://www.youtube.com/shorts/NvJjPS1_EGk",
+    "portada": "assets/images/portadas/M0019-hilolombi.webp",
+    "pagina_url": "mitologia/M0019-hilolombi.html",
+    "personajes": [
+      {
+        "nombre": "Hilolombi (El Anciano de los Ancianos)",
+        "rol": "Dios Supremo e Increado del Panteón Bassa",
+        "rasgos": "Anciano africano colosal de setenta y cinco años de edad aparente y rasgos nobles tallados en ébano profundo, con rastas plateadas ceñidas con anillos de oro astral y una barba fluente tejida como nebulosa viva de galaxias azules, púrpuras y doradas.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-hilolombi-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-hilolombi-cuerpo.webp"
+      },
+      {
+        "nombre": "Nlep (El Primer Mbombog)",
+        "rol": "Patriarca Primordial e Iniciado del Mbog",
+        "rasgos": "Anciano de sesenta y ocho años, de porte austero y mirada penetrante, vestido con túnica ceremonial de corteza batida y manto de piel de leopardo, empuñando el bastón sagrado de ébano frente a la caverna de Ngog Lituba."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0019-003-vacio-primordial-antes-de-las-estrellas.webp",
+        "pie": "Hilolombi existiendo en la inmensidad del vacío primordial antes de la primera estrella."
+      },
+      {
+        "archivo": "assets/images/escenas/M0019-009-brote-humanidad-roca-ngog-lituba.webp",
+        "pie": "El nacimiento de la humanidad desde las entrañas sagradas de la roca de Ngog Lituba."
+      },
+      {
+        "archivo": "assets/images/escenas/M0019-011-entrega-del-mbog-codigo-sagrado.webp",
+        "pie": "La entrega del Mbog, el código sagrado de armonía cósmica, verdad y justicia."
+      },
+      {
+        "archivo": "assets/images/escenas/M0019-024-hilolombi-empuja-la-boveda-celeste.webp",
+        "pie": "La Gran Retirada: Hilolombi empuja la bóveda celeste hacia lo inalcanzable."
+      },
+      {
+        "archivo": "assets/images/escenas/M0019-028-asamblea-mbombog-al-pie-de-ngog-lituba.webp",
+        "pie": "Los patriarcas Mbombog custodiando la ley ancestral al pie de Ngog Lituba."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Anciano de los Ancianos y el Vacío Primordial",
+        "resumen": "Hilolombi en la inmensidad anterior al tiempo moldeando la Tierra, los volcanes y las estrellas."
+      },
+      {
+        "tiempo": "01:17",
+        "segundos": 77,
+        "titulo": "II. Ngog Lituba y la Edad de Oro del Mbog",
+        "resumen": "El brote de los primeros humanos en la roca sagrada y la entrega del código del Mbog."
+      },
+      {
+        "tiempo": "02:19",
+        "segundos": 139,
+        "titulo": "III. El Juicio Silencioso y el Tabú del Nombre Sagrado",
+        "resumen": "La mirada invisible que pesa los corazones y el respeto inquebrantable al nombre divino."
+      },
+      {
+        "tiempo": "03:20",
+        "segundos": 200,
+        "titulo": "IV. La Gran Retirada de los Cielos",
+        "resumen": "La soberbia humana rompe el pacto y Hilolombi aparta para siempre el firmamento."
+      },
+      {
+        "tiempo": "04:46",
+        "segundos": 286,
+        "titulo": "V. Los Guardianes Mbombog y el Legado Eterno",
+        "resumen": "La asamblea de los patriarcas al pie de Ngog Lituba manteniendo vivo el puente sagrado."
+      }
+    ]
+  },
+  {
     "id": "M0018",
     "slug": "azapane",
     "nombre": "Azapane",
