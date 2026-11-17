@@ -1,5 +1,99 @@
 [
   {
+    "id": "M0020",
+    "slug": "mboli",
+    "nombre": "Mboli",
+    "epiteto": "El Señor de los Oráculos y Juez Supremo",
+    "titulo_completo": "Mboli: El Señor de los Oráculos y Juez Supremo ⚡ Dioses y Espíritus (Mitología Azande)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "azande-camerun",
+    "tradicion_nombre": "Mitología Azande y de África Central",
+    "grupo": "dioses",
+    "grupo_nombre": "Dioses y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 832,
+    "duracion_video": "05:12",
+    "duracion_audio": "05:12",
+    "duracion_short": "00:48",
+    "sinopsis": "En las extensas sabanas y riberas de África Central —entre la República Centroafricana, Sudán del Sur y el norte del Congo—, el pueblo azande no elevó templos de piedra ni erigió estatuas para su dios supremo. Su nombre es Mboli (o Mbori): el creador silencioso que sostiene el universo, escruta cada intención humana y dicta sus sentencias a través de la verdad implacable del oráculo del veneno benge y la tabla iwa.",
+    "youtube_id": "mqcCzB5WK_I",
+    "youtube_short_id": "HwIskZEcF1A",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=mqcCzB5WK_I",
+    "youtube_short_url": "https://www.youtube.com/shorts/HwIskZEcF1A",
+    "portada": "assets/images/portadas/M0020-mboli.webp",
+    "pagina_url": "mitologia/M0020-mboli.html",
+    "personajes": [
+      {
+        "nombre": "Mboli (El Señor de los Oráculos)",
+        "rol": "Dios Supremo e Increado del Panteón Azande",
+        "rasgos": "Soberano africano majestuoso de sesenta y cinco años de edad aparente, piel de ébano profundo, cabello y barba corta entrecanos, ceñido con un grueso torque de cobre batido y una amplia túnica ocre terroso, empuñando la tabla oracular de madera tallada iwa y un alto cetro de hierro forjado.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-mboli-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-mboli-cuerpo.webp"
+      },
+      {
+        "nombre": "Bakumba (El Adivino del Benge)",
+        "rol": "Anciano Sabio y Custodio de los Ritos Oraculares",
+        "rasgos": "Anciano azande de sesenta y dos años vestido con taparrabos de corteza de higuera teñida y collares de cuentas, que oficia la consulta del oráculo del veneno benge y la tabla iwa bajo los árboles del bosque."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0020-005-alturas-de-granito-sabana-interminable.webp",
+        "pie": "Mboli entronizado sobre una cumbre de granito dominando la sabana y el río Uele."
+      },
+      {
+        "archivo": "assets/images/escenas/M0020-007-tabla-oracular-puente-cielo-tierra.webp",
+        "pie": "La tabla oracular de madera tallada iwa, puente sagrado entre el cielo y la tierra."
+      },
+      {
+        "archivo": "assets/images/escenas/M0020-015-balanza-inexorable-desgracia-castigo.webp",
+        "pie": "La balanza silenciosa e insobornable de Mboli frente a la injusticia."
+      },
+      {
+        "archivo": "assets/images/escenas/M0020-024-preparacion-dosis-rituales-invocando-mboli.webp",
+        "pie": "El adivino Bakumba preparando el rito del oráculo benge e invocando la verdad de Mboli."
+      },
+      {
+        "archivo": "assets/images/escenas/M0020-031-mboli-eterno-sin-estatuas-ni-muros.webp",
+        "pie": "Mboli permaneciendo eterno sin templos de piedra ni muros que lo encierren."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Soberano sin Templos ni Altares",
+        "resumen": "Mboli reinando sobre las tierras azande con su torque de cobre, bastón de hierro y tabla iwa."
+      },
+      {
+        "tiempo": "01:17",
+        "segundos": 77,
+        "titulo": "II. La Faz Luminosa y la Armonía Cotidiana",
+        "resumen": "El arquitecto benévolo que escucha las súplicas sinceras junto al hogar y protege la hospitalidad."
+      },
+      {
+        "tiempo": "02:17",
+        "segundos": 137,
+        "titulo": "III. La Balanza Inexorable del Destino",
+        "resumen": "Un juicio silencioso e insobornable que opera dentro de los hechos inesperados de la vida."
+      },
+      {
+        "tiempo": "03:15",
+        "segundos": 195,
+        "titulo": "IV. La Voz del Oráculo Benge y la Tabla Iwa",
+        "resumen": "El rito del adivino Bakumba en el claro del bosque y la ley última sobre Tule y Azapane."
+      },
+      {
+        "tiempo": "04:31",
+        "segundos": 271,
+        "titulo": "V. La Fe Silenciosa que Perdura",
+        "resumen": "La permanencia intacta de Mboli en la memoria viva de África Central."
+      }
+    ]
+  },
+  {
     "id": "M0019",
     "slug": "hilolombi",
     "nombre": "Hilolombi",
