@@ -1,5 +1,99 @@
 [
   {
+    "id": "M0021",
+    "slug": "mbombog",
+    "nombre": "Mbombog",
+    "epiteto": "El Custodio del Mbog y Juez de los Ancestros",
+    "titulo_completo": "Mbombog: El Custodio del Mbog y Juez de los Ancestros ⚡ Dioses y Espíritus (Mitología Bassa de Camerún)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "azande-camerun",
+    "tradicion_nombre": "Mitología Bassa y de Camerún",
+    "grupo": "dioses",
+    "grupo_nombre": "Dioses y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 822,
+    "duracion_video": "05:17",
+    "duracion_audio": "05:17",
+    "duracion_short": "00:48",
+    "sinopsis": "En el corazón selvático de Camerún, el pueblo bassa no confiaba su destino ni a reyes guerreros ni a tiranos armados. Por encima de las disputas de clan se alzaba el Mbombog: patriarca iniciado y custodio viviente del Mbog —el código ancestral de sabiduría, justicia y armonía cósmica entregado por el creador Hilolombi—. Con su bastón nudoso del camaleón y el cuerno de la verdad, mediaba entre los vivos y los antepasados.",
+    "youtube_id": "_qVdHg28SRA",
+    "youtube_short_id": "SGLNsWMqcyI",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=_qVdHg28SRA",
+    "youtube_short_url": "https://www.youtube.com/shorts/SGLNsWMqcyI",
+    "portada": "assets/images/portadas/M0021-mbombog.webp",
+    "pagina_url": "mitologia/M0021-mbombog.html",
+    "personajes": [
+      {
+        "nombre": "Mbombog (El Custodio del Mbog)",
+        "rol": "Patriarca Espiritual y Juez Tradicional del Pueblo Bassa",
+        "rasgos": "Anciano venerable de setenta y dos años con tocado de cauris y plumas, collares ceremoniales con colgante de máscara tallada y túnica azul índigo y ocre quemado sujeta con anilla de bronce, empuñando el bastón del camaleón y el cuerno de la verdad.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-mbombog-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-mbombog-cuerpo.webp"
+      },
+      {
+        "nombre": "Ekwe (El Iniciado)",
+        "rol": "Joven Discípulo del Mbog",
+        "rasgos": "Joven bassa de veinticinco años marcado con ceniza ritual blanca en el pecho que afronta la prueba nocturna de la palabra y el silencio para recibir el bastón del camaleón."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0021-006-mbombog-taburete-indigo-cauris-plumas.webp",
+        "pie": "Mbombog sentado en su taburete tallado bajo la luna creciente junto al fuego sagrado."
+      },
+      {
+        "archivo": "assets/images/escenas/M0021-012-contendientes-ante-el-recinto-sagrado.webp",
+        "pie": "La mediación imparcial de litigios comunitarios en el recinto sagrado bassa."
+      },
+      {
+        "archivo": "assets/images/escenas/M0021-018-golpe-baston-ritual-testimonio-espiritus.webp",
+        "pie": "El golpe firme del bastón del camaleón invocando el juicio de los antepasados frente al perjurio."
+      },
+      {
+        "archivo": "assets/images/escenas/M0021-027-entrega-baston-camaleon-cuerno-verdad.webp",
+        "pie": "La transmisión secreta del bastón del camaleón y el cuerno de la verdad al sucesor Ekwe."
+      },
+      {
+        "archivo": "assets/images/escenas/M0021-031-legado-integridad-custodian-memoria.webp",
+        "pie": "El legado eterno de integridad y memoria viva del pueblo bassa."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Custodio del Mbog bajo la Luna Creciente",
+        "resumen": "La figura consagrada del Mbombog y sus atributos sagrados en las selvas de Camerún."
+      },
+      {
+        "tiempo": "01:22",
+        "segundos": 82,
+        "titulo": "II. La Faz Luminosa y la Concordia de la Aldea",
+        "resumen": "La palabra justa que reconcilia clanes, bendice siembras y protege la paz sin ejércitos."
+      },
+      {
+        "tiempo": "02:28",
+        "segundos": 148,
+        "titulo": "III. La Sombra del Perjurio y el Bastón Ritual",
+        "resumen": "La severidad implacable ante la mentira ritual y la carga de fidelidad a Nyo'o e Hilolombi."
+      },
+      {
+        "tiempo": "03:32",
+        "segundos": 212,
+        "titulo": "IV. La Prueba Nocturna del Sucesor Ekwe",
+        "resumen": "La ceremonia secreta bajo la luna creciente donde se transmite el Mbog entre generaciones."
+      },
+      {
+        "tiempo": "04:38",
+        "segundos": 278,
+        "titulo": "V. El Legado Incorruptible de los Ancestros",
+        "resumen": "La vigencia actual del Mbombog como guardián de la identidad y memoria bassa."
+      }
+    ]
+  },
+  {
     "id": "M0020",
     "slug": "mboli",
     "nombre": "Mboli",
