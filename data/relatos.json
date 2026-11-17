@@ -1,5 +1,155 @@
 [
   {
+    "id": "0061",
+    "slug": "el-ultimo-pale",
+    "pagina_url": "relatos/0061-el-ultimo-pale.html",
+    "titulo": "El último palé",
+    "sinopsis": "Son las cuatro de la madrugada en la plataforma logística Valdemoro Norte cuando atraca con cuarenta minutos de retraso el tráiler que debe enlazar con la ruta de salida. Bajo la advertencia de que cualquier demora recortará las primas del equipo, Sergio Medina intenta cubrir a contrarreloj el hueco de su compañero de baja junto a un mozo recién contratado, en un pasillo donde las carretillas y los operarios a pie comparten cada metro de hormigón.",
+    "categoria": "drama",
+    "categoria_nombre": "Drama",
+    "generos": [
+      "Drama",
+      "Suspense"
+    ],
+    "palabras": 2267,
+    "lectura_min": 10,
+    "duracion_audio": "12:56",
+    "duracion_segundos": 776.09,
+    "youtube_id": "fd958xIZ4W4",
+    "youtube_url": "https://www.youtube.com/watch?v=fd958xIZ4W4",
+    "portada": "assets/images/portadas/0061-el-ultimo-pale.webp",
+    "personajes": [
+      {
+        "id": "0061-p1",
+        "nombre": "Sergio Medina",
+        "rol": "protagonista",
+        "rasgos": "treinta y cuatro años, complexión media atlética, cabello castaño corto, barba recortada de pocos días, chaleco reflectante amarillo flúor abierto sobre sudadera azul marino, pantalón gris oscuro de trabajo y botas negras con puntera reforzada; trabajador veterano, cumplidor y acostumbrado a tirar del carro cuando falta gente.",
+        "motivacion": "sacar a tiempo los últimos palés del muelle siete para no perjudicar el incentivo mensual de toda la cuadrilla nocturna.",
+        "conflicto": "la fatiga de cinco horas seguidas tirando de carga y el desorden acumulado en el pasillo reducen sus reflejos en el peor cruce de la nave.",
+        "avatar_cabeza": "assets/images/avatars/0061-personaje-01-sergio-medina-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0061-personaje-01-sergio-medina-cuerpo.webp"
+      },
+      {
+        "id": "0061-p2",
+        "nombre": "Adrián Cuesta",
+        "rol": "personaje secundario clave",
+        "rasgos": "veintiún años, delgado, rostro joven afeitado, cabello rubio oscuro corto, chaleco reflectante naranja flúor de personal eventual sobre camiseta térmica negra, pantalón vaquero oscuro de faena y botas nuevas; voluntarioso pero inexperto e inseguro ante el ritmo de la madrugada.",
+        "motivacion": "demostrar en su tercera noche que puede seguir el paso de los veteranos sin estorbar.",
+        "conflicto": "desconoce las calles de expedición y los protocolos ante una caída de carga, actuando por puro impulso cuando estalla el caos.",
+        "avatar_cabeza": "assets/images/avatars/0061-personaje-02-adrian-cuesta-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0061-personaje-02-adrian-cuesta-cuerpo.webp"
+      },
+      {
+        "id": "0061-p3",
+        "nombre": "Ramiro Pardo",
+        "rol": "contrapunto",
+        "rasgos": "cuarenta y siete años, complexión robusta, entradas pronunciadas con pelo negro entrecano muy corto, bigote espeso recortado, forro polar gris marengo bajo chaleco reflectante amarillo con emisora en la solapa y portapapeles metálico; seco, obsesionado con las pantallas de tiempos de salida y los objetivos de tonelaje.",
+        "motivacion": "cerrar el muelle doce antes de las cuatro y cuarenta y cinco sin que la central penalice su turno en el informe matinal.",
+        "conflicto": "aprieta los tiempos por encima del orden de los pasillos sin asumir que los atajos diarios acaban pasando factura.",
+        "avatar_cabeza": "assets/images/avatars/0061-personaje-03-ramiro-pardo-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0061-personaje-03-ramiro-pardo-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "El tráiler retrasado y la presión por las primas",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 00:00."
+      },
+      {
+        "tiempo": "02:32",
+        "segundos": 152,
+        "titulo": "El cuello de botella del pasillo B-cuatro",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 02:32."
+      },
+      {
+        "tiempo": "04:47",
+        "segundos": 287,
+        "titulo": "La caja dañada y el palé elevado sin visibilidad",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 04:47."
+      },
+      {
+        "tiempo": "06:39",
+        "segundos": 399,
+        "titulo": "El fleje en el suelo y el segundo desprendimiento",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 06:39."
+      },
+      {
+        "tiempo": "09:18",
+        "segundos": 558,
+        "titulo": "La nave paralizada y el informe de prevención",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 09:18."
+      },
+      {
+        "tiempo": "11:06",
+        "segundos": 666,
+        "titulo": "El mensaje once días después",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 11:06."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0061-003-sergio-estira-espalda-transpaleta-muelle-7.webp",
+        "caption": "Ilustración de escena: Sergio estira espalda transpaleta muelle 7",
+        "alt": "Escena oficial de El último palé — Sergio estira espalda transpaleta muelle 7"
+      },
+      {
+        "src": "assets/images/escenas/0061-022-uñas-y-ruedas-pasan-encima-marcas-borradas.webp",
+        "caption": "Ilustración de escena: Uñas y ruedas pasan encima marcas borradas",
+        "alt": "Escena oficial de El último palé — Uñas y ruedas pasan encima marcas borradas"
+      },
+      {
+        "src": "assets/images/escenas/0061-042-tomas-mantiene-pedal-pisado-creyendo-via-libre.webp",
+        "caption": "Ilustración de escena: Tomas mantiene pedal pisado creyendo via libre",
+        "alt": "Escena oficial de El último palé — Tomas mantiene pedal pisado creyendo via libre"
+      },
+      {
+        "src": "assets/images/escenas/0061-062-sanitarios-colocan-ferula-neumatica-pierna-520.webp",
+        "caption": "Ilustración de escena: Sanitarios colocan ferula neumatica pierna 520",
+        "alt": "Escena oficial de El último palé — Sanitarios colocan ferula neumatica pierna 520"
+      },
+      {
+        "src": "assets/images/escenas/0061-081-plano-final-sergio-en-silencio-lluvia-salon.webp",
+        "caption": "Ilustración de escena: Plano final sergio en silencio lluvia salon",
+        "alt": "Escena oficial de El último palé — Plano final sergio en silencio lluvia salon"
+      }
+    ],
+    "relato_raw": "El pitido intermitente del tráiler dando marcha atrás retumbó contra la chapa del muelle siete a las cuatro y dos minutos de la madrugada. Cuando los topes de goma golpearon el hormigón y se levantó el portón seccional, una bocanada de niebla helada entró en la nave mezclada con olor a gasóleo quemado.\n\nSergio Medina soltó el timón de su transpaleta manual y se estiró la espalda con ambas manos en los riñones. Llevaba desde las once de la noche cruzando mercancía de punta a punta de la plataforma logística Valdemoro Norte. Sentía los antebrazos tensos bajo la sudadera azul marino y un velo espeso detrás de los párpados cada vez que miraba los focos blancos colgados de las cerchas del techo.\n\nPor el pasillo central apareció Ramiro Pardo dando zancadas cortas, golpeando el lomo de su portapapeles metálico contra el muslo.\n\n—¡Escuchadme los dos! —llamó el encargado, reuniendo junto a la rampa niveladora a Sergio y al joven Adrián Cuesta—. El camión de Zaragoza viene con cuarenta minutos de retraso por la niebla en la autovía y trae treinta y dos palés mezclados. Veinte van directos al enlace de Sevilla que cierra puertas en el muelle doce a las cuatro y cuarenta y cinco en punto.\n\nSergio miró el reloj digital rojo colgado sobre las oficinas de tráfico. Quedaban cuarenta y tres minutos para vaciar la caja, puntear etiquetas con el lector de muñeca y cruzar media nave.\n\n—Ramiro, somos dos a pie para clasificar —señaló Sergio, ajustándose los guantes grises de agarre—. Con Paco de baja por la espalda y Adrián que entró el miércoles, si hay que reetiquetar bultos sueltos vamos muy justos.\n\n—Pues espabilad y no hagáis viajes en vacío —cortó Ramiro sin levantar la vista de la hoja de carga—. Arriba ya me han avisado de que cualquier salida fuera de ventana queda grabada en el sistema. Si el enlace de Sevilla sale tarde hoy, nos descuentan la penalización de la prima trimestral de todo el turno. Tomás os irá sacando los palés altos con la carretilla hacia el pasillo transversal y vosotros despejáis el suelo. Vamos, que el reloj ya corre.\n\nEl encargado se dio media vuelta hacia la caseta acristalada mientras Adrián Cuesta tragaba saliva dentro de su chaleco naranja nuevo, demasiado ancho para sus hombros delgados.\n\n—Tú tranquilo, chaval —le dijo Sergio en voz baja, dándole un toque breve en el brazo—. Quédate punteando en la boca del muelle y déjame a mí las calles interiores. Si dudas de un código, pregunta antes de dejar nada en mitad del paso.\n\n* * *\n\nDurante los primeros veinticinco minutos el muelle siete se convirtió en un embudo de golpes de madera, chirridos de ruedas de poliuretano y avisos acústicos. Tres carretillas elevadoras amarillas entraban y salían a la vez desde distintos ramales, cruzándose a pocos palmos de los operarios que tiraban de las transpaletas manuales.\n\nEl embudo peor estaba en el pasillo transversal B-cuatro, que conectaba la descarga con el muelle doce. Un año atrás habían pintado en el suelo una franja amarilla para separar el paso de peatones de la vía de máquinas, pero el roce diario de las uñas metálicas y las ruedas había borrado la pintura hasta dejar solo manchas sueltas sobre el cemento gris.\n\nPara ganar segundos, nadie rodeaba ya por la galería exterior. En los márgenes del pasillo se acumulaban conteras de cartón, restos de plástico retráctil arrancado a tirones y tiras largas de fleje blanco de polipropileno que quedaban enroscadas en el suelo como lazos rígidos junto a las estanterías azules.\n\nA las cuatro y media, Sergio notaba que le costaba enfocar las cifras pequeñas del lector óptico. Dos veces tuvo que borrar una lectura errónea y volver a pitar el código de barras. Al doblar la esquina del B-cuatro se encontró a Adrián parado frente a dos palés de cajas de grifería industrial, con el cúter retráctil en una mano y tres flejes blancos cortados colgando hasta el suelo.\n\n—Sergio, perdona —dijo el chico con la frente sudada—. Ramiro me ha gritado desde la cristalera que trajera este lote aquí para abrir hueco en la rampa, pero al bajar el escalón del muelle se ha rajado el cartón de abajo y no sé en qué jaula va.\n\nSergio miró el suelo. Una caja gruesa de cartón marrón, cargada con casi veinticinco kilos de válvulas de latón, se había escurrido del borde del palé al perder el fleje inferior. Había quedado atravesada a medio metro de la estantería, invadiendo buena parte del carril por donde giraban las carretillas.\n\n—Recoge luego esos flejes del suelo para que no se enrede una rueda —indicó Sergio con prisa, señalando las tiras blancas de plástico junto a sus botas—. Vete al muelle siete a por el albarán último, que ahora mismo aparto yo esta caja y termino de cuadrar el hueco.\n\nAdrián asintió y salió casi corriendo hacia la zona de rampa.\n\n* * *\n\nQuedaban once minutos para las cuatro y cuarenta y cinco. En el reloj digital parpadeaban los minutos en rojo y desde el muelle doce empezaban a sonar las bocinas de aviso de cierre de puertas.\n\nSergio dejó su transpaleta pegada al puntal azul de la estantería y se acercó al centro del pasillo B-cuatro para retirar la caja reventada. Al fondo del corredor, a unos veinte metros, oyó el zumbido eléctrico y el claxon corto de la carretilla elevadora amarilla que conducía Tomás.\n\nLa máquina avanzaba de frente hacia el cruce cargando el último palé doble de la descarga: dos niveles altos de cajas de repuestos envueltos deprisa con apenas dos vueltas flojas de plástico transparente. Como la pila superaba el metro ochenta sobre las horquillas levantadas a media altura para salvar unos bultos previos, el volumen tapaba casi por completo la visión frontal del conductor a ras de suelo.\n\nSergio calculó que le daba tiempo de sobra. Tres segundos para arrastrar la caja pesada contra el hueco inferior de la estantería y dejar el carril limpio sin obligar a Tomás a frenar ni perder el impulso hacia el muelle doce.\n\nFlexionó las rodillas, metió los dedos enguantados bajo las solapas húmedas del cartón y tiró hacia sí. El fondo cedió un poco más con un crujido seco y una de las bolsas interiores de piezas metálicas se atascó contra una junta del hormigón.\n\nA diez metros, Tomás volvió a dar un toque breve de claxon antes de entrar en el estrechamiento. Desde el puesto del conductor vio por el lateral izquierdo el destello del chaleco amarillo de Sergio enderezándose medio palmo junto a la estantería. Creyendo que su compañero ya había terminado de apartar el bulto y estaba pegado al bastidor fuera de trayectoria, mantuvo el pedal pisado para no llegar tarde a la rampa de Sevilla.\n\nSergio levantó la vista de golpe y se encontró las puntas de acero de las horquillas y la sombra enorme del palé elevado viniéndose encima a menos de cuatro metros.\n\n* * *\n\nSoltó la caja en el acto y dio dos pasos largos hacia atrás buscando pegarse a las barras de protección de la estantería.\n\nEn el segundo apoyo, el tacón de su bota derecha se metió de lleno dentro de uno de los aros de fleje blanco de embalaje que habían quedado tirados sobre el cemento. Al tirar del otro pie para zafarse, la cinta plástica tensó entre ambos tobillos como una traba.\n\nSergio perdió el equilibrio de golpe y cayó sentado de espaldas contra el suelo gris, con la pierna derecha estirada hacia el centro del pasillo.\n\n—¡Para, Tomás, para! —alcanzó a gritar levantando el brazo.\n\nEl carretillero vio caer el bulto amarillo por el hueco lateral del mástil y clavó el pedal de freno a fondo mientras giraba ligeramente la dirección. Las ruedas macizas chirriaron dejando dos marcas negras en el suelo y el mástil cabeceó con violencia hacia delante por la inercia de la frenada brusca.\n\nA metro y medio de altura, las dos vueltas escasas de film transparente se abrieron de arriba abajo con un chasquido seco.\n\nLa fila superior del palé perdió apoyo en el aire. Tres cajas pesadas de válvulas industriales salieron despedidas por delante de la carga inclinada. La primera estalló contra el hormigón esparciendo piezas de latón; la segunda rebotó contra el borde de la caja rota del suelo y se desplomó con todo su peso directo sobre la mitad inferior de la pierna derecha de Sergio.\n\nUn dolor agudo y caliente le cortó la respiración antes siquiera de oír su propio grito. Se llevó ambas manos al muslo mientras el polvo del cartón y el eco metálico de las válvulas rodaban bajo las estanterías.\n\nEn cuestión de segundos acudieron voces desde los dos muelles cercanos. El primero en doblar la esquina corriendo fue Adrián Cuesta, pálido como el papel al ver a Sergio tendido junto a las ruedas delanteras de la carretilla detenida.\n\n—¡Sergio, aguanta que te quito esto de encima! —exclamó el chico perdiendo los nervios.\n\nSin esperar a que Tomás bajara las horquillas a ras de suelo ni comprobar cómo había quedado el resto del palé arriba, Adrián se metió debajo de la sombra del mástil y agarró con las dos manos el listón de madera del palé inclinado, dando un tirón seco para apartar las cajas caídas.\n\nAl sacudir la base, el segundo bloque de mercancía que había quedado colgando del plástico roto en lo alto del palé terminó de vencer hacia delante.\n\n—¡Atrás, Adrián, suelta eso! —rugió Sergio desde el suelo haciendo acopio de aire.\n\nAdrián se echó hacia atrás por puro reflejo en la última décima de segundo. Una caja de veinte kilos se estrelló contra el hormigón exactamente donde tenía plantadas las botas un instante antes, rozándole el hombro del chaleco naranja al caer y levantando una nube seca de serrín de palé roto.\n\n* * *\n\nRamiro Pardo llegó cinco segundos después y esta vez nadie miró el reloj rojo de la pared. Tomás apagó el contacto de la carretilla, activó el freno de estacionamiento y bloqueó ambos extremos del pasillo B-cuatro con conos mientras dos compañeros veteranos mantenían quieto a Sergio cubriéndolo con una chaqueta térmica hasta que entró la ambulancia por el portón del muelle siete.\n\nEran las cinco y veinte de la madrugada cuando los sanitarios del servicio de emergencias inmovilizaron la pierna derecha de Sergio dentro de una férula neumática rígida y subieron la camilla al furgón con los rotativos encendidos sobre el asfalto húmedo.\n\nAl pasar junto al muelle doce camino de la salida, Sergio alcanzó a ver por la ventanilla trasera el camión de enlace a Sevilla todavía atracado, con las puertas abiertas de par en par, las luces interiores encendidas y la mitad de la carga sin meter en mitad de la playa de expedición. Toda la plataforma había quedado detenida durante más de tres horas mientras la guardia civil y el técnico de prevención de guardia tomaban fotografías del cruce.\n\nEn el hospital confirmaron una fractura cerrada de tibia y peroné que obligó a pasar por quirófano esa misma mañana para colocar una placa con tornillos, seguida de escayola alta e inmovilización completa.\n\nEl informe interno de investigación que redactó el servicio de prevención tres días más tarde desmontó punto por punto la versión inicial de un simple tropezón fortuito. Las fotos mostraban las líneas peatonales borradas desde hacía meses, la ausencia total de vallas físicas en un cruce ciego, restos de flejes y embalajes acumulados en zona de paso, un palé mal retractilado circulado a altura excesiva por la prisa y una orden directa vinculando los minutos de un camión retrasado en ruta con el recorte salarial de todo el turno.\n\n* * *\n\nOnce días después del accidente, la lluvia gris de noviembre golpeaba despacio el cristal del salón en el piso de Sergio. Sentado en el sofá con dos cojines detrás de la espalda y la pierna derecha cubierta de escayola blanca apoyada sobre un taburete tapizado, terminaba de leer la copia del parte de baja y las recomendaciones preventivas enviadas por el comité de seguridad.\n\nSobre la mesa baja tenía las dos muletas de aluminio apoyadas contra el borde y el bote de calmantes junto a un vaso de agua. Todavía le punzaba el tobillo cada vez que cambiaba de postura.\n\nA las seis y cuarto de la tarde, la pantalla de su teléfono móvil se iluminó sobre la madera con dos vibraciones cortas.\n\nSergio alargó la mano pensando que sería Adrián, que lo había llamado dos veces aquella semana todavía con el susto metido en el cuerpo para preguntarle cómo llevaba los puntos. Sin embargo, en la notificación figuraba el nombre de Ramiro Pardo.\n\nAbrió el mensaje de texto.\n\n«Buenas tardes, Sergio. Espero que vaya mejor esa pierna. Dime qué te ha dicho el traumatólogo en la revisión y para qué fecha calculas que te darán el alta, porque la semana que viene vuelve a entrar muchísimo volumen de campaña y andamos muy justos de manos en el turno. Un saludo».\n\nNi una palabra sobre las barreras del pasillo B-cuatro, ni sobre separar las carretillas de la gente a pie, ni sobre dejar de correr detrás de camiones que ya llegaban tarde desde carretera.\n\nSergio dejó el teléfono boca abajo sobre la mesa sin responder. Miró el yeso blanco que le envolvía desde debajo de la rodilla hasta los dedos del pie y escuchó el silencio tranquilo de su casa, sabiendo con una certeza fría que en aquella nave todo seguía igual y que, en cuanto el reloj volviera a apretar de madrugada, otro compañero acabaría ocupando su sitio en el suelo del pasillo.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El pitido intermitente del tráiler dando marcha atrás retumbó contra la chapa del muelle siete a las cuatro y dos minutos de la madrugada. Cuando los topes de goma golpearon el hormigón y se levantó el portón seccional, una bocanada de niebla helada entró en la nave mezclada con olor a gasóleo quemado.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sergio Medina soltó el timón de su transpaleta manual y se estiró la espalda con ambas manos en los riñones. Llevaba desde las once de la noche cruzando mercancía de punta a punta de la plataforma logística Valdemoro Norte. Sentía los antebrazos tensos bajo la sudadera azul marino y un velo espeso detrás de los párpados cada vez que miraba los focos blancos colgados de las cerchas del techo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Por el pasillo central apareció Ramiro Pardo dando zancadas cortas, golpeando el lomo de su portapapeles metálico contra el muslo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Escuchadme los dos! —llamó el encargado, reuniendo junto a la rampa niveladora a Sergio y al joven Adrián Cuesta—. El camión de Zaragoza viene con cuarenta minutos de retraso por la niebla en la autovía y trae treinta y dos palés mezclados. Veinte van directos al enlace de Sevilla que cierra puertas en el muelle doce a las cuatro y cuarenta y cinco en punto.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sergio miró el reloj digital rojo colgado sobre las oficinas de tráfico. Quedaban cuarenta y tres minutos para vaciar la caja, puntear etiquetas con el lector de muñeca y cruzar media nave.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Ramiro, somos dos a pie para clasificar —señaló Sergio, ajustándose los guantes grises de agarre—. Con Paco de baja por la espalda y Adrián que entró el miércoles, si hay que reetiquetar bultos sueltos vamos muy justos.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Pues espabilad y no hagáis viajes en vacío —cortó Ramiro sin levantar la vista de la hoja de carga—. Arriba ya me han avisado de que cualquier salida fuera de ventana queda grabada en el sistema. Si el enlace de Sevilla sale tarde hoy, nos descuentan la penalización de la prima trimestral de todo el turno. Tomás os irá sacando los palés altos con la carretilla hacia el pasillo transversal y vosotros despejáis el suelo. Vamos, que el reloj ya corre.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El encargado se dio media vuelta hacia la caseta acristalada mientras Adrián Cuesta tragaba saliva dentro de su chaleco naranja nuevo, demasiado ancho para sus hombros delgados.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Tú tranquilo, chaval —le dijo Sergio en voz baja, dándole un toque breve en el brazo—. Quédate punteando en la boca del muelle y déjame a mí las calles interiores. Si dudas de un código, pregunta antes de dejar nada en mitad del paso.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0061-003-sergio-estira-espalda-transpaleta-muelle-7.webp\" alt=\"Escena oficial de El último palé — Sergio estira espalda transpaleta muelle 7\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Sergio estira espalda transpaleta muelle 7</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Durante los primeros veinticinco minutos el muelle siete se convirtió en un embudo de golpes de madera, chirridos de ruedas de poliuretano y avisos acústicos. Tres carretillas elevadoras amarillas entraban y salían a la vez desde distintos ramales, cruzándose a pocos palmos de los operarios que tiraban de las transpaletas manuales.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El embudo peor estaba en el pasillo transversal B-cuatro, que conectaba la descarga con el muelle doce. Un año atrás habían pintado en el suelo una franja amarilla para separar el paso de peatones de la vía de máquinas, pero el roce diario de las uñas metálicas y las ruedas había borrado la pintura hasta dejar solo manchas sueltas sobre el cemento gris.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Para ganar segundos, nadie rodeaba ya por la galería exterior. En los márgenes del pasillo se acumulaban conteras de cartón, restos de plástico retráctil arrancado a tirones y tiras largas de fleje blanco de polipropileno que quedaban enroscadas en el suelo como lazos rígidos junto a las estanterías azules.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A las cuatro y media, Sergio notaba que le costaba enfocar las cifras pequeñas del lector óptico. Dos veces tuvo que borrar una lectura errónea y volver a pitar el código de barras. Al doblar la esquina del B-cuatro se encontró a Adrián parado frente a dos palés de cajas de grifería industrial, con el cúter retráctil en una mano y tres flejes blancos cortados colgando hasta el suelo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Sergio, perdona —dijo el chico con la frente sudada—. Ramiro me ha gritado desde la cristalera que trajera este lote aquí para abrir hueco en la rampa, pero al bajar el escalón del muelle se ha rajado el cartón de abajo y no sé en qué jaula va.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sergio miró el suelo. Una caja gruesa de cartón marrón, cargada con casi veinticinco kilos de válvulas de latón, se había escurrido del borde del palé al perder el fleje inferior. Había quedado atravesada a medio metro de la estantería, invadiendo buena parte del carril por donde giraban las carretillas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Recoge luego esos flejes del suelo para que no se enrede una rueda —indicó Sergio con prisa, señalando las tiras blancas de plástico junto a sus botas—. Vete al muelle siete a por el albarán último, que ahora mismo aparto yo esta caja y termino de cuadrar el hueco.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Adrián asintió y salió casi corriendo hacia la zona de rampa.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0061-022-uñas-y-ruedas-pasan-encima-marcas-borradas.webp\" alt=\"Escena oficial de El último palé — Uñas y ruedas pasan encima marcas borradas\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Uñas y ruedas pasan encima marcas borradas</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Quedaban once minutos para las cuatro y cuarenta y cinco. En el reloj digital parpadeaban los minutos en rojo y desde el muelle doce empezaban a sonar las bocinas de aviso de cierre de puertas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sergio dejó su transpaleta pegada al puntal azul de la estantería y se acercó al centro del pasillo B-cuatro para retirar la caja reventada. Al fondo del corredor, a unos veinte metros, oyó el zumbido eléctrico y el claxon corto de la carretilla elevadora amarilla que conducía Tomás.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La máquina avanzaba de frente hacia el cruce cargando el último palé doble de la descarga: dos niveles altos de cajas de repuestos envueltos deprisa con apenas dos vueltas flojas de plástico transparente. Como la pila superaba el metro ochenta sobre las horquillas levantadas a media altura para salvar unos bultos previos, el volumen tapaba casi por completo la visión frontal del conductor a ras de suelo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sergio calculó que le daba tiempo de sobra. Tres segundos para arrastrar la caja pesada contra el hueco inferior de la estantería y dejar el carril limpio sin obligar a Tomás a frenar ni perder el impulso hacia el muelle doce.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Flexionó las rodillas, metió los dedos enguantados bajo las solapas húmedas del cartón y tiró hacia sí. El fondo cedió un poco más con un crujido seco y una de las bolsas interiores de piezas metálicas se atascó contra una junta del hormigón.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A diez metros, Tomás volvió a dar un toque breve de claxon antes de entrar en el estrechamiento. Desde el puesto del conductor vio por el lateral izquierdo el destello del chaleco amarillo de Sergio enderezándose medio palmo junto a la estantería. Creyendo que su compañero ya había terminado de apartar el bulto y estaba pegado al bastidor fuera de trayectoria, mantuvo el pedal pisado para no llegar tarde a la rampa de Sevilla.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sergio levantó la vista de golpe y se encontró las puntas de acero de las horquillas y la sombra enorme del palé elevado viniéndose encima a menos de cuatro metros.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0061-042-tomas-mantiene-pedal-pisado-creyendo-via-libre.webp\" alt=\"Escena oficial de El último palé — Tomas mantiene pedal pisado creyendo via libre\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Tomas mantiene pedal pisado creyendo via libre</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Soltó la caja en el acto y dio dos pasos largos hacia atrás buscando pegarse a las barras de protección de la estantería.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el segundo apoyo, el tacón de su bota derecha se metió de lleno dentro de uno de los aros de fleje blanco de embalaje que habían quedado tirados sobre el cemento. Al tirar del otro pie para zafarse, la cinta plástica tensó entre ambos tobillos como una traba.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sergio perdió el equilibrio de golpe y cayó sentado de espaldas contra el suelo gris, con la pierna derecha estirada hacia el centro del pasillo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Para, Tomás, para! —alcanzó a gritar levantando el brazo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El carretillero vio caer el bulto amarillo por el hueco lateral del mástil y clavó el pedal de freno a fondo mientras giraba ligeramente la dirección. Las ruedas macizas chirriaron dejando dos marcas negras en el suelo y el mástil cabeceó con violencia hacia delante por la inercia de la frenada brusca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A metro y medio de altura, las dos vueltas escasas de film transparente se abrieron de arriba abajo con un chasquido seco.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La fila superior del palé perdió apoyo en el aire. Tres cajas pesadas de válvulas industriales salieron despedidas por delante de la carga inclinada. La primera estalló contra el hormigón esparciendo piezas de latón; la segunda rebotó contra el borde de la caja rota del suelo y se desplomó con todo su peso directo sobre la mitad inferior de la pierna derecha de Sergio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Un dolor agudo y caliente le cortó la respiración antes siquiera de oír su propio grito. Se llevó ambas manos al muslo mientras el polvo del cartón y el eco metálico de las válvulas rodaban bajo las estanterías.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En cuestión de segundos acudieron voces desde los dos muelles cercanos. El primero en doblar la esquina corriendo fue Adrián Cuesta, pálido como el papel al ver a Sergio tendido junto a las ruedas delanteras de la carretilla detenida.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0061-062-sanitarios-colocan-ferula-neumatica-pierna-520.webp\" alt=\"Escena oficial de El último palé — Sanitarios colocan ferula neumatica pierna 520\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Sanitarios colocan ferula neumatica pierna 520</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Sergio, aguanta que te quito esto de encima! —exclamó el chico perdiendo los nervios.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sin esperar a que Tomás bajara las horquillas a ras de suelo ni comprobar cómo había quedado el resto del palé arriba, Adrián se metió debajo de la sombra del mástil y agarró con las dos manos el listón de madera del palé inclinado, dando un tirón seco para apartar las cajas caídas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al sacudir la base, el segundo bloque de mercancía que había quedado colgando del plástico roto en lo alto del palé terminó de vencer hacia delante.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Atrás, Adrián, suelta eso! —rugió Sergio desde el suelo haciendo acopio de aire.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Adrián se echó hacia atrás por puro reflejo en la última décima de segundo. Una caja de veinte kilos se estrelló contra el hormigón exactamente donde tenía plantadas las botas un instante antes, rozándole el hombro del chaleco naranja al caer y levantando una nube seca de serrín de palé roto.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Ramiro Pardo llegó cinco segundos después y esta vez nadie miró el reloj rojo de la pared. Tomás apagó el contacto de la carretilla, activó el freno de estacionamiento y bloqueó ambos extremos del pasillo B-cuatro con conos mientras dos compañeros veteranos mantenían quieto a Sergio cubriéndolo con una chaqueta térmica hasta que entró la ambulancia por el portón del muelle siete.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Eran las cinco y veinte de la madrugada cuando los sanitarios del servicio de emergencias inmovilizaron la pierna derecha de Sergio dentro de una férula neumática rígida y subieron la camilla al furgón con los rotativos encendidos sobre el asfalto húmedo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al pasar junto al muelle doce camino de la salida, Sergio alcanzó a ver por la ventanilla trasera el camión de enlace a Sevilla todavía atracado, con las puertas abiertas de par en par, las luces interiores encendidas y la mitad de la carga sin meter en mitad de la playa de expedición. Toda la plataforma había quedado detenida durante más de tres horas mientras la guardia civil y el técnico de prevención de guardia tomaban fotografías del cruce.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0061-081-plano-final-sergio-en-silencio-lluvia-salon.webp\" alt=\"Escena oficial de El último palé — Plano final sergio en silencio lluvia salon\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Plano final sergio en silencio lluvia salon</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En el hospital confirmaron una fractura cerrada de tibia y peroné que obligó a pasar por quirófano esa misma mañana para colocar una placa con tornillos, seguida de escayola alta e inmovilización completa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El informe interno de investigación que redactó el servicio de prevención tres días más tarde desmontó punto por punto la versión inicial de un simple tropezón fortuito. Las fotos mostraban las líneas peatonales borradas desde hacía meses, la ausencia total de vallas físicas en un cruce ciego, restos de flejes y embalajes acumulados en zona de paso, un palé mal retractilado circulado a altura excesiva por la prisa y una orden directa vinculando los minutos de un camión retrasado en ruta con el recorte salarial de todo el turno.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Once días después del accidente, la lluvia gris de noviembre golpeaba despacio el cristal del salón en el piso de Sergio. Sentado en el sofá con dos cojines detrás de la espalda y la pierna derecha cubierta de escayola blanca apoyada sobre un taburete tapizado, terminaba de leer la copia del parte de baja y las recomendaciones preventivas enviadas por el comité de seguridad.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sobre la mesa baja tenía las dos muletas de aluminio apoyadas contra el borde y el bote de calmantes junto a un vaso de agua. Todavía le punzaba el tobillo cada vez que cambiaba de postura.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A las seis y cuarto de la tarde, la pantalla de su teléfono móvil se iluminó sobre la madera con dos vibraciones cortas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sergio alargó la mano pensando que sería Adrián, que lo había llamado dos veces aquella semana todavía con el susto metido en el cuerpo para preguntarle cómo llevaba los puntos. Sin embargo, en la notificación figuraba el nombre de Ramiro Pardo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Abrió el mensaje de texto.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">«Buenas tardes, Sergio. Espero que vaya mejor esa pierna. Dime qué te ha dicho el traumatólogo en la revisión y para qué fecha calculas que te darán el alta, porque la semana que viene vuelve a entrar muchísimo volumen de campaña y andamos muy justos de manos en el turno. Un saludo».</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Ni una palabra sobre las barreras del pasillo B-cuatro, ni sobre separar las carretillas de la gente a pie, ni sobre dejar de correr detrás de camiones que ya llegaban tarde desde carretera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sergio dejó el teléfono boca abajo sobre la mesa sin responder. Miró el yeso blanco que le envolvía desde debajo de la rodilla hasta los dedos del pie y escuchó el silencio tranquilo de su casa, sabiendo con una certeza fría que en aquella nave todo seguía igual y que, en cuanto el reloj volviera a apretar de madrugada, otro compañero acabaría ocupando su sitio en el suelo del pasillo.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false,
+    "fecha_publicacion": null,
+    "fecha_publicacion_ts": null
+  },
+  {
     "id": "0060",
     "slug": "el-turno-que-no-terminaba",
     "pagina_url": "relatos/0060-el-turno-que-no-terminaba.html",
@@ -443,7 +593,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-24T20:00:00+01:00",
     "fecha_publicacion_ts": 1795546800
@@ -592,7 +742,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-25T20:00:00+01:00",
     "fecha_publicacion_ts": 1795633200
@@ -741,7 +891,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-23T20:00:00+01:00",
     "fecha_publicacion_ts": 1795460400
@@ -890,7 +1040,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-23T20:00:00+01:00",
     "fecha_publicacion_ts": 1795460400
@@ -1039,7 +1189,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-22T20:00:00+01:00",
     "fecha_publicacion_ts": 1795374000
@@ -1188,7 +1338,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-21T20:00:00+01:00",
     "fecha_publicacion_ts": 1795287600
@@ -1337,7 +1487,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-20T20:00:00+01:00",
     "fecha_publicacion_ts": 1795201200
@@ -1488,7 +1638,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-19T20:00:00+01:00",
     "fecha_publicacion_ts": 1795114800
@@ -1639,7 +1789,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-18T20:00:00+01:00",
     "fecha_publicacion_ts": 1795028400
@@ -1947,7 +2097,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
+    "estado": "programado",
     "publicado": false,
     "fecha_publicacion": "2026-11-17T20:00:00+01:00",
     "fecha_publicacion_ts": 1794942000
