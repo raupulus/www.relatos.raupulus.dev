@@ -50,32 +50,32 @@
 
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
         
-            <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-              <img src="../assets/images/portadas/M0007-bia.webp" alt="Portada de Bia: El Señor de las Aguas Indómitas ⚡ Espíritus Abosom (África)" width="1280" height="720" class="w-full h-full object-cover opacity-60">
-              <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-6">
-                <span class="px-3.5 py-1.5 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5 mb-3">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
-                  Estreno Programado en YouTube
-                </span>
-                <div class="text-xl sm:text-2xl font-bold text-white max-w-lg mb-2">Bia: El Señor de las Aguas Indómitas ⚡ Espíritus Abosom (África)</div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                  <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                  <span>Fecha de estreno: Próximamente</span>
-                </div>
-                <p class="text-xs text-text-muted max-w-md mb-5">El vídeo, el Short y la historia mitológica completa se desbloquearán en esta página el día del estreno oficial.</p>
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  Suscribirme para ver el estreno
-                </a>
-              </div>
+            <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+              <iframe src="https://www.youtube-nocookie.com/embed/P-W4UUuX410?rel=0&modestbranding=1"
+                      title="Bia: El Señor de las Aguas Indómitas ⚡ Espíritus Abosom (África)"
+                      class="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
             </div>
+            
+            <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
+              <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
+                <iframe src="https://www.youtube-nocookie.com/embed/ADxkFEqQo60?rel=0&modestbranding=1"
+                        title="Short: Bia: El Señor de las Aguas Indómitas ⚡ Espíritus Abosom (África)"
+                        class="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
+              <a href="https://www.youtube.com/shorts/ADxkFEqQo60" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
+            </div>
+            
             
         <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
           <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
             <span>Suscribirme en YouTube</span>
           </a>
           <div class="flex flex-wrap items-center gap-2">
-            
+            <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')" class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition"><span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span></button>
             <a href="https://www.youtube.com/watch?v=P-W4UUuX410" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
               <span>Ver vídeo en YouTube ↗</span>
             </a>
@@ -100,28 +100,16 @@
             
             <div class="text-text-main">
               <p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Bia, la divinidad abosom de las corrientes indómitas y el soberano del río que custodia las selvas impenetrables del oeste.</p>
-            </div>
-
-            <!-- Panel de Contenido Protegido hasta Estreno -->
-            <div class="my-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-obsidian-card to-obsidian border border-damask/40 shadow-2xl text-center">
-              <div class="w-12 h-12 mx-auto rounded-full bg-crimson/20 border border-crimson/50 text-crimson-glow flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-              </div>
-              <span class="inline-block px-3 py-1 rounded-full bg-crimson/30 border border-crimson/60 text-damask-light text-xs font-bold uppercase tracking-wider mb-2">Contenido Protegido • Próximo Estreno</span>
-              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-2">La historia completa estará disponible en su estreno oficial</h3>
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                <span>Estreno: Próximamente</span>
-              </div>
-              <p class="text-xs sm:text-sm text-text-muted max-w-lg mx-auto leading-relaxed mb-6">
-                Por protección estricta de derechos de autor y exclusividad editorial, el texto completo, el minutado de capítulos y las escenas cinematográficas se desbloquearán el día del estreno público en YouTube.
-              </p>
-              <div class="flex flex-wrap items-center justify-center gap-3">
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold text-xs transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  <span>Suscribirme al canal de YouTube</span>
-                </a>
-              </div>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">En las profundidades boscosas donde las tierras altas de Ghana se funden con los valles vírgenes de Costa de Marfil, el agua no fluye como un simple curso natural, sino como la sangre viva de un dios. De la unión primordial entre Nyame, señor supremo del firmamento, y Asase Yaa, la gran madre de la tierra, nació Bia, el primogénito de los ríos sagrados. Venerado por las naciones akan como un joven guerrero y sacerdote de porte atlético y mirada penetrante, su piel de ébano oscuro resplandece bañada por la espuma dorada de los rápidos. Desprovisto de mantos pesados que atenúen su agilidad, su torso firme está ceñido por sartas ceremoniales de conchas de cauris, piedras pulidas del lecho fluvial y antiguos amuletos de latón sagrado. A su paso, lianas trepadoras de agua dulce caen sobre sus hombros como una corona viva, mientras peces brillantes saltan en torno a sus brazos anunciando la presencia del abosom de las aguas libres.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Para los linajes ribereños que aprendieron a convivir con la selva ecuatorial, Nana Bia representa la fertilidad inagotable, el cobijo de los viajeros y la protección frente al hambre. Su cauce es la arteria nutricia que mantiene con vida uno de los últimos santuarios de bosque lluvioso del continente africano. Bajo su mirada benévola, las cosechas de ñame y plátano prosperan en las llanuras de inundación, y los peces que desovan en las orillas pedregosas garantizan el sustento diario de las aldeas. Cazadores y pescadores acuden con respeto a su ribera antes de internarse en la espesura para verter libaciones de vino de palma y depositar ñame machacado con aceite rojo, solicitando su favor para cruzar los vados traicioneros. En el dominio de Bia, los animales salvajes hallan un refugio inviolable: los elefantes de bosque bajan a beber en manadas serenas, los leopardos descansan en las riberas y los monos colobos pueblan las copas, sabiendo que bajo el amparo del río ninguna peste ni cazador furtivo puede quebrar la paz del bosque sagrado.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Sin embargo, la misma corriente mansa que nutre la selva puede transfigurarse en una fuerza destructiva implacable cuando los mortales vulneran las leyes sagradas de la naturaleza. Bia no tolera la profanación de sus orillas ni la codicia de quienes explotan sus recursos sin el debido respeto ritual. Cortar árboles centenarios junto al agua, contaminar los manantiales con inmundicias o arrojar redes en los remolinos sagrados desata la cólera inmediata del dios fluvial. La divinidad responde transformando las aguas cristalinas en un torrente furioso de lodo bermellón y troncos a la deriva. Fuertes crecidas arrasan los campamentos ribereños, y remolinos súbitos devoran las canoas de los infractores sin dejar rastro de sus cuerpos. Los ancianos relatan que aquel que miente en una disputa comunitaria y jura en falso sobre las aguas de Bia es consumido por fiebres repentinas y delirios oscuros de los que solo la confesión pública y una ofrenda expiatoria pueden salvarlo. Ante el río, la verdad es tan pura como su corriente más profunda.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">El episodio cumbre que definió el destino de Bia es la legendaria disputa de la primogenitura con su hermano Tano, señor del río vecino. En los albores del mundo, cuando el creador Nyame envejeció y sus ojos comenzaron a nublarse, convocó a sus siervos celestiales con la intención de repartir la tierra entre sus dos hijos mayores. Amando profundamente a Bia por ser el primogénito noble y cumplidor, Nyame tenía reservadas para él las ricas llanuras centrales de Ashanti, colmadas de vetas de oro brillante y pueblos prósperos, mientras que para Tano destinaría las densas selvas periféricas del oeste. No obstante, un sirviente astuto favoreció en secreto a Tano, advirtiéndole del juicio divino. Tano se cubrió con pieles aromáticas y se presentó al alba ante Nyame imitando la voz serena de Bia. Engañado por su debilidad, el dios supremo bendijo a Tano con el corazón del reino y sus riquezas. Cuando el verdadero Bia regresó de la espesura, la verdad quedó al descubierto entre lágrimas amargas. Pero la palabra de Nyame era irrevocable y el decreto ya no podía deshacerse. Con dignidad majestuosa que asombró a los cielos, Bia aceptó el despojo sin odio fratricida. Tomó las tierras salvajes del oeste, declarando que su poder no nacería del oro efímero de los palacios, sino de la soberanía eterna de la naturaleza viva.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Desde aquel día fundacional, el dios Bia convirtió su destierro aparente en una fortaleza inexpugnable de pureza ancestral. Mientras otros reinos crecían, guerreaban y sucumbían a la codicia, las aguas del río Bia continuaron fluyendo soberanas a través de los siglos, marcando la frontera indómita entre Ghana y Costa de Marfil. Hoy en día, su legado sobrevive en la gran Reserva de la Biosfera de Bia, un santuario ecológico global donde la selva virgen permanece viva e incorruptible. En sus santuarios tradicionales, los sacerdotes siguen saludando al abosom de los cauris y las aguas rápidas, recordando a cada generación que la verdadera nobleza no consiste en poseer el oro ajeno, sino en hacer florecer la vida en el rincón más salvaje del mundo.</p>
             </div>
             
           </article>
@@ -134,7 +122,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">En las profundidades boscosas entre Ghana y Costa de Marfil, nace Bia, el primogénito de Nyame y Asase Yaa, señor de las corrientes indómitas y protector del río sagrado.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=P-W4UUuX410&t=0s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -146,7 +134,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Las aguas de Bia alimentan cosechas fértiles de ñame y plátano, y ofrecen un refugio inviolable para los elefantes de bosque, leopardos y comunidades ribereñas.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=P-W4UUuX410&t=70s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -158,7 +146,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Bia castiga con crecidas colosales y torrentes bermellón a quienes talan árboles sagrados, contaminan los manantiales o juran en falso ante sus aguas.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=P-W4UUuX410&t=133s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -170,7 +158,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El hermano menor Tano engaña al anciano Nyame al alba con pieles aromáticas y roba la bendición de Ashanti; Bia acepta el destierro con serenidad majestuosa sin odio fratricida.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=P-W4UUuX410&t=197s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -182,7 +170,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Bia transforma su exilio en la gran Reserva de la Biosfera de Bia, demostrando que la verdadera nobleza reside en hacer florecer la vida en el corazón salvaje de la creación.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=P-W4UUuX410&t=282s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             </div>
           <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">

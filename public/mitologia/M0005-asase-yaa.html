@@ -50,32 +50,32 @@
 
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
         
-            <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-              <img src="../assets/images/portadas/M0005-asase-yaa.webp" alt="Portada de Asase Yaa: La Madre de la Tierra y la Verdad ⚡ Espíritus Abosom (África)" width="1280" height="720" class="w-full h-full object-cover opacity-60">
-              <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-6">
-                <span class="px-3.5 py-1.5 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5 mb-3">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
-                  Estreno Programado en YouTube
-                </span>
-                <div class="text-xl sm:text-2xl font-bold text-white max-w-lg mb-2">Asase Yaa: La Madre de la Tierra y la Verdad ⚡ Espíritus Abosom (África)</div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                  <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                  <span>Fecha de estreno: Próximamente</span>
-                </div>
-                <p class="text-xs text-text-muted max-w-md mb-5">El vídeo, el Short y la historia mitológica completa se desbloquearán en esta página el día del estreno oficial.</p>
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  Suscribirme para ver el estreno
-                </a>
-              </div>
+            <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+              <iframe src="https://www.youtube-nocookie.com/embed/hXRojVxzKRQ?rel=0&modestbranding=1"
+                      title="Asase Yaa: La Madre de la Tierra y la Verdad ⚡ Espíritus Abosom (África)"
+                      class="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
             </div>
+            
+            <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
+              <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
+                <iframe src="https://www.youtube-nocookie.com/embed/SpUj3rAycIU?rel=0&modestbranding=1"
+                        title="Short: Asase Yaa: La Madre de la Tierra y la Verdad ⚡ Espíritus Abosom (África)"
+                        class="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
+              <a href="https://www.youtube.com/shorts/SpUj3rAycIU" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
+            </div>
+            
             
         <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
           <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
             <span>Suscribirme en YouTube</span>
           </a>
           <div class="flex flex-wrap items-center gap-2">
-            
+            <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')" class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition"><span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span></button>
             <a href="https://www.youtube.com/watch?v=hXRojVxzKRQ" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
               <span>Ver vídeo en YouTube ↗</span>
             </a>
@@ -100,28 +100,16 @@
             
             <div class="text-text-main">
               <p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Asase Yaa, la madre nutricia de la tierra fértil y la guardiana implacable de la verdad que acoge a los muertos en su seno eterno.</p>
-            </div>
-
-            <!-- Panel de Contenido Protegido hasta Estreno -->
-            <div class="my-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-obsidian-card to-obsidian border border-damask/40 shadow-2xl text-center">
-              <div class="w-12 h-12 mx-auto rounded-full bg-crimson/20 border border-crimson/50 text-crimson-glow flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-              </div>
-              <span class="inline-block px-3 py-1 rounded-full bg-crimson/30 border border-crimson/60 text-damask-light text-xs font-bold uppercase tracking-wider mb-2">Contenido Protegido • Próximo Estreno</span>
-              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-2">La historia completa estará disponible en su estreno oficial</h3>
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                <span>Estreno: Próximamente</span>
-              </div>
-              <p class="text-xs sm:text-sm text-text-muted max-w-lg mx-auto leading-relaxed mb-6">
-                Por protección estricta de derechos de autor y exclusividad editorial, el texto completo, el minutado de capítulos y las escenas cinematográficas se desbloquearán el día del estreno público en YouTube.
-              </p>
-              <div class="flex flex-wrap items-center justify-center gap-3">
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold text-xs transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  <span>Suscribirme al canal de YouTube</span>
-                </a>
-              </div>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">En el principio de la cosmología del pueblo akan, mucho antes de que los reyes ashanti levantaran sus palacios o los clanes desbrozaran la espesura primordial, ya existía la gran Madre Tierra: Asase Yaa. Nacida de la voluntad creadora junto a Nyame, el soberano del firmamento, ella es el suelo viviente que sostiene los pasos de hombres, fieras y espíritus abosom. Se manifiesta como una matrona venerable de porte majestuoso y tez arcillosa, coronada por intrincadas trenzas con cuentas de terracota y envuelta en telas kente de ricos tonos ocres y bermellones. En su regazo descansa una calabaza colmada de granos dorados y ñames fértiles, mientras de las yemas de sus dedos brotan tiernas raíces que se hunden en el humus sagrado. Ella no habita en las nubes ni en templos de piedra; su altar supremo es cada puñado de tierra fecunda sobre el que caminan los mortales.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Para las aldeas agrícolas de Ghana y Costa de Marfil, Asase Yaa es la generosidad maternal encarnada. Cada amanecer, la tierra negra despierta por su aliento para alimentar los sembrados y hacer germinar el grano sagrado. De su vientre emanan los arroyos cristalinos que riegan las selvas y los tubérculos que sustentan a las familias en épocas de dura sequía. Los campesinos honran su presencia inclinando la frente hacia el suelo antes de la siembra y depositando las primicias de la cosecha sobre la tierra virgen sin segar. Ella es también el cimiento inquebrantable de la justicia comunitaria y la guardiana del juramento: ningún litigante osa mentir si pisa descalzo la tierra, pues la Madre conoce el latido íntimo de cada corazón humano. Asase Yaa protege los hogares, bendice el vientre de las mujeres estériles y otorga paz a quienes respetan los ciclos naturales. Cuando los ancianos vierten libaciones de vino de palma sobre el polvo, agradecen a la madre que sostiene amorosamente sus pasos día tras día.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Sin embargo, la bondad de la Madre Tierra oculta una severidad implacable ante la profanación y el sacrilegio. El jueves, conocido reverentemente como Yawoada, es su día sagrado absoluto. Durante esas veinticuatro horas rige una ley inviolable en todo el territorio: queda terminantemente prohibido herir la tierra. Ninguna azada puede penetrar el suelo, ningún arado de hierro puede quebrar los terrones y ninguna pala puede abrir una fosa. Asase Yaa exige ese descanso semanal para que la tierra respire y cure sus heridas. Aquel imprudente que quebranta el tabú del jueves desafía una maldición temible: sus cosechas se marchitan en un solo día, las serpientes venenosas infestan sus chozas y el suelo fértil se torna arcilla estéril como ceniza. Pero su mayor cólera despierta contra quienes derraman sangre inocente. Para la diosa, la sangre no purificada es un veneno que corrompe su vientre. Quien comete homicidio es juzgado por la propia tierra, que puede abrirse bajo sus pies o negarle sustento hasta consumirlo en el destierro.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">La leyenda más recordada entre los sacerdotes akan narra los tiempos de la Gran Sequía Primordial, cuando el sol calcinó los ríos y una plaga asoló los campos ashanti. Desesperado por el hambre de su clan, un audaz cazador llamado Kwabena ignoró la advertencia de los ancianos en un fatídico amanecer de jueves. Tomando su azadón de hierro, se adentró en el bosque sagrado y golpeó la tierra con furia para arrancar raíces silvestres. Al primer impacto del metal, un temblor sobrecogedor sacudió la selva y una grieta profunda brotó del suelo emitiendo vapor bermellón. De la fractura emergió la imponente figura de Asase Yaa, con ojos relampagueantes de barro ardiente y lianas espinosas enredadas en sus brazos. Con voz que retumbaba como trueno subterráneo, la diosa increpó al mortal: «¿Acaso desgarras las carnes de tu propia madre en su día de reposo?». Kwabena cayó de rodillas aterrado, soltando sus armas y hundiendo el rostro en el polvo para suplicar perdón. Conmovida por su arrepentimiento sincero pero firme en su justicia, la Madre Tierra le ordenó un rito de expiación: ayunar tres lunas, purificar el suelo con aceite de palma y plantar siete higueras sagradas en la linde del bosque. Cuando el cazador cumplió la penitencia, Asase Yaa abrió las entrañas del suelo y un manantial de agua fresca brotó hacia la superficie, salvando a la comunidad entera.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Al concluir el ciclo de la existencia humana, la relación con Asase Yaa alcanza su sentido más hondo y trascendente. Para el pueblo akan, la muerte no es una despedida hacia la nada, sino el retorno definitivo al abrazo maternal que todo lo engendró. Antes de depositar a un difunto en la fosa, los sepultureros golpean suavemente la tierra pidiéndole permiso a la diosa para acoger un nuevo cuerpo en su descanso eterno. Aunque los siglos transformaron los antiguos reinos ashanti y nuevas creencias penetraron en los valles boscosos, el respeto a la Madre Tierra permanece inalterable en Ghana y Costa de Marfil. Los campesinos continúan suspendiendo las faenas agrícolas los jueves sagrados, recordando a las nuevas generaciones que la humanidad no es dueña del suelo que pisa, sino huésped temporal en el vientre eterno de Asase Yaa.</p>
             </div>
             
           </article>
@@ -134,7 +122,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">En el corazón espiritual del pueblo akan, Asase Yaa reina como la gran Madre Tierra que nutre a los vivos y acoge a los antepasados.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=hXRojVxzKRQ&t=0s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -146,7 +134,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Consorte cósmica de Nyame, dios supremo del cielo, ella exige el reposo sagrado de los jueves (Yawoada) sin azadones ni heridas sobre el suelo.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=hXRojVxzKRQ&t=65s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -158,7 +146,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Diosa de la verdad moral y la justicia comunitaria; ante ella se jura descalzo y en su seno descansan las almas de los justos.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=hXRojVxzKRQ&t=128s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -170,7 +158,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Cuando la sangre inocente o la codicia humana mancillan la tierra, la sequía y la esterilidad azotan a las aldeas infractoras.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=hXRojVxzKRQ&t=197s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -182,7 +170,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El cazador Kwabena profana el bosque sagrado durante la sequía, y tras el juicio divino y la expiación, brota el manantial que salva al pueblo.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=hXRojVxzKRQ&t=283s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             </div>
           <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">

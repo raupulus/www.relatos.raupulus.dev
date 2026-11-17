@@ -50,32 +50,32 @@
 
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
         
-            <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-              <img src="../assets/images/portadas/M0009-kra.webp" alt="Portada de Kra: La Chispa Divina del Alma ⚡ Espíritus Abosom (África)" width="1280" height="720" class="w-full h-full object-cover opacity-60">
-              <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-6">
-                <span class="px-3.5 py-1.5 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5 mb-3">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
-                  Estreno Programado en YouTube
-                </span>
-                <div class="text-xl sm:text-2xl font-bold text-white max-w-lg mb-2">Kra: La Chispa Divina del Alma ⚡ Espíritus Abosom (África)</div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                  <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                  <span>Fecha de estreno: Próximamente</span>
-                </div>
-                <p class="text-xs text-text-muted max-w-md mb-5">El vídeo, el Short y la historia mitológica completa se desbloquearán en esta página el día del estreno oficial.</p>
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  Suscribirme para ver el estreno
-                </a>
-              </div>
+            <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+              <iframe src="https://www.youtube-nocookie.com/embed/6TRzhHRU8PY?rel=0&modestbranding=1"
+                      title="Kra: La Chispa Divina del Alma ⚡ Espíritus Abosom (África)"
+                      class="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
             </div>
+            
+            <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
+              <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
+                <iframe src="https://www.youtube-nocookie.com/embed/jm6RfhFVxq0?rel=0&modestbranding=1"
+                        title="Short: Kra: La Chispa Divina del Alma ⚡ Espíritus Abosom (África)"
+                        class="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
+              <a href="https://www.youtube.com/shorts/jm6RfhFVxq0" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
+            </div>
+            
             
         <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
           <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
             <span>Suscribirme en YouTube</span>
           </a>
           <div class="flex flex-wrap items-center gap-2">
-            
+            <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')" class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition"><span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span></button>
             <a href="https://www.youtube.com/watch?v=6TRzhHRU8PY" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
               <span>Ver vídeo en YouTube ↗</span>
             </a>
@@ -100,28 +100,14 @@
             
             <div class="text-text-main">
               <p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Antes de que el primer aliento infle los pulmones de un recién nacido y antes de que su llanto rompa la penumbra del mundo terrenal, un encuentro solemne tiene lugar en el palacio celestial de Nyame, el señor supremo del firmamento. Frente al trono áureo del creador, en medio de una corte de espíritus primordiales y astros titilantes, se postra una silueta de luz pura y fulgor inextinguible: es el Kra, la chispa divina desprendida del propio aliento sagrado de Dios. Allí, en la antesala silenciosa de la existencia, el alma escucha la proclamación de su nkrabea, el destino irrevocable que habrá de guiar sus pasos entre los mortales. Nyame le asigna su carácter íntimo, sus talentos, las pruebas que pondrán a prueba su temple, el número exacto de sus días y la misión sagrada que deberá cumplir en la tierra. Con una reverencia solemne y el pecho encendido por la promesa divina, el Kra desciende a través de las nubes para anidar en el vientre materno, aguardando la hora de su encarnación.</p>
-            </div>
-
-            <!-- Panel de Contenido Protegido hasta Estreno -->
-            <div class="my-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-obsidian-card to-obsidian border border-damask/40 shadow-2xl text-center">
-              <div class="w-12 h-12 mx-auto rounded-full bg-crimson/20 border border-crimson/50 text-crimson-glow flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-              </div>
-              <span class="inline-block px-3 py-1 rounded-full bg-crimson/30 border border-crimson/60 text-damask-light text-xs font-bold uppercase tracking-wider mb-2">Contenido Protegido • Próximo Estreno</span>
-              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-2">La historia completa estará disponible en su estreno oficial</h3>
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                <span>Estreno: Próximamente</span>
-              </div>
-              <p class="text-xs sm:text-sm text-text-muted max-w-lg mx-auto leading-relaxed mb-6">
-                Por protección estricta de derechos de autor y exclusividad editorial, el texto completo, el minutado de capítulos y las escenas cinematográficas se desbloquearán el día del estreno público en YouTube.
-              </p>
-              <div class="flex flex-wrap items-center justify-center gap-3">
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold text-xs transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  <span>Suscribirme al canal de YouTube</span>
-                </a>
-              </div>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Para los sabios y sacerdotes de la nación akan, el ser humano no es una entidad simple, sino una delicada y majestuosa arquitectura cósmica forjada por tres fuerzas complementarias. De la madre recibe el mogya, la sangre nutricia que engendra la carne, otorga la pertenencia al clan matriarcal y ata el cuerpo al barro fértil de la tierra. Del padre hereda el ntoro, el espíritu transmitido por el semen que define la personalidad visible y el temple social. Junto a ellos camina el sunsum, la sombra y el ego moral que lucha en la noche y puede vagar durante los sueños. Pero en el corazón mismo de este templo viviente, invisible y eterno, late el don exclusivo del Creador: el Kra. Es en este misterio primordial donde arraiga la tradición de los nombres sagrados: cada niño akan recibe su primer apelativo según el día de la semana en que su Kra descendió al mundo —como Kofi para el viernes o Kwame para el sábado—, consagrando su vida entera a la divinidad que custodia su aliento. Es el guardián espiritual de cada individuo, una presencia luminosa que vigila el honor, previene las asechanzas del destino y susurra advertencias en el silencio del pensamiento. Si una persona camina con rectitud, generosidad y respeto a las leyes ancestrales, su Kra resplandece con un vigor invencible, dotándola de una fuerza vital que ninguna sombra puede quebrantar.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Sin embargo, el alma no es un espectador inmune a las flaquezas y tormentos de la existencia terrenal. Cuando la deshonra, la envidia o la traición desgarran la conducta de un individuo, su Kra se entristece, pierde su brillo dorado y repliega su resguardo protector. Un hombre con el alma agraviada se vuelve presa fácil de la enfermedad, la melancolía y las maquinaciones de la temible Obayifo, la criatura devoradora de fuerza vital que acecha en las sombras del bosque. Para restaurar esta armonía quebrantada, la tradición ashanti celebra el rito milenario del Kradware, el lavatorio y purificación del alma. En el krada, el día consagrado de la semana en que nació el individuo, la persona acude ante un manantial de agua pura vestida con telas de algodón blanco inmaculado. Guiado por los sacerdotes okrafo, quienes portan sobre el pecho el sagrado disco pectoral de oro akrafokonmu, el creyente realiza abluciones con hierbas aromáticas, ofrece libaciones y comparte un banquete ritual de ñame machacado con huevo hervido. Con este alimento sagrado, el Kra es apaciguado, recupera su fulgor original y renueva su alianza eterna con el firmamento.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Cuando los hilos del destino tejido por Nyame se agotan y el cuerpo mortal exhala su último suspiro terrenal, el Kra se desprende suavemente de la envoltura de carne y emprende su viaje final. No deambula como un espectro ciego ni vaga condenado entre las tumbas de la aldea. Su sendero lo guía directamente hacia el lago Bosumtwi, el cráter sagrado en el corazón de Ashanti cuyas aguas espejadas marcan la frontera inmutable entre la vida y el más allá. Allí, ante la presencia majestuosa del abosom lacustre Bosomtwe, el alma se acerca a las orillas pedregosas para cumplir con el rito supremo del lavatorio de manos. En ese instante de paz absoluta y recogimiento cósmico, el Kra se despoja de las fatigas, las heridas y los apegos del mundo material, despidiéndose para siempre de la tierra fértil que habitó mientras contempla su propio reflejo limpio de toda mancha terrenal.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Purificado por las aguas del cráter y ligero como una ráfaga de brisa al atardecer, el Kra asciende de regreso a la morada celeste de Nyame. Ante el trono del Padre del Cielo, el alma rinde testimonio de su tránsito por el mundo: relata cómo empleó sus talentos, si defendió la verdad frente a la codicia y si honró el pacto sagrado sellado antes de nacer. Si su camino fue digno, el Kra se reintegra al seno de la luz eterna de Dios o es enviado nuevamente a través de las generaciones familiares como un don protector renovado, mientras la sombra sunsum del difunto es acogida en Asamando para velar por los suyos como un venerado antepasado. Así se perpetúa la fe inmemorial de los akan: la certeza inquebrantable de que la existencia humana no es una chispa efímera condenada al olvido, sino un destello eterno del aliento divino que regresa siempre a su origen sagrado.</p>
             </div>
             
           </article>
@@ -134,7 +120,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Antes de nacer, el Kra comparece ante el trono áureo de Nyame para recibir su carácter, talentos y destino irrevocable (nkrabea).</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=6TRzhHRU8PY&t=0s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -146,7 +132,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">La arquitectura cósmica del ser humano en la tradición akan: la sangre materna mogya, el espíritu paterno ntoro, la sombra sunsum y los nombres consagrados krada.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=6TRzhHRU8PY&t=65s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -158,7 +144,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El debilitamiento del alma por la culpa moral, el asedio de la bruja Obayifo y la restauración sagrada mediante el lavatorio ritual del Kradware oficiado por los sacerdotes okrafo.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=6TRzhHRU8PY&t=143s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -170,7 +156,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Al agotarse los días terrenales, el alma emprende su viaje final hacia el lago Bosumtwi para lavar sus manos y despedirse del mundo material ante el abosom lacustre.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=6TRzhHRU8PY&t=210s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -182,7 +168,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El ascenso del Kra purificado de regreso al firmamento para rendir testimonio ante Dios y reintegrarse a la luz eterna cósmica.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=6TRzhHRU8PY&t=261s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             </div>
           <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -50,32 +50,32 @@
 
       <div class="rounded-2xl bg-obsidian border border-border-subtle overflow-hidden shadow-2xl mb-12">
         
-            <div class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
-              <img src="../assets/images/portadas/M0013-obayifo.webp" alt="Portada de Obayifo: El Vampiro Brujo de la Noche y Fuego de las Sombras ⚡ Deidades y Espíritus (Mitología Ashanti y Akan)" width="1280" height="720" class="w-full h-full object-cover opacity-60">
-              <div class="absolute inset-0 bg-black/75 backdrop-blur-[2px] flex flex-col items-center justify-center text-center p-6">
-                <span class="px-3.5 py-1.5 rounded-full bg-crimson/90 border border-crimson text-white text-xs font-bold uppercase tracking-widest shadow-xl flex items-center gap-1.5 mb-3">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
-                  Estreno Programado en YouTube
-                </span>
-                <div class="text-xl sm:text-2xl font-bold text-white max-w-lg mb-2">Obayifo: El Vampiro Brujo de la Noche y Fuego de las Sombras ⚡ Deidades y Espíritus (Mitología Ashanti y Akan)</div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                  <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                  <span>Fecha de estreno: Próximamente</span>
-                </div>
-                <p class="text-xs text-text-muted max-w-md mb-5">El vídeo, el Short y la historia mitológica completa se desbloquearán en esta página el día del estreno oficial.</p>
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-yt-red text-white text-xs font-semibold hover:bg-red-700 transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  Suscribirme para ver el estreno
-                </a>
-              </div>
+            <div x-show="modoVideo === 'largo'" class="relative aspect-video bg-black overflow-hidden border-b border-border-subtle">
+              <iframe src="https://www.youtube-nocookie.com/embed/zeJ4eeaPtWc?rel=0&modestbranding=1"
+                      title="Obayifo: El Vampiro Brujo de la Noche y Fuego de las Sombras ⚡ Deidades y Espíritus (Mitología Ashanti y Akan)"
+                      class="w-full h-full border-0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
             </div>
+            
+            <div x-show="modoVideo === 'short'" x-cloak class="bg-black py-6 flex flex-col items-center justify-center border-b border-border-subtle">
+              <div class="w-full max-w-[340px] aspect-[9/16] rounded-xl overflow-hidden border border-border-subtle shadow-2xl bg-obsidian">
+                <iframe src="https://www.youtube-nocookie.com/embed/zqt3eaUkF6w?rel=0&modestbranding=1"
+                        title="Short: Obayifo: El Vampiro Brujo de la Noche y Fuego de las Sombras ⚡ Deidades y Espíritus (Mitología Ashanti y Akan)"
+                        class="w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
+              <a href="https://www.youtube.com/shorts/zqt3eaUkF6w" target="_blank" rel="noopener noreferrer" class="mt-3 text-xs text-damask-light hover:text-white underline">Abrir Short directamente en YouTube ↗</a>
+            </div>
+            
             
         <div class="px-4 py-3 bg-obsidian-card border-b border-border-subtle flex flex-wrap items-center justify-between gap-3 text-xs">
           <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold flex items-center gap-2 transition">
             <span>Suscribirme en YouTube</span>
           </a>
           <div class="flex flex-wrap items-center gap-2">
-            
+            <button @click="modoVideo = (modoVideo === 'largo' ? 'short' : 'largo')" class="w-full sm:w-auto min-h-[44px] px-4 py-2 rounded-lg bg-plum/60 hover:bg-plum border border-damask/50 text-text-bright font-semibold flex items-center justify-center gap-2 transition"><span x-text="modoVideo === 'largo' ? '📱 Ver YouTube Short (45s)' : '🎬 Volver al Vídeo Completo (5m)'">📱 Ver YouTube Short (45s)</span></button>
             <a href="https://www.youtube.com/watch?v=zeJ4eeaPtWc" target="_blank" rel="noopener noreferrer" class="min-h-[44px] px-4 py-2 rounded-lg bg-obsidian-elevated hover:bg-plum/60 border border-border-subtle text-text-bright font-semibold flex items-center gap-2 transition">
               <span>Ver vídeo en YouTube ↗</span>
             </a>
@@ -100,28 +100,16 @@
             
             <div class="text-text-main">
               <p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Obayifo, la sombra devoradora de alientos y fuego espectral de la noche en la tradición de Ghana y Costa de Marfil.</p>
-            </div>
-
-            <!-- Panel de Contenido Protegido hasta Estreno -->
-            <div class="my-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-obsidian-card to-obsidian border border-damask/40 shadow-2xl text-center">
-              <div class="w-12 h-12 mx-auto rounded-full bg-crimson/20 border border-crimson/50 text-crimson-glow flex items-center justify-center mb-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-              </div>
-              <span class="inline-block px-3 py-1 rounded-full bg-crimson/30 border border-crimson/60 text-damask-light text-xs font-bold uppercase tracking-wider mb-2">Contenido Protegido • Próximo Estreno</span>
-              <h3 class="text-xl sm:text-2xl font-extrabold text-text-bright mb-2">La historia completa estará disponible en su estreno oficial</h3>
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-plum/60 border border-damask/40 text-xs font-semibold text-text-bright mb-4">
-                <svg class="w-3.5 h-3.5 text-crimson-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                <span>Estreno: Próximamente</span>
-              </div>
-              <p class="text-xs sm:text-sm text-text-muted max-w-lg mx-auto leading-relaxed mb-6">
-                Por protección estricta de derechos de autor y exclusividad editorial, el texto completo, el minutado de capítulos y las escenas cinematográficas se desbloquearán el día del estreno público en YouTube.
-              </p>
-              <div class="flex flex-wrap items-center justify-center gap-3">
-                <a href="https://www.youtube.com/@RaupulusTales?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-yt-red hover:bg-red-700 text-white font-semibold text-xs transition shadow-lg flex items-center gap-2">
-                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  <span>Suscribirme al canal de YouTube</span>
-                </a>
-              </div>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Bajo la sombra infinita de las selvas que abrazan el país ashanti, el día transcurre con la apacible cadencia de los telares de kente y el aroma a leña verde de los hogares. Sin embargo, cuando el sol se hunde tras las copas gigantescas de las ceibas y la oscuridad se adueña de los senderos, una antigua inquietud estremece a los ancianos de la aldea. No temen al rugido del leopardo ni a la mordedura de la víbora cornuda, sino a una amenaza mucho más silenciosa y perversa: la Obayifo. En la cosmovisión de los pueblos akan, este ser no es un demonio nacido en abismos lejanos ni un espíritu salvaje de la espesura, sino una criatura humana que alberga en su pecho el fuego prohibido del bayi: la magia oscura alimentada por la envidia, el resentimiento y una insaciable sed de destrucción. Durante las horas de luz, la Obayifo camina entre los suyos como una vecina bondadosa, una comerciante discreta o una parienta de rostro sereno; pero al llegar la medianoche, su alma traiciona el pacto sagrado de la comunidad.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">La metamorfosis de la Obayifo desafía las leyes naturales y la pureza del firmamento de Nyame. Mientras su cuerpo terrenal yace en apariencia dormido sobre una estera de paja, el espíritu corrompido de la bruja se desprende de la carne o transmuta su figura en una temible fiera alada. Los relatos ancestrales describen su vuelo errático como el de una lechuza monstruosa o un murciélago colosal que surca el dosel selvático con un chirrido metálico. El rasgo más temido de su naturaleza es la fosforescencia espectral que delata su avance: un brillo siniestro y rojizo, semejante a las brasas vivas de un horno subterráneo, brota de sus axilas, de sus cuencas oculares y de su boca entreabierta. Esta lumbre maligna, conocida como el fuego del bayi, ilumina fugazmente las ramas húmedas mientras la criatura planea en círculos sobre las aldeas dormidas, buscando el rastro tibio de los más indefensos.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">El hambre de la Obayifo es selectiva y devastadora. Desciende en absoluto sigilo sobre los techos de paja y palma, filtrándose a través de las rendijas de barro como una nube de vapor pestilente. Su objetivo primordial son los recién nacidos y los niños pequeños, cuya fuerza vital aún no se ha consolidado en el mundo físico. Sin despertar a los padres, la criatura proyecta una lengua invisible o afilada como una espina de acacia para succionar la sangre pura de los infantes y devorar la energía de su sunsum, la sombra espiritual que sostiene la salud humana. A la mañana siguiente, la víctima despierta presa de una fiebre inexplicable, con la piel marchita y el llanto apagado, consumiéndose día tras día sin que los remedios comunes logren alivio. No satisfecha con arrebatar la vida tierna, la bruja extiende su maleficio sobre el entorno: marchita los brotes verdes en los campos de ñame, amarga el vino de palma en las tinajas y seca la leche en las ubres del ganado.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">La tradición oral de Kumasi recuerda la noche en que el sanador tradicional y guardián de amuletos Kofi Mensah detuvo la plaga que asolaba a los recién nacidos del clan. Alertado por los lamentos de la joven madre Nana Yaa Pokua, cuyos hijos languidecían sin causa aparente, el experto curandero reconoció en el cielo el parpadeo sulfuroso que descendía hacia la vivienda. Valiéndose de la sabiduría de los sacerdotes akomfo, Kofi no intentó abatir a la bestia en el aire con flechas vanas. Penetró en secreto en la choza sospechosa donde la bruja había dejado su envoltura carnal inerte y espolvoreó generosamente su lecho con pimienta roja molida, sal marina consagrada y ceniza de hierbas sagradas. Cuando la Obayifo regresó al alba cargada de sangre ajena y quiso reintegrarse en su pellejo mortal, la mezcla quemó su esencia espiritual con un dolor abrasador. Atrapada entre dos mundos, la entidad soltó un aullido desgarrador que despertó a la comarca entera, revelando su rostro culpable antes de desvanecerse en humo fétido ante la mirada atónita de los ancianos.</p>
+<div class="scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none">* * *</div>
+<p class="mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif">Aunque los siglos han transformado los poblados de Ghana y Costa de Marfil, la memoria vigilante de la Obayifo perdura arraigada en el alma colectiva de los akan. En los umbrales de las chozas y sobre las cunas de los lactantes, las madres continúan colgando amuletos suman de latón, conchas de cauri y raíces amargas bendecidas por los herbolarios para repeler el resplandor de las axilas ardientes. Los ancianos sabios advierten a las nuevas generaciones que la verdadera oscuridad no se esconde únicamente en la espesura del bosque, sino en las pasiones que pudren el corazón humano: la codicia secreta y el rencor que devoran la armonía comunitaria. Así, la leyenda de la Obayifo permanece como un eterno recordatorio de que la vigilancia moral y el cuidado de los vulnerables son el único escudo capaz de disipar el fuego más voraz de la noche africana.</p>
             </div>
             
           </article>
@@ -134,7 +122,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">La amenaza silenciosa y perversa del bayi que acecha las aldeas ashanti al caer el sol.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=zeJ4eeaPtWc&t=0s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -146,7 +134,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El espíritu corrompido se desprende del cuerpo durmiente y transmuta en una fiera alada que despide lumbre fosforescente por axilas y boca.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=zeJ4eeaPtWc&t=72s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -158,7 +146,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Filtrándose por las rendijas de paja, la criatura drena la energía vital (sunsum) de los recién nacidos y arruina las cosechas de ñame.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=zeJ4eeaPtWc&t=128s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -170,7 +158,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">El sanador Kofi Mensah cubre el cuerpo dormido de la bruja con sal consagrada y pimienta roja, impidiendo su reingreso espiritual al alba.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=zeJ4eeaPtWc&t=189s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             
 
@@ -182,7 +170,7 @@
                   <p class="text-xs text-text-muted mt-1 leading-relaxed">Amuletos suman protectores y la lección ética de los ancianos: la verdadera oscuridad nace de la codicia y el rencor en el corazón humano.</p>
                 </div>
               </div>
-              
+              <a href='https://www.youtube.com/watch?v=zeJ4eeaPtWc&t=255s' target='_blank' rel='noopener noreferrer' class='text-[11px] text-damask-light hover:text-white font-semibold'>Ver en YouTube ↗</a>
             </div>
             </div>
           <div x-show="vistaPestana === 'personajes'" class="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -1,5 +1,155 @@
 [
   {
+    "id": "0060",
+    "slug": "el-turno-que-no-terminaba",
+    "pagina_url": "relatos/0060-el-turno-que-no-terminaba.html",
+    "titulo": "El turno que no terminaba",
+    "sinopsis": "En una residencia de mayores casi en silencio a las cuatro de la madrugada, la auxiliar Elena Salgado asume en solitario toda el ala norte tras la baja imprevista de su compañera. Entre timbres simultáneos, una ronda de medicación interrumpida y un cuadrante manuscrito que deja de cuadrar, un golpe seco en la habitación doscientos cuatro transforma una noche de cansancio acumulado en una emergencia médica real.",
+    "categoria": "drama",
+    "categoria_nombre": "Drama",
+    "generos": [
+      "Drama",
+      "Suspense"
+    ],
+    "palabras": 2150,
+    "lectura_min": 10,
+    "duracion_audio": "12:52",
+    "duracion_segundos": 772.18,
+    "youtube_id": "xW3fdsJpCQc",
+    "youtube_url": "https://www.youtube.com/watch?v=xW3fdsJpCQc",
+    "portada": "assets/images/portadas/0060-el-turno-que-no-terminaba.webp",
+    "personajes": [
+      {
+        "id": "0060-p1",
+        "nombre": "Elena Salgado",
+        "rol": "protagonista",
+        "rasgos": "treinta y seis años, complexión media, rostro ovalado con ojeras marcadas por los turnos nocturnos, cabello castaño oscuro recogido en una coleta baja práctica, pijama sanitario azul celeste de manga corta y zuecos blancos; trabajadora metódica, empática y acostumbrada a resolver apuros en silencio.",
+        "motivacion": "sacar adelante la guardia nocturna sin que ningún residente quede desatendido ni se acumulen retrasos hasta el relevo de las ocho.",
+        "conflicto": "la falta de personal multiplica las interrupciones justo durante la preparación de la medicación de madrugada, nublando su memoria reciente.",
+        "avatar_cabeza": "assets/images/avatars/0060-personaje-01-elena-salgado-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0060-personaje-01-elena-salgado-cuerpo.webp"
+      },
+      {
+        "id": "0060-p2",
+        "nombre": "Don Vicente Morales",
+        "rol": "personaje secundario clave",
+        "rasgos": "setenta y nueve años, hombre delgado de cabello blanco corto bien peinado, nariz recta, manos nudosas de antiguo relojero y pijama de algodón gris claro a rayas finas; discreto, ordenado y poco dado a pedir ayuda por la noche.",
+        "motivacion": "sobrellevar un mareo repentino sin molestar demasiado hasta que el dolor y la desorientación le vencen.",
+        "conflicto": "toma tratamiento cardíaco y anticoagulante, por lo que cualquier caída nocturna con golpe en la cabeza supone un riesgo serio.",
+        "avatar_cabeza": "assets/images/avatars/0060-personaje-02-don-vicente-morales-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0060-personaje-02-don-vicente-morales-cuerpo.webp"
+      },
+      {
+        "id": "0060-p3",
+        "nombre": "Carmen Lázaro",
+        "rol": "contrapunto",
+        "rasgos": "cincuenta y cuatro años, estatura media, media melena castaña con mechas plateadas recogida con una pinza, gafas finas rectangulares de pasta oscura y bata médica blanca sobre conjunto azul marino; firme, exigente con los partes y pragmática ante los hechos probados.",
+        "motivacion": "mantener la seguridad clínica y la disciplina de los registros en la residencia Los Sauces.",
+        "conflicto": "al recibir la llamada de madrugada sospecha un descuido puntual hasta que revisa los tiempos reales de llamadas e interrupciones de la planta.",
+        "avatar_cabeza": "assets/images/avatars/0060-personaje-03-carmen-lazaro-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/0060-personaje-03-carmen-lazaro-cuerpo.webp"
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "Una sola auxiliar para veintiocho habitaciones",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 00:00."
+      },
+      {
+        "tiempo": "01:45",
+        "segundos": 105,
+        "titulo": "Timbres simultáneos antes de las cuatro",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 01:45."
+      },
+      {
+        "tiempo": "03:30",
+        "segundos": 210,
+        "titulo": "Tres urgencias a la vez en el pasillo",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 03:30."
+      },
+      {
+        "tiempo": "05:48",
+        "segundos": 348,
+        "titulo": "Las casillas cruzadas y la caída en la doscientos cuatro",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 05:48."
+      },
+      {
+        "tiempo": "08:10",
+        "segundos": 490,
+        "titulo": "La llamada al ciento doce y la verdad del registro",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 08:10."
+      },
+      {
+        "tiempo": "10:24",
+        "segundos": 624,
+        "titulo": "El parte del ordenador y las nuevas normas de guardia",
+        "resumen": "Acontecimientos del capítulo correspondientes al bloque de 10:24."
+      }
+    ],
+    "escenas_ilustraciones": [
+      {
+        "src": "assets/images/escenas/0060-003-elena-contesta-telefono-control-enfermeria.webp",
+        "caption": "Ilustración de escena: Elena contesta telefono control enfermeria",
+        "alt": "Escena oficial de El turno que no terminaba — Elena contesta telefono control enfermeria"
+      },
+      {
+        "src": "assets/images/escenas/0060-022-elena-abre-204-don-vicente-sentado-colchon.webp",
+        "caption": "Ilustración de escena: Elena abre 204 don vicente sentado colchon",
+        "alt": "Escena oficial de El turno que no terminaba — Elena abre 204 don vicente sentado colchon"
+      },
+      {
+        "src": "assets/images/escenas/0060-042-elena-arrodillada-junto-don-vicente-sin-mover-cuello.webp",
+        "caption": "Ilustración de escena: Elena arrodillada junto don vicente sin mover cuello",
+        "alt": "Escena oficial de El turno que no terminaba — Elena arrodillada junto don vicente sin mover cuello"
+      },
+      {
+        "src": "assets/images/escenas/0060-061-elena-prefiere-que-conste-duda-por-seguridad.webp",
+        "caption": "Ilustración de escena: Elena prefiere que conste duda por seguridad",
+        "alt": "Escena oficial de El turno que no terminaba — Elena prefiere que conste duda por seguridad"
+      },
+      {
+        "src": "assets/images/escenas/0060-080-elena-empieza-ronda-pasillo-con-tranquilidad.webp",
+        "caption": "Ilustración de escena: Elena empieza ronda pasillo con tranquilidad",
+        "alt": "Escena oficial de El turno que no terminaba — Elena empieza ronda pasillo con tranquilidad"
+      }
+    ],
+    "relato_raw": "El teléfono del control de enfermería sonó dos veces antes de que Elena Salgado dejara la jeringa de agua sobre la bandeja metálica y descolgara el auricular. Eran las dos y cuarto de la madrugada. En el pasillo del ala norte solo quedaban encendidos los apliques bajos de cortesía, y el zumbido del frigorífico de farmacia llenaba el silencio de la segunda planta.\n\n—Dime, Carmen —respondió Elena en voz baja, apoyando la cadera contra el mostrador de formica blanca.\n\nAl otro lado de la línea se oyó el crujido de unos papeles y un suspiro corto de la supervisora de guardia localizada.\n\n—Beatriz acaba de llamar desde urgencias con fiebre alta y vómitos —dijo Carmen Lázaro sin rodeos—. He llamado a las dos bolsas de suplencia y nadie coge el teléfono a estas horas. Vas a tener que llevar tú sola las veintiocho habitaciones de la planta hasta las ocho. Si ocurre algo grave me llamas, pero intenta organizarte por bloques para no ahogarte.\n\nElena miró el cuadrante de la pared, donde figuraban veintiocho nombres escritos con rotulador negro y seis pautas nocturnas subrayadas en amarillo. Llevaba cinco años en la residencia Los Sauces y aquella era la tercera noche seguida que encadenaba por cambios de turno. Le pesaban los gemelos dentro de los zuecos blancos y sentía la boca seca.\n\n—De acuerdo —contestó, pasándose una mano por la nuca para sujetar mejor la coleta—. Acabo los cambios posturales de la zona impar y preparo la ronda de las cuatro con tiempo.\n\nColgó y respiró hondo. Si adelantaba los pañales pendientes antes de las tres y dejaba los carros ordenados, llegaría al relevo de la mañana sin incidentes.\n\n* * *\n\nLa calma duró menos de veinte minutos. Primero saltó la luz roja sobre la puerta de la habitación doscientos ocho porque el señor Esteban había tirado el vaso de agua sobre la sábana bajera. Mientras Elena cambiaba la ropa de cama húmeda, otro timbre insistente empezó a sonar en el extremo opuesto del corredor. Tuvo que dejar el carro azul de lencería arrimado a la pared y cruzar sesenta metros a paso rápido para calmar a una residente recién ingresada que preguntaba si ya había salido el autobús de las siete.\n\nCuando regresó al control, el reloj digital de pared marcaba las tres y cincuenta y cinco. Elena notó un ligero ardor en los ojos y una lentitud pegajosa en los dedos al abrir los cajetines azules del carro de medicación.\n\nAbrió la carpeta gruesa de tapas rojas donde se anotaban las tomas nocturnas con bolígrafo negro. Tenía ante sí tres hojas seguidas de casillas pequeñas. Leyó dos veces la misma línea porque los números de habitación empezaron a bailar unos sobre otros bajo el tubo fluorescente frío del mostrador.\n\n«Cuatro menos cinco», pensó, frotándose la frente con el dorso de la muñeca. «Solo quedan cuatro pastillas de tensión y el protector gástrico del doscientos seis. Si no me distraigo diez minutos, termino el registro entero».\n\nSacó la bandeja de plástico gris y empezó a colocar los vasitos transparentes etiquetados con tinta negra sobre el carro metálico azul de tres baldas. En ese instante, el panel luminoso del pasillo emitió un pitido doble distinto al habitual.\n\nEn la consola se encendió el piloto naranja de la habitación doscientos cuatro.\n\nElena frunció el ceño. La doscientos cuatro era la de don Vicente Morales, un antiguo relojero de setenta y nueve años que jamás pulsaba el timbre después de cenar.\n\n* * *\n\nElena dejó el blíster de comprimidos encima de la hoja abierta de la carpeta, sin marcar todavía la casilla de las cuatro, y caminó deprisa hacia la doscientos cuatro. Al abrir la puerta sin hacer ruido, vio la lámpara de la mesilla encendida. Don Vicente estaba sentado al borde del colchón con su pijama gris de algodón a rayas finas, sujetándose el borde del colchón con ambas manos nudosas. Tenía la frente perlada de sudor frío.\n\n—Buenas noches, don Vicente —susurró Elena, acercándose despacio hasta ponerse a su altura—. ¿Qué nota usted?\n\n—Un mareo raro, hija —dijo él con la voz algo apagada—. Como si la cama diera vueltas despacio y me faltara el aire al tumbarme. Perdona que te moleste, pero quería ir al baño y no me fío de las piernas.\n\n—No molesta nada, faltaría más —respondió Elena, tomándole la muñeca para contar el pulso durante unos segundos—. Quédese quieto un momento sentado. Voy a coger el tensiómetro y la medicación suya de las cuatro, y ahora mismo le ayudo con calma.\n\nJusto al salir de nuevo al pasillo, el timbre agudo de la doscientos once sonó tres veces seguidas: don Ramón pedía ayuda urgente para levantarse al sillón porque se ahogaba con la flema. Y antes de que Elena diera dos pasos hacia el control, una silueta encorvada apareció por el fondo del corredor descalza y en camisón celeste.\n\nEra doña Pilar, de la doscientos quince. Llevaba la muñeca derecha desnuda; había vuelto a arrancarse la pulsera blanca de identificación y caminaba directo hacia las puertas de la escalera de servicio.\n\nElena sintió que el pulso le golpeaba en las sienes. Tenía a don Vicente mareado en la doscientos cuatro, a don Ramón llamando desde la doscientos once y a doña Pilar a diez metros de un tramo de escalones cerrados con pestillo magnético.\n\n—Doña Pilar, venga conmigo, que hace fresco aquí fuera —dijo Elena con suavidad firme, rodeándola por los hombros para acompañarla de vuelta a su cama y colocarle una pulsera nueva del bolsillo de la bata.\n\nTardó siete minutos en acostar a doña Pilar y otros seis en incorporar a don Ramón, darle unos sorbos de agua tibia y comprobar que respiraba mejor. Con la cabeza embotada por el ir y venir, regresó finalmente al carro metálico azul parado frente al control de enfermería.\n\n* * *\n\nSobre la balda superior del carro había dos vasitos de plástico preparados junto a la carpeta abierta. Elena miró la hoja de registro de don Vicente Morales y sintió un vuelco frío en el estómago.\n\nLa casilla correspondiente a la una de la madrugada estaba firmada con sus iniciales, pero la línea inmediatamente inferior —la de las cuatro— tenía un trazo a medio hacer justo encima del nombre del residente de la doscientos seis, que tomaba un sedante distinto. No recordaba con certeza si había llegado a sacar el comprimido cardíaco de don Vicente antes de salir corriendo hacia doña Pilar, ni si el vaso que quedaba en la bandeja pertenecía a la doscientos cuatro o a la habitación contigua.\n\nSe quedó inmóvil con el bolígrafo azul en la mano, mirando los dos vasos idénticos. No podía administrar nada a ciegas.\n\nEn ese preciso segundo, un golpe seco, pesado y sordo resonó dentro de la habitación doscientos cuatro, seguido del tintineo de un vaso de cristal al estrellarse contra el suelo de linóleo.\n\nElena soltó el bolígrafo sobre la carpeta y corrió por el pasillo. Al empujar la puerta encontró la habitación en silencio. Junto al pie de la mesilla de noche, don Vicente Morales yacía de lado sobre el suelo beige, con una zapatilla salida del pie izquierdo y un corte abierto en la ceja derecha del que manaba un hilo de sangre oscura sobre el pijama gris.\n\n—¡Don Vicente! —exclamó Elena, arrodillándose junto a él sin moverle el cuello de golpe—. ¿Me oye bien? No intente levantarse todavía.\n\nEl anciano parpadeó despacio y tardó varios segundos en enfocarla.\n\n—Creo... que he resbalado al buscar las gafas —balbuceó con la lengua pesada y la mirada perdida en el techo—. Me duele aquí atrás.\n\nElena notó el habla pastosa y una somnolencia rápida que no estaba cinco minutos antes. Sabía perfectamente que don Vicente tomaba anticoagulante diario desde hacía dos años. Un golpe en la cabeza bajo ese tratamiento exigía descartar una hemorragia interna de inmediato, y cada minuto contaba.\n\nPero cuando miró hacia el control, recordó la carpeta abierta con las casillas cruzadas. Si la ambulancia le preguntaba exactamente qué fármaco y qué dosis había recibido durante la última hora, una duda mal contada podía confundir al médico de urgencias.\n\n* * *\n\nElena sacó el teléfono inalámbrico del bolsillo de su pijama y marcó directamente el ciento doce sin dudar. Mientras esperaba el tono, presionó suavemente una gasa limpia sacada de su bolsillo sobre la ceja sangrante de don Vicente para contener el goteo y le acomodó la cabeza con cuidado, vigilando que respirara sin dificultad.\n\n—Residencia Los Sauces, segunda planta —habló con claridad pese al temblor de la voz—. Residente varón de setenta y nueve años anticoagulado, caída en la habitación doscientos cuatro tras episodio previo de mareo, herida en la ceja derecha y somnolencia con habla pastosa.\n\nMientras el operador confirmaba la salida de la unidad móvil, Elena llamó también a la supervisora Carmen Lázaro para activar el protocolo interno y pidió al compañero de recepción de la planta baja que subiera a abrir el acceso de camillas y vigilar el pasillo mientras ella no se separaba del suelo junto a don Vicente.\n\nOcho minutos más tarde, dos sanitarios entraron con el maletín rojo de emergencias y la tabla espinal. Mientras colocaban el collarín cervical y medían la tensión arterial, el médico de la ambulancia se volvió hacia Elena con la libreta clínica en la mano.\n\n—Necesito el parte exacto de medicación de esta noche —pidió el facultativo sin apartar la vista del monitor—. ¿Ha recibido algún hipotensor o sedante en la última hora?\n\nElena tragó saliva. Habría sido muy fácil responder que no había dado nada y tapar el desorden de la carpeta roja para evitar preguntas. Sin embargo, sostuvo la mirada del médico y abrió el cuadrante sobre la cómoda.\n\n—A la una en punto recibió su pauta habitual —explicó Elena con franqueza, señalando la hoja—. A las cuatro empecé a preparar el carro, pero me quedé sola en planta y tuve tres avisos seguidos antes de terminar el registro. Esta línea entre la doscientos cuatro y la doscientos seis se quedó sin cerrar; estoy casi segura de que no llegué a darle la pastilla de las cuatro porque seguía el vasito en la bandeja, pero no puedo jurárselo al cien por cien y prefiero que lo tengan en cuenta por si acaso.\n\nEl médico asintió con seriedad, anotó el dato exacto del anticoagulante y la hora de la última toma segura, y ordenó el traslado inmediato al hospital comarcal.\n\n* * *\n\nA las ocho de la mañana, el sol frío de noviembre entraba ya por los ventanales del despacho de dirección en la planta baja. Elena seguía con el mismo pijama azul celeste arrugado, las manos sobre el regazo y la carpeta roja encima de la mesa de madera.\n\nFrente a ella, Carmen Lázaro acababa de colgar el teléfono tras hablar con el servicio de urgencias del hospital.\n\n—El escáner craneal ha salido limpio —anunció Carmen, quitándose las gafas rectangulares para apoyarlas sobre el expediente—. Tiene cuatro puntos en la ceja y una bajada de tensión por deshidratación leve que causó el mareo, pero se queda en observación veinticuatro horas y está estable.\n\nElena soltó el aire que llevaba horas reteniendo en el pecho y cerró los ojos un instante.\n\n—Lo siento muchísimo, Carmen —dijo en voz baja—. Si no hubiera dejado la carpeta abierta al salir hacia doña Pilar, habría sabido al segundo si le había dado la toma o no. Fue culpa mía perder el hilo.\n\nCarmen no respondió enseguida. Abrió en la pantalla del ordenador el registro electrónico de timbres de la segunda planta y puso al lado el parte de incidencias de la madrugada. Durante más de dos minutos fue comparando cada llamada con las horas anotadas a mano en el cuadrante.\n\n—Entre las tres y media y las cuatro y diez saltaron once avisos en tres zonas distintas del pasillo —leyó Carmen en voz alta, señalando la gráfica—. Además encadenabas tres noches seguidas y estabas sola para veintiocho personas dependientes, preparando medicación mientras corrías detrás de alguien sin pulsera identificativa. Esto no es un despiste tuyo, Elena; es un turno imposible diseñado para que alguien acabe equivocándose.\n\nUna semana después, cuando Elena volvió al turno de noche tras dos días de descanso obligado, el control de enfermería de la segunda planta había cambiado. En la pared lucía un nuevo cuadrante con dos auxiliares fijas por planta y un retén de guardia localizada remunerado para cubrir cualquier baja antes de medianoche.\n\nSobre el carro metálico azul descansaba una bandeja de medicación nueva con lector de códigos de barras y un cartel plastificado que prohibía interrumpir a la persona encargada durante los veinte minutos de preparación de dosis, derivando los timbres a la compañera de apoyo. Elena cogió el bolígrafo negro con calma, comprobó el primer cajetín de la noche y empezó la ronda con la tranquilidad de saber que, si volvía a sonar una emergencia en la doscientos cuatro, no tendría que correr sola por todo el pasillo.",
+    "relato_html": "<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El teléfono del control de enfermería sonó dos veces antes de que Elena Salgado dejara la jeringa de agua sobre la bandeja metálica y descolgara el auricular. Eran las dos y cuarto de la madrugada. En el pasillo del ala norte solo quedaban encendidos los apliques bajos de cortesía, y el zumbido del frigorífico de farmacia llenaba el silencio de la segunda planta.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Dime, Carmen —respondió Elena en voz baja, apoyando la cadera contra el mostrador de formica blanca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Al otro lado de la línea se oyó el crujido de unos papeles y un suspiro corto de la supervisora de guardia localizada.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Beatriz acaba de llamar desde urgencias con fiebre alta y vómitos —dijo Carmen Lázaro sin rodeos—. He llamado a las dos bolsas de suplencia y nadie coge el teléfono a estas horas. Vas a tener que llevar tú sola las veintiocho habitaciones de la planta hasta las ocho. Si ocurre algo grave me llamas, pero intenta organizarte por bloques para no ahogarte.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena miró el cuadrante de la pared, donde figuraban veintiocho nombres escritos con rotulador negro y seis pautas nocturnas subrayadas en amarillo. Llevaba cinco años en la residencia Los Sauces y aquella era la tercera noche seguida que encadenaba por cambios de turno. Le pesaban los gemelos dentro de los zuecos blancos y sentía la boca seca.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—De acuerdo —contestó, pasándose una mano por la nuca para sujetar mejor la coleta—. Acabo los cambios posturales de la zona impar y preparo la ronda de las cuatro con tiempo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Colgó y respiró hondo. Si adelantaba los pañales pendientes antes de las tres y dejaba los carros ordenados, llegaría al relevo de la mañana sin incidentes.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La calma duró menos de veinte minutos. Primero saltó la luz roja sobre la puerta de la habitación doscientos ocho porque el señor Esteban había tirado el vaso de agua sobre la sábana bajera. Mientras Elena cambiaba la ropa de cama húmeda, otro timbre insistente empezó a sonar en el extremo opuesto del corredor. Tuvo que dejar el carro azul de lencería arrimado a la pared y cruzar sesenta metros a paso rápido para calmar a una residente recién ingresada que preguntaba si ya había salido el autobús de las siete.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0060-003-elena-contesta-telefono-control-enfermeria.webp\" alt=\"Escena oficial de El turno que no terminaba — Elena contesta telefono control enfermeria\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Elena contesta telefono control enfermeria</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Cuando regresó al control, el reloj digital de pared marcaba las tres y cincuenta y cinco. Elena notó un ligero ardor en los ojos y una lentitud pegajosa en los dedos al abrir los cajetines azules del carro de medicación.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Abrió la carpeta gruesa de tapas rojas donde se anotaban las tomas nocturnas con bolígrafo negro. Tenía ante sí tres hojas seguidas de casillas pequeñas. Leyó dos veces la misma línea porque los números de habitación empezaron a bailar unos sobre otros bajo el tubo fluorescente frío del mostrador.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">«Cuatro menos cinco», pensó, frotándose la frente con el dorso de la muñeca. «Solo quedan cuatro pastillas de tensión y el protector gástrico del doscientos seis. Si no me distraigo diez minutos, termino el registro entero».</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sacó la bandeja de plástico gris y empezó a colocar los vasitos transparentes etiquetados con tinta negra sobre el carro metálico azul de tres baldas. En ese instante, el panel luminoso del pasillo emitió un pitido doble distinto al habitual.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En la consola se encendió el piloto naranja de la habitación doscientos cuatro.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena frunció el ceño. La doscientos cuatro era la de don Vicente Morales, un antiguo relojero de setenta y nueve años que jamás pulsaba el timbre después de cenar.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena dejó el blíster de comprimidos encima de la hoja abierta de la carpeta, sin marcar todavía la casilla de las cuatro, y caminó deprisa hacia la doscientos cuatro. Al abrir la puerta sin hacer ruido, vio la lámpara de la mesilla encendida. Don Vicente estaba sentado al borde del colchón con su pijama gris de algodón a rayas finas, sujetándose el borde del colchón con ambas manos nudosas. Tenía la frente perlada de sudor frío.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Buenas noches, don Vicente —susurró Elena, acercándose despacio hasta ponerse a su altura—. ¿Qué nota usted?</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0060-022-elena-abre-204-don-vicente-sentado-colchon.webp\" alt=\"Escena oficial de El turno que no terminaba — Elena abre 204 don vicente sentado colchon\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Elena abre 204 don vicente sentado colchon</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Un mareo raro, hija —dijo él con la voz algo apagada—. Como si la cama diera vueltas despacio y me faltara el aire al tumbarme. Perdona que te moleste, pero quería ir al baño y no me fío de las piernas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—No molesta nada, faltaría más —respondió Elena, tomándole la muñeca para contar el pulso durante unos segundos—. Quédese quieto un momento sentado. Voy a coger el tensiómetro y la medicación suya de las cuatro, y ahora mismo le ayudo con calma.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Justo al salir de nuevo al pasillo, el timbre agudo de la doscientos once sonó tres veces seguidas: don Ramón pedía ayuda urgente para levantarse al sillón porque se ahogaba con la flema. Y antes de que Elena diera dos pasos hacia el control, una silueta encorvada apareció por el fondo del corredor descalza y en camisón celeste.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Era doña Pilar, de la doscientos quince. Llevaba la muñeca derecha desnuda; había vuelto a arrancarse la pulsera blanca de identificación y caminaba directo hacia las puertas de la escalera de servicio.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena sintió que el pulso le golpeaba en las sienes. Tenía a don Vicente mareado en la doscientos cuatro, a don Ramón llamando desde la doscientos once y a doña Pilar a diez metros de un tramo de escalones cerrados con pestillo magnético.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Doña Pilar, venga conmigo, que hace fresco aquí fuera —dijo Elena con suavidad firme, rodeándola por los hombros para acompañarla de vuelta a su cama y colocarle una pulsera nueva del bolsillo de la bata.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Tardó siete minutos en acostar a doña Pilar y otros seis en incorporar a don Ramón, darle unos sorbos de agua tibia y comprobar que respiraba mejor. Con la cabeza embotada por el ir y venir, regresó finalmente al carro metálico azul parado frente al control de enfermería.</p>\n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sobre la balda superior del carro había dos vasitos de plástico preparados junto a la carpeta abierta. Elena miró la hoja de registro de don Vicente Morales y sintió un vuelco frío en el estómago.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0060-042-elena-arrodillada-junto-don-vicente-sin-mover-cuello.webp\" alt=\"Escena oficial de El turno que no terminaba — Elena arrodillada junto don vicente sin mover cuello\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Elena arrodillada junto don vicente sin mover cuello</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">La casilla correspondiente a la una de la madrugada estaba firmada con sus iniciales, pero la línea inmediatamente inferior —la de las cuatro— tenía un trazo a medio hacer justo encima del nombre del residente de la doscientos seis, que tomaba un sedante distinto. No recordaba con certeza si había llegado a sacar el comprimido cardíaco de don Vicente antes de salir corriendo hacia doña Pilar, ni si el vaso que quedaba en la bandeja pertenecía a la doscientos cuatro o a la habitación contigua.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Se quedó inmóvil con el bolígrafo azul en la mano, mirando los dos vasos idénticos. No podía administrar nada a ciegas.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">En ese preciso segundo, un golpe seco, pesado y sordo resonó dentro de la habitación doscientos cuatro, seguido del tintineo de un vaso de cristal al estrellarse contra el suelo de linóleo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena soltó el bolígrafo sobre la carpeta y corrió por el pasillo. Al empujar la puerta encontró la habitación en silencio. Junto al pie de la mesilla de noche, don Vicente Morales yacía de lado sobre el suelo beige, con una zapatilla salida del pie izquierdo y un corte abierto en la ceja derecha del que manaba un hilo de sangre oscura sobre el pijama gris.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—¡Don Vicente! —exclamó Elena, arrodillándose junto a él sin moverle el cuello de golpe—. ¿Me oye bien? No intente levantarse todavía.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El anciano parpadeó despacio y tardó varios segundos en enfocarla.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Creo... que he resbalado al buscar las gafas —balbuceó con la lengua pesada y la mirada perdida en el techo—. Me duele aquí atrás.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena notó el habla pastosa y una somnolencia rápida que no estaba cinco minutos antes. Sabía perfectamente que don Vicente tomaba anticoagulante diario desde hacía dos años. Un golpe en la cabeza bajo ese tratamiento exigía descartar una hemorragia interna de inmediato, y cada minuto contaba.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Pero cuando miró hacia el control, recordó la carpeta abierta con las casillas cruzadas. Si la ambulancia le preguntaba exactamente qué fármaco y qué dosis había recibido durante la última hora, una duda mal contada podía confundir al médico de urgencias.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0060-061-elena-prefiere-que-conste-duda-por-seguridad.webp\" alt=\"Escena oficial de El turno que no terminaba — Elena prefiere que conste duda por seguridad\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Elena prefiere que conste duda por seguridad</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena sacó el teléfono inalámbrico del bolsillo de su pijama y marcó directamente el ciento doce sin dudar. Mientras esperaba el tono, presionó suavemente una gasa limpia sacada de su bolsillo sobre la ceja sangrante de don Vicente para contener el goteo y le acomodó la cabeza con cuidado, vigilando que respirara sin dificultad.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Residencia Los Sauces, segunda planta —habló con claridad pese al temblor de la voz—. Residente varón de setenta y nueve años anticoagulado, caída en la habitación doscientos cuatro tras episodio previo de mareo, herida en la ceja derecha y somnolencia con habla pastosa.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Mientras el operador confirmaba la salida de la unidad móvil, Elena llamó también a la supervisora Carmen Lázaro para activar el protocolo interno y pidió al compañero de recepción de la planta baja que subiera a abrir el acceso de camillas y vigilar el pasillo mientras ella no se separaba del suelo junto a don Vicente.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Ocho minutos más tarde, dos sanitarios entraron con el maletín rojo de emergencias y la tabla espinal. Mientras colocaban el collarín cervical y medían la tensión arterial, el médico de la ambulancia se volvió hacia Elena con la libreta clínica en la mano.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Necesito el parte exacto de medicación de esta noche —pidió el facultativo sin apartar la vista del monitor—. ¿Ha recibido algún hipotensor o sedante en la última hora?</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena tragó saliva. Habría sido muy fácil responder que no había dado nada y tapar el desorden de la carpeta roja para evitar preguntas. Sin embargo, sostuvo la mirada del médico y abrió el cuadrante sobre la cómoda.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—A la una en punto recibió su pauta habitual —explicó Elena con franqueza, señalando la hoja—. A las cuatro empecé a preparar el carro, pero me quedé sola en planta y tuve tres avisos seguidos antes de terminar el registro. Esta línea entre la doscientos cuatro y la doscientos seis se quedó sin cerrar; estoy casi segura de que no llegué a darle la pastilla de las cuatro porque seguía el vasito en la bandeja, pero no puedo jurárselo al cien por cien y prefiero que lo tengan en cuenta por si acaso.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">El médico asintió con seriedad, anotó el dato exacto del anticoagulante y la hora de la última toma segura, y ordenó el traslado inmediato al hospital comarcal.</p>\n\n            <figure class=\"my-10 rounded-xl overflow-hidden bg-obsidian-card border border-border-subtle shadow-xl group\">\n              <div class=\"relative aspect-video bg-black overflow-hidden\">\n                <img src=\"../assets/images/escenas/0060-080-elena-empieza-ronda-pasillo-con-tranquilidad.webp\" alt=\"Escena oficial de El turno que no terminaba — Elena empieza ronda pasillo con tranquilidad\" width=\"1280\" height=\"720\" loading=\"lazy\" class=\"w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500\">\n                <div class=\"absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent opacity-80 pointer-events-none\"></div>\n              </div>\n              <figcaption class=\"p-3.5 text-xs text-text-muted italic border-t border-border-subtle flex items-center justify-between\">\n                <span>Ilustración de escena: Elena empieza ronda pasillo con tranquilidad</span>\n                <span class=\"text-[10px] text-damask-light font-mono not-italic uppercase tracking-wider\">Escena Oficial</span>\n              </figcaption>\n            </figure>\n            \n<div class=\"scene-divider my-10 text-center text-damask-light font-serif tracking-widest text-xl font-bold select-none\">* * *</div>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">A las ocho de la mañana, el sol frío de noviembre entraba ya por los ventanales del despacho de dirección en la planta baja. Elena seguía con el mismo pijama azul celeste arrugado, las manos sobre el regazo y la carpeta roja encima de la mesa de madera.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Frente a ella, Carmen Lázaro acababa de colgar el teléfono tras hablar con el servicio de urgencias del hospital.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—El escáner craneal ha salido limpio —anunció Carmen, quitándose las gafas rectangulares para apoyarlas sobre el expediente—. Tiene cuatro puntos en la ceja y una bajada de tensión por deshidratación leve que causó el mareo, pero se queda en observación veinticuatro horas y está estable.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Elena soltó el aire que llevaba horas reteniendo en el pecho y cerró los ojos un instante.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Lo siento muchísimo, Carmen —dijo en voz baja—. Si no hubiera dejado la carpeta abierta al salir hacia doña Pilar, habría sabido al segundo si le había dado la toma o no. Fue culpa mía perder el hilo.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Carmen no respondió enseguida. Abrió en la pantalla del ordenador el registro electrónico de timbres de la segunda planta y puso al lado el parte de incidencias de la madrugada. Durante más de dos minutos fue comparando cada llamada con las horas anotadas a mano en el cuadrante.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg pl-3 border-l-2 border-damask/40 font-serif\">—Entre las tres y media y las cuatro y diez saltaron once avisos en tres zonas distintas del pasillo —leyó Carmen en voz alta, señalando la gráfica—. Además encadenabas tres noches seguidas y estabas sola para veintiocho personas dependientes, preparando medicación mientras corrías detrás de alguien sin pulsera identificativa. Esto no es un despiste tuyo, Elena; es un turno imposible diseñado para que alguien acabe equivocándose.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Una semana después, cuando Elena volvió al turno de noche tras dos días de descanso obligado, el control de enfermería de la segunda planta había cambiado. En la pared lucía un nuevo cuadrante con dos auxiliares fijas por planta y un retén de guardia localizada remunerado para cubrir cualquier baja antes de medianoche.</p>\n<p class=\"mb-6 leading-relaxed text-text-main text-base sm:text-lg font-serif\">Sobre el carro metálico azul descansaba una bandeja de medicación nueva con lector de códigos de barras y un cartel plastificado que prohibía interrumpir a la persona encargada durante los veinte minutos de preparación de dosis, derivando los timbres a la compañera de apoyo. Elena cogió el bolígrafo negro con calma, comprobó el primer cajetín de la noche y empezó la ronda con la tranquilidad de saber que, si volvía a sonar una emergencia en la doscientos cuatro, no tendría que correr sola por todo el pasillo.</p>",
+    "locucion": {
+      "es_ES": {
+        "voz": "Álvaro (es-ES-AlvaroNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz máster y vídeo"
+      },
+      "es_LAT": {
+        "voz": "Alonso (es-US-AlonsoNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Voz neutra latinoamericana"
+      },
+      "en_US": {
+        "voz": "Christopher (en-US-ChristopherNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Narración internacional en inglés"
+      },
+      "pt_BR": {
+        "voz": "Antonio (pt-BR-AntonioNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en portugués de Brasil"
+      },
+      "de_DE": {
+        "voz": "Killian (de-DE-KillianNeural)",
+        "calidad": "192 kbps, 48 kHz",
+        "rol": "Locución en alemán de Alemania"
+      }
+    },
+    "estado": "estreno",
+    "publicado": false,
+    "fecha_publicacion": null,
+    "fecha_publicacion_ts": null
+  },
+  {
     "id": "0059",
     "slug": "el-ruido-del-sotano",
     "pagina_url": "relatos/0059-el-ruido-del-sotano.html",
@@ -295,8 +445,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-24T20:00:00+01:00",
+    "fecha_publicacion_ts": 1795546800
   },
   {
     "id": "0057",
@@ -444,8 +594,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-25T20:00:00+01:00",
+    "fecha_publicacion_ts": 1795633200
   },
   {
     "id": "0056",
@@ -593,8 +743,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-23T20:00:00+01:00",
+    "fecha_publicacion_ts": 1795460400
   },
   {
     "id": "0055",
@@ -742,8 +892,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-23T20:00:00+01:00",
+    "fecha_publicacion_ts": 1795460400
   },
   {
     "id": "0054",
@@ -891,8 +1041,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-22T20:00:00+01:00",
+    "fecha_publicacion_ts": 1795374000
   },
   {
     "id": "0053",
@@ -1040,8 +1190,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-21T20:00:00+01:00",
+    "fecha_publicacion_ts": 1795287600
   },
   {
     "id": "0052",
@@ -1189,8 +1339,8 @@
     },
     "estado": "estreno",
     "publicado": false,
-    "fecha_publicacion": null,
-    "fecha_publicacion_ts": null
+    "fecha_publicacion": "2026-11-20T20:00:00+01:00",
+    "fecha_publicacion_ts": 1795201200
   },
   {
     "id": "0051",
@@ -1646,8 +1796,8 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "fecha_publicacion": "2026-11-16T20:00:00+01:00",
     "fecha_publicacion_ts": 1794855600
   },
@@ -1956,8 +2106,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-15T20:00:00+01:00",
-    "fecha_publicacion_ts": 1794769200
+    "fecha_publicacion": "2026-11-15T20:00:19+01:00",
+    "fecha_publicacion_ts": 1794769219
   },
   {
     "id": "0046",
@@ -2270,8 +2420,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-14T20:00:00+01:00",
-    "fecha_publicacion_ts": 1794682800
+    "fecha_publicacion": "2026-11-14T20:00:02+01:00",
+    "fecha_publicacion_ts": 1794682802
   },
   {
     "id": "0044",
@@ -2411,8 +2561,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-05T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793905200
+    "fecha_publicacion": "2026-11-05T20:00:01+01:00",
+    "fecha_publicacion_ts": 1793905201
   },
   {
     "id": "0043",
@@ -2574,8 +2724,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-12T20:00:00+01:00",
-    "fecha_publicacion_ts": 1794510000
+    "fecha_publicacion": "2026-11-12T20:00:03+01:00",
+    "fecha_publicacion_ts": 1794510003
   },
   {
     "id": "0042",
@@ -2731,8 +2881,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-04T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793818800
+    "fecha_publicacion": "2026-11-04T20:00:15+01:00",
+    "fecha_publicacion_ts": 1793818815
   },
   {
     "id": "0041",
@@ -2894,8 +3044,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-07T20:00:00+01:00",
-    "fecha_publicacion_ts": 1794078000
+    "fecha_publicacion": "2026-11-07T20:00:02+01:00",
+    "fecha_publicacion_ts": 1794078002
   },
   {
     "id": "0040",
@@ -3044,8 +3194,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-11T20:00:00+01:00",
-    "fecha_publicacion_ts": 1794423600
+    "fecha_publicacion": "2026-11-11T20:00:13+01:00",
+    "fecha_publicacion_ts": 1794423613
   },
   {
     "id": "0039",
@@ -3194,8 +3344,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-01T16:00:00+01:00",
-    "fecha_publicacion_ts": 1793545200
+    "fecha_publicacion": "2026-11-01T16:00:23+01:00",
+    "fecha_publicacion_ts": 1793545223
   },
   {
     "id": "0038",
@@ -3361,8 +3511,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-02T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793646000
+    "fecha_publicacion": "2026-11-02T20:00:38+01:00",
+    "fecha_publicacion_ts": 1793646038
   },
   {
     "id": "0037",
@@ -3516,8 +3666,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-13T20:00:00+01:00",
-    "fecha_publicacion_ts": 1794596400
+    "fecha_publicacion": "2026-11-13T20:00:01+01:00",
+    "fecha_publicacion_ts": 1794596401
   },
   {
     "id": "0036",
@@ -3678,8 +3828,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-10T20:00:00+01:00",
-    "fecha_publicacion_ts": 1794337200
+    "fecha_publicacion": "2026-11-10T20:00:01+01:00",
+    "fecha_publicacion_ts": 1794337201
   },
   {
     "id": "0035",
@@ -3835,8 +3985,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-09T20:00:00+01:00",
-    "fecha_publicacion_ts": 1794250800
+    "fecha_publicacion": "2026-11-09T20:00:08+01:00",
+    "fecha_publicacion_ts": 1794250808
   },
   {
     "id": "0034",
@@ -3990,8 +4140,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-08T20:00:00+01:00",
-    "fecha_publicacion_ts": 1794164400
+    "fecha_publicacion": "2026-11-08T20:00:16+01:00",
+    "fecha_publicacion_ts": 1794164416
   },
   {
     "id": "0033",
@@ -4296,8 +4446,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-01T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793559600
+    "fecha_publicacion": "2026-11-01T20:00:07+01:00",
+    "fecha_publicacion_ts": 1793559607
   },
   {
     "id": "0031",
@@ -4447,8 +4597,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-06T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793991600
+    "fecha_publicacion": "2026-11-06T20:00:19+01:00",
+    "fecha_publicacion_ts": 1793991619
   },
   {
     "id": "0030",
@@ -4603,8 +4753,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-11-03T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793732400
+    "fecha_publicacion": "2026-11-03T20:00:16+01:00",
+    "fecha_publicacion_ts": 1793732416
   },
   {
     "id": "0029",
@@ -4898,8 +5048,8 @@
     },
     "estado": "publicado",
     "publicado": true,
-    "fecha_publicacion": "2026-10-31T20:00:00+01:00",
-    "fecha_publicacion_ts": 1793473200
+    "fecha_publicacion": "2026-10-31T20:00:12+01:00",
+    "fecha_publicacion_ts": 1793473212
   },
   {
     "id": "0027",
