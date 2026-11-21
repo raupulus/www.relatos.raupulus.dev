@@ -743,7 +743,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-24T20:00:00+01:00",
     "fecha_publicacion_ts": 1795546800
@@ -892,7 +892,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-25T20:00:00+01:00",
     "fecha_publicacion_ts": 1795633200
@@ -1041,7 +1041,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-23T20:00:00+01:00",
     "fecha_publicacion_ts": 1795460400
@@ -1190,7 +1190,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-23T20:00:00+01:00",
     "fecha_publicacion_ts": 1795460400
@@ -1339,7 +1339,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-22T20:00:00+01:00",
     "fecha_publicacion_ts": 1795374000
@@ -1488,7 +1488,7 @@
         "rol": "Locución en alemán de Alemania"
       }
     },
-    "estado": "programado",
+    "estado": "estreno",
     "publicado": false,
     "fecha_publicacion": "2026-11-21T20:00:00+01:00",
     "fecha_publicacion_ts": 1795287600
