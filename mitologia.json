@@ -1,5 +1,99 @@
 [
   {
+    "id": "M0023",
+    "slug": "nyambe",
+    "nombre": "Nyambe",
+    "epiteto": "El Creador Solar del Monte Camerún y el Cielo",
+    "titulo_completo": "Nyambe: El Creador Solar del Monte Camerún y el Cielo ⚡ Dioses y Espíritus (Mitología Duala)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "azande-camerun",
+    "tradicion_nombre": "Mitología Sawa y Duala de Camerún",
+    "grupo": "dioses",
+    "grupo_nombre": "Dioses y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 836,
+    "duracion_video": "05:21",
+    "duracion_audio": "05:21",
+    "duracion_short": "00:45",
+    "sinopsis": "Ante la silueta volcánica del monte Camerún y las aguas doradas del estuario del Wouri, los pueblos duala y sawa pronuncian con reverencia el nombre de Nyambe: el dios supremo del cielo, del sol y del destino. Arquitecto del mundo visible y creador de los espíritus acuáticos Miengu, ordenó los mares antes de ascender a las alturas del sol tras el desencanto con la humanidad.",
+    "youtube_id": "kz6R6ViD3fo",
+    "youtube_short_id": "ZAohd47Ulck",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=kz6R6ViD3fo",
+    "youtube_short_url": "https://www.youtube.com/shorts/ZAohd47Ulck",
+    "portada": "assets/images/portadas/M0023-nyambe.webp",
+    "pagina_url": "mitologia/M0023-nyambe.html",
+    "personajes": [
+      {
+        "nombre": "Nyambe (El Creador Solar Duala)",
+        "rol": "Dios Supremo e Increado del Cielo y del Sol",
+        "rasgos": "Soberano africano monumental de sesenta y dos años envuelto en un halo solar dorado, con manto ceremonial geométrico sanja en azul índigo, ocre dorado y terracota y gruesos brazaletes de bronce.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-nyambe-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-nyambe-cuerpo.webp"
+      },
+      {
+        "nombre": "Ngando (El Sacerdote del Estuario)",
+        "rol": "Anciano Sabio y Sacerdote Duala",
+        "rasgos": "Anciano de sesenta y cinco años vestido con túnica blanca ceremonial que dirige las plegarias, tambores y ofrendas junto al estuario del Wouri frente al monte Camerún."
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0023-007-alba-wouri-figura-monumental-halo-solar.webp",
+        "pie": "Nyambe emergiendo monumental sobre el estuario del Wouri coronado por su halo solar."
+      },
+      {
+        "archivo": "assets/images/escenas/M0023-012-origen-de-los-miengu-en-los-rios.webp",
+        "pie": "Los espíritus acuáticos Miengu creados por Nyambe como puente con la humanidad."
+      },
+      {
+        "archivo": "assets/images/escenas/M0023-013-juramento-sincero-alimentos-fogon.webp",
+        "pie": "El sacerdote Ngando y una familia duala agradeciendo el alimento junto al fuego."
+      },
+      {
+        "archivo": "assets/images/escenas/M0023-024-ascenso-monte-camerun-dentro-del-sol.webp",
+        "pie": "Nyambe ascendiendo por el monte Camerún hasta fundirse con el sol."
+      },
+      {
+        "archivo": "assets/images/escenas/M0023-030-sol-naciente-sobre-monte-camerun.webp",
+        "pie": "La luz dorada del amanecer sobre el monte Camerún y el estuario del Wouri."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Creador Solar del Estuario del Wouri",
+        "resumen": "El arquitecto sin padre ni principio ante el monte Camerún y las mareas atlánticas."
+      },
+      {
+        "tiempo": "01:30",
+        "segundos": 90,
+        "titulo": "II. La Creación del Sol, las Lluvias y los Miengu",
+        "resumen": "El ordenamiento de la vida, los campos de ñame y los espíritus acuáticos como puente."
+      },
+      {
+        "tiempo": "02:27",
+        "segundos": 147,
+        "titulo": "III. El Rigor Silencioso frente al Falso Juramento",
+        "resumen": "La justicia distante e insobornable de Nyambe ante la ruptura de la palabra."
+      },
+      {
+        "tiempo": "03:28",
+        "segundos": 208,
+        "titulo": "IV. La Retirada al Sol desde el Monte Camerún",
+        "resumen": "El desencanto ante las disputas humanas y el ascenso definitivo dentro del disco solar."
+      },
+      {
+        "tiempo": "04:36",
+        "segundos": 276,
+        "titulo": "V. La Luz Dorada que Vela por Camerún",
+        "resumen": "La pervivencia del recuerdo de Nyambe en los cantos y rituales junto al Wouri."
+      }
+    ]
+  },
+  {
     "id": "M0022",
     "slug": "miengu",
     "nombre": "Miengu (Jengu)",
