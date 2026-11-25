@@ -1,5 +1,94 @@
 [
   {
+    "id": "M0024",
+    "slug": "nyoo",
+    "nombre": "Nyo'o",
+    "epiteto": "El Enigma Sagrado entre Lengua, Pueblo y Ancestro",
+    "titulo_completo": "Nyo'o: El Enigma Sagrado entre Lengua, Pueblo y Ancestro ⚡ Dioses y Espíritus (Camerún)",
+    "region": "africa",
+    "region_nombre": "África",
+    "tradicion": "azande-camerun",
+    "tradicion_nombre": "Mitología Banen y Nyokon de Camerún",
+    "grupo": "dioses",
+    "grupo_nombre": "Dioses y Espíritus",
+    "estado": "estreno",
+    "publicado": false,
+    "palabras": 844,
+    "duracion_video": "05:39",
+    "duracion_audio": "05:39",
+    "duracion_short": "00:51",
+    "sinopsis": "En las colinas envueltas en niebla de Camerún, el nombre de Nyo'o designa a la vez una lengua antigua, al pueblo nyokon y banen que la pronuncia y a una enigmática figura ancestral incluida en ciertos catálogos como ser supremo. Sin templos conservados ni ciclos míticos escritos, encarna el umbral misterioso donde la palabra hablada y la memoria de los mayores se vuelven sagradas.",
+    "youtube_id": "LwUrVc1Fveg",
+    "youtube_short_id": "2uuzfTfJirE",
+    "youtube_watch_url": "https://www.youtube.com/watch?v=LwUrVc1Fveg",
+    "youtube_short_url": "https://www.youtube.com/shorts/2uuzfTfJirE",
+    "portada": "assets/images/portadas/M0024-nyoo.webp",
+    "pagina_url": "mitologia/M0024-nyoo.html",
+    "personajes": [
+      {
+        "nombre": "Nyo'o (El Patriarca Ancestral Nyokon)",
+        "rol": "Encarnación Ancestral Protectora y Guardián de la Lengua",
+        "rasgos": "Patriarca africano de sesenta y cuatro años, cabello y barba corta entrecanos, túnica rústica ocre tejida a mano, collar de grandes cuentas negras con dos conchas de cauri, bastón tallado, lanza de hierro y vasija humeante.",
+        "avatar_cabeza": "assets/images/avatars/personaje-01-nyoo-cabeza.webp",
+        "avatar_cuerpo": "assets/images/avatars/personaje-01-nyoo-cuerpo.webp"
+      }
+    ],
+    "escenas_clave": [
+      {
+        "archivo": "assets/images/escenas/M0024-002-nyoo-enigma-lengua-pueblo-ancestro.webp",
+        "pie": "Nyo'o sobre el risco crepuscular dominando las selvas y ríos de Camerún."
+      },
+      {
+        "archivo": "assets/images/escenas/M0024-004-nombre-lengua-y-pueblo-nyokon.webp",
+        "pie": "La aldea banen y nyokon reunida alrededor del fuego nocturno transmitiendo la lengua viva."
+      },
+      {
+        "archivo": "assets/images/escenas/M0024-010-faz-luminosa-cohesion-y-dignidad.webp",
+        "pie": "Nyo'o en su faz luminosa contemplando los valles verdes bañados por el alba."
+      },
+      {
+        "archivo": "assets/images/escenas/M0024-021-viejas-listas-coloniales-en-penumbra.webp",
+        "pie": "El silencio de los antiguos catálogos y documentos frente a la tradición oral."
+      },
+      {
+        "archivo": "assets/images/escenas/M0024-027-patriarca-intacto-sobre-la-bruma.webp",
+        "pie": "El patriarca ancestral alzándose intacto sobre la bruma bajo el cielo estrellado."
+      }
+    ],
+    "capitulos": [
+      {
+        "tiempo": "00:00",
+        "segundos": 0,
+        "titulo": "I. El Enigma entre Lengua, Pueblo y Ancestro",
+        "resumen": "El vínculo misterioso entre la lengua nyokon, el pueblo banen y la figura protectora."
+      },
+      {
+        "tiempo": "01:32",
+        "segundos": 92,
+        "titulo": "II. La Faz Luminosa: Palabra y Linaje Banen",
+        "resumen": "La transmisión oral nocturna y el amparo cultural que sostiene la identidad de la comunidad."
+      },
+      {
+        "tiempo": "02:53",
+        "segundos": 173,
+        "titulo": "III. La Faz Oscura: Silencio en los Archivos",
+        "resumen": "La falta de himnos o templos escritos y la confusión académica con Nyambe o los cultos vecinos."
+      },
+      {
+        "tiempo": "04:01",
+        "segundos": 241,
+        "titulo": "IV. El Pulso entre el Olvido y la Memoria",
+        "resumen": "La resistencia simbólica del patriarca sobre la bruma frente al paso del tiempo."
+      },
+      {
+        "tiempo": "05:07",
+        "segundos": 307,
+        "titulo": "V. La Lengua Viva como Santuario Eterno",
+        "resumen": "Mientras se hable nyokon bajo las estrellas de Camerún, el nombre de Nyo'o permanecerá vivo."
+      }
+    ]
+  },
+  {
     "id": "M0023",
     "slug": "nyambe",
     "nombre": "Nyambe",
@@ -11,8 +100,8 @@
     "tradicion_nombre": "Mitología Sawa y Duala de Camerún",
     "grupo": "dioses",
     "grupo_nombre": "Dioses y Espíritus",
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "palabras": 836,
     "duracion_video": "05:21",
     "duracion_audio": "05:21",
@@ -91,7 +180,9 @@
         "titulo": "V. La Luz Dorada que Vela por Camerún",
         "resumen": "La pervivencia del recuerdo de Nyambe en los cantos y rituales junto al Wouri."
       }
-    ]
+    ],
+    "fecha_publicacion": "2026-11-24T17:03:14+01:00",
+    "fecha_publicacion_ts": 1795536194
   },
   {
     "id": "M0022",
@@ -105,8 +196,8 @@
     "tradicion_nombre": "Mitología Sawa y Duala de Camerún",
     "grupo": "dioses",
     "grupo_nombre": "Dioses y Espíritus",
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "palabras": 825,
     "duracion_video": "05:16",
     "duracion_audio": "05:16",
@@ -185,7 +276,9 @@
         "titulo": "V. El Festival del Ngondo y el Mensaje del Agua",
         "resumen": "La inmersión del mensajero sagrado en el Wouri y la vigencia actual del culto."
       }
-    ]
+    ],
+    "fecha_publicacion": "2026-11-23T11:24:21+01:00",
+    "fecha_publicacion_ts": 1795429461
   },
   {
     "id": "M0021",
@@ -199,8 +292,8 @@
     "tradicion_nombre": "Mitología Bassa y de Camerún",
     "grupo": "dioses",
     "grupo_nombre": "Dioses y Espíritus",
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "palabras": 822,
     "duracion_video": "05:17",
     "duracion_audio": "05:17",
@@ -279,7 +372,9 @@
         "titulo": "V. El Legado Incorruptible de los Ancestros",
         "resumen": "La vigencia actual del Mbombog como guardián de la identidad y memoria bassa."
       }
-    ]
+    ],
+    "fecha_publicacion": "2026-11-21T10:53:36+01:00",
+    "fecha_publicacion_ts": 1795254816
   },
   {
     "id": "M0020",
@@ -293,8 +388,8 @@
     "tradicion_nombre": "Mitología Azande y de África Central",
     "grupo": "dioses",
     "grupo_nombre": "Dioses y Espíritus",
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "palabras": 832,
     "duracion_video": "05:12",
     "duracion_audio": "05:12",
@@ -373,7 +468,9 @@
         "titulo": "V. La Fe Silenciosa que Perdura",
         "resumen": "La permanencia intacta de Mboli en la memoria viva de África Central."
       }
-    ]
+    ],
+    "fecha_publicacion": "2026-11-17T13:38:20+01:00",
+    "fecha_publicacion_ts": 1794919100
   },
   {
     "id": "M0019",
@@ -387,8 +484,8 @@
     "tradicion_nombre": "Mitología Bassa y de Camerún",
     "grupo": "dioses",
     "grupo_nombre": "Dioses y Espíritus",
-    "estado": "estreno",
-    "publicado": false,
+    "estado": "publicado",
+    "publicado": true,
     "palabras": 852,
     "duracion_video": "05:29",
     "duracion_audio": "05:29",
@@ -467,7 +564,9 @@
         "titulo": "V. Los Guardianes Mbombog y el Legado Eterno",
         "resumen": "La asamblea de los patriarcas al pie de Ngog Lituba manteniendo vivo el puente sagrado."
       }
-    ]
+    ],
+    "fecha_publicacion": "2026-11-16T14:18:09+01:00",
+    "fecha_publicacion_ts": 1794835089
   },
   {
     "id": "M0018",
